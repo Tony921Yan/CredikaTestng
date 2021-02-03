@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "couponGetCouponUrlSuccess">
+        <parm key="keywords" value ="衣服"/>
+        <parm key="itemSource" value="1"/>
+        <parm key="searchType" value="0"/>
+    </test>
+
+    <test name = "couponGetCouponUrlItemSourceNull">
+        <parm key="keywords" value ="衣服"/>
+        <parm key="itemSource" value="1"/>
+        <parm key="searchType" value="0"/>
+    </test>
+
+    <test name = "couponGetCouponUrlItemSourceIdNull">
+    </test>
+
+    <test name = "couponGetCouponUrlMultiuser">
+        <parm key="keywords" value ="衣服"/>
+        <parm key="itemSource" value="1"/>
+        <parm key="searchType" value="0"/>
+        <parm key="otherToken" value=""/>
+    </test>
+
+</data>

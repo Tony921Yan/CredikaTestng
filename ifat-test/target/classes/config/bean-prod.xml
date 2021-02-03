@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans>
+    <bean name = "miyuan-url">
+        <properties  key="api" value ="https://api.gzmiyuan.com"/>
+        <properties key="infra" value="https://api.gzmiyuan.com"/>
+    </bean>
+
+    <bean name="top-default" desc="蜜源新媒体科技有限公司">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25072865"/>
+        <properties key="appSecret" value="46c2328a77902daccadc1c876689f793"/>
+    </bean>
+
+    <bean name="top-96557950214" desc="广州蜜源">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25107719"/>
+        <properties key="appSecret" value="07c806cd28d4453e51900467ca21d1da"/>
+    </bean>
+
+    <bean name="top-96559900448" desc="广州蜜源02">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25142413"/>
+        <properties key="appSecret" value="c5ed67025c43764b6ef9928b7d87ad0d"/>
+    </bean>
+
+    <bean name="top-96562750278" desc="广州蜜源03">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25112213"/>
+        <properties key="appSecret" value="2f5af33517ac377a3f92a3e62eb64db1"/>
+    </bean>
+
+    <bean name="top-96564350379" desc="广州蜜源04">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25118629"/>
+        <properties key="appSecret" value="7e0889a845db9403bd3b20aa68d58084"/>
+    </bean>
+
+    <bean name="top-96565300106" desc="广州蜜源06">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25142838"/>
+        <properties key="appSecret" value="a83b1527a842c3c4d955d53caf6dc76c"/>
+    </bean>
+
+    <bean name="top-96567200138" desc="蜜源app">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25089516"/>
+        <properties key="appSecret" value="e460ff89e2f547f8a76d79bd2d072027"/>
+    </bean>
+
+    <bean name="top-96566400151" desc="miyuanapp666">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25089273"/>
+        <properties key="appSecret" value="ae125d5f933a938a0ed7c83f79e60a6e"/>
+    </bean>
+
+    <bean name="top-96567050032" desc="蜜源1688">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25089462"/>
+        <properties key="appSecret" value="fb6ff2291c0684afaef83913ab819aa1"/>
+    </bean>
+
+    <bean name="top-28176750484" desc="蜜源新媒体科技有限公司">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25072865"/>
+        <properties key="appSecret" value="46c2328a77902daccadc1c876689f793"/>
+    </bean>
+
+    <bean name="top-108870250016" desc="广州蜜源0002">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="27426118"/>
+        <properties key="appSecret" value="a1ecf72924655e9e3474bafb93342217"/>
+    </bean>
+
+    <bean name="top-108869950100" desc="广州蜜源0007">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="27437247"/>
+        <properties key="appSecret" value="0168ed1a75fdd4957eb76d631c3b6168"/>
+    </bean>
+
+    <bean name="top-108868050456" desc="广州蜜源0012">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="27408392"/>
+        <properties key="appSecret" value="52d3a8478acb7d9d494884a31c457129"/>
+    </bean>
+
+    <bean name="top-109013350336" desc="广州蜜源0014">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="27434262"/>
+        <properties key="appSecret" value="e1d30e9b40355713864d497a5dab48d8"/>
+    </bean>
+
+    <bean name="top-109012250499" desc="广州蜜源0015">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="27427113"/>
+        <properties key="appSecret" value="1b764344229b84e54753c955f1797dd3"/>
+    </bean>
+
+    <bean name="top-109014250140" desc="广州蜜源0016">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="27417940"/>
+        <properties key="appSecret" value="d8e3abea8bca52ba8d318196b0bcf8c8"/>
+    </bean>
+
+    <bean name="top-96557950214" desc="广州蜜源">
+        <properties  key="url" value ="http://gw.api.taobao.com/router/rest"/>
+        <properties  key="appkey" value ="25107719"/>
+        <properties key="appSecret" value="07c806cd28d4453e51900467ca21d1da"/>
+    </bean>
+
+    <bean name="jd">
+        <properties  key="serverUrl" value ="https://router.jd.com/api"/>
+        <properties  key="accessToken" value =""/>
+        <properties key="appKey" value="b252aed95616f9f3b2ea328ba2ba4ed5"/>
+        <properties key="appSecret" value="f95c922c66dd47bdbb747687c3d57f47"/>
+    </bean>
+
+    <bean name="suning">
+        <properties  key="serverUrl" value ="https://open.suning.com/api/http/sopRequest"/>
+        <properties key="appKey" value="bf01aa890701747fdce24b4ae7e8d2be"/>
+        <properties key="appSecret" value="4752ce974dfc8246b107b9522bd9220c"/>
+    </bean>
+
+    <bean name="pdd">
+        <properties  key="clientId" value ="2abdd7fb6166487cbdee4c26950620a8"/>
+        <properties key="clientSecret" value="fec34d97a453e25ed335043a4a82d351120ac2ed"/>
+    </bean>
+
+    <bean name="vipUrl">
+        <properties  key="appKey" value ="5da56400"/>
+        <properties key="clientSecret" value="59C0742BFAA728CCEFB60616D3CCAB0D"/>
+        <properties key="appURL" value="https://gw.vipapis.com/"/>
+    </bean>
+
+    <bean name="vipGoods">
+        <properties  key="appKey" value ="5da56400"/>
+        <properties key="clientSecret" value="59C0742BFAA728CCEFB60616D3CCAB0D"/>
+        <properties key="appURL" value="https://gw.vipapis.com/"/>
+    </bean>
+
+    <bean name="vipOrder">
+        <properties  key="appKey" value ="5da56400"/>
+        <properties key="clientSecret" value="59C0742BFAA728CCEFB60616D3CCAB0D"/>
+        <properties key="appURL" value="https://gw.vipapis.com/"/>
+    </bean>
+
+    <bean name="kaola">
+        <properties  key="url" value ="https://cps.kaola.com/zhuanke/api"/>
+        <properties key="methodVersion" value="1.0"/>
+        <properties key="signMethod" value="md5"/>
+        <properties key="zhuangKeId" value="zhuanke_700981165"/>
+        <properties key="secretKey" value="31740c9c-0400-43da-8347-b1faa8ddf027"/>
+    </bean>
+
+    <bean name="mysql-miyuan">
+        <properties  key="url" value ="jdbc:mysql://192.168.40.3:3306/miyuan_platform"/>
+        <properties  key="user" value ="newmodel"/>
+        <properties  key="password" value ="MRS68lpemft3F1TGeeU="/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+
+    <bean name="miyuan-order">
+        <properties  key="url" value ="jdbc:mysql://172.20.4.184:3306/miyuan_order"/>
+        <properties  key="user" value ="code_read"/>
+        <properties  key="password" value ="97e07c4e00804fa4"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+    <bean name="miyuan-order-shard-0">
+        <properties  key="url" value ="jdbc:mysql://172.20.4.185:3306/miyuan_order_shard_0"/>
+        <properties  key="user" value ="code_read"/>
+        <properties  key="password" value ="97e07c4e00804fa4"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+    <bean name="miyuan-order-shard-1">
+        <properties  key="url" value ="jdbc:mysql://172.20.4.186:3306/miyuan_order_shard_1"/>
+        <properties  key="user" value ="code_read"/>
+        <properties  key="password" value ="97e07c4e00804fa4"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+    <bean name="miyuan-order-shard-2">
+        <properties  key="url" value ="jdbc:mysql://172.20.4.187:3306/miyuan_order_shard_2"/>
+        <properties  key="user" value ="code_read"/>
+        <properties  key="password" value ="97e07c4e00804fa4"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+    <bean name="miyuan-order-shard-3">
+        <properties  key="url" value ="jdbc:mysql://172.20.4.188:3306/miyuan_order_shard_3"/>
+        <properties  key="user" value ="code_read"/>
+        <properties  key="password" value ="97e07c4e00804fa4"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+
+
+    <bean name="mongo-miyuan">
+        <properties  key="host" value ="192.168.10.97"/>
+        <properties  key="port" value ="28885"/>
+        <properties  key="userName" value ="read"/>
+        <properties  key="password" value ="3e6e82dff1readonly01"/>
+        <properties key="dataBase" value="miyuan"/>
+        <properties  key="connectionsPerHost" value ="1"/>
+        <properties  key="maxWaitTime" value ="100000"/>
+        <properties  key="connectTimeout" value ="100000"/>
+    </bean>
+
+    <bean name="redis-miyuan">
+        <properties  key="host" value ="192.168.10.84:6379,192.168.10.85:6379,192.168.10.86:6379,192.168.10.87:6379,192.168.10.88:6379,192.168.10.89:6379,192.168.10.101:6379,192.168.10.102:6379,192.168.10.103:6379,192.168.10.104:6379,192.168.10.105:6379,192.168.10.106:6379"/>
+    </bean>
+
+    <bean name="es-miyuan">
+        <properties  key="poolSize" value ="1"/>
+        <properties  key="clusterName" value ="prod-es-cluster"/>
+        <properties  key="hostName" value ="192.168.10.90,192.168.10.91,192.168.10.92"/>
+        <properties  key="port" value ="9300"/>
+    </bean>
+
+    <bean name="rabbitmq-miyuan">
+        <properties  key="host" value ="192.168.10.98"/>
+        <properties  key="username" value ="benchmark"/>
+        <properties  key="password" value ="benchmark"/>
+        <properties  key="port" value ="5672"/>
+    </bean>
+
+    <bean name="rocketmq-miyuan">
+        <properties  key="producerGroup" value ="test"/>
+        <properties  key="namesrvAddr" value ="172.20.4.167:9876;172.20.4.166:9876;172.20.4.165:9876"/>
+        <properties  key="retryTimesWhenSendFailed" value ="1"/>
+        <properties  key="sendMsgTimeout" value ="3000"/>
+    </bean>
+
+</beans>

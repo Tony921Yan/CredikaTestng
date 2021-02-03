@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "common">
+        <parm key="token" value ="ssss"/>
+        <parm key="userId" value ="208245"/>
+        <parm key="timestamp" value="1"/>
+        <parm key="nonce" value="1"/>
+        <parm key="Content-Type" value="application/json;charset=UTF-8"/>
+        <parm key="token" value="11167015,1614224108,35eba47def5f5bdf"/>
+        <parm key="userId" value="11167015"/>
+        <parm key="otherToken" value="3tfTJBi0Qnk6qWETjvifPauTFWtrLJoKqbOVbtOA3NJlZJk2dZaquSJ/GOlWl8a+"/>
+        <parm key="otherUserId" value="22038722"/>
+    </test>
+</data>

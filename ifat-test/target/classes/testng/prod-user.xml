@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "user"  verbose="1">
+    <test name="我的粉丝">
+        <classes>
+            <class name = "com.miyuan.test.api.user.FansGetFansTest"/>
+        </classes>
+    </test>
+</suite>

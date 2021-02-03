@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "centerGetCouponUrlSuccess">
+        <parm key="keywords" value ="衣服"/>
+        <parm key="itemSource" value="1"/>
+        <parm key="searchType" value="0"/>
+    </test>
+
+    <test name = "centerGetCouponUrlItemSource2">
+        <parm key="keywords" value ="衣服"/>
+        <parm key="itemSource" value="2"/>
+        <parm key="searchType" value="0"/>
+    </test>
+
+    <test name = "centerGetCouponUrlItemSource3">
+        <parm key="keywords" value ="衣服"/>
+        <parm key="itemSource" value="3"/>
+        <parm key="searchType" value="0"/>
+    </test>
+
+    <test name = "centerGetCouponUrlItemSource4">
+        <parm key="keywords" value ="衣服"/>
+        <parm key="itemSource" value="4"/>
+        <parm key="searchType" value="0"/>
+    </test>
+
+    <test name = "centerGetCouponUrlItemSource5">
+        <parm key="keywords" value ="衣服"/>
+        <parm key="itemSource" value="5"/>
+        <parm key="searchType" value="0"/>
+    </test>
+</data>

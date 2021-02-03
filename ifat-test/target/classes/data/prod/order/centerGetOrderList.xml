@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "centerGetOrderListSuccess">
+        <parm key="page" value ="1"/>
+        <parm key="channelCode" value="ALL"/>
+        <parm key="orderStatus" value="5"/>
+        <parm key="orderBuyType" value="0"/>
+    </test>
+    <test name = "centerGetAllOrderListSuccess">
+        <parm key="page" value ="1"/>
+        <parm key="channelCode" value="ALL"/>
+        <parm key="orderStatus" value="5"/>
+        <parm key="orderBuyType" value="0"/>
+    </test>
+    <test name = "centerGetOrderListSuccess1">
+        <parm key="page" value ="1"/>
+        <parm key="channelCode" value="ALL"/>
+        <parm key="orderStatus" value="0"/>
+        <parm key="orderBuyType" value="3"/>
+    </test>
+
+    <test name = "centerGetOrderListSuccess2">
+        <parm key="page" value ="1"/>
+        <parm key="channelCode" value="ALL"/>
+        <parm key="orderStatus" value="0"/>
+        <parm key="orderBuyType" value="3"/>
+    </test>
+
+    <test name = "centerGetFailOrderListSuccess">
+        <parm key="page" value ="1"/>
+        <parm key="channelCode" value="ALL"/>
+        <parm key="orderStatus" value="4"/>
+        <parm key="orderBuyType" value="1"/>
+    </test>
+    <test name = "centerGetFansOrderListSuccess">
+        <parm key="page" value ="1"/>
+        <parm key="channelCode" value="ALL"/>
+        <parm key="orderStatus" value="5"/>
+        <parm key="orderBuyType" value="2"/>
+    </test>
+    <test name = "centerGetTeamsOrderListSuccess">
+        <parm key="page" value ="1"/>
+        <parm key="channelCode" value="ALL"/>
+        <parm key="orderStatus" value="5"/>
+        <parm key="orderBuyType" value="3"/>
+    </test>
+</data>

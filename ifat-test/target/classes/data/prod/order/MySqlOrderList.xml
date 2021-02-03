@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "TBorderMysqlList">
+        <parm key="channel" value ="JD"/>
+        <parm key="userId" value="208245"/>
+        <parm key="date" value="20210106"/>
+        <parm key="starttime" value="2021-01-06 00:00:00"/>
+        <parm key="endtime" value="2021-01-07 00:00:00"/>
+    </test>
+    <test name = "TB_MonthItem">
+        <parm key="channel" value ="TB"/>
+        <parm key="userId" value="1133271"/>
+        <parm key="starttime" value="2020-10-01 00:00:00"/>
+        <parm key="endtime" value="2020-11-01 00:00:00"/>
+    </test>
+    <test name = "dayItem">
+        <parm key="channel" value ="PDD"/>
+        <parm key="userId" value="1450589"/>
+        <parm key="orderStatus" value="1,2,3,4"/>
+        <parm key="starttime" value="2020-10-04 00:00:00"/>
+        <parm key="endtime" value="2020-10-05 00:00:00"/>
+    </test>
+    <test name = "forDayItem">
+        <parm key="channel" value ="TB"/>
+        <parm key="orderStatus" value="1,2,3,4"/>
+        <parm key="starttime" value="2020-11-10 00:00:00"/>
+        <parm key="endtime" value="2021-01-16 00:00:00"/>
+    </test>
+    <test name = "forMonthItem">
+        <parm key="channel" value ="HUAWEI"/>
+        <parm key="orderStatus" value="1,2,3,4"/>
+        <parm key="starttime" value="2020-11-01 00:00:00"/>
+        <parm key="endtime" value="2021-01-01 00:00:00"/>
+    </test>
+
+</data>

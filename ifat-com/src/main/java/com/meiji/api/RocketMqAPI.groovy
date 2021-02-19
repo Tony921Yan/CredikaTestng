@@ -2,7 +2,7 @@ package com.meiji.api
 
 import org.apache.rocketmq.client.producer.SendResult
 import org.apache.rocketmq.common.message.Message
-import com.miyuan.factory.FactorySupport
+import com.meiji.factory.FactorySupport
 import org.apache.rocketmq.client.producer.DefaultMQProducer
 
 class RocketMqAPI {

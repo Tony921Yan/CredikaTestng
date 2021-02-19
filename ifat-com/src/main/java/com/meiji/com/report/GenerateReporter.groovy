@@ -1,7 +1,7 @@
 package com.meiji.com.report
 
-import com.miyuan.util.DateUtil
-import com.miyuan.util.ResourceUtil
+import com.meiji.util.DateUtil
+import com.meiji.util.ResourceUtil
 import org.apache.velocity.Template
 import org.apache.velocity.VelocityContext
 import org.apache.velocity.app.Velocity

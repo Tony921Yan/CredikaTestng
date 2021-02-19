@@ -1,6 +1,6 @@
 package com.meiji.api
 
-import com.miyuan.factory.FactorySupport
+import com.meiji.factory.FactorySupport
 import redis.clients.jedis.JedisCluster
 
 class RedisAPI {

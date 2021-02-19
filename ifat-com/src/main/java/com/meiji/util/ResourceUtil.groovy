@@ -1,7 +1,7 @@
 package com.meiji.util
 
-import com.miyuan.com.TestEnv
-import com.miyuan.constants.TestConstants
+import com.meiji.com.TestEnv
+import com.meiji.constants.TestConstants
 
 import groovy.io.FileType
 import groovy.xml.XmlParser

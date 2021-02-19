@@ -1,6 +1,6 @@
 package com.meiji.com
 
-import com.miyuan.util.ResourceUtil
+import com.meiji.util.ResourceUtil
 
 class TestEnv {
     public static String getEnv(){

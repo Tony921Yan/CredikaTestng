@@ -1,25 +1,14 @@
 package com.meiji.factory
 
-import com.jd.open.api.sdk.DefaultJdClient
-import com.jd.open.api.sdk.JdClient
-import com.miyuan.util.ResourceUtil
+import com.meiji.util.ResourceUtil
 import com.mongodb.MongoClient
 import com.mongodb.MongoClientOptions
 import com.mongodb.MongoCredential
 import com.mongodb.ServerAddress
 import com.mongodb.client.MongoDatabase
-import com.pdd.pop.sdk.http.PopClient
-import com.pdd.pop.sdk.http.PopHttpClient
 import com.rabbitmq.client.Channel
 import com.rabbitmq.client.Connection
 import com.rabbitmq.client.ConnectionFactory
-import com.suning.api.DefaultSuningClient
-import com.taobao.api.DefaultTaobaoClient
-import com.taobao.api.TaobaoClient
-import com.vip.adp.api.open.service.UnionGoodsServiceHelper
-import com.vip.adp.api.open.service.UnionOrderServiceHelper
-import com.vip.adp.api.open.service.UnionUrlServiceHelper
-import com.vip.osp.sdk.context.InvocationContext
 import groovy.sql.Sql
 import org.apache.rocketmq.client.producer.DefaultMQProducer
 import org.elasticsearch.client.transport.TransportClient
@@ -29,7 +18,6 @@ import org.elasticsearch.common.transport.TransportAddress
 import org.elasticsearch.transport.client.PreBuiltTransportClient
 import redis.clients.jedis.HostAndPort
 import redis.clients.jedis.JedisCluster
-
 
 class FactorySupport {
     static Map<String, Object> factory = new HashMap<String, Object>()

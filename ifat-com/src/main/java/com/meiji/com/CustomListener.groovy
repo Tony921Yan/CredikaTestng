@@ -1,6 +1,6 @@
 package com.meiji.com
 
-import com.miyuan.util.JsonUtil
+import com.meiji.util.JsonUtil
 import org.testng.ITestResult
 import org.testng.Reporter
 import org.testng.TestListenerAdapter

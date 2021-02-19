@@ -1,6 +1,6 @@
 package com.meiji.debug
 
-import com.miyuan.service.EsService
+import com.meiji.service.EsService
 import org.testng.annotations.Test
 
 class EsDebug {

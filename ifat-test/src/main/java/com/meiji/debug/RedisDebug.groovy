@@ -1,11 +1,10 @@
 package com.meiji.debug
 
 
-import com.miyuan.service.RedisService
-import com.miyuan.util.JsonUtil
 import org.testng.annotations.Test
 
 class RedisDebug {
+
     @Test
     void test(){
         Object o = RedisService.get("23177620")
@@ -41,4 +40,5 @@ class RedisDebug {
         println(typeComJson)
         println(typeComJson.type)
     }
+
 }

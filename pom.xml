@@ -14,6 +14,14 @@
         <module>ifat-test</module>
     </modules>
 
+    <repositories>
+        <repository>
+            <id>miyuan</id>
+            <url>http://172.16.1.110:8081/repository/public/</url>
+        </repository>
+    </repositories>
+
+
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -31,7 +39,6 @@
         <aspectj.version>1.7.4</aspectj.version>
         <org.slf4j>1.7.25</org.slf4j>
         <com.google.inject>3.0</com.google.inject>
-        <taobao-sdk>3.1.5</taobao-sdk>
         <mongo-java-driver>3.12.7</mongo-java-driver>
         <mysql-connector-java>8.0.21</mysql-connector-java>
         <redis.clients>2.9.0</redis.clients>
@@ -43,11 +50,6 @@
         <org.uncommons>1.1.4</org.uncommons>
         <org.apache.velocity>1.7</org.apache.velocity>
         <miyuan-component-mq-rabbitmq>1.0-SNAPSHOT</miyuan-component-mq-rabbitmq>
-        <jd.cps-client>2.4.3</jd.cps-client>
-        <com.miyuan.suning>2.0.4</com.miyuan.suning>
-        <com.miyuan.pdd>1.0.0</com.miyuan.pdd>
-        <com.miyuan.vop-sdk>2.0.0</com.miyuan.vop-sdk>
-        <com.miyuan.osp-sdk>2.0.0</com.miyuan.osp-sdk>
         <org.jsoup>1.13.1</org.jsoup>
     </properties>
     <dependencyManagement>
@@ -121,12 +123,6 @@
                 <groupId>com.google.inject</groupId>
                 <artifactId>guice</artifactId>
                 <version>${com.google.inject}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.miyuan</groupId>
-                <artifactId>taobao-sdk</artifactId>
-                <version>${taobao-sdk}</version>
             </dependency>
 
             <dependency>

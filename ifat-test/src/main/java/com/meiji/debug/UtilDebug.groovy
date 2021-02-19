@@ -1,6 +1,5 @@
 package com.meiji.debug
 
-import com.miyuan.util.DateUtil
 import org.testng.annotations.Test
 
 class UtilDebug {

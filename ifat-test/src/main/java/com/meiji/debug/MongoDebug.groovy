@@ -1,6 +1,6 @@
 package com.meiji.debug
 
-import com.miyuan.service.MongoService
+import com.meiji.service.MongoService
 import org.testng.annotations.Test
 
 

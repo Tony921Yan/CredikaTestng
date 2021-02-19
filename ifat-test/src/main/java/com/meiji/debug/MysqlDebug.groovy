@@ -1,6 +1,5 @@
 package com.meiji.debug
 
-import com.miyuan.service.MysqlService
 import org.testng.annotations.Test
 
 class MysqlDebug {

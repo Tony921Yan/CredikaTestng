@@ -198,35 +198,6 @@
                 <version>${miyuan-component-mq-rabbitmq}</version>
             </dependency>
 
-            <dependency>
-                <groupId>jd</groupId>
-                <artifactId>cps-client</artifactId>
-                <version>${jd.cps-client}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.miyuan</groupId>
-                <artifactId>pop-skd</artifactId>
-                <version>${com.miyuan.pdd}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.miyuan</groupId>
-                <artifactId>suning</artifactId>
-                <version>${com.miyuan.suning}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.miyuan</groupId>
-                <artifactId>vop-sdk</artifactId>
-                <version>${com.miyuan.vop-sdk}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.miyuan</groupId>
-                <artifactId>osp-sdk</artifactId>
-                <version>${com.miyuan.osp-sdk}</version>
-            </dependency>
-
 
             <dependency>
                 <groupId>org.jsoup</groupId>

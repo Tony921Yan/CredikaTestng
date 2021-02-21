@@ -5,24 +5,23 @@ import com.alibaba.dubbo.config.ReferenceConfig
 import com.alibaba.dubbo.config.RegistryConfig
 import com.alibaba.dubbo.config.utils.ReferenceConfigCache
 import com.alibaba.dubbo.rpc.service.GenericService
-import com.alibaba.fastjson.JSON
 
 class DubboService {
-    static Object invoke(String interfaceName,String methodName,String version,Integer timeOut,String[] paramTypes,Object[] params){
+    static Object invoke(String address,String interfaceName,String methodName,String version,Integer timeOut,String[] paramTypes,Object[] params){
         // 普通编码配置方式
-        ApplicationConfig application = new ApplicationConfig();
-        application.setName("test");
+        ApplicationConfig application = new ApplicationConfig()
+        application.setName("test")
 
         // 连接注册中心配置
-        RegistryConfig registry = new RegistryConfig();
-        registry.setAddress("zookeeper://zk-cs.uat01.svc.cluster.local:2181");
+        RegistryConfig registry = new RegistryConfig()
+        registry.setAddress(address)
 
-        ReferenceConfig<GenericService> reference = new ReferenceConfig<GenericService>();
+        ReferenceConfig<GenericService> reference = new ReferenceConfig<GenericService>()
 
-        reference.setApplication(application);
-        reference.setRegistry(registry);
-        reference.setInterface(interfaceName);
-        reference.setVersion(version);
+        reference.setApplication(application)
+        reference.setRegistry(registry)
+        reference.setInterface(interfaceName)
+        reference.setVersion(version)
         reference.setTimeout(timeOut)
         // 声明为泛化接口
         reference.setGeneric(true);

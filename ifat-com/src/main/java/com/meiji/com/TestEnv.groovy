@@ -8,7 +8,7 @@ class TestEnv {
         String propertiesEnv = ResourceUtil.getEnvConfig("env")
         String env = vmEnv==null ? propertiesEnv:vmEnv
         if (env == null){
-            return "uat01"
+            return "uat"
         }
         return env
     }

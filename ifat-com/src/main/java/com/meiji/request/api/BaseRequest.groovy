@@ -18,8 +18,9 @@ abstract class  BaseRequest {
     public String preInvoke
 
     BaseRequest invoke(TestContext testContext){
-        String zk  = ResourceUtil.getBeanData("miyuan-url").get("infra")
+        String address  = ResourceUtil.getBeanData("dubbo").get("url")
         List req = new ArrayList()
+        Map reqMapForLog = new HashMap()
         for(int i=0;i<params.size();i++){
             if(!paramsType.get(i).toString().startsWith("java.")) {
                 List list = params.get(i) as List
@@ -31,26 +32,34 @@ abstract class  BaseRequest {
                 }
                 reqParam.put("class",paramsType.get(i))
                 req.add(reqParam)
+                reqMapForLog.put(paramsType.get(i),reqParam)
             }else {
-                List list = params.get(i) as List
-                if (ObjectUtils.isNotEmpty(testContext.get(list.get(0)))) {
-                    req.add(testContext.get(list.get(0)).toString())
+                String str
+                if(params.get(i).class.isInstance(new ArrayList()) ){
+                    List list = params.get(i) as List
+                    str = list.get(0)
+                }else {
+                    str = params.get(i) as String
+                }
+                if (ObjectUtils.isNotEmpty(testContext.get(str))) {
+                    req.add(testContext.get(str).toString())
+                    reqMapForLog.put(str,testContext.get(str))
                 }
             }
         }
-        println("interface:"+interfaceName)
-        println("methodName:"+methodName)
-        println("param:"+ req)
-        Object result = DubboService.invoke(interfaceName,methodName,version,timeOut,paramsType as String[],req as Object[])
-        println("response:"+JsonUtil.prettyJson(result.toString()))
+        //println("interface:"+interfaceName)
+        //println("methodName:"+methodName)
+        //println("param:"+ req)
+        Object result = DubboService.invoke(address,interfaceName,methodName,version,timeOut,paramsType as String[],req as Object[])
+        //println("response:"+JsonUtil.prettyJson(result.toString()))
         testContext.put("response",result)
         testContext.appendLog("interface:"+interfaceName)
         testContext.appendLog("method:"+methodName)
-        testContext.appendLog("params:"+req)
+        testContext.appendLog("params:"+reqMapForLog)
         testContext.appendLog("response:"+JsonUtil.prettyJson(result.toString()))
         testContext.put("allure_interface",interfaceName)
         testContext.put("allure_method", methodName)
-        testContext.put("allure_params", req)
+        testContext.put("allure_params", reqMapForLog)
         testContext.put("allure_response", JsonUtil.prettyJson(result.toString()))
         return this
     }

@@ -4,6 +4,8 @@ import com.meiji.com.TestContext
 import com.meiji.service.DubboService
 import com.meiji.util.JsonUtil
 import com.meiji.util.ResourceUtil
+import com.meiji.vo.ResultRpcVO
+import groovy.json.JsonSlurper
 import org.apache.commons.lang3.ObjectUtils
 
 import java.lang.reflect.Method
@@ -12,6 +14,7 @@ abstract class  BaseRequest {
     public String interfaceName
     public String methodName
     public String version
+    public String group
     public Integer timeOut
     public List paramsType
     public List params
@@ -47,20 +50,16 @@ abstract class  BaseRequest {
                 }
             }
         }
-        //println("interface:"+interfaceName)
-        //println("methodName:"+methodName)
-        //println("param:"+ req)
-        Object result = DubboService.invoke(address,interfaceName,methodName,version,timeOut,paramsType as String[],req as Object[])
-        //println("response:"+JsonUtil.prettyJson(result.toString()))
+        Object result = DubboService.invoke(address,interfaceName,methodName,version,group,timeOut,paramsType as String[],req as Object[])
         testContext.put("response",result)
         testContext.appendLog("interface:"+interfaceName)
         testContext.appendLog("method:"+methodName)
-        testContext.appendLog("params:"+reqMapForLog)
-        testContext.appendLog("response:"+JsonUtil.prettyJson(result.toString()))
+        testContext.appendLog("params:"+JsonUtil.prettyJson(JsonUtil.toJsonString(reqMapForLog)))
+        testContext.appendLog("response:"+ JsonUtil.prettyJson(JsonUtil.toJsonString(result)))
         testContext.put("allure_interface",interfaceName)
         testContext.put("allure_method", methodName)
         testContext.put("allure_params", reqMapForLog)
-        testContext.put("allure_response", JsonUtil.prettyJson(result.toString()))
+        testContext.put("allure_response", result)
         return this
     }
 

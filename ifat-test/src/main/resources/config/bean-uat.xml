@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <beans>
     <bean name = "dubbo">
-        <properties  key="url" value ="zookeeper://zk-cs.uat02.svc.cluster.local:2181"/>
+        <properties  key="url" value ="nacos://172.31.0.208:8848?namespace=dev"/>
     </bean>
 </beans>

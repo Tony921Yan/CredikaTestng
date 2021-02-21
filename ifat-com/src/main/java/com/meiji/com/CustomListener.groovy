@@ -41,13 +41,13 @@ class CustomListener extends TestListenerAdapter{
     }
 
     //测试步骤
-    public void caseStep(def interfaceName, def methodName, def param, String response)
+    public static void caseStep(def interfaceName, def methodName, def param, def response)
     {
         def jsonOutput = new JsonOutput()
         Allure.addAttachment("接口", interfaceName.toString())
         Allure.addAttachment("方法", methodName.toString())
-        Allure.addAttachment("参数", jsonOutput.prettyPrint(jsonOutput.toJson(param)))
-        Allure.addAttachment("响应", JsonUtil.prettyJson(response))
+        Allure.addAttachment("参数", jsonOutput.prettyPrint(JsonUtil.toJsonString(param)))
+        Allure.addAttachment("响应", jsonOutput.prettyPrint(JsonUtil.toJsonString(response)))
     }
 
 }

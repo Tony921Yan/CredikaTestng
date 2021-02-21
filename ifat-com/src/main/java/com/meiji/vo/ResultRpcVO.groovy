@@ -1,15 +1,15 @@
 package com.meiji.vo
 
 class ResultRpcVO {
-    private String code
+    public String code
 
-    private String msg
+    public String msg
 
-    private String trace
+    public String trace
 
-    private Object data
+    public Object data
 
-    private Long timestamp
+    public Long timestamp
 
     public ResultRpcVO() {
 

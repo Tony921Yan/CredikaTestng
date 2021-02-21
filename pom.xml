@@ -14,12 +14,12 @@
         <module>ifat-test</module>
     </modules>
 
-    <repositories>
-        <repository>
-            <id>miyuan</id>
-            <url>http://172.16.1.110:8081/repository/public/</url>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>miyuan</id>-->
+<!--            <url>http://172.16.1.110:8081/repository/public/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
 
     <properties>
@@ -51,6 +51,7 @@
         <org.apache.velocity>1.7</org.apache.velocity>
         <miyuan-component-mq-rabbitmq>1.0-SNAPSHOT</miyuan-component-mq-rabbitmq>
         <org.jsoup>1.13.1</org.jsoup>
+        <org.apache.dubbo>2.7.7</org.apache.dubbo>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -201,71 +202,16 @@
                 <version>${org.jsoup}</version>
             </dependency>
 
-
-<!--            <dependency>-->
-<!--                <groupId>org.apache.zookeeper</groupId>-->
-<!--                <artifactId>zookeeper</artifactId>-->
-<!--                <version>3.4.9</version>-->
-<!--                <exclusions>-->
-<!--                    <exclusion>-->
-<!--                        <artifactId>log4j</artifactId>-->
-<!--                        <groupId>log4j</groupId>-->
-<!--                    </exclusion>-->
-<!--                    <exclusion>-->
-<!--                        <artifactId>slf4j-log4j12</artifactId>-->
-<!--                        <groupId>org.slf4j</groupId>-->
-<!--                    </exclusion>-->
-<!--                    <exclusion>-->
-<!--                        <artifactId>slf4j-api</artifactId>-->
-<!--                        <groupId>org.slf4j</groupId>-->
-<!--                    </exclusion>-->
-<!--                </exclusions>-->
-<!--            </dependency>-->
-
             <dependency>
-                <groupId>com.101tec</groupId>
-                <artifactId>zkclient</artifactId>
-                <version>0.10</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>slf4j-api</artifactId>
-                        <groupId>org.slf4j</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.zookeeper</groupId>
-                <artifactId>zookeeper</artifactId>
-                <version>3.4.9</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>slf4j-api</artifactId>
-                        <groupId>org.slf4j</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>com.alibaba</groupId>
+                <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo</artifactId>
-                <version>2.5.3</version>
+                <version>${org.apache.dubbo}</version>
             </dependency>
 
             <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-api</artifactId>
-                <version>1.7.5</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-core</artifactId>
-                <version>1.0.11</version>
-            </dependency>
-            <dependency>
-                <groupId>ch.qos.logback</groupId>
-                <artifactId>logback-classic</artifactId>
-                <version>1.0.11</version>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-registry-nacos</artifactId>
+                <version>${org.apache.dubbo}</version>
             </dependency>
 
         </dependencies>

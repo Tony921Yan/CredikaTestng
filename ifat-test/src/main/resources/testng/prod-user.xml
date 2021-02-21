@@ -2,7 +2,7 @@
 <suite name = "user"  verbose="1">
     <test name="我的粉丝">
         <classes>
-            <class name = "com.meiji.test.api.marketing.IsFirstOrderUserTest"/>
+            <class name = "com.meiji.test.api.goods.GetGoodsByPageTest"/>
         </classes>
     </test>
 </suite>

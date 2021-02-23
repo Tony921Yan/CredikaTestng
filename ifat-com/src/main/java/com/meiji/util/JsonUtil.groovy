@@ -29,6 +29,10 @@ class JsonUtil {
         return JSON.parseObject(str)
     }
 
+    public static JSON objToJsonList(Object str){
+        return JSON.parseArray(str)
+    }
+
 
     public static String toJsonString(Object obj){
         return JSON.toJSONString(obj);

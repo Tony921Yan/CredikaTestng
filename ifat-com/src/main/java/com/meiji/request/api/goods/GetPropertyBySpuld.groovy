@@ -3,15 +3,15 @@ package com.meiji.request.api.goods
 import com.meiji.com.TestContext
 import com.meiji.request.api.BaseRequest
 
-class GetGoodsByPage extends BaseRequest{
+class GetPropertyBySpuld extends BaseRequest{
     {
         super.interfaceName = "com.platform.goods.proxy.api.GoodsMgrService"  //接口路径
-        super.methodName="getGoodsByPage"
+        super.methodName="getPropertyBySpuId"
         super.version="1.0"
         super.group="on"
         super.timeOut=3000
-        super.paramsType=["com.platform.goods.proxy.vo.request.GoodsConditionRequestVO"] //请求参数
-        super.params = [["categoryId","spuCodeAndName","skuCode","startPrice","endPrice","startNum","endNum","startDate","endDate","pageNum","pageSize"]]
+        super.paramsType = ["com.platform.goods.proxy.vo.request.PropertySearchRequestVO"] //请求参数
+        super.params = ["spuId"]
     }
 
 

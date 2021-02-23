@@ -2,5 +2,6 @@
 <beans>
     <bean name = "dubbo">
         <properties  key="url" value ="nacos://172.31.0.208:8848?namespace=dev"/>
+<!--        <properties  key="url" value ="nacos://172.31.0.208:8848?namespace=public&amp;group=xiezy"/>-->
     </bean>
 </beans>

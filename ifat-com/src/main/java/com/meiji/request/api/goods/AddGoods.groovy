@@ -9,7 +9,7 @@ class AddGoods extends BaseRequest{
         super.methodName="addGoods"
         super.version="1.0"
         super.group="on"
-        super.timeOut=3000
+        super.timeOut=10000
         super.paramsType=["com.platform.goods.proxy.vo.request.SpuAddRequestVO"] //请求参数
         super.params = [["uuid","name","sellingPoint","originAddress","brandId","frontDeskCategoryId",
                          "backgroundCategoryId","manyProperty","createBy","updateBy","pics","detail","skus"]]

@@ -30,7 +30,7 @@ abstract class  BaseRequest {
                 Map reqParam = new HashMap()
                 for (String str : list) {
                     if (ObjectUtils.isNotEmpty(testContext.get(str))) {
-                        reqParam.put(str, testContext.get(str).toString())
+                        reqParam.put(str, testContext.get(str))
                     }
                 }
                 reqParam.put("class",paramsType.get(i))

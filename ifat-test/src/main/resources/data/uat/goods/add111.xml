@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addGoods">
+        <parm key="uuid" value ="201"/>
+        <parm key="name" value ="test"/>
+        <parm key="sellingPoint" value ="好看"/>
+        <parm key="originAddress" value ="湖南"/>
+        <parm key="brandId" value ="1"/>
+        <parm key="frontDeskCategoryId" value ="6"/>
+        <parm key="backgroundCategoryId" value ="6"/>
+        <parm key="manyProperty" value ="1"/>
+        <parm key="createBy" value ="110"/>
+        <parm key="updateBy" value ="admin"/>
+        <parm key="pics" value ='[{"sort": 1,"url": "http","class":"com.platform.goods.proxy.vo.request.PicAddRequestVO"},{"sort": 2,"url": "http2","class":"com.platform.goods.proxy.vo.request.PicAddRequestVO"}]'/>
+        <parm key="detail" value ="rpc interface testing.."/>
+        <parm key="skus" value =' [{"class":"com.platform.goods.proxy.vo.request.SkuAddRequestVO","unitPrice": "230","netWeightUnit": "g","grossWeight": "110","netWeight": "110","num": 10,"grossWeightUnit": "g","retailPrice": "230","properties": [{ "class":"com.platform.goods.proxy.vo.request.SkuPropertyRelationShipAddRequestVO","propertyValueId":1,"property": "颜色","propertyValue": "红色","sort": 0,"propertyId": 1},{"class":"com.platform.goods.proxy.vo.request.SkuPropertyRelationShipAddRequestVO","propertyValueId": 4,"property": "大小","propertyValue": "X","sort": 1,"propertyId": 2}]}]'/>
+    </test>
+</data>

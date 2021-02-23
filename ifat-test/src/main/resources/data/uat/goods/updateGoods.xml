@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateGoods">
+        <parm key="uuid" value ="198"/>
+        <parm key="id" value ="20024644938"/>
+        <parm key="sellingPoint" value ="好看"/>
+        <parm key="originAddress" value ="湖南"/>
+        <parm key="brandId" value ="1"/>
+        <parm key="frontDeskCategoryId" value ="6"/>
+        <parm key="backgroundCategoryId" value ="6"/>
+        <parm key="manyProperty" value ="1"/>
+        <parm key="grossWeight" value ="110"/>
+        <parm key="netWeight" value ="100"/>
+        <parm key="netWeightUnit" value ="g"/>
+        <parm key="grossWeightUnit" value ="g"/>
+        <parm key="updateBy" value ="admin"/>
+        <parm key="pics" value ='[{"sort": 1,"url": "http"},{"sort": 2,"url": "http2"}]'/>
+        <parm key="detail" value ="rpc interface testing.."/>
+        <parm key="skus" value ='"skus": [{"unitPrice": "230","netWeightUnit": "g","grossWeight": "110","netWeight": "110","num": 10,"grossWeightUnit": "g","retailPrice": "230","properties": [{"propertyValueId": 1,"property": "颜色","propertyValue": "红色","sort": 0,"propertyId": 1},{"propertyValueId": 4,"property": "大小","propertyValue": "X","sort": 1,"propertyId": 2}]},{"unitPrice": "230","netWeightUnit": "g","grossWeight": "110","netWeight": "110","num": 10,"grossWeightUnit": "g","retailPrice": "230","properties": [{"propertyValueId": 2,"property": "颜色","propertyValue": "白色","sort": 0,"propertyId": 1},{"propertyValueId": 5,"property": "大小","propertyValue": "XL","sort": 1,"propertyId": 2}]}]'/>
+    </test>
+</data>

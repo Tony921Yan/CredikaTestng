@@ -4,6 +4,7 @@ import org.apache.dubbo.config.ApplicationConfig
 import org.apache.dubbo.config.ReferenceConfig
 import org.apache.dubbo.config.RegistryConfig
 import org.apache.dubbo.config.utils.ReferenceConfigCache
+import org.apache.dubbo.rpc.RpcContext
 import org.apache.dubbo.rpc.service.GenericService
 
 class DubboService {
@@ -29,7 +30,7 @@ class DubboService {
 
         ReferenceConfigCache cache = ReferenceConfigCache.getCache();
         GenericService genericService = cache.get(reference);
-
+        RpcContext.getContext().setAttachment("index", "1");
         Object result = genericService.$invoke(methodName, paramTypes,params);
         return result;
     }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getCategoryByName">
+        <parm key="name" value ="男鞋1"/>
+        <parm key="type" value ="2"/>
+    </test>
+</data>

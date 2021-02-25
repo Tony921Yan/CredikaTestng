@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateGoodProperty">
+        <parm key="id" value ="31"/>
+        <parm key="name" value ="test1...."/>
+        <parm key="isMust" value ="0"/>
+        <parm key="type" value ="0"/>
+        <parm key="remark" value ="test11111111"/>
+        <parm key="updateBy" value ="测试111111"/>
+        <parm key="goodPropertyValues" value ='[{"value":"大1111","propertyId":"1","sort":"1"}]'/>
+    </test>
+</data>

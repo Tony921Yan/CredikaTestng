@@ -50,6 +50,7 @@ abstract class  BaseRequest {
                 }
             }
         }
+        println("params:"+JsonUtil.prettyJson(JsonUtil.toJsonString(reqMapForLog)))
         Object result = DubboService.invoke(address,interfaceName,methodName,version,group,timeOut,paramsType as String[],req as Object[])
         testContext.put("response",result)
         testContext.appendLog("interface:"+interfaceName)

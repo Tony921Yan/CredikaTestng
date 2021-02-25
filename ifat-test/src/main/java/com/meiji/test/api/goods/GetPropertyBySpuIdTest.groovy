@@ -11,6 +11,6 @@ class GetPropertyBySpuIdTest extends BaseTest {
     @Test(description = "根据spuid获取属性 getPropertyBySpuId" ,groups = ["prod","uat"],testName = "getPropertyBySpuId",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getPropertyBySpuld(TestContext testContext){
-        getPropertyBySpuld.invoke(testContext)
+        getPropertyBySpuld.invoke(testContext).baseAssert(testContext)
     }
 }

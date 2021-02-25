@@ -29,7 +29,7 @@ class JsonUtil {
         return JSON.parseObject(str)
     }
 
-    public static JSON objToJsonList(Object str){
+    public static JSON  objToJsonList(Object str){
         return JSON.parseArray(str)
     }
 

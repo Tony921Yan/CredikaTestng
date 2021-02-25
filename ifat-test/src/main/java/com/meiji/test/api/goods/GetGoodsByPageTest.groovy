@@ -11,6 +11,6 @@ class GetGoodsByPageTest extends BaseTest {
     @Test(description = "获取商品列表" ,groups = ["prod","uat"],testName = "getGoodsByPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGoodsByPage(TestContext testContext){
-        getGoodsByPage.invoke(testContext)
+        getGoodsByPage.invoke(testContext).baseAssert(testContext)
     }
 }

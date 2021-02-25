@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateGoodPropertyGroup">
+        <parm key="id" value ="20"/>
+        <parm key="name" value ="颜色_更新后属性组"/>
+        <parm key="code" value ="1389000"/>
+        <parm key="remark" value ="更新备注...."/>
+        <parm key="status" value ="0"/>
+        <parm key="categoryId" value ="1"/>
+        <parm key="updateBy" value ="测试员1"/>
+        <parm key="list" value ='[{"propertyId":"100","propertyName":"红色_更新后","sort":"0"}]'/>
+    </test>
+</data>

@@ -1,6 +1,7 @@
 package com.meiji.com
 
 import com.alibaba.fastjson.JSON
+import com.meiji.util.JsonUtil
 
 
 class TestContext extends HashMap{
@@ -9,7 +10,7 @@ class TestContext extends HashMap{
     }
 
     public Map getResponse(){
-        return (Map)JSON.parse(super.get("response").toString())
+        return (Map) JsonUtil.objToJson(JsonUtil.toJsonString(super.get("response")))
     }
 
     public Map getRequest(){

@@ -14,6 +14,6 @@ class AddGoddsTest extends BaseTest {
     public void addGoods(TestContext testContext){
         testContext.put("pics", JsonUtil.objToJsonList(testContext.get("pics")))
         testContext.put("skus", JsonUtil.objToJsonList(testContext.get("skus")))
-        addGoods.invoke(testContext)
+        addGoods.invoke(testContext).baseAssert(testContext)
     }
 }

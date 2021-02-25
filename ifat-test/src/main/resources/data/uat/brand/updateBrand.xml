@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateBrand">
+        <parm key="name" value ="修改品牌名称"/>
+        <parm key="id" value ="1"/>
+        <parm key="icon" value ="http://www.miyuan.com"/>
+        <parm key="remark" value ="修改备注...."/>
+        <parm key="updateBy" value ="测试员"/>
+    </test>
+</data>

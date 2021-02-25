@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<data>
-    <test name = "updateGoodsPic">
-        <parm key="url" value ="http"/>
-        <parm key="sort" value ="1"/>
-    </test>
-</data>

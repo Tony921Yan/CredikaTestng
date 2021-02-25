@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "createGoodProperty">
+        <parm key="name" value ="尺寸_属性名称"/>
+        <parm key="isMust" value ="1"/>
+        <parm key="remark" value ='商品属性备注.....'/>
+        <parm key="createBy" value ="测试员"/>
+        <parm key="goodPropertyValues" value ='[{"value":"大","propertyId":"100","sort":"100"}]'/>
+    </test>
+</data>

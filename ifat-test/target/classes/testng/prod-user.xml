@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "user"  verbose="1">
-    <test name="我的粉丝">
-        <classes>
-            <class name = "com.meiji.test.api.goods.GetGoodsByPageTest"/>
-        </classes>
-    </test>
-</suite>

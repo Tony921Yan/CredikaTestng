@@ -49,7 +49,6 @@
         <org.apache.rocketmq>4.7.1</org.apache.rocketmq>
         <org.uncommons>1.1.4</org.uncommons>
         <org.apache.velocity>1.7</org.apache.velocity>
-        <miyuan-component-mq-rabbitmq>1.0-SNAPSHOT</miyuan-component-mq-rabbitmq>
         <org.jsoup>1.13.1</org.jsoup>
         <org.apache.dubbo>2.7.7</org.apache.dubbo>
     </properties>
@@ -188,13 +187,6 @@
                 <artifactId>velocity</artifactId>
                 <version>${org.apache.velocity}</version>
             </dependency>
-
-            <dependency>
-                <groupId>com.miyuan</groupId>
-                <artifactId>component-mq-rabbitmq</artifactId>
-                <version>${miyuan-component-mq-rabbitmq}</version>
-            </dependency>
-
 
             <dependency>
                 <groupId>org.jsoup</groupId>

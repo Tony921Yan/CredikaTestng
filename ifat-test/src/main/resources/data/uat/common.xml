@@ -10,5 +10,6 @@
         <parm key="userId" value="11167015"/>
         <parm key="otherToken" value="3tfTJBi0Qnk6qWETjvifPauTFWtrLJoKqbOVbtOA3NJlZJk2dZaquSJ/GOlWl8a+"/>
         <parm key="otherUserId" value="22038722"/>
+        <parm key="customData" value='{"userId":"admin","nickName":"admin","uuid":"111111111"}'/>
     </test>
 </data>

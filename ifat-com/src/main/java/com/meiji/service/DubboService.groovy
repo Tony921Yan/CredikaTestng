@@ -8,10 +8,10 @@ import org.apache.dubbo.rpc.RpcContext
 import org.apache.dubbo.rpc.service.GenericService
 
 class DubboService {
-    static Object invoke(String address,String interfaceName,String methodName,String version,String group,Integer timeOut,String[] paramTypes,Object[] params){
+    static Object invoke(String address,String interfaceName,String methodName,String version,String group,Integer timeOut,String[] paramTypes,Object[] params,Object customData){
         // 普通编码配置方式
         ApplicationConfig application = new ApplicationConfig()
-        application.setName("test")
+        application.setName("test22")
 
         // 连接注册中心配置
         RegistryConfig registry = new RegistryConfig()
@@ -30,7 +30,7 @@ class DubboService {
 
         ReferenceConfigCache cache = ReferenceConfigCache.getCache();
         GenericService genericService = cache.get(reference);
-        RpcContext.getContext().setAttachment("index", "1");
+        RpcContext.getContext().setAttachment("customData", customData);
         Object result = genericService.$invoke(methodName, paramTypes,params);
         return result;
     }

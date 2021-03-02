@@ -6,7 +6,7 @@ import com.meiji.request.api.BaseRequest
 class GoodPropertyGroupDetail extends BaseRequest{
     {
         super.interfaceName = "com.platform.goods.proxy.api.GoodPropGroupMgrService"  //接口路径
-        super.methodName="goodPropertyGroupDetail"
+        super.methodName="GoodPropertyGroupDetail"
         super.version="1.0"
         super.group="on"
         super.timeOut=10000

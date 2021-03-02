@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class QueryGoodPropertysTest extends BaseTest {
     QueryGoodPropertys queryGoodPropertys = new QueryGoodPropertys()
-    @Test(description = "分页查询 queryGoodPropertys" ,groups = ["prod","uat"],testName = "queryGoodPropertys",
+    @Test(description = "商品属性分页查询 queryGoodPropertys" ,groups = ["prod","uat"],testName = "queryGoodPropertys",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void queryGoodPropertys(TestContext testContext){
         queryGoodPropertys.invoke(testContext).baseAssert(testContext)

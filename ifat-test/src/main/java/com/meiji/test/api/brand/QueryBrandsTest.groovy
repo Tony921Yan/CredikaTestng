@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class QueryBrandsTest extends BaseTest {
     QueryBrands queryBrands = new QueryBrands()
-    @Test(description = "分页查询 queryBrands" ,groups = ["prod","uat"],testName = "queryBrands",
+    @Test(description = "品牌分页查询 queryBrands" ,groups = ["prod","uat"],testName = "queryBrands",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void queryBrands(TestContext testContext){
         queryBrands.invoke(testContext).baseAssert(testContext)

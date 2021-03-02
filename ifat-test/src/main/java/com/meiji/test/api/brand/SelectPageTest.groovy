@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class SelectPageTest extends BaseTest {
     SelectPage selectPage = new SelectPage()
-    @Test(description = "分页查询 selectPage" ,groups = ["prod","uat"],testName = "selectPage",
+    @Test(description = "商品属性组分页查询 selectPage" ,groups = ["prod","uat"],testName = "selectPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void selectPage(TestContext testContext){
         selectPage.invoke(testContext).baseAssert(testContext)

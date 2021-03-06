@@ -1,6 +1,6 @@
 package com.meiji.service
 
-import com.meiji.request.http.RedisAPI
+import com.meiji.api.RedisAPI
 
 
 class RedisService extends RedisAPI {

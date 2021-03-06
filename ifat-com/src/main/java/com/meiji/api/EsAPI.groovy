@@ -1,4 +1,4 @@
-package com.meiji.request.http
+package com.meiji.api
 
 import com.meiji.factory.FactorySupport
 import org.elasticsearch.client.transport.TransportClient

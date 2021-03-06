@@ -11,6 +11,6 @@ class BrandDetailTest extends BaseTest {
     @Test(description = "更新商品 updateGoods" ,groups = ["prod","uat"],testName = "brandDetail",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void brandDetail(TestContext testContext){
-        brandDetail.invoke(testContext).baseAssert(testContext)
+        brandDetail.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

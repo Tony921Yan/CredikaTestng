@@ -1,4 +1,4 @@
-package com.meiji.request.http
+package com.meiji.api
 
 import org.apache.rocketmq.client.producer.SendResult
 import org.apache.rocketmq.common.message.Message

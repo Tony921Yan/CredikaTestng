@@ -1,6 +1,6 @@
 package com.meiji.service
 
-import com.meiji.request.http.MongoAPI
+import com.meiji.api.MongoAPI
 import com.mongodb.client.MongoCollection
 import com.mongodb.client.model.Accumulators
 import com.mongodb.client.model.Aggregates

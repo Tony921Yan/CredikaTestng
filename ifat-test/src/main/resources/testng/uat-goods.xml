@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "user"  verbose="1">
+<suite name = "user"  verbose="4">
     <test name="添加商品 addGoods">
         <classes>
             <class name = "com.meiji.test.api.goods.AddGoddsTest"/>

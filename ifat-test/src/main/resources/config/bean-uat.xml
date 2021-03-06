@@ -4,4 +4,8 @@
         <properties  key="url" value ="nacos://172.31.0.208:8848?namespace=dev"/>
 <!--        <properties  key="url" value ="nacos://172.31.0.208:8848?namespace=public&amp;group=xiezy"/>-->
     </bean>
+
+    <bean name = "http">
+        <properties  key="url" value ="https://dev.platform.meiji8888.com/"/>
+    </bean>
 </beans>

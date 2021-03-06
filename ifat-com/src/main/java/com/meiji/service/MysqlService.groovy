@@ -1,6 +1,6 @@
 package com.meiji.service
 
-import com.meiji.api.MysqlAPI
+import com.meiji.request.http.MysqlAPI
 import com.meiji.util.DateUtil
 import com.meiji.util.SetUtil
 

@@ -1,4 +1,4 @@
-package com.meiji.api
+package com.meiji.request.http
 
 import com.meiji.factory.FactorySupport
 import com.rabbitmq.client.Channel

@@ -1,6 +1,6 @@
 package com.meiji.service
 
-import com.meiji.api.EsAPI
+import com.meiji.request.http.EsAPI
 import org.elasticsearch.action.search.SearchResponse
 import org.elasticsearch.index.query.QueryBuilders
 

@@ -10,7 +10,7 @@ class TestContext extends HashMap{
     }
 
     public Map getResponse(){
-        return (Map) JsonUtil.objToJson(JsonUtil.toJsonString(super.get("response")))
+        return (Map) JsonUtil.objToJson(super.get("response"))
     }
 
     public Map getRequest(){

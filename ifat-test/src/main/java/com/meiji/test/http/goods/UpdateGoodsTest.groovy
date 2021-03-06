@@ -1,4 +1,4 @@
-package com.meiji.test.api.goods
+package com.meiji.test.http.goods
 
 import com.meiji.com.BaseTest
 import com.meiji.com.TestContext

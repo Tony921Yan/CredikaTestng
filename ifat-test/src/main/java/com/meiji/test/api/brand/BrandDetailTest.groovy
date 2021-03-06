@@ -3,14 +3,16 @@ package com.meiji.test.api.brand
 import com.meiji.com.BaseTest
 import com.meiji.com.TestContext
 import com.meiji.com.TestData
-import com.meiji.request.api.brand.BrandDetail
+import com.meiji.request.api.test.CenterGetCouponUrl
 import org.testng.annotations.Test
 
 class BrandDetailTest extends BaseTest {
-    BrandDetail brandDetail = new BrandDetail()
-    @Test(description = "品牌详情 brandDetail" ,groups = ["prod","uat"],testName = "brandDetail",
+    CenterGetCouponUrl centerGetCouponUrl = new CenterGetCouponUrl()
+    @Test(description = "更新商品 updateGoods" ,groups = ["prod","uat"],testName = "brandDetail",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
-    public void brandDetail(TestContext testContext){
-        brandDetail.invoke(testContext).baseAssert(testContext)
+    public void test(TestContext testContext){
+//        testContext.put("pics", JsonUtil.objToJsonList(testContext.get("pics")))
+//        testContext.put("skus", JsonUtil.objToJsonList(testContext.get("skus")))
+        centerGetCouponUrl.invoke(testContext).baseAssert(testContext)
     }
 }

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "delCategoryById">
-        <parm key="id" value ="29"/>
+        <parm key="id" value ="37"/>
+    </test>
+
+    <test name = "delCategoryById_IdExits">
+        <parm key="id" value ="0"/>
     </test>
 </data>

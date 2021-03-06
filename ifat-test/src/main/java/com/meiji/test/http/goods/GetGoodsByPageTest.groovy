@@ -13,4 +13,11 @@ class GetGoodsByPageTest extends BaseTest {
     public void getGoodsByPage(TestContext testContext){
         getGoodsByPage.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "获取商品列表-categoryId为空" ,groups = ["prod","uat"],testName = "getGoodsByPage",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getGoodsByPage_categoryIdNull(TestContext testContext){
+        testContext.put("categoryId",null)
+        getGoodsByPage.invoke(testContext).baseAssert(testContext)
+    }
 }

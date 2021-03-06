@@ -15,4 +15,11 @@ class UpdateCategoryByIdTest extends BaseTest {
         testContext.put("list", JsonUtil.objToJsonList(testContext.get("list")))
         updateCategoryById.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "修改类目-list为空" ,groups = ["prod","uat"],testName = "updateCategoryById_listNull",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void updateCategoryById_listNull(TestContext testContext){
+        updateCategoryById.invoke(testContext)
+        assert testContext.getResponse().code == "05000"
+    }
 }

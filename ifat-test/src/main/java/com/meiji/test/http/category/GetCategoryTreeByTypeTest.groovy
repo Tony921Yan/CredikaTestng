@@ -12,5 +12,13 @@ class GetCategoryTreeByTypeTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getCategoryTreeByType(TestContext testContext){
         getCategoryTreeByType.invoke(testContext).baseAssert(testContext)
+        getCategoryTreeByType.dataAssert(testContext)
+    }
+
+    @Test(description = "根据分类类型获取分类树-type为空" ,groups = ["prod","uat"],testName = "getCategoryTreeByType_typeNull",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getCategoryTreeByType_typeNull(TestContext testContext){
+        getCategoryTreeByType.invoke(testContext)
+        assert testContext.getResponse().code=="05000"
     }
 }

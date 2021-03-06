@@ -3,7 +3,7 @@
     <test name = "addCategory">
         <parm key="type" value ="2"/>
         <parm key="sort" value ="100"/>
-        <parm key="parentId" value ="0"/>
+        <parm key="parentId" value ="1"/>
         <parm key="parentName" value ="男鞋"/>
         <parm key="name" value ="拖鞋"/>
         <parm key="icon" value ="https://image.baidu.com/search/index?ct=201326592"/>

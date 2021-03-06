@@ -15,4 +15,13 @@ class UpdateGoods extends MeijiRequest{
         return this
     }
 
+    MeijiRequest preInvoke(TestContext testContext){
+        super.preInvoke(testContext)
+        return this
+    }
+
+    MeijiRequest baseAssert(TestContext testContext){
+        super.baseAssert(testContext)
+    }
+
 }

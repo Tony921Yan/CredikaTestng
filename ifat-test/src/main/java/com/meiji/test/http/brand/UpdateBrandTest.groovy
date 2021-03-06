@@ -3,7 +3,7 @@ package com.meiji.test.http.brand
 import com.meiji.com.BaseTest
 import com.meiji.com.TestContext
 import com.meiji.com.TestData
-import com.meiji.request.api.brand.UpdateBrand
+import com.meiji.request.http.brand.UpdateBrand
 import org.testng.annotations.Test
 
 class UpdateBrandTest extends BaseTest {

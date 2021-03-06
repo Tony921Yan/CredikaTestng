@@ -1,21 +1,15 @@
 package com.meiji.request.http.goods
 
 import com.meiji.com.TestContext
-import com.meiji.request.http.BaseRequest
+import com.meiji.request.http.MeijiRequest
 
-class GetPropertyBySpuld extends BaseRequest{
+class GetPropertyBySpuld extends MeijiRequest{
     {
-        super.interfaceName = "com.platform.goods.proxy.api.GoodsMgrService"  //接口路径
-        super.methodName="getPropertyBySpuId"
-        super.version="1.0"
-        super.group="on"
-        super.timeOut=3000
-        super.paramsType = ["com.platform.goods.proxy.vo.request.PropertySearchRequestVO"] //请求参数
+        super.api = "/platform/goodsMgr/getPropertyBySpuId"
         super.params = ["spuId"]
     }
 
-
-    BaseRequest invoke(TestContext testContext) {
+    MeijiRequest invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }

@@ -3,7 +3,7 @@ package com.meiji.test.http.category
 import com.meiji.com.BaseTest
 import com.meiji.com.TestContext
 import com.meiji.com.TestData
-import com.meiji.request.api.category.DelCategoryById
+import com.meiji.request.http.category.DelCategoryById
 import org.testng.annotations.Test
 
 class DelCategoryByIdTest extends BaseTest {

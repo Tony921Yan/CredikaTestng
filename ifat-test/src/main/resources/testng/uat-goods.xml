@@ -102,11 +102,11 @@
         </classes>
     </test>
 
-    <test name="商品属性分页查询 queryGoodPropertys">
-        <classes>
-            <class name = "com.meiji.test.api.brand.QueryGoodPropertysTest"/>
-        </classes>
-    </test>
+<!--    <test name="商品属性分页查询 queryGoodPropertys">-->
+<!--        <classes>-->
+<!--            <class name = "com.meiji.test.api.brand.QueryGoodPropertysTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <test name="商品属性组分页查询 selectPage">
         <classes>

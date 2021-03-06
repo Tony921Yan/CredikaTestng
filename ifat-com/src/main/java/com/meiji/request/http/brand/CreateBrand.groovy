@@ -1,12 +1,12 @@
 package com.meiji.request.http.brand
 
 import com.meiji.com.TestContext
-import com.meiji.factory.MeijiRequest
+import com.meiji.request.http.MeijiRequest
 
 class CreateBrand extends MeijiRequest{
     {
         super.api="/platform/brandMgr/createBrand"
-        super.params = [["createBy","gmtCreate","gmtModified","icon","id","name","remark","sort","updateBy"]]
+        super.params = ["createBy","gmtCreate","gmtModified","icon","id","name","remark","sort","updateBy"]
     }
 
     MeijiRequest invoke(TestContext testContext) {

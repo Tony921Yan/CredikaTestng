@@ -1,4 +1,4 @@
-package com.meiji.factory
+package com.meiji.request.http
 
 import com.meiji.com.TestContext
 import com.meiji.util.HttpUtil

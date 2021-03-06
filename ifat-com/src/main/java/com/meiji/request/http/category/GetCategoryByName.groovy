@@ -1,20 +1,15 @@
 package com.meiji.request.http.category
 
 import com.meiji.com.TestContext
-import com.meiji.request.http.BaseRequest
+import com.meiji.request.http.MeijiRequest
 
-class GetCategoryByName extends BaseRequest{
+class GetCategoryByName extends MeijiRequest{
     {
-        super.interfaceName = "com.platform.goods.proxy.api.CategoryMgrService"  //接口路径
-        super.methodName="getCategoryByName"
-        super.version="1.0"
-        super.group="on"
-        super.timeOut=10000
-        super.paramsType=["com.platform.goods.proxy.vo.request.CategorySearchBaseRequestVO"] //请求参数
+        super.api = "/platform/categoryMgr/getCategoryByName"
         super.params = [["name","type"]]
     }
 
-    BaseRequest invoke(TestContext testContext) {
+    MeijiRequest invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }

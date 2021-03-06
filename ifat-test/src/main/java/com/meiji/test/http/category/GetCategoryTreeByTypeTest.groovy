@@ -3,7 +3,7 @@ package com.meiji.test.http.category
 import com.meiji.com.BaseTest
 import com.meiji.com.TestContext
 import com.meiji.com.TestData
-import com.meiji.request.api.category.GetCategoryTreeByType
+import com.meiji.request.http.category.GetCategoryTreeByType
 import org.testng.annotations.Test
 
 class GetCategoryTreeByTypeTest extends BaseTest {

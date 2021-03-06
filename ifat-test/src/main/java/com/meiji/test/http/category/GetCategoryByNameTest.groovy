@@ -3,7 +3,7 @@ package com.meiji.test.http.category
 import com.meiji.com.BaseTest
 import com.meiji.com.TestContext
 import com.meiji.com.TestData
-import com.meiji.request.api.category.GetCategoryByName
+import com.meiji.request.http.category.GetCategoryByName
 import org.testng.annotations.Test
 
 class GetCategoryByNameTest extends BaseTest {

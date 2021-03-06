@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateBrand">
-        <parm key="name" value ="修改品牌名称"/>
-        <parm key="id" value ="1"/>
-        <parm key="icon" value ="http://www.miyuan.com"/>
-        <parm key="remark" value ="修改备注...."/>
+        <parm key="backgroundCategoryId" value ="1"/>
+        <parm key="brandId" value ="1"/>
+        <parm key="detail" value ="http://www.miyuan.com"/>
+        <parm key="frontDeskCategoryId" value ="1"/>
+        <parm key="id" value ="11"/>
+        <parm key="manyProperty" value ="1"/>
+        <parm key="name" value ="测试员"/>
+        <parm key="originAddress" value ="广东省深圳市南山区"/>
+        <parm key="pics" value ='[{"sort":"1","url":"www.baidu.com"}]'/>
+        <parm key="sellingPoint" value ="正品保证"/>
+        <parm key="skus" value ='[{"grossWeight":"100","grossWeightUnit":"g","id":"1","netWeight":"90","netWeightUnit":"g",
+        "num":"1","retailPrice":"1","unitPrice":"90"}]'/>
         <parm key="updateBy" value ="测试员"/>
+        <parm key="updateByName" value ="测试员1"/>
     </test>
 </data>

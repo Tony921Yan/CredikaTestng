@@ -1,21 +1,16 @@
 package com.meiji.request.http.goods
 
 import com.meiji.com.TestContext
-import com.meiji.request.http.BaseRequest
+import com.meiji.request.http.MeijiRequest
 
-class AddGoods extends BaseRequest{
+class AddGoods extends MeijiRequest{
     {
-        super.interfaceName = "com.platform.goods.proxy.api.GoodsMgrService"  //接口路径
-        super.methodName="addGoods"
-        super.version="1.0"
-        super.group="on"
-        super.timeOut=10000
-        super.paramsType=["com.platform.goods.proxy.vo.request.SpuAddRequestVO"] //请求参数
-        super.params = [["uuid","name","sellingPoint","originAddress","brandId","frontDeskCategoryId",
-                         "backgroundCategoryId","manyProperty","createBy","updateBy","pics","detail","skus"]]
+        super.api = "/platform/goodsMgr/addGoods"
+        super.params = [["backgroundCategoryId","brandId","createBy","createByName","detail","frontDeskCategoryId",
+                         "manyProperty","name","originAddress","pics","sellingPoint","skus","supplierCode","updateBy","updateByName"]]
     }
 
-    BaseRequest invoke(TestContext testContext) {
+    MeijiRequest invoke(TestContext testContext) {
         super.invoke(testContext)
         println(testContext)
         return this

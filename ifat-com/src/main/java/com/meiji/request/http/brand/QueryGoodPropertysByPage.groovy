@@ -3,10 +3,10 @@ package com.meiji.request.http.brand
 import com.meiji.com.TestContext
 import com.meiji.request.http.MeijiRequest
 
-class GoodsPropertyValIsUsed extends MeijiRequest{
+class QueryGoodPropertysByPage extends MeijiRequest{
     {
-        super.api = "/platform/goodPropertyMgr/goodsPropertyValIsUsed"
-        super.params = ["id"]
+        super.api = "/platform/goodPropertyMgr/queryGoodPropertysByPage"
+        super.params = ["order","pageIndex","pageSize","queryCondition","sort"]
     }
 
     MeijiRequest invoke(TestContext testContext) {

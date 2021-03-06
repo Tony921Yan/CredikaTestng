@@ -1,7 +1,7 @@
 package com.meiji.request.api.test
 
 import com.meiji.com.TestContext
-import com.meiji.factory.MeijiRequest
+import com.meiji.request.http.MeijiRequest
 
 
 class CenterGetCouponUrl extends MeijiRequest {

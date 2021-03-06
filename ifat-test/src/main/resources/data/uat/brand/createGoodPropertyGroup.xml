@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "createGoodPropertyGroup">
+        <parm key="categoryId" value ="10"/>
+        <parm key="code" value ="13000"/>
+        <parm key="createBy" value ="测试员0306"/>
+        <parm key="gmtCreate" value ="2021-03-02 14:13:43"/>
         <parm key="name" value ="颜色_属性组名称1"/>
-        <parm key="code" value ="1389000"/>
-        <parm key="categoryId" value ="1"/>
-        <parm key="status" value ="1"/>
+        <parm key="id" value ="111"/>
+        <parm key="name" value ="鞋"/>
         <parm key="remark" value ="属性组备注111...."/>
-        <parm key="createBy" value ="测试员"/>
-        <parm key="list" value ='[{"propertyId":"100","propertyName":"红色111","sort":"0"}]'/> <!--插入表goods_property_group_relationship-->
+        <parm key="list" value ='[{"id":100,"propertyGroupId":"10","propertyId":"100","propertyName":"红色111","sort":"0"}]'/> <!--插入表goods_property_group_relationship-->
     </test>
 </data>

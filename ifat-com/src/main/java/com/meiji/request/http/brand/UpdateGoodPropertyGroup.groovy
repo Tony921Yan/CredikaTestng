@@ -1,20 +1,15 @@
 package com.meiji.request.http.brand
 
 import com.meiji.com.TestContext
-import com.meiji.request.http.BaseRequest
+import com.meiji.request.http.MeijiRequest
 
-class UpdateGoodPropertyGroup extends BaseRequest{
+class UpdateGoodPropertyGroup extends MeijiRequest{
     {
-        super.interfaceName = "com.platform.goods.proxy.api.GoodPropGroupMgrService"  //接口路径
-        super.methodName="updateGoodPropertyGroup"
-        super.version="1.0"
-        super.group="on"
-        super.timeOut=10000
-        super.paramsType=["com.platform.goods.proxy.vo.request.UpdateGoodPropertyGroupVO"] //请求参数
-        super.params = [["id","name","code","remark","status","categoryId","updateBy","list"]]
+        super.api = "/platform/GoodPropGroupMgr/updateGoodPropertyGroup"
+        super.params = ["categoryId","code","createBy","gmtModified","id","name","remark","updateBy","list"]
     }
 
-    BaseRequest invoke(TestContext testContext) {
+    MeijiRequest invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }

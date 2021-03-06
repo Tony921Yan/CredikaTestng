@@ -1,7 +1,7 @@
 package com.meiji.request.http.brand
 
 import com.meiji.com.TestContext
-import com.meiji.factory.MeijiRequest
+import com.meiji.request.http.MeijiRequest
 import com.meiji.service.MysqlService
 import com.meiji.util.DateUtil
 

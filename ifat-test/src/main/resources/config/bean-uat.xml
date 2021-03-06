@@ -6,7 +6,7 @@
     </bean>
 
     <bean name = "http">
-        <properties  key="url" value ="https://dev.platform.meiji8888.com/"/>
+        <properties  key="url" value ="https://dev.platform.meiji8888.com"/>
     </bean>
 
     <bean name = "mysql-platform-goods">

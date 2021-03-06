@@ -1,13 +1,13 @@
 package com.meiji.request.http.brand
 
 import com.meiji.com.TestContext
-import com.meiji.factory.MeijiRequest
+import com.meiji.request.http.MeijiRequest
 
 class CreateGoodProperty extends MeijiRequest{
     {
         super.api = "/platform/goodPropertyMgr/createGoodProperty";
-        super.params = [["createBy","gmtCreate","goodPropertyValues","id","isMust",
-                         "isSearch","name","remark","status","type","updateBy"]]
+        super.params = ["createBy","gmtCreate","goodPropertyValues","id","isMust",
+                         "isSearch","name","remark","status","type","updateBy"]
     }
 
     MeijiRequest invoke(TestContext testContext) {

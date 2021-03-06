@@ -3,7 +3,7 @@ package com.meiji.test.http.goods
 import com.meiji.com.BaseTest
 import com.meiji.com.TestContext
 import com.meiji.com.TestData
-import com.meiji.request.api.goods.AddGoods
+import com.meiji.request.http.goods.AddGoods
 import com.meiji.util.JsonUtil
 import org.testng.annotations.Test
 

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateGoodProperty">
-        <parm key="id" value ="31"/>
-        <parm key="name" value ="test1...."/>
+        <parm key="gmtModified" value ="2021-02-25 20:56:00"/>
+        <parm key="goodPropertyValues" value ='[{"id":"","propertyId":"1","sort":"1","value":"100"}]'/>
+        <parm key="id" value ="1"/>
         <parm key="isMust" value ="0"/>
-        <parm key="type" value ="0"/>
-        <parm key="remark" value ="test11111111"/>
+        <parm key="isSearch" value ="1"/>
+        <parm key="name" value ="测试111111"/>
+        <parm key="remark" value ="test remark..."/>
+        <parm key="status" value ="1"/>
+        <parm key="type" value ="1"/>
         <parm key="updateBy" value ="测试111111"/>
-        <parm key="goodPropertyValues" value ='[{"value":"大1111","propertyId":"1","sort":"1"}]'/>
     </test>
 </data>

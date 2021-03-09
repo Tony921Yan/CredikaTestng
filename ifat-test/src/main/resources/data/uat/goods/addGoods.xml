@@ -8,11 +8,11 @@
         <parm key="brandId" value ="1"/>
         <parm key="frontDeskCategoryId" value ="6"/>  <!--类目暂未测试-->
         <parm key="backgroundCategoryId" value ="6"/>  <!--类目暂未测试-->
-        <parm key="manyProperty" value ="1"/>
+        <parm key="manyProperty" value ="true"/>
         <parm key="createBy" value ="测试员"/>
         <parm key="updateBy" value ="测试佬"/>
         <parm key="pics" value ='[{"sort": 1,"url": "www.baidu.com"},{"sort": 2,"url": "//www.163.com"}]'/>
         <parm key="detail" value ="一般情况下，我们所指的高性能部件为剃须刀网膜和刀头。这 2 个部件在使用过程中都会受到磨损。博朗始终建议您更换受到磨损的网膜与刀头以恢复剃须刀 卓越 的工作性能。但也有例外情况，即仅当网膜损坏时您也需要更换它。我们的某些新型剃须刀系列使用了将网膜和刀头集成在一起的剃须刀匣。如此可确保两个部件总是以卓越性能协同工作。这些都是精密部件，有时会受到磨损。磨损情况因个人剃须方式和胡须类型而异。应当在每次使用剃须刀前目视观察网膜有无裂口、凹痕及磨损痕迹。刀头在长时间使用后也会受到磨损。为了保持卓越剃须性能，您应当在这些部件磨损时将其更换。一般而言，在养成良好的清洁习惯后，在正常使用频率下，博朗建议您每 18 个月更换网膜和刀头。尽管有些型号的部件可以在多款剃须刀上使用，但它们仍然存在技术差异。因此我们不推荐将这些部件交换使用。这样做可能或损坏剃须刀内部。"/>
-        <parm key="skus" value =' [{"unitPrice": "100","netWeightUnit": "g","grossWeight": "100","netWeight": "90","num": 100,"grossWeightUnit": "g","retailPrice": "110","properties": [{"propertyValueId":1,"property": "颜色","propertyValue": "白色","sort": 0,"propertyId": 1},{"propertyValueId": 2,"property": "大小","propertyValue": "大","sort": 1,"propertyId": 2}]}]'/>
+        <parm key="skus" value =' [{"unitPrice": 100,"netWeightUnit": "g","grossWeight": 100,"netWeight": 90,"num": 100,"grossWeightUnit": "g","retailPrice": 110,"properties": [{"propertyValueId":1,"property": "颜色","propertyValue": "白色","sort": 0,"propertyId": 1}]}]'/>
     </test>
 </data>

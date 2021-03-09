@@ -7,7 +7,7 @@
         <parm key="parentName" value ="男鞋"/>
         <parm key="name" value ="拖鞋"/>
         <parm key="icon" value ="https://image.baidu.com/search/index?ct=201326592"/>
-        <parm key="status" value ="0"/>
+        <parm key="status" value ="true"/>
         <parm key="createBy" value ="测试员"/>
     </test>
 </data>

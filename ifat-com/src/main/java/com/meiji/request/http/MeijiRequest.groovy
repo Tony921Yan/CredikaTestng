@@ -29,7 +29,7 @@ abstract class MeijiRequest {
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){
-                req.put(str,testContext.get(str).toString())
+                req.put(str,testContext.get(str))
             }
         }
         String res = HttpUtil.post(url,heads, req)

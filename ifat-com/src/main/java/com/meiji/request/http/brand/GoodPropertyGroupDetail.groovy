@@ -5,7 +5,7 @@ import com.meiji.request.http.MeijiRequest
 
 class GoodPropertyGroupDetail extends MeijiRequest{
     {
-        super.api = "/platform/GoodPropGroupMgr/GoodPropertyGroupDetail"
+        super.api = "/platform/goodPropGroupMgr/goodPropertyGroupDetail"
         super.params = ["id"]
     }
 

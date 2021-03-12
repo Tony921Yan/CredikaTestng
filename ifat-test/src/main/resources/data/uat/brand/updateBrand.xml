@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateBrand">
-        <parm key="backgroundCategoryId" value ="1"/>
-        <parm key="brandId" value ="1"/>
-        <parm key="detail" value ="http://www.miyuan.com"/>
-        <parm key="frontDeskCategoryId" value ="1"/>
         <parm key="id" value ="11"/>
-        <parm key="manyProperty" value ="1"/>
-        <parm key="name" value ="测试员"/>
-        <parm key="originAddress" value ="广东省深圳市南山区"/>
-        <parm key="pics" value ='[{"sort":"1","url":"www.baidu.com"}]'/>
-        <parm key="sellingPoint" value ="正品保证"/>
-        <parm key="skus" value ='[{"grossWeight":"100","grossWeightUnit":"g","id":"1","netWeight":"90","netWeightUnit":"g",
-        "num":"1","retailPrice":"1","unitPrice":"90"}]'/>
-        <parm key="updateBy" value ="测试员"/>
-        <parm key="updateByName" value ="测试员1"/>
+        <parm key="name" value ="name测试员"/>
+        <parm key="updateBy" value ="updateby测试员"/>
+        <parm key="updateByName" value ="updateByName测试员1"/>
+        <parm key="gmtCreate" value ="2021-03-01 20:34:27"/>
+        <parm key="gmtModified" value ="2021-03-03 12:12:12"/>
+        <parm key="icon" value ="https://www.baidu.com/"/>
+        <parm key="remark" value ="remark:json.cn是一款新14年上线的Json在线解析工具，界面非常简洁，且无广告，可以进行在线压缩Json，Json与xml互转操作，Json在线验证、高亮代码等。"/>
+        <parm key="sort" value ="1"/>
     </test>
 </data>

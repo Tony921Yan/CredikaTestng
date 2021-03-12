@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "getCategoryTreeByType">
-        <parm key="type" value ="2"/>
+        <parm key="type" value ="1"/>
     </test>
 </data>

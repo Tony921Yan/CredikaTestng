@@ -25,7 +25,7 @@ class GetPropertyBySpuIdTest extends BaseTest {
     @Test(description = "根据spuid获取属性 spuId为空" ,groups = ["prod","uat"],testName = "getPropertyBySpuId_spuIdNull",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getPropertyBySpuld_spuIdNull(TestContext testContext){
-        getPropertyBySpuld.invoke(testContext).baseAssert(testContext)
-        assert testContext.getResponse().code == "05000"
+        getPropertyBySpuld.invoke(testContext)
+        assert testContext.getResponse().code == "05008"
     }
 }

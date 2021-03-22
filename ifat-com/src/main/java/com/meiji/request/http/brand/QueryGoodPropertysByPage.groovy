@@ -6,7 +6,7 @@ import com.meiji.request.http.MeijiRequest
 class QueryGoodPropertysByPage extends MeijiRequest{
     {
         super.api = "/platform/goodPropertyMgr/queryGoodPropertysByPage"
-        super.params = ["order","pageIndex","pageSize","queryCondition","sort"]
+        super.params = ["order","page","rows","condition","sort"]
     }
 
     MeijiRequest invoke(TestContext testContext) {

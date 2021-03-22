@@ -5,6 +5,7 @@ import com.meiji.util.JsonUtil
 
 
 class TestContext extends HashMap{
+
     public String getToken(){
         return super.get("token")
     }

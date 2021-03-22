@@ -19,6 +19,7 @@ abstract class MeijiRequest {
         heads.put("timestamp",testContext.get("timestamp"))
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
+        heads.put("userId",10001)
 //        String aesKey = MD5Utils.MD5Encode("11", "utf-8")
 //        String tokenAes = AESOperator.encrypt(testContext.get("token").toString(), aesKey)
 //        heads.put("token",tokenAes)
@@ -68,4 +69,5 @@ abstract class MeijiRequest {
     MeijiRequest specialAssert(TestContext testContext){
 
     }
+
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "findGoodsList">
+        <parm key="categoryId" value ="1"/>
+        <parm key="commissionSort" value ="asc"/>
+        <parm key="page" value ="1"/>
+        <parm key="priceSort" value ="asc"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>

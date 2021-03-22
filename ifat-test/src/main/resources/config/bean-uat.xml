@@ -8,6 +8,8 @@
 
     <bean name = "http">
         <properties  key="url" value ="https://dev.platform.meiji8888.com"/>
+<!--        <properties  key="url" value ="https://dev.gateway.meiji8888.com"/> &lt;!&ndash; 小程序端：mall是c端, shop是b端&ndash;&gt;-->
+
 <!--        <properties  key="url" value ="https://test.platform.meiji8888.com"/>-->
     </bean>
 

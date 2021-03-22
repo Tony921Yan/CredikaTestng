@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateShopManagerInfo">
+        <parm key="id" value ="1"/>
+        <parm key="idCardBack" value ="身份证反面图片url"/>
+        <parm key="idCardFront" value ="身份证正面图片url"/>
+        <parm key="managerPhone" value ="管理员手机号码"/>
+    </test>
+</data>

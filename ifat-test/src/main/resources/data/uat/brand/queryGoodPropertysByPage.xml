@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "queryGoodPropertysByPage">
-        <parm key="id" value ="1"/>
-        <parm key="pageIndex" value ="1"/>
-        <parm key="pageSize" value ="10"/>
-        <parm key="queryCondition" value ='[{"endModified":"2021-02-25 20:56:03","name":"1","startModified":"2021-02-20 20:56:03"}]'/>
+        <parm key="order" value ="1"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="condition" value ='{"endModified":"2021-03-21 20:56:03","name":"颜色","startModified":"2021-02-20 20:56:03"}'/>
         <parm key="sort" value ="1"/>
     </test>
 </data>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "findShopGoodsStateList">
+        <parm key="shopId" value ="1"/>
+        <parm key="skuIdList" value ='["1","2"]'/>
+    </test>
+</data>

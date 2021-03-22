@@ -6,7 +6,7 @@ import com.meiji.request.http.MeijiRequest
 class QueryBrandsByPage extends MeijiRequest{
     {
         super.api = "/platform/brandMgr/queryBrandsByPage"
-        super.params = ["order","pageIndex","pageSize","queryCondition","sort"]
+        super.params = ["condition","order","page","rows","sort"]
     }
 
     MeijiRequest invoke(TestContext testContext) {

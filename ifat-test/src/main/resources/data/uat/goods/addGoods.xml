@@ -14,7 +14,7 @@
         <parm key="supplierCode" value="HJK9008"/>
         <parm key="sellingPoint" value="性价比高，客户口碑良好"/>
         <parm key="skus" value='[{"unitPrice": 100,"netWeightUnit": "g","grossWeight": 100,"netWeight": 90,
-        "primaryDistributionPercentage": 0.5,"secondaryDistributionPercentage":0.2，"supplierSkuCode":"20HKL00345","thirdPartySkuCode":"20HKL00345","grossWeightUnit": "g","retailPrice": 110,"properties": [{"propertyValueId":1,"property": "颜色","propertyValue": "白色","sort": 0,"propertyId": 1}]}]'/>
+        "primaryDistributionPercentage": "0.5","secondaryDistributionPercentage":"0.2","supplierSkuCode":"200","thirdPartySkuCode":"20HKL00345","grossWeightUnit": "g","retailPrice": 110,"properties": [{"propertyValueId":1,"property": "颜色","propertyValue": "白色","sort": 0,"propertyId": 1}]}]'/>
         <parm key="updateBy" value ="测试1"/>
         <parm key="updateByName" value ='更新人昵称'/>
     </test>

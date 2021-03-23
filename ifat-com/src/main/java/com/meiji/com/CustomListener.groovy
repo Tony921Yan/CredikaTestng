@@ -31,9 +31,9 @@ class CustomListener extends TestListenerAdapter{
     }
 
     private void log(List log) {
-        for (String str:log){
-            Reporter.log(str)
-            println(str)
+        for (Object str:log){
+            Reporter.log(JsonUtil.prettyJson(str))
+            println(JsonUtil.prettyJson(str))
         }
         if (++m_count % 40 == 0) {
             println("")

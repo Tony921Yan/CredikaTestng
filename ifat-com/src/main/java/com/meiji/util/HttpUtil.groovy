@@ -95,7 +95,6 @@ class HttpUtil {
             request.addHeader(e.getKey(), e.getValue())
         }
         HttpResponse httpResponse =  httpClient.execute(request)
-        println(JsonUtil.prettyJson(httpResponse.toString()))
         return httpResponse.toString()
     }
 

@@ -12,8 +12,6 @@ class QueryBrandsByPageTest extends BaseTest {
     @Test(description = "品牌分页查询 queryBrands" ,groups = ["prod","uat"],testName = "queryBrandsByPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void queryBrandsByPage(TestContext testContext){
-        //testContext.put("condition", JsonUtil.objToJsonList(testContext.get("condition")))
-        testContext.put("condition", JsonUtil.strToJson(JsonUtil.toJsonString(testContext.get("condition"))))
         queryBrandsByPage.invoke(testContext).baseAssert(testContext)
     }
 }

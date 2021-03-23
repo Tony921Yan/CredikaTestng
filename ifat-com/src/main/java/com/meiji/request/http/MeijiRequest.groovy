@@ -45,7 +45,7 @@ abstract class MeijiRequest {
         testContext.put("allure_url", url)
         testContext.put("allure_headers", heads)
         testContext.put("allure_params", req)
-        testContext.put("allure_response", JsonUtil.prettyJson(res))
+        testContext.put("allure_response", res)
         return this
     }
 

@@ -32,7 +32,7 @@ class FactorySupport {
         String user = map.get("user")
         String password = map.get("password")
         String driver = map.get("driver")
-        url = url + "?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Shanghai"
+        url = url + "?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&serverTimezone=Asia/Shanghai&tinyInt1isBit=false"
         Sql sql = Sql.newInstance(url, user, password, driver)
         factory.put(beanName,sql)
         return sql

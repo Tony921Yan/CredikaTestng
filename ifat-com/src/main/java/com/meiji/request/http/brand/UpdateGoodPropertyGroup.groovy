@@ -5,7 +5,7 @@ import com.meiji.request.http.MeijiRequest
 
 class UpdateGoodPropertyGroup extends MeijiRequest{
     {
-        super.api = "/platform/GoodPropGroupMgr/updateGoodPropertyGroup"
+        super.api = "/platform/goodPropGroupMgr/updateGoodPropertyGroup"
         super.params = ["categoryId","code","createBy","gmtModified","id","name","remark","updateBy","list"]
     }
 

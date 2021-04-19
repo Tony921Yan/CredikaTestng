@@ -7,7 +7,8 @@ class AddGoods extends MeijiRequest{
     {
         super.api = "/platform/goodsMgr/addGoods"
         super.params = ["backgroundCategoryId","brandId","createBy","createByName","detail","frontDeskCategoryId",
-                         "manyProperty","name","originAddress","pics","sellingPoint","skus","supplierCode","updateBy","updateByName"]
+                         "manyProperty","name","originAddress","pics","sellingPoint","skus","supplierCode",
+                        "supplierId","updateBy","updateByName"]
     }
 
     MeijiRequest invoke(TestContext testContext) {

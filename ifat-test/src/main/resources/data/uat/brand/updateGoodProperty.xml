@@ -3,8 +3,8 @@
     <test name = "updateGoodProperty">
         <parm key="gmtModified" value ="2021-02-25 20:56:00"/>
         <parm key="goodPropertyValues" value ='[{"id":"","propertyId":"1","sort":"1","value":"100"}]'/>
-        <parm key="id" value ="1"/>
-        <parm key="isMust" value ="0"/>
+        <parm key="id" value ="141"/>
+        <parm key="isMust" value ="1"/>
         <parm key="isSearch" value ="1"/>
         <parm key="name" value ="测试111111"/>
         <parm key="remark" value ="test remark..."/>

@@ -27,6 +27,7 @@ class GetCategoryTreeByType extends MeijiRequest{
     MeijiRequest dataAssert(TestContext testContext){
         List mysqlData = MysqlService.getCategoryByType(testContext.get("type"))
         List apiData = testContext.getResponse().data
+        System.out.println("apiData:" + apiData)
         assert mysqlData.size() == apiData.size()
     }
 

@@ -1,33 +1,33 @@
 package com.meiji.request.http.mall
 
 import com.meiji.com.TestContext
-import com.meiji.request.http.MeijiRequest
+import com.meiji.request.http.MeijiGet
 import com.meiji.service.MysqlService
 import com.meiji.util.DateUtil
 
 
-class GetOrderLogisticsInfo extends MeijiRequest {
+class GetOrderLogisticsInfo extends MeijiGet {
     {
-        super.api = "/mall/shop/order/getOrderLogisticsInfo"
-        super.params =  ["orderCode","userId"]
+        super.api = "/mall/order/getOrderLogisticsInfo?orderCode=1234"
+        super.params =  []
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MeijiRequest invoke(TestContext testContext) {
+    MeijiGet invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MeijiRequest preInvoke(TestContext testContext){
+    MeijiGet preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MeijiRequest baseAssert(TestContext testContext){
+    MeijiGet baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    MeijiRequest specialAssert(TestContext testContext){
+    MeijiGet specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data

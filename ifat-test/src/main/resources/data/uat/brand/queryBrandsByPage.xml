@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "queryBrandsByPage">
-        <parm key="condition" value ='{"endModified":"","name":"长城","startModified":""}'/>
+        <parm key="condition" value ='{"endModified":"","name":"蜜源生活","startModified":""}'/>
         <parm key="order" value ="1"/>
         <parm key="page" value ="1"/>
         <parm key="rows" value ="10"/>

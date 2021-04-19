@@ -19,6 +19,6 @@ class GetCategoryTreeByTypeTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getCategoryTreeByType_typeNull(TestContext testContext){
         getCategoryTreeByType.invoke(testContext)
-        assert testContext.getResponse().code=="05000"
+        assert testContext.getResponse().code=="05008"
     }
 }

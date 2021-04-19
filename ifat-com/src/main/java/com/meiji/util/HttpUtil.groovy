@@ -89,14 +89,14 @@ class HttpUtil {
                 sbUrl.append("?").append(sbQuery)
             }
         }
-        HttpPost httpPost = new HttpPost(sbUrl.toString())
         HttpGet request = new HttpGet(sbUrl.toString())
         for (Map.Entry<String, String> e : headers.entrySet()) {
             request.addHeader(e.getKey(), e.getValue())
         }
         HttpResponse httpResponse =  httpClient.execute(request)
-        println(JsonUtil.prettyJson(httpResponse.toString()))
-        return httpResponse.toString()
+        HttpEntity entity = httpResponse.getEntity()
+        String result = EntityUtils.toString(entity, "UTF-8")
+        return result
     }
 
     public static String getRequestUrl(String url,Map<String, String> params) {

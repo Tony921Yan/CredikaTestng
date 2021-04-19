@@ -29,7 +29,7 @@ class BrandDetail extends MeijiRequest {
 
     MeijiRequest specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
-        println(mysqlResult)
+        println("MySQL打印：" + mysqlResult)
         Map apiResult = testContext.getResponse().data
         assert mysqlResult.name == apiResult.name
         assert mysqlResult.icon == apiResult.icon

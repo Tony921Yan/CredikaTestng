@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateBrand">
-        <parm key="id" value ="11"/>
-        <parm key="name" value ="name测试员"/>
+        <parm key="id" value ="130"/>
+        <parm key="name" value ="蜜源生活"/>
         <parm key="updateBy" value ="updateby测试员"/>
-        <parm key="updateByName" value ="updateByName测试员1"/>
+        <parm key="createBy" value ="updateByName测试员1"/>
         <parm key="gmtCreate" value ="2021-03-01 20:34:27"/>
         <parm key="gmtModified" value ="2021-03-03 12:12:12"/>
         <parm key="icon" value ="https://www.baidu.com/"/>

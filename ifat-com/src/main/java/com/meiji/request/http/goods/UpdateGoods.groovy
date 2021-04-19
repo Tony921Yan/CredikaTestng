@@ -5,7 +5,7 @@ import com.meiji.request.http.MeijiRequest
 
 class UpdateGoods extends MeijiRequest{
     {
-        super.api = ""
+        super.api = "/platform/goodsMgr/updateGoods"
         super.params = [["backgroundCategoryId","brandId","detail","frontDeskCategoryId","id","manyProperty",
                          "name","originAddress","pics","sellingPoint","skus","updateBy","updateByName"]]
     }

@@ -12,5 +12,6 @@ class AddCategoryTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void addCategory(TestContext testContext){
         addCategory.invoke(testContext).baseAssert(testContext)
+//        addCategory.dataAssert(testContext)
     }
 }

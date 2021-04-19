@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "addCategory">
-        <parm key="type" value ="2"/>
-        <parm key="sort" value ="100"/>
+        <parm key="type" value ="1"/>
+        <parm key="sort" value ="1000"/>
         <parm key="parentId" value ="1"/>
-        <parm key="parentName" value ="男鞋"/>
-        <parm key="name" value ="拖鞋"/>
-        <parm key="icon" value ="https://image.baidu.com/search/index?ct=201326592"/>
-        <parm key="status" value ="true"/>
-        <parm key="createBy" value ="测试员"/>
+        <parm key="parentName" value ="0"/>
+        <parm key="name" value ="床上用品"/>
+        <parm key="icon" value ="https://i111111111mage.baidu.com/"/>
+        <parm key="status" value ="false"/>
+        <parm key="createBy" value ="创建人0324"/>
     </test>
 </data>

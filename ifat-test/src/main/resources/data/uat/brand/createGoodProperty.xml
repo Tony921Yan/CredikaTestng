@@ -8,7 +8,7 @@
         <parm key="id" value ="11"/>
         <parm key="isMust" value ="1"/>
         <parm key="isSearch" value ="1"/>
-        <parm key="name" value ="尺寸_属性名称"/>
+        <parm key="name" value ="尺寸"/>
         <parm key="remark" value ='商品属性备注.....'/>
         <parm key="status" value ="0"/>
         <parm key="type" value ="1"/>

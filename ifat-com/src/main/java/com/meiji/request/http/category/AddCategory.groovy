@@ -2,6 +2,7 @@ package com.meiji.request.http.category
 
 import com.meiji.com.TestContext
 import com.meiji.request.http.MeijiRequest
+import com.meiji.service.MysqlService
 
 class AddCategory extends MeijiRequest{
     {
@@ -22,4 +23,12 @@ class AddCategory extends MeijiRequest{
     MeijiRequest baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
+
+    MeijiRequest dataAssert(TestContext testContext){
+        List mysqlData = MysqlService.addCategory(testContext.get("type"),testContext.get("sort"))
+        List apiData = testContext.getRequest().toString()
+        System.out.println("apidate: " + apiData)
+        assert mysqlData.size() == apiData.size()
+    }
+
 }

@@ -20,6 +20,6 @@ class UpdateCategoryByIdTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateCategoryById_listNull(TestContext testContext){
         updateCategoryById.invoke(testContext)
-        assert testContext.getResponse().code == "05000"
+        assert testContext.getResponse().code == "05008"
     }
 }

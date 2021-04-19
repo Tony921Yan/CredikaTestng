@@ -67,7 +67,6 @@ abstract class MeijiRequest {
     }
 
     MeijiRequest specialAssert(TestContext testContext){
-
     }
 
 }

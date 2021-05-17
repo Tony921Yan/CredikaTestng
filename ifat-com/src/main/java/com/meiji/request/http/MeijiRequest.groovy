@@ -30,19 +30,22 @@ abstract class MeijiRequest {
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){
-                req.put(str,testContext.get(str))
+                req.put(str,JsonUtil.objectParse(testContext.get(str)))
             }
         }
         String res = HttpUtil.post(url,heads, req)
         testContext.appendLog("url:"+url)
-        testContext.appendLog("heads:"+heads)
-        testContext.appendLog("params:"+req)
-        testContext.appendLog("response:"+ JsonUtil.prettyJson(res))
+        testContext.appendLog("heads:")
+        testContext.appendLog(heads)
+        testContext.appendLog("params:")
+        testContext.appendLog(req)
+        testContext.appendLog("response:")
+        testContext.appendLog(res)
         testContext.put("response",res)
         testContext.put("allure_url", url)
         testContext.put("allure_headers", heads)
         testContext.put("allure_params", req)
-        testContext.put("allure_response", JsonUtil.prettyJson(res))
+        testContext.put("allure_response", res)
         return this
     }
 

@@ -13,27 +13,27 @@ class CustomListener extends TestListenerAdapter{
     public void onTestFailure(ITestResult tr) {
         TestContext testContext = tr.getParameters() as TestContext
         log(testContext.get("log") as List)
-        caseStep(testContext.get("allure_interface"), testContext.get("allure_method"), testContext.get("allure_params"), testContext.get("allure_response"))
+        caseStep(testContext.get("allure_url"), testContext.get("allure_headers"), testContext.get("allure_params"), testContext.get("allure_response"))
     }
 
     @Override
     public void onTestSkipped(ITestResult tr) {
         TestContext testContext = tr.getParameters() as TestContext
         log(testContext.get("log")  as List)
-        caseStep(testContext.get("allure_interface"), testContext.get("allure_method"), testContext.get("allure_params"), testContext.get("allure_response"))
+        caseStep(testContext.get("allure_url"), testContext.get("allure_headers"), testContext.get("allure_params"), testContext.get("allure_response"))
     }
 
     @Override
     public void onTestSuccess(ITestResult tr) {
         TestContext testContext = tr.getParameters() as TestContext
         log(testContext.get("log") as List)
-        caseStep(testContext.get("allure_interface"), testContext.get("allure_method"), testContext.get("allure_params"), testContext.get("allure_response"))
+        caseStep(testContext.get("allure_url"), testContext.get("allure_headers"), testContext.get("allure_params"), testContext.get("allure_response"))
     }
 
     private void log(List log) {
-        for (String str:log){
-            Reporter.log(str)
-            println(str)
+        for (Object str:log){
+            Reporter.log(JsonUtil.prettyJson(str))
+            println(JsonUtil.prettyJson(str))
         }
         if (++m_count % 40 == 0) {
             println("")
@@ -41,13 +41,13 @@ class CustomListener extends TestListenerAdapter{
     }
 
     //测试步骤
-    public static void caseStep(def interfaceName, def methodName, def param, def response)
+    public static void caseStep(def url, def headers, def param, def response)
     {
         def jsonOutput = new JsonOutput()
-        Allure.addAttachment("接口", interfaceName.toString())
-        Allure.addAttachment("方法", methodName.toString())
-        Allure.addAttachment("参数", jsonOutput.prettyPrint(JsonUtil.toJsonString(param)))
-        Allure.addAttachment("响应", jsonOutput.prettyPrint(JsonUtil.toJsonString(response)))
+        Allure.addAttachment("接口", url.toString())
+        Allure.addAttachment("请求头", JsonUtil.prettyJson(headers))
+        Allure.addAttachment("参数", JsonUtil.prettyJson(param))
+        Allure.addAttachment("响应", JsonUtil.prettyJson(response))
     }
 
 }

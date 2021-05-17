@@ -1,14 +1,13 @@
 package com.meiji.test.http.shop
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.shop.GetAfterLog
-import com.meiji.request.http.shop.GetAfterOrderDetail
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class GetAfterOrderDetailTest extends BaseTest {
-    GetAfterOrderDetail getAfterOrderDetail = new GetAfterOrderDetail()
+    com.meiji.biz.request.http.shop.GetAfterOrderDetail getAfterOrderDetail = new com.meiji.biz.request.http.shop.GetAfterOrderDetail()
     @Test(description = "获取售后单详情 getAfterOrderDetail" ,groups = ["prod","uat"],testName = "getAfterOrderDetail",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getAfterOrderDetail(TestContext testContext){

@@ -1,14 +1,13 @@
 package com.meiji.test.http.shop
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.shop.GetAfterOrderDetail
-import com.meiji.request.http.shop.GetAfterOrderPage
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class GetAfterOrderPageTest extends BaseTest {
-    GetAfterOrderPage getAfterOrderPage = new GetAfterOrderPage()
+    com.meiji.biz.request.http.shop.GetAfterOrderPage getAfterOrderPage = new com.meiji.biz.request.http.shop.GetAfterOrderPage()
     @Test(description = "获取售后单列表 getAfterOrderPage" ,groups = ["prod","uat"],testName = "getAfterOrderPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getAfterOrderPage(TestContext testContext){

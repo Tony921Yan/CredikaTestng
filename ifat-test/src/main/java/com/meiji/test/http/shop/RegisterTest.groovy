@@ -1,9 +1,9 @@
 package com.meiji.test.http.shop
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.shop.Register
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
+import com.meiji.biz.request.http.shop.Register
 import org.testng.annotations.Test
 
 class RegisterTest extends BaseTest {

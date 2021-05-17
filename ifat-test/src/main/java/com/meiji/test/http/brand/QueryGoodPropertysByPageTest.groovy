@@ -1,13 +1,13 @@
 package com.meiji.test.http.brand
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.brand.QueryGoodPropertysByPage
-import com.meiji.util.JsonUtil
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
+import com.meiji.biz.request.http.brand.QueryGoodPropertysByPage
+import com.miyuan.ifat.support.util.JsonUtil
 import org.testng.annotations.Test
 
-class QueryGoodPropertysbyPageTest extends BaseTest {
+class QueryGoodPropertysByPageTest extends BaseTest {
     QueryGoodPropertysByPage queryGoodPropertysByPage = new QueryGoodPropertysByPage()
     @Test(description = "商品属性分页查询 queryGoodPropertys" ,groups = ["prod","uat"],testName = "queryGoodPropertysByPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

@@ -1,10 +1,9 @@
 package com.meiji.test.http.mall
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.mall.AddUserAddress
-import com.meiji.request.http.mall.FindRecommendGoods
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
+import com.meiji.biz.request.http.mall.FindRecommendGoods
 import org.testng.annotations.Test
 
 class FindRecommendGoodsTest extends BaseTest {

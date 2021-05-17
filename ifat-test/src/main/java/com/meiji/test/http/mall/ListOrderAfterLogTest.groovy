@@ -1,14 +1,13 @@
 package com.meiji.test.http.mall
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.mall.ConfirmReceipt
-import com.meiji.request.http.mall.ListOrderAfterLog
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class ListOrderAfterLogTest extends BaseTest {
-    ListOrderAfterLog listOrderAfterLog = new ListOrderAfterLog()
+    com.meiji.biz.request.http.mall.ListOrderAfterLog listOrderAfterLog = new com.meiji.biz.request.http.mall.ListOrderAfterLog()
     @Test(description = "查看售后协商历史 listOrderAfterLog" ,groups = ["prod","uat"],testName = "listOrderAfterLog",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void listOrderAfterLog(TestContext testContext){

@@ -1,10 +1,10 @@
 package com.meiji.test.http.goods
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.goods.UpdateGoods
-import com.meiji.util.JsonUtil
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
+import com.meiji.biz.request.http.goods.UpdateGoods
+import com.miyuan.ifat.support.util.JsonUtil
 import org.testng.annotations.Test
 
 class UpdateGoodsTest extends BaseTest {

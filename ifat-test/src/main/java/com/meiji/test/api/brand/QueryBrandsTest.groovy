@@ -1,13 +1,13 @@
 package com.meiji.test.api.brand
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.api.brand.QueryBrands
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class QueryBrandsTest extends BaseTest {
-    QueryBrands queryBrands = new QueryBrands()
+    com.meiji.biz.request.api.brand.QueryBrands queryBrands = new com.meiji.biz.request.api.brand.QueryBrands()
     @Test(description = "品牌分页查询 queryBrands" ,groups = ["prod","uat"],testName = "queryBrands",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void queryBrands(TestContext testContext){

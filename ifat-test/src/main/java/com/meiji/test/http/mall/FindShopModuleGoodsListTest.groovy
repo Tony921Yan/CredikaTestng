@@ -1,13 +1,13 @@
 package com.meiji.test.http.mall
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.mall.FindShopModuleGoodsList
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class FindShopModuleGoodsListTest extends BaseTest {
-    FindShopModuleGoodsList findShopModuleGoodsList = new FindShopModuleGoodsList()
+    com.meiji.biz.request.http.mall.FindShopModuleGoodsList findShopModuleGoodsList = new com.meiji.biz.request.http.mall.FindShopModuleGoodsList()
     @Test(description = "查询店铺首页模块商品列表 findShopModuleGoodsList" ,groups = ["prod","uat"],testName = "findShopModuleGoodsList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findShopModuleGoodsList(TestContext testContext){

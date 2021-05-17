@@ -1,10 +1,9 @@
 package com.meiji.test.http.orderafter
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.orderafter.AuditOrderAfter
-import com.meiji.request.http.orderafter.AuditRefundMoney
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
+import com.meiji.biz.request.http.orderafter.AuditRefundMoney
 import org.testng.annotations.Test
 
 class AuditRefundMoneyTest extends BaseTest {

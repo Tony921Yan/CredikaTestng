@@ -1,13 +1,13 @@
 package com.meiji.test.api.brand
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.api.brand.UpdateBrand
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class UpdateBrandTest extends BaseTest {
-    UpdateBrand updateBrand = new UpdateBrand()
+    com.meiji.biz.request.api.brand.UpdateBrand updateBrand = new com.meiji.biz.request.api.brand.UpdateBrand()
     @Test(description = "更新商品属性信息 updateBrand" ,groups = ["prod","uat"],testName = "updateBrand",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateBrand(TestContext testContext){

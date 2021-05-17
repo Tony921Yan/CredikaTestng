@@ -1,13 +1,13 @@
 package com.meiji.test.http.shop
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.order.GetOrderLogisticsInfo
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class GetOrderLogisticsInfoTest extends BaseTest {
-    GetOrderLogisticsInfo getOrderLogisticsInfo = new GetOrderLogisticsInfo()
+    com.meiji.biz.request.http.order.GetOrderLogisticsInfo getOrderLogisticsInfo = new com.meiji.biz.request.http.order.GetOrderLogisticsInfo()
     @Test(description = "获取物流信息 getOrderLogisticsInfo" ,groups = ["prod","uat"],testName = "getOrderLogisticsInfo",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getOrderLogisticsInfo(TestContext testContext){

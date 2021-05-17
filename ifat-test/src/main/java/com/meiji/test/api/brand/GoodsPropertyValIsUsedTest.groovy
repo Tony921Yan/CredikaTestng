@@ -1,13 +1,13 @@
 package com.meiji.test.api.brand
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.api.brand.GoodsPropertyValIsUsed
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class GoodsPropertyValIsUsedTest extends BaseTest {
-    GoodsPropertyValIsUsed goodsPropertyValIsUsed = new GoodsPropertyValIsUsed()
+    com.meiji.biz.request.api.brand.GoodsPropertyValIsUsed goodsPropertyValIsUsed = new com.meiji.biz.request.api.brand.GoodsPropertyValIsUsed()
     @Test(description = "查商品属性值是否被sku使用 goodsPropertyValIsUsed" ,groups = ["prod","uat"],testName = "goodsPropertyValIsUsed",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void goodsPropertyValIsUsed(TestContext testContext){

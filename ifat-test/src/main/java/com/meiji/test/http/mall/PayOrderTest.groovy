@@ -1,14 +1,13 @@
 package com.meiji.test.http.mall
 
-import com.meiji.com.BaseTest
-import com.meiji.com.TestContext
-import com.meiji.com.TestData
-import com.meiji.request.http.mall.PageOrder
-import com.meiji.request.http.mall.PayOrder
+
+import com.miyuan.ifat.support.test.BaseTest
+import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 class PayOrderTest extends BaseTest {
-    PayOrder payOrder = new PayOrder()
+    com.meiji.biz.request.http.mall.PayOrder payOrder = new com.meiji.biz.request.http.mall.PayOrder()
     @Test(description = "支付订单 payOrder" ,groups = ["prod","uat"],testName = "payOrder",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void payOrder(TestContext testContext){

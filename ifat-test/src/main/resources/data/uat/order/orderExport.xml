@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "orderExport">
+        <parm key="endTime" value =""/>
+        <parm key="orderCode" value =""/>
+        <parm key="orderStatus" value =""/>
+        <parm key="orderType" value =""/>
+        <parm key="receiverMsg" value =""/>
+        <parm key="shopUserMsg" value =""/>
+        <parm key="skuCode" value =""/>
+        <parm key="startTime" value =""/>
+    </test>
+</data>

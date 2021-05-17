@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateApplyAfterSale">
+        <parm key="afterCode" value =""/>
+        <parm key="afterType" value =""/>
+        <parm key="id" value =""/>
+        <parm key="orderCode" value =""/>
+        <parm key="orderGoodsId" value =""/>
+        <parm key="refundAmount" value =""/>
+        <parm key="refundDesc" value =""/>
+        <parm key="refundReason" value =""/>
+        <parm key="returnGoodStatus" value =""/>
+        <parm key="returnGoodsImgs" value =""/>
+    </test>
+</data>

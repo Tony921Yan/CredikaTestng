@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addSubject"> <!--表supplier_administrator_info-->
+        <parm key="supplierId" value ="20"/> <!--表meiji_supplier-->
+        <parm key="supplierCode" value ="sup12202104021311"/>
+        <parm key="cardType" value ="1"/>
+        <parm key="merchantShortname" value ="本上生活"/>
+        <parm key="businessLicenseCopy" value ="http://static.meiji8888.com/"/>
+        <parm key="businessLicenseNumber" value ="1152223MA0Q61HA6"/>
+        <parm key="merchantName" value ="本上生活"/>
+        <parm key="businessTime" value ="2030-10-23"/>
+        <parm key="companyAddress" value ="深圳市南山区深南大道10168佳嘉豪商务大厦17A2"/>
+        <parm key="legalPerson" value ="王刚111"/>
+        <parm key="organizationCopy" value =""/>
+        <parm key="organizationNumber" value =""/>
+        <parm key="organizationTime" value =""/>
+        <parm key="createBy" value ="崔落实"/>
+        <parm key="updateBy" value ="崔落实"/>
+        <parm key="gmtCreate" value ="2022-03-31 17:23:23"/>
+        <parm key="gmtModified" value ="2022-03-31 17:23:23"/>
+    </test>
+</data>

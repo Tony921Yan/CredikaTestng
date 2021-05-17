@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateShopCompanyInfo">
+        <parm key="businessLicenseNumber" value =""/>
+        <parm key="codeType" value =""/>
+        <parm key="legalPerson" value =""/>
+        <parm key="legalPersonWechat" value =""/>
+        <parm key="merchantName" value =""/>
+        <parm key="shopId" value =""/>
+    </test>
+</data>

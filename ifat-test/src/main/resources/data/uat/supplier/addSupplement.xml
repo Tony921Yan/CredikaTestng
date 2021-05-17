@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addSupplement">
+        <parm key="supplierId" value ="20"/>
+        <parm key="supplierCode" value ="sup12202104021311"/>
+        <parm key="qualifications" value ="特殊资质"/>
+        <parm key="businessAdditionPics" value ="补充材料"/>
+        <parm key="businessAdditionDesc" value ="补充说明"/>
+        <parm key="createBy" value ="测试佬"/>
+        <parm key="updateBy" value ="测试佬"/>
+        <parm key="gmtCreate" value ="2021-04-02 10:43:28"/>
+        <parm key="gmtModified" value ="2021-04-02 10:43:28"/>
+
+    </test>
+</data>

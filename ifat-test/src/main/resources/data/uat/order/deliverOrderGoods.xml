@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "deliverOrderGoods">
+<!--        <parm key="goodsList" value ='[{"deliverNum":"1","skuCode":"200su-0354341"}]'/> -->
+        <parm key="logisticsCode" value ="JD0037860935387"/>
+        <parm key="logisticsCompanyName" value ="jd"/>
+        <parm key="orderCode" value ="O2021040121180499708"/>
+    </test>
+</data>

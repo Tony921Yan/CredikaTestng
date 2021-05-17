@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "exportOrderAfter">
+        <parm key="condition" value ='{"afterStatus":"","afterType":"","gmtCreatEndDate":"",
+        "gmtCreateStrDate":"","oderCode":"","orderAfterCode":""}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value =""/>
+        <parm key="rows" value =""/>
+        <parm key="sort" value =""/>
+    </test>
+</data>

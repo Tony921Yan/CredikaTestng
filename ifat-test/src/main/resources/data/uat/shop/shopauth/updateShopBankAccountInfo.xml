@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateShopBankAccountInfo">
+        <parm key="needAccountInfo" value ="1"/>
+        <parm key="shopId" value ="1"/>
+        <parm key="accountBank" value ="1"/>
+        <parm key="accountName" value ="1"/>
+        <parm key="accountNumber" value ="1"/>
+        <parm key="bankAccountType" value ="1"/>
+        <parm key="bankAddressCode" value ="1"/>
+        <parm key="bankBranchId" value ="1"/>
+        <parm key="bankName" value ="1"/>
+    </test>
+</data>

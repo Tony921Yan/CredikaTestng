@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "postReturnLogisticsInformation">
+        <parm key="afterCode" value =""/>
+        <parm key="goodsIdList" value =""/>
+        <parm key="logisticsCode" value =""/>
+        <parm key="logisticsCompanyCode" value =""/>
+        <parm key="orderCode" value =""/>
+    </test>
+</data>

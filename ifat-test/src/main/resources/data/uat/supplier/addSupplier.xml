@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addSupplier">
+        <parm key="name" value ="本上生活（深圳）科技有限公司"/>
+        <parm key="contacts" value ="洪伟"/>
+        <parm key="phone" value ="13021662612"/>
+        <parm key="legalPersonPhone" value ="13021662612"/>
+        <parm key="email" value ="13574057096@163.com"/>
+        <parm key="address" value ="深圳市南山区"/>
+        <parm key="addressDetail" value ="深圳市南山区深南大道10168佳嘉豪商务大厦17A2"/>
+        <parm key="remark" value ="无"/>
+        <parm key="createBy" value ="admin"/>
+        <parm key="updateBy" value ="admin"/>
+        <parm key="gmtCreate" value ="2022-03-29 21:23:23"/>
+        <parm key="gmtModified" value ="2022-03-29 21:23:23"/>
+    </test>
+</data>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateOrderAddress">
+        <parm key="id" value =""/>
+        <parm key="orderCode" value =""/>
+        <parm key="receiverAddress" value =""/>
+        <parm key="receiverName" value =""/>
+        <parm key="receiverTel" value =""/>
+    </test>
+</data>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "cancelApplyAfterSale">
+        <parm key="afterCode" value =""/>
+        <parm key="id" value =""/>
+        <parm key="orderCode" value =""/>
+        <parm key="orderGoodsId" value =""/>
+    </test>
+</data>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "auditOrder">
+        <parm key="auditById" value ="ph"/>
+        <parm key="auditByName" value ="潘鹤"/>
+        <parm key="auditMethod" value ="1"/>
+        <parm key="auditStatus" value ="2"/>
+        <parm key="auditType" value ="1"/>
+        <parm key="gmtCreate" value ="2021-03-27 12:56:45"/>
+        <parm key="id" value ="4"/>
+        <parm key="orderCode" value ="O2021032022170557843"/>
+        <parm key="remark" value ="Auto_test"/>
+    </test>
+</data>

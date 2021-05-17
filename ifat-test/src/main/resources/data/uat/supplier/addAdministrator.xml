@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addAdministrator"> <!--表supplier_administrator_info-->
+        <parm key="supplierId" value ="6"/> <!--表meiji_supplier-->
+        <parm key="supplierCode" value ="sup12202103299215"/>
+        <parm key="contactType" value ="66"/>
+        <parm key="contactName" value ="测试佬"/>
+        <parm key="contactIdCardNumber" value ="430321199307211"/>
+        <parm key="mobilePhone" value ="19928717417"/>
+        <parm key="contactEmail" value ="cui@163.com"/>
+        <parm key="createBy" value ="测试员"/>
+        <parm key="updateBy" value ="测试员"/>
+        <parm key="gmtCreate" value ="2022-03-29 14:10:23"/>
+        <parm key="gmtModified" value ="2022-03-29 14:10:23"/>
+    </test>
+</data>

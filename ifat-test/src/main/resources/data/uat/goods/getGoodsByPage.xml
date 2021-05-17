@@ -2,6 +2,6 @@
 <data>
     <test name = "getGoodsByPage">
         <parm key="pageNum" value ="1"/>
-        <parm key="pageSize" value ="10"/>
+        <parm key="pageSize" value ="100"/>
     </test>
 </data>

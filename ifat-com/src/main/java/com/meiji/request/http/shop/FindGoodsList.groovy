@@ -9,7 +9,7 @@ import com.meiji.util.DateUtil
 class FindGoodsList extends MeijiRequest {
     {
         super.api = "/shop/goods/findGoodsList"
-        super.params =  [ "categoryId","commissionSort","page","priceSort","rows"]
+        super.params =  [ "categoryId","commissionSort","page","priceSort","rows","shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 

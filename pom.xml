@@ -37,7 +37,6 @@
         <com.alibaba.fastjson>1.2.74</com.alibaba.fastjson>
         <ru.yandex.qatools.allure>1.5.4</ru.yandex.qatools.allure>
         <aspectj.version>1.7.4</aspectj.version>
-        <org.slf4j>1.7.25</org.slf4j>
         <com.google.inject>3.0</com.google.inject>
         <mongo-java-driver>3.12.7</mongo-java-driver>
         <mysql-connector-java>8.0.21</mysql-connector-java>

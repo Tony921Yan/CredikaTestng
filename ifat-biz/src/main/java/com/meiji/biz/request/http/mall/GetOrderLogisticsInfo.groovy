@@ -1,33 +1,33 @@
 package com.meiji.biz.request.http.mall
 
-
+import com.meiji.biz.request.http.platform.PlatformGet
 import com.miyuan.ifat.support.test.TestContext
 import com.meiji.biz.service.MysqlService
 import com.meiji.biz.util.DateUtil
 
 
-class GetOrderLogisticsInfo extends com.meiji.biz.request.http.MeijiGet {
+class GetOrderLogisticsInfo extends PlatformGet {
     {
         super.api = "/mall/order/getOrderLogisticsInfo?orderCode=1234"
         super.params =  []
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    com.meiji.biz.request.http.MeijiGet invoke(TestContext testContext) {
+    PlatformGet invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    com.meiji.biz.request.http.MeijiGet preInvoke(TestContext testContext){
+    PlatformGet preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    com.meiji.biz.request.http.MeijiGet baseAssert(TestContext testContext){
+    PlatformGet baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    com.meiji.biz.request.http.MeijiGet specialAssert(TestContext testContext){
+    PlatformGet specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data

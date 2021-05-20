@@ -3,7 +3,7 @@ package com.meiji.test.api.goods
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
-import com.meiji.biz.request.http.brand.BrandDetail
+import com.meiji.biz.request.http.platform.brand.BrandDetail
 import org.testng.annotations.Test
 
 class UpdateGoodsTest extends BaseTest {

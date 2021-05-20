@@ -2,103 +2,103 @@
 <suite name = "user"  verbose="4">
     <test name="添加商品 addGoods">
         <classes>
-            <class name = "com.meiji.test.http.goods.AddGoddsTest"/>
+            <class name = "com.meiji.test.http.platform.goods.AddGoddsTest"/>
         </classes>
     </test>
 
     <test name="获取商品列表 getGoodsByPage">
         <classes>
-            <class name = "com.meiji.test.http.goods.GetGoodsByPageTest"/>
+            <class name = "com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
         </classes>
     </test>
 
     <test name="根据spuid获取属性 getPropertyBySpuId">
         <classes>
-            <class name = "com.meiji.test.http.goods.GetPropertyBySpuIdTest"/>
+            <class name = "com.meiji.test.http.platform.goods.GetPropertyBySpuIdTest"/>
         </classes>
     </test>
 
     <test name="更新商品 updateGoods">
         <classes>
-            <class name = "com.meiji.test.http.goods.GetGoodsByPageTest"/>
+            <class name = "com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
         </classes>
     </test>
 
     <test name="添加类目 addCategory">
         <classes>
-            <class name = "com.meiji.test.http.category.AddCategoryTest"/>
+            <class name = "com.meiji.test.http.platform.category.AddCategoryTest"/>
         </classes>
     </test>
 
     <test name="删除类目 delCategoryById">
         <classes>
-            <class name = "com.meiji.test.http.category.DelCategoryByIdTest"/>
+            <class name = "com.meiji.test.http.platform.category.DelCategoryByIdTest"/>
         </classes>
     </test>
 
     <test name="根据分类类型和分类名字获取分类 getCategoryByName">
         <classes>
-            <class name = "com.meiji.test.http.category.GetCategoryByNameTest"/>
+            <class name = "com.meiji.test.http.platform.category.GetCategoryByNameTest"/>
         </classes>
     </test>
 
     <test name="根据分类类型获取分类树 getCategoryTreeByType">
         <classes>
-            <class name = "com.meiji.test.http.category.GetCategoryTreeByTypeTest"/>
+            <class name = "com.meiji.test.http.platform.category.GetCategoryTreeByTypeTest"/>
         </classes>
     </test>
 
     <test name="修改类目 updateCategoryById">
         <classes>
-            <class name = "com.meiji.test.http.category.UpdateCategoryByIdTest"/>
+            <class name = "com.meiji.test.http.platform.category.UpdateCategoryByIdTest"/>
         </classes>
     </test>
 
     <test name="品牌详情 brandDetail">
         <classes>
-            <class name = "com.meiji.test.http.brand.BrandDetailTest"/>
+            <class name = "com.meiji.test.http.platform.brand.BrandDetailTest"/>
         </classes>
     </test>
 
     <test name="创建品牌 createBrand">
         <classes>
-            <class name = "com.meiji.test.http.brand.CreateBrandTest"/>
+            <class name = "com.meiji.test.http.platform.brand.CreateBrandTest"/>
         </classes>
     </test>
 
     <test name="创建商品属性组 createGoodPropertyGroup">
         <classes>
-            <class name = "com.meiji.test.http.brand.CreateGoodPropertyGroupTest"/>
+            <class name = "com.meiji.test.http.platform.brand.CreateGoodPropertyGroupTest"/>
         </classes>
     </test>
 
     <test name="创建属性 createGoodProperty">
         <classes>
-            <class name = "com.meiji.test.http.brand.CreateGoodPropertyTest"/>
+            <class name = "com.meiji.test.http.platform.brand.CreateGoodPropertyTest"/>
         </classes>
     </test>
 
     <test name="商品属性详情 goodPropertyDetail">
         <classes>
-            <class name = "com.meiji.test.http.brand.GoodPropertyDetailTest"/>
+            <class name = "com.meiji.test.http.platform.brand.GoodPropertyDetailTest"/>
         </classes>
     </test>
 
     <test name="商品属性组详情 goodPropertyGroupDetail">
         <classes>
-            <class name = "com.meiji.test.http.brand.GoodPropertyGroupDetailTest"/>
+            <class name = "com.meiji.test.http.platform.brand.GoodPropertyGroupDetailTest"/>
         </classes>
     </test>
 
     <test name="查商品属性值是否被sku使用 goodsPropertyValIsUsed">
         <classes>
-            <class name = "com.meiji.test.http.brand.GoodsPropertyValIsUsedTest"/>
+            <class name = "com.meiji.test.http.platform.brand.GoodsPropertyValIsUsedTest"/>
         </classes>
     </test>
 
     <test name="品牌分页查询 queryBrands">
         <classes>
-            <class name = "com.meiji.test.http.brand.QueryBrandsByPageTest"/>
+            <class name = "com.meiji.test.http.platform.brand.QueryBrandsByPageTest"/>
         </classes>
     </test>
 
@@ -116,19 +116,19 @@
 
     <test name="更新商品属性信息 updateBrand">
         <classes>
-            <class name = "com.meiji.test.http.brand.UpdateBrandTest"/>
+            <class name = "com.meiji.test.http.platform.brand.UpdateBrandTest"/>
         </classes>
     </test>
 
     <test name="更新商品属性组 updateGoodPropertyGroup">
         <classes>
-            <class name = "com.meiji.test.http.brand.UpdateGoodPropertyGroupTest"/>
+            <class name = "com.meiji.test.http.platform.brand.UpdateGoodPropertyGroupTest"/>
         </classes>
     </test>
 
     <test name="更新商品属性信息 updateGoodProperty">
         <classes>
-            <class name = "com.meiji.test.http.brand.UpdateGoodPropertyTest"/>
+            <class name = "com.meiji.test.http.platform.brand.UpdateGoodPropertyTest"/>
         </classes>
     </test>
 

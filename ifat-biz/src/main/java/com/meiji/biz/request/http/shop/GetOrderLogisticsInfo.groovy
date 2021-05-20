@@ -1,26 +1,25 @@
 package com.meiji.biz.request.http.shop
 
 import com.miyuan.ifat.support.test.TestContext
-import com.meiji.biz.request.http.MeijiGet
 
-class GetOrderLogisticsInfo extends MeijiGet {
+class GetOrderLogisticsInfo extends ShopGet {
     {
         super.api = "/platform/orderMgr/getOrderLogisticsInfo"
         super.params =  ["orderCode"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MeijiGet invoke(TestContext testContext) {
+    ShopGet invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MeijiGet preInvoke(TestContext testContext){
+    ShopGet preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MeijiGet baseAssert(TestContext testContext){
+    ShopGet baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 

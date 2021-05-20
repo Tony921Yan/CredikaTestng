@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "login">
-        <parm key="code" value ="code"/>
+    <test name = "mall-login">
+        <parm key="code" value ="10006"/>
+        <parm key="appId" value ="oZD3N5VX0k1-Q2uML69fAXHBi41U"/>
     </test>
 </data>

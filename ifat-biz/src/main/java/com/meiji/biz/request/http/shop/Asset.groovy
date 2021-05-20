@@ -1,25 +1,24 @@
 package com.meiji.biz.request.http.shop
 
 import com.miyuan.ifat.support.test.TestContext
-import com.meiji.biz.request.http.MeijiGet
 
-class Asset extends MeijiGet {
+class Asset extends ShopGet {
     {
         super.api = "/shop/profitSharing/asset"
         super.params =  ["shopId","userId"]
     }
 
-    MeijiGet invoke(TestContext testContext) {
+    ShopGet invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MeijiGet preInvoke(TestContext testContext){
+    ShopGet preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MeijiGet baseAssert(TestContext testContext){
+    ShopGet baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 //

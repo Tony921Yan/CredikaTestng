@@ -1,33 +1,33 @@
 package com.meiji.biz.request.http.mall
 
 import com.miyuan.ifat.support.test.TestContext
-import com.meiji.biz.request.http.MeijiRequest
+
 import com.meiji.biz.service.MysqlService
 import com.meiji.biz.util.DateUtil
 
 
-class FindShopGoodsDetail extends MeijiRequest {
+class FindShopGoodsDetail extends MallPost {
     {
         super.api = "/mall/shop/goods/findShopGoodsDetail"
         super.params =  [ "shopId","spuId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MeijiRequest invoke(TestContext testContext) {
+    MallPost invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MeijiRequest preInvoke(TestContext testContext){
+    MallPost preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MeijiRequest baseAssert(TestContext testContext){
+    MallPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    MeijiRequest specialAssert(TestContext testContext){
+    MallPost specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data

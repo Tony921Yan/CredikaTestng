@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "register">
+    <test name = "mall-register">
         <parm key="avatar" value ="头像url"/>
         <parm key="city" value ="市"/>
         <parm key="country" value ="国家"/>

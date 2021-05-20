@@ -1,9 +1,8 @@
 package com.meiji.biz.request.http.shop.shopauth
-
+import com.meiji.biz.request.http.shop.ShopPost
 import com.miyuan.ifat.support.test.TestContext
-import com.meiji.biz.request.http.MeijiRequest
 
-class UpdateShopBankAccountInfo extends MeijiRequest {
+class UpdateShopBankAccountInfo extends ShopPost {
     {
         super.api = "/shop/updateShopBankAccountInfo"
         super.params =  [ "needAccountInfo","shopId","accountBank","accountName","accountNumber",
@@ -11,17 +10,17 @@ class UpdateShopBankAccountInfo extends MeijiRequest {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MeijiRequest invoke(TestContext testContext) {
+    ShopPost invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MeijiRequest preInvoke(TestContext testContext){
+    ShopPost preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MeijiRequest baseAssert(TestContext testContext){
+    ShopPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 }

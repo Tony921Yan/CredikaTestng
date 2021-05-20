@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "oms_createTask">
+        <parm key="excelRows" value ="1000"/>
+        <parm key="fileName" value ="售后单.csv"/>
+        <parm key="fileUrl" value ="https://www.baidu.com"/>
+        <parm key="id" value ="123456789"/>
+        <parm key="supplierId" value ="0"/>
+        <parm key="taskType" value ="1"/>
+        <parm key="uploadUser" value ="小红"/>
+        <parm key="uploadUserId" value ="12341"/>
+    </test>
+</data>

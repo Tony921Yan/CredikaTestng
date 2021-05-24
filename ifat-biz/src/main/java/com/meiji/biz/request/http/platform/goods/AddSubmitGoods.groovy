@@ -3,9 +3,9 @@ package com.meiji.biz.request.http.platform.goods
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class AddGoods extends PlatformPost{
+class AddSubmitGoods extends PlatformPost{
     {
-        super.api = "/platform/goodsMgr/addGoods"
+        super.api = "/platform/goodsMgr/addSubmitGoods"
         super.params = ["name","sellingPoint","originAddress","brandId","frontDeskCategoryId","backgroundCategoryId","detail",
         "manyProperty","createBy","createByName","updateBy","updateByName","supplierId","supplierCode","deliveryType","isParcel",
         "isSevenDayReturn","freAskedQuestions","supervisorId","isShowSupSuggest","limitCycle","limitNum","isPurchaseLimits",

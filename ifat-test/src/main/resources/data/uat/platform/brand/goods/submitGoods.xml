@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "addGoods">
+    <test name = "submitGoods">
+        <parm key="id" value ="1415947713773600"/>
         <parm key="name" value ="NIKE KYRIE 7 欧文7 首发蓝橙气垫篮球鞋 CQ9327-400"/>
         <parm key="sellingPoint" value="性价比高，客户口碑良好"/>
         <parm key="originAddress" value ="广东省广州市海珠区万胜围保利发展广场"/>
@@ -25,7 +26,7 @@
         <parm key="limitNum" value ='10'/>
         <parm key="isPurchaseLimits" value ='1'/>
         <parm key="pics" value ='[{"sort": 1,"url": "www.baidu.com"},{"sort": 2,"url": "//www.163.com"}]'/>
-        <parm key="skus" value='[{"isDelete":"0","unitPrice": 100,"netWeightUnit": "g","grossWeight": 100,"netWeight": 90,
+        <parm key="skus" value='[{"id":"1415947713773696","isDelete":"0","unitPrice": 100,"netWeightUnit": "g","grossWeight": 100,"netWeight": 90,
         "primaryDistributionPercentage": "0.5","secondaryDistributionPercentage":"0.2","settlementPrice":10,
         "supplierSkuCode":"200","thirdPartySkuCode":"20HKL00345","grossWeightUnit": "g","retailPrice": 110,
         "properties": [{"propertyValueId":1,"property":"颜色","propertyValue":"白色","sort": 0,"propertyId": 1}]}]'/>

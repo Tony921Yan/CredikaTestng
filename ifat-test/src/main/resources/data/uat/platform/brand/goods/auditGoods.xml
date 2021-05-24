@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "auditGoods">
+        <parm key="auditStuats" value ="true"/>
+        <parm key="spuId" value ="1415947713773600"/>
+        <parm key="updateById" value ="cls"/>
+        <parm key="updateByName" value ="lxz"/>
+
+    </test>
+</data>

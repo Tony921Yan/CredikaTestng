@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "addGoods">
+    <test name = "addSubmitGoods">
         <parm key="name" value ="NIKE KYRIE 7 欧文7 首发蓝橙气垫篮球鞋 CQ9327-400"/>
         <parm key="sellingPoint" value="性价比高，客户口碑良好"/>
         <parm key="originAddress" value ="广东省广州市海珠区万胜围保利发展广场"/>

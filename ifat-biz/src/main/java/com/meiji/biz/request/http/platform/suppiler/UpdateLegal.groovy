@@ -3,11 +3,11 @@ package com.meiji.biz.request.http.platform.suppiler
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class UdateSupplier extends PlatformPost{
+class UpdateLegal extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/updateSupplier"
-        super.params = ["id","name","contacts","phone","legalPersonPhone","email","address","addressDetail","remark",
-        "updateBy","gmtModified"]
+        super.api="/platform/supplierMgr/updateLegal"
+        super.params = ["id","idCardCopy","idCardNational","idCardName","idCardNumber",
+        "idCardValidTime","updateBy","gmtModified"]
     }
 
     PlatformPost invoke(TestContext testContext) {

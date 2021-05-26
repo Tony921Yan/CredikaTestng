@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateSupplement">
+        <parm key="id" value ="1"/>
+        <parm key="qualifications" value ="特殊资质1"/>
+        <parm key="businessAdditionPics" value ="补充材料1"/>
+        <parm key="businessAdditionDesc" value ="补充说明1"/>
+        <parm key="updateBy" value ="测试佬"/>
+        <parm key="gmtModified" value ="2021-04-02 10:43:28"/>
+
+    </test>
+</data>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "listFreightTemplateBySupplierId">
+        <parm key="supplierId" value ="32"/>
+        <parm key="templateCode" value ="29"/>
+        <parm key="templateName" value =""/>
+    </test>
+</data>

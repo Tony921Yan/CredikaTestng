@@ -3,10 +3,10 @@ package com.meiji.biz.request.http.platform.suppiler
 import com.meiji.biz.request.http.platform.PlatformGet
 import com.miyuan.ifat.support.test.TestContext
 
-class Apply extends PlatformGet{
+class GetSupplierInfo extends PlatformGet{
     {
-        super.api="/platform/supplierMgr/apply"
-        super.params = [""]
+        super.api="/platform/supplierMgr/getSupplierInfo"
+        super.params = ["code"]
     }
 
     PlatformGet invoke(TestContext testContext) {

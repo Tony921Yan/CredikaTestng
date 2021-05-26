@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getSupplierInfo">
+        <parm key="code" value ="sup12202103292857"/>
+    </test>
+</data>

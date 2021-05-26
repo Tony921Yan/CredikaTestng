@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateLegal"> <!--表supplier_administrator_info-->
+        <parm key="id" value ="2"/> <!--表meiji_supplier-->
+        <parm key="idCardCopy" value ="7http://static.meiji8888.com/"/>
+        <parm key="idCardNational" value ="http://static.meiji8888.com/"/>
+        <parm key="idCardName" value ="罗大佑"/>
+        <parm key="idCardNumber" value ="152104190010220911"/>
+        <parm key="idCardValidTime" value ="2030-10-23"/>
+        <parm key="updateBy" value ="测试佬"/>
+        <parm key="gmtModified" value ="2022-03-31 17:23:23"/>
+    </test>
+</data>

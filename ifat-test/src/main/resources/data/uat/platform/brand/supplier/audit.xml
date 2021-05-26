@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "audit">
+        <parm key="auditMessage" value ="通过或不通过？"/>
+        <parm key="id" value ="6"/>
+        <parm key="status" value ="1"/>
+    </test>
+</data>

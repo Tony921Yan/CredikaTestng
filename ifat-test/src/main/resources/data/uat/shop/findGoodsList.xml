@@ -3,9 +3,9 @@
     <test name = "findGoodsList">
 <!--        <parm key="categoryId" value ="1"/>-->
 <!--        <parm key="commissionSort" value ="asc"/>-->
-        <parm key="page" value ="1"/>
+        <parm key="page" value ="7"/>
 <!--        <parm key="priceSort" value ="asc"/>-->
-        <parm key="rows" value ="100"/>
+        <parm key="rows" value ="10"/>
         <parm key="shopId" value ="1405981112139808"/>
     </test>
 </data>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "findDealerPage">
+        <parm key="createTimeEnd" value =""/>
+        <parm key="createTimeStart" value =""/>
+        <parm key="dealerCode" value ="deal102103302272"/>
+        <parm key="nickname" value ="无名"/>
+        <parm key="page" value ="1"/>
+        <parm key="phone" value ="19928717417"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>

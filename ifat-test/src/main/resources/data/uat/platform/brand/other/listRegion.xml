@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "listRegion">
+        <parm key="level" value ="1"/>
+        <parm key="pcode" value ="11000"/>
+    </test>
+
+<!--    <test name = "stockManger">-->
+<!--        <parm key="goodsName" value ="平远云雾橙 4kg"/>-->
+<!--        <parm key="skuCode" value ="200su-0055607"/>-->
+<!--        <parm key="skuId" value ="1410323951124544"/>-->
+<!--        <parm key="spuCode" value ="200sup55607"/>-->
+<!--        <parm key="spuId" value ="1410323951124513"/>-->
+<!--        <parm key="stockNum" value ="2000"/>-->
+<!--        <parm key="suppierGoodsCode" value ="sup12202104196871"/>-->
+<!--        <parm key="suppierName" value ="惠州市山姆农业科技发展有限公司"/>-->
+
+<!--    </test>-->
+</data>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "pageLabel">
+        <parm key="gmtCreate" value ="2021-06-02 11:00:10"/>
+        <parm key="gmtModified" value ="2021-06-02 11:00:10"/>
+        <parm key="id" value =""/>
+        <parm key="isDelete" value ="0"/>
+        <parm key="labelColor" value ="#FF7314"/>
+        <parm key="labelName" value ="接口测试"/>
+        <parm key="labelRemark" value ="自动化接口测试"/>
+        <parm key="labelType" value ="0"/>
+        <parm key="page" value =""/>
+        <parm key="rows" value =""/>
+        <parm key="showType" value ="1"/>
+    </test>
+</data>

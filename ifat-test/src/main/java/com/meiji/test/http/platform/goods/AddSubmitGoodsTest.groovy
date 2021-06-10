@@ -12,8 +12,8 @@ class AddSubmitGoodsTest extends BaseTest {
     @Test(description = "新增提交商品 addSubmitGoods" ,groups = ["prod","uat"],testName = "addSubmitGoods",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void addSubmitGoods(TestContext testContext){
-        testContext.put("pics", JsonUtil.objToJsonList(testContext.get("pics")))
-        testContext.put("skus", JsonUtil.objToJsonList(testContext.get("skus")))
+        //testContext.put("pics", JsonUtil.objToJsonList(testContext.get("pics")))
+        //testContext.put("skus", JsonUtil.objToJsonList(testContext.get("skus")))
         addSubmitGoods.invoke(testContext).baseAssert(testContext)
     }
 }

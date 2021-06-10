@@ -13,8 +13,8 @@ class SubmitGoodsTest extends BaseTest {
     @Test(description = "提交商品 submitGoods" ,groups = ["prod","uat"],testName = "submitGoods",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void submitGoods(TestContext testContext){
-        testContext.put("pics", JsonUtil.objToJsonList(testContext.get("pics")))
-        testContext.put("skus", JsonUtil.objToJsonList(testContext.get("skus")))
+        //testContext.put("pics", JsonUtil.objToJsonList(testContext.get("pics")))
+        //testContext.put("skus", JsonUtil.objToJsonList(testContext.get("skus")))
         submitGoods.invoke(testContext).baseAssert(testContext)
     }
 }

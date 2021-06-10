@@ -12,7 +12,7 @@ class UpdateCategoryByIdTest extends BaseTest {
     @Test(description = "修改类目 updateCategoryById" ,groups = ["prod","uat"],testName = "updateCategoryById",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateCategoryById(TestContext testContext){
-        testContext.put("list", JsonUtil.objToJsonList(testContext.get("list")))
+        //testContext.put("list", JsonUtil.objToJsonList(testContext.get("list")))
         updateCategoryById.invoke(testContext).baseAssert(testContext)
     }
 }

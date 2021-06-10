@@ -12,7 +12,7 @@ class QueryGoodPropertysByPageTest extends BaseTest {
     @Test(description = "商品属性分页查询 queryGoodPropertys" ,groups = ["prod","uat"],testName = "queryGoodPropertysByPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void queryGoodPropertysByPage(TestContext testContext){
-        testContext.put("condition", JsonUtil.strToJson(testContext.get("condition")))
+        //testContext.put("condition", JsonUtil.strToJson(testContext.get("condition")))
         queryGoodPropertysByPage.invoke(testContext).baseAssert(testContext)
     }
 }

@@ -12,12 +12,6 @@
         </classes>
     </test>
 
-    <test name="更新商品 updateGoods">
-        <classes>
-            <class name = "com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
-        </classes>
-    </test>
-
     <test name="根据分类类型和分类名字获取分类 getCategoryByName">
         <classes>
             <class name = "com.meiji.test.http.platform.category.GetCategoryByNameTest"/>
@@ -33,12 +27,6 @@
     <test name="品牌详情 brandDetail">
         <classes>
             <class name = "com.meiji.test.http.platform.brand.BrandDetailTest"/>
-        </classes>
-    </test>
-
-    <test name="创建品牌 createBrand">
-        <classes>
-            <class name = "com.meiji.test.http.platform.brand.CreateBrandTest"/>
         </classes>
     </test>
 
@@ -69,12 +57,6 @@
     <test name="商品属性组分页查询 selectPage">
         <classes>
             <class name = "com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
-        </classes>
-    </test>
-
-    <test name="更新商品属性组 updateGoodPropertyGroup">
-        <classes>
-            <class name = "com.meiji.test.http.platform.brand.UpdateGoodPropertyGroupTest"/>
         </classes>
     </test>
 

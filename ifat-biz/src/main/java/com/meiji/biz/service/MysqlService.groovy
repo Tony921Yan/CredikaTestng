@@ -14,7 +14,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getCategoryByType(String type){
-        return platformGoodsSql.rows("select * from goods_category where parent_Id=0 and type = $type")
+        return platformGoodsSql.rows("select * from goods_category where type = $type")
     }
 
     static List addCategory(String type,String sort){

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateShopAuditState">
+        <parm key="auditState" value ="10"/>
+        <parm key="reason" value ="test"/>
+        <parm key="shopId" value ="1407361340145696"/>
+    </test>
+</data>

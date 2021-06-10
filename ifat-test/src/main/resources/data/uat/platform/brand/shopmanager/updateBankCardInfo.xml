@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateBankCardInfo">
+        <parm key="accountBank" value ="兴业银行"/>
+        <parm key="accountNumber" value ="622908333033098012"/>
+        <parm key="accountType" value ="2"/>
+        <parm key="bankAddressCode" value ="440300"/>
+        <parm key="bankBranchId" value =""/>
+        <parm key="bankName" value =""/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+</data>

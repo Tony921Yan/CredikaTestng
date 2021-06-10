@@ -110,7 +110,7 @@
 
     <test name="商品属性组分页查询 selectPage">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
+            <class name = "com.meiji.test.http.brand.QueryGoodPropertysbyPageTest"/>
         </classes>
     </test>
 

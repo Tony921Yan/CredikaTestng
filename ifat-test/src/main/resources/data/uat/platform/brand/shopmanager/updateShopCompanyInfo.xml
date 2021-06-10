@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateShopCompanyInfo1">
+        <parm key="businessLicenseNumber" value ="1406083448963100"/>
+        <parm key="codeType" value ="3"/>
+        <parm key="legalPerson" value ="测法人"/>
+        <parm key="legalPersonWechat" value ="11QQ1747185268"/>
+        <parm key="merchantName" value ="11广州蜜粉新媒体科技有限公司"/>
+        <parm key="shopId" value ="2"/>
+    </test>
+</data>

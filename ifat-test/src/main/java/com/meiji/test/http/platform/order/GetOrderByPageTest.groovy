@@ -12,7 +12,7 @@ class GetOrderByPageTest extends BaseTest {
     @Test(description = "获取订单数据 getOrderByPage" ,groups = ["prod","uat"],testName = "getOrderByPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getOrderByPage(TestContext testContext){
-        testContext.put("condition", JsonUtil.objToJsonList(testContext.get("condition")))
+//        getOrderByPage.testContext.put("condition", JsonUtil.objToJsonList(testContext.get("condition")))
         getOrderByPage.invoke(testContext).baseAssert(testContext)
     }
 }

@@ -1,6 +1,5 @@
 package com.meiji.test.http.platform.label
 
-import com.meiji.biz.request.http.platform.label.AddLabel
 import com.meiji.biz.request.http.platform.label.PageLabel
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

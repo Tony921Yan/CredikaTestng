@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "checkGoods">
-        <parm key="orderAfterCode" value =""/>
-        <parm key="logisticsCode" value =""/>
-        <parm key="logisticsCompanyName" value =""/>
+        <parm key="orderAfterCode" value ="R2021041116470258844"/>
+        <parm key="logisticsCode" value ="773097721365661"/>
+        <parm key="logisticsCompanyName" value ="shentong"/>
     </test>
 </data>

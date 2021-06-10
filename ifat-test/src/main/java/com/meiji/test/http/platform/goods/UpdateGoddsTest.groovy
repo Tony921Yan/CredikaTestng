@@ -13,8 +13,8 @@ class UpdateGoddsTest extends BaseTest {
     @Test(description = "更新商品 updateGoods" ,groups = ["prod","uat"],testName = "updateGoods",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateGoods(TestContext testContext){
-        testContext.put("pics", JsonUtil.objToJsonList(testContext.get("pics")))
-        testContext.put("skus", JsonUtil.objToJsonList(testContext.get("skus")))
+        //testContext.put("pics", JsonUtil.objToJsonList(testContext.get("pics")))
+        //testContext.put("skus", JsonUtil.objToJsonList(testContext.get("skus")))
         updateGoods.invoke(testContext).baseAssert(testContext)
     }
 }

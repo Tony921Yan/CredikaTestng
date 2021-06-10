@@ -12,7 +12,7 @@ class UpdateGoodPropertyTest extends BaseTest {
     @Test(description = "更新商品属性信息 updateGoodProperty" ,groups = ["prod","uat"],testName = "updateGoodProperty",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateGoodProperty(TestContext testContext){
-testContext.put("goodPropertyValues", JsonUtil.objToJsonList(testContext.get("goodPropertyValues")))
-updateGoodProperty.invoke(testContext).baseAssert(testContext)
+        //testContext.put("goodPropertyValues", JsonUtil.objToJsonList(testContext.get("goodPropertyValues")))
+        updateGoodProperty.invoke(testContext).baseAssert(testContext)
     }
 }

@@ -14,7 +14,7 @@ class QueryBrandsByPageTest extends BaseTest {
     public void queryBrandsByPage(TestContext testContext){
         //testContext.put("condition", JsonUtil.objToJsonList(testContext.get("condition")))
 //        testContext.put("condition", JsonUtil.strToJson(JsonUtil.toJsonString(testContext.get("condition"))))
-        testContext.put("condition",JsonUtil.strToJson(testContext.get("condition")))
+        //testContext.put("condition",JsonUtil.strToJson(testContext.get("condition")))
         queryBrandsByPage.invoke(testContext).baseAssert(testContext)
     }
 }

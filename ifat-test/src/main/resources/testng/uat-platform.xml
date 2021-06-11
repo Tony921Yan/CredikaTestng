@@ -120,12 +120,6 @@
         </classes>
     </test>
 
-    <test name="获取售后单分页 getOrderAfterByPage">
-        <classes>
-            <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterByPageTest"/>
-        </classes>
-    </test>
-
     <test name="获取售后单详情 getOrderAfterDetail">
         <classes>
             <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterDetailTest"/>

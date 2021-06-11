@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateShopIdentityInfo1">
-        <parm key="contactEmail" value =""/>
+        <parm key="contactEmail" value ="cuiluoshi@dingtalk.com"/>
         <parm key="contactIdCardNumber" value =""/>
         <parm key="contactName" value =""/>
         <parm key="idCardCopyUrl" value =""/>

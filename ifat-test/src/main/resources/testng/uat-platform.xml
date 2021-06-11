@@ -131,4 +131,184 @@
             <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterDetailTest"/>
         </classes>
     </test>
+
+   <test name="获取售后单分页 getOrderAfterByPage">
+       <classes>
+           <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterByPageTest"/>
+       </classes>
+   </test>
+
+    <test name="获取售后单详情 getOrderAfterDetail">
+        <classes>
+            <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="批量插入数据 createExcelData">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.CreateExcelDataTest"/>
+        </classes>
+    </test>
+
+    <test name="获取任务列表 getTaskByPage">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.GetTaskByPageTest"/>
+        </classes>
+    </test>
+
+    <test name="查询商家分页 findDealerPage">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.FindDealerPageTest"/>
+        </classes>
+    </test>
+
+    <test name="查询邀请码申请分页 findInviteCodeApplyPage">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.FindInviteCodeApplyPageTest"/>
+        </classes>
+    </test>
+
+    <test name="查询邀请码分页 findInviteCodePage">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.FindInviteCodePageTest"/>
+        </classes>
+    </test>
+
+    <test name="运费模板详情 getFreightTemplateInfo">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.GetFreightTemplateInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="三级联动地址 listRegion">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.ListRegionTest"/>
+        </classes>
+    </test>
+
+    <test name="库存出库记录管理 queryStockRecord">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.QueryStockRecordTest"/>
+        </classes>
+    </test>
+
+    <test name="更新商家状态 updateDealerState">
+        <classes>
+            <class name="com.meiji.test.http.platform.other.UpdateDealerStateTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺详情 findShopDetail">
+        <classes>
+            <class name="com.meiji.test.http.platform.shopmanager.FindShopDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺分页 findShopPage">
+        <classes>
+            <class name="com.meiji.test.http.platform.shopmanager.FindShopPageTest"/>
+        </classes>
+    </test>
+
+    <test name="更新银行卡-结算信息 updateBankCardInfo">
+        <classes>
+            <class name="com.meiji.test.http.platform.shopmanager.UpdateBankCardInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="更新店铺企业信息 updateShopCompanyInfo">
+        <classes>
+            <class name="com.meiji.test.http.platform.shopmanager.UpdateShopCompanyInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="更新供应商基础信息 updateSupplier">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSupplierTest"/>
+        </classes>
+    </test>
+
+    <test name="根据名字或者编码获取供应商 getSupplierByNameOrCode">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.GetSupplierByNameOrCodeTest"/>
+        </classes>
+    </test>
+
+    <test name="获取供应商列表 getSupplierByPage">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.GetSupplierByPageTest"/>
+        </classes>
+    </test>
+
+    <test name="获取供应商详情 getSupplierDetail">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.GetSupplierDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="根据供应商code获取供应商信息 getSupplierInfo">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.GetSupplierInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="根据供应商ID获取供应商运费模板 listFreightTemplateBySupplierId">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.ListFreightTemplateBySupplierIdTest"/>
+        </classes>
+    </test>
+
+    <test name="更新法人信息 updateLegal">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.UpdateLegalTest"/>
+        </classes>
+    </test>
+
+    <test name="更新主体信息 updateSubject">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSubjectTest"/>
+        </classes>
+    </test>
+
+    <test name="更新拓展信息 updateSupplement">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSupplementTest"/>
+        </classes>
+    </test>
+
+    <test name="更新供应商收货地址 updateSupplierAddress">
+        <classes>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSupplierAddressTest"/>
+        </classes>
+    </test>
+
+    <test name="账户资产导出 accountAssetExport">
+        <classes>
+            <class name="com.meiji.test.http.platform.accountmanager.AccountAssetExportTest"/>
+        </classes>
+    </test>
+
+    <test name="账户资产分页查询 accountAssetPageQuery">
+        <classes>
+            <class name="com.meiji.test.http.platform.accountmanager.AccountAssetPageQueryTest"/>
+        </classes>
+    </test>
+
+    <test name="订单明细查询 orderDetailQuery">
+        <classes>
+            <class name="com.meiji.test.http.platform.accountmanager.OrderDetailQueryTest"/>
+        </classes>
+    </test>
+
+    <test name="提现记录导出 withdrawRecordExport">
+        <classes>
+            <class name="com.meiji.test.http.platform.accountmanager.WithdrawRecordExportTest"/>
+        </classes>
+    </test>
+
+    <test name="提现记录分页查询 withdrawRecordPageQuery">
+        <classes>
+            <class name="com.meiji.test.http.platform.accountmanager.WithdrawRecordPageQueryTest"/>
+        </classes>
+    </test>
 </suite>

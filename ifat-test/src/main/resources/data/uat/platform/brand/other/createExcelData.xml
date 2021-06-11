@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "brandDetail">
-        <parm key="list" value ='[{"data":}]'/>
+    <test name = "createExcelData">
+        <parm key="list" value ='[{"data":"{}","taskId":"1234678"}]'/>
     </test>
 </data>

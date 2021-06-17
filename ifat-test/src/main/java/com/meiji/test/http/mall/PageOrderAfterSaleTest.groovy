@@ -11,6 +11,6 @@ class PageOrderAfterSaleTest extends BaseTest {
     @Test(description = "查询售后列表 pageOrderAfterSale" ,groups = ["prod","uat"],testName = "pageOrderAfterSale",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void pageOrderAfterSale(TestContext testContext){
-        pageOrderAfterSale.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        pageOrderAfterSale.invoke(testContext).baseAssert(testContext)
     }
 }

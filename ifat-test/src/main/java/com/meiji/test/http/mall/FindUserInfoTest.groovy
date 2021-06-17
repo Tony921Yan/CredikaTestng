@@ -11,6 +11,6 @@ class FindUserInfoTest extends BaseTest {
     @Test(description = "查询当前用户信息 findUserInfo" ,groups = ["prod","uat"],testName = "findUserInfo",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findUserInfo(TestContext testContext){
-        findUserInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findUserInfo.invoke(testContext).baseAssert(testContext)
     }
 }

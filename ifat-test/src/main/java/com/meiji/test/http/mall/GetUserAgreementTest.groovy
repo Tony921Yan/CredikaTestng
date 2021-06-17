@@ -11,6 +11,6 @@ class GetUserAgreementTest extends BaseTest {
     @Test(description = "获取用户协议 getUserAgreement" ,groups = ["prod","uat"],testName = "getUserAgreement",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getUserAgreement(TestContext testContext){
-        getUserAgreement.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getUserAgreement.invoke(testContext).baseAssert(testContext)
     }
 }

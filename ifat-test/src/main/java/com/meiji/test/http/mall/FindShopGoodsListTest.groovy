@@ -11,6 +11,6 @@ class FindShopGoodsListTest extends BaseTest {
     @Test(description = "查询店铺商品列表 findShopGoodsList" ,groups = ["prod","uat"],testName = "findShopGoodsList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findShopGoodsList(TestContext testContext){
-        findShopGoodsList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findShopGoodsList.invoke(testContext).baseAssert(testContext)
     }
 }

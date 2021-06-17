@@ -7,10 +7,10 @@ import com.meiji.biz.request.http.mall.FindUserVisitShopRecordList
 import org.testng.annotations.Test
 
 class FindUserVisitShopRecordListTest extends BaseTest {
-    FindUserVisitShopRecordList findUserVisitShopRecordList = new FindUserVisitShopRecordListTest()
+    FindUserVisitShopRecordList findUserVisitShopRecordList = new FindUserVisitShopRecordList()
     @Test(description = "查询最近访问的店铺列表 findUserVisitShopRecordList" ,groups = ["prod","uat"],testName = "findUserVisitShopRecordList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findUserVisitShopRecordList(TestContext testContext){
-        findUserVisitShopRecordList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findUserVisitShopRecordList.invoke(testContext).baseAssert(testContext)
     }
 }

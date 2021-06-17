@@ -9,7 +9,7 @@ import com.meiji.biz.util.DateUtil
 class PageOrder extends MallPost {
     {
         super.api = "/mall/order/query/pageOrder"
-        super.params =  ["limit","orderStatus","page"]
+        super.params =  ["limit","queryStr","page","shopId","status"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 

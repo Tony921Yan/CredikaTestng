@@ -11,6 +11,6 @@ class FindUserAddressListTest extends BaseTest {
     @Test(description = "查询收货地址列表 findUserAddressList" ,groups = ["prod","uat"],testName = "findUserAddressList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findUserAddressList(TestContext testContext){
-        findUserAddressList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findUserAddressList.invoke(testContext).baseAssert(testContext)
     }
 }

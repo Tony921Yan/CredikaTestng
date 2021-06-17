@@ -1,0 +1,104 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "user"  verbose="4">
+    <test name="新增收货地址 addUserAddress">
+        <classes>
+            <class name = "com.meiji.test.http.mall.AddUserAddressTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺商品详情 findShopGoodsDetail">
+        <classes>
+            <class name="com.meiji.test.http.mall.FindShopGoodsDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺商品列表 findShopGoodsList">
+        <classes>
+            <class name="com.meiji.test.http.mall.FindShopGoodsListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺商品状态列表 findShopGoodsStateList">
+        <classes>
+            <class name="com.meiji.test.http.mall.FindShopGoodsStateListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺首页模块商品列表 findShopModuleGoodsList">
+        <classes>
+            <class name="com.meiji.test.http.mall.FindShopModuleGoodsListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺首页模块列表 findShopModuleList">
+        <classes>
+            <class name="com.meiji.test.http.mall.FindShopModuleListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询收货地址列表 findUserAddressList">
+        <classes>
+            <class name="com.meiji.test.http.mall.FindUserAddressListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询当前用户信息 findUserInfo">
+        <classes>
+            <class name="com.meiji.test.http.mall.FindUserInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="查询最近访问的店铺列表 findUserVisitShopRecordList">
+        <classes>
+            <class name="com.meiji.test.http.mall.FindUserVisitShopRecordListTest"/>
+        </classes>
+    </test>
+
+    <test name="查看售后详情 getOrderAfterSale">
+        <classes>
+            <class name="com.meiji.test.http.mall.GetOrderAfterSaleTest"/>
+        </classes>
+    </test>
+
+    <test name="订单详情 getOrderInfo">
+        <classes>
+            <class name="com.meiji.test.http.mall.GetOrderInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="获取物流信息 getOrderLogisticsInfo">
+        <classes>
+            <class name="com.meiji.test.http.mall.GetOrderLogisticsInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="获取用户协议 getUserAgreement">
+        <classes>
+            <class name="com.meiji.test.http.mall.GetUserAgreementTest"/>
+        </classes>
+    </test>
+
+    <test name="获取用户订单状态计数 小红点 getUserOrderCount">
+        <classes>
+            <class name="com.meiji.test.http.mall.GetUserOrderCountTest"/>
+        </classes>
+    </test>
+
+    <test name="查看售后协商历史 listOrderAfterLog">
+        <classes>
+            <class name="com.meiji.test.http.mall.ListOrderAfterLogTest"/>
+        </classes>
+    </test>
+
+    <test name="查询售后列表 pageOrderAfterSale">
+        <classes>
+            <class name="com.meiji.test.http.mall.PageOrderAfterSaleTest"/>
+        </classes>
+    </test>
+
+    <test name="分页订单查询 pageOrder">
+        <classes>
+            <class name="com.meiji.test.http.mall.PageOrderTest"/>
+        </classes>
+    </test>
+</suite>

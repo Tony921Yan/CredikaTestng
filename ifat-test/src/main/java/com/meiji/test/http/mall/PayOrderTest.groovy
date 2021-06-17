@@ -11,6 +11,6 @@ class PayOrderTest extends BaseTest {
     @Test(description = "支付订单 payOrder" ,groups = ["prod","uat"],testName = "payOrder",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void payOrder(TestContext testContext){
-        payOrder.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        payOrder.invoke(testContext).baseAssert(testContext)
     }
 }

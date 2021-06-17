@@ -2,24 +2,24 @@ package com.meiji.biz.request.http.mall
 
 import com.miyuan.ifat.support.test.TestContext
 
-class GetUserOrderCount extends MallGet {
+class GetUserOrderCount extends MallPost {
     {
         super.api = "/mall/order/query/getUserOrderCount"
-        super.params =  []
+        super.params =  ["shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallGet invoke(TestContext testContext) {
+    MallPost invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallGet preInvoke(TestContext testContext){
+    MallPost preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallGet baseAssert(TestContext testContext){
+    MallPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 

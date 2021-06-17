@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 class PayOrder extends MallPost {
     {
         super.api = "/mall/order/payOrder"
-        super.params =  ["openId","orderCode"]
+        super.params =  ["appId","openId","orderCode"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 

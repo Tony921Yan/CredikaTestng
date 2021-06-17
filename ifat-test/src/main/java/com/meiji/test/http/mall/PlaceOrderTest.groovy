@@ -11,6 +11,6 @@ class PlaceOrderTest extends BaseTest {
     @Test(description = "下单 placeOrder" ,groups = ["prod","uat"],testName = "placeOrder",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void placeOrder(TestContext testContext){
-        placeOrder.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        placeOrder.invoke(testContext).baseAssert(testContext)
     }
 }

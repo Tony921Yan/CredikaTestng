@@ -11,6 +11,6 @@ class   FindDefaultUserAddressTest extends BaseTest {
     @Test(description = "查询默认收货地址 findDefaultUserAddress" ,groups = ["prod","uat"],testName = "findDefaultUserAddress",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findDefaultUserAddress(TestContext testContext){
-        findDefaultUserAddress.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findDefaultUserAddress.invoke(testContext).baseAssert(testContext)
     }
 }

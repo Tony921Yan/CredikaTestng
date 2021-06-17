@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSgetOrderEventLog">
+        <parm key="orderCode" value ="O2021052920180448865"/>
+        <parm key="supplierId" value ="12"/>
+
+
+    </test>
+</data>

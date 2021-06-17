@@ -1,6 +1,6 @@
 package com.meiji.biz.request.http.OMS.excel
 
-
+import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
 class StartTask extends OMSPost {

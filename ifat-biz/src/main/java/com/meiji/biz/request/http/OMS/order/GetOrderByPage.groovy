@@ -1,13 +1,13 @@
-package com.meiji.biz.request.http.OMS.excel
+package com.meiji.biz.request.http.OMS.order
 
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetTaskByPage extends OMSPost {
+class GetOrderByPage extends OMSPost {
     {
-        super.api = "/api/supplier/excelMgr/getTaskByPage"
+        super.api = "/api/supplier/orderMgr/getOrderByPage"
         super.params =  [ "condition","order","page","rows","sort"]
-//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
+
     }
 
     OMSPost invoke(TestContext testContext) {

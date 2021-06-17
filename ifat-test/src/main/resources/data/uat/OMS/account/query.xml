@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSquery">
+        <parm key="bank" value =""/>
+        <parm key="keyword" value =""/>
+        <parm key="limit" value ="10"/>
+        <parm key="page" value ="1"/>
+
+
+    </test>
+</data>

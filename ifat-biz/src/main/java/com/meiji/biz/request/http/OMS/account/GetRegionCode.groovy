@@ -1,13 +1,13 @@
-package com.meiji.biz.request.http.OMS.excel
+package com.meiji.biz.request.http.OMS.account
 
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetTaskByPage extends OMSPost {
+class GetRegionCode extends OMSPost {
     {
-        super.api = "/api/supplier/excelMgr/getTaskByPage"
-        super.params =  [ "condition","order","page","rows","sort"]
-//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
+        super.api = "/api/supplier/finance/getRegionCode"
+        super.params =  [ "city","cityCode","proviceCode","province","region"]
+
     }
 
     OMSPost invoke(TestContext testContext) {

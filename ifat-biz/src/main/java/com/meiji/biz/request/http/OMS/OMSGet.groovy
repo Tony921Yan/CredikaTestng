@@ -1,26 +1,26 @@
-package com.meiji.biz.request.http.OMS.excel
+package com.meiji.biz.request.http.OMS
 
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.util.HttpUtil
-import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
 import com.miyuan.ifat.support.vo.Record
 import org.apache.commons.lang3.ObjectUtils
 
 import java.lang.reflect.Method
 
-abstract class OMSPost {
+abstract class OMSGet {
     public String api
     public List params
     public String preInvoke
 
-    OMSPost invoke(TestContext testContext){
+    OMSGet invoke(TestContext testContext){
         String url  = ResourceUtil.getBeanData("http").get("url2")+api
         Map heads = new HashMap()
         heads.put("timestamp",testContext.get("timestamp"))
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
-        heads.put("userId",11)
+        heads.put("userId","11")
+        heads.put("shopId","1")
 //        String aesKey = MD5Utils.MD5Encode("11", "utf-8")
 //        String tokenAes = AESOperator.encrypt(testContext.get("token").toString(), aesKey)
 //        heads.put("token",tokenAes)
@@ -31,19 +31,19 @@ abstract class OMSPost {
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){
-                req.put(str,JsonUtil.objectParse(testContext.get(str)))
+                req.put(str,testContext.get(str))
             }
         }
         testContext.appendLog(new Record("接口地址",url))
         testContext.appendLog(new Record("请求头",heads))
         testContext.appendLog(new Record("请求参数",req))
-        String res = HttpUtil.post(url,heads, req)
+        String res = HttpUtil.get(url,heads, req)
         testContext.setResponse(res)
         testContext.appendLog(new Record("返回结果",res))
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    OMSGet preInvoke(TestContext testContext){
         if(preInvoke!=null){
             Class clazz = Class.forName(preInvoke)
             Method method1 = clazz.getMethod("invoke", TestContext.class)
@@ -54,16 +54,16 @@ abstract class OMSPost {
         return this
     }
 
-    OMSPost afterInvoke(TestContext testContext){
+    OMSGet afterInvoke(TestContext testContext){
 
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    OMSGet baseAssert(TestContext testContext){
         assert testContext.getResponse().code == "0"
         return this
     }
 
-    OMSPost specialAssert(TestContext testContext){
+    OMSGet specialAssert(TestContext testContext){
     }
 
 }

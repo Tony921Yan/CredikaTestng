@@ -11,6 +11,6 @@ class UserVisitShopTest extends BaseTest {
     @Test(description = "用户访问店铺 userVisitShop" ,groups = ["prod","uat"],testName = "userVisitShop",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void userVisitShop(TestContext testContext){
-        userVisitShop.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        userVisitShop.invoke(testContext).baseAssert(testContext)
     }
 }

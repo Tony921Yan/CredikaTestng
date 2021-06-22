@@ -101,4 +101,28 @@
             <class name="com.meiji.test.http.mall.PageOrderTest"/>
         </classes>
     </test>
+
+    <test name="预览订单 previewOrder">
+        <classes>
+            <class name="com.meiji.test.http.mall.PreviewOrderTest"/>
+        </classes>
+    </test>
+
+    <test name="更新收货地址 updateUserAddress">
+        <classes>
+            <class name="com.meiji.test.http.mall.UpdateUserAddressTest"/>
+        </classes>
+    </test>
+
+    <test name="更新用户信息 updateUserInfo">
+        <classes>
+            <class name="com.meiji.test.http.mall.UpdateUserInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="用户访问店铺 userVisitShop">
+        <classes>
+            <class name="com.meiji.test.http.mall.UserVisitShopTest"/>
+        </classes>
+    </test>
 </suite>

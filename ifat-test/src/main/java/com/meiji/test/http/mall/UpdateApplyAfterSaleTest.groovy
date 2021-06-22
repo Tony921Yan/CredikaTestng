@@ -11,6 +11,6 @@ class UpdateApplyAfterSaleTest extends BaseTest {
     @Test(description = "C端修改售后 updateApplyAfterSale" ,groups = ["prod","uat"],testName = "updateApplyAfterSale",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateApplyAfterSale(TestContext testContext){
-        updateApplyAfterSale.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        updateApplyAfterSale.invoke(testContext).baseAssert(testContext)
     }
 }

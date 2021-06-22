@@ -11,6 +11,6 @@ class UpdateUserInfoTest extends BaseTest {
     @Test(description = "更新用户信息 updateUserInfo" ,groups = ["prod","uat"],testName = "updateUserInfo",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateUserInfo(TestContext testContext){
-        updateUserInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        updateUserInfo.invoke(testContext).baseAssert(testContext)
     }
 }

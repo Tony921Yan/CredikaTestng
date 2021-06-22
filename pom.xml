@@ -78,6 +78,9 @@
         <profile>
             <id>meiji</id>
             <!--默认指定dev-->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <repositories>
                 <repository>
                     <id>meiji-public</id>

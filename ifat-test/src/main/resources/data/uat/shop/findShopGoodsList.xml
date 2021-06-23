@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "findShopGoodsList">
+    <test name = "findShopGoodsList1">
         <parm key="categoryIdList" value ='["1","2"]'/>
         <parm key="keyword" value ="商品名称搜索关键字"/>
         <parm key="page" value ="1"/>

@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class FindShopByIdTest extends BaseTest {
     FindShopById findShopById = new FindShopById()
-    @Test(description = "根据id查询店铺信息 findShopById" ,groups = ["prod","uat"],testName = "findShopById",
+    @Test(description = "根据id查询店铺信息 findShopById" ,groups = ["prod","uat"],testName = "findShopById1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findShopById(TestContext testContext){
         findShopById.invoke(testContext).baseAssert(testContext)

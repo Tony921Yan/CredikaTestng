@@ -11,6 +11,6 @@ class GetShopWeappCodeTest extends BaseTest {
     @Test(description = "获取店铺小程序码 getShopWeappCode" ,groups = ["prod","uat"],testName = "getShopWeappCode",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getShopWeappCode(TestContext testContext){
-        getShopWeappCode.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getShopWeappCode.invoke(testContext).baseAssert(testContext)
     }
 }

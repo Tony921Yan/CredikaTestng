@@ -11,6 +11,6 @@ class GetAfterOrderDetailTest extends BaseTest {
     @Test(description = "获取售后单详情 getAfterOrderDetail" ,groups = ["prod","uat"],testName = "getAfterOrderDetail",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getAfterOrderDetail(TestContext testContext){
-        getAfterOrderDetail.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getAfterOrderDetail.invoke(testContext).baseAssert(testContext)
     }
 }

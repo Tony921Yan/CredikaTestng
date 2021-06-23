@@ -11,6 +11,6 @@ class GetAfterLogTest extends BaseTest {
     @Test(description = "获取协商历史 getAfterLog" ,groups = ["prod","uat"],testName = "getAfterLog",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getAfterLog(TestContext testContext){
-        getAfterLog.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getAfterLog.invoke(testContext).baseAssert(testContext)
     }
 }

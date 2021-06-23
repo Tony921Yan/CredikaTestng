@@ -11,6 +11,6 @@ class FindShopByIdTest extends BaseTest {
     @Test(description = "根据id查询店铺信息 findShopById" ,groups = ["prod","uat"],testName = "findShopById",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findShopById(TestContext testContext){
-        findShopById.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findShopById.invoke(testContext).baseAssert(testContext)
     }
 }

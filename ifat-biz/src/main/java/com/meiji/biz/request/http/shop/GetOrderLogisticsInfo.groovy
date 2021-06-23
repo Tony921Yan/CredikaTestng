@@ -4,8 +4,8 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetOrderLogisticsInfo extends ShopGet {
     {
-        super.api = "/platform/orderMgr/getOrderLogisticsInfo"
-        super.params =  ["orderCode"]
+        super.api = "/shop/order/getOrderLogisticsInfo"
+        super.params =  ["orderCode","shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 

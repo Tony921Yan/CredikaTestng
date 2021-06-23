@@ -11,6 +11,6 @@ class AddShopModuleTest extends BaseTest {
     @Test(description = "新增店铺首页模块 addShopModule" ,groups = ["prod","uat"],testName = "addShopModule",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void addShopModule(TestContext testContext){
-        addShopModule.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        addShopModule.invoke(testContext).baseAssert(testContext)
     }
 }

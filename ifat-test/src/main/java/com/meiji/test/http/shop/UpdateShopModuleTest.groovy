@@ -11,6 +11,6 @@ class UpdateShopModuleTest extends BaseTest {
     @Test(description = "更新店铺首页模块 updateShopModule" ,groups = ["prod","uat"],testName = "updateShopModule",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateShopModule(TestContext testContext){
-        updateShopModule.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        updateShopModule.invoke(testContext).baseAssert(testContext)
     }
 }

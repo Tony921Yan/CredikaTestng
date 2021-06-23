@@ -9,7 +9,7 @@ import org.testng.annotations.Test
 
 class GetOrderByPageTest extends BaseTest {
     GetOrderByPage getOrderByPage = new GetOrderByPage()
-    @Test(description = "获取订单数据 getOrderByPage" ,groups = ["prod","uat"],testName = "getOrderByPage",
+    @Test(description = "获取订单数据 getOrderByPage" ,groups = ["prod","uat"],testName = "getOrderByPage1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getOrderByPage(TestContext testContext){
 //        getOrderByPage.testContext.put("condition", JsonUtil.objToJsonList(testContext.get("condition")))

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "mall-pageOrder">
-        <parm key="limit" value ="0"/>
+        <parm key="limit" value ="10"/>
         <parm key="orderStatus" value ="0"/>
-        <parm key="page" value ="0"/>
+        <parm key="page" value ="1"/>
     </test>
 </data>

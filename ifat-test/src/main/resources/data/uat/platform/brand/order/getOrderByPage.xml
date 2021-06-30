@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "getOrderByPage">
+    <test name = "getOrderByPage1">
         <parm key="condition" value ='{"endTime":"","orderCode":"","orderStatus":"",
         "orderType":"","receiverMsg":"","shopUserMsg":"","skuCode":"","startTime":""}'/>
         <parm key="order" value =""/>

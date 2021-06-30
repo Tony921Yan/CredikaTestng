@@ -11,6 +11,6 @@ class IsSubscribeTest extends BaseTest {
     @Test(description = "判断商家有没有关注公众号 isSubscribe" ,groups = ["prod","uat"],testName = "isSubscribe",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void isSubscribe(TestContext testContext){
-        isSubscribe.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        isSubscribe.invoke(testContext).baseAssert(testContext)
     }
 }

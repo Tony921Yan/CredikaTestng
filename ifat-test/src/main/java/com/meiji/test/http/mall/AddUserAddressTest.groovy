@@ -11,6 +11,6 @@ class AddUserAddressTest extends BaseTest {
     @Test(description = "新增收货地址 addUserAddress" ,groups = ["prod","uat"],testName = "addUserAddress",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void addUserAddress(TestContext testContext){
-        addUserAddress.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        addUserAddress.invoke(testContext).baseAssert(testContext)
     }
 }

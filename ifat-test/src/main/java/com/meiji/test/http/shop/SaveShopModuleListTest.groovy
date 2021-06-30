@@ -11,6 +11,6 @@ class SaveShopModuleListTest extends BaseTest {
     @Test(description = "保存店铺首页模块列表 saveShopModuleList" ,groups = ["prod","uat"],testName = "saveShopModuleList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void saveShopModuleList(TestContext testContext){
-        saveShopModuleList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        saveShopModuleList.invoke(testContext).baseAssert(testContext)
     }
 }

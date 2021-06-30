@@ -4,8 +4,8 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetAfterOrderDetail extends ShopGet {
     {
-        super.api = "/shop/order/getAfterOrderDetail?afterCode=R2021040211380581695"
-        super.params =  []
+        super.api = "/shop/order/getAfterOrderDetail"
+        super.params =  ["afterCode","shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 

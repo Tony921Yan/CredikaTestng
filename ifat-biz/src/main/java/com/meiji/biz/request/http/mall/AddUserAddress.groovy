@@ -5,7 +5,8 @@ import com.miyuan.ifat.support.test.TestContext
 class AddUserAddress extends MallPost {
     {
         super.api = "/mall/user/address/addUserAddress"
-        super.params =  ["address","city","district","isDefault","phone","province","recipient","remark"]
+        super.params =  ["address","city","cityCode","district","districtCode","isDefault","phone","province","provinceCode",
+                         "recipient","remark"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 

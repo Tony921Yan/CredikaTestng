@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 class Asset extends ShopGet {
     {
         super.api = "/shop/profitSharing/asset"
-        super.params =  ["shopId","userId"]
+        super.params =  ["shopId"]
     }
 
     ShopGet invoke(TestContext testContext) {

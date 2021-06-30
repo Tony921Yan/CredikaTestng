@@ -9,7 +9,7 @@ import com.meiji.biz.util.DateUtil
 class FindGoodsDetail extends ShopPost {
     {
         super.api = "/shop/goods/findGoodsDetail"
-        super.params =  [ "id"]
+        super.params =  [ "shopId","spuId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 

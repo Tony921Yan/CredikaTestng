@@ -2,6 +2,6 @@
 <data>
     <test name = "updateShopModuleTemplate">
         <parm key="moduleTemplateId" value ="1"/>
-        <parm key="shopId" value ="1"/>
+        <parm key="shopId" value ="1405981112139808"/>
     </test>
 </data>

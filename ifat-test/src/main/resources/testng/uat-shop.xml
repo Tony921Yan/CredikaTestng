@@ -1,0 +1,146 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "user"  verbose="4">
+    <test name="查询店铺营业信息 findShopBusinessInfo">
+        <classes>
+            <class name = "com.meiji.test.http.shop.shopauth.FindShopBusinessInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺企业信息 findShopCompanyInfo">
+        <classes>
+            <class name="com.meiji.test.http.shop.shopauth.FindShopCompanyInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="卖家待分账金额 asset">
+        <classes>
+            <class name="com.meiji.test.http.shop.AssetTest"/>
+        </classes>
+    </test>
+
+    <test name="查询选品分类树 findGoodsCategoryTree">
+        <classes>
+            <class name="com.meiji.test.http.shop.FindGoodsCategoryTreeTest"/>
+        </classes>
+    </test>
+
+    <test name="查询商品详情 findGoodsDetail">
+        <classes>
+            <class name="com.meiji.test.http.shop.FindGoodsDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="查询选品商品列表 findGoodsList">
+        <classes>
+            <class name="com.meiji.test.http.shop.FindGoodsListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺首页模块模板列表 findModuleTemplateList">
+        <classes>
+            <class name="com.meiji.test.http.shop.FindShopModuleListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询商家的店铺列表 findShopByDealer">
+        <classes>
+            <class name="com.meiji.test.http.shop.FindShopByDealerTest"/>
+        </classes>
+    </test>
+
+    <test name="根据id查询店铺信息 findShopById">
+        <classes>
+            <class name="com.meiji.test.http.shop.FindShopByIdTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺商品列表 findShopGoodsList">
+        <classes>
+            <class name="com.meiji.test.http.shop.FindShopGoodsListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询店铺首页模块列表 findShopModuleList">
+        <classes>
+            <class name="com.meiji.test.http.shop.FindShopModuleListTest"/>
+        </classes>
+    </test>
+
+    <test name="获取协商历史 getAfterLog">
+        <classes>
+            <class name="com.meiji.test.http.shop.GetAfterLogTest"/>
+        </classes>
+    </test>
+
+    <test name="获取售后单详情 getAfterOrderDetail">
+        <classes>
+            <class name="com.meiji.test.http.shop.GetAfterOrderDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="获取售后单列表 getAfterOrderPage">
+        <classes>
+            <class name="com.meiji.test.http.shop.GetAfterOrderPageTest"/>
+        </classes>
+    </test>
+
+    <test name="订单详情 getOrderInfo">
+        <classes>
+            <class name="com.meiji.test.http.shop.GetOrderInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="获取物流信息 getOrderLogisticsInfo">
+        <classes>
+            <class name="com.meiji.test.http.shop.GetOrderLogisticsInfoTest"/>
+        </classes>
+    </test>
+
+    <test name="获取店铺小程序码 getShopWeappCode">
+        <classes>
+            <class name="com.meiji.test.http.shop.GetShopWeappCodeTest"/>
+        </classes>
+    </test>
+
+    <test name="上传远程文件到微信 imageUpload">
+        <classes>
+            <class name="com.meiji.test.http.shop.ImageUploadTest"/>
+        </classes>
+    </test>
+
+    <test name="判断商家有没有关注公众号 isSubscribe">
+        <classes>
+            <class name="com.meiji.test.http.shop.IsSubscribeTest"/>
+        </classes>
+    </test>
+
+    <test name="分页订单查询 pageOrder">
+        <classes>
+            <class name="com.meiji.test.http.shop.PageOrderTest"/>
+        </classes>
+    </test>
+
+    <test name="分账流水 profitSharingList">
+        <classes>
+            <class name="com.meiji.test.http.shop.ProfitSharingListTest"/>
+        </classes>
+    </test>
+
+    <test name="保存店铺首页模块列表 saveShopModuleList">
+        <classes>
+            <class name="com.meiji.test.http.shop.SaveShopModuleListTest"/>
+        </classes>
+    </test>
+
+    <test name="更新店铺首页模块模板 updateShopModuleTemplate">
+        <classes>
+            <class name="com.meiji.test.http.shop.UpdateShopModuleTemplateTest"/>
+        </classes>
+    </test>
+
+    <test name="更新店铺首页模块 updateShopModule">
+        <classes>
+            <class name="com.meiji.test.http.shop.UpdateShopModuleTest"/>
+        </classes>
+    </test>
+</suite>

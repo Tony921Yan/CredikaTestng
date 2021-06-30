@@ -11,6 +11,6 @@ class GetAfterOrderPageTest extends BaseTest {
     @Test(description = "获取售后单列表 getAfterOrderPage" ,groups = ["prod","uat"],testName = "getAfterOrderPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getAfterOrderPage(TestContext testContext){
-        getAfterOrderPage.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getAfterOrderPage.invoke(testContext).baseAssert(testContext)
     }
 }

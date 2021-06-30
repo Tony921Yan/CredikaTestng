@@ -11,6 +11,6 @@ class UpdateShopAppInfoTest extends BaseTest {
     @Test(description = "更新店铺小程序信息 updateShopAppInfo" ,groups = ["prod","uat"],testName = "updateShopAppInfo",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateShopAppInfo(TestContext testContext){
-        updateShopAppInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        updateShopAppInfo.invoke(testContext).baseAssert(testContext)
     }
 }

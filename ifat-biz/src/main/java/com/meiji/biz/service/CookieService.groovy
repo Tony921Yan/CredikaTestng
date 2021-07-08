@@ -18,7 +18,7 @@ class CookieService {
       inviteUserId: number | null,
       jmUser: ChatAccount | null,
    */
-    static String getMallCookie(String url,Integer userId){
+    static String getMallCookie(String url,Long userId){
         String cookie = cacheCookie.get("mall:"+userId)
         if(cookie!=null){
             return cookie
@@ -60,16 +60,16 @@ class CookieService {
         imPassword?: string,
         jmUser: ChatAccount | null,
      */
-    static String getShopCookie(String url,Integer shopId){
-        String cookie = cacheCookie.get("shop:"+shopId)
+    static String getShopCookie(String url,Long dealerId){
+        String cookie = cacheCookie.get("dealerId:"+dealerId)
         if(cookie!=null){
             return cookie
         }
         StringBuilder stringBuilder = new StringBuilder()
-        String token = TokenUtil.generateToken(shopId)
+        String token = TokenUtil.generateToken(dealerId)
         Map cookieParam = new HashMap()
         Map cookieInfo = new HashMap()
-        cookieInfo.put("userId",shopId)
+        cookieInfo.put("leaderId",dealerId)
         cookieInfo.put("token",token)
         cookieParam.put("secret","+0ea81c0ea81557c9==")
         cookieParam.put("info",cookieInfo)
@@ -80,7 +80,7 @@ class CookieService {
             stringBuilder.append(";")
         }
         cookie =  stringBuilder.toString()
-        cacheCookie.put("shop:"+shopId,cookie)
+        cacheCookie.put("dealerId:"+dealerId,cookie)
         return cookie
     }
 }

@@ -4,7 +4,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class CancelOrder extends MallPost {
     {
-        super.api = "/mall/order/CancelOrder"
+        super.api = "/orderInfo/CancelOrder"
         super.params =  ["orderCode"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

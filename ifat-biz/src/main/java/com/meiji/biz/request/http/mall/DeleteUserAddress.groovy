@@ -4,7 +4,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class DeleteUserAddress extends MallPost {
     {
-        super.api = "/mall/user/address/deleteUserAddress"
+        super.api = "/userAddress/deleteUserAddress"
         super.params =  ["id"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

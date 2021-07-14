@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class FindUserVisitShopRecordList extends MallPost {
     {
-        super.api = "/mall/user/shop/findUserVisitShopRecordList"
+        super.api = "/userShop/findUserVisitShopRecordList"
         super.params =  ["id"]  //开发暂未完成
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

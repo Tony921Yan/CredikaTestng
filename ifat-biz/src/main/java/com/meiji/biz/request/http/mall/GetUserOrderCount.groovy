@@ -4,7 +4,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetUserOrderCount extends MallPost {
     {
-        super.api = "/mall/order/query/getUserOrderCount"
+        super.api = "/orderInfo/query/getUserOrderCount"
         super.params =  ["shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

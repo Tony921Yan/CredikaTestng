@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class FindDefaultUserAddress extends MallPost {
     {
-        super.api = "/mall/user/address/findDefaultUserAddress"
+        super.api = "/userAddress/findDefaultUserAddress"
         super.params =  ["userId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class PlaceOrder extends MallPost {
     {
-        super.api = "/mall/order/placeOrder"
+        super.api = "/orderInfo/placeOrder"
         super.params =  ["actuallyPaidAmount","freight","goodsTotalAmount","orderGoods","payableAmount","receiverRemark",
         "shopId","userAddressId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"

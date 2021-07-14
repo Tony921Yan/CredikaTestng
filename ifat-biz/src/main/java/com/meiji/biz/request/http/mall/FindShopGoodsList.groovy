@@ -4,7 +4,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class FindShopGoodsList extends MallPost {
     {
-        super.api = "/mall/shop/goods/findShopGoodsList"
+        super.api = "/shopGoods/findShopGoodsList"
         super.params =  ["page","rows","shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

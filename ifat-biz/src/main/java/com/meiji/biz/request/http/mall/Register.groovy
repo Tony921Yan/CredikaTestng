@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class Register extends MallPost {
     {
-        super.api = "/mall/user/register/applet"
+        super.api = "/userInfo/register/applet"
         super.params =  ["avatar","city","country","encryptedData","iv","nickname","openId","province","sex"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

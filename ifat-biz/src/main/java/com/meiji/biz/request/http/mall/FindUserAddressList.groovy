@@ -4,7 +4,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class FindUserAddressList extends MallPost {
     {
-        super.api = "/mall/user/address/findUserAddressList"
+        super.api = "/userAddress/findUserAddressList"
         super.params =  ["userId"] //开发未完成
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

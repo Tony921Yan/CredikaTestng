@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class UpdateUserInfo extends MallPost {
     {
-        super.api = "/mall/user/updateUserInfo"
+        super.api = "/userInfo/updateUserInfo"
         super.params =  ["avatar","nickname","sex"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

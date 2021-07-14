@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <beans>
-<!--    <bean name = "dubbo">-->
-<!--&lt;!&ndash;        <properties  key="url" value ="nacos://172.31.0.208:8848?namespace=dev"/>&ndash;&gt;-->
-<!--        <properties  key="url" value ="nacos://172.31.0.208:8848?namespace=test"/>-->
-<!--&lt;!&ndash;        <properties  key="url" value ="nacos://172.31.0.208:8848?namespace=public&amp;group=xiezy"/>&ndash;&gt;-->
-<!--    </bean>-->
-
     <bean name = "http">
 <!--        <properties  key="url" value ="https://dev.platform.meiji8888.com"/>-->
 <!--        <properties  key="url" value ="https://dev.gateway.meiji8888.com"/> &lt;!&ndash; 小程序端：mall是c端, shop是b端&ndash;&gt;-->
@@ -16,6 +10,8 @@
         <properties  key="url" value ="https://test.platform.meiji8888.com"/>
         <properties  key="url2" value ="https://test.supplier.meiji8888.com"/>
 <!--        <properties  key="url" value ="https://platform.meiji8888.com"/>-->
+        <properties key="mall" value="https://test.mall.meiji8888.com/"/>
+        <properties key="shop" value="https://test.shop.meiji8888.com/"/>
     </bean>
 
     <bean name = "mysql-platform-goods">
@@ -23,9 +19,5 @@
         <properties  key="user" value ="code_write"/>
         <properties  key="password" value ="6ba76bddb0473e860d7c"/>
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
-<!--        <properties  key="url" value ="jdbc:mysql://172.31.0.213:3306/meiji_goods"/>-->
-<!--        <properties  key="user" value ="code_write"/>-->
-<!--        <properties  key="password" value ="6ba76bddb0473e860d7c"/>-->
-<!--        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>-->
     </bean>
 </beans>

@@ -5,9 +5,6 @@
         <parm key="nonce" value="1"/>
         <parm key="t-type" value="1"/>
         <parm key="Content-Type" value="application/json;charset=UTF-8"/>
-        <parm key="token" value="18232202,1614335141,e370e389be15046f"/>
         <parm key="userId" value="18232202"/>
-        <parm key="otherToken" value="23177620,1606811863,6b9a2bb4c587da7e"/>
-        <parm key="otherUserId" value="23177620"/>
     </test>
 </data>

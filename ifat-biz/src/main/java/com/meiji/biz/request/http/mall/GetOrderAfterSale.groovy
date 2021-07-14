@@ -4,7 +4,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetOrderAfterSale extends MallPost {
     {
-        super.api = "/mall/orderAfterSale/getOrderAfterSale"
+        super.api = "/orderAfterSale/getOrderAfterSale"
         super.params =  ["afterCode","shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

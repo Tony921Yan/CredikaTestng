@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class PreviewOrder extends MallPost {
     {
-        super.api = "/mall/order/previewOrder"
+        super.api = "/orderInfo/previewOrder"
         super.params =  ["orderGoods","shopId","userAddressId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

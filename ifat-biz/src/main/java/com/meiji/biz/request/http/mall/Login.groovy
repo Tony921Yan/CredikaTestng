@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class Login extends MallPost {
     {
-        super.api = "/mall/user/login/applet"
+        super.api = "/userInfo/login/applet"
         super.params =  ["code","appId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

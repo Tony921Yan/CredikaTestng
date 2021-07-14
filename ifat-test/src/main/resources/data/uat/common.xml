@@ -3,6 +3,7 @@
     <test name = "common">
         <parm key="token" value ="ssss"/>
         <parm key="userId" value ="10029"/>
+        <parm key="dealerId" value="24"/>
         <parm key="timestamp" value="1"/>
         <parm key="nonce" value="1"/>
         <parm key="Content-Type" value="application/json;charset=UTF-8"/>

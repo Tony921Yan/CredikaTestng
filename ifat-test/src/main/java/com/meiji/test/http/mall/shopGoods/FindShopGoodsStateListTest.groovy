@@ -1,6 +1,6 @@
 package com.meiji.test.http.mall.shopGoods
 
-import com.meiji.biz.request.http.mall.FindShopGoodsStateList
+import com.meiji.biz.request.http.mall.shopGoods.FindShopGoodsStateList
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

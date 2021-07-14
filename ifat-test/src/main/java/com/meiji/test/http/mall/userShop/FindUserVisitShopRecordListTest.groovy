@@ -3,7 +3,7 @@ package com.meiji.test.http.mall.userShop
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
-import com.meiji.biz.request.http.mall.FindUserVisitShopRecordList
+import com.meiji.biz.request.http.mall.userShop.FindUserVisitShopRecordList
 import org.testng.annotations.Test
 
 class FindUserVisitShopRecordListTest extends BaseTest {

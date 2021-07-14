@@ -1,6 +1,6 @@
 package com.meiji.test.http.mall.orderInfo
 
-import com.meiji.biz.request.http.mall.GetUserOrderCount
+import com.meiji.biz.request.http.mall.orderInfo.GetUserOrderCount
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

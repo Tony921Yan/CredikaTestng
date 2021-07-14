@@ -3,7 +3,7 @@ package com.meiji.test.http.mall.userInfo
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
-import com.meiji.biz.request.http.mall.FindUserInfo
+import com.meiji.biz.request.http.mall.userInfo.FindUserInfo
 import org.testng.annotations.Test
 
 class FindUserInfoTest extends BaseTest {

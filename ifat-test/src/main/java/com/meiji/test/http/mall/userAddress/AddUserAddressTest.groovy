@@ -1,6 +1,6 @@
 package com.meiji.test.http.mall.userAddress
 
-import com.meiji.biz.request.http.mall.AddUserAddress
+import com.meiji.biz.request.http.mall.userAddress.AddUserAddress
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

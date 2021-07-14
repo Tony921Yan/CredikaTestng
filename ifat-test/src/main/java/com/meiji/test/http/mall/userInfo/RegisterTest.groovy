@@ -1,6 +1,6 @@
 package com.meiji.test.http.mall.userInfo
 
-import com.meiji.biz.request.http.mall.Register
+import com.meiji.biz.request.http.mall.userInfo.Register
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

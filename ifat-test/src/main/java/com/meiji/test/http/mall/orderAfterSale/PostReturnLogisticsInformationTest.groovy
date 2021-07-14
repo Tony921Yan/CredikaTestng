@@ -1,6 +1,6 @@
 package com.meiji.test.http.mall.orderAfterSale
 
-import com.meiji.biz.request.http.mall.PostReturnLogisticsInformation
+import com.meiji.biz.request.http.mall.orderAfterSale.PostReturnLogisticsInformation
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

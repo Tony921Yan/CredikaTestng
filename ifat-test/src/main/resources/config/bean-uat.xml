@@ -20,4 +20,8 @@
         <properties  key="password" value ="6ba76bddb0473e860d7c"/>
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
+
+    <bean name="meiji-redis">
+        <properties  key="host" value ="172.27.2.73:6379,172.27.2.74:6379,172.27.2.75:6379"/>
+    </bean>
 </beans>

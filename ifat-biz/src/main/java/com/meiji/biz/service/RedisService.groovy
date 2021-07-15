@@ -6,12 +6,14 @@ import com.meiji.biz.api.RedisAPI
 class RedisService extends RedisAPI {
 
     static Object get(String key){
-        Object value = jedisCluster.get("dddd")
+        Object value = meijiRedis.get(key)
         return value
     }
-    static def getcommis(String key){
-        def value = jedisClusterIfatTest.get(key)
+
+    static Long ttl(String key){
+        Long value = meijiRedis.ttl(key)
         return value
     }
+
 
 }

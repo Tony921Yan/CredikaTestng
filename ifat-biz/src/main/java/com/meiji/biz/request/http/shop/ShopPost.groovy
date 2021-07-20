@@ -62,7 +62,7 @@ abstract class ShopPost {
     }
 
     ShopPost baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == "0"
+        assert testContext.getResponse().code == 0
         return this
     }
 

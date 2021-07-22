@@ -3,8 +3,8 @@
     <test name = "common">
         <parm key="timestamp" value="1"/>
         <parm key="nonce" value="1"/>
-        <parm key="t-type" value="1"/>
         <parm key="Content-Type" value="application/json;charset=UTF-8"/>
-        <parm key="userId" value="18232202"/>
+        <parm key="userId" value="10"/>
+        <parm key="dealerId" value="24"/>
     </test>
 </data>

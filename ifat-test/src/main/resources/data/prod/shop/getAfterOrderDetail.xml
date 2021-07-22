@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getAfterOrderDetail">
+        <parm key="afterCode" value ="R2021041114180464098"/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+</data>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "register">
+        <parm key="avatar" value ="头像url"/>
+        <parm key="city" value ="城市"/>
+        <parm key="country" value ="行政区"/>
+        <parm key="encryptedData" value ="encryptedData"/>
+        <parm key="iv" value ="iv"/>
+        <parm key="nickname" value ="昵称"/>
+        <parm key="openId" value ="openId"/>
+        <parm key="province" value ="省"/>
+        <parm key="sex" value ="性别"/>
+    </test>
+</data>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "findShopCompanyInfo">
+        <parm key="id" value ="1405981112139808"/>
+    </test>
+</data>

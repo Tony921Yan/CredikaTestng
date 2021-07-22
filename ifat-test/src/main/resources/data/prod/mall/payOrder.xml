@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "payOrder">
+        <parm key="openId" value ="0"/>
+        <parm key="orderCode" value ="0"/>
+    </test>
+</data>

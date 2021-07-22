@@ -25,6 +25,7 @@ abstract class MallPost {
         heads.put("Content-Type",testContext.get("Content-Type"))
         Long userId = Long.valueOf(testContext.get("userId").toString())
         heads.put("cookie", CookieService.getMallCookie(mallUrl,userId))
+        System.println("userid:"+ userId)
 
 //        if(TestEnv.getIsGray()=="true"){
 //            heads.put("isGrayRelease",true)

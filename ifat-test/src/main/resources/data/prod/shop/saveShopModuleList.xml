@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "saveShopModuleList">
+        <parm key="moduleTemplateId" value ="1"/>
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="shopModuleList" value ='[{"description":"说明","displayContent":"展示内容","id":"1","moduleType":"100","shopId":"1","sort":"0","targetContent":"1,2,3","targetType":"0","title":"标题"}]'/>
+    </test>
+</data>

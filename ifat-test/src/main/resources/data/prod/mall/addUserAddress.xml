@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addUserAddress">
+        <parm key="address" value ="华润城华润置地E座26EF"/>
+        <parm key="city" value ="深圳市"/>
+        <parm key="cityCode" value ="440300"/>
+        <parm key="district" value ="南山区"/>
+        <parm key="districtCode" value ="440305"/>
+        <parm key="isDefault" value ="0"/>
+        <parm key="phone" value ="18820157232"/>
+        <parm key="province" value ="广东省"/>
+        <parm key="provinceCode" value ="440000"/>
+        <parm key="recipient" value ="测试佬"/>
+        <parm key="remark" value ="备注一下"/>
+    </test>
+</data>

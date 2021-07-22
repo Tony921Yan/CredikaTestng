@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "mall-pageOrder">
+        <parm key="limit" value ="10"/>
+        <parm key="page" value ="1"/>
+        <parm key="queryStr" value =""/>
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="status" value ="0"/>
+    </test>
+</data>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "isSubscribe">
+        <parm key="openId" value ="oTO6q5JSODobx6Cj_yWBCcHdeoXU"/>
+        <parm key="userId" value ="11"/>
+    </test>
+</data>

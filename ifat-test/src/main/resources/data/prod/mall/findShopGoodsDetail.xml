@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "findShopGoodsDetail">
+        <parm key="shopId" value ="1405811930693664"/>
+        <parm key="spuId" value ="1405816437473312"/>
+    </test>
+</data>

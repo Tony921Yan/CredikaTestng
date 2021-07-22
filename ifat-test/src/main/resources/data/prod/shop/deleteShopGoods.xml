@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "deleteShopGoods">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="spuId" value ="1405810630459424"/>
+    </test>
+</data>

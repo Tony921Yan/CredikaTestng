@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "openShop">
+        <parm key="companyCode" value ="企业代码"/>
+        <parm key="companyCodeType" value ="1"/>
+        <parm key="companyName" value ="企业名称"/>
+        <parm key="legalPersonName" value ="法人姓名"/>
+        <parm key="legalPersonWechat" value ="法人微信号"/>
+        <parm key="shopType" value ="1"/>
+
+    </test>
+</data>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateShopIdentityInfo">
+        <parm key="idCardCopy" value =""/>
+        <parm key="idCardCopyUrl" value =""/>
+        <parm key="idCardName" value =""/>
+        <parm key="idCardNational" value =""/>
+        <parm key="idCardNationalUrl" value =""/>
+        <parm key="idCardNumber" value =""/>
+        <parm key="idCardValidTimeStart" value =""/>
+        <parm key="idCardValidTimeType" value =""/>
+        <parm key="mobilePhone" value =""/>
+        <parm key="shopId" value =""/>
+        <parm key="contactEmail" value =""/>
+        <parm key="contactIdCardNumber" value =""/>
+        <parm key="contactName" value =""/>
+        <parm key="idCardValidTimeEnd" value =""/>
+    </test>
+</data>

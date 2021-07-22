@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateUserInfo">
+        <parm key="avatar" value ="头像url"/>
+        <parm key="nickname" value ="昵称"/>
+        <parm key="sex" value ="1"/>
+    </test>
+</data>

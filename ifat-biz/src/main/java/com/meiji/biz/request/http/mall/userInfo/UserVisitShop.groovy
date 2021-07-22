@@ -9,7 +9,7 @@ import com.meiji.biz.util.DateUtil
 
 class UserVisitShop extends MallPost {
     {
-        super.api = "/userInfo/shop/userVisitShop"
+        super.api = "userShop/userVisitShop"
         super.params =  ["id"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

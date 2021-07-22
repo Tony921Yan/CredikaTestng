@@ -1,7 +1,9 @@
 package com.meiji.biz.request.http.mall
 
+import com.meiji.biz.service.CookieService
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.util.HttpUtil
+import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
 import com.miyuan.ifat.support.vo.Record
 import org.apache.commons.lang3.ObjectUtils
@@ -14,16 +16,14 @@ abstract class MallGet {
     public String preInvoke
 
     MallGet invoke(TestContext testContext){
-        String url  = ResourceUtil.getBeanData("http").get("url1")+api
+        String mallUrl  = ResourceUtil.getBeanData("http").get("mall")
+        String url = mallUrl + api
         Map heads = new HashMap()
         heads.put("timestamp",testContext.get("timestamp"))
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
-        heads.put("userId","10029")
-        heads.put("shopId","1405981112139808")
-//        String aesKey = MD5Utils.MD5Encode("11", "utf-8")
-//        String tokenAes = AESOperator.encrypt(testContext.get("token").toString(), aesKey)
-//        heads.put("token",tokenAes)
+        Long userId = Long.valueOf(testContext.get("userId").toString())
+        heads.put("cookie", CookieService.getMallCookie(mallUrl,userId))
 
 //        if(TestEnv.getIsGray()=="true"){
 //            heads.put("isGrayRelease",true)
@@ -31,7 +31,7 @@ abstract class MallGet {
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){
-                req.put(str,testContext.get(str))
+                req.put(str, JsonUtil.objectParse(testContext.get(str)))
             }
         }
         testContext.appendLog(new Record("接口地址",url))
@@ -59,7 +59,7 @@ abstract class MallGet {
     }
 
     MallGet baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == "0"
+        assert testContext.getResponse().code == 0
         return this
     }
 

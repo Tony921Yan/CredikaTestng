@@ -1,33 +1,34 @@
 package com.meiji.biz.request.http.mall.orderInfo
 
 import com.meiji.biz.request.http.mall.MallGet
+import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
 import com.meiji.biz.service.MysqlService
 import com.meiji.biz.util.DateUtil
 
 
-class GetOrderLogisticsInfo extends MallGet {
+class GetOrderLogisticsInfo extends MallPost {
     {
-        super.api = "/orderInfo/getOrderLogisticsInfo"
+        super.api = "orderInfo/getOrderLogisticsInfo"
         super.params =  ["orderCode"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallGet invoke(TestContext testContext) {
+    MallPost invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallGet preInvoke(TestContext testContext){
+    MallPost preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallGet baseAssert(TestContext testContext){
+    MallPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    MallGet specialAssert(TestContext testContext){
+    MallPost specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data

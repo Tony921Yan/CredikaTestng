@@ -3,6 +3,6 @@
     <test name = "findShopGoodsList">
         <parm key="page" value ="1"/>
         <parm key="rows" value ="10"/>
-        <parm key="shopId" value ="1"/>
+        <parm key="shopId" value ="1405981112139808"/>
     </test>
 </data>

@@ -2,24 +2,24 @@ package com.meiji.biz.request.http.shop
 
 import com.miyuan.ifat.support.test.TestContext
 
-class GetAfterLog extends ShopGet {
+class GetAfterLog extends ShopPost {
     {
-        super.api = "/shop/order/getAfterLog"
+        super.api = "order/getAfterLog"
         super.params =  ["afterCode","shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    ShopGet invoke(TestContext testContext) {
+    ShopPost invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    ShopGet preInvoke(TestContext testContext){
+    ShopPost preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    ShopGet baseAssert(TestContext testContext){
+    ShopPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 

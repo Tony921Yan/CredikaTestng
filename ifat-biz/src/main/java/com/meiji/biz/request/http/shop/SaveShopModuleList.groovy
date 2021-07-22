@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class SaveShopModuleList extends ShopPost {
     {
-        super.api = "/shop/module/saveShopModuleList"
+        super.api = "shopDeco/saveShopModuleList"
         super.params =  [ "moduleTemplateId","shopId","shopModuleList"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

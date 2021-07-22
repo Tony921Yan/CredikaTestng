@@ -4,7 +4,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class PageOrder extends ShopPost {
     {
-        super.api = "/shop/order/query/pageOrder"
+        super.api = "order/pageOrder"
         super.params =  [ "limit","page","queryStrings","shopId","status"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

@@ -10,7 +10,7 @@
             <class name="com.meiji.test.http.mall.userAddress.FindUserAddressListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.FindUserInfoTest"/>
             <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>
-<!--            <class name="com.meiji.test.http.mall.orderAfterSale.GetOrderAfterSaleTest"/>-->
+            <!--            <class name="com.meiji.test.http.mall.orderAfterSale.GetOrderAfterSaleTest"/>-->
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderInfoTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoTest"/>
             <!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->

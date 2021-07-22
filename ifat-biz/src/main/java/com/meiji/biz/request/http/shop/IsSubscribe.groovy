@@ -4,7 +4,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class IsSubscribe extends ShopGet {
     {
-        super.api = "/shop/dealer/isSubscribe"
+        super.api = "dealer/isSubscribe"
         super.params =  [ "openId","userId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetShopWeappCode extends ShopGet {
     {
-        super.api = "/shop/getShopWeappCode?shopId=10006&scene=shopId:10006"
+        super.api = "getShopWeappCode?shopId=10006&scene=shopId:10006"
         super.params =  []
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

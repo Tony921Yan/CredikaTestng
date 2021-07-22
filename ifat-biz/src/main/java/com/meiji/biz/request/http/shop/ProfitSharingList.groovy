@@ -8,7 +8,7 @@ import com.meiji.biz.util.DateUtil
 
 class ProfitSharingList extends ShopPost {
     {
-        super.api = "/shop/profitSharing/list"
+        super.api = "profitSharing/list"
         super.params =  ["page","rows","shopId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

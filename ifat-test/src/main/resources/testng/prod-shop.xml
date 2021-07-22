@@ -22,7 +22,6 @@
             <class name="com.meiji.test.http.shop.ProfitSharingListTest"/>
             <class name="com.meiji.test.http.shop.SaveShopModuleListTest"/>
             <class name="com.meiji.test.http.shop.UpdateShopModuleTemplateTest"/>
-            <class name="com.meiji.test.http.shop.UpdateShopModuleTest"/>
         </classes>
     </test>
 </suite>

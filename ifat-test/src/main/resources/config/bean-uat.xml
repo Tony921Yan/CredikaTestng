@@ -10,8 +10,8 @@
         <properties  key="url" value ="https://test.platform.meiji8888.com"/>
         <properties  key="url2" value ="https://test.supplier.meiji8888.com"/>
 <!--        <properties  key="url" value ="https://platform.meiji8888.com"/>-->
-        <properties key="mall" value="https://test.mall.meiji8888.com"/>
-        <properties key="shop" value="https://test.shop.meiji8888.com"/>
+        <properties key="mall" value="https://test.mall.meiji8888.com/"/>
+        <properties key="shop" value="https://test.shop.meiji8888.com/"/>
     </bean>
 
     <bean name = "mysql-platform-goods">

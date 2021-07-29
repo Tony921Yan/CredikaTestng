@@ -7,6 +7,7 @@
             </run>
         </groups>
         <classes>
+            <class name="com.meiji.test.http.mall.shopGoods.FindShopByIdTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsStateListTest"/>

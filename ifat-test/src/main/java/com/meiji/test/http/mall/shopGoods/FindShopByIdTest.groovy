@@ -1,9 +1,9 @@
-package com.meiji.test.http.mall.userShop
+package com.meiji.test.http.mall.shopGoods
 
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
-import com.meiji.biz.request.http.mall.userShop.FindShopById
+import com.meiji.biz.request.http.mall.shopGoods.FindShopById
 import org.testng.annotations.Test
 
 class FindShopByIdTest extends BaseTest {
@@ -13,4 +13,6 @@ class FindShopByIdTest extends BaseTest {
     public void findShopById(TestContext testContext){
         findShopById.invoke(testContext).baseAssert(testContext)
     }
+
+
 }

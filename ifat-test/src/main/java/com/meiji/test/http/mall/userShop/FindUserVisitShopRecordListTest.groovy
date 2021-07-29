@@ -13,4 +13,12 @@ class FindUserVisitShopRecordListTest extends BaseTest {
     public void findUserVisitShopRecordList(TestContext testContext){
         findUserVisitShopRecordList.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "debug" ,groups = ["debug"],testName = "debug",
+            dataProvider = "common",dataProviderClass = TestData.class)
+    public void debug(TestContext testContext){
+        testContext.put("userId",12)
+        //testContext.put("id",12) 发现和id无关
+        findUserVisitShopRecordList.invoke(testContext).baseAssert(testContext)
+    }
 }

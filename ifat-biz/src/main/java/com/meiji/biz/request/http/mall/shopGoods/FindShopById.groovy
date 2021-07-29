@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.mall.userShop
+package com.meiji.biz.request.http.mall.shopGoods
 
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
@@ -9,7 +9,7 @@ import com.meiji.biz.util.DateUtil
 
 class FindShopById extends MallPost {
     {
-        super.api = "/userShop/findShopById"
+        super.api = "/shopGoods/findShopById"
         super.params =  ["id"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

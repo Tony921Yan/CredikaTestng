@@ -9,24 +9,24 @@
         <classes>
             <class name = "com.meiji.test.http.shop.shopauth.FindShopBusinessInfoTest"/>
             <class name="com.meiji.test.http.shop.shopauth.FindShopCompanyInfoTest"/>
-            <class name="com.meiji.test.http.shop.AssetTest"/>
-            <class name="com.meiji.test.http.shop.FindGoodsCategoryTreeTest"/>
-            <class name="com.meiji.test.http.shop.FindGoodsDetailTest"/>
-            <class name="com.meiji.test.http.shop.FindGoodsListTest"/>
-            <class name="com.meiji.test.http.shop.FindShopByDealerTest"/>
-            <class name="com.meiji.test.http.shop.FindShopByIdTest"/>
-            <class name="com.meiji.test.http.shop.FindShopGoodsListTest"/>
-            <class name="com.meiji.test.http.shop.FindShopModuleListTest"/>
-            <!--            <class name="com.meiji.test.http.shop.GetAfterLogTest"/>-->
-            <!--            <class name="com.meiji.test.http.shop.GetAfterOrderDetailTest"/>-->
-            <!--            <class name="com.meiji.test.http.shop.GetAfterOrderPageTest"/>-->
-            <class name="com.meiji.test.http.shop.GetOrderInfoTest"/>
-            <class name="com.meiji.test.http.shop.GetOrderLogisticsInfoTest"/>
-            <!--            <class name="com.meiji.test.http.shop.IsSubscribeTest"/>-->
-            <class name="com.meiji.test.http.shop.PageOrderTest"/>
-            <class name="com.meiji.test.http.shop.ProfitSharingListTest"/>
-            <class name="com.meiji.test.http.shop.SaveShopModuleListTest"/>
-            <class name="com.meiji.test.http.shop.UpdateShopModuleTemplateTest"/>
+            <class name="com.meiji.test.http.shop.profitSharing.AssetTest"/>
+            <class name="com.meiji.test.http.shop.goods.FindGoodsCategoryTreeTest"/>
+            <class name="com.meiji.test.http.shop.goods.FindGoodsDetailTest"/>
+            <class name="com.meiji.test.http.shop.goods.FindGoodsListTest"/>
+            <class name="com.meiji.test.http.shop.dealer.FindShopByDealerTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.FindShopByIdTest"/>
+            <class name="com.meiji.test.http.shop.goods.FindShopGoodsListTest"/>
+            <class name="com.meiji.test.http.shop.shopDeco.FindShopModuleListTest"/>
+            <!--            <class name="com.meiji.test.http.shop.order.GetAfterLogTest"/>-->
+            <!--            <class name="com.meiji.test.http.shop.order.GetAfterOrderDetailTest"/>-->
+            <!--            <class name="com.meiji.test.http.shop.order.GetAfterOrderPageTest"/>-->
+            <class name="com.meiji.test.http.shop.order.GetOrderInfoTest"/>
+            <class name="com.meiji.test.http.shop.order.GetOrderLogisticsInfoTest"/>
+            <!--            <class name="com.meiji.test.http.shop.dealer.IsSubscribeTest"/>-->
+            <class name="com.meiji.test.http.shop.order.PageOrderTest"/>
+            <class name="com.meiji.test.http.shop.profitSharing.ProfitSharingListTest"/>
+            <class name="com.meiji.test.http.shop.shopDeco.SaveShopModuleListTest"/>
+            <class name="com.meiji.test.http.shop.module.UpdateShopModuleTemplateTest"/>
         </classes>
     </test>
 </suite>

@@ -25,14 +25,14 @@ class FindShopGoodsList extends MallPost {
     }
 
     MallPost specialAssert(TestContext testContext){
-        Map mysqlResult = com.meiji.biz.service.MysqlService.getBrand(testContext.get("id"))
-        println(mysqlResult)
-        Map apiResult = testContext.getResponse().data
-        assert mysqlResult.name == apiResult.name
-        assert mysqlResult.icon == apiResult.icon
-        assert mysqlResult.remark == apiResult.remark
-        assert mysqlResult.create_by == apiResult.createBy
-        assert com.meiji.biz.util.DateUtil.strToDate(mysqlResult.gmt_create as String) == com.meiji.biz.util.DateUtil.strToDate(apiResult.gmtCreate)
-        assert  com.meiji.biz.util.DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  com.meiji.biz.util.DateUtil.strToDate(apiResult.gmtModified)
+//        Map mysqlResult = com.meiji.biz.service.MysqlService.getBrand(testContext.get("id"))
+//        println(mysqlResult)
+//        Map apiResult = testContext.getResponse().data
+//        assert mysqlResult.name == apiResult.name
+//        assert mysqlResult.icon == apiResult.icon
+//        assert mysqlResult.remark == apiResult.remark
+//        assert mysqlResult.create_by == apiResult.createBy
+//        assert com.meiji.biz.util.DateUtil.strToDate(mysqlResult.gmt_create as String) == com.meiji.biz.util.DateUtil.strToDate(apiResult.gmtCreate)
+//        assert  com.meiji.biz.util.DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  com.meiji.biz.util.DateUtil.strToDate(apiResult.gmtModified)
     }
 }

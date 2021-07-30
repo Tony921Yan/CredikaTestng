@@ -28,18 +28,10 @@
             <class name="com.meiji.test.http.mall.userAddress.UpdateUserAddressTest"/>
             <class name="com.meiji.test.http.mall.userInfo.UpdateUserInfoTest"/>
             <class name="com.meiji.test.http.mall.userInfo.UserVisitShopTest"/>
-<!--            <class name="com.meiji.test.http.mall.userInfo.FindOfficeShopModuleList"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.SearchGoodsList"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.WxCheck"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.RemoteLog"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.FindGoodsTopicDetail"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.WxCheck"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.FindRecommendGoods"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.PreviewOrder"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.placeOrder"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.payOrder"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.findGoodsCategoryTree"/>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.FindRecommendGoods"/>-->
+            <class name="com.meiji.test.http.mall.shopGoods.FindOfficeShopModuleListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindRecommendGoodsTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindGoodsCategoryTreeTest"/>
         </classes>
     </test>
 </suite>

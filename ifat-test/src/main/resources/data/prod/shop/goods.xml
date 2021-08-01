@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "goods">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="dataType" value ="1"/>
+        <parm key="dateString" value ="2021-08-01"/>
+        <parm key="displayDimension" value ="3"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+</data>

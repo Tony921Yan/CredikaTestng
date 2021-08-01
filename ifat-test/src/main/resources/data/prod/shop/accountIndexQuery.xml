@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "accountIndexQuery">
+        <parm key="accountType" value ="BASIC"/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+</data>

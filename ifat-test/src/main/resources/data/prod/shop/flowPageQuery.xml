@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "flowPageQuery">
+        <parm key="condition" value ="{'shopId':'1405981112139808','tradeType':' ','month':'6','year':'2021'}"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>

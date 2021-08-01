@@ -21,6 +21,20 @@
             <class name="com.meiji.test.http.shop.profitSharing.ProfitSharingListTest"/>
             <class name="com.meiji.test.http.shop.shopDeco.SaveShopModuleListTest"/>
             <class name="com.meiji.test.http.shop.module.UpdateShopModuleTemplateTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.FindShopStudyStateTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.HomePageTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.GoodsTest"/>
+            <class name="com.meiji.test.http.shop.goods.SearchGoodsListTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.CustomerListTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.FinShopInviteCodeCostInfoTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.FindInviteCodeNumTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.FindInviteCodeListTest"/>
+            <class name="com.meiji.test.http.shop.shopinfo.GetConfigValueTest"/>
+<!--            <class name="com.meiji.test.http.shop.module./dealer/msgTemplate"/>-->
+<!--            <class name="com.meiji.test.http.shop.module./chat/readAck"/>-->
+            <class name="com.meiji.test.http.shop.order.AccountIndexQueryTest"/>
+            <class name="com.meiji.test.http.shop.order.FlowTotalDataTest"/>
+            <class name="com.meiji.test.http.shop.order.FlowPageQueryTest"/>
         </classes>
     </test>
 </suite>

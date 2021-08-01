@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "msgTemplate">
+<!--        <parm key="list" value ='[{"openId":"oAojY5B8OcjBzhcq-muwV9WQjhlQ","owner":"24",-->
+<!--        "statusDesc":"accept","templateId":"8HYi4snJb2AJFilqSkXE6ee5i1-CMGxlcjkk3RHcn10","type":"1"}]'/>-->
+        <parm key="list" value ="[{'openId':'oAojY5B8OcjBzhcq-muwV9WQjhlQ','owner':'24',
+        'statusDesc':'accept','templateId':'8HYi4snJb2AJFilqSkXE6ee5i1-CMGxlcjkk3RHcn10','type':'1'}]"/>
+    </test>
+</data>

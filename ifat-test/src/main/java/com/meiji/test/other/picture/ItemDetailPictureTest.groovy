@@ -20,7 +20,6 @@ class ItemDetailPictureTest extends BaseTest {
         String url = testContext.url
         InputStream inputStream = new URL(url).openStream()
         BufferedImage bufferedImage = ImageIO.read(inputStream)
-
         InputStream inputStream2 = new URL(url).openStream()
         byte[] array = new byte[1024];
         int size = 0;
@@ -36,8 +35,7 @@ class ItemDetailPictureTest extends BaseTest {
         int picSize = bufferedImage.getWidth() * bufferedImage.getHeight()
         if(picSize >= 750000) {
             assert size < 600,"spuCode:" + testContext.spuCode
-        }
-        if(picSize >= 640000) {
+        }else if(picSize >= 640000) {
             assert size < 500,"spuCode:" + testContext.spuCode
         }else if(picSize >= 160000){
             assert size < 400,"spuCode:" + testContext.spuCode

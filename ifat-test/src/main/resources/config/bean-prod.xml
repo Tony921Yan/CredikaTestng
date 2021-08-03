@@ -11,9 +11,9 @@
     </bean>
 
     <bean name = "mysql-platform-goods">
-        <properties  key="url" value ="jdbc:mysql://172.27.2.63:3306/meiji_goods"/>
-        <properties  key="user" value ="code_write"/>
-        <properties  key="password" value ="6ba76bddb0473e860d7c"/>
+        <properties  key="url" value ="jdbc:mysql://rm-wz9o80msfb5vxqt28.mysql.rds.aliyuncs.com/meiji_goods"/>
+        <properties  key="user" value ="readonly"/>
+        <properties  key="password" value ="TkvLYcQdJyQJg5_"/>
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 </beans>

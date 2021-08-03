@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "美记图片大小监控"  verbose="1">
+    <test name="美记图片大小监控">
+        <groups>
+            <run>
+                <include name="prod"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.meiji.test.debug.ItemPictureTest"/>
+        </classes>
+    </test>
+</suite>

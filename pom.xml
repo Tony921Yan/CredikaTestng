@@ -109,6 +109,7 @@
             </activation>
             <repositories>
                 <repository>
+                    <id>archetype</id>
                     <name>Nexus public Repository</name>
                     <url>http://172.28.2.29:8081/repository/maven-public/</url>
                     <snapshots>

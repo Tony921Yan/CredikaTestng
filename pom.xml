@@ -77,10 +77,6 @@
     <profiles>
         <profile>
             <id>meiji</id>
-            <!--默认指定dev-->
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
             <repositories>
                 <repository>
                     <id>meiji-public</id>
@@ -101,6 +97,35 @@
                     <id>meiji-nexus-snapshots</id>
                     <name>meiji Snapshot Repository</name>
                     <url>http://ztnexus.meiji8888.com:8081/repository/maven-snapshots/</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+
+        <profile>
+            <id>meiji-zt-prod</id>
+            <!--默认指定dev-->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <name>Nexus public Repository</name>
+                    <url>http://172.28.2.29:8081/repository/maven-public/</url>
+                    <snapshots>
+                        <updatePolicy>always</updatePolicy>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <distributionManagement>
+                <repository>
+                    <id>meiji-nexus-releases</id>
+                    <name>Nexus Release Repository</name>
+                    <url>http://172.28.2.29:8081/repository/maven-releases/</url>
+                </repository>
+                <snapshotRepository>
+                    <id>meiji-nexus-snapshots</id>
+                    <name>Nexus Snapshot Repository</name>
+                    <url>http://172.28.2.29:8081/repository/maven-snapshots/</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>

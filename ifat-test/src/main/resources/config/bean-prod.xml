@@ -16,4 +16,11 @@
         <properties  key="password" value ="TkvLYcQdJyQJg5_"/>
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
+
+    <bean name="meiji_shop">
+        <properties  key="url" value ="jdbc:mysql://rm-wz947m2kgf1088as1.mysql.rds.aliyuncs.com/meiji_shop"/>
+        <properties  key="user" value ="readonly"/>
+        <properties  key="password" value ="TkvLYcQdJyQJg5_"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
 </beans>

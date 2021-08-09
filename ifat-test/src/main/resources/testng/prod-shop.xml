@@ -7,7 +7,7 @@
             <class name="com.meiji.test.http.shop.profitSharing.AssetTest"/>
             <class name="com.meiji.test.http.shop.goods.FindGoodsCategoryTreeTest"/>
             <class name="com.meiji.test.http.shop.goods.FindGoodsDetailTest"/>
-            <class name="com.meiji.test.http.shop.goods.FindGoodsListTest"/>
+<!--            <class name="com.meiji.test.http.shop.goods.FindGoodsListTest"/>-->
             <class name="com.meiji.test.http.shop.shopinfo.FindShopByIdTest"/>
             <class name="com.meiji.test.http.shop.goods.FindShopGoodsListTest"/>
             <class name="com.meiji.test.http.shop.shopDeco.FindShopModuleListTest"/>
@@ -30,8 +30,8 @@
             <class name="com.meiji.test.http.shop.shopinfo.FindInviteCodeNumTest"/>
             <class name="com.meiji.test.http.shop.shopinfo.FindInviteCodeListTest"/>
             <class name="com.meiji.test.http.shop.shopinfo.GetConfigValueTest"/>
-<!--            <class name="com.meiji.test.http.shop.module./dealer/msgTemplate"/>-->
-<!--            <class name="com.meiji.test.http.shop.module./chat/readAck"/>-->
+            <class name="com.meiji.test.http.shop.dealer.MsgTemplateTest"/>
+            <class name="com.meiji.test.http.shop.dealer.ReadAckTest"/>
             <class name="com.meiji.test.http.shop.order.AccountIndexQueryTest"/>
             <class name="com.meiji.test.http.shop.order.FlowTotalDataTest"/>
             <class name="com.meiji.test.http.shop.order.FlowPageQueryTest"/>

@@ -25,7 +25,12 @@ class MysqlService extends MysqlAPI {
         return platformGoodsSql.rows("select * from goods_category where type = $type and name = $name")
     }
 
-    static  List getAsset(String shopId){
-        return platformGoodsSql.rows("select * from shop where id = &id")
+    static List findShopById(String id){
+        return prod_meiji_shop.rows("select * from shop where id = $id")
+    }
+
+    static  List findShopBusinessInfo(String shop_id){
+        System.out.println("print SQL...")
+        return prod_meiji_shop.rows("select * from shop_business_info where shop_id = $shop_id")
     }
 }

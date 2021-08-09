@@ -1,6 +1,6 @@
 package com.meiji.biz.request.http.shop.dealer
 
-import com.meiji.biz.request.http.shop.ShopGet
+import com.meiji.biz.request.http.shop.ShopPost
 import com.meiji.biz.request.http.shop.ShopPost
 import com.miyuan.ifat.support.test.TestContext
 

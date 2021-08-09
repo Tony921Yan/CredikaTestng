@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestData
 import com.meiji.biz.request.http.shop.goods.FindGoodsList
 import org.testng.annotations.Test
 
-class FindGoodsListTest extends BaseTest {
+class FindGoodsListTest extends BaseTest {//接口已废弃
     FindGoodsList findGoodsList = new FindGoodsList()
     @Test(description = "查询选品商品列表 findGoodsList" ,groups = ["prod","uat"],testName = "findGoodsList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

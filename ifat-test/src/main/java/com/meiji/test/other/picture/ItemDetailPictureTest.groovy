@@ -33,7 +33,11 @@ class ItemDetailPictureTest extends BaseTest {
         testContext.appendLog(new Record("图片大小",size))
         testContext.appendLog(new Record("图片尺寸",bufferedImage.getWidth()+"*"+bufferedImage.getHeight()))
         int picSize = bufferedImage.getWidth() * bufferedImage.getHeight()
-        if(picSize >= 750000) {
+        if(picSize >= 3000000) {
+            assert size < 1000, "spuCode:" + testContext.spuCode
+        }else if(picSize >= 1500000) {
+            assert size < 800, "spuCode:" + testContext.spuCode
+        }else if(picSize >= 750000) {
             assert size < 600,"spuCode:" + testContext.spuCode
         }else if(picSize >= 640000) {
             assert size < 500,"spuCode:" + testContext.spuCode

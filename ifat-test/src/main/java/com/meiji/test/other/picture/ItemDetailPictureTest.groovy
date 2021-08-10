@@ -78,23 +78,6 @@ class ItemDetailPictureTest extends BaseTest {
                     list.add(testContext)
                 }
             }
-
-
-//            String regEx_img = "]*?>"
-//            Pattern p_image = Pattern.compile(regEx_img, Pattern.CASE_INSENSITIVE)
-//            Matcher m_image = p_image.matcher(text)
-//            String img = ""
-//            while(m_image.find()) {
-//                img =m_image.group()
-//                Matcher m = Pattern.compile("src\s*=\s*?(.*?)(|>|\s+)").matcher(img)
-//                while(m.find()) {
-//                    TestContext testContext = new TestContext()
-//                    testContext.put("spuCode",it.code)
-//                    testContext.put("url",m.group(1))
-//                    testContext.put("description",m.group(1))
-//                    list.add(testContext)
-//                }
-//            }
         }
         return list
     }

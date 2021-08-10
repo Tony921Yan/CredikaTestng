@@ -11,7 +11,7 @@ import javax.imageio.ImageIO
 import java.awt.image.BufferedImage
 
 class ItemPictureTest extends BaseTest {
-    @Test(dataProvider = "data",groups = ["prod"],threadPoolSize = 10)
+    @Test(dataProvider = "data",groups = ["prod"])
     void test(TestContext testContext){
         String url = testContext.url
         InputStream inputStream = new URL(url).openStream()

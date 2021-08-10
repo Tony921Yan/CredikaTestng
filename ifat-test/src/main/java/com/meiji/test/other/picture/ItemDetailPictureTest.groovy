@@ -15,7 +15,7 @@ import java.util.regex.Pattern
 import java.util.stream.Collectors
 
 class ItemDetailPictureTest extends BaseTest {
-    @Test(dataProvider = "data",groups = ["prod"],threadPoolSize = 10)
+    @Test(dataProvider = "data",groups = ["prod"])
     void test(TestContext testContext){
         String url = testContext.url
         InputStream inputStream = new URL(url).openStream()
@@ -53,7 +53,7 @@ class ItemDetailPictureTest extends BaseTest {
     @DataProvider
     TestContext[] data(){
         List list = new ArrayList()
-        List  picList = MysqlAPI.platformGoodsSql.rows("select code,detail from goods_spu where status = 4 order by gmt_modified desc limit 200")
+        List  picList = MysqlAPI.platformGoodsSql.rows("select code,detail from goods_spu where status = 4 order by gmt_modified desc limit 50")
         picList.forEach{it ->
             String detail = it.detail
             InputStream inputStream = new URL(detail).openStream()

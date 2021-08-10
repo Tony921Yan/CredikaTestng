@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "美记图片大小监控"  verbose="1">
+<suite name = "美记图片大小监控"  verbose="2">
     <test name="美记图片大小监控">
         <groups>
             <run>

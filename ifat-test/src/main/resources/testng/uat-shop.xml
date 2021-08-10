@@ -42,12 +42,6 @@
         </classes>
     </test>
 
-    <test name="查询商家的店铺列表 findShopByDealer">
-        <classes>
-            <class name="com.meiji.test.http.shop.dealer.FindShopByDealerTest"/>
-        </classes>
-    </test>
-
     <test name="根据id查询店铺信息 findShopById">
         <classes>
             <class name="com.meiji.test.http.shop.shopinfo.FindShopByIdTest"/>

@@ -15,7 +15,7 @@ import java.util.regex.Pattern
 import java.util.stream.Collectors
 
 class ItemDetailPictureTest extends BaseTest {
-    @Test(dataProvider = "data",groups = ["prod"])
+    @Test(dataProvider = "data",groups = ["prod"],threadPoolSize = 10)
     void test(TestContext testContext){
         String url = testContext.url
         InputStream inputStream = new URL(url).openStream()

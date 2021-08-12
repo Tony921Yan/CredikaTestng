@@ -11,6 +11,6 @@ class FindShopBusinessInfoTest extends BaseTest {
     @Test(description = "查询店铺营业信息 findShopBusinessInfo" ,groups = ["prod","uat"],testName = "findShopBusinessInfo",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findShopBusinessInfo(TestContext testContext){
-        findShopBusinessInfo.invoke(testContext).baseAssert(testContext)
+        findShopBusinessInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

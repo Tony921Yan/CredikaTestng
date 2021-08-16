@@ -30,7 +30,10 @@ class MysqlService extends MysqlAPI {
     }
 
     static  List findShopBusinessInfo(String shop_id){
-        System.out.println("print SQL...")
         return prod_meiji_shop.rows("select * from shop_business_info where shop_id = $shop_id")
+    }
+
+    static List asset(String shop_id){
+        return prod_meiji_settlement.rows("select sum(seller_profit_sharing_price) as TotalPrice from settlement_order where settlement_state =0 and shop_id = $shop_id")
     }
 }

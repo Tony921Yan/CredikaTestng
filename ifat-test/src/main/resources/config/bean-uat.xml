@@ -12,6 +12,7 @@
 <!--        <properties  key="url" value ="https://platform.meiji8888.com"/>-->
         <properties key="mall" value="https://test.mall.meiji8888.com/"/>
         <properties key="shop" value="https://test.shop.meiji8888.com/"/>
+        <properties key="thirdparty" value="http://127.0.0.1:8080/"/>
     </bean>
 
     <bean name = "mysql-platform-goods">

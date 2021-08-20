@@ -46,7 +46,7 @@ class ItemPictureTest extends BaseTest {
     @DataProvider
     TestContext[] data(){
         List list = new ArrayList()
-        List  picList = MysqlAPI.platformGoodsSql.rows("select pic.url as url,spu.code as spuCode from goods_pic pic left join goods_spu spu on pic.spu_id = spu.id where pic.is_delete = 0 and spu.status = 4 and pic.gmt_modified > date_sub(curdate(),interval 1 day)  and spu.code is not null order by pic.gmt_modified desc limit 300")
+        List  picList = MysqlAPI.platformGoodsSql.rows("select pic.url as url,spu.code as spuCode from goods_pic pic left join goods_spu spu on pic.spu_id = spu.id where pic.is_delete = 0 and spu.status = 4 and pic.gmt_modified > date_sub(curdate(),interval 1 day)  and spu.code is not null order by pic.gmt_modified desc limit 1000")
         picList.forEach {
             TestContext testContext = new TestContext()
             testContext.put("spuCode",it.spuCode)

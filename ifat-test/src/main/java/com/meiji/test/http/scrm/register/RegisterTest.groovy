@@ -15,7 +15,7 @@ import org.testng.annotations.Test
  */
 class RegisterTest extends BaseTest {
     Register register = new Register()
-    @Test(description = "授权结果（轮询） authResult" ,groups = ["prod","uat"],testName = "register",
+    @Test(description = "注册入口" ,groups = ["prod","uat"],testName = "register",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void test(TestContext testContext) {
         testContext.replace("phone","133" +testContext.get("phone").toString())

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "tagList">
+        <parm key="condition" value =' {
+		"groupId": 0,
+		"groupName": "",
+		"name": "",
+		"tagIds": [],
+		"tagNames": []
+	    }'/>
+        <parm key="order" value=""/>
+        <parm key="page" value="0"/>
+        <parm key="rows" value="0"/>
+        <parm key="sort" value=""/>
+    </test>
+</data>

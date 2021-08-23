@@ -1,74 +1,200 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "user"  verbose="4">
-    <test name="企业账号密码登陆 login">
+<suite name = "效率工具"  verbose="4">
+    <test name="客户列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.contact.ContactListTest"/>
+        </classes>
+    </test>
+
+    <test name="通讯录组件获取配置信息">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.corp.AgentConfigTest"/>
+        </classes>
+    </test>
+
+    <test name="首页">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.corp.IndexTest"/>
+        </classes>
+    </test>
+
+    <test name="组织列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.department.DepartmentListTest"/>
+        </classes>
+    </test>
+
+    <test name="组织详情">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.department.DepartmentDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="获取员工企微部门列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.employee.EmployeeDepartmentListTest"/>
+        </classes>
+    </test>
+
+    <test name="查看成员信息">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.employee.EmployeeListTest"/>
+        </classes>
+    </test>
+
+    <test name="查看登录配置成员列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.employee.LoginConfigListTest"/>
+        </classes>
+    </test>
+
+    <test name="查询员工访问门店权限">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.employee.ShopPermissionListTest"/>
+        </classes>
+    </test>
+
+    <test name="查看成员详情基础信息">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.employee.ShowTest"/>
+        </classes>
+    </test>
+
+    <test name="获取员工下的群列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.group.GetEmployeeGroupTest"/>
+        </classes>
+    </test>
+
+    <test name="获取群主列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.group.GetGroupAdminTest"/>
+        </classes>
+    </test>
+
+    <test name="获取群列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.group.GetGroupListTest"/>
+        </classes>
+    </test>
+
+    <test name="获取群详情">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.group.GetGroupShowTest"/>
+        </classes>
+    </test>
+
+    <test name="扫码登录接口">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.login.LoginScanTest"/>
+        </classes>
+    </test>
+
+    <test name="企业账号密码登陆">
         <classes>
             <class name = "com.meiji.test.http.scrm.login.LoginTest"/>
         </classes>
     </test>
 
-    <test name="扫码登录接口 loginscan">
+    <test name="二维码信息接口">
         <classes>
-            <class name="com.meiji.test.http.scrm.login.LoginScanTest"/>
+            <class name = "com.meiji.test.http.scrm.login.QrCodeTest"/>
         </classes>
     </test>
 
-    <test name="二维码信息接口 qrcode">
+    <test name="素材群组列表">
         <classes>
-            <class name="com.meiji.test.http.scrm.login.QrCodeTest"/>
+            <class name = "com.meiji.test.http.scrm.material.GroupListTest"/>
         </classes>
     </test>
 
-    <test name="菜单详情 menudetail">
+    <test name="素材列表">
         <classes>
-            <class name="com.meiji.test.http.scrm.menu.MenuDetailTest"/>
+            <class name = "com.meiji.test.http.scrm.material.MaterialListTest"/>
         </classes>
     </test>
 
-    <test name="菜单列表 menulist">
+    <test name="菜单详情">
         <classes>
-            <class name="com.meiji.test.http.scrm.menu.MenuListTest"/>
+            <class name = "com.meiji.test.http.scrm.menu.MenuDetailTest"/>
         </classes>
     </test>
 
-    <test name="授权结果（轮询） authResult">
+    <test name="菜单列表">
         <classes>
-            <class name="com.meiji.test.http.scrm.register.AuthResultTest"/>
+            <class name = "com.meiji.test.http.scrm.menu.MenuListTest"/>
         </classes>
     </test>
 
-    <test name="角色详情 roledetail">
+    <test name="渠道活码详情">
         <classes>
-            <class name="com.meiji.test.http.scrm.role.RoleDetailTest"/>
+            <class name = "com.meiji.test.http.scrm.qrcode.ChannelDetailTest"/>
         </classes>
     </test>
 
-    <test name="角色列表 rolelist">
+    <test name="渠道活码列表">
         <classes>
-            <class name="com.meiji.test.http.scrm.role.RoleListTest"/>
+            <class name = "com.meiji.test.http.scrm.qrcode.ChannelListTest"/>
         </classes>
     </test>
 
-    <test name="角色菜单列表 rolemenulist">
+    <test name="授权结果（轮询）">
         <classes>
-            <class name="com.meiji.test.http.scrm.role.RoleMenuListTest"/>
+            <class name = "com.meiji.test.http.scrm.register.AuthResultTest"/>
         </classes>
     </test>
 
-    <test name="通讯录组件获取配置信息 agentConfig">
+    <test name="注册入口">
         <classes>
-            <class name="com.meiji.test.http.scrm.corp.AgentConfigTest"/>
+            <class name = "com.meiji.test.http.scrm.register.RegisterTest"/>
         </classes>
     </test>
 
-    <test name="首页 index">
+    <test name="角色详情">
         <classes>
-            <class name="com.meiji.test.http.scrm.corp.IndexTest"/>
+            <class name = "com.meiji.test.http.scrm.role.RoleDetailTest"/>
         </classes>
     </test>
 
-    <test name="客户列表 contactlist">
+    <test name="角色列表">
         <classes>
-            <class name="com.meiji.test.http.scrm.contact.ContactListTest"/>
+            <class name = "com.meiji.test.http.scrm.role.RoleListTest"/>
+        </classes>
+    </test>
+
+    <test name="角色菜单列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.role.RoleMenuListTest"/>
+        </classes>
+    </test>
+
+    <test name="查看标签列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.tag.TagListTest"/>
+        </classes>
+    </test>
+
+    <test name="查看标签分组下的标签">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.tag.TagQueryTest"/>
+        </classes>
+    </test>
+
+    <test name="查看标签分组">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.tagGroup.TagGroupQueryTest"/>
+        </classes>
+    </test>
+
+    <test name="微信部门列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.wx.WxDepartmentListTest"/>
+        </classes>
+    </test>
+
+    <test name="获取微信部门成员列表">
+        <classes>
+            <class name = "com.meiji.test.http.scrm.wx.WxMemberListTest"/>
         </classes>
     </test>
 </suite>

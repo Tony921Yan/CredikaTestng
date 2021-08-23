@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "materiallist">
+        <parm key="condition" value ='{
+		"createUserName": "",
+		"name": "",
+		"type": 0,
+		"webPageType": 0
+	    }'/>
+        <parm key="order" value=""/>
+        <parm key="page" value="0"/>
+        <parm key="rows" value="0"/>
+        <parm key="sort" value=""/>
+    </test>
+</data>

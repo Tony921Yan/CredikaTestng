@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "channelist">
+        <parm key="condition" value ='{
+		"endTime": "",
+		"shopName": "",
+		"startTime": "",
+		"tagId": 0
+	    }'/>
+        <parm key="order" value=""/>
+        <parm key="page" value="0"/>
+        <parm key="rows" value="0"/>
+        <parm key="sort" value=""/>
+    </test>
+</data>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "agentConfig">
+        <parm key="corpId" value ="0"/>
+        <parm key="employeeId" value ="0"/>
+        <parm key="gmtCreate" value =""/>
+        <parm key="gmtModified" value =""/>
+        <parm key="id" value ="0"/>
+        <parm key="state" value ="0"/>
+        <parm key="url" value =""/>
+        <parm key="version" value ="0"/>
+    </test>
+</data>

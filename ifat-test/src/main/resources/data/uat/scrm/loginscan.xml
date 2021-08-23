@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "loginscan">
+        <parm key="authCode" value ="aIbzd59v6k43HXx-fgGgRqb1dhVnt69yAvuWh_HkGHWhfdfseJKoWGdVrpcWKgS5YiFZABTMUH6LPejHMsdkwle7e3Mb-fxhQMV2f61T2pYl_UY-y_tlyAmuHN2C9swt"/>
+        <parm key="state" value ="state"/>
+    </test>
+</data>

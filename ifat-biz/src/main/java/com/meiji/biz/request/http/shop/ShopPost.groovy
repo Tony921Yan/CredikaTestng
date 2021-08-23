@@ -15,15 +15,15 @@ abstract class ShopPost {
     public List params
     public String preInvoke
 
-    ShopPost invoke(TestContext testContext){
+    ShopPost invoke(TestContext testContext) {
         String shopUrl = ResourceUtil.getBeanData("http").get("shop")
-        String url  = shopUrl+api
+        String url = shopUrl + api
         Map heads = new HashMap()
-        heads.put("timestamp",testContext.get("timestamp"))
-        heads.put("nonce",testContext.get("nonce"))
-        heads.put("Content-Type",testContext.get("Content-Type"))
+        heads.put("timestamp", testContext.get("timestamp"))
+        heads.put("nonce", testContext.get("nonce"))
+        heads.put("Content-Type", testContext.get("Content-Type"))
         Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
-        heads.put("cookie",CookieService.getShopCookie(shopUrl,dealerId))
+        heads.put("cookie", CookieService.getShopCookie(shopUrl, dealerId))
 //        String aesKey = MD5Utils.MD5Encode("11", "utf-8")
 //        String tokenAes = AESOperator.encrypt(testContext.get("token").toString(), aesKey)
 //        heads.put("token",tokenAes)
@@ -32,17 +32,17 @@ abstract class ShopPost {
 //            heads.put("isGrayRelease",true)
 //        }
         Map req = new HashMap()
-        for(String str:params){
-            if(ObjectUtils.isNotEmpty(testContext.get(str))){
-                req.put(str,JsonUtil.objectParse(testContext.get(str)))
+        for (String str : params) {
+            if (ObjectUtils.isNotEmpty(testContext.get(str))) {
+                req.put(str, JsonUtil.objectParse(testContext.get(str)))
             }
         }
-        testContext.appendLog(new Record("接口地址",url))
-        testContext.appendLog(new Record("请求头",heads))
-        testContext.appendLog(new Record("请求参数",req))
-        String res = HttpUtil.post(url,heads, req)
+        testContext.appendLog(new Record("接口地址", url))
+        testContext.appendLog(new Record("请求头", heads))
+        testContext.appendLog(new Record("请求参数", req))
+        String res = HttpUtil.post(url, heads, req)
         testContext.setResponse(res)
-        testContext.appendLog(new Record("返回结果",res))
+        testContext.appendLog(new Record("返回结果", res))
         return this
     }
 

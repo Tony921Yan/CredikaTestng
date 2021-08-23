@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "loginscan">
+        <parm key="password" value =""/>
+        <parm key="phone" value =""/>
+        <parm key="verifyCode" value =""/>
+    </test>
+</data>

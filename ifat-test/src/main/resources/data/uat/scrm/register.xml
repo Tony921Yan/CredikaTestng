@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "register">
+        <parm key="legalPerson" value ="骆志敏"/>
+        <parm key="mailAddress" value ="qwe@123.com"/>
+        <parm key="name" value ="美记有限公司"/>
+        <parm key="phone" value ="$int8"/>
+    </test>
+</data>

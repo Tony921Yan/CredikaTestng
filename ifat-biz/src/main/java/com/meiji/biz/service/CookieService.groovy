@@ -18,27 +18,27 @@ class CookieService {
       inviteUserId: number | null,
       jmUser: ChatAccount | null,
    */
-    static String getMallCookie(String url,Long userId){
-        String cookie = cacheCookie.get("mall:"+userId)
-        if(cookie!=null){
+    static String getMallCookie(String url,Long userId) {
+        String cookie = cacheCookie.get("mall:" + userId)
+        if (cookie != null) {
             return cookie
         }
         StringBuilder stringBuilder = new StringBuilder()
         String token = TokenUtil.generateToken(userId)
         Map cookieParam = new HashMap()
         Map cookieInfo = new HashMap()
-        cookieInfo.put("userId",userId)
-        cookieInfo.put("token",token)
-        cookieParam.put("secret","+0ea81c0ea81557c9==")
-        cookieParam.put("info",cookieInfo)
-        CloseableHttpResponse response = HttpUtil.postV2(url+"/login/__test__", [:], cookieParam)
+        cookieInfo.put("userId", userId)
+        cookieInfo.put("token", token)
+        cookieParam.put("secret", "+0ea81c0ea81557c9==")
+        cookieParam.put("info", cookieInfo)
+        CloseableHttpResponse response = HttpUtil.postV2(url + "/login/__test__", [:], cookieParam)
         Header[] headers = response.getHeaders("Set-Cookie")
-        for(Header header:headers){
-            stringBuilder.append(header.elements.head().toString().split (";")[0])
+        for (Header header : headers) {
+            stringBuilder.append(header.elements.head().toString().split(";")[0])
             stringBuilder.append(";")
         }
-        cookie =  stringBuilder.toString()
-        cacheCookie.put("mall:"+userId,cookie)
+        cookie = stringBuilder.toString()
+        cacheCookie.put("mall:" + userId, cookie)
         return cookie
     }
 

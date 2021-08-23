@@ -3,6 +3,7 @@
     <bean name = "http">
         <properties key="mall" value="https://mall.meiji8888.com/"/>
         <properties key="shop" value="https://shop.meiji8888.com/"/>
+        <properties key="scrm" value="https://shop.meiji8888.com/"/>
     </bean>
 
     <bean name="dingTalk">

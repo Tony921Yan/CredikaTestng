@@ -29,14 +29,10 @@ class GetOrderLogisticsInfo extends MallPost {
     }
 
     MallPost specialAssert(TestContext testContext){
-        Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
+        Map mysqlResult = MysqlService.getOrderLogisticsInfo(testContext.get("orderCode")).get(0)
         println(mysqlResult)
-        Map apiResult = testContext.getResponse().data
-        assert mysqlResult.name == apiResult.name
-        assert mysqlResult.icon == apiResult.icon
-        assert mysqlResult.remark == apiResult.remark
-        assert mysqlResult.create_by == apiResult.createBy
-        assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
-        assert  DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  DateUtil.strToDate(apiResult.gmtModified)
+        Map apiResult = testContext.getResponse().data[0]
+        assert mysqlResult.logistics_code == apiResult.logisticsCode
+        assert mysqlResult.logistics_company_code == apiResult.logisticsCompanyCode
     }
 }

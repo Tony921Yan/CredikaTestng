@@ -29,14 +29,13 @@ class ProfitSharingList extends ShopPost {
     }
 
     ShopPost specialAssert(TestContext testContext){
-        Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
-        println(mysqlResult)
         Map apiResult = testContext.getResponse().data
-        assert mysqlResult.name == apiResult.name
-        assert mysqlResult.icon == apiResult.icon
-        assert mysqlResult.remark == apiResult.remark
-        assert mysqlResult.create_by == apiResult.createBy
-        assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
-        assert  DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  DateUtil.strToDate(apiResult.gmtModified)
+        List mysqlResult = MysqlService.profitSharing(testContext.get("shopId"))
+        System.out.println(mysqlResult.get(0).get("seller_profit_sharing_price"))
+
+        Map map = apiResult.get("dataList")[0];
+        System.out.println(map.get("totalPrice"))
+//        assert true
+        assert mysqlResult.get(0).get("seller_profit_sharing_price") == map.get("totalPrice")
     }
 }

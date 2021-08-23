@@ -11,6 +11,6 @@ class GetUserOrderCountTest extends BaseTest {
     @Test(description = "获取用户订单状态计数 小红点 getUserOrderCount" ,groups = ["prod","uat"],testName = "getUserOrderCount",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getUserOrderCount(TestContext testContext){
-        getUserOrderCount.invoke(testContext).baseAssert(testContext)
+        getUserOrderCount.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

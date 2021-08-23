@@ -10,6 +10,6 @@ import com.meiji.biz.request.http.scrm.ScrmPost
 class EmployeeList extends ScrmPost{
     {
         super.api = "scrm/employee/list"
-        super.params = ["condition", "page", "rows","sort"]
+        super.params = ["condition", "page", "rows"]
     }
 }

@@ -12,6 +12,6 @@
         <parm key="order" value ="0"/>
         <parm key="page" value ="0"/>
         <parm key="sort" value ="desc"/>
-        <parm key="rows" value ="10"/>
+        <parm key="rows" value ="0"/>
     </test>
 </data>

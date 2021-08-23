@@ -16,6 +16,6 @@ class ContactList extends ScrmPost{
 
     @Override
     ScrmPost baseAssert(TestContext testContext) {
-        assert testContext.getResponse().code == "05008"
+        assert testContext.getResponse().code == "0"
     }
 }

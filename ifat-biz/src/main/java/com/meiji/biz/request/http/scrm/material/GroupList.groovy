@@ -12,4 +12,5 @@ class GroupList extends ScrmGet{
         super.api = "scrm/material/group/list"
         super.params = ["name"]
     }
+
 }

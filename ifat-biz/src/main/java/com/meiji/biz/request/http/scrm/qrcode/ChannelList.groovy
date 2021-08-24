@@ -16,6 +16,6 @@ class ChannelList extends ScrmPost{
 
     @Override
     ScrmPost baseAssert(TestContext testContext) {
-        assert testContext.getResponse().msg == "服务禁用"
+        assert testContext.getResponse().code == "05016"
     }
 }

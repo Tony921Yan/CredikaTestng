@@ -19,7 +19,7 @@
             <class name = "com.meiji.test.http.scrm.login.LoginScanTest"/>
             <class name = "com.meiji.test.http.scrm.login.LoginTest"/>
             <class name = "com.meiji.test.http.scrm.login.QrCodeTest"/>
-            <class name = "com.meiji.test.http.scrm.material.GroupListTest"/>
+<!--            <class name = "com.meiji.test.http.scrm.material.GroupListTest"/>-->
             <class name = "com.meiji.test.http.scrm.material.MaterialListTest"/>
             <class name = "com.meiji.test.http.scrm.menu.MenuDetailTest"/>
             <class name = "com.meiji.test.http.scrm.menu.MenuListTest"/>

@@ -11,6 +11,6 @@ class GetOrderLogisticsInfoTest extends BaseTest {
     @Test(description = "获取物流信息 getOrderLogisticsInfo" ,groups = ["prod","uat"],testName = "getOrderLogisticsInfo1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getOrderLogisticsInfo(TestContext testContext){
-        getOrderLogisticsInfo.invoke(testContext).baseAssert(testContext)
+        getOrderLogisticsInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

@@ -11,7 +11,7 @@ class ProfitSharingListTest extends BaseTest {
     @Test(description = "分账流水 profitSharingList" ,groups = ["prod","uat"],testName = "profitSharingList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void profitSharingList(TestContext testContext){
-        profitSharingList.invoke(testContext).baseAssert(testContext)
+        profitSharingList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 
 }

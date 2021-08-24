@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class SearchGoodsListTest extends BaseTest {
     SearchGoodsList searchGoodsList = new SearchGoodsList()
-    @Test(description = "搜索商品列表 searchGoodsList" ,groups = ["prod","uat"],testName = "searchGoodsList",
+    @Test(description = "搜索商品列表 searchGoodsList" ,groups = ["prod","uat"],testName = "searchGoodsList1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void searchGoodsList(TestContext testContext){
         searchGoodsList.invoke(testContext).baseAssert(testContext)

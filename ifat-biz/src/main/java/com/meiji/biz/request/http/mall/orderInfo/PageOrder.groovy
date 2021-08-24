@@ -29,14 +29,24 @@ class PageOrder extends MallPost {
     }
 
     MallPost specialAssert(TestContext testContext){
-        Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
-        println(mysqlResult)
+        Map mysqlResult = MysqlService.pageOrder(testContext.get("shopId")).get(0)
+        System.out.println(mysqlResult)
         Map apiResult = testContext.getResponse().data
-        assert mysqlResult.name == apiResult.name
-        assert mysqlResult.icon == apiResult.icon
-        assert mysqlResult.remark == apiResult.remark
-        assert mysqlResult.create_by == apiResult.createBy
-        assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
-        assert  DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  DateUtil.strToDate(apiResult.gmtModified)
+        System.out.println(apiResult)
+        assert mysqlResult.id == apiResult.orderList[0].getAt("id")
+        assert mysqlResult.order_code == apiResult.orderList[0].getAt("orderCode")
+        assert mysqlResult.shop_id == apiResult.orderList[0].getAt("shopId")
+        assert mysqlResult.shop_name == apiResult.orderList[0].getAt("shopName")
+        assert DateUtil.strToDate(mysqlResult.gmt_create as String ) == DateUtil.strToDate(apiResult.orderList[0].getAt("gmtCreate"))
+        assert mysqlResult.order_type == apiResult.orderList[0].getAt("orderType")
+        assert mysqlResult.kj_order_status == apiResult.orderList[0].getAt("kjOrderStatus")
+        assert mysqlResult.order_status == apiResult.orderList[0].getAt("orderStatus")
+        assert mysqlResult.freight == apiResult.orderList[0].getAt("freight")
+        assert mysqlResult.goods_total_amount == apiResult.orderList[0].getAt("goodsTotalAmount")
+        assert mysqlResult.actually_paid_amount == apiResult.orderList[0].getAt("actuallyPaidAmount")
+        assert mysqlResult.supplier_id == apiResult.orderList[0].getAt("supplierId")
+        assert mysqlResult.buyer_id == apiResult.orderList[0].getAt("buyerId")
+        assert mysqlResult.supplier_name == apiResult.orderList[0].getAt("supplierName")
+
     }
 }

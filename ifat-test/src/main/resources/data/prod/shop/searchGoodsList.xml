@@ -3,7 +3,7 @@
     <test name = "searchGoodsList">
         <parm key="shopId" value ="1405981112139808"/>
         <parm key="brandId  " value =""/>
-        <parm key="categoryIdList" value ="654"/>
+        <parm key="categoryIdList" value ="[654]"/>
         <parm key="comprehensiveSort" value ="desc"/>
         <parm key="page" value ="1"/>
         <parm key="priceSort" value =""/>

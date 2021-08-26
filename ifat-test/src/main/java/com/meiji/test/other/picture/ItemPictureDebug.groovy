@@ -11,44 +11,34 @@ import javax.imageio.ImageIO
 import java.awt.image.BufferedImage
 
 class ItemPictureDebug {
-    @Test(dataProvider = "data",groups = ["prod"],threadPoolSize = 10)
+    def filePath = "D:/picBanner.txt"
+    File file = new File(filePath)
+    @Test(dataProvider = "data",groups = ["prod"],threadPoolSize = 30)
     void test(TestContext testContext){
         String url = testContext.url
         String saveFile = testContext.saveFile
         InputStream inputStream = new URL(url).openStream()
         BufferedImage bufferedImage = ImageIO.read(inputStream)
-
-        InputStream inputStream2 = new URL(url).openStream()
-        byte[] array = new byte[1024];
-        int size = 0;
-        int length = 0;
-        while ((length = inputStream2.read(array)) != -1) {
-            size += length;
-        }
-        size = Math.round(size/1024)
-        testContext.appendLog(new Record("商品spuCode",testContext.spuCode))
-        testContext.appendLog(new Record("图片路径",testContext.url))
-        testContext.appendLog(new Record("图片大小",size))
-        testContext.appendLog(new Record("图片尺寸",bufferedImage.getWidth()+"*"+bufferedImage.getHeight()))
+        URLConnection connection = new URL(url).openConnection()
+        Long size = Math.round(connection.contentLength/1024)
         int picSize = bufferedImage.getWidth() * bufferedImage.getHeight()
         if(picSize >= 750*1000 && size > 600) {
-            println("\$client.DownloadFile('"+url+"','"+saveFile+"')")
+            file.append("\$client.DownloadFile('"+url+"','"+saveFile+"')"+"\r\n")
         }else if(picSize >= 800*800 && picSize < 750*1000 && size > 500) {
-            println("\$client.DownloadFile('"+url+"','"+saveFile+"')")
+            file.append("\$client.DownloadFile('"+url+"','"+saveFile+"')"+"\r\n")
         }else if(picSize >= 400*400 && picSize < 800*800 && size > 400){
-            println("\$client.DownloadFile('"+url+"','"+saveFile+"')")
+            file.append("\$client.DownloadFile('"+url+"','"+saveFile+"')"+"\r\n")
         } else if(picSize >= 200*200 && picSize < 400*400 && size > 300){
-            println("\$client.DownloadFile('"+url+"','"+saveFile+"')")
+            file.append("\$client.DownloadFile('"+url+"','"+saveFile+"')"+"\r\n")
         }
         inputStream.close()
-        inputStream2.close()
     }
 
     @DataProvider
     TestContext[] data(){
         String savePath = "D:\\picBanner"
         List list = new ArrayList()
-        List  picList = MysqlAPI.platformGoodsSql.rows("select pic.url as url,spu.code as spuCode from goods_pic pic left join goods_spu spu on pic.spu_id = spu.id where pic.is_delete = 0 and pic.gmt_modified > date_sub(curdate(),interval 180 day)  and spu.code is not null order by pic.gmt_modified desc")
+        List  picList = MysqlAPI.platformGoodsSql.rows("select pic.url as url,spu.code as spuCode from goods_pic pic left join goods_spu spu on pic.spu_id = spu.id where pic.is_delete = 0 and spu.status = 4 and pic.gmt_modified > date_sub(curdate(),interval 180 day)  and spu.code is not null order by pic.gmt_modified desc")
         picList.forEach {
             TestContext testContext = new TestContext()
             String url = it.url
@@ -63,8 +53,8 @@ class ItemPictureDebug {
             list.add(testContext)
         }
         println("当前巡检图片张数:"+list.size())
-        println("mkdir "+ savePath)
-        println("\$client = new-object System.Net.WebClient")
+        file.write("mkdir "+ savePath+"\r\n")
+        file.append("\$client = new-object System.Net.WebClient"+"\r\n")
         return list
     }
 }

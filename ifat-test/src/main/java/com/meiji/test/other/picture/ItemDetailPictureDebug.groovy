@@ -1,15 +1,11 @@
 package com.meiji.test.other.picture
 
 import com.meiji.biz.api.MysqlAPI
-import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
-import com.miyuan.ifat.support.vo.Record
-import org.testng.annotations.CustomAttribute
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
 
 import javax.imageio.ImageIO
-import javax.xml.stream.events.Attribute
 import java.awt.image.BufferedImage
 import java.util.regex.Matcher
 import java.util.regex.Pattern
@@ -49,7 +45,9 @@ class ItemDetailPictureDebug{
     TestContext[] data(){
         String savePath = "D:\\picDetail"
         List list = new ArrayList()
-        List  picList = MysqlAPI.platformGoodsSql.rows("select code,detail from goods_spu where status = 4 and gmt_modified > date_sub(curdate(),interval 30 day) order by gmt_modified desc limit 1")
+        List  picList = MysqlAPI.platformGoodsSql.rows("select code,detail from goods_spu where " +
+                "status = 4 and gmt_modified > date_sub(curdate(),interval 30 day) " +
+                "order by gmt_modified desc")
         picList.each{it ->
             String detail = it.detail
             InputStream inputStream = new URL(detail).openStream()

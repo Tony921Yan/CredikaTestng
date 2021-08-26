@@ -1,9 +1,7 @@
 package com.meiji.test.other.picture
 
 import com.meiji.biz.api.MysqlAPI
-import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
-import com.miyuan.ifat.support.vo.Record
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
 

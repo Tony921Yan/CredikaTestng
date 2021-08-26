@@ -81,7 +81,7 @@ class MysqlService extends MysqlAPI {
         return prod_meiji_user.rows("select * from user_address where id = $id")
     }
 
-    static List updateUserInfo(String UserId){
-        return prod_meiji_user.rows("select * from user where id =$UserId")
+    static Map getUserInfo(String UserId){
+        return prod_meiji_user.firstRow("select * from user where id =$UserId")
     }
 }

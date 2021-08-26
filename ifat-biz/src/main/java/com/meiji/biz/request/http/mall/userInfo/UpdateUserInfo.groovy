@@ -31,16 +31,10 @@ class UpdateUserInfo extends MallPost {
     }
 
     MallPost specialAssert(TestContext testContext){
-        Map mysqlResult = MysqlService.updateUserInfo(testContext.get("userId")).get(0)
-        Map apiRequest = new HashMap()
-        for(String str:params) {
-            if (ObjectUtils.isNotEmpty(testContext.get(str))) {
-                apiRequest.put(str, JsonUtil.objectParse(testContext.get(str)))
-            }
-        }
-        assert mysqlResult.nickname == apiRequest.nickname
-        assert mysqlResult.avatar == apiRequest.avatar
-        assert mysqlResult.sex == apiRequest.sex
+        Map mysqlResult = MysqlService.getUserInfo(testContext.get("userId"))
+        assert mysqlResult.nickname == testContext.nickname
+        assert mysqlResult.avatar == testContext.avatar
+        assert String.valueOf(mysqlResult.sex) == String.valueOf(testContext.sex)
 
     }
 }

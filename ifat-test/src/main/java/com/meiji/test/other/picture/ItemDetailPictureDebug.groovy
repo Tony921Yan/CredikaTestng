@@ -45,7 +45,9 @@ class ItemDetailPictureDebug{
     TestContext[] data(){
         String savePath = "D:\\picDetail"
         List list = new ArrayList()
-        List  picList = MysqlAPI.platformGoodsSql.rows("select code,detail from goods_spu where status = 4 and gmt_modified > date_sub(curdate(),interval 30 day) order by gmt_modified desc limit 1")
+        List  picList = MysqlAPI.platformGoodsSql.rows("select code,detail from goods_spu where " +
+                "status = 4 and gmt_modified > date_sub(curdate(),interval 30 day) " +
+                "order by gmt_modified desc")
         picList.each{it ->
             String detail = it.detail
             InputStream inputStream = new URL(detail).openStream()

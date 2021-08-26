@@ -4,7 +4,6 @@ import com.meiji.biz.api.MysqlAPI
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.vo.Record
-import com.sun.jndi.toolkit.url.Uri
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
 

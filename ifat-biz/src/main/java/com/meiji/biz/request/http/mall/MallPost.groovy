@@ -46,13 +46,20 @@ abstract class MallPost {
 
     MallPost preInvoke(TestContext testContext){
         if(preInvoke!=null){
-            Class clazz = Class.forName(preInvoke)
-            Method method1 = clazz.getMethod("invoke", TestContext.class)
-            method1.invoke(clazz.newInstance(),testContext)
-            Method method2 = clazz.getMethod("afterInvoke", TestContext.class)
-            method2.invoke(clazz.newInstance(),testContext)
+            try {
+                Class clazz = Class.forName(preInvoke)
+                Method method1 = clazz.getMethod("invoke", TestContext.class)
+                method1.invoke(clazz.newInstance(),testContext)
+                Method method2 = clazz.getMethod("baseAssert", TestContext.class)
+                method2.invoke(clazz.newInstance(),testContext)
+                Method method3 = clazz.getMethod("afterInvoke", TestContext.class)
+                method3.invoke(clazz.newInstance(),testContext)
+            }catch (Exception e){
+                throw e.cause
+            }
         }
         return this
+
     }
 
     MallPost afterInvoke(TestContext testContext){

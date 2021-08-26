@@ -77,4 +77,11 @@ class MysqlService extends MysqlAPI {
         return prod_meiji_order.rows("select * from order_info where shop_id = $shopId and pay_status =0 ORDER BY gmt_create DESC limit 10")
     }
 
+    static  List updateUserAddress(String id){
+        return prod_meiji_user.rows("select * from user_address where id = $id")
+    }
+
+    static List updateUserInfo(String UserId){
+        return prod_meiji_user.rows("select * from user where id =$UserId")
+    }
 }

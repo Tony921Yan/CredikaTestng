@@ -5,13 +5,15 @@ import com.miyuan.ifat.support.test.TestContext
 
 import com.meiji.biz.service.MysqlService
 import com.meiji.biz.util.DateUtil
+import com.miyuan.ifat.support.util.JsonUtil
+import org.apache.commons.lang3.ObjectUtils
 
 
 class UpdateUserInfo extends MallPost {
     {
         super.api = "/userInfo/updateUserInfo"
         super.params =  ["avatar","nickname","sex"]
-//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
+//        super.preInvoke = "com.meiji.biz.request.http.mall.userInfo.FindUserInfo"
     }
 
     MallPost invoke(TestContext testContext) {
@@ -29,14 +31,16 @@ class UpdateUserInfo extends MallPost {
     }
 
     MallPost specialAssert(TestContext testContext){
-        Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
-        println(mysqlResult)
-        Map apiResult = testContext.getResponse().data
-        assert mysqlResult.name == apiResult.name
-        assert mysqlResult.icon == apiResult.icon
-        assert mysqlResult.remark == apiResult.remark
-        assert mysqlResult.create_by == apiResult.createBy
-        assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
-        assert  DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  DateUtil.strToDate(apiResult.gmtModified)
+        Map mysqlResult = MysqlService.updateUserInfo(testContext.get("userId")).get(0)
+        Map apiRequest = new HashMap()
+        for(String str:params) {
+            if (ObjectUtils.isNotEmpty(testContext.get(str))) {
+                apiRequest.put(str, JsonUtil.objectParse(testContext.get(str)))
+            }
+        }
+        assert mysqlResult.nickname == apiRequest.nickname
+        assert mysqlResult.avatar == apiRequest.avatar
+        assert mysqlResult.sex == apiRequest.sex
+
     }
 }

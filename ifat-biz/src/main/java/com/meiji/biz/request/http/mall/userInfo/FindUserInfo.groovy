@@ -19,10 +19,12 @@ class FindUserInfo extends MallPost {
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
-        super.preInvoke(testContext)
-        return this
-    }
+    //获取数据作为下一个接口的参数进行请求 (UpdateUserInfo)
+//    MallPost afterInvoke(TestContext testContext){
+//        Map id = testContext.getResponse().data
+//        testContext.put("id",id)
+//        return this
+//    }
 
     MallPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)

@@ -27,7 +27,11 @@ class Asset extends ShopPost {
     ShopPost specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.asset(testContext.get("shopId")).get(0)
         Map apiResult = testContext.getResponse().data
-        assert apiResult.totalPrice == mysqlResult.TotalPrice
+        if (mysqlResult.TotalPrice == null){
+            mysqlResult.TotalPrice =0;
+            assert apiResult.totalPrice == mysqlResult.TotalPrice;
+        }else
+            assert String.valueOf(apiResult.totalPrice) == String.valueOf(mysqlResult.TotalPrice)
     }
 //
 //    MeijiGet dateAssert(TestContext testContext){

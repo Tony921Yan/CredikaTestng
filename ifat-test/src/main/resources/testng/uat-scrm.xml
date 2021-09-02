@@ -2,7 +2,7 @@
 <suite name = "效率工具"  verbose="4">
     <test name="美记效率工具">
         <classes>
-            <class name = "com.meiji.test.http.scrm.contact.ContactListTest"/>
+<!--            <class name = "com.meiji.test.http.scrm.contact.ContactListTest"/>-->
             <class name = "com.meiji.test.http.scrm.corp.AgentConfigTest"/>
             <class name = "com.meiji.test.http.scrm.corp.IndexTest"/>
             <class name = "com.meiji.test.http.scrm.department.DepartmentListTest"/>

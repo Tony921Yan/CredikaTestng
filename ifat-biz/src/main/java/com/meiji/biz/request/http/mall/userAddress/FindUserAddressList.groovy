@@ -9,7 +9,7 @@ import java.awt.TextArea
 class FindUserAddressList extends MallPost {
     {
         super.api = "/userAddress/findUserAddressList"
-        super.params =  ["userId"] //开发未完成
+        super.params =  ["userId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
@@ -31,6 +31,7 @@ class FindUserAddressList extends MallPost {
         Map mysqlResult = MysqlService.findUserAddressList(testContext.get("userId")).get(0)
         System.out.println(mysqlResult)
         Map apiResult = testContext.getResponse().data[0]
+        println(apiResult)
         assert mysqlResult.id == apiResult.id
         assert mysqlResult.recipient == apiResult.recipient
         assert mysqlResult.phone == apiResult.phone
@@ -44,4 +45,5 @@ class FindUserAddressList extends MallPost {
         assert mysqlResult.remark == apiResult.remark
         assert mysqlResult.is_default == apiResult.isDefault
     }
+
 }

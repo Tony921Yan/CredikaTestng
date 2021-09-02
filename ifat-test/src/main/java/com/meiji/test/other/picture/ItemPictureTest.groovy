@@ -16,15 +16,8 @@ class ItemPictureTest extends BaseTest {
         String url = testContext.url
         InputStream inputStream = new URL(url).openStream()
         BufferedImage bufferedImage = ImageIO.read(inputStream)
-
-        InputStream inputStream2 = new URL(url).openStream()
-        byte[] array = new byte[1024];
-        int size = 0;
-        int length = 0;
-        while ((length = inputStream2.read(array)) != -1) {
-            size += length;
-        }
-        size = Math.round(size/1024)
+        URLConnection connection = new URL(url).openConnection()
+        Long size = Math.round(connection.contentLength/1024)
         testContext.appendLog(new Record("商品spuCode",testContext.spuCode))
         testContext.appendLog(new Record("图片路径",testContext.url))
         testContext.appendLog(new Record("图片大小",size))
@@ -40,7 +33,6 @@ class ItemPictureTest extends BaseTest {
             assert size < 300,"spuCode:" + testContext.spuCode
         }
         inputStream.close()
-        inputStream2.close()
     }
 
     @DataProvider

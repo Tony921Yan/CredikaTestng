@@ -3,6 +3,8 @@ package com.meiji.biz.service
 
 import com.meiji.biz.api.MysqlAPI
 
+import java.util.stream.Collectors
+
 class MysqlService extends MysqlAPI {
 
     static Map getBrand(String id){
@@ -77,4 +79,18 @@ class MysqlService extends MysqlAPI {
         return prod_meiji_order.rows("select * from order_info where shop_id = $shopId and pay_status =0 ORDER BY gmt_create DESC limit 10")
     }
 
+    static  List updateUserAddress(String id){
+        return prod_meiji_user.rows("select * from user_address where id = $id")
+    }
+
+    static Map getUserInfo(String UserId){
+        return prod_meiji_user.firstRow("select * from user where id =$UserId")
+    }
+
+    static List getSettleOrder(){
+        List list = prod_meiji_settlement.rows("select trade_parent_order_no from settlement_order where settlement_state =2 and gmt_modified > date_sub(now(),interval 1 Day)")
+        return list.stream().map() {
+            return it.trade_parent_order_no
+        }.collect(Collectors.toList())
+    }
 }

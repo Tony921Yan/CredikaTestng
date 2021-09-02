@@ -8,9 +8,9 @@ import org.testng.annotations.Test
 
 class UpdateUserInfoTest extends BaseTest {
     UpdateUserInfo updateUserInfo = new UpdateUserInfo()
-    @Test(description = "更新用户信息 updateUserInfo" ,groups = ["prod","uat"],testName = "updateUserInfo",
+    @Test(description = "更新用户信息 updateUserInfo" ,groups = ["prod","uat"],testName = "updateUserInfo1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateUserInfo(TestContext testContext){
-        updateUserInfo.invoke(testContext).baseAssert(testContext)
+        updateUserInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateUserInfo1">
+        <parm key="avatar" value ="https://thirdwx.qlogo.cn/mmopen/vi_32/PDnyUu6wWick7Ricm0xdcwYw98ibfxdCTcUZTDoXBsqSaxp0YAKy2k6WytPKvQp4NtbjzNMibpEwIDCNrYOdlbfBnA/132"/>
+        <parm key="nickname" value ="昵称"/>
+        <parm key="sex" value ="1"/>
+    </test>
+</data>

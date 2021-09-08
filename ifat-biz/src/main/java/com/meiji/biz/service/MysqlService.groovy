@@ -76,7 +76,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List pageOrder(String shopId){
-        return prod_meiji_order.rows("select * from order_info where shop_id = $shopId and pay_status =0 ORDER BY gmt_create DESC limit 10")
+        return prod_meiji_order.rows("select * from order_info where shop_id = $shopId ORDER BY gmt_create DESC limit 10")
     }
 
     static  List updateUserAddress(String id){

@@ -60,7 +60,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static  List getUserOrderCount_toAfterCount(String ShopId){
-        return prod_meiji_order.rows("select count(*) as AfterCount from order_after where shop_id = $ShopId")
+        return prod_meiji_order.rows("select count(*) as AfterCount from order_after where shop_id = $ShopId and op_user_type <> 2")
     }
 
     static List getUserOrderCount_toConfirmCount(String ShopId){
@@ -68,7 +68,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getUserOrderCount_toDeliveryCount(String ShopId){
-        return prod_meiji_order.rows("select count(*) as DeliveryCount from order_info where shop_id = $ShopId and order_status in(2,3,4)")
+        return prod_meiji_order.rows("select count(*) as DeliveryCount from order_info where shop_id = $ShopId and order_status in(2,3,4) and order_type <> 4")
     }
 
     static List getUserOrderCount_toPayCount(String ShopId){

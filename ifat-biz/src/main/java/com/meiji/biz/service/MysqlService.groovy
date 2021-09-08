@@ -39,8 +39,8 @@ class MysqlService extends MysqlAPI {
         return prod_meiji_settlement.rows("select sum(seller_profit_sharing_price) as TotalPrice from settlement_order where settlement_state =0 and shop_id = $shop_id")
     }
 
-    static List profitSharing(String shop_id){
-        return prod_meiji_settlement.rows("SELECT * from settlement_order where shop_id =$shop_id and settlement_state in (0,1) ORDER BY gmt_create DESC LIMIT 10")
+    static Map profitSharing(String shop_id,String orderNo){
+        return prod_meiji_settlement.firstRow("SELECT * from settlement_order where shop_id =$shop_id and trade_order_no = $orderNo")
     }
 
     static List findUserInfo(String id){

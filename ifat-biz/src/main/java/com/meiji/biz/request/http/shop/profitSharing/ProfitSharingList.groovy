@@ -29,13 +29,10 @@ class ProfitSharingList extends ShopPost {
     }
 
     ShopPost specialAssert(TestContext testContext){
-        Map apiResult = testContext.getResponse().data
-        List mysqlResult = MysqlService.profitSharing(testContext.get("shopId"))
-        Map map = apiResult.get("dataList")[0];
-        try{
-            assert mysqlResult.get(0).get("seller_profit_sharing_price") == map.get("totalPrice")
-        }catch(IndexOutOfBoundsException){
-            assert true
+        List dataList = testContext.getResponse().data.dataList
+        for(Map map:dataList) {
+            Map mysqlResult = MysqlService.profitSharing(testContext.get("shopId"),map.orderNo)
+            assert mysqlResult.seller_profit_sharing_price == map.totalPrice
         }
     }
 }

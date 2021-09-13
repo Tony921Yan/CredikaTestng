@@ -13,9 +13,4 @@ class ContactList extends ScrmPost{
         super.api = "scrm/contact/list"
         super.params = ["condition", "order", "page", "rows", "sort"]
     }
-
-    @Override
-    ScrmPost baseAssert(TestContext testContext) {
-        assert testContext.getResponse().code == "0"
-    }
 }

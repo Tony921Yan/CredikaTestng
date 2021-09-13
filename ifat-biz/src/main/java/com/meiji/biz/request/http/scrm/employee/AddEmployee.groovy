@@ -11,11 +11,12 @@ import com.miyuan.ifat.support.test.TestContext
 class AddEmployee extends ScrmPost{
     {
         super.api = "scrm/employee/add"
-        super.params = ["employeeId", "employeeIds", "mobile", "newRoleId", "oldRoleId"]//待调试
+        super.params = ["employeeId", "employeeIds", "mobile", "newRoleId", "oldRoleId"]
     }
 
     @Override
     ScrmPost baseAssert(TestContext testContext) {
+        //TODO
         assert testContext.getResponse().code == "05000"
     }
 }

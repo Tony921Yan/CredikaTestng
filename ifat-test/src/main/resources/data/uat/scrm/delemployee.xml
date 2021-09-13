@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "delemployee">
+        <parm key="employeeId" value =""/>
+        <parm key="employeeIds" value =""/>
+        <parm key="ids" value =""/>
+        <parm key="mobile" value =""/>
+        <parm key="name" value =""/>
+        <parm key="perEndTime" value =""/>
+        <parm key="perStartTime" value =""/>
+        <parm key="roleId" value =""/>
+    </test>
+</data>

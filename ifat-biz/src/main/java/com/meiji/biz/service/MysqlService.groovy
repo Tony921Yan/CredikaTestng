@@ -39,8 +39,8 @@ class MysqlService extends MysqlAPI {
         return prod_meiji_settlement.rows("select sum(seller_profit_sharing_price) as TotalPrice from settlement_order where settlement_state =0 and shop_id = $shop_id")
     }
 
-    static List profitSharing(String shop_id){
-        return prod_meiji_settlement.rows("SELECT * from settlement_order where shop_id =$shop_id and settlement_state in (0,1) ORDER BY gmt_create DESC LIMIT 10")
+    static Map profitSharing(String shop_id,String orderNo){
+        return prod_meiji_settlement.firstRow("SELECT * from settlement_order where shop_id =$shop_id and trade_order_no = $orderNo")
     }
 
     static List findUserInfo(String id){
@@ -60,7 +60,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static  List getUserOrderCount_toAfterCount(String ShopId){
-        return prod_meiji_order.rows("select count(*) as AfterCount from order_after where shop_id = $ShopId")
+        return prod_meiji_order.rows("select count(*) as AfterCount from order_after where shop_id = $ShopId and op_user_type <> 2")
     }
 
     static List getUserOrderCount_toConfirmCount(String ShopId){
@@ -68,7 +68,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getUserOrderCount_toDeliveryCount(String ShopId){
-        return prod_meiji_order.rows("select count(*) as DeliveryCount from order_info where shop_id = $ShopId and order_status in(2,3,4)")
+        return prod_meiji_order.rows("select count(*) as DeliveryCount from order_info where shop_id = $ShopId and order_status in(2,3,4) and order_type <> 4")
     }
 
     static List getUserOrderCount_toPayCount(String ShopId){
@@ -76,7 +76,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List pageOrder(String shopId){
-        return prod_meiji_order.rows("select * from order_info where shop_id = $shopId and pay_status =0 ORDER BY gmt_create DESC limit 10")
+        return prod_meiji_order.rows("select * from order_info where shop_id = $shopId and order_type <> 4 ORDER BY gmt_create DESC limit 10")
     }
 
     static  List updateUserAddress(String id){

@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.scrm.wx
+package com.meiji.biz.request.http.scrm.wxDepartment
 
 import com.meiji.biz.request.http.scrm.ScrmGet
 

@@ -15,7 +15,7 @@ class WxDepartmentListTest extends BaseTest {
 
     WxDepartmentList wxDepartmentList = new WxDepartmentList()
 
-    @Test(description = "微信部门列表 wxDepartmentList", groups = ["prod", "uat"], testName = "wxDepartmentList",
+    @Test(description = "微信部门列表", groups = ["prod", "uat"], testName = "wxDepartmentList",
             dataProvider = "dataProvider", dataProviderClass = TestData.class)
     public void test(TestContext testContext) {
         wxDepartmentList.invoke(testContext).baseAssert(testContext)

@@ -1,6 +1,6 @@
 package com.meiji.test.http.scrm.wx
 
-import com.meiji.biz.request.http.scrm.wx.WxMemberList
+import com.meiji.biz.request.http.scrm.wxDepartment.WxMemberList
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

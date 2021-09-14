@@ -64,7 +64,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getUserOrderCount_toConfirmCount(String ShopId){
-        return prod_meiji_order.rows("select count(*) as confirmCount from order_info where shop_id = $ShopId and order_status = 5")
+        return prod_meiji_order.rows("select count(*) as confirmCount from order_info where shop_id = $ShopId and order_status = 5 and order_type !=4")
     }
 
     static List getUserOrderCount_toDeliveryCount(String ShopId){
@@ -88,9 +88,9 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getSettleOrder(){
-        List list = prod_meiji_settlement.rows("select trade_parent_order_no from settlement_order where settlement_state =2 and gmt_modified > date_sub(now(),interval 1 Day)")
+        List list = prod_meiji_settlement.rows("select trade_order_no from settlement_order where settlement_state =2 and settlement_finish_time > date_sub(now(),interval 1 Day)")
         return list.stream().map() {
-            return it.trade_parent_order_no
+            return it.trade_order_no
         }.collect(Collectors.toList())
     }
 }

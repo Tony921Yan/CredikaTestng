@@ -1,9 +1,12 @@
 package com.meiji.biz.service
 
 import com.miyuan.ifat.support.util.HttpUtil
+import com.miyuan.ifat.support.util.MD5Utils
 import com.miyuan.ifat.support.util.TokenUtil
 import org.apache.http.Header
+import org.apache.http.HttpEntity
 import org.apache.http.client.methods.CloseableHttpResponse
+import org.apache.http.util.EntityUtils
 
 class CookieService {
     static Map cacheCookie = new HashMap()
@@ -81,6 +84,32 @@ class CookieService {
         }
         cookie =  stringBuilder.toString()
         cacheCookie.put("dealerId:"+dealerId,cookie)
+        return cookie
+    }
+
+    static String getPlatformCookie(String url,String username,String password){
+        String cookie = cacheCookie.get("platform:"+username)
+        if(cookie!=null){
+            return cookie
+        }
+        Map param = new HashMap()
+        param.put("username",username)
+        param.put("password",password)
+        StringBuilder stringBuilder = new StringBuilder()
+        CloseableHttpResponse response = HttpUtil.postV2(url+"/login/check", [:], param)
+        HttpEntity entity = response.getEntity()
+        String result = EntityUtils.toString(entity, "UTF-8")
+        Header[] headers = response.getHeaders("Set-Cookie")
+        for(Header header:headers){
+            stringBuilder.append(header.elements.head().toString().split (";")[0])
+            stringBuilder.append(";")
+        }
+        stringBuilder.append("mj-ecmiddle-sys_login_username=")
+        stringBuilder.append(username).append(";")
+        stringBuilder.append("mj-ecmiddle-sys_login_password=")
+        stringBuilder.append("396381a961f1a0d3d193f29286a5678b").append(";")
+        cookie =  stringBuilder.toString()
+        cacheCookie.put("platform:"+username,cookie)
         return cookie
     }
 }

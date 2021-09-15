@@ -6,5 +6,7 @@
         <parm key="Content-Type" value="application/json;charset=UTF-8"/>
         <parm key="userId" value="10"/>
         <parm key="dealerId" value="24"/>
+        <parm key="username" value="keguang.1234"/>
+        <parm key="password" value="24"/>
     </test>
 </data>

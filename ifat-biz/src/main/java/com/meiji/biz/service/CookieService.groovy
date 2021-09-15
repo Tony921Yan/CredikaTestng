@@ -104,10 +104,6 @@ class CookieService {
             stringBuilder.append(header.elements.head().toString().split (";")[0])
             stringBuilder.append(";")
         }
-        stringBuilder.append("mj-ecmiddle-sys_login_username=")
-        stringBuilder.append(username).append(";")
-        stringBuilder.append("mj-ecmiddle-sys_login_password=")
-        stringBuilder.append("396381a961f1a0d3d193f29286a5678b").append(";")
         cookie =  stringBuilder.toString()
         cacheCookie.put("platform:"+username,cookie)
         return cookie

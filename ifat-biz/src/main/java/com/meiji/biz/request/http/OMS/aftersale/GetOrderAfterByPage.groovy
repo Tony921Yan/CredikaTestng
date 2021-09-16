@@ -3,9 +3,9 @@ package com.meiji.biz.request.http.OMS.aftersale
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class ExportOrderAfter extends OMSPost {
+class GetOrderAfterByPage extends OMSPost {
     {
-        super.api = "/api/supplier/orderAfterMgr/exportOrderAfter"
+        super.api = "/api/supplier/orderAfterMgr/getOrderAfterByPage"
         super.params =  [ "condition","order","page","rows","sort"]
 
     }

@@ -32,6 +32,7 @@
             <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindRecommendGoodsTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindGoodsCategoryTreeTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindBrandListTest"/>
         </classes>
     </test>
 </suite>

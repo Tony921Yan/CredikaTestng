@@ -272,31 +272,31 @@
 
     <test name="账户资产导出 accountAssetExport">
         <classes>
-            <class name="com.meiji.test.http.platform.accountmanager.AccountAssetExportTest"/>
+            <class name="com.meiji.test.http.platform.finance.AccountAssetExportTest"/>
         </classes>
     </test>
 
-    <test name="账户资产分页查询 accountAssetPageQuery">
-        <classes>
-            <class name="com.meiji.test.http.platform.accountmanager.AccountAssetPageQueryTest"/>
-        </classes>
-    </test>
+<!--    <test name="账户资产分页查询 accountAssetPageQuery">-->
+<!--        <classes>-->
+<!--            <class name="com.meiji.test.http.platform.finance.AccountAssetPageQueryTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <test name="订单明细查询 orderDetailQuery">
         <classes>
-            <class name="com.meiji.test.http.platform.accountmanager.OrderDetailQueryTest"/>
+            <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
         </classes>
     </test>
 
     <test name="提现记录导出 withdrawRecordExport">
         <classes>
-            <class name="com.meiji.test.http.platform.accountmanager.WithdrawRecordExportTest"/>
+            <class name="com.meiji.test.http.platform.finance.WithdrawRecordExportTest"/>
         </classes>
     </test>
 
     <test name="提现记录分页查询 withdrawRecordPageQuery">
         <classes>
-            <class name="com.meiji.test.http.platform.accountmanager.WithdrawRecordPageQueryTest"/>
+            <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
         </classes>
     </test>
 </suite>

@@ -1,11 +1,11 @@
-package com.meiji.biz.request.http.platform.accountmanager
+package com.meiji.biz.request.http.platform.finance
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class OrderRecordExport extends PlatformPost{
+class WithdrawRecordExport extends PlatformPost{
     {
-        super.api="/platform/finance/orderRecordExport"
+        super.api="/platform/finance/withdrawRecordExport"
         super.params = ["condition","order","page","rows","sort"]
     }
 

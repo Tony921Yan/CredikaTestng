@@ -1,11 +1,11 @@
-package com.meiji.biz.request.http.platform.accountmanager
+package com.meiji.biz.request.http.platform.finance
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class AccountAssetPageQuery extends PlatformPost{
+class FundFlowPageQuery extends PlatformPost{
     {
-        super.api="/platform/finance/accountAssetPageQuery"
+        super.api="OrderFlow/fundFlowPageQuery"
         super.params = ["condition","order","page","rows","sort"]
     }
 

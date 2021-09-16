@@ -1,12 +1,12 @@
-package com.meiji.biz.request.http.platform.accountmanager
+package com.meiji.biz.request.http.platform.finance
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class AccountAssetExport extends PlatformPost{
+class FundFlowDetailQuery extends PlatformPost{
     {
-        super.api="/platform/finance/accountAssetExport"
-        super.params = ["condition","order","page","rows","sort"]
+        super.api="OrderFlow/fundFlowDetailQuery"
+        super.params = ["orderCode"]
     }
 
     PlatformPost invoke(TestContext testContext) {

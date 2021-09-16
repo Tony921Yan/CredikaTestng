@@ -1,11 +1,11 @@
-package com.meiji.biz.request.http.platform.accountmanager
+package com.meiji.biz.request.http.platform.finance
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 class WithdrawRecordPageQuery extends PlatformPost{
     {
-        super.api="/platform/finance/withdrawRecordPageQuery"
+        super.api="Withdraw/withdrawRecordPageQuery"
         super.params = ["condition","order","page","rows","sort"]
     }
 

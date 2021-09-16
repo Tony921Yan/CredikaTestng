@@ -1,5 +1,6 @@
 package com.meiji.biz.request.http.platform
 
+import com.meiji.biz.service.CookieService
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.ResourceUtil
@@ -14,20 +15,16 @@ abstract class PlatformGet {
     public String preInvoke
 
     PlatformGet invoke(TestContext testContext){
-        String url  = ResourceUtil.getBeanData("http").get("url")+api
+        String url  = ResourceUtil.getBeanData("http").get("platform")
+        String username = testContext.get("username")
+        String password = testContext.get("password")
         Map heads = new HashMap()
         heads.put("timestamp",testContext.get("timestamp"))
         heads.put("nonce",testContext.get("nonce"))
-        heads.put("Content-Type",testContext.get("Content-Type"))
-        heads.put("userId","11")
-        heads.put("shopId","1")
-//        String aesKey = MD5Utils.MD5Encode("11", "utf-8")
-//        String tokenAes = AESOperator.encrypt(testContext.get("token").toString(), aesKey)
-//        heads.put("token",tokenAes)
+        heads.put("Content-Type",testContext.get("application/json"))
+        heads.put("Cookie", CookieService.getPlatformCookie(url,username,password))
+        url = url +api
 
-//        if(TestEnv.getIsGray()=="true"){
-//            heads.put("isGrayRelease",true)
-//        }
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){

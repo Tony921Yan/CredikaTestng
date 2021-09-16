@@ -1,7 +1,7 @@
-package com.meiji.test.http.platform.accountmanager
+package com.meiji.test.http.platform.finance
 
 
-import com.meiji.biz.request.http.platform.accountmanager.WithdrawRecordExport
+import com.meiji.biz.request.http.platform.finance.WithdrawRecordExport
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

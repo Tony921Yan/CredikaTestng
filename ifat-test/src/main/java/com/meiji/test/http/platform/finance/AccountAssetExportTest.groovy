@@ -1,6 +1,6 @@
-package com.meiji.test.http.platform.accountmanager
+package com.meiji.test.http.platform.finance
 
-import com.meiji.biz.request.http.platform.accountmanager.AccountAssetExport
+import com.meiji.biz.request.http.platform.finance.AccountAssetExport
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

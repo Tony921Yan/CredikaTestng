@@ -17,6 +17,7 @@
 .allure/
 allure-results/
 .idea/
+.gradle/
 target/
 test-output/
 

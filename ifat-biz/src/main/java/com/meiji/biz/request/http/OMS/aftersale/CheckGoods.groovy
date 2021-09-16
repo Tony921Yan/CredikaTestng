@@ -3,10 +3,10 @@ package com.meiji.biz.request.http.OMS.aftersale
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class ExportOrderAfter extends OMSPost {
+class CheckGoods extends OMSPost {
     {
-        super.api = "/api/supplier/orderAfterMgr/exportOrderAfter"
-        super.params =  [ "condition","order","page","rows","sort"]
+        super.api = "/api/supplier/orderAfterMgr/checkGoods"
+        super.params =  [ "supplierId","orderAfterCode","logisticsCode","logisticsCompanyName"]
 
     }
 

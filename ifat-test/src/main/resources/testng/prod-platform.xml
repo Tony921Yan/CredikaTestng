@@ -6,7 +6,8 @@
             <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
             <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>
             <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
-            <class name="com.meiji.test.http.platform.order.ProdGetOrderByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
+
         </classes>
     </test>
 </suite>

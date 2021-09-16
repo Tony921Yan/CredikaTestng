@@ -1,12 +1,12 @@
-package com.meiji.biz.request.http.OMS.aftersale
+package com.meiji.biz.request.http.OMS.template
 
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class ExportOrderAfter extends OMSPost {
+class AddFreightTemplate extends OMSPost {
     {
-        super.api = "/api/supplier/orderAfterMgr/exportOrderAfter"
-        super.params =  [ "condition","order","page","rows","sort"]
+        super.api = "/api/supplier/freightTemplate/addFreightTemplate"
+        super.params =  [ "areaCodeList","isParcel","remark","status","supplierId","templateName"]
 
     }
 

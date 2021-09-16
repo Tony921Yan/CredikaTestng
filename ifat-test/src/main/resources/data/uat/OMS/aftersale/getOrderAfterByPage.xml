@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "OMSexportOrderAfter">
+    <test name = "OMSgetOrderAfterByPage">
         <parm key="order" value =""/>
         <parm key="condition" value ="{supplierId:12}"/>
         <parm key="page" value ="1"/>

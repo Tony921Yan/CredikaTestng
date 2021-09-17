@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "tagadd">
+        <parm key="groupId" value ="13"/>
+        <parm key="groupName" value =""/>
+        <parm key="name" value =""/>
+        <parm key="tagId" value ="1"/>
+        <parm key="tagIds" value ="[12]"/>
+        <parm key="tagNames" value ="[$int4]"/>
+    </test>
+</data>

@@ -7,7 +7,7 @@ class CancelApplyAfterSale extends MallPost {
     {
         super.api = "/orderAfterSale/cancelApplyAfterSale"
         super.params =  ["afterCode","id","orderCode","orderGoodsId"]
-//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
+//      super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
     MallPost invoke(TestContext testContext) {

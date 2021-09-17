@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMScheckGoods">
+        <parm key="supplierId" value ="12"/>
+        <parm key="orderAfterCode" value ="R2021041921150512517"/>
+        <parm key="logisticsCode" value ="YT5384157131555"/>
+        <parm key="logisticsCompanyName" value ="yuantong"/>
+
+
+    </test>
+</data>

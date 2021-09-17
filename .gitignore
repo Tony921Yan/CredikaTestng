@@ -17,8 +17,10 @@
 .allure/
 allure-results/
 .idea/
+.gradle/
 target/
 test-output/
+.gradle/
 
 # Package Files #
 *.jar

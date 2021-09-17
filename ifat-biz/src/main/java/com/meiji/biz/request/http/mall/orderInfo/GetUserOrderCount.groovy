@@ -26,11 +26,12 @@ class GetUserOrderCount extends MallPost {
 
     MallPost specialAssert(TestContext testContext){
         Map toAfterCount = MysqlService.getUserOrderCount_toAfterCount(testContext.get("shopId")).get(0)
-//        List toConfirmCount = MysqlService.getUserOrderCount_toConfirmCount(testContext.get("shopId")).get(0).ConfirmCount
+        System.out.println(toAfterCount)
         Map  toConfirmCount = MysqlService.getUserOrderCount_toConfirmCount(testContext.get("shopId")).get(0)
         Map toDeliveryCount = MysqlService.getUserOrderCount_toDeliveryCount(testContext.get("shopId")).get(0)
         Map toPayCount = MysqlService.getUserOrderCount_toPayCount(testContext.get("shopId")).get(0)
         Map apiResult = testContext.getResponse().data
+        System.out.println(apiResult)
         assert toAfterCount.AfterCount == apiResult.toAfterCount
         assert toConfirmCount.confirmCount == apiResult.toConfirmCount
         assert toDeliveryCount.DeliveryCount == apiResult.toDeliveryCount

@@ -17,13 +17,13 @@ class AuditNotiyTest extends BaseTest{
         String userCode = "T2020"
         def data = "<request>" +
                 "<kjCustomerOutstoreReturn>" +
-                "<saleOrderCode>O2021081715100129391</saleOrderCode>" +
+                "<saleOrderCode>O2021090715260177470</saleOrderCode>" +
                 "<logisticsCode>美记测试</logisticsCode>" +
                 "<logisticsNumber>1234567890</logisticsNumber>" +
                 "<markPlace1>大头笔或集包地</markPlace1>" +
                 "<markPlace2>大头笔或三段码</markPlace2>" +
-                "<outstoreStatus>31</outstoreStatus>" +
-                "<outstoreStatusMsg>仓库无库存</outstoreStatusMsg>" +
+                "<outstoreStatus>90</outstoreStatus>" +
+                "<outstoreStatusMsg>测试90状态</outstoreStatusMsg>" +
                 "<occurTime>"+  DateUtil.dateToStr(new Date()) +"</occurTime>" +
                 "</kjCustomerOutstoreReturn>" +
                 "</request>"

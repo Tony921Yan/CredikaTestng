@@ -1,26 +1,26 @@
 package com.meiji.biz.request.http.OMS.aftersale
 
-import com.meiji.biz.request.http.OMS.OMSGet
+import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class ExportOrderAfter extends OMSGet {
+class ExportOrderAfter extends OMSPost {
     {
         super.api = "/api/supplier/orderAfterMgr/exportOrderAfter"
         super.params =  [ "condition","order","page","rows","sort"]
 
     }
 
-    OMSGet invoke(TestContext testContext) {
+    OMSPost invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSGet preInvoke(TestContext testContext){
+    OMSPost preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSGet baseAssert(TestContext testContext){
+    OMSPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 

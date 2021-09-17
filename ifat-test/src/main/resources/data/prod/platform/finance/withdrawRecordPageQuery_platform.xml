@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "withdrawRecordPageQuery_platform">
+        <parm key="condition" value ='{"entityId":"28","merchantType":"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="sort" value =""/>
+    </test>
+</data>

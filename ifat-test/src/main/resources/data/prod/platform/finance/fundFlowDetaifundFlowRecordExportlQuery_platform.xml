@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "fundFlowDetaifundFlowRecordExportlQuery_platform">
+        <parm key="condition" value ='{"entityId":"1435114871455776","merchantType":"1","ids":[]}'/>
+    </test>
+</data>

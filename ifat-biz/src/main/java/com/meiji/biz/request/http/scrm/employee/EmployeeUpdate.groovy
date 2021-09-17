@@ -1,6 +1,7 @@
 package com.meiji.biz.request.http.scrm.employee
 
 import com.meiji.biz.request.http.scrm.ScrmPost
+import com.miyuan.ifat.support.test.TestContext
 
 /**
  *
@@ -15,5 +16,10 @@ class EmployeeUpdate extends ScrmPost{
                         "mobile",
                         "newRoleId",
                         "oldRoleId"]
+    }
+
+    @Override
+    ScrmPost baseAssert(TestContext testContext) {
+        assert testContext.getResponse().code == "05000"
     }
 }

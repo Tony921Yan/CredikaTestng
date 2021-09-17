@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "corporate">
+        <parm key="legalPerson" value =""/>
+        <parm key="mailAddress" value =""/>
+        <parm key="name" value =""/>
+        <parm key="phone" value =""/>
+        <parm key="verifyCode" value =""/>
+    </test>
+</data>

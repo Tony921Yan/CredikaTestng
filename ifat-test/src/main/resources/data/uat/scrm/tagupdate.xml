@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "tagupdate">
+        <parm key="groupId" value ="0"/>
+        <parm key="groupName" value =""/>
+        <parm key="name" value =""/>
+        <parm key="tagId" value ="0"/>
+        <parm key="tagIds" value ="{}"/>
+        <parm key="tagNames" value ="{}"/>
+    </test>
+</data>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "empupdate">
+        <parm key="employeeId" value ="0"/>
+        <parm key="employeeIds" value ="[]"/>
+        <parm key="mobile" value =""/>
+        <parm key="newRoleId" value ="0"/>
+        <parm key="oldRoleId" value ="0"/>
+    </test>
+</data>

@@ -10,10 +10,6 @@ import com.meiji.biz.request.http.scrm.ScrmPost
 class CorpUpdate extends ScrmPost{
     {
         super.api = "scrm/corp/update"
-        super.params = ["legalPerson",
-                        "mailAddress",
-                        "name",
-                        "phone",
-                        "verifyCode"]
+        super.params = ["legalPerson", "mailAddress", "name", "phone", "verifyCode"]
     }
 }

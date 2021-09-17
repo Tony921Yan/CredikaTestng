@@ -17,9 +17,4 @@ class EmployeeUpdate extends ScrmPost{
                         "newRoleId",
                         "oldRoleId"]
     }
-
-    @Override
-    ScrmPost baseAssert(TestContext testContext) {
-        assert testContext.getResponse().code == "05000"
-    }
 }

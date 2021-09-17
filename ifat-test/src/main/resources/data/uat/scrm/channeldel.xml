@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "channeldel">
+        <parm key="departId" value =""/>
+        <parm key="gmtCreate" value =""/>
+        <parm key="gmtModified" value =""/>
+        <parm key="headUrl" value =""/>
+        <parm key="id" value =""/>
+        <parm key="materialIds" value =""/>
+        <parm key="name" value =""/>
+        <parm key="remark" value =""/>
+        <parm key="shopId" value =""/>
+        <parm key="skipVerify" value =""/>
+        <parm key="state" value =""/>
+        <parm key="tagIds" value =""/>
+        <parm key="type" value =""/>
+        <parm key="useManInfos" value ="{}"/>
+        <parm key="welcomeText" value ="#公司名称# #成员名称#"/>
+    </test>
+</data>

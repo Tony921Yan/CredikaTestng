@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.scrm.qrcode
+package com.meiji.biz.request.http.scrm.channel
 
 import com.meiji.biz.request.http.scrm.ScrmPost
 import com.miyuan.ifat.support.test.TestContext

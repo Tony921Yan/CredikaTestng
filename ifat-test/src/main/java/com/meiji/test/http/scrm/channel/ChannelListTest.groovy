@@ -1,6 +1,6 @@
-package com.meiji.test.http.scrm.qrcode
+package com.meiji.test.http.scrm.channel
 
-import com.meiji.biz.request.http.scrm.qrcode.ChannelList
+import com.meiji.biz.request.http.scrm.channel.ChannelList
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

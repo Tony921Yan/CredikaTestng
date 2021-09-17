@@ -28,8 +28,8 @@
             <class name = "com.meiji.test.http.scrm.material.MaterialListTest"/>
             <class name = "com.meiji.test.http.scrm.menu.MenuDetailTest"/>
             <class name = "com.meiji.test.http.scrm.menu.MenuListTest"/>
-            <class name = "com.meiji.test.http.scrm.qrcode.ChannelDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.qrcode.ChannelListTest"/>
+            <class name = "com.meiji.test.http.scrm.channel.ChannelDetailTest"/>
+            <class name = "com.meiji.test.http.scrm.channel.ChannelListTest"/>
             <class name = "com.meiji.test.http.scrm.register.AuthResultTest"/>
             <class name = "com.meiji.test.http.scrm.register.RegisterTest"/>
             <class name = "com.meiji.test.http.scrm.role.RoleDetailTest"/>

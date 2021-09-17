@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "perupdate">
+        <parm key="gmtCreate" value =""/>
+        <parm key="gmtModified" value =""/>
+        <parm key="id" value ="0"/>
+        <parm key="name" value ="测试员"/>
+        <parm key="permission" value ="0"/>
+        <parm key="state" value ="0"/>
+    </test>
+</data>

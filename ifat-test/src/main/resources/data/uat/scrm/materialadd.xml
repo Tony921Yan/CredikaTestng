@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "materialadd">
+        <parm key="groupId" value ="1"/>
+        <parm key="id" value ="1"/>
+        <parm key="imageLink" value =""/>
+        <parm key="name" value ="1"/>
+        <parm key="text" value ="1"/>
+        <parm key="type" value ="0"/>
+        <parm key="videoCoverLink" value =""/>
+        <parm key="videoLink" value =""/>
+        <parm key="webPageLinks" value ="1"/>
+        <parm key="webPageTitle" value ="1"/>
+        <parm key="webPageType" value ="1"/>
+    </test>
+</data>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "batcheupdate">
+        <parm key="groupId" value ="1"/>
+        <parm key="idList" value="[1,2,3]"/>
+    </test>
+</data>

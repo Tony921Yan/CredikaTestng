@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "trendlist">
+        <parm key="firstDepartment" value ="1"/>
+        <parm key="lastDepartment" value="1"/>
+        <parm key="metricCreate" value=""/>
+        <parm key="name" value="s1mple"/>
+        <parm key="secondDepartment" value="1"/>
+        <parm key="shopId" value="1"/>
+        <parm key="timeType" value="1"/>
+    </test>
+</data>

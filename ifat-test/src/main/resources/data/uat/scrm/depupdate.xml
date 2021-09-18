@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "depupdate">
+        <parm key="corpId" value ="1"/>
+        <parm key="createUserId" value="1"/>
+        <parm key="employeeId" value="1"/>
+        <parm key="gmtCreate" value=""/>
+        <parm key="gmtModified" value=""/>
+        <parm key="id" value="1"/>
+        <parm key="name" value="华南大区"/>
+        <parm key="parentId" value="1"/>
+        <parm key="state" value="1"/>
+        <parm key="updateUserId" value="1"/>
+        <parm key="version" value="1"/>
+    </test>
+</data>

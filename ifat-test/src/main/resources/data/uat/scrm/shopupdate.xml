@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "shopupdate">
+        <parm key="addressId" value ="7232"/>
+        <parm key="corpId" value="0"/>
+        <parm key="createUserId" value="0"/>
+        <parm key="departId" value="1000011"/>
+        <parm key="employeeId" value="0"/>
+        <parm key="gmtCreate" value=""/>
+        <parm key="gmtModified" value=""/>
+        <parm key="id" value="0"/>
+        <parm key="manager" value="s1mple"/>
+        <parm key="relateStatus" value="0"/>
+        <parm key="state " value="0"/>
+        <parm key="telephone" value="13312212221"/>
+        <parm key="updateUserId" value="0"/>
+        <parm key="version" value="0"/>
+    </test>
+</data>

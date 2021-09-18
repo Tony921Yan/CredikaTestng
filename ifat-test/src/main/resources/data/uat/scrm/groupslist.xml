@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "groupslist">
+        <parm key="condition" value ="{
+            'firstDepartment':0,
+            'lastDepartment':0,
+            'metricCreate':'',
+            'name':'s1mple',
+            'secondDepartment':'',
+            'shopId':1,
+            'timeType':1
+        }"/>
+        <parm key="order" value=""/>
+        <parm key="page" value="0"/>
+        <parm key="rows" value="0"/>
+        <parm key="sort" value=""/>
+    </test>
+</data>

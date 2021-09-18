@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "channelupdate">
+        <parm key="departId" value ="0"/>
+        <parm key="gmtCreate" value ="0"/>
+        <parm key="gmtModified" value ="0"/>
+        <parm key="headUrl" value ="0"/>
+        <parm key="id" value ="0"/>
+        <parm key="materialIds" value ="0"/>
+        <parm key="name" value ="0"/>
+        <parm key="remark" value ="0"/>
+        <parm key="shopId" value ="0"/>
+        <parm key="skipVerify" value ="0"/>
+        <parm key="state" value ="0"/>
+        <parm key="tagIds" value ="{}"/>
+        <parm key="type" value ="0"/>
+        <parm key="useManInfos" value ='{
+		[
+			"codeUrl": "",
+			"useManId": 0,
+			"wxState": "",
+			"wxUserId": ""
+		]
+	}'/>
+        <parm key="welcomeText" value ="#公司名称# #成员名称#"/>
+    </test>
+</data>

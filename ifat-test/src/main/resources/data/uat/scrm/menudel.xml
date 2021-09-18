@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "menudel">
+        <parm key="code" value ="0"/>
+        <parm key="gmtCreate" value=""/>
+        <parm key="gmtModified" value=""/>
+        <parm key="icon" value=""/>
+        <parm key="id" value="0"/>
+        <parm key="name" value="s1mple"/>
+        <parm key="pid" value="1"/>
+        <parm key="state" value="0"/>
+        <parm key="type" value="1"/>
+        <parm key="url" value=""/>
+    </test>
+</data>

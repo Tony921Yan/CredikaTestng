@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updatemenu">
+        <parm key="gmtCreate" value =""/>
+        <parm key="gmtModified" value=""/>
+        <parm key="id" value="1"/>
+        <parm key="menuIdList" value="[1,2]"/>
+        <parm key="roleId" value="1"/>
+        <parm key="state" value="1"/>
+    </test>
+</data>

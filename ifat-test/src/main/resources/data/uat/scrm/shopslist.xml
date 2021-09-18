@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "shopslist">
+        <parm key="condition" value ="{
+            'corpId':0,
+            'createUserId':0,
+            'departId':0,
+            'departIds':[],
+            'gmtCreate':'',
+            'gmtModified':'',
+            'id':0,
+            'nameOrManager':'',
+            'shopCode':'',
+            'state':0,
+            'updateUserId':0,
+            'version':0,
+        }"/>
+        <parm key="order" value=""/>
+        <parm key="page" value="0"/>
+        <parm key="rows" value="0"/>
+        <parm key="sort" value=""/>
+    </test>
+</data>

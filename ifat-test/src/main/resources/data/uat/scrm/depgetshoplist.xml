@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "depgetshoplist">
+        <parm key="departId" value ="0"/>
+        <parm key="shopId" value="0"/>
+        <parm key="shopName" value=""/>
+        <parm key="type" value="0"/>
+    </test>
+</data>

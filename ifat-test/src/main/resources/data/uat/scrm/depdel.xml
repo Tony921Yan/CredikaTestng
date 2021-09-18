@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "depdel">
+        <parm key="id" value ="1"/>
+        <parm key="level" value="1"/>
+    </test>
+</data>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "deppage">
+        <parm key="condition" value ="{
+        'departId' : 0,
+        'shopId':0,
+        'shopName':'',
+        'type':0
+        }"/>
+        <parm key=" order" value=""/>
+        <parm key="page" value="0"/>
+        <parm key="row" value="0"/>
+        <parm key="sort" value=""/>
+    </test>
+</data>

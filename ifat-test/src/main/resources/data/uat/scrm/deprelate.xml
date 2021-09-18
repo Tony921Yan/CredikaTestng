@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "deprelate">
+        <parm key="departId" value ="1"/>
+        <parm key="shopIds" value="[1]"/>
+    </test>
+</data>

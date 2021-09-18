@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "groupupdate">
+        <parm key="id" value ="1"/>
+        <parm key="key" value="1"/>
+        <parm key="title" value="$int3"/>
+    </test>
+</data>

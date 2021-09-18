@@ -1,6 +1,7 @@
 package com.meiji.biz.request.http.scrm.tag
 
 import com.meiji.biz.request.http.scrm.ScrmPost
+import com.miyuan.ifat.support.test.TestContext
 
 /**
  *
@@ -16,5 +17,10 @@ class TagAdd extends ScrmPost{
                         "tagId",
                         "tagIds",
                         "tagNames"]
+    }
+
+    @Override
+    ScrmPost baseAssert(TestContext testContext) {
+        assert testContext.getResponse().code == "05004"
     }
 }

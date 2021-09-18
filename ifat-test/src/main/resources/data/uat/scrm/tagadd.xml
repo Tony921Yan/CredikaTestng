@@ -2,10 +2,10 @@
 <data>
     <test name = "tagadd">
         <parm key="groupId" value ="13"/>
-        <parm key="groupName" value =""/>
-        <parm key="name" value =""/>
+        <parm key="groupName" value ="$int3"/>
+        <parm key="name" value ="$int5"/>
         <parm key="tagId" value ="1"/>
-        <parm key="tagIds" value ="[12]"/>
+        <parm key="tagIds" value ="[1,2]"/>
         <parm key="tagNames" value ="[$int4]"/>
     </test>
 </data>

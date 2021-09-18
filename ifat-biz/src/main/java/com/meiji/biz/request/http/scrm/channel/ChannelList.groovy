@@ -13,9 +13,4 @@ class ChannelList extends ScrmPost{
         super.api = "scrm/qrcode/channel/list"
         super.params = ["condition", "order", "page", "rows", "sort"]
     }
-
-    @Override
-    ScrmPost baseAssert(TestContext testContext) {
-        assert testContext.getResponse().code == "05016"
-    }
 }

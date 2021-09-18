@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "groupadd">
+        <parm key="id" value ="0"/>
+        <parm key="key" value="0"/>
+        <parm key="title" value="$int5"/>
+    </test>
+</data>

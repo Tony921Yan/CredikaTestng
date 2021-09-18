@@ -2,39 +2,115 @@
 <suite name = "效率工具"  verbose="4">
     <test name="美记效率工具">
         <classes>
-<!--            <class name = "com.meiji.test.http.scrm.contact.ContactListTest"/>-->
-            <class name = "com.meiji.test.http.scrm.corp.AgentConfigTest"/>
-            <class name = "com.meiji.test.http.scrm.corp.IndexTest"/>
-            <class name = "com.meiji.test.http.scrm.department.DepartmentListTest"/>
-            <class name = "com.meiji.test.http.scrm.department.DepartmentDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.EmployeeDepartmentListTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.EmployeeListTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.LoginConfigListTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.ShopPermissionListTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.ShowTest"/>
-            <class name = "com.meiji.test.http.scrm.group.GetEmployeeGroupTest"/>
-            <class name = "com.meiji.test.http.scrm.group.GetGroupAdminTest"/>
-            <class name = "com.meiji.test.http.scrm.group.GetGroupListTest"/>
-            <class name = "com.meiji.test.http.scrm.group.GetGroupShowTest"/>
-            <class name = "com.meiji.test.http.scrm.login.LoginScanTest"/>
-            <class name = "com.meiji.test.http.scrm.login.LoginTest"/>
-            <class name = "com.meiji.test.http.scrm.login.QrCodeTest"/>
-<!--            <class name = "com.meiji.test.http.scrm.material.GroupListTest"/>-->
-            <class name = "com.meiji.test.http.scrm.material.MaterialListTest"/>
-            <class name = "com.meiji.test.http.scrm.menu.MenuDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.menu.MenuListTest"/>
-            <class name = "com.meiji.test.http.scrm.channel.ChannelDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.channel.ChannelListTest"/>
-            <class name = "com.meiji.test.http.scrm.register.AuthResultTest"/>
-            <class name = "com.meiji.test.http.scrm.register.RegisterTest"/>
-            <class name = "com.meiji.test.http.scrm.role.RoleDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.role.RoleListTest"/>
-            <class name = "com.meiji.test.http.scrm.role.RoleMenuListTest"/>
-            <class name = "com.meiji.test.http.scrm.tag.TagListTest"/>
-            <class name = "com.meiji.test.http.scrm.tag.TagQueryTest"/>
-            <class name = "com.meiji.test.http.scrm.tagGroup.TagGroupQueryTest"/>
-            <class name = "com.meiji.test.http.scrm.wx.WxDepartmentListTest"/>
-            <class name = "com.meiji.test.http.scrm.wx.WxMemberListTest"/>
+            <class name="com.meiji.test.http.scrm.channel.ChannelAddTest"></class>
+            <class name="com.meiji.test.http.scrm.channel.ChannelDelTest"></class>
+            <class name="com.meiji.test.http.scrm.channel.ChannelDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.channel.ChannelListTest"></class>
+            <class name="com.meiji.test.http.scrm.channel.ChannelUpdateTest"></class>
+
+            <class name="com.meiji.test.http.scrm.contact.ContactListTest"></class>
+
+            <class name="com.meiji.test.http.scrm.contacttag.ContactTagUpdateTest"></class>
+            <class name="com.meiji.test.http.scrm.contacttag.TagShowTest"></class>
+
+            <class name="com.meiji.test.http.scrm.corp.AgentConfigTest"></class>
+            <class name="com.meiji.test.http.scrm.corp.IndexTest"></class>
+            <class name="com.meiji.test.http.scrm.corp.CorpUpdateTest"></class>
+
+            <class name="com.meiji.test.http.scrm.department.DepartmentAddTest"></class>
+            <class name="com.meiji.test.http.scrm.department.DepartmentDelTest"></class>
+            <class name="com.meiji.test.http.scrm.department.DepartmentDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.department.DepartmentListTest"></class>
+            <class name="com.meiji.test.http.scrm.department.DepartmentRelateTest"></class>
+            <class name="com.meiji.test.http.scrm.department.DepartmentUpdateTest"></class>
+            <class name="com.meiji.test.http.scrm.department.GetShopPageTest"></class>
+            <class name="com.meiji.test.http.scrm.department.GetShopListTest"></class>
+
+            <class name="com.meiji.test.http.scrm.employee.AddEmployeeTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.DelEmployeeTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.EmpGrantShopTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.EmployeeConfigTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.EmployeeDepartmentListTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.EmployeeListTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.GetEmpByShopIdTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.LoginConfigListTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.ShopPermissionListTest"></class>
+            <class name="com.meiji.test.http.scrm.employee.ShowTest"></class>
+
+            <class name="com.meiji.test.http.scrm.group.GetEmployeeGroupTest"></class>
+            <class name="com.meiji.test.http.scrm.group.GetGroupAdminTest"></class>
+            <class name="com.meiji.test.http.scrm.group.GetGroupListTest"></class>
+            <class name="com.meiji.test.http.scrm.group.GetGroupShowTest"></class>
+            <class name="com.meiji.test.http.scrm.group.GetShopGroupTest"></class>
+
+            <class name="com.meiji.test.http.scrm.login.LoginScanTest"></class>
+            <class name="com.meiji.test.http.scrm.login.LoginTest"></class>
+            <class name="com.meiji.test.http.scrm.login.QrCodeTest"></class>
+
+            <class name="com.meiji.test.http.scrm.material.BatcheDeleteTest"></class>
+            <class name="com.meiji.test.http.scrm.material.BatcheUpdateTest"></class>
+            <class name="com.meiji.test.http.scrm.material.GroupAddTest"></class>
+            <class name="com.meiji.test.http.scrm.material.GroupListTest"></class>
+            <class name="com.meiji.test.http.scrm.material.GroupUpdateTest"></class>
+            <class name="com.meiji.test.http.scrm.material.MaterialAddTest"></class>
+            <class name="com.meiji.test.http.scrm.material.MaterialDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.material.MaterialListTest"></class>
+            <class name="com.meiji.test.http.scrm.material.MaterialUpdateTest"></class>
+
+            <class name="com.meiji.test.http.scrm.menu.MenuAddTest"></class>
+            <class name="com.meiji.test.http.scrm.menu.MenuDelTest"></class>
+            <class name="com.meiji.test.http.scrm.menu.MenuDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.menu.MenuListTest"></class>
+            <class name="com.meiji.test.http.scrm.menu.MenuUpdateTest"></class>
+
+            <class name="com.meiji.test.http.scrm.metric.DayListTest"></class>
+            <class name="com.meiji.test.http.scrm.metric.EmployeesListTest"></class>
+            <class name="com.meiji.test.http.scrm.metric.GetTrendListTest"></class>
+            <class name="com.meiji.test.http.scrm.metric.StatisticalTest"></class>
+            <class name="com.meiji.test.http.scrm.metric.GroupListTest"></class>
+
+            <class name="com.meiji.test.http.scrm.permission.PermissionAddTest"></class>
+            <class name="com.meiji.test.http.scrm.permission.PermissionDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.permission.PermissionListTest"></class>
+            <class name="com.meiji.test.http.scrm.permission.PermissionUpdateTest"></class>
+
+            <class name="com.meiji.test.http.scrm.qrcode.QrGoupDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.qrcode.QrGroupAddTest"></class>
+            <class name="com.meiji.test.http.scrm.qrcode.QrGroupDeleteTest"></class>
+            <class name="com.meiji.test.http.scrm.qrcode.QrGroupListTest"></class>
+            <class name="com.meiji.test.http.scrm.qrcode.QrGroupUpdateTest"></class>
+            <class name="com.meiji.test.http.scrm.qrcode.QrPullGroupTest"></class>
+
+            <class name="com.meiji.test.http.scrm.register.AuthResultTest"></class>
+            <class name="com.meiji.test.http.scrm.register.RegisterTest"></class>
+
+            <class name="com.meiji.test.http.scrm.role.GrantRoleMenuTest"></class>
+            <class name="com.meiji.test.http.scrm.role.RoleAddTest"></class>
+            <class name="com.meiji.test.http.scrm.role.RoleDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.role.RoleListTest"></class>
+            <class name="com.meiji.test.http.scrm.role.RoleMenuListTest"></class>
+            <class name="com.meiji.test.http.scrm.role.RoleUpdateTest"></class>
+            <class name="com.meiji.test.http.scrm.role.TransitTest"></class>
+            <class name="com.meiji.test.http.scrm.role.UpdateGrantRoleMenuTest"></class>
+
+            <class name="com.meiji.test.http.scrm.shop.ShopDelTest"></class>
+            <class name="com.meiji.test.http.scrm.shop.ShopDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.shop.ShopListTest"></class>
+            <class name="com.meiji.test.http.scrm.shop.ShopRelateTest"></class>
+            <class name="com.meiji.test.http.scrm.shop.ShopSyncTest"></class>
+            <class name="com.meiji.test.http.scrm.shop.ShopUpdateTest"></class>
+
+            <class name="com.meiji.test.http.scrm.tag.TagAddTest"></class>
+            <class name="com.meiji.test.http.scrm.tag.TagDestroyTest"></class>
+            <class name="com.meiji.test.http.scrm.tag.TagListTest"></class>
+            <class name="com.meiji.test.http.scrm.tag.TagQueryTest"></class>
+            <class name="com.meiji.test.http.scrm.tag.TagUpdateTest"></class>
+
+            <class name="com.meiji.test.http.scrm.tagGroup.TagGroupAddTest"></class>
+            <class name="com.meiji.test.http.scrm.tagGroup.TagGroupQueryTest"></class>
+
+            <class name="com.meiji.test.http.scrm.wx.WxDepartmentListTest"></class>
+            <class name="com.meiji.test.http.scrm.wx.WxMemberListTest"></class>
         </classes>
     </test>
 </suite>

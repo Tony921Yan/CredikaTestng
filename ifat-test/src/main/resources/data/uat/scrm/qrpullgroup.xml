@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "qrpullgroup">
+        <parm key="gmtCreate" value =""/>
+        <parm key="gmtModified" value=""/>
+        <parm key="groupChatInfo" value="[{
+            'codeUrl':'',
+            'groupId':0
+        }]"/>
+        <parm key="id" value="0"/>
+        <parm key="isShow" value="0"/>
+        <parm key="leadWords" value=""/>
+        <parm key="name" value=""/>
+        <parm key="picUrl" value=""/>
+        <parm key="pullType" value="0"/>
+        <parm key="remark" value=""/>
+        <parm key="shopId" value="0"/>
+        <parm key="state" value="0"/>
+        <parm key="tagIds" value="[]"/>
+        <parm key="useManIds" value="[]"/>
+    </test>
+</data>

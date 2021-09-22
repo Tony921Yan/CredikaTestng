@@ -100,7 +100,7 @@
             <class name="com.meiji.test.http.scrm.shop.ShopSyncTest"></class>
             <class name="com.meiji.test.http.scrm.shop.ShopUpdateTest"></class>
 
-            <class name="com.meiji.test.http.scrm.tag.TagAddTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.tag.TagAddTest"></class>-->
             <class name="com.meiji.test.http.scrm.tag.TagDestroyTest"></class>
             <class name="com.meiji.test.http.scrm.tag.TagListTest"></class>
             <class name="com.meiji.test.http.scrm.tag.TagQueryTest"></class>

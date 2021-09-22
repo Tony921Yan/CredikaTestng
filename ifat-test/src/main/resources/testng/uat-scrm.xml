@@ -10,18 +10,18 @@
 
             <class name="com.meiji.test.http.scrm.contact.ContactListTest"></class>
 
-            <class name="com.meiji.test.http.scrm.contacttag.ContactTagUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.contacttag.ContactTagUpdateTest"></class>-->
             <class name="com.meiji.test.http.scrm.contacttag.TagShowTest"></class>
 
             <class name="com.meiji.test.http.scrm.corp.AgentConfigTest"></class>
             <class name="com.meiji.test.http.scrm.corp.IndexTest"></class>
-            <class name="com.meiji.test.http.scrm.corp.CorpUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.corp.CorpUpdateTest"></class>-->
 
 <!--            <class name="com.meiji.test.http.scrm.department.DepartmentAddTest"></class>-->
 <!--            <class name="com.meiji.test.http.scrm.department.DepartmentDelTest"></class>-->
             <class name="com.meiji.test.http.scrm.department.DepartmentDetailTest"></class>
             <class name="com.meiji.test.http.scrm.department.DepartmentListTest"></class>
-            <class name="com.meiji.test.http.scrm.department.DepartmentRelateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.department.DepartmentRelateTest"></class>-->
 <!--            <class name="com.meiji.test.http.scrm.department.DepartmentUpdateTest"></class>-->
             <class name="com.meiji.test.http.scrm.department.GetShopPageTest"></class>
             <class name="com.meiji.test.http.scrm.department.GetShopListTest"></class>
@@ -51,7 +51,7 @@
 <!--            <class name="com.meiji.test.http.scrm.material.BatcheUpdateTest"></class>-->
 <!--            <class name="com.meiji.test.http.scrm.material.GroupAddTest"></class>-->
             <class name="com.meiji.test.http.scrm.material.GroupListTest"></class>
-            <class name="com.meiji.test.http.scrm.material.GroupUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.material.GroupUpdateTest"></class>-->
 <!--            <class name="com.meiji.test.http.scrm.material.MaterialAddTest"></class>-->
 <!--            <class name="com.meiji.test.http.scrm.material.MaterialDetailTest"></class>-->
             <class name="com.meiji.test.http.scrm.material.MaterialListTest"></class>
@@ -97,7 +97,7 @@
 <!--            <class name="com.meiji.test.http.scrm.shop.ShopDelTest"></class>-->
             <class name="com.meiji.test.http.scrm.shop.ShopDetailTest"></class>
             <class name="com.meiji.test.http.scrm.shop.ShopListTest"></class>
-            <class name="com.meiji.test.http.scrm.shop.ShopRelateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.shop.ShopRelateTest"></class>-->
             <class name="com.meiji.test.http.scrm.shop.ShopSyncTest"></class>
 <!--            <class name="com.meiji.test.http.scrm.shop.ShopUpdateTest"></class>-->
 

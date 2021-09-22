@@ -82,7 +82,8 @@
             <class name="com.meiji.test.http.scrm.qrcode.QrPullGroupTest"></class>
 
             <class name="com.meiji.test.http.scrm.register.AuthResultTest"></class>
-            <class name="com.meiji.test.http.scrm.register.RegisterTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.register.RegisterTest"></class>-->
+
 
             <class name="com.meiji.test.http.scrm.role.GrantRoleMenuTest"></class>
             <class name="com.meiji.test.http.scrm.role.RoleAddTest"></class>

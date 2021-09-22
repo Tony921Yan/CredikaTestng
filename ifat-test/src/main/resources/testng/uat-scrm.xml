@@ -2,11 +2,11 @@
 <suite name = "效率工具"  verbose="4">
     <test name="美记效率工具">
         <classes>
-            <class name="com.meiji.test.http.scrm.channel.ChannelAddTest"></class>
-            <class name="com.meiji.test.http.scrm.channel.ChannelDelTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.channel.ChannelAddTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.channel.ChannelDelTest"></class>-->
             <class name="com.meiji.test.http.scrm.channel.ChannelDetailTest"></class>
             <class name="com.meiji.test.http.scrm.channel.ChannelListTest"></class>
-            <class name="com.meiji.test.http.scrm.channel.ChannelUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.channel.ChannelUpdateTest"></class>-->
 
             <class name="com.meiji.test.http.scrm.contact.ContactListTest"></class>
 
@@ -17,17 +17,17 @@
             <class name="com.meiji.test.http.scrm.corp.IndexTest"></class>
             <class name="com.meiji.test.http.scrm.corp.CorpUpdateTest"></class>
 
-            <class name="com.meiji.test.http.scrm.department.DepartmentAddTest"></class>
-            <class name="com.meiji.test.http.scrm.department.DepartmentDelTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.department.DepartmentAddTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.department.DepartmentDelTest"></class>-->
             <class name="com.meiji.test.http.scrm.department.DepartmentDetailTest"></class>
             <class name="com.meiji.test.http.scrm.department.DepartmentListTest"></class>
             <class name="com.meiji.test.http.scrm.department.DepartmentRelateTest"></class>
-            <class name="com.meiji.test.http.scrm.department.DepartmentUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.department.DepartmentUpdateTest"></class>-->
             <class name="com.meiji.test.http.scrm.department.GetShopPageTest"></class>
             <class name="com.meiji.test.http.scrm.department.GetShopListTest"></class>
 
-            <class name="com.meiji.test.http.scrm.employee.AddEmployeeTest"></class>
-            <class name="com.meiji.test.http.scrm.employee.DelEmployeeTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.employee.AddEmployeeTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.employee.DelEmployeeTest"></class>-->
             <class name="com.meiji.test.http.scrm.employee.EmpGrantShopTest"></class>
             <class name="com.meiji.test.http.scrm.employee.EmployeeConfigTest"></class>
             <class name="com.meiji.test.http.scrm.employee.EmployeeDepartmentListTest"></class>
@@ -47,21 +47,21 @@
             <class name="com.meiji.test.http.scrm.login.LoginTest"></class>
             <class name="com.meiji.test.http.scrm.login.QrCodeTest"></class>
 
-            <class name="com.meiji.test.http.scrm.material.BatcheDeleteTest"></class>
-            <class name="com.meiji.test.http.scrm.material.BatcheUpdateTest"></class>
-            <class name="com.meiji.test.http.scrm.material.GroupAddTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.material.BatcheDeleteTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.material.BatcheUpdateTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.material.GroupAddTest"></class>-->
             <class name="com.meiji.test.http.scrm.material.GroupListTest"></class>
             <class name="com.meiji.test.http.scrm.material.GroupUpdateTest"></class>
-            <class name="com.meiji.test.http.scrm.material.MaterialAddTest"></class>
-            <class name="com.meiji.test.http.scrm.material.MaterialDetailTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.material.MaterialAddTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.material.MaterialDetailTest"></class>-->
             <class name="com.meiji.test.http.scrm.material.MaterialListTest"></class>
-            <class name="com.meiji.test.http.scrm.material.MaterialUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.material.MaterialUpdateTest"></class>-->
 
-            <class name="com.meiji.test.http.scrm.menu.MenuAddTest"></class>
-            <class name="com.meiji.test.http.scrm.menu.MenuDelTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.menu.MenuAddTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.menu.MenuDelTest"></class>-->
             <class name="com.meiji.test.http.scrm.menu.MenuDetailTest"></class>
             <class name="com.meiji.test.http.scrm.menu.MenuListTest"></class>
-            <class name="com.meiji.test.http.scrm.menu.MenuUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.menu.MenuUpdateTest"></class>-->
 
             <class name="com.meiji.test.http.scrm.metric.DayListTest"></class>
             <class name="com.meiji.test.http.scrm.metric.EmployeesListTest"></class>
@@ -69,16 +69,16 @@
             <class name="com.meiji.test.http.scrm.metric.StatisticalTest"></class>
             <class name="com.meiji.test.http.scrm.metric.GroupListTest"></class>
 
-            <class name="com.meiji.test.http.scrm.permission.PermissionAddTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.permission.PermissionAddTest"></class>-->
             <class name="com.meiji.test.http.scrm.permission.PermissionDetailTest"></class>
             <class name="com.meiji.test.http.scrm.permission.PermissionListTest"></class>
-            <class name="com.meiji.test.http.scrm.permission.PermissionUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.permission.PermissionUpdateTest"></class>-->
 
             <class name="com.meiji.test.http.scrm.qrcode.QrGoupDetailTest"></class>
-            <class name="com.meiji.test.http.scrm.qrcode.QrGroupAddTest"></class>
-            <class name="com.meiji.test.http.scrm.qrcode.QrGroupDeleteTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.qrcode.QrGroupAddTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.qrcode.QrGroupDeleteTest"></class>-->
             <class name="com.meiji.test.http.scrm.qrcode.QrGroupListTest"></class>
-            <class name="com.meiji.test.http.scrm.qrcode.QrGroupUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.qrcode.QrGroupUpdateTest"></class>-->
             <class name="com.meiji.test.http.scrm.qrcode.QrPullGroupTest"></class>
 
             <class name="com.meiji.test.http.scrm.register.AuthResultTest"></class>
@@ -86,28 +86,28 @@
 
 
             <class name="com.meiji.test.http.scrm.role.GrantRoleMenuTest"></class>
-            <class name="com.meiji.test.http.scrm.role.RoleAddTest"></class>
-            <class name="com.meiji.test.http.scrm.role.RoleDetailTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.role.RoleAddTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.role.RoleDetailTest"></class>-->
             <class name="com.meiji.test.http.scrm.role.RoleListTest"></class>
             <class name="com.meiji.test.http.scrm.role.RoleMenuListTest"></class>
-            <class name="com.meiji.test.http.scrm.role.RoleUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.role.RoleUpdateTest"></class>-->
             <class name="com.meiji.test.http.scrm.role.TransitTest"></class>
-            <class name="com.meiji.test.http.scrm.role.UpdateGrantRoleMenuTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.role.UpdateGrantRoleMenuTest"></class>-->
 
-            <class name="com.meiji.test.http.scrm.shop.ShopDelTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.shop.ShopDelTest"></class>-->
             <class name="com.meiji.test.http.scrm.shop.ShopDetailTest"></class>
             <class name="com.meiji.test.http.scrm.shop.ShopListTest"></class>
             <class name="com.meiji.test.http.scrm.shop.ShopRelateTest"></class>
             <class name="com.meiji.test.http.scrm.shop.ShopSyncTest"></class>
-            <class name="com.meiji.test.http.scrm.shop.ShopUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.shop.ShopUpdateTest"></class>-->
 
 <!--            <class name="com.meiji.test.http.scrm.tag.TagAddTest"></class>-->
-            <class name="com.meiji.test.http.scrm.tag.TagDestroyTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.tag.TagDestroyTest"></class>-->
             <class name="com.meiji.test.http.scrm.tag.TagListTest"></class>
             <class name="com.meiji.test.http.scrm.tag.TagQueryTest"></class>
-            <class name="com.meiji.test.http.scrm.tag.TagUpdateTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.tag.TagUpdateTest"></class>-->
 
-            <class name="com.meiji.test.http.scrm.tagGroup.TagGroupAddTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.tagGroup.TagGroupAddTest"></class>-->
             <class name="com.meiji.test.http.scrm.tagGroup.TagGroupQueryTest"></class>
 
             <class name="com.meiji.test.http.scrm.wx.WxDepartmentListTest"></class>

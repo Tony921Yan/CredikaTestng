@@ -40,7 +40,7 @@
         <parm key="shop112108101375" value="-1"/>
         <parm key="shop112104011829" value="-12"/>
         <parm key="shop112105134381" value="8"/>
-        <parm key="shop112104022025" value="984"/>
+<!--        <parm key="shop112104022025" value="984"/>--> <!--细妹账号过滤掉-->
         <parm key="shop112105140818" value="1"/>
         <parm key="shop112105292927" value="-1"/>
         <parm key="sup12202105068671" value="20"/>
@@ -154,5 +154,8 @@
         <parm key="sup12202105087395" value="-87"/>
         <parm key="sup12202107015988" value="135200"/>
         <parm key="sup12202107019623" value="36000"/>
+        <parm key="sup12202108277853" value="-28900"/>
+        <parm key="sup12202108036707" value="-3600"/>
+        <parm key="sup12202108099150" value="-2780"/>
     </test>
 </data>

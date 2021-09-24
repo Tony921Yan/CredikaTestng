@@ -4,7 +4,7 @@
         <parm key="condition" value ="{}"/>
         <parm key="order" value =""/>
         <parm key="page" value ="1"/>
-        <parm key="rows" value ="10"/>
+        <parm key="rows" value ="100"/>
         <parm key="sort" value =""/>
     </test>
 </data>

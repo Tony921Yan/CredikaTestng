@@ -30,23 +30,23 @@ class AccountAssetPageQuery extends PlatformPost{
         Map allAccountUpdateData = TestData.getTestData("allAccountUpdateData_platform")
         List errorList = new ArrayList()
         for (Map map:apiResult){
+            String accountCode = map.get("accountCode")
+            List accList = ["shop112104022025"]
+            if(accList.contains(accountCode)) {
+                continue
+            }
             Integer totalIncome = Integer.valueOf(map.get("totalIncome").toString())
             Integer withdrawAmount = Integer.valueOf(map.get("withdrawAmount").toString())
             Integer unSettledAmount = Integer.valueOf(map.get("unSettledAmount").toString())
             Integer alreadyWithdrawAmount = map.get("alreadyWithdrawAmount") == null ? 0 : Integer.valueOf(map.get("alreadyWithdrawAmount"))
-            String accountCode = map.get("accountCode")
+
             Integer updateValue = allAccountUpdateData.get(accountCode)==null ? 0 :Integer.valueOf(allAccountUpdateData.get(accountCode).toString())
             if(updateValue != (totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount)){
-                if(accountCode == "shop112104022025"){
-                    assert updateValue != (totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount)
-                }else{
-                    Map msg = new HashMap()
-                    msg.put("accountCode",accountCode)
-                    msg.put("diff",totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount-updateValue)
-                    errorList.add(msg)
-                    testContext.appendLog(new Record("供应商/小B数据修正补差后仍不相等", msg))
-                }
-
+                Map msg = new HashMap()
+                msg.put("accountCode",accountCode)
+                msg.put("diff",totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount-updateValue)
+                errorList.add(msg)
+                testContext.appendLog(new Record("供应商/小B数据修正补差后仍不相等", msg))
             }
            // assert updateValue == (totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount),"供应商/小B数据修正补差后仍不相等"+map.get("accountCode")
         }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+        <test name = "fundFlowPageQuerySettlementFinish">
+            <parm key="condition" value ='{entityId:"28",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+            <parm key="order" value =""/>
+            <parm key="page" value ="1"/>
+            <parm key="rows" value ="20"/>
+            <parm key="sort" value =""/>
+        </test>
+
+        <test name = "fundFlowPageQuerySettlementFinish1">
+            <parm key="condition" value ='{entityId:"26",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+            <parm key="order" value =""/>
+            <parm key="page" value ="1"/>
+            <parm key="rows" value ="20"/>
+            <parm key="sort" value =""/>
+        </test>
+
+    <test name = "fundFlowPageQuerySettlementFinish2">
+        <parm key="condition" value ='{entityId:"389",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "fundFlowPageQuerySettlementFinish3">
+        <parm key="condition" value ='{entityId:"22",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "fundFlowPageQuerySettlementFinish4">
+        <parm key="condition" value ='{entityId:"23",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+
+    <test name = "fundFlowPageQuerySettlementFinish5">
+        <parm key="condition" value ='{entityId:"1411401323118625",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+
+    <test name = "fundFlowPageQuerySettlementFinish6">
+        <parm key="condition" value ='{entityId:"1409361538711585",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+
+    <test name = "fundFlowPageQuerySettlementFinish7">
+        <parm key="condition" value ='{entityId:"1414064664215585",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "fundFlowPageQuerySettlementFinish8">
+        <parm key="condition" value ='{entityId:"1405893092573216",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "fundFlowPageQuerySettlementFinish9">
+        <parm key="condition" value ='{entityId:"1435114871455776",merchantType:"2",tradeOrderNo:"",settlementState:"2"}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+</data>

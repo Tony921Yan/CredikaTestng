@@ -2,9 +2,9 @@
 <suite name = "美记中台"  verbose="3">
     <test name="美记中台自动化">
         <classes>
-            <class name="com.meiji.test.http.platform.finance.AccountAssetPageQueryTest"/>
+<!--            <class name="com.meiji.test.http.platform.finance.AccountAssetPageQueryTest"/>-->
             <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
-<!--            <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>-->
+            <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>
             <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
             <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
             <class name="com.meiji.test.http.platform.order.ProdGetOrderByPageTest"/>

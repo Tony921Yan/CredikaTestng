@@ -63,11 +63,11 @@
             <class name="com.meiji.test.http.scrm.menu.MenuListTest"></class>
 <!--            <class name="com.meiji.test.http.scrm.menu.MenuUpdateTest"></class>-->
 
-            <class name="com.meiji.test.http.scrm.metric.DayListTest"></class>
-            <class name="com.meiji.test.http.scrm.metric.EmployeesListTest"></class>
-            <class name="com.meiji.test.http.scrm.metric.GetTrendListTest"></class>
-            <class name="com.meiji.test.http.scrm.metric.StatisticalTest"></class>
-            <class name="com.meiji.test.http.scrm.metric.GroupListTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.metric.DayListTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.metric.EmployeesListTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.metric.GetTrendListTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.metric.StatisticalTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.metric.GroupListTest"></class>-->
 
 <!--            <class name="com.meiji.test.http.scrm.permission.PermissionAddTest"></class>-->
             <class name="com.meiji.test.http.scrm.permission.PermissionDetailTest"></class>

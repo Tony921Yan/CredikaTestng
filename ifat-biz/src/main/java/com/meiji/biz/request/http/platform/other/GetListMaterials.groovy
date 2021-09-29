@@ -1,13 +1,13 @@
-package com.meiji.biz.request.http.platform.label
+package com.meiji.biz.request.http.platform.other
 
-import com.meiji.biz.request.http.platform.PlatformGet
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetLabel extends PlatformPost{
+class GetListMaterials extends PlatformPost {
     {
-        super.api="goodsLabelList/queryPage"
-        super.params = ["pageNum","pageSize","labelName","id"]
+        super.api = "MaterialList/getListMaterials"
+        super.params =  [ "page","rows","sort","order","condition"]
+//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
     PlatformPost invoke(TestContext testContext) {

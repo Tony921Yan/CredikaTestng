@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetGoodsByPage extends PlatformPost{
     {
-        super.api = "/platform/goodsMgr/getGoodsByPage"
+        super.api = "GoodsDetailManage/getGoodsByPage"
         super.params = ["categoryId","endDate","endNum","endPrice","pageNum","pageSize","skuCode","spuCodeAndName","startDate",
                          "startNum","startPrice"]
     }
@@ -24,4 +24,8 @@ class GetGoodsByPage extends PlatformPost{
         super.baseAssert(testContext)
     }
 
+    PlatformPost specialAssert(TestContext testContext){
+        Map apiResult = testContext.getResponse().data
+        assert apiResult.total > 20
+    }
 }

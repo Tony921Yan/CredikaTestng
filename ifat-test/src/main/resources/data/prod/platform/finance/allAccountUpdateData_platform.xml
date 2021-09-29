@@ -1,89 +1,98 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--9月21日：第1页100条中35条，第2页100条中27条，第3页100条中28条，第4页100中55条，第5页15中7条-->
+<!--9月28日：第1页100条中37条，第2页100条中23条，第3页100条中26条，第4页100中56条，第5页17条-->
 <data>
     <test name = "allAccountUpdateData_platform">
-        <parm key="shop112105132178" value="16298"/>
-        <parm key="shop112104132528" value="-1"/>
-        <parm key="shop112105140978" value="15584"/>
-        <parm key="shop112105062023" value="913"/>
-        <parm key="shop112104184273" value="9516"/>
-        <parm key="shop112106037977" value="2"/>
-        <parm key="shop112105087838" value="413"/>
-        <parm key="shop112105072567" value="-2"/>
-        <parm key="shop112103241234" value="-1221"/>
-        <parm key="shop112105214506" value="-1"/>
-        <parm key="shop112105212098" value="25"/>
-        <parm key="sup12202105060495" value="-404"/>
-        <parm key="shop112105208848" value="-1"/>
-        <parm key="shop112104290572" value="86295"/>
-        <parm key="sup12202104237770" value="30"/>
-        <parm key="sup12202105141408" value="-1300"/>
-        <parm key="shop112105175328" value="8"/>
-        <parm key="shop112107129183" value="-1"/>
-        <parm key="shop112105273775" value="-1"/>
-        <parm key="shop112104287821" value="-4"/>
-        <parm key="shop112105066128" value="12989"/>
-        <parm key="sup12202105251088" value="-134261"/>
-        <parm key="shop112105140676" value="-1"/>
-        <parm key="shop112103303143" value="-3801"/>
+        <!--        <parm key="shop112104022025" value="984"/>--> <!--细妹账号过滤掉-->
         <parm key="shop112103305208" value="10882"/>
         <parm key="shop112105148158" value="3745"/>
         <parm key="shop112105255843" value="16484"/>
-        <parm key="shop112105103093" value="-1"/>
-        <parm key="shop112105282024" value="4"/>
-        <parm key="shop112108117810" value="371"/>
-        <parm key="sup12202107134135" value="-3600"/>
         <parm key="shop112105181702" value="2"/>
         <parm key="shop112106040463" value="-2"/>
-        <parm key="sup12202106115927" value="40"/>
-        <parm key="shop112105210141" value="-1"/>
-        <parm key="shop112108101375" value="-1"/>
-        <parm key="shop112104011829" value="-12"/>
+        <parm key="sup12202108277853" value="-28900"/>
         <parm key="shop112105134381" value="8"/>
-<!--        <parm key="shop112104022025" value="984"/>--> <!--细妹账号过滤掉-->
-        <parm key="shop112105140818" value="1"/>
-        <parm key="shop112105292927" value="-1"/>
-        <parm key="sup12202105068671" value="20"/>
+        <parm key="shop112105132178" value="16298"/>
+        <parm key="shop112104290572" value="86295"/>
         <parm key="sup12202104124043" value="16"/>
+        <parm key="sup12202106115927" value="40"/>
+        <parm key="shop112104184273" value="9516"/>
+        <parm key="shop112105062023" value="913"/>
+        <parm key="shop112105140978" value="15584"/>
+        <parm key="shop112105212098" value="25"/>
+        <parm key="shop112105113398" value="-6"/>
         <parm key="shop112105112297" value="-190"/>
+        <parm key="shop112106144867" value="-1"/>
+        <parm key="shop112108101375" value="-1"/>
+        <parm key="shop112105175328" value="8"/>
+        <parm key="shop112106037977" value="2"/>
+        <parm key="shop112104011829" value="-12"/>
+        <parm key="sup12202107123062" value="-16700"/>
+        <parm key="shop112105140818" value="1"/>
+        <parm key="sup12202107230157" value="-3900"/>
+        <parm key="sup12202107098150" value="-15760"/>
+        <parm key="shop112105066128" value="12989"/>
+        <parm key="sup12202105060495" value="-2844"/>
+        <parm key="sup12202105244939" value="-8800"/>
+        <parm key="sup12202107093373" value="-3800"/>
+        <parm key="sup12202105142598" value="-9600"/>
+        <parm key="shop112107129183" value="-1"/>
+        <parm key="sup12202106221752" value="-2400"/>
+        <parm key="sup12202105068671" value="20"/>
+        <parm key="shop112105292927" value="-1"/>
+        <parm key="shop112105072567" value="-2"/>
+        <parm key="sup12202108167394" value="-920"/>
+        <parm key="shop112105214506" value="-1"/>
         <parm key="shop112105216966" value="-4"/>
         <parm key="shop112105214448" value="2"/>
-        <parm key="shop112105138749" value="8"/>
-        <parm key="shop112104288225" value="-5"/>
         <parm key="shop112104150679" value="2"/>
-        <parm key="shop112105216719" value="-1"/>
-        <parm key="shop112104290586" value="5"/>
+        <parm key="shop112105138749" value="8"/>
         <parm key="shop112104062310" value="19950"/>
-        <parm key="shop112105113398" value="-6"/>
+        <parm key="shop112105087838" value="413"/>
+        <parm key="shop112105273775" value="-1"/>
+        <parm key="shop112104290586" value="5"/>
         <parm key="shop112105113928" value="-1"/>
-        <parm key="shop112106144867" value="-1"/>
+        <parm key="sup12202108099150" value="-2780"/>
         <parm key="shop112107023949" value="-5"/>
+        <parm key="shop112105287669" value="-3"/>
         <parm key="shop112104291693" value="1090"/>
         <parm key="shop112105112192" value="-697"/>
         <parm key="shop112105149257" value="-4"/>
-        <parm key="shop112105287669" value="-3"/>
         <parm key="shop112103308977" value="-424"/>
-        <parm key="shop112105267294" value="-1"/>
         <parm key="shop112105277542" value="1839"/>
-        <parm key="shop112107254619" value="-2"/>
-        <parm key="shop112105212426" value="-3"/>
-        <parm key="shop112105284113" value="-5"/>
-        <parm key="shop112105284610" value="27180"/>
-        <parm key="sup12202108054229" value="-1600"/>
-        <parm key="shop112104064949" value="-5"/>
-        <parm key="shop112104163979" value="1652"/>
+        <parm key="shop112104297083" value="3"/>
+        <parm key="shop112104288225" value="-5"/>
+        <parm key="sup12202108036707" value="-3600"/>
         <parm key="shop112104191942" value="-2"/>
+        <parm key="shop112105284610" value="27180"/>
         <parm key="shop112105175345" value="604"/>
         <parm key="shop112105188070" value="-1"/>
         <parm key="shop112103305381" value="-6664"/>
+        <parm key="shop112105282024" value="4"/>
         <parm key="shop112104217081" value="1"/>
-        <parm key="shop112103291609" value="-72"/>
+        <parm key="shop112103241234" value="-1885"/>
+        <parm key="shop112105208848" value="-1"/>
+        <parm key="shop112103291609" value="-102"/>
         <parm key="shop112105277153" value="-3"/>
         <parm key="shop112106071273" value="1"/>
-        <parm key="sup12202107146615" value="-5540"/>
+        <parm key="shop112104287821" value="-4"/>
+        <parm key="shop112104132528" value="-1"/>
+        <parm key="sup12202104237770" value="30"/>
+        <parm key="shop112105140676" value="-1"/>
+        <parm key="sup12202105251088" value="-134449"/>
+        <parm key="shop112103303143" value="-3941"/>
+        <parm key="shop112105103093" value="-1"/>
+        <parm key="shop112105210141" value="-1"/>
+        <parm key="shop112105216719" value="-1"/>
+        <parm key="shop112105267294" value="-1"/>
+        <parm key="shop112107254619" value="-2"/>
+        <parm key="shop112105212426" value="-3"/>
+        <parm key="shop112105284113" value="-5"/>
+        <parm key="shop112104064949" value="-5"/>
+        <parm key="shop112104163979" value="1652"/>
         <parm key="shop112104299198" value="1781"/>
         <parm key="shop112105210375" value="1318"/>
-        <parm key="shop112103301527" value="3163"/>
+        <parm key="shop112103290149" value="-190"/>
+        <parm key="shop112103301527" value="3094"/>
         <parm key="shop112103300888" value="-5"/>
         <parm key="shop112104017110" value="-280"/>
         <parm key="shop112104066720" value="1"/>
@@ -95,7 +104,6 @@
         <parm key="shop112104289420" value="-1"/>
         <parm key="shop112104293025" value="2"/>
         <parm key="shop112104293456" value="-1"/>
-        <parm key="shop112104297083" value="3"/>
         <parm key="shop112104300777" value="-1"/>
         <parm key="shop112104303169" value="-1"/>
         <parm key="shop112105065497" value="1"/>
@@ -154,8 +162,5 @@
         <parm key="sup12202105087395" value="-87"/>
         <parm key="sup12202107015988" value="135200"/>
         <parm key="sup12202107019623" value="36000"/>
-        <parm key="sup12202108277853" value="-28900"/>
-        <parm key="sup12202108036707" value="-3600"/>
-        <parm key="sup12202108099150" value="-2780"/>
     </test>
 </data>

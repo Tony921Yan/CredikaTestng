@@ -9,10 +9,10 @@ import org.testng.annotations.Test
 
 class QueryGoodPropertysByPageTest extends BaseTest {
     QueryGoodPropertysByPage queryGoodPropertysByPage = new QueryGoodPropertysByPage()
-    @Test(description = "商品属性分页查询 queryGoodPropertys" ,groups = ["prod","uat"],testName = "queryGoodPropertysByPage",
+    @Test(description = "商品属性分页查询 queryGoodPropertys" ,groups = ["prod","uat"],testName = "prodQueryGoodPropertysByPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void queryGoodPropertysByPage(TestContext testContext){
-        //testContext.put("condition", JsonUtil.strToJson(testContext.get("condition")))
         queryGoodPropertysByPage.invoke(testContext).baseAssert(testContext)
+        queryGoodPropertysByPage.specialAssert(testContext)
     }
 }

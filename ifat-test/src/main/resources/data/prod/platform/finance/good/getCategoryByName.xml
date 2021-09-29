@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "prodGetCategoryByName">
+        <parm key="name" value ="美妆个护"/>
+        <parm key="type" value ="1"/>
+    </test>
+
+    <test name = "getCategoryByName_nameExits">
+        <parm key="name" value ="getCategoryByName_nameExits_不存在"/>
+        <parm key="type" value ="2"/>
+    </test>
+
+    <test name = "getCategoryByName_typeExits">
+        <parm key="name" value ="男鞋"/>
+        <parm key="type" value ="1"/>
+    </test>
+
+
+</data>

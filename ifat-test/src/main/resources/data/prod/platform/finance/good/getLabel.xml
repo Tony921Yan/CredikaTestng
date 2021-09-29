@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getLabel">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="labelName" value =""/>
+        <parm key="id" value =""/>
+
+    </test>
+</data>

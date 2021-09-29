@@ -8,6 +8,14 @@
             <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
             <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
             <class name="com.meiji.test.http.platform.order.ProdGetOrderByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.GetGroupGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryBrandsByPageTest"/>
+            <class name="com.meiji.test.http.platform.category.GetCategoryTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
+            <class name="com.meiji.test.http.platform.other.GetListMaterialsTest"/>
 
         </classes>
     </test>

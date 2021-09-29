@@ -1,13 +1,13 @@
-package com.meiji.biz.request.http.platform.label
+package com.meiji.biz.request.http.platform.goods
 
-import com.meiji.biz.request.http.platform.PlatformGet
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetLabel extends PlatformPost{
+class GetGroupGoodsByPage extends PlatformPost{
     {
-        super.api="goodsLabelList/queryPage"
-        super.params = ["pageNum","pageSize","labelName","id"]
+        super.api = "GoodsDetailManage/getGoodsByPage"
+        super.params = ["categoryId","endDate","endNum","endPrice","pageNum","pageSize","skuCode","spuCodeAndName","startDate",
+                         "startNum","startPrice","groupType"]
     }
 
     PlatformPost invoke(TestContext testContext) {
@@ -24,8 +24,8 @@ class GetLabel extends PlatformPost{
         super.baseAssert(testContext)
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    PlatformPost specialAssert(TestContext testContext){//组合商品较少，暂时取2个
         Map apiResult = testContext.getResponse().data
-        assert apiResult.total > 20
+        assert apiResult.total > 2
     }
 }

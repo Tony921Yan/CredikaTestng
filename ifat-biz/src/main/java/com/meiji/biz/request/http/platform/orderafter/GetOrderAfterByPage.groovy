@@ -5,9 +5,8 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetOrderAfterByPage extends PlatformPost {
     {
-        super.api = "//platform/orderMgr/getOrderAfterByPage"
+        super.api = "AftersalesDetailManage/getOrderByPage"
         super.params =  [ "condition","order","page","rows","sort"]
-//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
     PlatformPost invoke(TestContext testContext) {
@@ -24,4 +23,8 @@ class GetOrderAfterByPage extends PlatformPost {
         super.baseAssert(testContext)
     }
 
+    PlatformPost specialAssert(TestContext testContext){
+        Map apiResult = testContext.getResponse().data
+        assert apiResult.total > 20
+    }
 }

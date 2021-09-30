@@ -1,13 +1,13 @@
-package com.meiji.biz.request.http.platform.suppiler
+package com.meiji.biz.request.http.platform.other
 
-import com.meiji.biz.request.http.platform.PlatformGet
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetSupplierByPage extends PlatformPost{
+class InvitationList extends PlatformPost {
     {
-        super.api="SupplierManage/getSupplierByPage"
-        super.params = ["condition","order","page","rows","sort"]
+        super.api = "invitationList/queryPage"
+        super.params =  [ "pageNum","pageSize","applicant","validDate"]
+//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
     PlatformPost invoke(TestContext testContext) {
@@ -22,10 +22,5 @@ class GetSupplierByPage extends PlatformPost{
 
     PlatformPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
-    }
-
-    PlatformPost specialAssert(TestContext testContext){
-        Map apiResult = testContext.getResponse().data
-        assert apiResult.total > 20
     }
 }

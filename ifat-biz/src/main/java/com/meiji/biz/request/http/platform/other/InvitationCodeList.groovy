@@ -1,13 +1,12 @@
-package com.meiji.biz.request.http.platform.suppiler
+package com.meiji.biz.request.http.platform.other
 
-import com.meiji.biz.request.http.platform.PlatformGet
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetSupplierByPage extends PlatformPost{
+class InvitationCodeList extends PlatformPost {
     {
-        super.api="SupplierManage/getSupplierByPage"
-        super.params = ["condition","order","page","rows","sort"]
+        super.api = "invitationCodeList/queryPage"
+        super.params =  [ "pageNum","pageSize","code","validDate","usedShopDealerPhone","shopDealerPhone"]
     }
 
     PlatformPost invoke(TestContext testContext) {

@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
+    <test name = "mall-pageOrder-all">
+        <parm key="limit" value ="10"/>
+        <parm key="orderStatus" value ="0"/>
+        <parm key="page" value ="1"/>
+        <parm key="searchType" value ="0"/>
+    </test>
+
+    <test name = "mall-pageOrder">
+        <parm key="limit" value ="10"/>
+        <parm key="orderStatus" value ="0"/>
+        <parm key="page" value ="1"/>
+    </test>
+
+    <test name = "mall-pageOrder">
+        <parm key="limit" value ="10"/>
+        <parm key="orderStatus" value ="0"/>
+        <parm key="page" value ="1"/>
+    </test>
+
+    <test name = "mall-pageOrder">
+        <parm key="limit" value ="10"/>
+        <parm key="orderStatus" value ="0"/>
+        <parm key="page" value ="1"/>
+    </test>
+
     <test name = "mall-pageOrder">
         <parm key="limit" value ="10"/>
         <parm key="orderStatus" value ="0"/>

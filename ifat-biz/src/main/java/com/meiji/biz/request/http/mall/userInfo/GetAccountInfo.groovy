@@ -1,12 +1,12 @@
-package com.meiji.biz.request.http.shop.order
+package com.meiji.biz.request.http.mall.userInfo
 
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
 
-class FlowTotalData extends MallPost {
+class GetAccountInfo extends MallPost {
     {
-        super.api = "pay/flowTotalData"
-        super.params =  ["month","shopId","tradeType","year"]
+        super.api = "pay/getAccountInfo"
+        super.params =  ["shopId"]
     }
 
     MallPost invoke(TestContext testContext) {

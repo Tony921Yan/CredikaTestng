@@ -33,6 +33,18 @@
             <class name="com.meiji.test.http.mall.shopGoods.FindRecommendGoodsTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindGoodsCategoryTreeTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindBrandListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindActiveGoodsTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindGoodsTopicDetailTest"/>
+            <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetAccountInfoTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.IncomeTotalQueryTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindShopByUserIdTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.FlowPageQueryTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.FlowTotalDataTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.WithdrawPageDataTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.IncomePageQueryTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>
         </classes>
     </test>
 </suite>

@@ -45,6 +45,7 @@
             <class name="com.meiji.test.http.mall.orderInfo.IncomePageQueryTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.CustomerListTest"/>
         </classes>
     </test>
 </suite>

@@ -3,9 +3,9 @@ package com.meiji.biz.request.http.mall.userInfo
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
 
-class FinShopInviteCodeCostInfo extends MallPost {
+class FindInviteCodeNum extends MallPost {
     {
-        super.api = "inviteCode/finShopInviteCodeCostInfo"
+        super.api = "inviteCode/findInviteCodeNum"
         super.params =  ["id"]
     }
 

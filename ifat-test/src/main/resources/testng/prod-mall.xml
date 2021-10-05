@@ -46,6 +46,12 @@
             <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>
             <class name="com.meiji.test.http.mall.userInfo.CustomerListTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetCategoryListAndQrCodeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.SearchByConditionTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.ListGiftsFromMeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.ListGiftsToMeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetGiftDetailToMeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FindShopCustomerGroupByShopIdTest"/>
         </classes>
     </test>
 </suite>

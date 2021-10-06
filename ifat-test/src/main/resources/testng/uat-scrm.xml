@@ -35,7 +35,7 @@
             <class name="com.meiji.test.http.scrm.employee.GetEmpByShopIdTest"></class>
             <class name="com.meiji.test.http.scrm.employee.LoginConfigListTest"></class>
             <class name="com.meiji.test.http.scrm.employee.ShopPermissionListTest"></class>
-            <class name="com.meiji.test.http.scrm.employee.ShowTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.employee.ShowTest"></class>-->
 
             <class name="com.meiji.test.http.scrm.group.GetEmployeeGroupTest"></class>
             <class name="com.meiji.test.http.scrm.group.GetGroupAdminTest"></class>

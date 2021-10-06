@@ -23,6 +23,9 @@ abstract class MallPost {
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
         Long userId = Long.valueOf(testContext.get("userId").toString())
+        heads.put("userType",testContext.get("userType"))
+        heads.put("dealerId",testContext.get("dealerId"))
+        heads.put("userId",testContext.get("userId"))
         heads.put("cookie", CookieService.getMallCookie(mallUrl,userId))
 
 //        if(TestEnv.getIsGray()=="true"){

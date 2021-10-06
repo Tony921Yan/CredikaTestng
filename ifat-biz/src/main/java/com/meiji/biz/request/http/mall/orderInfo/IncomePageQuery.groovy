@@ -22,5 +22,4 @@ class IncomePageQuery extends MallPost {
     MallPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
-
 }

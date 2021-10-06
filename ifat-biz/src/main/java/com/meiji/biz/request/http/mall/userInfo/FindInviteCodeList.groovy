@@ -1,12 +1,14 @@
 package com.meiji.biz.request.http.mall.userInfo
 
 import com.meiji.biz.request.http.mall.MallPost
+import com.meiji.biz.request.http.shop.ShopPost
 import com.miyuan.ifat.support.test.TestContext
 
-class FindInviteCodeNum extends MallPost {
+class FindInviteCodeList extends MallPost {
     {
-        super.api = "inviteCode/findInviteCodeNum"
-        super.params =  ["id"]
+        super.api = "/inviteCode/findInviteCodeList"
+        super.params =  [ "shopId","page","rows","state"]
+//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
     MallPost invoke(TestContext testContext) {
@@ -21,5 +23,8 @@ class FindInviteCodeNum extends MallPost {
 
     MallPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+    }
+
+    MallPost specialAssert(TestContext testContext){
     }
 }

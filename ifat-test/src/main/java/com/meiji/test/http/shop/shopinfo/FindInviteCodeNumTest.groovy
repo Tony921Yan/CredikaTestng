@@ -1,6 +1,5 @@
 package com.meiji.test.http.shop.shopinfo
 
-import com.meiji.biz.request.http.shop.shopinfo.FinShopInviteCodeCostInfo
 import com.meiji.biz.request.http.shop.shopinfo.FindInviteCodeNum
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

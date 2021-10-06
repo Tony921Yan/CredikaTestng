@@ -1,8 +1,52 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
+    <test name = "mall-pageOrder-all">
+        <parm key="limit" value ="10"/>
+        <parm key="status" value ="0"/>
+        <parm key="page" value ="1"/>
+        <parm key="searchType" value ="0"/>
+    </test>
+
     <test name = "mall-pageOrder">
         <parm key="limit" value ="10"/>
         <parm key="orderStatus" value ="0"/>
         <parm key="page" value ="1"/>
+        <parm key="searchType" value ="0"/>
+    </test>
+
+    <test name = "mall-pageOrder-daifukuan">
+        <parm key="limit" value ="10"/>
+        <parm key="status" value ="1"/>
+        <parm key="page" value ="1"/>
+        <parm key="searchType" value ="0"/>
+    </test>
+
+    <test name = "mall-pageOrder-daifahuo">
+        <parm key="limit" value ="10"/>
+        <parm key="status" value ="2"/>
+        <parm key="page" value ="1"/>
+        <parm key="searchType" value ="0"/>
+    </test>
+
+    <test name = "mall-pageOrder-daishouhuo">
+        <parm key="limit" value ="10"/>
+        <parm key="status" value ="3"/>
+        <parm key="page" value ="1"/>
+        <parm key="searchType" value ="0"/>
+    </test>
+
+    <test name = "mall-pageOrder-yiwancheng">
+        <parm key="limit" value ="10"/>
+        <parm key="status" value ="5"/>
+        <parm key="page" value ="1"/>
+        <parm key="searchType" value ="0"/>
+    </test>
+
+    <test name = "mall-pageOrder-search">
+        <parm key="limit" value ="10"/>
+        <parm key="status" value ="0"/>
+        <parm key="page" value ="1"/>
+        <parm key="searchType" value ="0"/>
+        <parm key="queryStr" value="O2021081112020176275"/>
     </test>
 </data>

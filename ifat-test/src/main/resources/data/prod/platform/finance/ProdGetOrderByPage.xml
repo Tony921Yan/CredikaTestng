@@ -3,6 +3,6 @@
     <test name = "prodGetOrderByPage">
         <parm key="condition" value ='{}'/>
         <parm key="page" value ="1"/>
-        <parm key="rows" value ="2"/>
+        <parm key="rows" value ="20"/>
     </test>
 </data>

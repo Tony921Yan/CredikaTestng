@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetSupplierByPage extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/getSupplierByPage"
+        super.api="SupplierManage/getSupplierByPage"
         super.params = ["condition","order","page","rows","sort"]
     }
 
@@ -24,4 +24,8 @@ class GetSupplierByPage extends PlatformPost{
         super.baseAssert(testContext)
     }
 
+    PlatformPost specialAssert(TestContext testContext){
+        Map apiResult = testContext.getResponse().data
+        assert apiResult.total > 20
+    }
 }

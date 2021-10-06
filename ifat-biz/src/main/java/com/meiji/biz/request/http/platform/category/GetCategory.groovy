@@ -5,10 +5,10 @@ import com.miyuan.ifat.support.test.TestContext
 
 import com.meiji.biz.service.MysqlService
 
-class GetCategoryByName extends PlatformPost{
+class GetCategory extends PlatformPost{
     {
-        super.api = "/platform/categoryMgr/getCategoryByName"
-        super.params = ["name","type"]
+        super.api = "CategoryManagement/queryTree"
+        super.params = []
     }
 
     PlatformPost invoke(TestContext testContext) {

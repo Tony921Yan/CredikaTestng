@@ -1,26 +1,25 @@
 package com.meiji.biz.request.http.shop.order
 
-import com.meiji.biz.request.http.shop.ShopPost
+import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
 
-class FlowTotalData extends ShopPost {
+class FlowTotalData extends MallPost {
     {
         super.api = "pay/flowTotalData"
         super.params =  ["month","shopId","tradeType","year"]
-//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    ShopPost invoke(TestContext testContext) {
+    MallPost invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    ShopPost preInvoke(TestContext testContext){
+    MallPost preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    ShopPost baseAssert(TestContext testContext){
+    MallPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 

@@ -6,8 +6,8 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetLabel extends PlatformPost{
     {
-        super.api="/platform/goodsLabel/getLabel"
-        super.params = ["ids"]
+        super.api="goodsLabelList/queryPage"
+        super.params = ["pageNum","pageSize","labelName","id"]
     }
 
     PlatformPost invoke(TestContext testContext) {
@@ -24,4 +24,8 @@ class GetLabel extends PlatformPost{
         super.baseAssert(testContext)
     }
 
+    PlatformPost specialAssert(TestContext testContext){
+        Map apiResult = testContext.getResponse().data
+        assert apiResult.total > 20
+    }
 }

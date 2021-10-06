@@ -30,9 +30,7 @@ class PageOrder extends MallPost {
 
     MallPost specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.pageOrder(testContext.get("shopId")).get(0)
-        System.out.println(mysqlResult)
         Map apiResult = testContext.getResponse().data
-        System.out.println(apiResult)
         assert mysqlResult.id == apiResult.orderList[0].getAt("id")
         assert mysqlResult.order_code == apiResult.orderList[0].getAt("orderCode")
         assert mysqlResult.shop_id == apiResult.orderList[0].getAt("shopId")

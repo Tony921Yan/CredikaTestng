@@ -9,9 +9,9 @@ import org.testng.annotations.Test
 
 class GetSupplierByPageTest extends BaseTest {
     GetSupplierByPage getSupplierByPage = new GetSupplierByPage()
-    @Test(description = "获取供应商列表 getSupplierByPage" ,groups = ["prod","uat"],testName = "getSupplierByPage",
+    @Test(description = "获取供应商列表 prodGetSupplierByPage" ,groups = ["prod","uat"],testName = "prodGetSupplierByPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getSupplierByPage(TestContext testContext){
-        getSupplierByPage.invoke(testContext).baseAssert(testContext)
+        getSupplierByPage.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

@@ -8,7 +8,30 @@
             <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
             <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
             <class name="com.meiji.test.http.platform.order.ProdGetOrderByPageTest"/>
-
+            <class name="com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.GetGroupGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryBrandsByPageTest"/>
+            <class name="com.meiji.test.http.platform.category.GetCategoryTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
+            <class name="com.meiji.test.http.platform.other.GetListMaterialsTest"/>
+            <class name="com.meiji.test.http.platform.other.SearchCategoryTest"/>
+            <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterByPageTest"/>
+            <class name="com.meiji.test.http.platform.supplier.GetSupplierByPageTest"/>
+            <class name="com.meiji.test.http.platform.other.InvitationListTest"/>
+            <class name="com.meiji.test.http.platform.other.InvitationCodeListTest"/>
+            <class name="com.meiji.test.http.platform.other.MerchantManageTest"/>
+            <class name="com.meiji.test.http.platform.other.ShopManageTest"/>
+            <class name="com.meiji.test.http.platform.other.GiftCardManageTest"/>
+            <class name="com.meiji.test.http.platform.other.GoodsSubjectTest"/>
+            <class name="com.meiji.test.http.platform.other.SelectionCategoryTest"/>
+            <class name="com.meiji.test.http.platform.other.ActiveManageTest"/>
+            <class name="com.meiji.test.http.platform.other.StockManageTest"/>
+            <class name="com.meiji.test.http.platform.other.GoodsDetailManageTest"/>
+            <class name="com.meiji.test.http.platform.other.StoreWhiteTest"/>
+            <class name="com.meiji.test.http.platform.other.SystemConfigMgrTest"/>
+            <class name="com.meiji.test.http.platform.other.CustomerServiceManageTest"/>
         </classes>
     </test>
 </suite>

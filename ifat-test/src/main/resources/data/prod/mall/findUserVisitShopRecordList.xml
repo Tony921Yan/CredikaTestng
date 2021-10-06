@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "findUserVisitShopRecordList">
-        <parm key="id" value ="1"/>  <!--开发未完成-->
+    <test name = "findUserVisitShopRecordList-mall">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
     </test>
 </data>

@@ -1,7 +1,6 @@
 package com.meiji.test.http.shop.shopinfo
 
 import com.meiji.biz.request.http.shop.shopinfo.CustomerList
-import com.meiji.biz.request.http.shop.shopinfo.HomePage
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

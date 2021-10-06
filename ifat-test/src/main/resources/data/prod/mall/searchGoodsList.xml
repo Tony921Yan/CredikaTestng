@@ -7,9 +7,43 @@
         <parm key="comprehensiveSort" value ="desc"/>
         <parm key="page" value ="1"/>
         <parm key="priceSort" value =""/>
-        <parm key="publishTimeSort" value =""/>
         <parm key="rows" value ="10"/>
         <parm key="salesSort" value =""/>
         <parm key="searchText" value =""/>
+    </test>
+
+    <test name = "searchGoodsList-new">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="categoryIdList" value =""/>
+        <parm key="publishTimeSort" value ="desc"/>
+        <parm key="page" value ="1"/>
+        <parm key="priceSort" value =""/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "searchGoodsList-price">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="categoryIdList" value =""/>
+        <parm key="priceSort" value ="desc"/>
+        <parm key="page" value ="1"/>
+        <parm key="priceSort" value =""/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "searchGoodsList-sales">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="categoryIdList" value ="[654]"/>
+        <parm key="salesSort" value ="desc"/>
+        <parm key="page" value ="1"/>
+        <parm key="priceSort" value =""/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "searchGoodsList-richanglingshi">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="categoryIdList" value =""/>
+        <parm key="comprehensiveSort" value ="desc"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
     </test>
 </data>

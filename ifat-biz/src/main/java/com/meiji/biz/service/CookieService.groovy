@@ -21,7 +21,7 @@ class CookieService {
       inviteUserId: number | null,
       jmUser: ChatAccount | null,
    */
-    static String getMallCookie(String url,Long userId) {
+    static String getMallCookie(String url,Long userId,Long dealerId) {
         String cookie = cacheCookie.get("mall:" + userId)
         if (cookie != null) {
             return cookie
@@ -29,11 +29,16 @@ class CookieService {
         StringBuilder stringBuilder = new StringBuilder()
         String token = TokenUtil.generateToken(userId)
         Map cookieParam = new HashMap()
-        Map cookieInfo = new HashMap()
-        cookieInfo.put("userId", userId)
-        cookieInfo.put("token", token)
+        Map userInfo = new HashMap()
+        userInfo.put("userId", userId)
+        userInfo.put("token", token)
+        userInfo.put("userType",2)
+        Map shopInfo = new HashMap()
+        shopInfo.put("dealerId",dealerId)
+        shopInfo.put("authState",40)
+        userInfo.put("shopInfo",shopInfo)
         cookieParam.put("secret", "+0ea81c0ea81557c9==")
-        cookieParam.put("info", cookieInfo)
+        cookieParam.put("info", userInfo)
         CloseableHttpResponse response = HttpUtil.postV2(url + "/login/__test__", [:], cookieParam)
         println("response:"+response)
         Header[] headers = response.getHeaders("Set-Cookie")

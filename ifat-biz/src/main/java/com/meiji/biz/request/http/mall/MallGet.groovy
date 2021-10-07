@@ -23,7 +23,8 @@ abstract class MallGet {
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
         Long userId = Long.valueOf(testContext.get("userId").toString())
-        heads.put("cookie", CookieService.getMallCookie(mallUrl,userId))
+        Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
+        heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
 
 //        if(TestEnv.getIsGray()=="true"){
 //            heads.put("isGrayRelease",true)

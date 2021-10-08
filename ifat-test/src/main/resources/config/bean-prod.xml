@@ -19,6 +19,12 @@
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 
+    <bean name="meiji_es">
+        <properties key="scheme" value="http"/>
+        <properties key="hostName" value="172.28.2.33,172.28.2.34,172.28.2.35"/>
+        <properties key="port" value="9200"/>
+    </bean>
+
     <bean name="meiji_shop">
         <properties  key="url" value ="jdbc:mysql://rm-wz947m2kgf1088as1.mysql.rds.aliyuncs.com/meiji_shop"/>
         <properties  key="user" value ="readonly"/>

@@ -5,8 +5,6 @@ import org.elasticsearch.action.search.SearchResponse
 import org.elasticsearch.index.query.QueryBuilders
 
 class EsService extends EsAPI{
-
-
     static List<Map> getItemByitemTitle(String itemTitle){
         SearchResponse searchResponse = transportClient.prepareSearch("item")
                 .setQuery(QueryBuilders.matchQuery("itemTitle",itemTitle))

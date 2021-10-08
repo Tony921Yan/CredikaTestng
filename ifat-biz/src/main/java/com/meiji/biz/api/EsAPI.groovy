@@ -6,4 +6,5 @@ import org.elasticsearch.client.RestHighLevelClient
 class EsAPI {
     @Lazy
     static RestHighLevelClient transportClient = FactorySupport.createHighLevelEs("es-miyuan")
+    static RestHighLevelClient prodGoodsClient = FactorySupport.createHighLevelEs("meiji_es")
 }

@@ -52,6 +52,9 @@
             <class name="com.meiji.test.http.mall.userInfo.ListGiftsToMeTest"/>
             <class name="com.meiji.test.http.mall.userInfo.GetGiftDetailToMeTest"/>
             <class name="com.meiji.test.http.mall.userInfo.FindShopCustomerGroupByShopIdTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FindInviteCodeNumTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FindInviteCodeListTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FinShopInviteCodeCostInfoTest"/>
         </classes>
     </test>
 </suite>

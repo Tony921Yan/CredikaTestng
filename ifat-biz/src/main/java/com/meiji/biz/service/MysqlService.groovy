@@ -2,6 +2,7 @@ package com.meiji.biz.service
 
 
 import com.meiji.biz.api.MysqlAPI
+import com.rabbitmq.client.AMQP
 
 import java.util.stream.Collectors
 
@@ -18,6 +19,19 @@ class MysqlService extends MysqlAPI {
     static List getCategoryByType(String type){
         return platformGoodsSql.rows("select * from goods_category where type = $type")
     }
+
+    static List prodElectronicContractdetail(String contractId){
+        return prod_meiji_supplier.rows("select * from contract where id = $contractId")
+    }
+
+    static List prodElectronicContractDownload(String contractId){
+        return prod_meiji_supplier.rows("select * from contract where id = $contractId")
+    }
+
+    static List prodQueryPage(String rows){
+        return prod_meiji_supplier.rows("select count(*) as contTotal from contract ")
+    }
+
 
     static List addCategory(String type,String sort){
         return platformGoodsSql.rows("select * from goods_category where type = $type and sort = $sort")

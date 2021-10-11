@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "prodUpdateShipperInfo">
+        <parm key="id" value ="523"/>
+        <parm key="supplierId" value ="319"/>
+        <parm key="shipperAddress" value ="广东省深圳市南山区"/>
+        <parm key="shipperAddressDetail" value ="华润置地E座"/>
+        <parm key="shipperName" value ="闫亮"/>
+        <parm key="shipperPhone" value ="15220252340"/>
+        <parm key="supplierCode" value ="sup12202108068952"/>
+        <parm key="isDefault" value ="1"/>
+        <parm key="supplierName" value ="广州伊尔科技有限公司"/>
+    </test>
+</data>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "electronicContractUpdate">
+        <parm key="id" value ="116"/>
+        <parm key="contractName" value ="退77"/>
+        <parm key="contractNo" value ="T7412"/>
+        <parm key="businessManager" value ="TONY"/>
+        <parm key="supplierId" value ="460"/>
+        <parm key="supplierName" value ="广州6666伊尔科技有限公司"/>
+        <parm key="supplierContacts" value ="石梦秋"/>
+        <parm key="supplierMobile" value ="15220252377"/>
+        <parm key="mainCategories" value ="73,113,64"/>
+        <parm key="renewCustomer" value ="false"/>
+        <parm key="deposit" value ="0"/>
+        <parm key="signDate" value ="2021-10-11T07:27:47.795Z"/>
+        <parm key="effectiveDate" value ="2021-10-11"/>
+        <parm key="expiringDate" value ="2021-10-12"/>
+        <parm key="contractUrl" value ="https://static.meiji8888.com/mj-ecmiddle-sys/contract/contract.pdf"/>
+        <parm key="remark" value ="null"/>
+        <parm key="contractStatus" value ="1"/>
+    </test>
+</data>

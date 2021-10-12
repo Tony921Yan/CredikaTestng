@@ -30,4 +30,16 @@ class EsService extends EsAPI{
         }
         return list
     }
+
+    static List<Map> FindShopGoodsDetailByES(String spuId){
+        SearchResponse searchResponse = prodGoodsClient.prepareSearch("spu/_search")
+                .setQuery(QueryBuilders.matchQuery("spuId",spuId))
+                .setFrom(0).setSize(10).setExplain(true)
+                .execute()
+                .actionGet()
+        List list = new ArrayList()
+        searchResponse.hits.forEach{x->
+            list.add(x.getSource())
+        }
+    }
 }

@@ -115,8 +115,4 @@ class MysqlService extends MysqlAPI {
     static Map getSettlementOrderStatusByOrderNo(String orderNo){
         return prod_meiji_settlement.firstRow("SELECT trade_order_no, trade_parent_order_no,state,gmt_create from settlement_order where trade_order_no = $orderNo ")
     }
-
-    static List getSettlementOrderStatus(){
-        return prod_meiji_settlement.rows("SELECT trade_order_no, trade_parent_order_no,state,gmt_create from settlement_order where gmt_create > DATE_SUB(NOW(),INTERVAL 1 DAY)")
-    }
 }

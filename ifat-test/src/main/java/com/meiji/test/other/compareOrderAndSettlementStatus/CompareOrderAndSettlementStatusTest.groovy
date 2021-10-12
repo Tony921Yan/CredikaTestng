@@ -7,7 +7,7 @@ import com.miyuan.ifat.support.vo.Record
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
 
-class OrderStatusDemo  extends BaseTest  {
+class CompareOrderAndSettlementStatusTest extends BaseTest {
 
     @Test(dataProvider = "orders")
     void orderTest(TestContext testContext){

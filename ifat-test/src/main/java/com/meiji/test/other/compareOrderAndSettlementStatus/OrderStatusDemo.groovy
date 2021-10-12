@@ -1,12 +1,13 @@
 package com.meiji.test.other.compareOrderAndSettlementStatus
 
 import com.meiji.biz.service.MysqlService
+import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.vo.Record
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
 
-class OrderStatusDemo {
+class OrderStatusDemo  extends BaseTest  {
 
     @Test(dataProvider = "orders")
     void orderTest(TestContext testContext){

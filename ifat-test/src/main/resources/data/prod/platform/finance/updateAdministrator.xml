@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateAdministrator">
+        <parm key="id" value ="460"/>
+        <parm key="contactType" value ="65"/>
+        <parm key="contactName" value ="林冬"/>
+        <parm key="mobilePhone" value ="13951005799"/>
+        <parm key="contactIdCardNumber" value ="320107198512282613"/>
+        <parm key="contactEmail" value ="307396689@qq.com"/>
+    </test>
+</data>

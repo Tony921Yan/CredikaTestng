@@ -1,12 +1,12 @@
-package com.meiji.biz.request.http.platform.suppiler
+package com.meiji.biz.request.http.platform.other
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class UpdateAdministrator extends PlatformPost{
+class AddInviteCodeApply extends PlatformPost {
     {
-        super.api="/SupplierManage/updateAdministrator"
-        super.params = ["id","contactType","contactName","mobilePhone","contactIdCardNumber","contactEmail"]
+        super.api = "/invitationList/addInviteCodeApply"
+        super.params =  [ "shopId","num"]
     }
 
     PlatformPost invoke(TestContext testContext) {

@@ -4,10 +4,10 @@ import com.meiji.biz.request.http.platform.PlatformPost
 import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
-class ProdElectronicContractDownload extends PlatformPost {
+class InvitationListQueryPage extends PlatformPost {
     {
-        super.api = "/ElectronicContract/download"
-        super.params =  ["contractId"]
+        super.api = "/invitationList/queryPage"
+        super.params =  [ "pageNum","pageSize","applicant","validDate"]
     }
 
     PlatformPost invoke(TestContext testContext) {
@@ -25,9 +25,8 @@ class ProdElectronicContractDownload extends PlatformPost {
     }
 
     PlatformPost specialAssert(TestContext testContext){
-        Map mysqlDate = MysqlService.prodElectronicContractDownload(testContext.get("contractId")).get(0)
-        Map apiData = testContext.getResponse()
-        System.out.print("apiData:" + apiData)
-        System.out.println("mysqlDate"+ mysqlDate)
+        Map apiDate = testContext.getResponse().date
+        System.out.print("apiDate:" + apiDate)
+        assert apiDate.total > 20
     }
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addInviteCodeApply">
+        <parm key="shopId" value ="1435116689686560"/>
+        <parm key="num" value ="5"/>
+
+    </test>
+</data>

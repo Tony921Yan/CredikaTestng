@@ -32,8 +32,8 @@ class MysqlService extends MysqlAPI {
         return prod_meiji_supplier.rows("select count(*) as contTotal from contract ")
     }
 
-    static List invitationCodeListQueryPage (String pageSize){
-        return prod_meiji_shop.rows("select *  from invite_code  order by id desc limit 20")
+    static Map invitationCodeListQueryPage(){
+        return prod_meiji_shop.rows("select *  from invite_code  order by id desc limit 20").get(2)
     }
 
     static List addCategory(String type,String sort){

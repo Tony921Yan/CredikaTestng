@@ -2,7 +2,7 @@
 <data>
     <test name = "invitationCodeListQueryPage">
         <parm key="pageNum" value ="1"/>
-        <parm key="pageSize" value ="1"/>
+        <parm key="pageSize" value ="20"/>
         <parm key="code" value =""/>
         <parm key="validDate" value ="[]"/>
         <parm key="usedShopDealerPhone" value =""/>

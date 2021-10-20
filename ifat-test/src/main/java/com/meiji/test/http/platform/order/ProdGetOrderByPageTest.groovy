@@ -12,6 +12,9 @@ class ProdGetOrderByPageTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void prodGetOrderByPage(TestContext testContext){
         prodGetOrderByPage.invoke(testContext).baseAssert(testContext)
+        List<Map> getorder1 = testContext.getResponse().getAt("data").getAt("dataList")
+        System.out.println("testing:" + getorder1);
         prodGetOrderByPage.specialAssert(testContext)
     }
+
 }

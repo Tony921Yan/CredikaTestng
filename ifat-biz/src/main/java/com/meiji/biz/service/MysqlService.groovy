@@ -118,4 +118,12 @@ class MysqlService extends MysqlAPI {
     static Map getSettlementOrderStatusByOrderNo(String orderNo){
         return prod_meiji_settlement.firstRow("SELECT trade_order_no, trade_parent_order_no,state,gmt_create from settlement_order where trade_order_no = $orderNo ")
     }
+
+    static  Map getGoods_brand(){
+        return platformGoodsSql.firstRow("SELECT * from goods_brand ORDER BY gmt_create DESC LIMIT 20")
+    }
+
+    static Map getOrderByPage(){
+        return prod_meiji_order.rows("SELECT * from order_info ORDER BY gmt_create DESC limit 20")
+    }
 }

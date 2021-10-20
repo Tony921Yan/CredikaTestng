@@ -40,7 +40,6 @@ class CookieService {
         cookieParam.put("secret", "+0ea81c0ea81557c9==")
         cookieParam.put("info", userInfo)
         CloseableHttpResponse response = HttpUtil.postV2(url + "/login/__test__", [:], cookieParam)
-        println("response:"+response)
         Header[] headers = response.getHeaders("Set-Cookie")
         for (Header header : headers) {
             stringBuilder.append(header.elements.head().toString().split(";")[0])

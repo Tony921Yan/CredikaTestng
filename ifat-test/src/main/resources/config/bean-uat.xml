@@ -4,7 +4,7 @@
 <!--        <properties  key="url" value ="https://dev.platform.meiji8888.com"/>-->
 <!--        <properties  key="url" value ="https://dev.gateway.meiji8888.com"/> &lt;!&ndash; 小程序端：mall是c端, shop是b端&ndash;&gt;-->
 
-        <properties  key="url1" value ="https://test.meiji8888.com"/>
+        <properties  key="url1" value ="https://test.meiji8888.com"/>  <!--纯接口测试-->
 <!--        <properties  key="url" value ="http://test.supplier.meiji8888.com"/> &lt;!&ndash;供应商OMS&ndash;&gt;-->
 <!--        <properties  key="url" value ="https://dev.platform.meiji8888.com"/>-->
         <properties  key="url" value ="https://test.platform.meiji8888.com"/>

@@ -1,6 +1,5 @@
-package com.meiji.biz.request.http.platform
+package com.meiji.biz.request.http.testInterface.cps
 
-import com.meiji.biz.service.CookieService
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
@@ -9,22 +8,19 @@ import com.miyuan.ifat.support.vo.Record
 
 import java.lang.reflect.Method
 
-abstract class PlatformPost {
+abstract class TestInterfacePost {
     public String api
     public List params
     public String preInvoke
 
-    PlatformPost invoke(TestContext testContext){
-        String url  = ResourceUtil.getBeanData("http").get("platform")
-        String username = testContext.get("username")
-        String password = testContext.get("password")
-        String cookie = CookieService.getPlatformCookie(url,username,password)
+    TestInterfacePost invoke(TestContext testContext){
+        String url  = ResourceUtil.getBeanData("http").get("url1")
         url = url +api
         Map heads = new HashMap()
         heads.put("timestamp",testContext.get("timestamp"))
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
-        heads.put("Cookie", cookie)
+        heads.put("Cookie", null)
 
         Map req = new HashMap()
         for(String str:params){
@@ -41,7 +37,7 @@ abstract class PlatformPost {
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    TestInterfacePost preInvoke(TestContext testContext){
         if(preInvoke!=null){
             Class clazz = Class.forName(preInvoke)
             Method method1 = clazz.getMethod("invoke", TestContext.class)
@@ -52,16 +48,16 @@ abstract class PlatformPost {
         return this
     }
 
-    PlatformPost afterInvoke(TestContext testContext){
+    TestInterfacePost afterInvoke(TestContext testContext){
 
     }
 
-    PlatformPost baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == 0
+    TestInterfacePost baseAssert(TestContext testContext){
+        assert testContext.getResponse().code == "200"
         return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    TestInterfacePost specialAssert(TestContext testContext){
     }
 
 }

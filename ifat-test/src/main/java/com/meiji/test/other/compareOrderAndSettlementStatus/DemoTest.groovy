@@ -2,13 +2,18 @@ package com.meiji.test.other.compareOrderAndSettlementStatus
 
 import com.meiji.biz.request.http.platform.order.ProdGetOrderByPage
 import com.meiji.biz.service.MysqlService
+import com.meiji.test.http.platform.order.ProdGetOrderByPageTest
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestData
 import com.miyuan.ifat.support.vo.Record
+import org.apache.tomcat.jni.User
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
 
-class CompareOrderAndSettlementStatusTest extends BaseTest {
+import java.lang.reflect.Field
+
+class DemoTest extends BaseTest {
 
     @Test(dataProvider = "orders")
     void orderTest(TestContext testContext){
@@ -22,12 +27,18 @@ class CompareOrderAndSettlementStatusTest extends BaseTest {
         assert orderStatus == settlementStatus,"订单号"+orderNo
 
     }
-    @DataProvider
+
+    @DataProvider()
     TestContext[] orders(){
-        List<Map> getOrderInfo = MysqlService.getOrderInfoStatus();
+        Class test = Class.forName("com.meiji.test.http.platform.order.ProdGetOrderByPageTest")
+        User user = (User)test.newInstance()
+        user.setMetaClass()
+        Field field = test.getField("getorder1")
+        System.out.println("test:"+test)
+        System.out.println(field.get("getorder1"))
         List list = new ArrayList();
-        for (Map map:getOrderInfo){
-            TestContext testContext = new TestContext();
+        for (Map map:getorder){
+            TestContext testContext = new TestContext()
             testContext.put("order_code",map.get("order_code").toString());
             testContext.put("order_status",map.get("order_status").toString())
             testContext.put("description",map.get("order_code").toString())

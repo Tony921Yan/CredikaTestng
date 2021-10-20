@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "findShopGoodsDetail">
+    <test name = "findShopGoodsDetail-prod">
 <!--        <parm key="shopId" value ="1405981112139808"/>-->
         <parm key="shopId" value ="1111111111111111111"/>
-        <parm key="spuId" value ="1422437862342688"/>
+        <parm key="spuId" value ="1410324940980257"/>
         <parm key="categoryIdList" value =""/>
         <parm key="keyword" value =""/>
         <parm key="state" value ="0"/>

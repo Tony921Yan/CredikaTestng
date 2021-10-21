@@ -12,6 +12,6 @@ class InvitationCodeListQueryPageTest extends BaseTest {
     @Test(description = "邀请码明细列表查询 invitationCodeListQueryPage" ,groups = ["prod","uat"],testName = "invitationCodeListQueryPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void invitationCodeListQueryPage(TestContext testContext){
-        invitationCodeListQueryPage.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        invitationCodeListQueryPage.invoke(testContext).specialAssert(testContext)
     }
 }

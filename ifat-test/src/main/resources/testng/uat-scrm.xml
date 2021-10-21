@@ -29,7 +29,7 @@
 <!--            <class name="com.meiji.test.http.scrm.employee.AddEmployeeTest"></class>-->
 <!--            <class name="com.meiji.test.http.scrm.employee.DelEmployeeTest"></class>-->
             <class name="com.meiji.test.http.scrm.employee.EmpGrantShopTest"></class>
-            <class name="com.meiji.test.http.scrm.employee.EmployeeConfigTest"></class>
+<!--            <class name="com.meiji.test.http.scrm.employee.EmployeeConfigTest"></class>-->
             <class name="com.meiji.test.http.scrm.employee.EmployeeDepartmentListTest"></class>
             <class name="com.meiji.test.http.scrm.employee.EmployeeListTest"></class>
             <class name="com.meiji.test.http.scrm.employee.GetEmpByShopIdTest"></class>

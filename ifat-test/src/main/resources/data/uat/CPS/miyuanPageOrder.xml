@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "prodmiyuanPageOrder1">
+        <parm key="startTime" value="2021-10-21 14:30:00" />
+        <parm key="endTime" value ="2021-10-21 15:00:00"/>
+        <parm key="queryType" value ="1"/>
+    </test>
+    <test name = "prodmiyuanPageOrder2">
+        <parm key="startTime" value="2021-10-21 14:30:00" />
+        <parm key="endTime" value ="2021-10-21 15:00:00"/>
+        <parm key="queryType" value ="3"/>
+    </test>
+</data>

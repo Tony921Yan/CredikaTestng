@@ -15,7 +15,7 @@
             <class name="com.meiji.test.http.mall.shopGoods.FindShopModuleListTest"/>
             <class name="com.meiji.test.http.mall.userAddress.FindUserAddressListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.FindUserInfoTest"/>
-<!--            <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>-->
+<!--            <class name="com.meiji.test.http.mall.userShop.FindUserVis0c7aitShopRecordListTest"/>-->
             <!--            <class name="com.meiji.test.http.mall.orderAfterSale.GetOrderAfterSaleTest"/>-->
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderInfoTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoTest"/>

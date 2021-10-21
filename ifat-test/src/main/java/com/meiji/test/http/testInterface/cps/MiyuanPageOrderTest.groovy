@@ -8,14 +8,16 @@ import org.testng.annotations.Test
 
 class MiyuanPageOrderTest extends BaseTest {
     MiyuanPageOrder miyuanPageOrder = new MiyuanPageOrder()
-    @Test(description = "订单列表查询 miyuanPageOrder" ,groups = ["prod","uat"],testName = "miyuanPageOrder",
+    @Test(description = "订单列表查询-订单更新时间查询 miyuanPageOrder" ,groups = ["prod","uat"],testName = "prodmiyuanPageOrder1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
-    public void miyuanPageOrder(TestContext testContext){
-        testContext.put("page",1)
-        testContext.put("pageSize",100)
-        testContext.put("queryType",0)
-        testContext.put("endTime","2021-10-13 19:31:14")
-        testContext.put("startTime","2021-10-15 19:31:14")
+    public void miyuanPageOrder1(TestContext testContext){
         miyuanPageOrder.invoke(testContext).baseAssert(testContext)
     }
+    @Test(description = "订单列表查询-订单创建时间查询 miyuanPageOrder" ,groups = ["prod","uat"],testName = "prodmiyuanPageOrder2",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void miyuanPageOrder2(TestContext testContext){
+        miyuanPageOrder.invoke(testContext).baseAssert(testContext)
+    }
+
 }
+

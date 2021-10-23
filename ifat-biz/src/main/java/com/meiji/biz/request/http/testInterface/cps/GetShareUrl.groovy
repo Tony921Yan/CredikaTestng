@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.thirdparty.cps
+package com.meiji.biz.request.http.testInterface.cps
 
 
 import com.miyuan.ifat.support.test.TestContext

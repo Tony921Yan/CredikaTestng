@@ -1,6 +1,6 @@
-package com.meiji.biz.request.http.thirdparty.cps
+package com.meiji.biz.request.http.testInterface.cps
 
-import com.alibaba.nacos.client.naming.utils.SignUtil
+
 import com.meiji.biz.util.CpsSign
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.util.HttpUtil
@@ -64,7 +64,7 @@ abstract class CpsPost {
     }
 
     CpsPost baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == 0
+        assert testContext.getResponse().code == "0"
         return this
     }
 

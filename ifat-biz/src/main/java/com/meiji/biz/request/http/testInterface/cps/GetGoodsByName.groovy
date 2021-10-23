@@ -3,23 +3,23 @@ package com.meiji.biz.request.http.testInterface.cps
 
 import com.miyuan.ifat.support.test.TestContext
 
-class GetGoodsByName extends TestInterfacePost {
+class GetGoodsByName extends CpsPost {
     {
         super.api = "/thirdparty/api/cps/getGoodsByName"
         super.params =  ["commissionMoneySort","comprehensiveSort","page","priceSort","rows","salesSort","searchText"]
     }
 
-    TestInterfacePost invoke(TestContext testContext) {
+    CpsPost invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    TestInterfacePost preInvoke(TestContext testContext){
+    CpsPost preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    TestInterfacePost baseAssert(TestContext testContext){
+    CpsPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 

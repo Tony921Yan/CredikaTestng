@@ -6,6 +6,7 @@ import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
 import com.miyuan.ifat.support.vo.Record
+import org.apache.commons.lang3.ObjectUtils
 
 import java.lang.reflect.Method
 
@@ -28,9 +29,9 @@ abstract class PlatformPost {
 
         Map req = new HashMap()
         for(String str:params){
-            //if(ObjectUtils.isNotEmpty(testContext.get(str))){
-                req.put(str,JsonUtil.objectParse(testContext.get(str)))
-           // }
+//            if(ObjectUtils.isNotEmpty(testContext.get(str))){
+                req.put(str, JsonUtil.objectParse(testContext.get(str)))
+//            }
         }
         testContext.appendLog(new Record("接口地址",url))
         testContext.appendLog(new Record("请求头",heads))

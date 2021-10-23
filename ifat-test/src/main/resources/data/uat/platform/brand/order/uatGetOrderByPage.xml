@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "uatGetOrderByPage">
+        <parm key="condition" value ="{}"/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name="uatGetOrderByPage-SearchFromMiyuanApp">
+        <parm key="condition" value='{"sourceType":1}'/>
+        <parm key="order" value=""/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+        <parm key="sort" value=""/>
+    </test>
+
+    <test name="uatGetOrderByPage-SearchFromMiyuanWeiXin">
+        <parm key="condition" value='{"sourceType":2}'/>
+        <parm key="order" value=""/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+        <parm key="sort" value=""/>
+    </test>
+</data>

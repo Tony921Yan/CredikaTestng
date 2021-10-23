@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetOrderByPage extends PlatformPost {
     {
-        super.api = "/platform/orderMgr/getOrderByPage"
+        super.api = "OrderDetailManage/getOrderByPage"
         super.params =  [ "condition","order","page","rows","sort"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

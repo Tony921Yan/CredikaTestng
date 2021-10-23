@@ -7,7 +7,7 @@ import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
-class GetShortUrlTest extends BaseTest {
+class GetShareUrlTest extends BaseTest {
     GetShortUrl getShortUrl = new GetShortUrl()
     @Test(description = "长链转短链 getShortUrl" ,groups = ["prod","uat"],testName = "getShortUrl",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

@@ -1,7 +1,7 @@
-package com.meiji.biz.request.http.thirdparty.kj
+package com.meiji.biz.request.http.thirdparty.cps
 
-
-import com.meiji.biz.service.CookieService
+import com.alibaba.nacos.client.naming.utils.SignUtil
+import com.meiji.biz.util.CpsSign
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
@@ -11,33 +11,34 @@ import org.apache.commons.lang3.ObjectUtils
 
 import java.lang.reflect.Method
 
-abstract class KJPost {
+abstract class CpsPost {
     public String api
     public List params
     public String preInvoke
+    private String appKey = "cps_mykey666"
 
-    KJPost invoke(TestContext testContext){
+    CpsPost invoke(TestContext testContext){
         String shopUrl = ResourceUtil.getBeanData("http").get("thirdparty")
         String url  = shopUrl+api
         Map heads = new HashMap()
-        heads.put("timestamp",testContext.get("timestamp"))
-        heads.put("nonce",testContext.get("nonce"))
+        String timestamp = System.currentTimeMillis()
         heads.put("Content-Type",testContext.get("Content-Type"))
+        heads.put("timestamp",timestamp)
+        heads.put("appKey","cps_mykey666")
         Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
-        heads.put("cookie",CookieService.getShopCookie(shopUrl,dealerId))
-//        String aesKey = MD5Utils.MD5Encode("11", "utf-8")
-//        String tokenAes = AESOperator.encrypt(testContext.get("token").toString(), aesKey)
-//        heads.put("token",tokenAes)
-
-//        if(TestEnv.getIsGray()=="true"){
-//            heads.put("isGrayRelease",true)
-//        }
-        Map req = new HashMap()
+        //heads.put("cookie",CookieService.getShopCookie(shopUrl,dealerId))
+        TreeMap req = new TreeMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){
                 req.put(str,JsonUtil.objectParse(testContext.get(str)))
             }
         }
+        req.put("timestamp",timestamp)
+        req.put("appKey","cps_mykey666")
+        String sign = CpsSign.sign(req)
+        heads.put("sign",sign)
+        req.remove("timestamp")
+        req.remove("appKey")
         testContext.appendLog(new Record("接口地址",url))
         testContext.appendLog(new Record("请求头",heads))
         testContext.appendLog(new Record("请求参数",req))
@@ -47,7 +48,7 @@ abstract class KJPost {
         return this
     }
 
-    KJPost preInvoke(TestContext testContext){
+    CpsPost preInvoke(TestContext testContext){
         if(preInvoke!=null){
             Class clazz = Class.forName(preInvoke)
             Method method1 = clazz.getMethod("invoke", TestContext.class)
@@ -58,16 +59,16 @@ abstract class KJPost {
         return this
     }
 
-    KJPost afterInvoke(TestContext testContext){
+    CpsPost afterInvoke(TestContext testContext){
 
     }
 
-    KJPost baseAssert(TestContext testContext){
+    CpsPost baseAssert(TestContext testContext){
         assert testContext.getResponse().code == 0
         return this
     }
 
-    KJPost specialAssert(TestContext testContext){
+    CpsPost specialAssert(TestContext testContext){
     }
 
 }

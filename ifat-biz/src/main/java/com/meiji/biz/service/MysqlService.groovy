@@ -126,4 +126,8 @@ class MysqlService extends MysqlAPI {
     static Map getOrderByPage(){
         return prod_meiji_order.rows("SELECT * from order_info ORDER BY gmt_create DESC limit 20")
     }
+
+    static Map batchUpdateConfig(){
+        return platformGoodsSql.firstRow("SELECT * from meiji_system.config_log where `key` like 'lockingPeriod' ORDER BY update_time desc;")
+    }
 }

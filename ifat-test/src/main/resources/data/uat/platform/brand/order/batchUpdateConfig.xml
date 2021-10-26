@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "batchUpdateConfig">
+        <parm key="configs" value ='[{"key":"inviteCodeCost","value":"1000"},
+        {"key":"inviteCodeExpireDays","value":"3"},{"key":"inviteCodeInitNum","value":"7"},
+        {"key":"isShowMaterial","value":"0"},{"key":"openShopSwitch","value":"1"},
+        {"key":"lockingPeriod","value":"{days\":1,\"hours\":5}"}]'/>
+    </test>
+</data>

@@ -38,6 +38,7 @@ abstract class PlatformPost {
         testContext.appendLog(new Record("请求参数",req))
         String res = HttpUtil.post(url,heads, req)
         testContext.setResponse(res)
+        testContext.setRequest(req)
         testContext.appendLog(new Record("返回结果",res))
         return this
     }

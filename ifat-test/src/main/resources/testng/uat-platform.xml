@@ -1,8 +1,43 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name = "user"  verbose="4">
-    <test name="获取商品列表 getGoodsByPage">
+    <test name="美记中台测试环境自动化脚本">
+        <groups>
+            <run>
+                <include name="uat"/>
+            </run>
+        </groups>
         <classes>
-            <class name = "com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
+            <class name = "com.meiji.test.http.platform.other.BatchUpdateConfigTest"/>
+            <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
+            <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>
+            <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
+            <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.order.ProdGetOrderByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.GetGroupGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryBrandsByPageTest"/>
+            <class name="com.meiji.test.http.platform.category.GetCategoryTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
+            <class name="com.meiji.test.http.platform.other.GetListMaterialsTest"/>
+            <class name="com.meiji.test.http.platform.other.SearchCategoryTest"/>
+            <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterByPageTest"/>
+            <class name="com.meiji.test.http.platform.supplier.GetSupplierByPageTest"/>
+            <class name="com.meiji.test.http.platform.other.InvitationListTest"/>
+            <class name="com.meiji.test.http.platform.other.InvitationCodeListTest"/>
+            <class name="com.meiji.test.http.platform.other.MerchantManageTest"/>
+            <class name="com.meiji.test.http.platform.other.ShopManageTest"/>
+            <class name="com.meiji.test.http.platform.other.GiftCardManageTest"/>
+            <class name="com.meiji.test.http.platform.other.GoodsSubjectTest"/>
+            <class name="com.meiji.test.http.platform.other.SelectionCategoryTest"/>
+            <class name="com.meiji.test.http.platform.other.ActiveManageTest"/>
+            <class name="com.meiji.test.http.platform.other.StockManageTest"/>
+            <class name="com.meiji.test.http.platform.other.GoodsDetailManageTest"/>
+            <class name="com.meiji.test.http.platform.other.StoreWhiteTest"/>
+            <class name="com.meiji.test.http.platform.other.SystemConfigMgrTest"/>
+            <class name="com.meiji.test.http.platform.other.CustomerServiceManageTest"/>
+
         </classes>
     </test>
 
@@ -275,12 +310,6 @@
             <class name="com.meiji.test.http.platform.finance.AccountAssetExportTest"/>
         </classes>
     </test>
-
-<!--    <test name="账户资产分页查询 accountAssetPageQuery">-->
-<!--        <classes>-->
-<!--            <class name="com.meiji.test.http.platform.finance.AccountAssetPageQueryTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 
     <test name="订单明细查询 orderDetailQuery">
         <classes>

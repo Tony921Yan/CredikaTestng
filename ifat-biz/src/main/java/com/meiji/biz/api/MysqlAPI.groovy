@@ -5,30 +5,29 @@ import groovy.sql.Sql
 
 class MysqlAPI {
     @Lazy
-    static Sql platformGoodsSql = FactorySupport.createSql("mysql-platform-goods")
+    static Sql meiji_goods = FactorySupport.createSql("meiji-goods")
     @Lazy
-    static Sql prod_meiji_shop = FactorySupport.createSql("meiji_shop")
+    static Sql meiji_shop = FactorySupport.createSql("meiji_shop")
     @Lazy
-    static Sql prod_meiji_dealer = FactorySupport.createSql("meiji_dealer")
+    static Sql meiji_dealer = FactorySupport.createSql("meiji_dealer")
     @Lazy
-    static Sql prod_meiji_user = FactorySupport.createSql("meiji_user")
+    static Sql meiji_user = FactorySupport.createSql("meiji_user")
     @Lazy
-    static Sql prod_meiji_excel = FactorySupport.createSql("meiji_excel")
+    static Sql meiji_excel = FactorySupport.createSql("meiji_excel")
     @Lazy
-    static Sql prod_meiji_order = FactorySupport.createSql("meiji_order")
+    static Sql meiji_order = FactorySupport.createSql("meiji_order")
     @Lazy
-    static Sql prod_meiji_pay = FactorySupport.createSql("meiji_pay")
+    static Sql meiji_pay = FactorySupport.createSql("meiji_pay")
     @Lazy
-    static Sql prod_meiji_settlement = FactorySupport.createSql("meiji_settlement")
+    static Sql meiji_settlement = FactorySupport.createSql("meiji_settlement")
     @Lazy
-    static Sql prod_meiji_stock = FactorySupport.createSql("meiji_stock")
+    static Sql meiji_stock = FactorySupport.createSql("meiji_stock")
     @Lazy
-    static Sql prod_meiji_product = FactorySupport.createSql("meiji_product")
+    static Sql meiji_product = FactorySupport.createSql("meiji_product")
     @Lazy
-    static Sql prod_meiji_supplier = FactorySupport.createSql("meiji_supplier")
+    static Sql meiji_supplier = FactorySupport.createSql("meiji_supplier")
     @Lazy
-    static Sql prod_meiji_message = FactorySupport.createSql("meiji_message")
-//    static Sql prod_meiji_office_account = FactorySupport.createSql("meiji_office_account")
+    static Sql meiji_message = FactorySupport.createSql("meiji_message")
     @Lazy
-    static Sql prod_meiji_active = FactorySupport.createSql("meiji_active")
+    static Sql meiji_active = FactorySupport.createSql("meiji_active")
 }

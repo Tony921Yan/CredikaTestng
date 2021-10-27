@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class BrandDetail extends PlatformPost {
     {
-        super.api = "/platform/brandMgr/brandDetail"
+        super.api = "/BrandManage/brandDetail"
         super.params =  [ "id"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

@@ -12,7 +12,7 @@
       <properties  key="secret" value ="SECd409c55b3c50104850580a1fbff0e0d8ff6126e92c753d39c2d00b617894859b"/>
     </bean>
 
-    <bean name = "mysql-platform-goods">
+    <bean name = "meiji-goods">
         <properties  key="url" value ="jdbc:mysql://rm-wz9o80msfb5vxqt28.mysql.rds.aliyuncs.com/meiji_goods"/>
         <properties  key="user" value ="readonly"/>
         <properties  key="password" value ="TkvLYcQdJyQJg5_"/>
@@ -97,22 +97,22 @@
 
     <bean name="meiji_message">
         <properties  key="url" value ="jdbc:mysql://rm-wz9c83mie0a3mjfr8.mysql.rds.aliyuncs.com/meiji_message"/>
-        <properties  key="user" value ="code_message"/>
-        <properties  key="password" value ="SjsbhhQGVq1Q"/>
+        <properties  key="user" value ="readonly"/>
+        <properties  key="password" value ="TkvLYcQdJyQJg5_"/>
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 
     <bean name="meiji_office_account">
         <properties  key="url" value ="jdbc:mysql://rm-wz9c83mie0a3mjfr8.mysql.rds.aliyuncs.com/meiji_office_account"/>
-        <properties  key="user" value ="code_office"/>
-        <properties  key="password" value ="IbFNB3SOJkV1"/>
+        <properties  key="user" value ="readonly"/>
+        <properties  key="password" value ="TkvLYcQdJyQJg5_"/>
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 
     <bean name="meiji_active">
         <properties  key="url" value ="jdbc:mysql://rm-wz9u3m3d6wp84ejqa.mysql.rds.aliyuncs.com/meiji_active"/>
-        <properties  key="user" value ="code_active"/>
-        <properties  key="password" value ="wjELab_vDJhsE"/>
+        <properties  key="user" value ="readonly"/>
+        <properties  key="password" value ="TkvLYcQdJyQJg5_"/>
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 

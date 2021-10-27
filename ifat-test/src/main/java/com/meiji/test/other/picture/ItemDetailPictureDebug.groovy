@@ -45,7 +45,7 @@ class ItemDetailPictureDebug{
     TestContext[] data(){
         String savePath = "D:\\picDetail"
         List list = new ArrayList()
-        List  picList = MysqlAPI.platformGoodsSql.rows("select code,detail from goods_spu where " +
+        List  picList = MysqlAPI.meiji_goods.rows("select code,detail from goods_spu where " +
                 "status = 4 and detail is not null and gmt_modified > date_sub(now(),interval 15 day) " +
                 "order by gmt_modified desc")
         picList.each{it ->

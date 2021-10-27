@@ -11,9 +11,9 @@ import org.apache.commons.lang3.ObjectUtils
 import java.lang.reflect.Method
 
 abstract class PlatformPost {
-    public String api
-    public List params
-    public String preInvoke
+    public  String api
+    public  List params
+    public  String preInvoke
 
     PlatformPost invoke(TestContext testContext){
         String url  = ResourceUtil.getBeanData("http").get("platform")
@@ -55,7 +55,7 @@ abstract class PlatformPost {
     }
 
     PlatformPost afterInvoke(TestContext testContext){
-
+        return this
     }
 
     PlatformPost baseAssert(TestContext testContext){
@@ -63,7 +63,7 @@ abstract class PlatformPost {
         return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    PlatformPost specialAssert(TestContext testContext) {
+        return this
     }
-
 }

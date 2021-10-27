@@ -9,18 +9,19 @@ class FindShopStudyState extends ShopPost {
         super.params =  ["id"]
     }
 
-    ShopPost invoke(TestContext testContext) {
+    FindShopStudyState invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    ShopPost preInvoke(TestContext testContext){
+    FindShopStudyState preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    ShopPost baseAssert(TestContext testContext){
+    FindShopStudyState baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -14,21 +14,22 @@ class FindShopById extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindShopById invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FindShopById preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindShopById baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    FindShopById specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.findShopById(testContext.get("id")).get(0)
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data
@@ -41,5 +42,6 @@ class FindShopById extends MallPost {
         assert mysqlResult.module_template_id == apiResult.moduleTemplateId
         assert mysqlResult.auth_state == apiResult.authState
         assert mysqlResult.state == apiResult.state
+        return this
     }
 }

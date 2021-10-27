@@ -14,21 +14,21 @@ class PageOrder extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    PageOrder invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    PageOrder preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    PageOrder baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    MallPost specialAssert(TestContext testContext){
+    PageOrder specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.pageOrder(testContext.get("shopId")).get(0)
         Map apiResult = testContext.getResponse().data
         assert mysqlResult.id == apiResult.orderList[0].getAt("id")
@@ -45,6 +45,6 @@ class PageOrder extends MallPost {
         assert mysqlResult.supplier_id == apiResult.orderList[0].getAt("supplierId")
         assert mysqlResult.buyer_id == apiResult.orderList[0].getAt("buyerId")
         assert mysqlResult.supplier_name == apiResult.orderList[0].getAt("supplierName")
-
+        return this
     }
 }

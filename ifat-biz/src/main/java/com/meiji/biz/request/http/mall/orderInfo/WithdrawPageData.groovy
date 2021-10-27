@@ -10,18 +10,19 @@ class WithdrawPageData extends MallPost {
         super.params =  ["shopId"]
     }
 
-    MallPost invoke(TestContext testContext) {
+    WithdrawPageData invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    WithdrawPageData preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    WithdrawPageData baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

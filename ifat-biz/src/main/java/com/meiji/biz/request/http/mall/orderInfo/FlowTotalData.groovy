@@ -9,18 +9,19 @@ class FlowTotalData extends ShopPost {
         super.params =  ["month","shopId","tradeType","year"]
     }
 
-    ShopPost invoke(TestContext testContext) {
+    FlowTotalData invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    ShopPost preInvoke(TestContext testContext){
+    FlowTotalData preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    ShopPost baseAssert(TestContext testContext){
+    FlowTotalData baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

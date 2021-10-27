@@ -9,18 +9,19 @@ class FindShopByUserId extends MallPost {
         super.params =  []
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindShopByUserId invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FindShopByUserId preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindShopByUserId baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

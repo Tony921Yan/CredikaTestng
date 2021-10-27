@@ -9,18 +9,19 @@ class FlowPageQuery extends ShopPost {
         super.params =  ["condition","page","rows"]
     }
 
-    ShopPost invoke(TestContext testContext) {
+    FlowPageQuery invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    ShopPost preInvoke(TestContext testContext){
+    FlowPageQuery preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    ShopPost baseAssert(TestContext testContext){
+    FlowPageQuery baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

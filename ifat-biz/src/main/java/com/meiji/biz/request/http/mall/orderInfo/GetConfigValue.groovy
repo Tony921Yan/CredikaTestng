@@ -9,18 +9,19 @@ class GetConfigValue extends ShopPost {
         super.params =  ["key"]
     }
 
-    ShopPost invoke(TestContext testContext) {
+    GetConfigValue invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    ShopPost preInvoke(TestContext testContext){
+    GetConfigValue preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    ShopPost baseAssert(TestContext testContext){
+    GetConfigValue baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

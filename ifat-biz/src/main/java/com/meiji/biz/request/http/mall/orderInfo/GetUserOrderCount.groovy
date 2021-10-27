@@ -10,21 +10,22 @@ class GetUserOrderCount extends MallPost {
         super.params =  ["shopId"]
     }
 
-    MallPost invoke(TestContext testContext) {
+    GetUserOrderCount invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    GetUserOrderCount preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    GetUserOrderCount baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    GetUserOrderCount specialAssert(TestContext testContext){
         Map toAfterCount = MysqlService.getUserOrderCount_toAfterCount(testContext.get("shopId")).get(0)
         System.out.println(toAfterCount)
         Map  toConfirmCount = MysqlService.getUserOrderCount_toConfirmCount(testContext.get("shopId")).get(0)
@@ -36,5 +37,6 @@ class GetUserOrderCount extends MallPost {
         assert toConfirmCount.confirmCount == apiResult.toConfirmCount
         assert toDeliveryCount.DeliveryCount == apiResult.toDeliveryCount
         assert toPayCount.PayCount == apiResult.toPayCount
+        return this
     }
 }

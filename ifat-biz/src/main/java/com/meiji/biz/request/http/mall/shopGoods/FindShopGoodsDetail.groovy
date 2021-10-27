@@ -14,21 +14,22 @@ class FindShopGoodsDetail extends MallPost {
         super.params =  [ "shopId","spuId"]
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindShopGoodsDetail invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FindShopGoodsDetail preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindShopGoodsDetail baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    FindShopGoodsDetail specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
 //        System.out.println("apiResult:" + apiResult)
         List<Map> esResult = EsService.findShopGoodsDetailByES(testContext.get("spuId"))
@@ -46,6 +47,7 @@ class FindShopGoodsDetail extends MallPost {
             assert apiResult.goodsSpuActiveInfo == esResult.get(0).isActiveGoods}else{
             assert apiResult.goodsSpuActiveInfo == esResult.get(0).isActiveGoods
         }
+        return this
 
 
 

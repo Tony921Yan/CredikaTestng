@@ -14,25 +14,27 @@ class GetOrderLogisticsInfo extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    GetOrderLogisticsInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    GetOrderLogisticsInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    GetOrderLogisticsInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    GetOrderLogisticsInfo specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.getOrderLogisticsInfo(testContext.get("orderCode")).get(0)
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data[0]
         assert mysqlResult.logistics_code == apiResult.logisticsCode
         assert mysqlResult.logistics_company_code == apiResult.logisticsCompanyCode
+        return this
     }
 }

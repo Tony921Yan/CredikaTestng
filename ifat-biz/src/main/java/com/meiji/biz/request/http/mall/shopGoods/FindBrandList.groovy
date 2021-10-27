@@ -10,20 +10,22 @@ class FindBrandList extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindBrandList invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FindBrandList preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindBrandList baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
     MallPost specialAssert(TestContext testContext){
+        return this
     }
 }

@@ -12,20 +12,22 @@ class FindOfficeShopModuleList extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindOfficeShopModuleList invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FindOfficeShopModuleList preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindOfficeShopModuleList baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    FindOfficeShopModuleList specialAssert(TestContext testContext){
+        return this
     }
 }

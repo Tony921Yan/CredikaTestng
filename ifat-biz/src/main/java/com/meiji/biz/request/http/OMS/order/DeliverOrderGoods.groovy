@@ -10,18 +10,19 @@ class DeliverOrderGoods extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    DeliverOrderGoods invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    DeliverOrderGoods preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    DeliverOrderGoods baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

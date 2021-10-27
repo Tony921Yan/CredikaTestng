@@ -10,23 +10,25 @@ class InvitationListQueryPage extends PlatformPost {
         super.params =  [ "pageNum","pageSize","applicant","validDate"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    InvitationListQueryPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    InvitationListQueryPage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    InvitationListQueryPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    InvitationListQueryPage specialAssert(TestContext testContext){
         Map apiDate = testContext.getResponse().date
         System.out.print("apiDate:" + apiDate)
         assert apiDate.total > 20
+        return this
     }
 }

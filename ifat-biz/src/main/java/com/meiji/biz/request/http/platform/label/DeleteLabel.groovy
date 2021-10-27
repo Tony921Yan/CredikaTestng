@@ -9,18 +9,19 @@ class DeleteLabel extends PlatformGet{
         super.params = ["id"]
     }
 
-    PlatformGet invoke(TestContext testContext) {
+    DeleteLabel invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformGet preInvoke(TestContext testContext){
+    DeleteLabel preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformGet baseAssert(TestContext testContext){
+    DeleteLabel baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

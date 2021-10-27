@@ -14,21 +14,21 @@ class FindDefaultUserAddress extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindDefaultUserAddress invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FindDefaultUserAddress preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindDefaultUserAddress baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    MallPost specialAssert(TestContext testContext){
+    FindDefaultUserAddress specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data
@@ -38,5 +38,6 @@ class FindDefaultUserAddress extends MallPost {
         assert mysqlResult.create_by == apiResult.createBy
         assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
         assert  DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  DateUtil.strToDate(apiResult.gmtModified)
+        return this
     }
 }

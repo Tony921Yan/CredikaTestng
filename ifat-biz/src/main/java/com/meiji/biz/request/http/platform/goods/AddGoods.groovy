@@ -12,17 +12,18 @@ class AddGoods extends PlatformPost{
         "pics","skus"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AddGoods invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AddGoods preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AddGoods baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

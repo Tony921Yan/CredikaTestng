@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class FindShopGoodsDetailTest extends BaseTest {
     FindShopGoodsDetail findShopGoodsDetail = new FindShopGoodsDetail()
-    @Test(description = "查询店铺商品详情 findShopGoodsDetail" ,groups = ["prod","uat"],testName = "findShopGoodsDetail-prod",
+    @Test(description = "查询店铺商品详情 findShopGoodsDetail" ,groups = ["prod","uat"],testName = "findShopGoodsDetail",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findShopGoodsDetail(TestContext testContext){
         testContext.replace("spuId","1422437862342688")

@@ -10,24 +10,26 @@ class ProdElectronicContractDownload extends PlatformPost {
         super.params =  ["contractId"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    ProdElectronicContractDownload invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    ProdElectronicContractDownload preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    ProdElectronicContractDownload baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    ProdElectronicContractDownload specialAssert(TestContext testContext){
         Map mysqlDate = MysqlService.prodElectronicContractDownload(testContext.get("contractId")).get(0)
         Map apiData = testContext.getResponse()
         System.out.print("apiData:" + apiData)
         System.out.println("mysqlDate"+ mysqlDate)
+        return this
     }
 }

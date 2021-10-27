@@ -10,18 +10,19 @@ class GetOrderLogisticsInfo extends PlatformGet {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    PlatformGet invoke(TestContext testContext) {
+    GetOrderLogisticsInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformGet preInvoke(TestContext testContext){
+    GetOrderLogisticsInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformGet baseAssert(TestContext testContext){
+    GetOrderLogisticsInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

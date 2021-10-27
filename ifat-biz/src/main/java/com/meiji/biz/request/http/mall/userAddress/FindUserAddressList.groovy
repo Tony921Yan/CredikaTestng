@@ -13,21 +13,21 @@ class FindUserAddressList extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindUserAddressList invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FindUserAddressList preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindUserAddressList baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    MallPost specialAssert(TestContext testContext){
+    FindUserAddressList specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.findUserAddressList(testContext.get("userId")).get(0)
         System.out.println(mysqlResult)
         Map apiResult = testContext.getResponse().data[0]
@@ -44,6 +44,7 @@ class FindUserAddressList extends MallPost {
         assert mysqlResult.address == apiResult.address
         assert mysqlResult.remark == apiResult.remark
         assert mysqlResult.is_default == apiResult.isDefault
+        return this
     }
 
 }

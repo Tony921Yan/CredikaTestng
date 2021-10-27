@@ -11,16 +11,16 @@ class QueryBrandsByPage extends PlatformPost{
         super.params = ["pageNum","pageSize"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    QueryBrandsByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    QueryBrandsByPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    QueryBrandsByPage specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         Map mysqlResult = MysqlService.getGoods_brand()
         assert mysqlResult.name == apiResult.dataList.getAt(0).getAt("name")
@@ -30,5 +30,6 @@ class QueryBrandsByPage extends PlatformPost{
         assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.dataList.getAt(0).getAt("gmtCreate"))
         assert DateUtil.strToDate(mysqlResult.gmt_modified as String) == DateUtil.strToDate(apiResult.dataList.getAt(0).getAt("gmtModified"))
         assert apiResult.total > 20
+        return this
     }
 }

@@ -10,22 +10,24 @@ class GetListMaterials extends PlatformPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetListMaterials invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetListMaterials preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetListMaterials baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    GetListMaterials specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

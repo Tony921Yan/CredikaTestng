@@ -9,18 +9,19 @@ class GetPropertyBySpuld extends PlatformPost{
         super.params = ["spuId"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetPropertyBySpuld invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetPropertyBySpuld preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetPropertyBySpuld baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -9,18 +9,19 @@ class MiyuanPageOrder extends CpsPost200 {
         super.params =  ["endTime","oid","page","pageSize","queryType","startTime","status"]
     }
 
-    CpsPost200 invoke(TestContext testContext) {
+    MiyuanPageOrder invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    CpsPost200 preInvoke(TestContext testContext){
+    MiyuanPageOrder preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    CpsPost200 baseAssert(TestContext testContext){
+    MiyuanPageOrder baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

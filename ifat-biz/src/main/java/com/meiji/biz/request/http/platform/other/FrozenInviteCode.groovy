@@ -9,18 +9,19 @@ class FrozenInviteCode extends PlatformPost {
         super.params =  [ "id"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    FrozenInviteCode invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    FrozenInviteCode preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    FrozenInviteCode baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

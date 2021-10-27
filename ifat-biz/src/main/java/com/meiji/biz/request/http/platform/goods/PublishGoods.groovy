@@ -9,17 +9,18 @@ class PublishGoods extends PlatformPost{
         super.params = ["spuId","updateById","updateByName"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    PublishGoods invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    PublishGoods preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    PublishGoods baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

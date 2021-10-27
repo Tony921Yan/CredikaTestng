@@ -10,25 +10,25 @@ class BatchUpdateConfig extends PlatformPost {
         super.params =  ["configs"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    BatchUpdateConfig invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    BatchUpdateConfig preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    BatchUpdateConfig baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    BatchUpdateConfig specialAssert(TestContext testContext){
         List apiResult = testContext.get("configs") //通过platformPost: testContext.setRequest(req)设置
         Map mysqlResult = MysqlService.batchUpdateConfig()
-        assert apiResult.get(5).getAt("value") == mysqlResult.get("new_value")
-        System.out.println(apiResult.get(5).getAt("value"))
-        System.out.println(mysqlResult.get("new_value"))
+        for (Map map:apiResult){if(map.get("key")=="lockingPeriod") {assert map.get("value")== mysqlResult.get("new_value")}}
+        return this
     }
 }

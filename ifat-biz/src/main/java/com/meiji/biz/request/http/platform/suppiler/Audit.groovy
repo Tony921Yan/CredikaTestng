@@ -9,18 +9,19 @@ class Audit extends PlatformPost{
         super.params = ["auditMessage","id","status"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    Audit invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    Audit preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    Audit baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

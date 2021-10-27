@@ -16,25 +16,26 @@ class UpdateUserInfo extends MallPost {
 //        super.preInvoke = "com.meiji.biz.request.http.mall.userInfo.FindUserInfo"
     }
 
-    MallPost invoke(TestContext testContext) {
+    UpdateUserInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    UpdateUserInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    UpdateUserInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    UpdateUserInfo specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.getUserInfo(testContext.get("userId"))
         assert mysqlResult.nickname == testContext.nickname
         assert mysqlResult.avatar == testContext.avatar
         assert String.valueOf(mysqlResult.sex) == String.valueOf(testContext.sex)
-
+        return this
     }
 }

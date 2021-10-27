@@ -9,17 +9,18 @@ class GetPageSupervisor extends PlatformGet{
         super.params = []
     }
 
-    PlatformGet invoke(TestContext testContext) {
+    GetPageSupervisor invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformGet preInvoke(TestContext testContext){
+    GetPageSupervisor preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformGet baseAssert(TestContext testContext){
+    GetPageSupervisor baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

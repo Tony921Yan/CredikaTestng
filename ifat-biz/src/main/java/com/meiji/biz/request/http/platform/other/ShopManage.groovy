@@ -9,22 +9,24 @@ class ShopManage extends PlatformPost {
         super.params =  [ "page","rows"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    ShopManage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    ShopManage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    ShopManage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    ShopManage specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

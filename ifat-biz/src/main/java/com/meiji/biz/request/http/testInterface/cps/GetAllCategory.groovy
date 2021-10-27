@@ -8,18 +8,19 @@ class GetAllCategory extends CpsPost {
         super.params =  ["userId"]
     }
 
-    CpsPost invoke(TestContext testContext) {
+    GetAllCategory invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    CpsPost preInvoke(TestContext testContext){
+    GetAllCategory preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    CpsPost baseAssert(TestContext testContext){
+    GetAllCategory baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

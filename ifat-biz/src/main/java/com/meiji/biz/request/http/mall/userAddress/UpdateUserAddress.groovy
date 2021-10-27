@@ -12,21 +12,22 @@ class UpdateUserAddress extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    UpdateUserAddress invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    UpdateUserAddress preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    UpdateUserAddress baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    UpdateUserAddress specialAssert(TestContext testContext){
         //利用更新接口请求的sql和查询接口返回值做断言
         Map mysqlResult = MysqlService.updateUserAddress(testContext.get("id")).get(0)
         Map apiResult = testContext.getResponse().data[0]
@@ -43,7 +44,7 @@ class UpdateUserAddress extends MallPost {
         assert mysqlResult.address == apiResult.address
         assert mysqlResult.remark == apiResult.remark
         assert mysqlResult.is_default == apiResult.isDefault
-
+        return this
     }
 
 }

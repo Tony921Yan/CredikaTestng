@@ -9,18 +9,19 @@ class Apply extends PlatformGet{
         super.params = [""]
     }
 
-    PlatformGet invoke(TestContext testContext) {
+    Apply invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformGet preInvoke(TestContext testContext){
+    Apply preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformGet baseAssert(TestContext testContext){
+    Apply baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

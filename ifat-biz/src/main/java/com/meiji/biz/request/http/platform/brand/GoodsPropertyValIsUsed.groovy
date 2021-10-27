@@ -9,7 +9,7 @@ class GoodsPropertyValIsUsed extends PlatformPost{
         super.params = ["id"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GoodsPropertyValIsUsed invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }

@@ -9,7 +9,7 @@ class QueryGoodPropertyGroupByPage extends PlatformPost{
         super.params = ["queryCondition","pageIndex","pageSize","order","sort"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    QueryGoodPropertyGroupByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }

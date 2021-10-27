@@ -9,22 +9,24 @@ class CustomerServiceManage extends PlatformPost {
         super.params =  [ "status","page","rows"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    CustomerServiceManage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    CustomerServiceManage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    CustomerServiceManage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    CustomerServiceManage specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 1
+        return this
     }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "findShopGoodsDetail-prod">
+    <test name = "findShopGoodsDetail">
 <!--        <parm key="shopId" value ="1405981112139808"/>-->
         <parm key="shopId" value ="1111111111111111111"/>
         <parm key="spuId" value ="1410324940980257"/>

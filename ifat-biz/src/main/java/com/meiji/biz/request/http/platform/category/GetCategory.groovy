@@ -11,23 +11,24 @@ class GetCategory extends PlatformPost{
         super.params = []
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetCategory invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetCategory preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetCategory baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    PlatformPost dataAssert(TestContext testContext){
+    GetCategory dataAssert(TestContext testContext){
         List mysqlData = MysqlService.getCategory(testContext.get("type"),testContext.get("name"))
         List apiData = testContext.getResponse().data
         assert mysqlData.size()==apiData.size()
+        return this
     }
 }

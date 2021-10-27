@@ -10,17 +10,18 @@ class GetShareUrl extends CpsPost{
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    CpsPost invoke(TestContext testContext) {
+    GetShareUrl invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    CpsPost preInvoke(TestContext testContext){
+    GetShareUrl preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    CpsPost baseAssert(TestContext testContext){
+    GetShareUrl baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

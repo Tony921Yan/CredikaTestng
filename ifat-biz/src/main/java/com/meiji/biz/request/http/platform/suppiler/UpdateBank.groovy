@@ -10,18 +10,19 @@ class UpdateBank extends PlatformPost{
         "bankBranchId","bankName","accountNumber","updateBy","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateBank invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateBank preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateBank baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

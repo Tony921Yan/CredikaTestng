@@ -24,8 +24,4 @@ class FindGoodsCategoryTree extends MallPost {
         super.baseAssert(testContext)
         return this
     }
-
-    FindGoodsCategoryTree specialAssert(TestContext testContext){
-        return this
-    }
 }

@@ -10,18 +10,19 @@ class GetTaskByPage extends OMSPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    OMSPost invoke(TestContext testContext) {
+    GetTaskByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    GetTaskByPage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    GetTaskByPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

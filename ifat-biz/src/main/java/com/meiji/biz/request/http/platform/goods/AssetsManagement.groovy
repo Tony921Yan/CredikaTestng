@@ -9,22 +9,24 @@ class AssetsManagement extends PlatformPost{
         super.params = ["page","rows","sort","condition"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AssetsManagement invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AssetsManagement preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AssetsManagement baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    AssetsManagement specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

@@ -11,18 +11,19 @@ class UpdateSubject extends PlatformPost{
         "updateBy","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateSubject invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateSubject preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateSubject baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

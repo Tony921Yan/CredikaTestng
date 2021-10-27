@@ -10,18 +10,19 @@ class GetBindCardInfo extends OMSGet {
 
     }
 
-    OMSGet invoke(TestContext testContext) {
+    GetBindCardInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSGet preInvoke(TestContext testContext){
+    GetBindCardInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSGet baseAssert(TestContext testContext){
+    GetBindCardInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

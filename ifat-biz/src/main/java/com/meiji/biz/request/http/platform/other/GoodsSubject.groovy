@@ -9,22 +9,24 @@ class GoodsSubject extends PlatformPost {
         super.params =  [ "page","rows"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GoodsSubject invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GoodsSubject preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GoodsSubject baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specicalAssert(TestContext testContext){
+    GoodsSubject specicalAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

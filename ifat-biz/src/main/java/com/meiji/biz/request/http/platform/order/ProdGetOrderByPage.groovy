@@ -9,20 +9,22 @@ class ProdGetOrderByPage extends PlatformPost {
         super.params =  [ "condition","page","rows"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
-    PlatformPost invoke(TestContext testContext) {
+    ProdGetOrderByPage invoke(TestContext testContext) {
             super.invoke(testContext)
             return this
         }
-    PlatformPost preInvoke(TestContext testContext){
+    ProdGetOrderByPage preInvoke(TestContext testContext){
             super.preInvoke(testContext)
             return this
         }
-    PlatformPost baseAssert(TestContext testContext){
+    ProdGetOrderByPage baseAssert(TestContext testContext){
             super.baseAssert(testContext)
+            return this
         }
 
-    PlatformPost specialAssert(TestContext testContext){
+    ProdGetOrderByPage specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert  apiResult.total > 20
+        return this
     }
 }

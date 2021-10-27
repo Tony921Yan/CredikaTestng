@@ -9,18 +9,19 @@ class GetOrderEventLog extends OMSGet {
 
     }
 
-    OMSGet invoke(TestContext testContext) {
+    GetOrderEventLog invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSGet preInvoke(TestContext testContext){
+    GetOrderEventLog preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSGet baseAssert(TestContext testContext){
+    GetOrderEventLog baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

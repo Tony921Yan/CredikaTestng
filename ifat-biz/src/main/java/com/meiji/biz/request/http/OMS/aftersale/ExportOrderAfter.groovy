@@ -10,18 +10,19 @@ class ExportOrderAfter extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    ExportOrderAfter invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    ExportOrderAfter preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    ExportOrderAfter baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

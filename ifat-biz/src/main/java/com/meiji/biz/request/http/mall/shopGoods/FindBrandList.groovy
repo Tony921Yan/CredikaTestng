@@ -23,9 +23,7 @@ class FindBrandList extends MallPost {
     FindBrandList baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
-    }
-
-    MallPost specialAssert(TestContext testContext){
+        return this
         return this
     }
 }

@@ -10,18 +10,19 @@ class AddSupplement extends PlatformPost{
         "businessAdditionDesc","createBy","updateBy","gmtCreate","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AddSupplement invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AddSupplement preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AddSupplement baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

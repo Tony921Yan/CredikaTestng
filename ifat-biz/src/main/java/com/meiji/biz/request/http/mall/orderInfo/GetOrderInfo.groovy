@@ -29,7 +29,7 @@ class GetOrderInfo extends MallPost {
         return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    GetOrderInfo specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.order_info(testContext.get("orderCode")).get(0)
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data
@@ -54,5 +54,6 @@ class GetOrderInfo extends MallPost {
         assert mysqlResult.buyer_id == apiResult.buyerId
         assert mysqlResult.platform_remark == apiResult.platformRemark
         assert mysqlResult.supplier_name == apiResult.supplierName
+        return this
     }
 }

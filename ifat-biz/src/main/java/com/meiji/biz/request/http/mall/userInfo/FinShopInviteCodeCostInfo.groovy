@@ -9,20 +9,23 @@ class FinShopInviteCodeCostInfo extends MallPost {
         super.params =  ["id"]
     }
 
-    MallPost invoke(TestContext testContext) {
+    FinShopInviteCodeCostInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FinShopInviteCodeCostInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FinShopInviteCodeCostInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    MallPost specialAssert(TestContext testContext){
+    FinShopInviteCodeCostInfo specialAssert(TestContext testContext){
+        super.specialAssert(testContext)
+        return this
     }
 }

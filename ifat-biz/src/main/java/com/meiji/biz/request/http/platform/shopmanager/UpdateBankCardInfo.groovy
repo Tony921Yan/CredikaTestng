@@ -10,17 +10,18 @@ class UpdateBankCardInfo extends PlatformPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateBankCardInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateBankCardInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateBankCardInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

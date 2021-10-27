@@ -10,18 +10,19 @@ class AddAdministrator extends PlatformPost{
                         "contactEmail","createBy","updateBy","gmtCreate","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AddAdministrator invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AddAdministrator preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AddAdministrator baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

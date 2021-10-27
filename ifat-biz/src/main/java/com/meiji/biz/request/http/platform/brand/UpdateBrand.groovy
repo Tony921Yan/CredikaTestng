@@ -9,7 +9,7 @@ class UpdateBrand extends PlatformPost{
         super.params = ["createBy","gmtCreate","gmtModified","icon","id","name","remark","sort","updateBy"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateBrand invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }

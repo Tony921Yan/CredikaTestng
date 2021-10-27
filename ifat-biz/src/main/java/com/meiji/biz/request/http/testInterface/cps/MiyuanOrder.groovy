@@ -9,18 +9,19 @@ class MiyuanOrder extends CpsPost {
         super.params =  ["oid"]
     }
 
-    CpsPost invoke(TestContext testContext) {
+    MiyuanOrder invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    CpsPost preInvoke(TestContext testContext){
+    MiyuanOrder preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    CpsPost baseAssert(TestContext testContext){
+    MiyuanOrder baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

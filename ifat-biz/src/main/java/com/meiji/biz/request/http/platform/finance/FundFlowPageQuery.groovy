@@ -10,21 +10,22 @@ class FundFlowPageQuery extends PlatformPost{
         super.params = ["condition","order","page","rows","sort"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    FundFlowPageQuery invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    FundFlowPageQuery preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    FundFlowPageQuery baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    FundFlowPageQuery specialAssert(TestContext testContext){
         List<Map> apiResult = testContext.getResponse().data.dataList
         for (Map map:apiResult){
             Integer actuallyPaidAmount = Integer.valueOf(map.get("actuallyPaidAmount").toString())
@@ -38,6 +39,7 @@ class FundFlowPageQuery extends PlatformPost{
             assert actuallyPaidAmount == (actuallySettleAmount + actuallyCommission + actuallyPlatformIncome +wechatFee +
                     totalRefundAmount +taxes +subsidyAmount)
         }
+        return  this
     }
 
 }

@@ -24,10 +24,10 @@ class FindOfficeShopModuleList extends MallPost {
 
     FindOfficeShopModuleList baseAssert(TestContext testContext){
         super.baseAssert(testContext)
-        return this
     }
 
     FindOfficeShopModuleList specialAssert(TestContext testContext){
+        super.specialAssert(testContext)
         return this
     }
 }

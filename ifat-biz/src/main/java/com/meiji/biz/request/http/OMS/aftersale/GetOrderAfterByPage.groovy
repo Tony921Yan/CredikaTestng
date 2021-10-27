@@ -10,18 +10,19 @@ class GetOrderAfterByPage extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    GetOrderAfterByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    GetOrderAfterByPage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    GetOrderAfterByPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

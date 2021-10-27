@@ -10,18 +10,19 @@ class CancelOrder extends PlatformGet {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    PlatformGet invoke(TestContext testContext) {
+    CancelOrder invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformGet preInvoke(TestContext testContext){
+    CancelOrder preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformGet baseAssert(TestContext testContext){
+    CancelOrder baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

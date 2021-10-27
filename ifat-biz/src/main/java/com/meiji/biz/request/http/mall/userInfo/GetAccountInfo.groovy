@@ -9,18 +9,19 @@ class GetAccountInfo extends MallPost {
         super.params =  ["shopId"]
     }
 
-    MallPost invoke(TestContext testContext) {
+    GetAccountInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    GetAccountInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    GetAccountInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

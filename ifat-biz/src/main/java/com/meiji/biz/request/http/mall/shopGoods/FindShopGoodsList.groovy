@@ -26,6 +26,8 @@ class FindShopGoodsList extends MallPost {
     }
 
     FindShopGoodsList specialAssert(TestContext testContext){
+        super.specialAssert(testContext)
         return this
+
     }
 }

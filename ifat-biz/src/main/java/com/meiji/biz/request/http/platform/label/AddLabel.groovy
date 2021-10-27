@@ -10,18 +10,19 @@ class AddLabel extends PlatformPost{
         "page","rows","showType"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AddLabel invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AddLabel preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AddLabel baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

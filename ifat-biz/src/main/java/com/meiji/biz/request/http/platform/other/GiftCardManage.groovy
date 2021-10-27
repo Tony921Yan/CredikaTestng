@@ -10,17 +10,18 @@ class GiftCardManage extends PlatformPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GiftCardManage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GiftCardManage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GiftCardManage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

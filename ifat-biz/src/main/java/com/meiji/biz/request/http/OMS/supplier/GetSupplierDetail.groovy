@@ -10,18 +10,19 @@ class GetSupplierDetail extends OMSGet {
 
     }
 
-    OMSGet invoke(TestContext testContext) {
+    GetSupplierDetail invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSGet preInvoke(TestContext testContext){
+    GetSupplierDetail preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSGet baseAssert(TestContext testContext){
+    GetSupplierDetail baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

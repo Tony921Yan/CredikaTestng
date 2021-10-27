@@ -10,18 +10,19 @@ class GetSupplierOrderCount extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    GetSupplierOrderCount invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    GetSupplierOrderCount preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    GetSupplierOrderCount baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -9,18 +9,19 @@ class AddInviteCodeApply extends PlatformPost {
         super.params =  [ "shopId","num"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AddInviteCodeApply invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AddInviteCodeApply preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AddInviteCodeApply baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

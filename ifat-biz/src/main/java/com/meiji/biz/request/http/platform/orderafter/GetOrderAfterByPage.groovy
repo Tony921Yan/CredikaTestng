@@ -9,22 +9,23 @@ class GetOrderAfterByPage extends PlatformPost {
         super.params =  [ "condition","order","page","rows","sort"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetOrderAfterByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetOrderAfterByPage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetOrderAfterByPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    GetOrderAfterByPage specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

@@ -9,22 +9,24 @@ class SelectionCategory extends PlatformPost {
         super.params =  []
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    SelectionCategory invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    SelectionCategory preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    SelectionCategory baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specicalAssert(TestContext testContext){
+    SelectionCategory specicalAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 10
+        return this
     }
 }

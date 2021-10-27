@@ -10,18 +10,19 @@ class AddBank extends PlatformPost{
         "bankBranchId","bankName","accountNumber","createBy","updateBy","gmtCreate","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AddBank invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AddBank preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AddBank baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

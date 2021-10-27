@@ -10,18 +10,19 @@ class AuditRefundMoney extends PlatformPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AuditRefundMoney invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AuditRefundMoney preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AuditRefundMoney baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -9,18 +9,19 @@ class GetSupplierByNameOrCode extends PlatformGet{
         super.params = ["codeOrName"]
     }
 
-    PlatformGet invoke(TestContext testContext) {
+    GetSupplierByNameOrCode invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformGet preInvoke(TestContext testContext){
+    GetSupplierByNameOrCode preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformGet baseAssert(TestContext testContext){
+    GetSupplierByNameOrCode baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

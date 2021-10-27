@@ -9,13 +9,14 @@ class QueryGoodPropertysByPage extends PlatformPost{
         super.params = ["page","rows","condition"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    QueryGoodPropertysByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    QueryGoodPropertysByPage specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

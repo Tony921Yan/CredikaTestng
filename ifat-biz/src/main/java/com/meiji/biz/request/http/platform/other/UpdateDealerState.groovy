@@ -10,17 +10,18 @@ class UpdateDealerState extends PlatformPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateDealerState invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateDealerState preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateDealerState baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

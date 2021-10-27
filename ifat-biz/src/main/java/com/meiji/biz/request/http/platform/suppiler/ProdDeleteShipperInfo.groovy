@@ -9,16 +9,17 @@ class ProdDeleteShipperInfo extends PlatformPost {
         super.params =  [ "id","supplierId","supplierName"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
-PlatformPost invoke(TestContext testContext) {
+    ProdDeleteShipperInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
-PlatformPost preInvoke(TestContext testContext){
+    ProdDeleteShipperInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
-PlatformPost baseAssert(TestContext testContext){
+    ProdDeleteShipperInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

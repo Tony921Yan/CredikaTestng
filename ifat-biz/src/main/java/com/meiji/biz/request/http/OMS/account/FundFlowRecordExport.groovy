@@ -10,18 +10,19 @@ class FundFlowRecordExport extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    FundFlowRecordExport invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    FundFlowRecordExport preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
     OMSPost baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

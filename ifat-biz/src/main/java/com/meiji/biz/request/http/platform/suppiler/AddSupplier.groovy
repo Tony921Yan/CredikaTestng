@@ -10,18 +10,19 @@ class AddSupplier extends PlatformPost{
         "remark","createBy","updateBy","gmtCreate","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AddSupplier invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AddSupplier preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AddSupplier baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -9,18 +9,19 @@ class FundFlowDetailQuery extends PlatformPost{
         super.params = ["orderCode"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    FundFlowDetailQuery invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    FundFlowDetailQuery preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    FundFlowDetailQuery baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

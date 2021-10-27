@@ -9,22 +9,24 @@ class StoreWhite extends PlatformPost {
         super.params =  [ "page","rows","shopName","shopCode","searchTestShop"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    StoreWhite invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    StoreWhite preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    StoreWhite baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    StoreWhite specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 0
+        return this
     }
 }

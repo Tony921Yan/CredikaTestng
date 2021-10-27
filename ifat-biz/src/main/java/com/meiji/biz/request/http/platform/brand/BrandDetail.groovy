@@ -37,5 +37,6 @@ class BrandDetail extends PlatformPost {
         assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
         return this
 //        assert DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  DateUtil.strToDate(apiResult.gmtModified)
+        return this
     }
 }

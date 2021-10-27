@@ -11,22 +11,22 @@ class DelCategoryById extends PlatformPost{
         super.params = ["id"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    DelCategoryById invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    DelCategoryById preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    DelCategoryById baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }
 
-    PlatformPost dataAssert(TestContext testContext) {
+    DelCategoryById dataAssert(TestContext testContext) {
         List mysqlData = MysqlService.getCategoryById(testContext.get("id"))
         assert mysqlData.size() == 0
         return this

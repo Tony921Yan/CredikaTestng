@@ -14,7 +14,7 @@ class FindUserInfo extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindUserInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
@@ -26,11 +26,11 @@ class FindUserInfo extends MallPost {
 //        return this
 //    }
 
-    MallPost baseAssert(TestContext testContext){
+    FindUserInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    MallPost specialAssert(TestContext testContext){
+    FindUserInfo specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.findUserInfo(testContext.get("id")).get(0)
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data
@@ -40,5 +40,6 @@ class FindUserInfo extends MallPost {
         assert mysqlResult.avatar == apiResult.avatar
         assert mysqlResult.sex == apiResult.sex
         assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
+        return this
     }
 }

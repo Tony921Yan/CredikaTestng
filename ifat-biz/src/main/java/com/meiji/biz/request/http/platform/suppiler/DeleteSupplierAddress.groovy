@@ -9,18 +9,19 @@ class DeleteSupplierAddress extends PlatformGet{
         super.params = ["supplierAddressId"]
     }
 
-    PlatformGet invoke(TestContext testContext){
+    DeleteSupplierAddress invoke(TestContext testContext){
         super.invoke(testContext)
         return this
     }
 
-    PlatformGet preInvoke(TestContext testContext){
+    DeleteSupplierAddress preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformGet baseAssert(TestContext testContext){
+    DeleteSupplierAddress baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

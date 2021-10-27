@@ -8,16 +8,17 @@ class SearchCategory extends PlatformPost {//美粉圈分类管理
         super.api = "MaterialCategoryManagement/searchCategory"
         super.params =  []
     }
-PlatformPost invoke(TestContext testContext) {
+    SearchCategory invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
-PlatformPost preInvoke(TestContext testContext){
+    SearchCategory preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
-PlatformPost baseAssert(TestContext testContext){
+    SearchCategory baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

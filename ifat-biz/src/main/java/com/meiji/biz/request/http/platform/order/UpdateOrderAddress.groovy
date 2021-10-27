@@ -9,16 +9,17 @@ class UpdateOrderAddress extends PlatformPost {
         super.params =  [ "id","orderCode","receiverAddress","receiverName","receiverTel"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
-PlatformPost invoke(TestContext testContext) {
+    UpdateOrderAddress invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
-PlatformPost preInvoke(TestContext testContext){
+    UpdateOrderAddress preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
-PlatformPost baseAssert(TestContext testContext){
+    UpdateOrderAddress baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

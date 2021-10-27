@@ -10,18 +10,19 @@ class UpdateLabel extends PlatformPost{
         "page","rows","showType"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateLabel invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateLabel preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateLabel baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

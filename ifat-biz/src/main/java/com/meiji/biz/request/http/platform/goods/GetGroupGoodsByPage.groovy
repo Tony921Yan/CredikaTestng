@@ -10,22 +10,24 @@ class GetGroupGoodsByPage extends PlatformPost{
                          "startNum","startPrice","groupType"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetGroupGoodsByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetGroupGoodsByPage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetGroupGoodsByPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){//组合商品较少，暂时取2个
+    GetGroupGoodsByPage specialAssert(TestContext testContext){//组合商品较少，暂时取2个
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 2
+        return this
     }
 }

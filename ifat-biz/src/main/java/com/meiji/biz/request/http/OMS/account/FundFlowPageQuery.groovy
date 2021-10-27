@@ -10,18 +10,19 @@ class FundFlowPageQuery extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    FundFlowPageQuery invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    FundFlowPageQuery preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    FundFlowPageQuery baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

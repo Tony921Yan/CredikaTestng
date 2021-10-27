@@ -10,18 +10,19 @@ class CheckGoods extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    CheckGoods invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    CheckGoods preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    CheckGoods baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

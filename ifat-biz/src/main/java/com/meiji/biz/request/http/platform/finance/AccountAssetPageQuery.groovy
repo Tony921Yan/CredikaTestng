@@ -11,21 +11,21 @@ class AccountAssetPageQuery extends PlatformPost{
         super.params = ["condition","order","page","rows","sort"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AccountAssetPageQuery invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AccountAssetPageQuery preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AccountAssetPageQuery baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    AccountAssetPageQuery specialAssert(TestContext testContext){
         List<Map> apiResult = testContext.getResponse().data.dataList
         Map allAccountUpdateData = TestData.getTestData("allAccountUpdateData_platform")
         List errorList = new ArrayList()
@@ -51,45 +51,7 @@ class AccountAssetPageQuery extends PlatformPost{
            // assert updateValue == (totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount),"供应商/小B数据修正补差后仍不相等"+map.get("accountCode")
         }
         assert errorList.size() == 0
-
-//        int count =0
-//
-//            for (i in 0..<apiResult.size()) {
-//            Map map = apiResult.get(i)
-//            Integer totalIncome = map.get("totalIncome")
-//            Integer withdrawAmount = map.get("withdrawAmount")
-//            Integer unSettledAmount = map.get("unSettledAmount")
-//            Integer alreadyWithdrawAmount
-//            String accountName = map.get("accountName")
-//            if(map.get("alreadyWithdrawAmount") == null){alreadyWithdrawAmount =0
-//            }else{alreadyWithdrawAmount = map.get("alreadyWithdrawAmount")}
-//
-//            if(totalIncome==withdrawAmount+unSettledAmount+alreadyWithdrawAmount){
-//                assert totalIncome==withdrawAmount+unSettledAmount+alreadyWithdrawAmount
-//                testContext.appendLog(new Record("以下供应商/小B数据相等（不需要补差）",accountName))}
-//            else {
-//                Map allAccountUpdateData = TestData.getTestData("allAccountUpdateData_platform")
-//                Iterator<Map.Entry<String, String>> it = allAccountUpdateData.entrySet().iterator()
-//                Integer updateValue
-//                while (it.hasNext()) {
-//                    Map.Entry<String, String> entry = it.next()
-////                System.out.println("key="+entry.getKey()+","+"value="+entry.getValue())
-//                    if (map.get("accountCode") == entry.getKey()) {
-//                        updateValue = Integer.valueOf(entry.getValue().toString())
-//                        System.out.println("updateValue：" + updateValue)
-//                        if (updateValue == (totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount)) {
-//                            assert updateValue == (totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount)
-//                            testContext.appendLog(new Record("以下供应商/小B数据修正补差相等（需要补差才相等）", accountName))
-//                        } else {
-//                            assert updateValue != (totalIncome - withdrawAmount - unSettledAmount - alreadyWithdrawAmount)
-//                            testContext.appendLog(new Record("以下供应商/小B数据修正补差后仍不相等", accountName))
-//                        }
-//                    }
-//                }
-//            }
-//            count++
-//            }
-//        testContext.appendLog(new Record("统计供应商/小B的数据条数", count))
+        return this
         }
 
     PlatformPost getallAccountData(TestContext testContext){

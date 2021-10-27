@@ -9,17 +9,18 @@ class SystemConfigMgr extends PlatformPost {
         super.params =  [ "dealerTutorQrCode"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    SystemConfigMgr invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    SystemConfigMgr preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    SystemConfigMgr baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

@@ -9,16 +9,17 @@ class GetOrderByPage extends PlatformPost {
         super.params =  [ "condition","order","page","rows","sort"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
-PlatformPost invoke(TestContext testContext) {
+    GetOrderByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
-PlatformPost preInvoke(TestContext testContext){
+    GetOrderByPage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
-PlatformPost baseAssert(TestContext testContext){
+    GetOrderByPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

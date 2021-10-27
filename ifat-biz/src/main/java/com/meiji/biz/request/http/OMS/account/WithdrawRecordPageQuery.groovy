@@ -10,18 +10,19 @@ class WithdrawRecordPageQuery extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    WithdrawRecordPageQuery invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    WithdrawRecordPageQuery preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    WithdrawRecordPageQuery baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

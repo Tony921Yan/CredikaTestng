@@ -10,18 +10,19 @@ class GetAccountName extends OMSGet {
 
     }
 
-    OMSGet invoke(TestContext testContext) {
+    GetAccountName invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSGet preInvoke(TestContext testContext){
+    GetAccountName preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSGet baseAssert(TestContext testContext){
+    GetAccountName baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

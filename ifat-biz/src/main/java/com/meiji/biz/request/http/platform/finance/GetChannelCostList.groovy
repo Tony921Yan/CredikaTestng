@@ -9,18 +9,19 @@ class GetChannelCostList extends PlatformPost{
         super.params = ["condition","page","rows"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetChannelCostList invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetChannelCostList preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetChannelCostList baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

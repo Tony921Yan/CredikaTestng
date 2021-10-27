@@ -9,18 +9,19 @@ class WithdrawRecordExport extends PlatformPost{
         super.params = ["condition","order","page","rows","sort"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    WithdrawRecordExport invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    WithdrawRecordExport preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    WithdrawRecordExport baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

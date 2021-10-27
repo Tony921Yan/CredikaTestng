@@ -13,18 +13,19 @@ class FindUserVisitShopRecordList extends MallPost {
         super.params =  ["page","rows"]
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindUserVisitShopRecordList invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost preInvoke(TestContext testContext){
+    FindUserVisitShopRecordList preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindUserVisitShopRecordList baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

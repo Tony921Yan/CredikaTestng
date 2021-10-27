@@ -9,7 +9,7 @@ class GoodPropertyDetail extends PlatformPost{
         super.params = ["id"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GoodPropertyDetail invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }

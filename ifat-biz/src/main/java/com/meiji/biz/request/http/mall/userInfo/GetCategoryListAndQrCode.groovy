@@ -12,12 +12,13 @@ class GetCategoryListAndQrCode extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    MallPost invoke(TestContext testContext) {
+    GetCategoryListAndQrCode invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    GetCategoryListAndQrCode baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

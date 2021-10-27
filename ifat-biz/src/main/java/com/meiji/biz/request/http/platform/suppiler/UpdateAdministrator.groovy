@@ -9,18 +9,19 @@ class UpdateAdministrator extends PlatformPost{
         super.params = ["id","contactType","contactName","mobilePhone","contactIdCardNumber","contactEmail"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateAdministrator invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateAdministrator preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateAdministrator baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

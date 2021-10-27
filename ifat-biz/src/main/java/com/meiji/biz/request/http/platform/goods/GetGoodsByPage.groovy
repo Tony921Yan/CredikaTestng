@@ -10,22 +10,24 @@ class GetGoodsByPage extends PlatformPost{
                          "startNum","startPrice"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetGoodsByPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetGoodsByPage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetGoodsByPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    GetGoodsByPage specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

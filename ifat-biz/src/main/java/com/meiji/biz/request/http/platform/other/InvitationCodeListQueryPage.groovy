@@ -11,20 +11,21 @@ class InvitationCodeListQueryPage extends PlatformPost {
         super.params = ["pageNum", "pageSize", "code", "validDate", "usedShopDealerPhone", "shopDealerPhone"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    InvitationCodeListQueryPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext) {
+    InvitationCodeListQueryPage preInvoke(TestContext testContext) {
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext) {
+    InvitationCodeListQueryPage baseAssert(TestContext testContext) {
         super.baseAssert(testContext)
+        return this
     }
-    PlatformPost specialAssert(TestContext testContext) {
+    InvitationCodeListQueryPage specialAssert(TestContext testContext) {
         Map apiResult = testContext.getResponse().data
         Map mysqlResult = MysqlService.invitationCodeListQueryPage()
         System.out.println("apiResult"+apiResult)
@@ -36,5 +37,6 @@ class InvitationCodeListQueryPage extends PlatformPost {
         assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.dataList.getAt(2).getAt("gmtCreate"))
         assert DateUtil.strToDate(mysqlResult.gmt_modified as String) == DateUtil.strToDate(apiResult.dataList.getAt(2).getAt("gmtModified"))
         System.out.println("mysqlResult"+apiResult.dataList.getAt(2).getAt("code"))
+        return this
     }
 }

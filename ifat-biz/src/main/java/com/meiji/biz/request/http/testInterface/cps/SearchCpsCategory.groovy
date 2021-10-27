@@ -9,18 +9,19 @@ class SearchCpsCategory extends CpsPost {
         super.params =  ["userId"]
     }
 
-    CpsPost invoke(TestContext testContext) {
+    SearchCpsCategory invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    CpsPost preInvoke(TestContext testContext){
+    SearchCpsCategory preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    CpsPost baseAssert(TestContext testContext){
+    SearchCpsCategory baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -6,11 +6,11 @@
         </classes>
     </test>
 
-    <test name="查询店铺商品详情 findShopGoodsDetail">
-        <classes>
-            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/>
-        </classes>
-    </test>
+<!--    <test name="查询店铺商品详情 findShopGoodsDetail">-->
+<!--        <classes>-->
+<!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <test name="查询店铺商品列表 findShopGoodsList">
         <classes>
@@ -18,11 +18,11 @@
         </classes>
     </test>
 
-    <test name="查询店铺商品状态列表 findShopGoodsStateList">
-        <classes>
-            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsStateListTest"/>
-        </classes>
-    </test>
+<!--    <test name="查询店铺商品状态列表 findShopGoodsStateList">-->
+<!--        <classes>-->
+<!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsStateListTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <test name="查询店铺首页模块商品列表 findShopModuleGoodsList">
         <classes>

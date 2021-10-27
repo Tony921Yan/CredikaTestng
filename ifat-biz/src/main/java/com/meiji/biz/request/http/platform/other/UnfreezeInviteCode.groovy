@@ -9,18 +9,19 @@ class UnfreezeInviteCode extends PlatformPost {
         super.params =  [ "id"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UnfreezeInviteCode invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UnfreezeInviteCode preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UnfreezeInviteCode baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -10,18 +10,19 @@ class UpdateSupplierAddress extends PlatformPost{
         "supplierId","updateBy"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateSupplierAddress invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateSupplierAddress preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateSupplierAddress baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return  this
     }
 
 }

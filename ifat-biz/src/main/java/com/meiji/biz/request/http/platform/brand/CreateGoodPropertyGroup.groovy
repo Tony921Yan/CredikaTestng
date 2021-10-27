@@ -9,7 +9,7 @@ class CreateGoodPropertyGroup extends PlatformPost{
         super.params = ["categoryId","code","createBy","gmtCreate","id","list","name","remark"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    CreateGoodPropertyGroup invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }

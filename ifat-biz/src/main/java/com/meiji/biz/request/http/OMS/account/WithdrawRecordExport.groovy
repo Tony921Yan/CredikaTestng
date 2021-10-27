@@ -10,18 +10,19 @@ class WithdrawRecordExport extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    WithdrawRecordExport invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    WithdrawRecordExport preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    WithdrawRecordExport baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -9,18 +9,19 @@ class GetCardDetail extends PlatformPost{
         super.params = ["channelName"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetCardDetail invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetCardDetail preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetCardDetail baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

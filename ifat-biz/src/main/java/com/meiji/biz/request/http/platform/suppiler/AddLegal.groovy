@@ -10,18 +10,19 @@ class AddLegal extends PlatformPost{
         "idCardValidTime","createBy","updateBy","gmtCreate","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AddLegal invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AddLegal preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AddLegal baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

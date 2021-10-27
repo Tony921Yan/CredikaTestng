@@ -9,17 +9,18 @@ class PublishBack extends PlatformPost{
         super.params = ["spuId","updateById","updateByName"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    PublishBack invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    PublishBack preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    PublishBack baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

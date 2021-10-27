@@ -9,22 +9,23 @@ class ActiveManage extends PlatformPost {
         super.params =  [ "pageNum","pageSize"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    ActiveManage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    ActiveManage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    ActiveManage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    PlatformPost specicalAssert(TestContext testContext){
+    ActiveManage specicalAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

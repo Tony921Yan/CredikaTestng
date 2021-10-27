@@ -9,18 +9,19 @@ class GetGoodsByIds extends CpsPost {
         super.params =  ["spuIds"]
     }
 
-    CpsPost invoke(TestContext testContext) {
+    GetGoodsByIds invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    CpsPost preInvoke(TestContext testContext){
+    GetGoodsByIds preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    CpsPost baseAssert(TestContext testContext){
+    GetGoodsByIds baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -12,17 +12,18 @@ class SubmitGoods extends PlatformPost{
         "pics","skus"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    SubmitGoods invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    SubmitGoods preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    SubmitGoods baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

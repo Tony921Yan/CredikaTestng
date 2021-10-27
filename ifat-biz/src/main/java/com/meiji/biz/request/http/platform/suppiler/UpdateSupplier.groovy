@@ -10,18 +10,19 @@ class UpdateSupplier extends PlatformPost{
         "address","addressDetail","remark","updateBy","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateSupplier invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateSupplier preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateSupplier baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

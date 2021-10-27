@@ -9,18 +9,19 @@ class GetGoodsByName extends CpsPost {
         super.params =  ["commissionMoneySort","comprehensiveSort","page","priceSort","rows","salesSort","searchText"]
     }
 
-    CpsPost invoke(TestContext testContext) {
+    GetGoodsByName invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    CpsPost preInvoke(TestContext testContext){
+    GetGoodsByName preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    CpsPost baseAssert(TestContext testContext){
+    GetGoodsByName baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

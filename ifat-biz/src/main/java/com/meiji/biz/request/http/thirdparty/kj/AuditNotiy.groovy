@@ -10,17 +10,18 @@ class AuditNotiy extends KjPost{
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    KjPost invoke(TestContext testContext) {
+    AuditNotiy invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    KjPost preInvoke(TestContext testContext){
+    AuditNotiy preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    KjPost baseAssert(TestContext testContext){
+    AuditNotiy baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

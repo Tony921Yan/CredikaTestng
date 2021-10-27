@@ -9,13 +9,14 @@ class FindShopCustomerGroupByShopId extends MallPost {
         super.params =  ["id"]
     }
 
-    MallPost invoke(TestContext testContext) {
+    FindShopCustomerGroupByShopId invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    MallPost baseAssert(TestContext testContext){
+    FindShopCustomerGroupByShopId baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

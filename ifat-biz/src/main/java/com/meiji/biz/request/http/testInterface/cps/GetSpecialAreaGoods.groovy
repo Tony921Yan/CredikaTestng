@@ -9,18 +9,19 @@ class GetSpecialAreaGoods extends CpsPost {
         super.params =  ["categoryType","cpsCategoryId","page","rows"]
     }
 
-    CpsPost invoke(TestContext testContext) {
+    GetSpecialAreaGoods invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    CpsPost preInvoke(TestContext testContext){
+    GetSpecialAreaGoods preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    CpsPost baseAssert(TestContext testContext){
+    GetSpecialAreaGoods baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

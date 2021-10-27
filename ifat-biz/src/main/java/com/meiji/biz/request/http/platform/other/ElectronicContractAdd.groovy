@@ -9,18 +9,19 @@ class ElectronicContractAdd extends PlatformPost {
         super.params =  ["contractName","contractNo","businessManager","supplierId","supplierName","supplierContacts","supplierMobile","mainCategories","renewCustomer","deposit","signDate","effectiveDate","expiringDate","contractUrl","contractStatus"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    ElectronicContractAdd invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    ElectronicContractAdd preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    ElectronicContractAdd baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

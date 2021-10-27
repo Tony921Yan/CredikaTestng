@@ -10,18 +10,19 @@ class ElectronicContractExtSign extends PlatformPost {
         super.params =  ["contractId"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    ElectronicContractExtSign invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    ElectronicContractExtSign preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    ElectronicContractExtSign baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

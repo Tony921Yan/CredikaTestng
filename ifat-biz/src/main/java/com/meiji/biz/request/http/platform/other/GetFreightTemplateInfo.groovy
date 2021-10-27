@@ -10,17 +10,18 @@ class GetFreightTemplateInfo extends PlatformPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetFreightTemplateInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetFreightTemplateInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetFreightTemplateInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

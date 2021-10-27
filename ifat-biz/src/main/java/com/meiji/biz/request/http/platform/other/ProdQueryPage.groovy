@@ -10,24 +10,26 @@ class ProdQueryPage extends PlatformPost {
         super.params =  [ "condition","page","rows"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    ProdQueryPage invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    ProdQueryPage preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    ProdQueryPage baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    ProdQueryPage specialAssert(TestContext testContext){
         Map mysqlDate = MysqlService.prodQueryPage(testContext.get("rows"))get(0)
         Map apiDate = testContext.getResponse().data
         System.out.print("apiDate:" + apiDate)
         assert mysqlDate.contTotal == apiDate.total
+        return this
     }
 }

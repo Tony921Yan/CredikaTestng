@@ -10,18 +10,19 @@ class SyncAfterReport extends OMSPost {
 
     }
 
-    OMSPost invoke(TestContext testContext) {
+    SyncAfterReport invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    SyncAfterReport preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    SyncAfterReport baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

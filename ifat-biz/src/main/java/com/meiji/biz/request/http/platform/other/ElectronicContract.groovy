@@ -9,22 +9,23 @@ class ElectronicContract extends PlatformPost {
         super.params =  [ "page","rows"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    ElectronicContract invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    ElectronicContract preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    ElectronicContract baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    ElectronicContract specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 3
+        return this
     }
 }

@@ -9,18 +9,19 @@ class AccountAssetExport extends PlatformPost{
         super.params = ["condition","order","page","rows","sort"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    AccountAssetExport invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    AccountAssetExport preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    AccountAssetExport baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -10,18 +10,19 @@ class CreateTask extends OMSPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    OMSPost invoke(TestContext testContext) {
+    CreateTask invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSPost preInvoke(TestContext testContext){
+    CreateTask preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSPost baseAssert(TestContext testContext){
+    CreateTask baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

@@ -10,22 +10,23 @@ class GetLabel extends PlatformPost{
         super.params = ["pageNum","pageSize","labelName","id"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetLabel invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetLabel preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetLabel baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
 
-    PlatformPost specialAssert(TestContext testContext){
+    GetLabel specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
+        return this
     }
 }

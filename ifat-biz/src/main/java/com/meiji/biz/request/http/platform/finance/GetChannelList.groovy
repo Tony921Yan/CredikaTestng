@@ -9,18 +9,19 @@ class GetChannelList extends PlatformPost{
         super.params = [""]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    GetChannelList invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    GetChannelList preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    GetChannelList baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

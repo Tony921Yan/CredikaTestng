@@ -9,18 +9,19 @@ class ElectronicContractSumbit extends PlatformPost {
         super.params =  ["contractId"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    ElectronicContractSumbit invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    ElectronicContractSumbit preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    ElectronicContractSumbit baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

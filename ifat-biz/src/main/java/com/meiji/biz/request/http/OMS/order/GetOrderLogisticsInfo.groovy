@@ -9,18 +9,19 @@ class GetOrderLogisticsInfo extends OMSGet {
 
     }
 
-    OMSGet invoke(TestContext testContext) {
+    GetOrderLogisticsInfo invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSGet preInvoke(TestContext testContext){
+    GetOrderLogisticsInfo preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSGet baseAssert(TestContext testContext){
+    GetOrderLogisticsInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

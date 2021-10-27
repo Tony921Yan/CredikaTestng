@@ -10,18 +10,19 @@ class Account extends OMSGet {
 
     }
 
-    OMSGet invoke(TestContext testContext) {
+    Account invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSGet preInvoke(TestContext testContext){
+    Account preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSGet baseAssert(TestContext testContext){
+    Account baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

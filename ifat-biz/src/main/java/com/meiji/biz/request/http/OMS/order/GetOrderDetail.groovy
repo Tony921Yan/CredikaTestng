@@ -9,18 +9,19 @@ class GetOrderDetail extends OMSGet {
 
     }
 
-    OMSGet invoke(TestContext testContext) {
+    GetOrderDetail invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    OMSGet preInvoke(TestContext testContext){
+    GetOrderDetail preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    OMSGet baseAssert(TestContext testContext){
+    GetOrderDetail baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

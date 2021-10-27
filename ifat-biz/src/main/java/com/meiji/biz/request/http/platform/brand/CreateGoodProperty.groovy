@@ -10,22 +10,24 @@ class CreateGoodProperty extends PlatformPost{
                          "isSearch","name","remark","status","type","updateBy"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    CreateGoodProperty invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    CreateGoodProperty preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    CreateGoodProperty baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
-
+    CreateGoodProperty specialAssert(TestContext testContext){
+        super.specialAssert(testContext)
+        return this
     }
 
 }

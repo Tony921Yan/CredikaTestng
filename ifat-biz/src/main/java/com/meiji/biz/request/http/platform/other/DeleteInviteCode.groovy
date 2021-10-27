@@ -9,18 +9,19 @@ class DeleteInviteCode extends PlatformPost {
         super.params =  [ "id"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    DeleteInviteCode invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    DeleteInviteCode preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    DeleteInviteCode baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

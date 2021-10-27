@@ -10,18 +10,19 @@ class UpdateSupplement extends PlatformPost{
         "businessAdditionDesc","updateBy","gmtModified"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    UpdateSupplement invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    UpdateSupplement preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    UpdateSupplement baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
 }

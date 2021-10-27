@@ -9,17 +9,18 @@ class GetInfoSupervisor extends PlatformGet{
         super.params = ["id"]
     }
 
-    PlatformGet invoke(TestContext testContext) {
+    GetInfoSupervisor invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformGet preInvoke(TestContext testContext){
+    GetInfoSupervisor preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformGet baseAssert(TestContext testContext){
+    GetInfoSupervisor baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 }

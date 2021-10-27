@@ -9,22 +9,24 @@ class CreateBrand extends PlatformPost{
         super.params = ["createBy","gmtCreate","gmtModified","icon","id","name","remark","sort","updateBy"]
     }
 
-    PlatformPost invoke(TestContext testContext) {
+    CreateBrand invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PlatformPost preInvoke(TestContext testContext){
+    CreateBrand preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PlatformPost baseAssert(TestContext testContext){
+    CreateBrand baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
-    PlatformPost specialAssert(TestContext testContext){
-
+    CreateBrand specialAssert(TestContext testContext){
+        super.specialAssert(testContext)
+        return this
     }
 
 }

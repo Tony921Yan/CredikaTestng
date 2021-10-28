@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "costPerSalesListGetSelectedGoods">
+        <parm key="goods" value ="[{'spuId':1419204305616928,'sort':1},{'spuId':1428235952848928,'sort':2}]"/>
+    </test>
+</data>

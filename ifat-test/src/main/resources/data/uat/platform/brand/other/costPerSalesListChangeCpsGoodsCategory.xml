@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "costPerSalesListChangeCpsGoodsCategory">
+        <parm key="cpsCategoryId" value ="1441958715195424"/>
+        <parm key="ids" value ="[1443456633274464]"/>
+    </test>
+</data>

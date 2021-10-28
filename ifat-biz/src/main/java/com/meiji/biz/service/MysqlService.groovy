@@ -37,6 +37,18 @@ class MysqlService extends MysqlAPI {
         return meiji_shop.rows("select *  from invite_code  order by id desc limit 20").get(2)
     }
 
+    static Map costPerSalesListGetCpsGoods(){
+        return meiji_goods.firstRow("select * from meiji_goods.goods_spu WHERE code = '200sup39806'")
+    }
+
+    static Map costPerSalesListGetCurrentCategoryGoods(String id){
+        return meiji_goods.rows("SELECT * FROM meiji_goods.cps_goods_relationship WHERE cps_category_id = $id").get(0)
+    }
+
+    static Map costPerSalesListGetSelectedGoods(){
+        return meiji_goods.rows("SELECT * FROM `meiji_goods`.`cps_goods_relationship` WHERE `cps_category_id` = '1441958675349536'").get(1)
+    }
+
     static List addCategory(String type,String sort){
         return meiji_goods.rows("select * from goods_category where type = $type and sort = $sort")
     }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "costPerSalesListSaveCpsGoods">
+        <parm key="cpsCategoryId" value ="1441958715195424"/>
+        <parm key="goods" value ="[
+        {
+            'spuId':1419206182567969,
+            'sort':1
+        },
+        {
+            'spuId':1443274078289952,
+            'sort':2
+        },
+        {
+            'spuId':1444348877078560,
+            'sort':3
+        }
+    ]"/>
+    </test>
+</data>

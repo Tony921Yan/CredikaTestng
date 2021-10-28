@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "costPerSalesListRemoveCpsGoods">
+        <parm key="cpsCategoryId" value ="1441958675349536"/>
+        <parm key="spuId" value ="1443450140491808"/>
+    </test>
+</data>

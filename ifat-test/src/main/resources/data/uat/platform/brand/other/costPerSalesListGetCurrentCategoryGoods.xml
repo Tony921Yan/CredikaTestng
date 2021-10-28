@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "costPerSalesListGetCurrentCategoryGoods">
+        <parm key="id" value ="1442024901312544"/>
+    </test>
+</data>

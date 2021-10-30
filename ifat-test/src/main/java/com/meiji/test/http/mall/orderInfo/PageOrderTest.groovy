@@ -11,7 +11,7 @@ class PageOrderTest extends BaseTest {
     @Test(description = "分页订单查询 pageOrder" ,groups = ["prod","uat"],testName = "mall-pageOrder",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void pageOrder(TestContext testContext){
-        pageOrder.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        pageOrder.invoke(testContext).baseAssert(testContext)
     }
 
     @Test(description = "全部订单 pageOrder-all",groups = ["prod","uat"],testName = "mall-pageOrder-all",

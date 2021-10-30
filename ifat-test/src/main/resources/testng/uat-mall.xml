@@ -2,55 +2,50 @@
 <suite name = "user"  verbose="4">
     <test name="新增收货地址 addUserAddress">
         <classes>
-            <class name = "com.meiji.test.http.mall.userAddress.AddUserAddressTest"/>
-        </classes>
-    </test>
-
-<!--    <test name="查询店铺商品详情 findShopGoodsDetail">-->
-<!--        <classes>-->
-<!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-    <test name="查询店铺商品列表 findShopGoodsList">
-        <classes>
+            <class name="com.meiji.test.http.mall.shopGoods.FindShopByIdTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/> <!--需要查ES,可不与shopid关联-->
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsListTest"/>
-        </classes>
-    </test>
-
-<!--    <test name="查询店铺商品状态列表 findShopGoodsStateList">-->
-<!--        <classes>-->
-<!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsStateListTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-    <test name="查询店铺首页模块商品列表 findShopModuleGoodsList">
-        <classes>
+            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsStateListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopModuleGoodsListTest"/>
-        </classes>
-    </test>
-
-    <test name="查询店铺首页模块列表 findShopModuleList">
-        <classes>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopModuleListTest"/>
-        </classes>
-    </test>
-
-    <test name="查询收货地址列表 findUserAddressList">
-        <classes>
             <class name="com.meiji.test.http.mall.userAddress.FindUserAddressListTest"/>
-        </classes>
-    </test>
-
-    <test name="查询当前用户信息 findUserInfo">
-        <classes>
             <class name="com.meiji.test.http.mall.userInfo.FindUserInfoTest"/>
-        </classes>
-    </test>
-
-    <test name="查询最近访问的店铺列表 findUserVisitShopRecordList">
-        <classes>
+            <class name="com.meiji.test.http.mall.orderInfo.GetOrderInfoTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.GetUserOrderCountTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.PageOrderTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.PreviewOrderTest"/>
+            <class name="com.meiji.test.http.mall.userAddress.UpdateUserAddressTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.UpdateUserInfoTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.UserVisitShopTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindOfficeShopModuleListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindRecommendGoodsTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindGoodsCategoryTreeTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindBrandListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindActiveGoodsTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindGoodsTopicDetailTest"/>
             <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetAccountInfoTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.IncomeTotalQueryTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindShopByUserIdTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.FlowPageQueryTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.FlowTotalDataTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.WithdrawPageDataTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.IncomePageQueryTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.CustomerListTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetCategoryListAndQrCodeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.SearchByConditionTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.ListGiftsFromMeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.ListGiftsToMeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetGiftDetailToMeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FindShopCustomerGroupByShopIdTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FindInviteCodeNumTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FindInviteCodeListTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FinShopInviteCodeCostInfoTest"/>
+            <class name = "com.meiji.test.http.mall.userAddress.AddUserAddressTest"/>
         </classes>
     </test>
 
@@ -60,27 +55,9 @@
         </classes>
     </test>
 
-    <test name="订单详情 getOrderInfo">
-        <classes>
-            <class name="com.meiji.test.http.mall.orderInfo.GetOrderInfoTest"/>
-        </classes>
-    </test>
-
-    <test name="获取物流信息 getOrderLogisticsInfo">
-        <classes>
-            <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoTest"/>
-        </classes>
-    </test>
-
     <test name="获取用户协议 getUserAgreement">
         <classes>
             <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>
-        </classes>
-    </test>
-
-    <test name="获取用户订单状态计数 小红点 getUserOrderCount">
-        <classes>
-            <class name="com.meiji.test.http.mall.orderInfo.GetUserOrderCountTest"/>
         </classes>
     </test>
 
@@ -96,33 +73,4 @@
         </classes>
     </test>
 
-    <test name="分页订单查询 pageOrder">
-        <classes>
-            <class name="com.meiji.test.http.mall.orderInfo.PageOrderTest"/>
-        </classes>
-    </test>
-
-    <test name="预览订单 previewOrder">
-        <classes>
-            <class name="com.meiji.test.http.mall.orderInfo.PreviewOrderTest"/>
-        </classes>
-    </test>
-
-    <test name="更新收货地址 updateUserAddress">
-        <classes>
-            <class name="com.meiji.test.http.mall.userAddress.UpdateUserAddressTest"/>
-        </classes>
-    </test>
-
-    <test name="更新用户信息 updateUserInfo">
-        <classes>
-            <class name="com.meiji.test.http.mall.userInfo.UpdateUserInfoTest"/>
-        </classes>
-    </test>
-
-    <test name="用户访问店铺 userVisitShop">
-        <classes>
-            <class name="com.meiji.test.http.mall.userInfo.UserVisitShopTest"/>
-        </classes>
-    </test>
 </suite>

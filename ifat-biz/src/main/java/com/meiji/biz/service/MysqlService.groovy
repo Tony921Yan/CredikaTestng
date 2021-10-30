@@ -86,7 +86,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getUserOrderCount_toDeliveryCount(String ShopId){
-        return meiji_order.rows("select count(*) as DeliveryCount from order_info where shop_id = $ShopId and order_status in(2,3,4) and order_type <> 4")
+        return meiji_order.rows("select count(*) as DeliveryCount from order_info where receiver_tel = 19928717417 and order_status in(2,3,4) and order_type <> 4")
     }
 
     static List getUserOrderCount_toPayCount(String ShopId){

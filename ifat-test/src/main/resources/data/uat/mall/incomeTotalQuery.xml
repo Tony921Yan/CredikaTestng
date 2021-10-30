@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "incomeTotalQuery-today">
+        <parm key="type" value ="1"/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+
+    <test name="incomeTotalQuery-yesterday">
+        <parm key="type" value="2"/>
+        <parm key="shopId" value="1405981112139808"/>
+    </test>
+
+    <test name="incomeTotalQuery-thisMonth">
+        <parm key="type" value="3"/>
+        <parm key="shopId" value="1405981112139808"/>
+    </test>
+
+    <test name="incomeTotalQuery-lastMonth">
+        <parm key="type" value="4"/>
+        <parm key="shopId" value="1405981112139808"/>
+    </test>
+</data>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "getOrderLogisticsInfo1">
+    <test name = "getOrderLogisticsInfo">
         <parm key="orderCode" value ="O2021033019420429639"/>
     </test>
 </data>

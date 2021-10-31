@@ -2,7 +2,10 @@ package com.meiji.biz.request.http.mall.userInfo
 
 import com.meiji.biz.request.http.mall.MallPost
 import com.meiji.biz.request.http.shop.ShopPost
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
+
+import java.awt.image.ImageProducer
 
 class FindInviteCodeList extends MallPost {
     {
@@ -27,7 +30,21 @@ class FindInviteCodeList extends MallPost {
     }
 
     FindInviteCodeList specialAssert(TestContext testContext){
-        super.specialAssert(testContext)
-        return this
+        List<Map> apiResult = testContext.getResponse().data
+        List mysqlResult = MysqlService.findInviteCodeList(testContext.get("shopId"))
+        assert apiResult.get(0).getAt("code") == mysqlResult.get(0).getAt("code")
+
     }
+
+//    FindInviteCodeList special[](){
+//        TestContext testContext = new TestContext()
+//        List mysqlResult = MysqlService.findInviteCodeList(testContext.get("shopId"))
+//        List list = new ArrayList()
+//        System.out.println(mysqlResult)
+//        for(Map map:mysqlResult){
+//            testContext.put("code",map.get("code").toString())
+//            list.add(testContext)
+//        }
+//        return list
+//    }
 }

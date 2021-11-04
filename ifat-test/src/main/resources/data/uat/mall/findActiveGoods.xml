@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "findActiveGoods">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="5"/>
+        <parm key="activeType" value ="1"/>
+        <parm key="activeStatus" value ="5"/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+</data>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "customerList-mall">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="sort" value ="2"/>
+        <parm key="sortType" value ="2"/>
+        <parm key="gmtCreateEnd" value =""/>
+        <parm key="gmtCreateStart" value =""/>
+        <parm key="gmtLastVisitEnd" value =""/>
+        <parm key="gmtLastVisitStart" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "customerList1-mall">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="sort" value ="2"/>
+        <parm key="sortType" value ="1"/>
+        <parm key="gmtCreateEnd" value =""/>
+        <parm key="gmtCreateStart" value =""/>
+        <parm key="gmtLastVisitEnd" value =""/>
+        <parm key="gmtLastVisitStart" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+</data>

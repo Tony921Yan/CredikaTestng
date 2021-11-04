@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "updateUserAddress">
+    <test name = "updateUserAddress1">
         <parm key="address" value ="详细地址"/>
         <parm key="city" value ="北京市"/>
         <parm key="cityCode" value ="110100"/>

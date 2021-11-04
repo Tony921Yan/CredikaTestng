@@ -28,6 +28,7 @@ class FindUserInfo extends MallPost {
 
     FindUserInfo baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
     FindUserInfo specialAssert(TestContext testContext){

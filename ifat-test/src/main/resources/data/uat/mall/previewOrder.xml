@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "previewOrder">
-        <parm key="orderGoods" value ='[{"skuId":"1","skuNum":"1"}]'/>
-        <parm key="shopId" value ="1"/>
-        <parm key="userAddressId" value ="1"/>
+        <parm key="orderGoods" value ='[{"skuId":"1419219478511713","skuNum":"1"}]'/>
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="orderType" value ="1"/>
+        <parm key="userAddressId" value ="1420296638693408"/>
 
     </test>
 </data>

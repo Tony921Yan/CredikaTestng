@@ -23,9 +23,4 @@ class FinShopInviteCodeCostInfo extends MallPost {
         super.baseAssert(testContext)
         return this
     }
-
-    FinShopInviteCodeCostInfo specialAssert(TestContext testContext){
-        super.specialAssert(testContext)
-        return this
-    }
 }

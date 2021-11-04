@@ -98,7 +98,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getUserOrderCount_toDeliveryCount(String ShopId){
-        return meiji_order.rows("select count(*) as DeliveryCount from order_info where shop_id = $ShopId and order_status in(2,3,4) and order_type <> 4")
+        return meiji_order.rows("select count(*) as DeliveryCount from order_info where receiver_tel = 19928717417 and order_status in(2,3,4) and order_type <> 4")
     }
 
     static List getUserOrderCount_toPayCount(String ShopId){
@@ -142,5 +142,17 @@ class MysqlService extends MysqlAPI {
 
     static Map batchUpdateConfig(){
         return meiji_goods.firstRow("SELECT * from meiji_system.config_log where `key` like 'lockingPeriod' ORDER BY update_time desc;")
+    }
+
+    static  Map findShopByUserId(){
+        return meiji_shop.firstRow("SELECT * from shop where id=1405981112139808")
+    }
+
+    static Map flowPageQuery(){
+        return meiji_pay.firstRow("SELECT * from trade_flow where merchant_type =1 and entity_id = 1405981112139808 and `year` = 2021 and `month` =7 and trade_type = 4")
+    }
+
+    static List findInviteCodeList(String shopId){
+        return meiji_shop.rows("SELECT * from invite_code where shop_id = $shopId ORDER BY id DESC LIMIT 10")
     }
 }

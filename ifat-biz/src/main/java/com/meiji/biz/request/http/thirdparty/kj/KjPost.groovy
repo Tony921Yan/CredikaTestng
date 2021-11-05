@@ -30,7 +30,6 @@ abstract class KjPost {
                 req.put(str,JsonUtil.objectParse(testContext.get(str)))
             }
         }
-        SignUtil.sign()
         testContext.appendLog(new Record("接口地址",url))
         testContext.appendLog(new Record("请求头",heads))
         testContext.appendLog(new Record("请求参数",req))

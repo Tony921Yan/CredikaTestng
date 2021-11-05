@@ -13,3 +13,5 @@ class CostPerSalesListSaveCpsGoodsTest extends BaseTest {
         costPerSalesListSaveCpsGoods.invoke(testContext).baseAssert(testContext)
     }
 }
+
+

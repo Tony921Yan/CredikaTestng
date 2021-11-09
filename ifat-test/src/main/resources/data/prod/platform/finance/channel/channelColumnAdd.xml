@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "channelColumnAdd">
+        <parm key="channelId" value ="1445090943828000"/>
+        <parm key="childName" value ="Autotest"/>
+        <parm key="createBy" value ="接口"/>
+        <parm key="name" value ="测试标题"/>
+        <parm key="remark" value ="仅用于接口测试"/>
+        <parm key="sort" value ="0"/>
+    </test>
+</data>

@@ -12,7 +12,8 @@ class GetGoodsByCategoryIdsTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGoodsByCategoryIds(TestContext testContext){
         testContext.put("page",1)
-        testContext.put("rows",20)
+        testContext.put("rows",1)
+        testContext.put("categoryIds",[1])
         getGoodsByCategoryIds.invoke(testContext).baseAssert(testContext)
     }
 }

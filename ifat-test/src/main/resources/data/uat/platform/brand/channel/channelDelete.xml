@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "channelDelete">
+        <parm key="id" value ="1446521379749920"/>
+    </test>
+</data>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "channelAdd">
+        <parm key="appType" value ="2"/>
+        <parm key="childName" value ="测试添加副标题"/>
+        <parm key="createBy" value ="测试佬"/>
+        <parm key="name" value ="接口添加标题"/>
+        <parm key="remark" value ="接口备注"/>
+        <parm key="type" value ="3"/>
+    </test>
+</data>

@@ -55,6 +55,8 @@
             <class name="com.meiji.test.http.mall.userInfo.FindInviteCodeNumTest"/>
             <class name="com.meiji.test.http.mall.userInfo.FindInviteCodeListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.FinShopInviteCodeCostInfoTest"/>
+            <class name="com.meiji.test.http.mall.material.GetMaterialCategoryTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.IsSubscribeTest"/>
         </classes>
     </test>
 </suite>

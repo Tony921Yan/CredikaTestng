@@ -11,8 +11,8 @@ class GetSpecialAreaGoodsTest extends BaseTest {
     @Test(description = "查询专区商品接口 getSpecialAreaGoods" ,groups = ["prod","uat"],testName = "getSpecialAreaGoods",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getSpecialAreaGoods(TestContext testContext){
-        testContext.put("categoryType",0)
-        testContext.put("cpsCategoryId",0)
+        testContext.put("categoryType",1)
+//        testContext.put("cpsCategoryId",1441958715195424)
         testContext.put("page",1)
         testContext.put("rows",20)
         getSpecialAreaGoods.invoke(testContext).baseAssert(testContext)

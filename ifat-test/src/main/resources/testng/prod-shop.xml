@@ -1,5 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name = "美记B端"  verbose="2">
+    <groups>
+        <run>
+            <include name="prod"/>
+        </run>
+    </groups>
     <test name="美记B端自动化">
         <classes>
             <class name="com.meiji.test.http.shop.shopauth.FindShopBusinessInfoTest"/>

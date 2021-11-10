@@ -14,7 +14,7 @@ class HomePageTest extends BaseTest {
         homePage.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "debug" ,groups = ["prod","uat"],testName = "debug",
+    @Test(description = "debug" ,groups = ["uat"],testName = "debug",
             dataProvider = "common",dataProviderClass = TestData.class)
     public void debug(TestContext testContext){
         testContext.put("dealerId","130")

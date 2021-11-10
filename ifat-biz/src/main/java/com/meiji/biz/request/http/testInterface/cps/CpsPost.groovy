@@ -32,12 +32,8 @@ abstract class CpsPost {
                 req.put(str,JsonUtil.objectParse(testContext.get(str)))
             }
         }
-        req.put("timestamp",timestamp)
-        req.put("appKey",appKey)
-        String sign = CpsSign.sign(secret,req)
+        String sign = CpsSign.sign(secret,heads,req)
         heads.put("sign",sign)
-        req.remove("timestamp")
-        req.remove("appKey")
         testContext.appendLog(new Record("接口地址",url))
         testContext.appendLog(new Record("请求头",heads))
         testContext.appendLog(new Record("请求参数",req))

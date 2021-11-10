@@ -9,8 +9,7 @@ import java.security.NoSuchAlgorithmException
 import com.miyuan.ifat.support.util.MD5Utils
 
 class CpsSign {
-    private static String secret = "7BF8D7BC15"
-    static String sign(Map map){
+    static String sign(String secret, Map map){
         StringBuffer paramStr = new StringBuffer(secret);
         Set<Map.Entry<String, Object>> entries = map.entrySet();
         Iterator<Map.Entry<String, Object>> iterator = entries.iterator();

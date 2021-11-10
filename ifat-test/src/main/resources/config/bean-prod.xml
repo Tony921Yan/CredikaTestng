@@ -5,6 +5,12 @@
         <properties key="shop" value="https://shop.meiji8888.com/"/>
         <properties key="scrm" value="https://shop.meiji8888.com/"/>
         <properties key="platform" value="https://ecmiddle.meiji8888.com/"/>
+        <properties key="thirdparty" value="https://prod.meiji8888.com/"/>
+    </bean>
+
+    <bean name="cps">
+        <properties key="appKey" value="cps_my20211111"/>
+        <properties key="secret" value="3E43EF52D2"/>
     </bean>
 
     <bean name="dingTalk">

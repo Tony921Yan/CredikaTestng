@@ -3,7 +3,7 @@ package com.meiji.biz.request.http.testInterface.cps
 
 import com.miyuan.ifat.support.test.TestContext
 
-class MiyuanPageOrder extends CpsPost200 {
+class MiyuanPageOrder extends CpsPost {
     {
         super.api = "/thirdparty/api/cps/miyuanPageOrder"
         super.params =  ["endTime","oid","page","pageSize","queryType","startTime","status"]
@@ -20,7 +20,7 @@ class MiyuanPageOrder extends CpsPost200 {
     }
 
     MiyuanPageOrder baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        assert testContext.getResponse().code == "200"
         return this
     }
 

@@ -15,7 +15,8 @@ abstract class CpsPost {
     public String api
     public List params
     public String preInvoke
-    private String appKey = "cps_mykey666"
+    private static String appKey = ResourceUtil.getBeanData("cps").get("appKey")
+    private static String secret = ResourceUtil.getBeanData("cps").get("secret")
 
     CpsPost invoke(TestContext testContext){
         String shopUrl = ResourceUtil.getBeanData("http").get("thirdparty")
@@ -24,9 +25,7 @@ abstract class CpsPost {
         String timestamp = System.currentTimeMillis()
         heads.put("Content-Type",testContext.get("Content-Type"))
         heads.put("timestamp",timestamp)
-        heads.put("appKey","cps_mykey666")
-        Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
-        //heads.put("cookie",CookieService.getShopCookie(shopUrl,dealerId))
+        heads.put("appKey",appKey)
         TreeMap req = new TreeMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){
@@ -34,8 +33,8 @@ abstract class CpsPost {
             }
         }
         req.put("timestamp",timestamp)
-        req.put("appKey","cps_mykey666")
-        String sign = CpsSign.sign(req)
+        req.put("appKey",appKey)
+        String sign = CpsSign.sign(secret,req)
         heads.put("sign",sign)
         req.remove("timestamp")
         req.remove("appKey")

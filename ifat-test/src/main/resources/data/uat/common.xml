@@ -10,5 +10,7 @@
         <parm key="Content-Type" value="application/json;charset=UTF-8"/>
         <parm key="username" value="keguang"/>
         <parm key="password" value="keguang.1234"/>
+        <parm key="omsUsername" value="13418039633"/>
+        <parm key="omsPassword" value="13418039633"/>
     </test>
 </data>

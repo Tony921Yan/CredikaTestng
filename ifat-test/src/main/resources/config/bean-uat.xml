@@ -9,6 +9,7 @@
         <properties key="shop" value="https://test.shop.meiji8888.com/"/>
         <properties key="thirdparty" value="https://test.meiji8888.com/"/>
         <properties key="scrm" value="https://test.meiji8888.com/"/>
+        <properties key="oms" value="https://test.oms.meiji8888.com/"/>
     </bean>
 
     <bean name="cps">

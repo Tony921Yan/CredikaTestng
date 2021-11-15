@@ -113,4 +113,26 @@ class CookieService {
         cacheCookie.put("platform:"+username,cookie)
         return cookie
     }
+
+    static String getOMSCookie(String url,String username,String password){
+        String cookie = cacheCookie.get("cms:"+username)
+        if(cookie!=null){
+            return cookie
+        }
+        Map param = new HashMap()
+        param.put("username",username)
+        param.put("password",password)
+        StringBuilder stringBuilder = new StringBuilder()
+        CloseableHttpResponse response = HttpUtil.postV2(url+"/login/check", [:], param)
+        HttpEntity entity = response.getEntity()
+        String result = EntityUtils.toString(entity, "UTF-8")
+        Header[] headers = response.getHeaders("Set-Cookie")
+        for(Header header:headers){
+            stringBuilder.append(header.elements.head().toString().split (";")[0])
+            stringBuilder.append(";")
+        }
+        cookie =  stringBuilder.toString()
+        cacheCookie.put("cms:"+username,cookie)
+        return cookie
+    }
 }

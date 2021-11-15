@@ -6,6 +6,7 @@
         <properties key="scrm" value="https://shop.meiji8888.com/"/>
         <properties key="platform" value="https://ecmiddle.meiji8888.com/"/>
         <properties key="thirdparty" value="https://prod.meiji8888.com/"/>
+        <properties key="oms" value="https://oms.meiji8888.com/"/>
     </bean>
 
     <bean name="cps">

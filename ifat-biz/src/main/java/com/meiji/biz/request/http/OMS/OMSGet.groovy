@@ -17,7 +17,7 @@ abstract class OMSGet {
     OMSGet invoke(TestContext testContext){
         String url  = ResourceUtil.getBeanData("http").get("oms")
         String username = testContext.get("omsUsername")
-        String password = testContext.get("omePssword")
+        String password = testContext.get("omsPassword")
         String cookie = CookieService.getOMSCookie(url,username,password)
         url = url +api
         Map heads = new HashMap()

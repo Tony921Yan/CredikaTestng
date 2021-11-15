@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "freightTemplateaddFreightTemplate">
+        <parm key="status" value ="1"/>
+        <parm key="areaCodeList" value ="[120000]"/>
+        <parm key="isParcel" value ="0"/>
+        <parm key="remark" value ="COOL"/>
+        <parm key="supplierId" value="77"/>
+        <parm key="templateName" value="COCOCO"/>
+        <parm key="ruleType" value="2"/>
+        <parm key="freightTemplateRulePrices" value="{'isFixed':1,'orderPrice':5500,'freight':10000}"/>
+        <parm key="freightTemplateRulePricesList" value="[{'areaCodeList':[110000],'key':0,'freightDatas':{'isFixed':0,'fixedFreight':7756}}]"/>
+        <parm key="freightTemplateRuleWeight" value="{}"/>
+        <parm key="freightTemplateRuleWeightList" value="{}"/>
+
+
+
+    </test>
+</data>

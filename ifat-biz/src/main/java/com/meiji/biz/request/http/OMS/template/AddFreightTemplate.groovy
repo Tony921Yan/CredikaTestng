@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class AddFreightTemplate extends OMSPost {
     {
-        super.api = "/api/supplier/freightTemplate/addFreightTemplate"
+        super.api = "/freightTemplate/addFreightTemplate"
         super.params =  [ "areaCodeList","isParcel","remark","status","supplierId","templateName"]
 
     }

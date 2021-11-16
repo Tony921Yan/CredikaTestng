@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getConfigValueForUserShop">
+        <parm key="key" value ="isShowMaterial"/>
+    </test>
+</data>

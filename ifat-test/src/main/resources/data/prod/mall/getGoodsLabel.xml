@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getGoodsLabel">
+        <parm key="spuIds" value ="[1410324940980257]"/>
+    </test>
+</data>

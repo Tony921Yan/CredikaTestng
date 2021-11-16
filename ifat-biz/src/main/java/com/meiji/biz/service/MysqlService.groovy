@@ -153,6 +153,6 @@ class MysqlService extends MysqlAPI {
     }
 
     static List findInviteCodeList(String shopId){
-        return meiji_shop.rows("SELECT * from invite_code where shop_id = $shopId ORDER BY id DESC LIMIT 10")
+        return meiji_shop.rows("SELECT * from invite_code where shop_id = $shopId AND state = 0 ORDER BY id ASC LIMIT 20")
     }
 }

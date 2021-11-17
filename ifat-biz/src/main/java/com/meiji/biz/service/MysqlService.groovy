@@ -25,6 +25,10 @@ class MysqlService extends MysqlAPI {
         return meiji_supplier.rows("select * from contract where id = $contractId")
     }
 
+    static Map FreightTemplateQueryPage(){
+        return meiji_supplier.rows("SELECT * FROM `freight_template` WHERE supplier_id = 77 AND deleted  = 0 ORDER BY id DESC Limit 20").get(0)
+    }
+
     static List prodElectronicContractDownload(Integer contractId){
         return meiji_supplier.rows("select * from contract where id = $contractId")
     }

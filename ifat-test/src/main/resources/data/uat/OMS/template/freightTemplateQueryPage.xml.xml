@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "freightTemplateQueryPage">
+        <parm key="supplierId" value="77"/>
+        <parm key="page" value="1"/>
+        <parm key="limit" value="20"/>
+        <parm key="templateCode" value=""/>
+        <parm key="templateName" value=""/>
+
+    </test>
+</data>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getChannelColumn">
+        <parm key="channelId" value ="1445090943828000"/>
+        <parm key="id" value ="1445100173393952"/>
+    </test>
+</data>

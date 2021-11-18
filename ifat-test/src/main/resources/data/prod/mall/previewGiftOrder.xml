@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "previewGiftOrder">
+        <parm key="addressId" value ="1"/>
+        <parm key="orderGoods" value ='[{"skuId":1433090838757504,"skuNum":1,"leftStock":19993}]'/>
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="orderType" value ="1"/>
+    </test>
+</data>

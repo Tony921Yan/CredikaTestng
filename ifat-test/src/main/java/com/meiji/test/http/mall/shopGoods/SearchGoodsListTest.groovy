@@ -6,6 +6,13 @@ import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
+/**
+ *
+ @author Remy
+ @update 2021/11/18-13:50
+ @version v2.1
+ */
+
 class SearchGoodsListTest extends BaseTest {
     SearchGoodsList searchGoodsList = new SearchGoodsList()
     @Test(description = "搜索商品列表搜索-综合 searchGoodsList" ,groups = ["prod","uat"],testName = "searchGoodsList1",
@@ -35,6 +42,12 @@ class SearchGoodsListTest extends BaseTest {
     @Test(description = "商品分类-日常零食 searchGoodsList-richanglingshi",groups = ["prod","uat"],testName = "searchGoodsList-richanglingshi",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void serrchGoodsList4(TestContext testContext){
+        searchGoodsList.invoke(testContext).baseAssert(testContext)
+    }
+
+    @Test(description = "商品分类-翻页 searchGoodsList-secondRow",groups = ["prod","uat"],testName = "searchGoodsList-secondRow",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void serrchGoodsList5(TestContext testContext){
         searchGoodsList.invoke(testContext).baseAssert(testContext)
     }
 }

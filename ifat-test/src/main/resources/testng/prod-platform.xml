@@ -33,6 +33,12 @@
             <class name="com.meiji.test.http.platform.other.SystemConfigMgrTest"/>
             <class name="com.meiji.test.http.platform.other.CustomerServiceManageTest"/>
             <class name="com.meiji.test.other.compareOrderAndSettlementStatus.CompareOrderAndSettlementStatusTest"/> <!--订单状态与结算状态对比-->
+            <class name="com.meiji.test.http.platform.channel.GetChannelListTest"/>
+            <class name="com.meiji.test.http.platform.channel.GetColumnListTest"/>
+            <class name="com.meiji.test.http.platform.channel.GetGoodsTest"/>
+            <class name="com.meiji.test.http.platform.decorate.GetTemplateByPageTest"/>
+            <class name="com.meiji.test.http.platform.decorate.GetDecorateTemplateDetailTest"/>
+
         </classes>
     </test>
 </suite>

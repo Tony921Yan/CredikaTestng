@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getChannelData">
+        <parm key = "shopId" value = "1405981112139808"/>
+        <parm key = "channelId" value = "1447763977961504"/>
+    </test>
+</data>

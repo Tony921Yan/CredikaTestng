@@ -1,6 +1,5 @@
 package com.meiji.test.http.platform.channel
 
-import com.meiji.biz.request.http.platform.channel.ChannelColumnDelete
 import com.meiji.biz.request.http.platform.channel.GetChannelColumn
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

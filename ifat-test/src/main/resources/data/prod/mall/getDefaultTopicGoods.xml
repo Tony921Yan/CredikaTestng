@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getDefaultTopicGoods">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="3"/>
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="topicIds" value ='["344","353","282","356"]'/>
+    </test>
+</data>

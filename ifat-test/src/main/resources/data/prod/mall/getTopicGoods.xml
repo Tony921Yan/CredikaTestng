@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getTopicGoods">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="priceSort" value =""/>
+        <parm key="publishTimeSort" value =""/>
+        <parm key="salesSort" value =""/>
+        <parm key="comprehensiveSort" value ="desc"/>
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="topicId" value ="353"/>
+    </test>
+
+    <test name = "getTopicGoods1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="priceSort" value =""/>
+        <parm key="publishTimeSort" value =""/>
+        <parm key="salesSort" value =""/>
+        <parm key="comprehensiveSort" value ="desc"/>
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="topicId" value ="344"/>
+    </test>
+
+</data>

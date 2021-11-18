@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getColumnList">
+        <parm key="channelId" value ="1447763740983328"/>
+    </test>
+
+    <test name = "getColumnList1">
+        <parm key="channelId" value ="1447763889881121"/>
+    </test>
+
+    <test name = "getColumnList2">
+        <parm key="channelId" value ="1447763977961504"/>
+    </test>
+</data>

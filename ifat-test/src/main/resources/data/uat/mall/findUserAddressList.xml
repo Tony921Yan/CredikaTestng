@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "findUserAddressList">
-        <parm key="userId" value =""/>
+        <parm key="userId" value ="10029"/>
     </test>
 </data>

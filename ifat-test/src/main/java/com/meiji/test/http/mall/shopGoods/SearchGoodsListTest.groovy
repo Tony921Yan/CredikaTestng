@@ -47,7 +47,7 @@ class SearchGoodsListTest extends BaseTest {
 
     @Test(description = "商品分类-翻页 searchGoodsList-secondRow",groups = ["prod","uat"],testName = "searchGoodsList-secondRow",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
-    public void serrchGoodsList5(TestContext testContext){
+    public void searchGoodsList5(TestContext testContext){
         searchGoodsList.invoke(testContext).baseAssert(testContext)
     }
 }

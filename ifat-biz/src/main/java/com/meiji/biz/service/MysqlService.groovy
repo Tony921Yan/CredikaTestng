@@ -128,6 +128,16 @@ class MysqlService extends MysqlAPI {
         }.collect(Collectors.toList())
     }
 
+    static List getShops(){
+        List list = meiji_shop.rows("select id,shop_name from shop order by gmt_create desc limit 20")
+        return list
+    }
+
+    static Integer getInviteCodeNum(Long shopId){
+        Map map = meiji_shop.firstRow("select  count(*) as cnt from invite_code where shop_id = '$shopId'")
+        return map.cnt
+    }
+
     static List getOrderInfoStatus(){
         return meiji_order.rows("SELECT order_code, parent_order_code,order_status, order_type,gmt_create from order_info where pay_status !=0 and order_type !=3 and gmt_create> DATE_SUB(NOW(),INTERVAL 1 DAY)")
     }

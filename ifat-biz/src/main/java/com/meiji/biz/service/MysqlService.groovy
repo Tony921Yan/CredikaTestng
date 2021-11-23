@@ -129,7 +129,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getShops(){
-        List list = meiji_shop.rows("select id,shop_name from shop order by gmt_create desc limit 20")
+        List list = meiji_shop.rows("select id,shop_name from shop where auth_state = 40 and audit_state = 20 and state = 1 order by gmt_create desc limit 50")
         return list
     }
 

@@ -3,7 +3,7 @@
     <test name="新增收货地址 addUserAddress">
         <classes>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopByIdTest"/>
-            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/> <!--需要查ES,可不与shopid关联-->
+<!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/> &lt;!&ndash;需要查ES,可不与shopid关联&ndash;&gt;-->
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsStateListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopModuleGoodsListTest"/>
@@ -55,11 +55,11 @@
         </classes>
     </test>
 
-    <test name="获取用户协议 getUserAgreement">
-        <classes>
-            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>
-        </classes>
-    </test>
+<!--    <test name="获取用户协议 getUserAgreement">-->
+<!--        <classes>-->
+<!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
     <test name="查看售后协商历史 listOrderAfterLog">
         <classes>

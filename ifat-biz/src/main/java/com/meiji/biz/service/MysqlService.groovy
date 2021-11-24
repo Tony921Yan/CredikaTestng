@@ -134,7 +134,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static Integer getInviteCodeNum(Long shopId){
-        Map map = meiji_shop.firstRow("select  count(*) as cnt from invite_code where shop_id = '$shopId'")
+        Map map = meiji_shop.firstRow("select  count(*) as cnt from invite_code where shop_id = $shopId")
         return map.cnt
     }
 

@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name = "user"  verbose="4">
-    <test name="新增收货地址 addUserAddress">
+    <test name="C端 测试环境自动化脚本">
         <classes>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopByIdTest"/>
 <!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/> &lt;!&ndash;需要查ES,可不与shopid关联&ndash;&gt;-->
@@ -45,32 +45,11 @@
             <class name="com.meiji.test.http.mall.userInfo.FindInviteCodeNumTest"/>
             <class name="com.meiji.test.http.mall.userInfo.FindInviteCodeListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.FinShopInviteCodeCostInfoTest"/>
-            <class name = "com.meiji.test.http.mall.userAddress.AddUserAddressTest"/>
-        </classes>
-    </test>
-
-    <test name="查看售后详情 getOrderAfterSale">
-        <classes>
+            <class name="com.meiji.test.http.mall.userAddress.AddUserAddressTest"/>
             <class name="com.meiji.test.http.mall.orderAfterSale.GetOrderAfterSaleTest"/>
-        </classes>
-    </test>
-
-<!--    <test name="获取用户协议 getUserAgreement">-->
-<!--        <classes>-->
-<!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-    <test name="查看售后协商历史 listOrderAfterLog">
-        <classes>
             <class name="com.meiji.test.http.mall.orderAfterSale.ListOrderAfterLogTest"/>
-        </classes>
-    </test>
-
-    <test name="查询售后列表 pageOrderAfterSale">
-        <classes>
             <class name="com.meiji.test.http.mall.orderAfterSale.PageOrderAfterSaleTest"/>
+            <!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
         </classes>
     </test>
-
 </suite>

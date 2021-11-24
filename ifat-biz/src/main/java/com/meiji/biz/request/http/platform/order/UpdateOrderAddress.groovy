@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class UpdateOrderAddress extends PlatformPost {
     {
-        super.api = "/platform/orderMgr/updateOrderAddress"
+        super.api = "OrderDetailManage/updateOrderAddress"
         super.params =  [ "id","orderCode","receiverAddress","receiverName","receiverTel"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

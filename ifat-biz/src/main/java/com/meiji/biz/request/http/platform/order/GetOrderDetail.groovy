@@ -1,11 +1,12 @@
 package com.meiji.biz.request.http.platform.order
 
 import com.meiji.biz.request.http.platform.PlatformGet
+import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetOrderDetail extends PlatformGet {
+class GetOrderDetail extends PlatformPost {
     {
-        super.api = "/platform/orderMgr/getOrderDetail"
+        super.api = "OrderDetailManage/getOrderDetail"
         super.params =  [ "id"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

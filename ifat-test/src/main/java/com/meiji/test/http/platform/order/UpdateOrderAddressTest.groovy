@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestData
 import com.meiji.biz.request.http.platform.order.UpdateOrderAddress
 import org.testng.annotations.Test
 
-class UpdateOrderAddressTest extends BaseTest {
+class UpdateOrderAddressTest extends BaseTest {//t特定场景才生效
     UpdateOrderAddress updateOrderAddress = new UpdateOrderAddress()
     @Test(description = "修改订单收货信息 updateOrderAddress" ,groups = ["prod","uat"],testName = "updateOrderAddress",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

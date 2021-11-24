@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getGroupGoodsByPage">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="groupType" value ="2"/>
+
+    </test>
+</data>

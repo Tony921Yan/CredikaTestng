@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestData
 import com.meiji.biz.request.http.platform.goods.GetPropertyBySpuld
 import org.testng.annotations.Test
 
-class GetPropertyBySpuIdTest extends BaseTest {
+class GetPropertyBySpuIdTest extends BaseTest { //需求修改，暂时不使用此接口
     GetPropertyBySpuld getPropertyBySpuld = new GetPropertyBySpuld()
     @Test(description = "根据spuid获取属性 getPropertyBySpuId" ,groups = ["prod","uat"],testName = "getPropertyBySpuId",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

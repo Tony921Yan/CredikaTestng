@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateOrderAddress">
-        <parm key="id" value ="1405972144717856"/>
-        <parm key="orderCode" value ="O2021033019420429639"/>
+        <parm key="id" value ="1449278641799200"/>
+        <parm key="orderCode" value ="O2021112419510494803"/>
         <parm key="receiverAddress" value ="广东省深圳市南山区蛇口街道"/>
         <parm key="receiverName" value ="测试佬"/>
         <parm key="receiverTel" value ="18820157232"/>

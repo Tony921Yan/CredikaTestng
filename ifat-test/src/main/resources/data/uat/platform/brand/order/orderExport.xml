@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "orderExport">
-        <parm key="endTime" value =""/>
+        <parm key="endTime" value ="2021-11-18 23:59:59"/>
         <parm key="orderCode" value =""/>
         <parm key="orderStatus" value =""/>
         <parm key="orderType" value =""/>
         <parm key="receiverMsg" value =""/>
         <parm key="shopUserMsg" value =""/>
         <parm key="skuCode" value =""/>
-        <parm key="startTime" value =""/>
+        <parm key="startTime" value ="2021-11-11 00:00:00"/>
     </test>
 </data>

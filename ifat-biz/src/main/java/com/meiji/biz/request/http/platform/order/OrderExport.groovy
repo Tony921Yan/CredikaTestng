@@ -1,11 +1,11 @@
 package com.meiji.biz.request.http.platform.order
 
-import com.meiji.biz.request.http.platform.PlatformPost
+import com.meiji.biz.request.http.platform.PlatformGet
 import com.miyuan.ifat.support.test.TestContext
 
-class OrderExport extends PlatformPost {
+class OrderExport extends PlatformGet{//get请求，后续优化
     {
-        super.api = "/platform/orderMgr/orderExport"
+        super.api = "orderDetailManage/orderExport"
         super.params =  [ "endTime","orderCode","orderStatus","orderType","receiverMsg","shopUserMsg","skuCode","startTime"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

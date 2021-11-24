@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class GetOrderAfterByPageTest extends BaseTest {
     GetOrderAfterByPage getOrderAfterByPage = new GetOrderAfterByPage()
-    @Test(description = "获取售后单分页 prodGetOrderAfterByPage" ,groups = ["prod","uat"],testName = "prodGetOrderAfterByPage",
+    @Test(description = "获取售后单分页 prodGetOrderAfterByPage" ,groups = ["prod","uat"],testName = "GetOrderAfterByPage",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getOrderAfterByPage(TestContext testContext){
         getOrderAfterByPage.invoke(testContext).baseAssert(testContext).specialAssert(testContext)

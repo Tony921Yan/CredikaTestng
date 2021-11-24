@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class PageLabel extends PlatformPost{
     {
-        super.api="/platform/goodsLabel/pageLabel"
+        super.api="goodsLabelList/queryPage"
         super.params = ["gmtCreate","gmtModified","id","isDelete","labelColor","labelName","labelRemark","labelType",
         "page","rows","showType"]
     }

@@ -26,7 +26,7 @@ class GetLabel extends PlatformPost{
 
     GetLabel specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
-        assert apiResult.total > 20
+        assert apiResult.total > 10
         return this
     }
 }

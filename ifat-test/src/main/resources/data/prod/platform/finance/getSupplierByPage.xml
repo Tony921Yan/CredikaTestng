@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "prodGetSupplierByPage">
+    <test name = "GetSupplierByPage">
         <parm key="condition" value ="{}"/>
         <parm key="order" value =""/>
         <parm key="page" value ="1"/>

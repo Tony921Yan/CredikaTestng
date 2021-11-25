@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "GetOrderAfterByPage">
+    <test name = "getOrderAfterByPage">
         <parm key="condition" value ='{}'/>
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>

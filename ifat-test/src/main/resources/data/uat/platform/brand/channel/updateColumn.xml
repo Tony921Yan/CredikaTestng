@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateColumn">
+        <parm key="childName" value ="栏目1"/>
+        <parm key="id" value ="1445094485917728"/>
+        <parm key="name" value ="货比三家栏目1"/>
+        <parm key="remark" value ="接口测试"/>
+    </test>
+</data>

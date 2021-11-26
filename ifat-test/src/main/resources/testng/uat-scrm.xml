@@ -6,7 +6,7 @@
 <!--            <class name="com.meiji.test.http.scrm.channel.ChannelDelTest"></class>-->
             <class name="com.meiji.test.http.scrm.channel.ChannelDetailTest"></class>
             <class name="com.meiji.test.http.scrm.channel.ChannelListTest"></class>
-<!--            <class name="com.meiji.test.http.scrm.channel.ChannelUpdateTest"></class>-->
+<!--            <class name="com.meiji.test.http.scrm.channel.UpdateChannelTest"></class>-->
 
             <class name="com.meiji.test.http.scrm.contact.ContactListTest"></class>
 

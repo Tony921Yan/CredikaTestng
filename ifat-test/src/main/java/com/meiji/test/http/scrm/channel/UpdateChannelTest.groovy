@@ -11,7 +11,7 @@ import org.testng.annotations.Test
  @author s1mple
  @create 2021/9/17-18:15
  */
-class ChannelUpdateTest extends BaseTest {
+class UpdateChannelTest extends BaseTest {
     ChannelUpdate channel = new ChannelUpdate()
 
     @Test(description = "修改渠道活码", groups = ["prod", "uat"], testName = "channelupdate",

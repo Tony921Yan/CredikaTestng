@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateChannel">
+        <parm key="appType" value ="2"/>
+        <parm key="childName" value ="货比三家11"/>
+        <parm key="id" value ="1445090943828000"/>
+        <parm key="name" value ="货比三家111"/>
+        <parm key="remark" value ="接口备注"/>
+        <parm key="type" value ="1"/>
+    </test>
+</data>

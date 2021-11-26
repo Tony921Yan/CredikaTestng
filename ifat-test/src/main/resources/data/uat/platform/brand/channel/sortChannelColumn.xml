@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "sortChannelColumn">
-        <parm key="ids" value ='[1445100173393952,1445099282104352,1445097482747936]'/>
+        <parm key="id" value ="1447671824908352"/>
+        <parm key="sort" value ="2"/>
     </test>
 </data>

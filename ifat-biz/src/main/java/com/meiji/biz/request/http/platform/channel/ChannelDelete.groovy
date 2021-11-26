@@ -1,9 +1,11 @@
 package com.meiji.biz.request.http.platform.channel
 
 import com.meiji.biz.request.http.platform.PlatformPost
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
 class ChannelDelete extends PlatformPost {
+    private String value;
     {
         super.api = "platform/channel/delete"
         super.params =  [ "id"]
@@ -15,12 +17,15 @@ class ChannelDelete extends PlatformPost {
     }
 
     ChannelDelete preInvoke(TestContext testContext){
-        super.preInvoke(testContext)
-        return this
+        ChannelDelete channelDelete = new ChannelDelete()
+       Map mysqlResult = MysqlService.getChannel()
+        System.out.println(mysqlResult.get("id"))
+        channelDelete.setProperty("value",mysqlResult.get("id"))
+        return channelDelete;
     }
 
     ChannelDelete baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == "0"
+        super.baseAssert(testContext)
         return this
     }
 

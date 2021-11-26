@@ -1,7 +1,6 @@
 package com.meiji.test.http.platform.channel
 
 
-import com.meiji.biz.request.http.platform.channel.GetChannelColumn
 import com.meiji.biz.request.http.platform.channel.SortChannelColumn
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

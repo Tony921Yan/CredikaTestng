@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getGoods">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="columnId" value ="1445094485917728"/>
+    </test>
+
+    <test name = "getGoods1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="columnId" value ="1448153102417953"/>
+    </test>
+
+    <test name = "getGoods2">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="columnId" value ="1447765536145441"/>
+    </test>
+
+    <test name = "getGoods3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="columnId" value ="1447765898952737"/>
+    </test>
+
+    <test name = "getGoods4">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="columnId" value ="1447767893344288"/>
+    </test>
+</data>

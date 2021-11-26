@@ -5,8 +5,8 @@ import com.miyuan.ifat.support.test.TestContext
 
 class SortChannelColumn extends PlatformPost {
     {
-        super.api = "platform/channel/column/sort"
-        super.params =  ["ids"]
+        super.api = "ColumnManagement/updateSort"
+        super.params =  ["id","sort"]
     }
 
     SortChannelColumn invoke(TestContext testContext) {
@@ -20,7 +20,7 @@ class SortChannelColumn extends PlatformPost {
     }
 
     SortChannelColumn baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == "0"
+        super.baseAssert(testContext)
         return this
     }
 

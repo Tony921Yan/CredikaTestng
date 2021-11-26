@@ -3,23 +3,23 @@ package com.meiji.biz.request.http.platform.channel
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class ChannelAdd extends PlatformPost {
+class UpdateChannel extends PlatformPost {
     {
-        super.api = "ChannelManagement/addChannel"
-        super.params =  [ "appType","childName","createBy","name","remark","type"]
+        super.api = "ChannelManagement/updateChannel"
+        super.params =  [ "appType","childName","id","name","remark","type"]
     }
 
-    ChannelAdd invoke(TestContext testContext) {
+    UpdateChannel invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    ChannelAdd preInvoke(TestContext testContext){
+    UpdateChannel preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    ChannelAdd baseAssert(TestContext testContext){
+    UpdateChannel baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

@@ -3,23 +3,23 @@ package com.meiji.biz.request.http.platform.channel
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class ChannelAdd extends PlatformPost {
+class UpdateColumn extends PlatformPost {
     {
-        super.api = "ChannelManagement/addChannel"
-        super.params =  [ "appType","childName","createBy","name","remark","type"]
+        super.api = "ColumnManagement/updateColumn"
+        super.params =  ["childName","id","name","remark"]
     }
 
-    ChannelAdd invoke(TestContext testContext) {
+    UpdateColumn invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    ChannelAdd preInvoke(TestContext testContext){
+    UpdateColumn preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    ChannelAdd baseAssert(TestContext testContext){
+    UpdateColumn baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

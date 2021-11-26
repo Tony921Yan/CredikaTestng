@@ -36,6 +36,12 @@
             <class name="com.meiji.test.http.platform.other.StoreWhiteTest"/>
             <class name="com.meiji.test.http.platform.other.SystemConfigMgrTest"/>
             <class name="com.meiji.test.http.platform.other.CustomerServiceManageTest"/>
+            <class name="com.meiji.test.http.platform.channel.GetChannelListTest"/>
+            <class name="com.meiji.test.http.platform.channel.GetColumnListTest"/>
+            <class name="com.meiji.test.http.platform.channel.GetGoodsTest"/>
+            <class name="com.meiji.test.http.platform.channel.SortChannelColumnTest"/>
+            <class name="com.meiji.test.http.platform.channel.UpdateChannelTest"/>
+            <class name="com.meiji.test.http.platform.channel.UpdateColumnTest"/>
 
         </classes>
     </test>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getChannelList">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getChannelList1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="id" value ="1445090943828000"/>
+        <parm key="name" value =""/>
+        <parm key="type" value ="2"/>
+    </test>
+</data>

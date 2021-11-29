@@ -10,7 +10,7 @@ import org.testng.annotations.Test
 
 class CompareOrderAndSettlementStatusTest extends BaseTest {
 
-    @Test(dataProvider = "orders")
+    @Test(dataProvider = "orders",groups = ["prod"])
     void orderTest(TestContext testContext){
         String orderNo = testContext.get("order_code")
         String orderStatus = testContext.get("order_status")

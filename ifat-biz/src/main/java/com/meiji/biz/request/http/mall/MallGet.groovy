@@ -2,6 +2,7 @@ package com.meiji.biz.request.http.mall
 
 import com.meiji.biz.service.CookieService
 import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestEnv
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
@@ -26,9 +27,9 @@ abstract class MallGet {
         Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
         heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
 
-//        if(TestEnv.getIsGray()=="true"){
-//            heads.put("isGrayRelease",true)
-//        }
+        if(TestEnv.isGray()=="true"){
+            heads.put("isGrayRelease",true)
+        }
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){

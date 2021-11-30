@@ -2,6 +2,7 @@ package com.meiji.biz.request.http.platform
 
 import com.meiji.biz.service.CookieService
 import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestEnv
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.ResourceUtil
 import com.miyuan.ifat.support.vo.Record
@@ -24,7 +25,9 @@ abstract class PlatformGet {
         heads.put("Content-Type",testContext.get("application/json"))
         heads.put("Cookie", CookieService.getPlatformCookie(url,username,password))
         url = url +api
-
+        if(TestEnv.isGray()=="true"){
+            heads.put("isGrayRelease",true)
+        }
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){

@@ -2,6 +2,7 @@ package com.meiji.biz.request.http.platform
 
 import com.meiji.biz.service.CookieService
 import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestEnv
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
@@ -26,7 +27,9 @@ abstract class PlatformPost {
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
         heads.put("Cookie", cookie)
-
+        if(TestEnv.isGray()=="true"){
+            heads.put("isGrayRelease",true)
+        }
         Map req = new HashMap()
         for(String str:params){
 //            if(ObjectUtils.isNotEmpty(testContext.get(str))){

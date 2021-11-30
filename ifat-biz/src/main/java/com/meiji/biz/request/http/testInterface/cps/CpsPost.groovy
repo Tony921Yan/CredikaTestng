@@ -3,6 +3,7 @@ package com.meiji.biz.request.http.testInterface.cps
 
 import com.meiji.biz.util.CpsSign
 import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestEnv
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
@@ -26,6 +27,9 @@ abstract class CpsPost {
         heads.put("Content-Type",testContext.get("Content-Type"))
         heads.put("timestamp",timestamp)
         heads.put("appKey",appKey)
+        if(TestEnv.isGray()=="true"){
+            heads.put("isGrayRelease",true)
+        }
         TreeMap req = new TreeMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){

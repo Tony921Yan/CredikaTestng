@@ -2,6 +2,7 @@ package com.meiji.biz.request.http.shop
 
 import com.meiji.biz.service.CookieService
 import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.test.TestEnv
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
@@ -24,13 +25,9 @@ abstract class ShopPost {
         heads.put("Content-Type", testContext.get("Content-Type"))
         Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
         heads.put("cookie", CookieService.getShopCookie(shopUrl, dealerId))
-//        String aesKey = MD5Utils.MD5Encode("11", "utf-8")
-//        String tokenAes = AESOperator.encrypt(testContext.get("token").toString(), aesKey)
-//        heads.put("token",tokenAes)
-
-//        if(TestEnv.getIsGray()=="true"){
-//            heads.put("isGrayRelease",true)
-//        }
+        if(TestEnv.isGray()=="true"){
+            heads.put("isGrayRelease",true)
+        }
         Map req = new HashMap()
         for (String str : params) {
             if (ObjectUtils.isNotEmpty(testContext.get(str))) {

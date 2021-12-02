@@ -35,6 +35,7 @@
             <class name="com.meiji.test.http.mall.shopGoods.FindBrandListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindActiveGoodsTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindGoodsTopicDetailTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
             <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.GetAccountInfoTest"/>
             <class name="com.meiji.test.http.mall.userInfo.IncomeTotalQueryTest"/>
@@ -58,7 +59,7 @@
             <class name="com.meiji.test.http.mall.material.GetMaterialCategoryTest"/>
             <class name="com.meiji.test.http.mall.userInfo.IsSubscribeTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.PreviewGiftOrderTest"/>
-            <class name="com.meiji.test.http.mall.shopGoods.ListPostContentTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetChannelDataTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetColumnGoodsTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetDefaultTopicGoodsTest"/>

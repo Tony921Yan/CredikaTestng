@@ -5,9 +5,27 @@ import com.miyuan.ifat.support.test.TestContext
 
 class AddAdministrator extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/addAdministrator"
-        super.params = ["supplierId","supplierCode","contactType","contactName","contactIdCardNumber","mobilePhone",
-                        "contactEmail","createBy","updateBy","gmtCreate","gmtModified"]
+        super.api="SupplierManage/addSupplier"
+        super.params = ["legalPersonName",
+                        "legalPersonPhone",
+                        "name",
+                        "contacts",
+                        "phone",
+                        "email",
+                        "address",
+                        "addressDetail",
+                        "contractType",
+                        "supervisorId",
+                        "contactsAddress",
+                        "contactsAddressDetail",
+                        "contactsName",
+                        "contactsPhone",
+                        "shipperPhone",
+                        "shipperName",
+                        "supplierType",
+                        "shipperAddress",
+                        "shipperAddressDetail",
+                        "supplierLevel"]
     }
 
     AddAdministrator invoke(TestContext testContext) {

@@ -121,11 +121,20 @@ class MysqlService extends MysqlAPI {
         return meiji_user.firstRow("select * from user where id =$UserId")
     }
 
-    static List getSettleOrder(){
-        List list = meiji_settlement.rows("select trade_order_no from settlement_order where settlement_state =2 and settlement_finish_time > date_sub(now(),interval 1 Day)")
-        return list.stream().map() {
-            return it.trade_order_no
-        }.collect(Collectors.toList())
+    static List<Map> getUnSettleOrder(){
+        return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state !=2 and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
+    }
+
+    static List<Map> getOrderByParentOrderNo(String parentOrderNo){
+        return meiji_settlement.rows("select trade_order_no,gmt_create,state,settlement_state from settlement_order where trade_parent_order_no = $parentOrderNo")
+    }
+
+    static List getOrderLogistic(String orderNo){
+        return meiji_order.rows("select logistics_code,gmt_create,logistics_company_code from order_logistic where order_code = $orderNo")
+    }
+
+    static List getAfterOrder(String orderId){
+        return meiji_order.rows("select after_status,gmt_create from order_after where order_code = $orderId")
     }
 
     static List getShops(){

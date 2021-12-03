@@ -72,7 +72,7 @@ class SettlementMonitor extends BaseTest{
             TestContext testContext = new TestContext()
             testContext.put("parentOrderNo",it.trade_parent_order_no)
             testContext.put("shopName",it.shop_name)
-            testContext.put("description","【"+it.shop_name+"】未结算单号"+it.trade_parent_order_no)
+            testContext.put("description","【"+it.shop_name+"】订单号"+it.trade_parent_order_no)
             testContextList.add(testContext)
         }
         return testContextList

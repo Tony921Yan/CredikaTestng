@@ -33,26 +33,22 @@ class SettlementMonitor extends BaseTest{
             }
             List logistic = MysqlService.getOrderLogistic(orderNo)
             testContext.appendLog(new Record("子订单号"+orderNo+"发货信息",logistic))
-            if(logistic.size() > 0){
-                for(Map map:logistic){
-                    Date logisticDate = map.gmt_create
-                    Date logisticSettleDate = DateUtil.dateAdd(logisticDate,Calendar.DATE,7)
-                    settleDate = settleDate > logisticSettleDate ?settleDate:logisticSettleDate
-                }
+            for(Map map:logistic){
+                Date logisticDate = map.gmt_create
+                Date logisticSettleDate = DateUtil.dateAdd(logisticDate,Calendar.DATE,7)
+                settleDate = settleDate > logisticSettleDate ?settleDate:logisticSettleDate
             }
             List afterOrder = MysqlService.getAfterOrder(orderNo)
             testContext.appendLog(new Record("子订单号"+orderNo+"售后信息",afterOrder))
-            if(afterOrder.size()>0){
-                for(Map map:afterOrder) {
-                    String afterStatus = map.after_status
-                    Date afterDate = map.gmt_create
-                    if(finishAfterStatus.contains(afterStatus)) {
-                        Date afterSettleDate = DateUtil.dateAdd(orderDate, Calendar.DATE, 21)
-                        settleDate = settleDate > afterSettleDate ? settleDate : afterSettleDate
-                    }else {
-                        Date expAfterDate = DateUtil.dateAdd(afterDate,Calendar.DATE,7)
-                        assert expAfterDate >= now,"期望7天完成售后,订单号"+orderNo
-                    }
+            for(Map map:afterOrder) {
+                String afterStatus = map.after_status
+                Date afterDate = map.gmt_create
+                if(finishAfterStatus.contains(afterStatus)) {
+                    Date afterSettleDate = DateUtil.dateAdd(orderDate, Calendar.DATE, 21)
+                    settleDate = settleDate > afterSettleDate ? settleDate : afterSettleDate
+                }else {
+                    Date expAfterDate = DateUtil.dateAdd(afterDate,Calendar.DATE,7)
+                    assert expAfterDate >= now,"期望7天完成售后,订单号"+orderNo
                 }
             }
             //无物流无售后期望7天内发货

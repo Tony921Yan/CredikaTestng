@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "addSupplier">
-        <parm key="name" value ="本上生活（深圳）科技有限公司"/>
-        <parm key="contacts" value ="洪伟"/>
-        <parm key="phone" value ="13021662612"/>
-        <parm key="legalPersonPhone" value ="13021662612"/>
-        <parm key="email" value ="13574057096@163.com"/>
-        <parm key="address" value ="深圳市南山区"/>
-        <parm key="addressDetail" value ="深圳市南山区深南大道10168佳嘉豪商务大厦17A2"/>
-        <parm key="remark" value ="无"/>
-        <parm key="createBy" value ="admin"/>
-        <parm key="updateBy" value ="admin"/>
-        <parm key="gmtCreate" value ="2022-03-29 21:23:23"/>
-        <parm key="gmtModified" value ="2022-03-29 21:23:23"/>
+        <parm key="legalPersonName" value ="罗测试1"/> <!--表meiji_supplier-->
+        <parm key="legalPersonPhone" value ="18820157211"/>
+        <parm key="name" value ="测试供应商1130"/>
+        <parm key="contacts" value ="吴红红"/>
+        <parm key="phone" value ="18820157211"/>
+        <parm key="email" value ="18800000000@qq.com"/>
+        <parm key="address" value ="北京市东城区"/>
+        <parm key="addressDetail" value ="华润城华润置地26EF"/>
+        <parm key="contractType" value ="1"/>
+        <parm key="supervisorId" value ="1"/>
+        <parm key="contactsAddress" value ="北京市东城区"/>
+        <parm key="contactsAddressDetail" value ="测试发货地址"/>
+        <parm key="contactsName" value ="陈碧缘"/>
+        <parm key="contactsPhone" value ="18820157211"/>
+        <parm key="shipperPhone" value ="18820157211"/>
+        <parm key="shipperName" value ="罗发货"/>
+        <parm key="supplierType" value ="[1]"/>
+        <parm key="shipperAddress" value ="北京市东城区"/>
+        <parm key="shipperAddressDetail" value ="测试发货地址"/>
+        <parm key="supplierLevel" value ="1"/>
     </test>
 </data>

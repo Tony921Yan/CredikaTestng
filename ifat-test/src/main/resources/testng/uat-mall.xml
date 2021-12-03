@@ -25,6 +25,7 @@
             <class name="com.meiji.test.http.mall.shopGoods.FindBrandListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindActiveGoodsTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindGoodsTopicDetailTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
             <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.GetAccountInfoTest"/>
             <class name="com.meiji.test.http.mall.userInfo.IncomeTotalQueryTest"/>

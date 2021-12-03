@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getSpuBuyerShow">
+        <parm key="spuId" value ="1443073672347681"/>
+    </test>
+</data>

@@ -9,18 +9,18 @@ import com.miyuan.ifat.support.test.TestContext
  @create 2021/11/18-10:48
  @version v2.1
  */
-class ListPostContent extends MallPost{
+class GetSpuBuyerShow extends MallPost{
     {
-        super.api = "shopGoods/listPostContent"
+        super.api = "shopGoods/getSpuBuyerShow"
         super.params=["spuId"]
     }
 
-    ListPostContent invoke(TestContext testContext){
+    GetSpuBuyerShow invoke(TestContext testContext){
         super.invoke(testContext)
         return this
     }
 
-    ListPostContent baseAssert(TestContext testContext){
+    GetSpuBuyerShow baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

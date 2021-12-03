@@ -122,7 +122,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List<Map> getUnSettleOrder(){
-        return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state !=2 and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
+        return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state not in(2,3) and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
     }
 
     static List<Map> getOrderByParentOrderNo(String parentOrderNo){

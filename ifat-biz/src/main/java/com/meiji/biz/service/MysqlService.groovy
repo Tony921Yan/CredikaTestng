@@ -133,8 +133,13 @@ class MysqlService extends MysqlAPI {
         return meiji_order.rows("select logistics_code,gmt_create,logistics_company_code from order_logistic where order_code = $orderNo")
     }
 
+    static Map getAfterOrderLog(String afterCode,Integer step){
+        return meiji_order.firstRow("select * from order_after_log where order_after_code = $afterCode and step = $step")
+
+    }
+
     static List getAfterOrder(String orderId){
-        return meiji_order.rows("select after_status,gmt_create from order_after where order_code = $orderId")
+        return meiji_order.rows("select after_code,after_status,gmt_create from order_after where order_code = $orderId")
     }
 
     static List getShops(){

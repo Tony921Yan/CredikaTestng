@@ -41,14 +41,44 @@ class SettlementMonitor extends BaseTest{
             List afterOrder = MysqlService.getAfterOrder(orderNo)
             testContext.appendLog(new Record("子订单号"+orderNo+"售后信息",afterOrder))
             for(Map map:afterOrder) {
+                String afterCode = map.after_code
                 String afterStatus = map.after_status
                 Date afterDate = map.gmt_create
-                if(finishAfterStatus.contains(afterStatus)) {
-                    Date afterSettleDate = DateUtil.dateAdd(orderDate, Calendar.DATE, 21)
-                    settleDate = settleDate > afterSettleDate ? settleDate : afterSettleDate
-                }else {
-                    Date expAfterDate = DateUtil.dateAdd(afterDate,Calendar.DATE,7)
-                    assert expAfterDate >= now,"期望7天完成售后,订单号"+orderNo
+                switch (afterStatus){
+                    case ["6","7"]:
+                        Date afterSettleDate = DateUtil.dateAdd(orderDate, Calendar.DATE, 21)
+                        settleDate = settleDate > afterSettleDate ? settleDate : afterSettleDate
+                        break
+                    case "1":
+                        Date expAfterDate = DateUtil.dateAdd(afterDate,Calendar.DATE,7)
+                        assert expAfterDate >= now,"期望7天内售后审核,售后单"+afterCode
+                        break
+                    case "2":
+                        Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,2)
+                        Date logDate = afterOrderLog.gmt_create
+                        Date expAfterDate = DateUtil.dateAdd(logDate,Calendar.DATE,3)
+                        assert expAfterDate >= now,"期望3天内售后退货,售后单"+afterCode
+                        break
+                    case "3":
+                        List afterLogisticList = MysqlService.getOrderLogistic(afterCode)
+                        assert afterLogisticList.size() >= 1,"期望有售后物流,售后单"+afterCode
+                        Map afterLogistic = afterLogisticList.get(0)
+                        Date logisticDate = afterLogistic.gmt_create
+                        Date logisticFinishDate = DateUtil.dateAdd(logisticDate,Calendar.DATE,14)
+                        assert logisticFinishDate >= now,"期望14天内确认验货,售后单"+afterCode
+                        break
+                    case "4":
+                        Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,4)
+                        Date logDate = afterOrderLog.gmt_create
+                        Date expAfterDate = DateUtil.dateAdd(logDate,Calendar.DATE,3)
+                        assert expAfterDate >= now,"期望3天内待退款审核,售后单"+afterCode
+                        break
+                    case "5":
+                        Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,5)
+                        Date logDate = afterOrderLog.gmt_create
+                        Date expAfterDate = DateUtil.dateAdd(logDate,Calendar.DATE,1)
+                        assert expAfterDate >= now,"期望1天内完成退款,售后单"+afterCode
+                        break
                 }
             }
             //无物流无售后期望7天内发货

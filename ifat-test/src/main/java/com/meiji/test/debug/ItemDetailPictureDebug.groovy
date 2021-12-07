@@ -1,4 +1,4 @@
-package com.meiji.test.other.picture
+package com.meiji.test.debug
 
 import com.meiji.biz.api.MysqlAPI
 import com.miyuan.ifat.support.test.TestContext

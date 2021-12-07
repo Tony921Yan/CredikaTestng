@@ -10,7 +10,7 @@ import org.testng.annotations.Test
 import javax.imageio.ImageIO
 import java.awt.image.BufferedImage
 
-class ItemPictureTest extends BaseTest {
+class ItemPictureMonitor extends BaseTest {
     @Test(dataProvider = "data",groups = ["prod"],threadPoolSize = 10)
     void test(TestContext testContext){
         String url = testContext.url

@@ -7,8 +7,8 @@
             </run>
         </groups>
         <classes>
-            <class name="com.meiji.test.other.picture.ItemPictureTest"/>
-            <class name="com.meiji.test.other.picture.ItemDetailPictureTest"/>
+            <class name="com.meiji.test.other.picture.ItemPictureMonitor"/>
+            <class name="com.meiji.test.other.picture.ItemDetailPictureMonitor"/>
         </classes>
     </test>
 </suite>

@@ -13,7 +13,7 @@ import java.util.regex.Matcher
 import java.util.regex.Pattern
 import java.util.stream.Collectors
 
-class ItemDetailPictureTest extends BaseTest {
+class ItemDetailPictureMonitor extends BaseTest {
     @Test(dataProvider = "data",groups = ["prod"],threadPoolSize = 10)
     void test(TestContext testContext){
         String url = testContext.url

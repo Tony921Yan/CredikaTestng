@@ -27,6 +27,8 @@ abstract class CpsPost {
         heads.put("Content-Type",testContext.get("Content-Type"))
         heads.put("timestamp",timestamp)
         heads.put("appKey",appKey)
+        String uuid = UUID.randomUUID().toString()
+        heads.put("userLogTracingTag",uuid)
         if(TestEnv.isGray()=="true"){
             heads.put("isGrayRelease",true)
         }

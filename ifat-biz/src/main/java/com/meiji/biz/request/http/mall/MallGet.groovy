@@ -26,7 +26,8 @@ abstract class MallGet {
         Long userId = Long.valueOf(testContext.get("userId").toString())
         Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
         heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
-
+        String uuid = UUID.randomUUID().toString()
+        heads.put("userLogTracingTag",uuid)
         if(TestEnv.isGray()=="true"){
             heads.put("isGrayRelease",true)
         }

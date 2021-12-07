@@ -22,8 +22,8 @@ abstract class KjPost {
         heads.put("timestamp",testContext.get("timestamp"))
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
-        Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
-        //heads.put("cookie",CookieService.getShopCookie(shopUrl,dealerId))
+        String uuid = UUID.randomUUID().toString()
+        heads.put("userLogTracingTag",uuid)
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){

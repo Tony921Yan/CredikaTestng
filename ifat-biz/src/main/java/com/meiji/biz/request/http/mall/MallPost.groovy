@@ -33,6 +33,8 @@ abstract class MallPost {
         if(TestEnv.isGray()=="true"){
             heads.put("isGrayRelease",true)
         }
+        String uuid = UUID.randomUUID().toString()
+        heads.put("userLogTracingTag",uuid)
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){

@@ -25,6 +25,8 @@ abstract class ShopPost {
         heads.put("Content-Type", testContext.get("Content-Type"))
         Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
         heads.put("cookie", CookieService.getShopCookie(shopUrl, dealerId))
+        String uuid = UUID.randomUUID().toString()
+        heads.put("userLogTracingTag",uuid)
         if(TestEnv.isGray()=="true"){
             heads.put("isGrayRelease",true)
         }

@@ -25,6 +25,8 @@ abstract class PlatformGet {
         heads.put("Content-Type",testContext.get("application/json"))
         heads.put("Cookie", CookieService.getPlatformCookie(url,username,password))
         url = url +api
+        String uuid = UUID.randomUUID().toString()
+        heads.put("userLogTracingTag",uuid)
         if(TestEnv.isGray()=="true"){
             heads.put("isGrayRelease",true)
         }

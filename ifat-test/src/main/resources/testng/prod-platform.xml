@@ -37,7 +37,6 @@
             <class name="com.meiji.test.http.platform.other.StoreWhiteTest"/>
             <class name="com.meiji.test.http.platform.other.SystemConfigMgrTest"/>
             <class name="com.meiji.test.http.platform.other.CustomerServiceManageTest"/>
-            <class name="com.meiji.test.other.compareOrderAndSettlementStatus.CompareOrderAndSettlementStatusTest"/> <!--订单状态与结算状态对比-->
             <class name="com.meiji.test.http.platform.channel.GetChannelListTest"/>
             <class name="com.meiji.test.http.platform.channel.GetColumnListTest"/>
             <class name="com.meiji.test.http.platform.channel.GetGoodsTest"/>

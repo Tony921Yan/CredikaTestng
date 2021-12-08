@@ -7,6 +7,7 @@
             </run>
         </groups>
         <classes>
+            <class name="com.meiji.test.other.orderStatus.orderStatusCompare"/> <!--订单状态与结算状态对比-->
             <class name="com.meiji.test.other.settlement.SettlementMonitor"/>
             <class name="com.meiji.test.other.inviteCode.InviteCodeMonitor"/>
         </classes>

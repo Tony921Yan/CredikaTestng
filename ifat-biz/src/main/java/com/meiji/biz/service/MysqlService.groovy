@@ -187,4 +187,12 @@ class MysqlService extends MysqlAPI {
     static Map getChannel(){
         return meiji_goods.firstRow("SELECT * from channel ORDER BY gmt_create DESC")
     }
+
+    static List getShopAccountData(){
+        return meiji_settlement.rows("select shop_code,shop_name from settlement_order where gmt_modified > date_sub(now(),interval 3 Day) group by shop_code")
+    }
+
+    static List getSupplierAccountData(){
+        return meiji_settlement.rows("select supplier_code,supplier_name from settlement_order where gmt_modified > date_sub(now(),interval 3 Day) group by supplier_code")
+    }
 }

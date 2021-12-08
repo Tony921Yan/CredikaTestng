@@ -23,6 +23,7 @@ class AccountAssetPageQuery extends PlatformPost{
 
     AccountAssetPageQuery baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+        return this
     }
 
     AccountAssetPageQuery specialAssert(TestContext testContext){

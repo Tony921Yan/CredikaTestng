@@ -23,7 +23,7 @@ abstract class PlatformPost {
         String cookie = CookieService.getPlatformCookie(url,username,password)
         url = url +api
         Map heads = new HashMap()
-        heads.put("timestamp",testContext.get("timestamp"))
+        heads.put("timestamp",System.currentTimeMillis())
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
         heads.put("Cookie", cookie)

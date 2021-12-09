@@ -20,7 +20,7 @@ abstract class ShopPost {
         String shopUrl = ResourceUtil.getBeanData("http").get("shop")
         String url = shopUrl + api
         Map heads = new HashMap()
-        heads.put("timestamp", testContext.get("timestamp"))
+        heads.put("timestamp",System.currentTimeMillis())
         heads.put("nonce", testContext.get("nonce"))
         heads.put("Content-Type", testContext.get("Content-Type"))
         Long dealerId = Long.valueOf(testContext.get("dealerId").toString())

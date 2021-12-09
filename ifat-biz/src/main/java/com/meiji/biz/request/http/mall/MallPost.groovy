@@ -20,7 +20,7 @@ abstract class MallPost {
         String mallUrl = ResourceUtil.getBeanData("http").get("mall")
         String url  = mallUrl+api
         Map heads = new HashMap()
-        heads.put("timestamp",testContext.get("timestamp"))
+        heads.put("timestamp",System.currentTimeMillis())
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
         Long userId = Long.valueOf(testContext.get("userId").toString())

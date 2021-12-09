@@ -20,7 +20,7 @@ abstract class PlatformGet {
         String username = testContext.get("username")
         String password = testContext.get("password")
         Map heads = new HashMap()
-        heads.put("timestamp",testContext.get("timestamp"))
+        heads.put("timestamp",System.currentTimeMillis())
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("application/json"))
         heads.put("Cookie", CookieService.getPlatformCookie(url,username,password))

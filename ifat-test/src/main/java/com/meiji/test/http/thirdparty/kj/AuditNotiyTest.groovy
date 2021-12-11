@@ -17,7 +17,7 @@ class AuditNotiyTest extends BaseTest{
         String userCode = "T2020"
         def data = "<request>" +
                 "<kjCustomerOutstoreReturn>" +
-                "<saleOrderCode>O2021111210430048354</saleOrderCode>" +
+                "<saleOrderCode>O2021111715080083245</saleOrderCode>" +
                 "<logisticsCode>美记测试</logisticsCode>" +
                 "<logisticsNumber>1234567890</logisticsNumber>" +
                 "<markPlace1>大头笔或集包地</markPlace1>" +

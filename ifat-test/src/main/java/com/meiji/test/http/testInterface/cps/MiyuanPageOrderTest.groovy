@@ -11,10 +11,11 @@ class MiyuanPageOrderTest extends BaseTest {
     @Test(description = "订单列表查询-订单创建时间查询 miyuanPageOrder" ,groups = ["prod","uat"],testName = "prodmiyuanPageOrder",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void miyuanPageOrder(TestContext testContext){
-        testContext.put("startTime","2021-10-21 14:30:00")
-        testContext.put("endTime","2021-10-21 14:30:00")
-        testContext.put("queryType",0)
-        testContext.put("oid","O2021102514470598801")
+        testContext.put("startTime","2021-11-18 09:00:00")
+        testContext.put("endTime","2021-11-18 19:30:00")
+        testContext.put("queryType",3)      // 1:订单更新时间; 2:订单结算时间； 3:订单创建时间； 4:订单付款时间；
+        //testContext.put("oid","O2021111611460417783")
+
         miyuanPageOrder.invoke(testContext).baseAssert(testContext)
     }
 

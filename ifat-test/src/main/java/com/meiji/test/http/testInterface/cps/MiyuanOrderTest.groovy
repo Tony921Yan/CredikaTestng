@@ -11,7 +11,7 @@ class MiyuanOrderTest extends BaseTest {
     @Test(description = "订单详情查询 miyuanOrder" ,groups = ["prod","uat"],testName = "miyuanOrder",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void miyuanOrder(TestContext testContext){
-        testContext.put("oid","O2021102514470598801")
+        testContext.put("oid","O2021103119240023903")
         miyuanOrder.invoke(testContext).baseAssert(testContext)
     }
 

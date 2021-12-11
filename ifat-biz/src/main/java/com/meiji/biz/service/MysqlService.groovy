@@ -4,6 +4,7 @@ package com.meiji.biz.service
 import com.meiji.biz.api.MysqlAPI
 import com.miyuan.ifat.support.factory.FactorySupport
 import groovy.sql.Sql
+import org.apache.commons.lang3.StringUtils
 
 import java.util.stream.Collectors
 
@@ -180,8 +181,10 @@ class MysqlService extends MysqlAPI {
         return meiji_pay.firstRow("SELECT * from trade_flow where merchant_type =1 and entity_id = 1405981112139808 and `year` = 2021 and `month` =7 and trade_type = 4")
     }
 
-    static List findInviteCodeList(String shopId){
-        return meiji_shop.rows("SELECT * from invite_code where shop_id = $shopId and state in (0,1) ORDER BY id ASC LIMIT 20")
+    static List findInviteCodeList(String shopId,List state){
+        String  stateStr = StringUtils.join(state, ",")
+        String sql = "SELECT * from invite_code where shop_id = $shopId and state in ($stateStr) ORDER BY id asc LIMIT 10"
+        return meiji_shop.rows(sql)
     }
 
     static Map getChannel(){

@@ -4,6 +4,7 @@ import com.meiji.biz.request.http.mall.MallPost
 import com.meiji.biz.request.http.shop.ShopPost
 import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
+import org.apache.commons.lang3.StringUtils
 
 import java.awt.image.ImageProducer
 
@@ -31,7 +32,9 @@ class FindInviteCodeList extends MallPost {
 
     FindInviteCodeList specialAssert(TestContext testContext){
         List<Map> apiResult = testContext.getResponse().data
-        List mysqlResult = MysqlService.findInviteCodeList(testContext.get("shopId"))
+
+        List state = StringUtils.isBlank(testContext.state) ? [0, 1] : [testContext.state]
+        List mysqlResult = MysqlService.findInviteCodeList(testContext.get("shopId"),state)
         assert apiResult.get(0).getAt("code") == mysqlResult.get(0).getAt("code")
 
     }

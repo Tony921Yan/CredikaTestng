@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "searchContentBonus">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "searchContentBonus1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="recStatus" value ="1"/>
+    </test>
+
+    <test name = "searchContentBonus2">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="recStatus" value ="2"/>
+    </test>
+
+    <test name = "searchContentBonus3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="recStatus" value ="3"/>
+    </test>
+
+    <test name = "searchContentBonus4">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="recStatus" value ="4"/>
+    </test>
+
+    <test name = "searchContentBonus5">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="recStatus" value ="5"/>
+    </test>
+
+</data>

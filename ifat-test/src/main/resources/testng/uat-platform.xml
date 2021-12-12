@@ -42,6 +42,10 @@
             <class name="com.meiji.test.http.platform.channel.SortChannelColumnTest"/>
             <class name="com.meiji.test.http.platform.channel.UpdateChannelTest"/>
             <class name="com.meiji.test.http.platform.channel.UpdateColumnTest"/>
+            <class name="com.meiji.test.http.platform.channel.SearchBuyerShowTest"/>
+            <class name="com.meiji.test.http.platform.other.SearchContentBonusTest"/>
+            <class name="com.meiji.test.http.platform.category.QueryTreeTest"/>
+            <class name="com.meiji.test.http.platform.category.QuerySecondLevelCategoryTest"/>
 
         </classes>
     </test>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getSpuBuyerShow">
+        <parm key="channel" value="1"/>
+        <parm key="distributorId" value="222"/>
+        <parm key="platform" value="app"/>
+        <parm key="spuId" value="1"/>
+    </test>
+</data>

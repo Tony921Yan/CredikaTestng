@@ -50,6 +50,12 @@
             <class name="com.meiji.test.http.mall.orderAfterSale.GetOrderAfterSaleTest"/>
             <class name="com.meiji.test.http.mall.orderAfterSale.ListOrderAfterLogTest"/>
             <class name="com.meiji.test.http.mall.orderAfterSale.PageOrderAfterSaleTest"/>
+            <class name="com.meiji.test.http.mall.home.GetTemplateComponentListTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.GetActiveBonusTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetToShareCountTest"/>
+            <class name="com.meiji.test.http.mall.home.GetColumnAndColumnGoodsTest"/>
+            <class name="com.meiji.test.http.mall.home.GetColumnGoodsTest"/>
+            <class name="com.meiji.test.http.mall.home.GetChannelDataTest"/>
             <!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
         </classes>
     </test>

@@ -60,8 +60,8 @@
             <class name="com.meiji.test.http.mall.userInfo.IsSubscribeTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.PreviewGiftOrderTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
-            <class name="com.meiji.test.http.mall.userShop.GetChannelDataTest"/>
-            <class name="com.meiji.test.http.mall.userShop.GetColumnGoodsTest"/>
+            <class name="com.meiji.test.http.mall.home.GetChannelDataTest"/>
+            <class name="com.meiji.test.http.mall.home.GetColumnGoodsTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetDefaultTopicGoodsTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetTemplateDefaultComponentListTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetTopicGoodsTest"/>

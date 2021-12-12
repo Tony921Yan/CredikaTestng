@@ -1,6 +1,6 @@
-package com.meiji.test.http.mall.userShop
+package com.meiji.test.http.mall.home
 
-import com.meiji.biz.request.http.mall.userShop.GetColumnGoods
+import com.meiji.biz.request.http.mall.home.GetColumnGoods
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
@@ -10,7 +10,8 @@ import org.testng.annotations.Test
  *
  @author Remy
  @create 2021/11/18-13:50
- @version v2.1
+ @update 2021/11/13-00:12
+ @version v2.1 & V2.3
  */
 class GetColumnGoodsTest extends BaseTest{
     GetColumnGoods getColumnGoods = new GetColumnGoods()
@@ -38,9 +39,21 @@ class GetColumnGoodsTest extends BaseTest{
         getColumnGoods.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "获取栏目下商品数据-首页-美记特卖 getColumnGoods" ,groups = ["prod","uat"],testName = "getColumnGoods4",
+    @Test(description = "获取栏目下商品数据-首页-美记优选 getColumnGoods" ,groups = ["prod","uat"],testName = "getColumnGoods4",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getColumnGoods4(TestContext testContext){
+        getColumnGoods.invoke(testContext).baseAssert(testContext)
+    }
+
+    @Test(description = "获取栏目下商品数据-首页-囤货 getColumnGoods" ,groups = ["prod","uat"],testName = "getColumnGoods4",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getColumnGoods5(TestContext testContext){
+        getColumnGoods.invoke(testContext).baseAssert(testContext)
+    }
+
+    @Test(description = "获取栏目下商品数据-首页-品牌专区 getColumnGoods" ,groups = ["prod","uat"],testName = "getColumnGoods4",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getColumnGoods6(TestContext testContext){
         getColumnGoods.invoke(testContext).baseAssert(testContext)
     }
 }

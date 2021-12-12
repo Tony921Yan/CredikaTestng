@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getColumnAndColumnGoods">
+        <parm key="columnId" value ="1450866513018912"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="3"/>
+        <parm key="shopId" value ="1406506069131296"/>
+    </test>
+
+    <test name = "getColumnAndColumnGoods1">
+        <parm key="columnId" value ="1451617270366240"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="3"/>
+        <parm key="shopId" value ="1406506069131296"/>
+    </test>
+
+    <test name = "getColumnAndColumnGoods2">
+        <parm key="columnId" value ="1451617008222240"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="3"/>
+        <parm key="shopId" value ="1406506069131296"/>
+    </test>
+
+</data>

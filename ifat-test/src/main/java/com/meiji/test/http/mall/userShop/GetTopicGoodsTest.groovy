@@ -1,6 +1,6 @@
 package com.meiji.test.http.mall.userShop
 
-import com.meiji.biz.request.http.mall.userShop.GetColumnGoods
+
 import com.meiji.biz.request.http.mall.userShop.GetTopicGoods
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

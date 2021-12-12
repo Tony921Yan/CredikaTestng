@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getColumnGoods">
+        <parm key="columnId" value ="1445094485917728"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "getColumnGoods1">
+        <parm key="columnId" value ="1445094485917728"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "getColumnGoods2">
+        <parm key="columnId" value ="1445456125100064"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getColumnGoods3">
+        <parm key="columnId" value ="1447617854701600"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "getColumnGoods4">
+        <parm key="columnId" value ="1446850695528480"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "getColumnGoods5">
+        <parm key="columnId" value ="1446759467319328"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "getColumnGoods6">
+        <parm key="columnId" value ="1445456091545632"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>

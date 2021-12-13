@@ -1,7 +1,6 @@
 package com.meiji.biz.request.http.mall.userInfo
 
 import com.meiji.biz.request.http.mall.MallPost
-import com.meiji.biz.request.http.shop.ShopPost
 import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 import org.apache.commons.lang3.StringUtils

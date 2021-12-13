@@ -198,4 +198,8 @@ class MysqlService extends MysqlAPI {
     static List getSupplierAccountData(){
         return meiji_settlement.rows("select supplier_code,supplier_name from settlement_order where gmt_modified > date_sub(now(),interval 3 Day) group by supplier_code")
     }
+
+    static List getDecorateTemplateDetail(){
+        return meiji_shop.rows("SELECT id from shop_decorate_template where status = 1 and is_default = 1 and is_delete = 0")
+    }
 }

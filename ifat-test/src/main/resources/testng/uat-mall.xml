@@ -56,6 +56,8 @@
             <class name="com.meiji.test.http.mall.home.GetColumnAndColumnGoodsTest"/>
             <class name="com.meiji.test.http.mall.home.GetColumnGoodsTest"/>
             <class name="com.meiji.test.http.mall.home.GetChannelDataTest"/>
+            <class name="com.meiji.test.http.mall.material.ListBuyerShowTest"/>
+            <class name="com.meiji.test.http.mall.material.GetMaterialCategoryTest"/>
             <!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
         </classes>
     </test>

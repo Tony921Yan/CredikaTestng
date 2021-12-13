@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getMaterialByCatagory">
+        <parm key="id" value ="31"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="8"/>
+        <parm key="shopId" value ="1452012455591968"/>
+    </test>
+
+    <test name = "getMaterialByCatagory2">
+        <parm key="id" value ="31"/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="8"/>
+        <parm key="shopId" value ="1452012455591968"/>
+    </test>
+
+    <test name = "getMaterialByCatagory3">
+        <parm key="id" value ="31"/>
+        <parm key="page" value ="3"/>
+        <parm key="rows" value ="8"/>
+        <parm key="shopId" value ="1452012455591968"/>
+    </test>
+</data>

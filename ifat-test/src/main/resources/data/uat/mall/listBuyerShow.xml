@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "listBuyerShow">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "listBuyerShow2">
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "listBuyerShow3">
+        <parm key="page" value ="3"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>

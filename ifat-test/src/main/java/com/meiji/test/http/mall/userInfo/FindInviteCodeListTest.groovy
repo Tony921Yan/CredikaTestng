@@ -11,7 +11,6 @@ class FindInviteCodeListTest extends BaseTest {
     @Test(description = "查询邀请码列表 findInviteCodeList" ,groups = ["prod","uat"],testName = "findInviteCodeList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findInviteCodeList(TestContext testContext){
-//        findInviteCodeList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
-        findInviteCodeList.invoke(testContext).baseAssert(testContext)
+        findInviteCodeList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

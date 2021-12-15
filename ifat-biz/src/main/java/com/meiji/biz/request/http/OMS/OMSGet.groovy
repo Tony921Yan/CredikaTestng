@@ -26,8 +26,9 @@ abstract class OMSGet {
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
         heads.put("Cookie", cookie)
-        String uuid = UUID.randomUUID().toString()
-        heads.put("userLogTracingTag",uuid)
+        //不走gateway不支持链路跟踪
+//        String uuid = UUID.randomUUID().toString()
+//        heads.put("userLogTracingTag",uuid)
         if(TestEnv.isGray()=="true"){
             heads.put("isGrayRelease",true)
         }

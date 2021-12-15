@@ -181,9 +181,13 @@ class MysqlService extends MysqlAPI {
         return meiji_pay.firstRow("SELECT * from trade_flow where merchant_type =1 and entity_id = 1405981112139808 and `year` = 2021 and `month` =7 and trade_type = 4")
     }
 
-    static List findInviteCodeList(String shopId,List state){
-        String  stateStr = StringUtils.join(state, ",")
-        String sql = "SELECT * from invite_code where shop_id = $shopId and state in ($stateStr) ORDER BY id asc LIMIT 10"
+    static List findInviteCodeList(String shopId,String state){
+        String sql = ""
+        if(StringUtils.isBlank(state)){
+            sql = "SELECT * from invite_code where shop_id = $shopId and state in (0,1) ORDER BY state,id asc LIMIT 10"
+        }else{
+            sql = "SELECT * from invite_code where shop_id = $shopId and state = $state ORDER BY id asc LIMIT 10"
+        }
         return meiji_shop.rows(sql)
     }
 

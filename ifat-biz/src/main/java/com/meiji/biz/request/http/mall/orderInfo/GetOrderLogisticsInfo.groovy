@@ -1,11 +1,9 @@
 package com.meiji.biz.request.http.mall.orderInfo
 
-import com.meiji.biz.request.http.mall.MallGet
-import com.meiji.biz.request.http.mall.MallPost
-import com.miyuan.ifat.support.test.TestContext
-import com.meiji.biz.service.MysqlService
-import com.meiji.biz.util.DateUtil
 
+import com.meiji.biz.request.http.mall.MallPost
+import com.meiji.biz.service.MysqlService
+import com.miyuan.ifat.support.test.TestContext
 
 class GetOrderLogisticsInfo extends MallPost {
     {

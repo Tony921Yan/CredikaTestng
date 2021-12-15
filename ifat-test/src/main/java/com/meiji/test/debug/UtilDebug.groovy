@@ -20,21 +20,23 @@ class UtilDebug {
     @Test
     void testPost(){
         //String url = "http://127.0.0.1:8080/mall/shop/goods/findShopGoodsDetail"
-        String url = "https://mall.meiji8888.com/shopGoods/findShopGoodsDetail"
+        String url = "http://test.supplier.meiji8888.com/api/supplier/categoryMgr/getAllCategoryByParentZero"
         TestContext testContext = TestData.getCommonData()
         Map head = new HashMap()
         head.put("timestamp",testContext.get("timestamp"))
         head.put("nonce",testContext.get("nonce"))
         head.put("Content-Type",testContext.get("Content-Type"))
-        head.put("isGrayRelease",true)
+//        head.put("isGrayRelease",true)
         UUID uuid = UUID.randomUUID();
         head.put("isUserLogTracing",true)
         head.put("userLogTracingTag",uuid)
+        head.put("userLogTracingId","test")
         head.put("userId",10053)
         TreeMap req = new TreeMap()
-        req.put("spuId","1419204305616928")
-        req.put("shopId",1405965664518176)
-        for(int i=0;i<1;i++) {
+        //req.put("spuId","1419204305616928")
+        //req.put("shopId",1405965664518176)
+        req.put("supplierId","1405965664518176")
+        for(int i=0;i<10;i++) {
             println("=============== start ========================================")
             println("=============== head ========================================")
             println(JsonUtil.prettyJson(head))

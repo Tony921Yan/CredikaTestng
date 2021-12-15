@@ -1,6 +1,6 @@
-package com.meiji.test.http.mall.user
+package com.meiji.test.http.platform.user
 
-import com.meiji.biz.request.http.mall.user.CheckGrayUser
+import com.meiji.biz.request.http.platform.user.CheckGrayUser
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
@@ -12,6 +12,5 @@ class CheckGrayUserTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void checkGrayUser_true(TestContext testContext){
         checkGrayUser.invoke(testContext).baseAssert(testContext)
-      //  assert testContext.getResponse().data == true  //经常有人修改不验证数据了
     }
 }

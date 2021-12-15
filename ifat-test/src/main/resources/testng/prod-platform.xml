@@ -42,6 +42,7 @@
             <class name="com.meiji.test.http.platform.channel.GetGoodsTest"/>
             <class name="com.meiji.test.http.platform.decorate.GetTemplateByPageTest"/>
             <class name="com.meiji.test.http.platform.decorate.GetDecorateTemplateDetailTest"/>
+            <class name="com.meiji.test.http.platform.user.CheckGrayUserTest"/>
 
         </classes>
     </test>

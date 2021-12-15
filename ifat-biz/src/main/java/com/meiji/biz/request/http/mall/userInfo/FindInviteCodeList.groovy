@@ -31,10 +31,8 @@ class FindInviteCodeList extends MallPost {
 
     FindInviteCodeList specialAssert(TestContext testContext){
         List<Map> apiResult = testContext.getResponse().data
-
-        List state = StringUtils.isBlank(testContext.state) ? [0, 1] : [testContext.state]
-        List mysqlResult = MysqlService.findInviteCodeList(testContext.get("shopId"),state)
-        //assert apiResult.get(0).getAt("code") == mysqlResult.get(0).getAt("code")
+        List mysqlResult = MysqlService.findInviteCodeList(testContext.get("shopId").toString(),testContext.state)
+        assert apiResult.get(0).code == mysqlResult.get(0).code
 
     }
 

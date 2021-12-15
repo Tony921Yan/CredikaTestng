@@ -35,6 +35,7 @@ abstract class MallPost {
         }
         String uuid = UUID.randomUUID().toString()
         heads.put("userLogTracingTag",uuid)
+        heads.put("isUserLogTracing",true)
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){

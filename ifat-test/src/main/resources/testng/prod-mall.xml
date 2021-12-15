@@ -65,6 +65,7 @@
             <class name="com.meiji.test.http.mall.userShop.GetDefaultTopicGoodsTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetTemplateDefaultComponentListTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetTopicGoodsTest"/>
+            <class name="com.meiji.test.http.mall.user.CheckGrayUserTest"/>
         </classes>
     </test>
 </suite>

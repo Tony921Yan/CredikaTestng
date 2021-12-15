@@ -4,6 +4,6 @@
         <parm key="shopId" value ="1405981112139808"/>
         <parm key="page" value ="1"/>
         <parm key="rows" value ="10"/>
-        <parm key="state" value =" "/>
+        <parm key="state" value ="null"/>
     </test>
 </data>

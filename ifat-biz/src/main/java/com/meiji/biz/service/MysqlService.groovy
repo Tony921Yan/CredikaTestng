@@ -183,7 +183,7 @@ class MysqlService extends MysqlAPI {
 
     static List findInviteCodeList(String shopId,String state){
         String sql = ""
-        if(StringUtils.isBlank(state)){
+        if(StringUtils.isBlank(state)||state=="null"){
             sql = "SELECT * from invite_code where shop_id = $shopId and state in (0,1) ORDER BY state,id asc LIMIT 10"
         }else{
             sql = "SELECT * from invite_code where shop_id = $shopId and state = $state ORDER BY id asc LIMIT 10"

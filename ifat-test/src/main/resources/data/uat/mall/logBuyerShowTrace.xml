@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "logBuyerShowTrace">
+        <parm key="avatar" value ="https://thirdwx.qlogo.cn/mmopen/vi_32/pCUrja4Z78OicnGFCmPChnrBibnuonkUfJItKtJlZicibO0LUMFEAbm1L1XvRUzotiarJXg8aXgMu4KKzJYz3Kg91Sw/132"/>
+        <parm key="id" value ="1452873831415840"/>
+        <parm key="nickname" value ="红日"/>
+        <parm key="traceType" value ="2"/>
+        <parm key="userId" value ="10029"/>
+    </test>
+</data>

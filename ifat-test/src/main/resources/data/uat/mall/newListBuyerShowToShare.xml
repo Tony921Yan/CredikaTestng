@@ -6,9 +6,9 @@
         <parm key="rows" value ="10"/>
     </test>
 
-<!--    <test name = "newListBuyerShowToShare2">-->
-<!--        <parm key="condition" value ='{"id":1450331036712992,"userId":1452012352831520}'/>-->
-<!--        <parm key="page" value ="2"/>-->
-<!--        <parm key="rows" value ="10"/>-->
-<!--    </test>-->
+    <test name = "newListBuyerShowToShare2">
+        <parm key="condition" value ='{"id":1452874831757344,"userId":10029}'/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+    </test>
 </data>

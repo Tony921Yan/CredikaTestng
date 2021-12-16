@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "newListBuyerShowOfMe">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="userId" value ="10029"/>
+    </test>
+
+    <test name = "newListBuyerShowOfMe2">
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+        <parm key="userId" value ="10029"/>
+    </test>
+</data>

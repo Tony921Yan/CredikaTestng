@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 /**
  *
  @author Remy
- @create 2021/12/13 22:32
+ @create 2021/12/16 22:32
  @version v2.3
  */
 class NewListBuyerShowToShareTest extends BaseTest {
@@ -19,9 +19,9 @@ class NewListBuyerShowToShareTest extends BaseTest {
         newListBuyerShowToShare.invoke(testContext).baseAssert(testContext)
     }
 
-//    @Test(description = "查询晒单详情 newListBuyerShowToShare" ,groups = ["prod","uat"],testName = "newListBuyerShowToShare2",
-//            dataProvider = "dataProvider",dataProviderClass = TestData.class) //翻页接口报错，待开发解决后调通
-//    public void newListBuyerShowToShare2(TestContext testContext){
-//        newListBuyerShowToShare.invoke(testContext).baseAssert(testContext)
-//    }
+    @Test(description = "查询晒单详情-第2页 newListBuyerShowToShare" ,groups = ["prod","uat"],testName = "newListBuyerShowToShare2",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void newListBuyerShowToShare2(TestContext testContext){
+        newListBuyerShowToShare.invoke(testContext).baseAssert(testContext)
+    }
 }

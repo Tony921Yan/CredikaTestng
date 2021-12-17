@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class GetAllOneCategorys extends MallPost {
     {
         super.api = "shopGoods/getAllOneCategorys"
-        super.params =  [""]
+        super.params =  [ ]
     }
 
     GetAllOneCategorys invoke(TestContext testContext) {

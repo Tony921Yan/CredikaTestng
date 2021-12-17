@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "searchRankGoodsList">
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="rankCategoryId" value =""/>
+
+    </test>
+
+    <test name = "searchRankGoodsList1">
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="rankCategoryId" value ="652"/>
+
+    </test>
+
+</data>

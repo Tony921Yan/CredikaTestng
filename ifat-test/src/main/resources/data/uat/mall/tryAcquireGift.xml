@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "tryAcquireGift">
+        <parm key="addressId" value ="1450167892967456"/>
+        <parm key="giftId" value ="1453422125514784"/>
+        <parm key="nickname" value ="Tony Yan"/>
+        <parm key="avatar" value ="https://thirdwx.qlogo.cn/mmopen/vi_32/qzaEHcSVEIg6SlTPX0eNfuz7tXu1jknTf666U0qbFNtN04ZThtaXFgPe6rWWicrQxvyIb7fVrHzM5luvoCib1CsA/132"/>
+    </test>
+</data>

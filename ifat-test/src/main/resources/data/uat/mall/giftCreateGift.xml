@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "giftCreateGift">
+        <parm key="giftType" value ="3"/>
+        <parm key="actuallyPaidAmount" value ="20"/>
+        <parm key="goodsTotalAmount" value ="20"/>
+        <parm key="payableAmount" value ="20"/>
+        <parm key="giftGoods" value ='[
+        {
+            "activeId":null,
+            "seckillPrice":null,
+            "skuId":1410325586903104,
+            "skuNum":1,
+            "skuPrice":20,
+            "supplierId":12,
+            "rank":"一等奖",
+            "sort":1
+        }
+    ]'/>
+        <parm key="receiverNumber" value ="1"/>
+        <parm key="shopId" value ="1430182304940064"/>
+        <parm key="openId" value ="oZD3N5RqqjE2oZ8rTGbppQsqrY6g"/>
+        <parm key="isSowPrizeLevel" value ="1"/>
+    </test>
+</data>

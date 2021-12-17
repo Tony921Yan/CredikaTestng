@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "thankSender">
+        <parm key="text" value ="激动到尖叫，这礼物我超喜欢！爱你哟~"/>
+        <parm key="url" value ="https://static.meiji8888.com/mj-shop/upload/1639729301106.jpg"/>
+        <parm key="giftId" value ="1453418927357984"/>
+        <parm key="userId" value ="1429851454046240"/>
+    </test>
+</data>

@@ -86,6 +86,10 @@ class MysqlService extends MysqlAPI {
         return meiji_user.rows("select * from user_address where user_id = $user_id and is_delete = 0 order by gmt_create limit 1")
     }
 
+    static Map GetGiftInfo(String gift_id){
+        return meiji_active.rows("SELECT * FROM gift_goods  WHERE gift_id = '1452895557910560' AND is_delete =0 ORDER BY sort ASC").get(1)
+    }
+
     static List order_info(String orderCode){
         return meiji_order.rows("select * from order_info where order_code = $orderCode")
     }

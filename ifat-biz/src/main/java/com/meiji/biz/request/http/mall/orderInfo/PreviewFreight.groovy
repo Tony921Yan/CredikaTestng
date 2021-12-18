@@ -11,7 +11,7 @@ import com.miyuan.ifat.support.test.TestContext
 class PreviewFreight extends MallPost {
     {
         super.api = "orderInfo/previewFreight"
-        super.params =  ["orderGoods"]
+        super.params =  ["orderGoods","addressId"]
     }
 
     PreviewFreight invoke(TestContext testContext) {

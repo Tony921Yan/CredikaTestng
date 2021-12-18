@@ -1,6 +1,5 @@
 package com.meiji.test.http.mall.userInfo
 
-import com.meiji.biz.request.http.mall.userInfo.ListGiftsFromMe
 import com.meiji.biz.request.http.mall.userInfo.ListGiftsToMe
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

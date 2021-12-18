@@ -25,7 +25,8 @@ class GetBuyerShowDetail extends MallPost {
     }
 
     GetBuyerShowDetail baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == 10  //调起去晒物但不需要执行返回10
+        super.baseAssert(testContext)
+//        assert testContext.getResponse().code == 10  //调起去晒物但不需要执行返回10
         return this
     }
 

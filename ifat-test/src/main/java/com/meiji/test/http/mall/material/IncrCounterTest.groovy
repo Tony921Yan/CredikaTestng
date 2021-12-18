@@ -1,6 +1,5 @@
 package com.meiji.test.http.mall.material
 
-import com.meiji.biz.request.http.mall.material.GetMaterialByCatagory
 import com.meiji.biz.request.http.mall.material.IncrCounter
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

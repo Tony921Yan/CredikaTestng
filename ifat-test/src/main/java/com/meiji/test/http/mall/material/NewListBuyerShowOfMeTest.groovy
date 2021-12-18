@@ -19,9 +19,9 @@ class NewListBuyerShowOfMeTest extends BaseTest {
         newListBuyerShowOfMe.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "我发布的 newListBuyerShowOfMe" ,groups = ["prod","uat"],testName = "newListBuyerShowOfMe2",
-            dataProvider = "dataProvider",dataProviderClass = TestData.class)
-    public void newListBuyerShowOfMe2(TestContext testContext){
-        newListBuyerShowOfMe.invoke(testContext).baseAssert(testContext)
-    }
+//    @Test(description = "我发布的 newListBuyerShowOfMe" ,groups = ["prod","uat"],testName = "newListBuyerShowOfMe2",
+//            dataProvider = "dataProvider",dataProviderClass = TestData.class) //生产环境晒单数量不够分页
+//    public void newListBuyerShowOfMe2(TestContext testContext){
+//        newListBuyerShowOfMe.invoke(testContext).baseAssert(testContext)
+//    }
 }

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "previewFreight">
+        <parm key="orderGoods" value ='[{"skuId":1453255427096705,"skuNum":1}]'/>
+        <parm key="addressId" value ="1442914217492512"/>
+    </test>
+</data>

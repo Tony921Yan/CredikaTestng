@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getColumnAndColumnGoods"> <!--美小果推荐-->
+        <parm key="columnId" value ="1452165457510432"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="3"/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+
+    <test name = "getColumnAndColumnGoods1"> <!--美小果推荐详情页第1页-->
+        <parm key="columnId" value ="1452165457510432"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+
+    <test name = "getColumnAndColumnGoods2"><!--美小果推荐详情页第2页-->
+        <parm key="columnId" value ="1452165457510432"/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="20"/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+
+</data>

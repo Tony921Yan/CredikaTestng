@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "newListBuyerShowToShare">
+        <parm key="condition" value ='{"id":1448158674550816,"userId":10}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+    </test>
+
+    <test name = "newListBuyerShowToShare2">
+        <parm key="condition" value ='{"id":1448158674550816,"userId":10}'/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>

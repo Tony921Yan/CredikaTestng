@@ -5,4 +5,11 @@
         <parm key="orderStatus" value ="0"/>
         <parm key="page" value ="1"/>
     </test>
+
+    <test name = "mall-pageOrder-search">
+        <parm key="limit" value ="2"/>
+        <parm key="status" value ="7"/>
+        <parm key="page" value ="1"/>
+        <parm key="searchType" value ="1"/>
+    </test>
 </data>

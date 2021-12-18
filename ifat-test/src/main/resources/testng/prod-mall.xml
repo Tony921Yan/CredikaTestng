@@ -60,12 +60,27 @@
             <class name="com.meiji.test.http.mall.userInfo.IsSubscribeTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.PreviewGiftOrderTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
-            <class name="com.meiji.test.http.mall.home.GetChannelDataTest"/>
-            <class name="com.meiji.test.http.mall.home.GetColumnGoodsTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetDefaultTopicGoodsTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetTemplateDefaultComponentListTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetTopicGoodsTest"/>
             <class name="com.meiji.test.http.mall.user.CheckGrayUserTest"/>
+            <class name="com.meiji.test.http.mall.home.GetTemplateComponentListTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.GetActiveBonusTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetToShareCountTest"/>
+            <class name="com.meiji.test.http.mall.home.GetColumnAndColumnGoodsTest"/>
+            <class name="com.meiji.test.http.mall.home.GetColumnGoodsTest"/>
+            <class name="com.meiji.test.http.mall.home.GetChannelDataTest"/>
+            <class name="com.meiji.test.http.mall.material.ListBuyerShowTest"/>
+            <class name="com.meiji.test.http.mall.material.GetMaterialCategoryTest"/>
+            <class name="com.meiji.test.http.mall.material.GetShowBonusTest"/>
+            <class name="com.meiji.test.http.mall.material.GetMaterialByCatagoryTest"/>
+            <class name="com.meiji.test.http.mall.material.IncrCounterTest"/>
+            <class name="com.meiji.test.http.mall.material.ListTraceDataTest"/>
+            <class name="com.meiji.test.http.mall.material.NewListBuyerShowToShareTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.PreviewFreightTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.GetBuyerShowDetailTest"/>
+            <class name="com.meiji.test.http.mall.material.LogBuyerShowTraceTest"/>
+            <class name="com.meiji.test.http.mall.material.NewListBuyerShowOfMeTest"/>
         </classes>
     </test>
 </suite>

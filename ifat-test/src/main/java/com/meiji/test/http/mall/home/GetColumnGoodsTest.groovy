@@ -10,7 +10,7 @@ import org.testng.annotations.Test
  *
  @author Remy
  @create 2021/11/18-13:50
- @update 2021/11/13-00:12
+ @update 2021/12/13-00:12
  @version v2.1 & V2.3
  */
 class GetColumnGoodsTest extends BaseTest{

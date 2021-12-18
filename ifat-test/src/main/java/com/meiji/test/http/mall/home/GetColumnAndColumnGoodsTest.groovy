@@ -13,19 +13,19 @@ import org.testng.annotations.Test
  */
 class GetColumnAndColumnGoodsTest extends BaseTest {
     GetColumnAndColumnGoods getColumnAndColumnGoods = new GetColumnAndColumnGoods()
-    @Test(description = "获取栏目和栏目下商品数据 getColumnAndColumnGoods" ,groups = ["prod","uat"],testName = "getColumnAndColumnGoods",
+    @Test(description = "获取栏目和栏目下商品数据-首页前3条 getColumnAndColumnGoods" ,groups = ["prod","uat"],testName = "getColumnAndColumnGoods",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getColumnAndColumnGoods(TestContext testContext){
         getColumnAndColumnGoods.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "获取栏目和栏目下商品数据 getColumnAndColumnGoods" ,groups = ["prod","uat"],testName = "getColumnAndColumnGoods1",
+    @Test(description = "获取栏目和栏目下商品数据-第1页 getColumnAndColumnGoods" ,groups = ["prod","uat"],testName = "getColumnAndColumnGoods1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getColumnAndColumnGoods1(TestContext testContext){
         getColumnAndColumnGoods.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "获取栏目和栏目下商品数据 getColumnAndColumnGoods" ,groups = ["prod","uat"],testName = "getColumnAndColumnGoods2",
+    @Test(description = "获取栏目和栏目下商品数据-第2页 getColumnAndColumnGoods" ,groups = ["prod","uat"],testName = "getColumnAndColumnGoods2",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getColumnAndColumnGoods2(TestContext testContext){
         getColumnAndColumnGoods.invoke(testContext).baseAssert(testContext)

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "checkAddress">
+        <parm key="addressId" value ="1450167892967456"/>
+        <parm key = "giftId" value="1453425634050080"/>
+    </test>
+</data>

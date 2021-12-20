@@ -16,6 +16,6 @@ class GetBuyerShowDetailTest extends BaseTest {
     @Test(description = "去晒物 getBuyerShowDetail" ,groups = ["prod","uat"],testName = "getBuyerShowDetail",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getBuyerShowDetail(TestContext testContext){
-        getBuyerShowDetail.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getBuyerShowDetail.invoke(testContext).baseAssert(testContext)
     }
 }

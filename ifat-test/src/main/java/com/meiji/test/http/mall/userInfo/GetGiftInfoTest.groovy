@@ -12,8 +12,8 @@ class GetGiftInfoTest extends BaseTest {
     @Test(description = "查询礼包 getGiftInfo" ,groups = ["prod","uat"],testName = "getGiftInfo",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGiftInfo(TestContext testContext){
-        testContext.put("giftId",1452895557910560)
+        testContext.put("giftId",1453960321826848)
         testContext.put("userId",1429851454046240)
-        getGiftInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getGiftInfo.invoke(testContext).baseAssert(testContext)
     }
 }

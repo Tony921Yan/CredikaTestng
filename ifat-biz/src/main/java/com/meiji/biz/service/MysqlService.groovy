@@ -87,7 +87,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static Map GetGiftInfo(String gift_id){
-        return meiji_active.rows("SELECT * FROM gift_goods  WHERE gift_id = '1452895557910560' AND is_delete =0 ORDER BY sort ASC").get(1)
+        return meiji_active.rows("SELECT * FROM gift_goods  WHERE gift_id = '1453960321826848' AND is_delete =0 ORDER BY sort ASC").get(0)
     }
 
     static List order_info(String orderCode){

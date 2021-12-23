@@ -70,7 +70,7 @@ abstract class MallPost {
     }
 
     MallPost afterInvoke(TestContext testContext){
-
+        return this
     }
 
     MallPost baseAssert(TestContext testContext){
@@ -79,6 +79,7 @@ abstract class MallPost {
     }
 
     MallPost specialAssert(TestContext testContext){
+        return this
     }
 
 }

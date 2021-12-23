@@ -3,7 +3,7 @@
     <test name="C端 测试环境自动化脚本">
         <classes>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopByIdTest"/>
-            <!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/> &lt;!&ndash;需要查ES,可不与shopid关联&ndash;&gt;-->
+            <!--<class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/> &lt;!&ndash;需要查ES,可不与shopid关联&ndash;&gt;-->
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsStateListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopModuleGoodsListTest"/>
@@ -64,11 +64,16 @@
             <class name="com.meiji.test.http.mall.material.ListTraceDataTest"/>
             <class name="com.meiji.test.http.mall.material.NewListBuyerShowToShareTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.PreviewFreightTest"/>
-            <class name="com.meiji.test.http.mall.orderInfo.GetBuyerShowDetailTest"/>
             <class name="com.meiji.test.http.mall.material.LogBuyerShowTraceTest"/>
             <class name="com.meiji.test.http.mall.material.NewListBuyerShowOfMeTest"/>
             <class name="com.meiji.test.http.mall.userInfo.CheckAddressTest"/>
-            <!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
+            <class name="com.meiji.test.http.mall.userInfo.GetGiftDetailFromMeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GiftCreateGiftTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.TryAcquireGiftTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetGiftInfoTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.ThankSenderTest"/>
+            <!--<class name="com.meiji.test.http.mall.orderInfo.GetBuyerShowDetailTest"/>-->
+            <!--<class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
         </classes>
     </test>
 </suite>

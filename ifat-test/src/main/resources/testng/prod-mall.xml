@@ -81,6 +81,8 @@
             <class name="com.meiji.test.http.mall.orderInfo.GetBuyerShowDetailTest"/>
             <class name="com.meiji.test.http.mall.material.LogBuyerShowTraceTest"/>
             <class name="com.meiji.test.http.mall.material.NewListBuyerShowOfMeTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.SearchRankGoodsListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetAllOneCategorysTest"/>
         </classes>
     </test>
 </suite>

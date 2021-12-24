@@ -27,10 +27,9 @@ abstract class OMSPost {
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
         heads.put("Cookie", cookie)
-        //不走gateway不支持链路跟踪
-//        String uuid = UUID.randomUUID().toString()
-//        heads.put("userLogTracingTag",uuid)
-//        heads.put("userLogTracingId","test")
+        String uuid = UUID.randomUUID().toString()
+        heads.put("userLogTracingTag",uuid)
+        heads.put("isUserLogTracing",true)
         if(TestEnv.isGray()=="true"){
             heads.put("isGrayRelease",true)
         }

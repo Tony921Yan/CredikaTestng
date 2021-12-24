@@ -15,12 +15,12 @@ class orderStatusCompare extends BaseTest {
         String orderNo = testContext.get("order_code")
         String orderStatus = testContext.get("order_status")
         Map settlementOrder = MysqlService.getSettlementOrderStatusByOrderNo(orderNo)
+        assert settlementOrder !=null,'订单号'+orderNo+'结算表无数据'
         String settlementStatus = settlementOrder.get("state")
         testContext.appendLog(new Record("订单号",orderNo));
         testContext.appendLog(new Record("订单状态",orderStatus));
         testContext.appendLog(new Record("结算状态",settlementStatus));
-        assert orderStatus == settlementStatus,"订单号"+orderNo
-
+            assert orderStatus == settlementStatus,"订单号"+orderNo
     }
     @DataProvider
     TestContext[] orders(){

@@ -45,7 +45,7 @@ class ItemDetailPictureMonitor extends BaseTest {
     @DataProvider
     TestContext[] data(){
         List list = new ArrayList()
-        List  picList = MysqlAPI.meiji_goods.rows("select code,detail from goods_spu where status = 4 and gmt_modified > date_sub(curdate(),interval 1 day) order by gmt_modified desc limit 1000")
+        List  picList = MysqlAPI.meiji_goods.rows("select code,detail from goods_spu where status = 4 and is_test_goods = 0 and gmt_modified > date_sub(curdate(),interval 1 day) order by gmt_modified desc limit 1000")
         picList.forEach{it ->
             String detail = it.detail
             InputStream inputStream = new URL(detail).openStream()

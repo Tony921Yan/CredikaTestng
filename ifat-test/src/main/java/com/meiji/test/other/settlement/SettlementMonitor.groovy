@@ -55,6 +55,7 @@ class SettlementMonitor extends BaseTest{
                         break
                     case "2":
                         Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,2)
+                        assert afterOrderLog != null,"售后状态流转2（待退货）缺失"
                         Date logDate = afterOrderLog.gmt_create
                         Date expAfterDate = DateUtil.dateAdd(logDate,Calendar.DATE,3)
                         assert expAfterDate >= now,"期望3天内售后退货,售后单"+afterCode
@@ -69,12 +70,14 @@ class SettlementMonitor extends BaseTest{
                         break
                     case "4":
                         Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,4)
+                        assert afterOrderLog != null,"售后状态流转4（待退款审核）缺失"
                         Date logDate = afterOrderLog.gmt_create
                         Date expAfterDate = DateUtil.dateAdd(logDate,Calendar.DATE,3)
                         assert expAfterDate >= now,"期望3天内待退款审核,售后单"+afterCode
                         break
                     case "5":
                         Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,5)
+                        assert afterOrderLog != null,"售后状态流转5（待退款）缺失"
                         Date logDate = afterOrderLog.gmt_create
                         Date expAfterDate = DateUtil.dateAdd(logDate,Calendar.DATE,1)
                         assert expAfterDate >= now,"期望1天内完成退款,售后单"+afterCode

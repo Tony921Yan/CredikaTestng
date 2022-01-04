@@ -43,6 +43,7 @@ class SettlementMonitor extends BaseTest{
             for(Map map:afterOrder) {
                 String afterCode = map.after_code
                 String afterStatus = map.after_status
+                String afterType = map.after_type
                 Date afterDate = map.gmt_create
                 switch (afterStatus){
                     case ["6","7"]:
@@ -69,11 +70,13 @@ class SettlementMonitor extends BaseTest{
                         assert logisticFinishDate >= now,"期望14天内确认验货,售后单"+afterCode
                         break
                     case "4":
-                        Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,4)
-                        assert afterOrderLog != null,"售后状态流转4（待退款审核）缺失"
-                        Date logDate = afterOrderLog.gmt_create
-                        Date expAfterDate = DateUtil.dateAdd(logDate,Calendar.DATE,3)
-                        assert expAfterDate >= now,"期望3天内待退款审核,售后单"+afterCode
+                        if(afterType=="2") {
+                            Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode, 4)
+                            assert afterOrderLog != null, "售后状态流转4（待退款审核）缺失"
+                            Date logDate = afterOrderLog.gmt_create
+                            Date expAfterDate = DateUtil.dateAdd(logDate, Calendar.DATE, 3)
+                            assert expAfterDate >= now, "期望3天内待退款审核,售后单" + afterCode
+                        }
                         break
                     case "5":
                         Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,5)

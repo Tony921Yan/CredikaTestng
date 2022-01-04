@@ -144,7 +144,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getAfterOrder(String orderId){
-        return meiji_order.rows("select after_code,after_status,gmt_create from order_after where order_code = $orderId")
+        return meiji_order.rows("select after_code,after_status,after_type,gmt_create from order_after where order_code = $orderId")
     }
 
     static List getShops(){

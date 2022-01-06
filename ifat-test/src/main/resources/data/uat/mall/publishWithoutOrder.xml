@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "publishWithoutOrder">
+        <parm key="content" value ="大于gdgfgfgfdgdgfdfgf"/>
+        <parm key="cover" value ="https://static.meiji8888.com/mj-shop/upload/1641480908417.png"/>
+        <parm key="goodsInfo" value ='{"goodsName":"子商品1","goodsPicUrl":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/92a8ac56ca4839767d74f04ba4f42efa.png","goodsProperty":"艾莎公主 白金","groupGoods":[],"spuId":1452694774480928}'/>
+        <parm key="resources" value ='[{"type":1,"url":"https://static.meiji8888.com/mj-shop/upload/1641480908417.png","ratio":"4:3"}]'/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="spuId" value ="1452694774480928"/>
+        <parm key="userAvatar" value ="https://thirdwx.qlogo.cn/mmopen/vi_32/QOIMzibI7Fuk8FjfYg7ciaz9nnkcnxbgnB7hKtGb6E2gibo1b5tibS96Qj6IUSwmCSkGNwFmY5a4icIJLQBP7AOXOBA/132"/>
+        <parm key="userId" value ="1453451227693088"/>
+        <parm key="userNickname" value ="好人一生平安"/>
+        <parm key="userPhone" value ="18820157232"/>
+    </test>
+</data>

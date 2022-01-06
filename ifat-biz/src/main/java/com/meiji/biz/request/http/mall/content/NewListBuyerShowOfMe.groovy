@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.mall.material
+package com.meiji.biz.request.http.mall.content
 
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext

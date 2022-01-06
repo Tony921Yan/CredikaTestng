@@ -30,7 +30,7 @@ class TryAcquireGiftTest extends BaseTest {
             String avatar = it.avatar
             testContext.put("userId",userId)
             testContext .put("addressId",addressId)
-            testContext .put("giftId",1453422125514784)
+            testContext .put("giftId",1456548918329376)
             testContext .put("nickname",nickname)
             testContext .put("avatar",avatar)
             tryAcquireGift.invoke(testContext).baseAssert(testContext)

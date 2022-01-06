@@ -1,6 +1,6 @@
-package com.meiji.test.http.mall.material
+package com.meiji.test.http.mall.content
 
-import com.meiji.biz.request.http.mall.material.NewListBuyerShowOfMe
+import com.meiji.biz.request.http.mall.content.NewListBuyerShowOfMe
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

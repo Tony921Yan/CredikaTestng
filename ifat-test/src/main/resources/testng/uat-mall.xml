@@ -65,7 +65,7 @@
             <class name="com.meiji.test.http.mall.material.NewListBuyerShowToShareTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.PreviewFreightTest"/>
             <class name="com.meiji.test.http.mall.material.LogBuyerShowTraceTest"/>
-            <class name="com.meiji.test.http.mall.material.NewListBuyerShowOfMeTest"/>
+            <class name="com.meiji.test.http.mall.content.NewListBuyerShowOfMeTest"/>
             <class name="com.meiji.test.http.mall.userInfo.CheckAddressTest"/>
             <class name="com.meiji.test.http.mall.userInfo.GetGiftDetailFromMeTest"/>
             <class name="com.meiji.test.http.mall.userInfo.GiftCreateGiftTest"/>

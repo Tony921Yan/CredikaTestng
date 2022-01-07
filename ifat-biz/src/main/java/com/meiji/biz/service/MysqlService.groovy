@@ -210,4 +210,9 @@ class MysqlService extends MysqlAPI {
     static List getDecorateTemplateDetail(){
         return meiji_shop.rows("SELECT id from shop_decorate_template where status = 1 and is_default = 1 and is_delete = 0")
     }
+
+    static List getOneCategory(){
+        return meiji_goods.firstRow(sql:"SELECT id from goods_category where show_status = 0 and `status`= 1 and type=1 and parent_id = 0")
+    }
 }
+

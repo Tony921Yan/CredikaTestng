@@ -83,6 +83,8 @@
             <class name="com.meiji.test.http.mall.content.NewListBuyerShowOfMeTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.SearchRankGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.GetAllOneCategorysTest"/>
+<!--            <class name="com.meiji.test.http.mall.home.GetSearchKeysTest"/>-->
+<!--            <class name="com.meiji.test.http.mall.shopCart.QueryCartTest"/>-->
         </classes>
     </test>
 </suite>

@@ -23,4 +23,8 @@ class SearchRankGoodsList extends MallPost {
         super.baseAssert(testContext)
         return this
     }
+
+    SearchRankGoodsList specialAssert(TestContext testContext){
+        Map
+    }
 }

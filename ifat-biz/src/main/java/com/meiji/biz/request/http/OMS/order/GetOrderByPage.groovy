@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetOrderByPage extends OMSPost {
     {
-        super.api = "/api/supplier/orderMgr/getOrderByPage"
+        super.api = "OrderDetailManage/getOrderByPage"
         super.params =  [ "condition","order","page","rows","sort"]
 
     }

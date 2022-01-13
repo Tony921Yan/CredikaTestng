@@ -22,4 +22,9 @@ class PublishWithoutOrder extends MallPost{
         super.baseAssert(testContext)
         return this
     }
+
+    PublishWithoutOrder afterInvoke(TestContext testContext){
+        testContext.put("id",testContext.getResponse().data.showId)
+        return this
+    }
 }

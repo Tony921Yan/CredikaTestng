@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "searchCpsContentBonus">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ="{}"/>
+    </test>
+
+    <test name = "searchCpsContentBonus1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ="{recStatus: 1}"/>
+    </test>
+
+    <test name = "searchCpsContentBonus2">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ="{recStatus: 2}"/>
+    </test>
+
+    <test name = "searchCpsContentBonus3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ="{recStatus: 3}"/>
+    </test>
+
+    <test name = "searchCpsContentBonus4">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ="{recStatus: 4}"/>
+    </test>
+
+    <test name = "searchCpsContentBonus5">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ="{recStatus: 5}"/>
+    </test>
+
+    <test name = "searchCpsContentBonus6">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ="{recStatus: 6}"/>
+    </test>
+
+    <test name = "searchCpsContentBonus7">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"activityName":"晒单CPS后端","id":"1457046765436960","startTime":"2022-01-06 00:00:00","endTime":"2022-01-08 23:59:59"}'/>
+    </test>
+</data>

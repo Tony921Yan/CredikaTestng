@@ -12,12 +12,9 @@ import org.testng.annotations.Test
  */
 class PublishWithoutOrderTest extends BaseTest{
     PublishWithoutOrder publishWithoutOrder = new PublishWithoutOrder()
-    @Test(description = "未购买发布晒单 publishWithoutOrder",groups = ["prod","uat"],testName = "publishWithoutOrder",
+    @Test(description = "未购买发布晒单/编辑晒单 publishWithoutOrder",groups = ["prod","uat"],testName = "publishWithoutOrder",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void publishWithoutOrder(TestContext testContext){
         publishWithoutOrder.invoke(testContext).baseAssert(testContext)
-        Map map = testContext.getResponse().data
-        String id = map.get("showId")
-        System.out.println(id)
     }
 }

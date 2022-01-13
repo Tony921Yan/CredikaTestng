@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetTaskByPage extends OMSPost {
     {
-        super.api = "/api/supplier/excelMgr/getTaskByPage"
+        super.api = "OrderDetailManage/getTaskByPage"
         super.params =  [ "condition","order","page","rows","sort"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }

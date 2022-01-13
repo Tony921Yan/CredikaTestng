@@ -12,10 +12,12 @@ import org.testng.annotations.Test
  * @Vession V2.4
  */
 class DeleteBuyerShowTest extends BaseTest{
+//    PublishWithoutOrder publishWithoutOrder = new PublishWithoutOrder()
     DeleteBuyerShow deleteBuyerShow = new DeleteBuyerShow()
-    @Test(description = "删除晒单 deleteBuyerShow",groups = ["prod","uat"],testName = "deleteBuyerShow",
+    @Test(description = "删除晒单 deleteBuyerShow",groups = ["prod","uat"],testName = "publishWithoutOrder",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void deleteBuyerShow(TestContext testContext){
-        deleteBuyerShow.invoke(testContext).baseAssert(testContext)
+//        publishWithoutOrder.invoke(testContext).baseAssert(testContext).afterInvoke(testContext)
+        deleteBuyerShow.preInvoke(testContext).invoke(testContext).baseAssert(testContext)
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "addCartItem">
+        <parm key="shopId" value ="1405981112139808"/>
+        <parm key="userId" value ="10029"/>
+        <parm key="skuId" value ="1448857097470080"/>
+        <parm key="spuId" value ="1448857097469984"/>
+        <parm key="skuNum" value ="1"/>
+        <parm key="groupFlag" value ="false"/>
+        <parm key="goodsType" value ="1"/>
+        <parm key="ext" value ='[{"key":"showId","value":"1456879288975392"}]'/>
+    </test>
+</data>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "updateCartItem">
+        <parm key = "shopId" value = "1405981112139808"/>
+        <parm key = "userId" value = "10029"/>
+        <parm key = "currentSkuId" value = "1448857097470080"/>
+        <parm key = "preSkuId" value = "1448857097470080"/>
+        <parm key = "skuNum" value = "5"/>
+    </test>
+</data>

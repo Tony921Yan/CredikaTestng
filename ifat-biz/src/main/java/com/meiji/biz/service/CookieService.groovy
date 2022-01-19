@@ -22,7 +22,7 @@ class CookieService {
       jmUser: ChatAccount | null,
    */
     static String getMallCookie(String url,Long userId,Long dealerId) {
-        String cookie = cacheCookie.get("mall:" + userId)
+        String cookie = null//cacheCookie.get("mall:" + userId)
         if (cookie != null) {
             return cookie
         }

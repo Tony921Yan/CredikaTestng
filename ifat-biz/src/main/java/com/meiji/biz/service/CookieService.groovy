@@ -22,7 +22,7 @@ class CookieService {
       jmUser: ChatAccount | null,
    */
     static String getMallCookie(String url,Long userId,Long dealerId) {
-        String cookie = null//cacheCookie.get("mall:" + userId)
+       String cookie = cacheCookie.get("mall:" + userId)
         if (cookie != null) {
             return cookie
         }
@@ -39,15 +39,18 @@ class CookieService {
         userInfo.put("shopInfo",shopInfo)
         cookieParam.put("secret", "+0ea81c0ea81557c9==")
         cookieParam.put("info", userInfo)
+        println("req:" + cookieParam)
         CloseableHttpResponse response = HttpUtil.postV2(url + "/login/__test__", [:], cookieParam)
+        String entity = EntityUtils.toString(response.getEntity(), "UTF-8")
+        println("entity:"+entity)
         Header[] headers = response.getHeaders("Set-Cookie")
+        println("headers:" + headers)
         for (Header header : headers) {
             stringBuilder.append(header.elements.head().toString().split(";")[0])
             stringBuilder.append(";")
         }
-        cookie = stringBuilder.toString()
-        cacheCookie.put("mall:" + userId, cookie)
-        return cookie
+        cacheCookie.put("mall:" + userId, stringBuilder.toString())
+        return stringBuilder.toString()
     }
 
     /*

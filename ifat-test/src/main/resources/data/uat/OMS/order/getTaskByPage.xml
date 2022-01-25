@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSgetTaskByPage">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{
+        "supplierId":77,
+        "name":""
+    }'/>
+    </test>
+</data>

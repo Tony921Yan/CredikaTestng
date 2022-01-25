@@ -30,4 +30,6 @@ class MysqlAPI {
     static Sql meiji_message = FactorySupport.createSql("meiji_message")
     @Lazy
     static Sql meiji_active = FactorySupport.createSql("meiji_active")
+    @Lazy
+    static Sql meiji_integral = FactorySupport.createSql("meiji_integral")
 }

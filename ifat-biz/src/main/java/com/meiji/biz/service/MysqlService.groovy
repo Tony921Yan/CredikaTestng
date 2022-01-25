@@ -79,7 +79,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List findUserInfo(String id){
-        return meiji_user.rows("select * from user where id=$id")
+        return meiji_user.rows("SELECT*FROM user WHERE is_delete !=1 AND source_type = 0 AND id=$id")
     }
 
     static List findUserAddressList(String user_id){
@@ -124,6 +124,18 @@ class MysqlService extends MysqlAPI {
 
     static Map getUserInfo(String UserId){
         return meiji_user.firstRow("select * from user where id =$UserId")
+    }
+
+    static Map findUserAddressInfo(){
+        return meiji_user.rows("SELECT * FROM `meiji_user`.`user_address` WHERE `user_id` = '1429851454046240' LIMIT 1000").get(0)
+    }
+
+    static Map findUserIntegralInfo(){
+        return meiji_integral.rows("SELECT * FROM user_integral_change_log WHERE user_id = 1429851454046240 AND task_type IN(1,2,3,4,5,6,7) ORDER BY do_task_time DESC").get(0)
+    }
+
+    static Map findUserOrderInfo(){
+        return meiji_order.rows("SELECT * FROM order_info WHERE buyer_id= 1429851454046240 AND order_status != 9 ORDER BY gmt_create DESC").get(0)
     }
 
     static List<Map> getUnSettleOrder(){

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateUserInfo">
+        <parm key="id" value ="1429851454046240"/>
+        <parm key="nickname" value ="Tony Yan"/>
+        <parm key="sex" value ="0"/>
+        <parm key="birthday" value ="2022-01-06"/>
+    </test>
+</data>

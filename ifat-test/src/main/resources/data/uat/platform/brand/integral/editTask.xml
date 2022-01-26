@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "editTask">
+        <parm key="browseTime" value ="20"/>
+        <parm key="rewardPoints" value ="10"/>
+        <parm key="taskName" value ="浏览商品测试编辑"/>
+        <parm key="taskLimitTimes" value ="5"/>
+        <parm key="taskType" value ="2"/>
+        <parm key="taskLogo" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/55f269e28175f634f8f00a51bf5ed692.png"/>
+        <parm key="title" value ="浏览编辑"/>
+        <parm key="taskStatus" value ="0"/>
+        <parm key="firstTimeFlag" value ="0"/>
+        <parm key="signInList" value ="[]"/>
+        <parm key="id" value ="185"/>
+        <parm key="linkPage" value ="2"/>
+        <parm key="linkPageDesc" value ="浏览晒单区承载页"/>
+    </test>
+</data>

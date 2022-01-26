@@ -53,7 +53,14 @@
             <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
             <class name="com.meiji.test.http.platform.member.UpdateUserInfoTest"/>
-
+            <class name="com.meiji.test.http.platform.integral.AddTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.DetailTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.DeteleTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.DisableTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.EditTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.EnableTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.GetIntegralListTest"/>
+            <class name="com.meiji.test.http.platform.integral.GetTaskListTest"/>
         </classes>
     </test>
 

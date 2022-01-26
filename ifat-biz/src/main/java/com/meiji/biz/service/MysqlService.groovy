@@ -134,6 +134,14 @@ class MysqlService extends MysqlAPI {
         return meiji_integral.rows("SELECT * FROM user_integral_change_log WHERE user_id = 1429851454046240 AND task_type IN(1,2,3,4,5,6,7) ORDER BY do_task_time DESC").get(0)
     }
 
+    static Map detailTask(String id){
+        return meiji_integral.firstRow("SELECT * FROM `integral_task` WHERE `id` = $id LIMIT 0,1000")
+    }
+
+    static Map getIntegralList(){
+        return meiji_integral.rows("SELECT * FROM `user_integral_change_log` WHERE `user_id` ='1429851454046240'ORDER BY gmt_create DESC LIMIT 0,1000").get(0)
+    }
+
     static Map findUserOrderInfo(){
         return meiji_order.rows("SELECT * FROM order_info WHERE buyer_id= 1429851454046240 AND order_status != 9 ORDER BY gmt_create DESC").get(0)
     }

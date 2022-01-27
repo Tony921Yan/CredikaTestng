@@ -46,13 +46,75 @@
             <class name="com.meiji.test.http.platform.other.SearchContentBonusTest"/>
             <class name="com.meiji.test.http.platform.category.QueryTreeTest"/>
             <class name="com.meiji.test.http.platform.category.QuerySecondLevelCategoryTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserAddressInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserIntegralInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserLogInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
+            <class name="com.meiji.test.http.platform.member.UpdateUserInfoTest"/>
+            <class name="com.meiji.test.http.platform.integral.AddTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.DetailTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.DeteleTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.DisableTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.EditTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.EnableTaskTest"/>
+            <class name="com.meiji.test.http.platform.integral.GetIntegralListTest"/>
+            <class name="com.meiji.test.http.platform.integral.GetTaskListTest"/>
+        </classes>
+    </test>
+
+    <test name="品牌详情 brandDetail">
+        <classes>
             <class name = "com.meiji.test.http.platform.brand.BrandDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="更新商品属性信息 updateGoodProperty">
+        <classes>
             <class name = "com.meiji.test.http.platform.brand.UpdateGoodPropertyTest"/>
+        </classes>
+    </test>
+
+    <test name="查询标签列表 pageLabel">
+        <classes>
             <class name="com.meiji.test.http.platform.label.PageLabelTest"/>
+        </classes>
+    </test>
+
+    <test name="获取订单数据 getOrderByPage">
+        <classes>
             <class name="com.meiji.test.http.platform.order.GetOrderByPageTest"/>
+        </classes>
+    </test>
+
+    <test name="获取订单详情,包含会员信息 和 分销信息 和 支付信息 和 商品信息 getOrderDetail">
+        <classes>
             <class name="com.meiji.test.http.platform.order.GetOrderDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="获取订单日志 getOrderEventLog">
+        <classes>
             <class name="com.meiji.test.http.platform.order.GetOrderEventLogTest"/>
+        </classes>
+    </test>
+
+    <test name="获取物流信息 getOrderLogisticsInfo">
+        <classes>
             <class name="com.meiji.test.http.platform.order.GetOrderLogisticsInfoTest"/>
         </classes>
     </test>
+
+<!--    <test name="订单导出 orderExport">-->
+<!--        <classes>-->
+<!--            <class name="com.meiji.test.http.platform.order.OrderExportTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="修改订单收货信息 updateOrderAddress">-->
+<!--        <classes>-->
+<!--            <class name="com.meiji.test.http.platform.order.UpdateOrderAddressTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>

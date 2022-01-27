@@ -117,6 +117,12 @@
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 
+    <bean name="meiji_integral">
+        <properties key="url" value="jdbc:mysql://rm-wz9x6sqy37g338y5i.mysql.rds.aliyuncs.com:3306/meiji-integral"/>
+        <properties key="user" value="code_write"/>
+        <properties key="password" value="6ba76bddb0473e860d7C_"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
 
     <bean name="meiji-redis">
         <properties  key="host" value ="172.27.2.73:6379,172.27.2.74:6379,172.27.2.75:6379"/>

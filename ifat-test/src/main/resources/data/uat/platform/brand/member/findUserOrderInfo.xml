@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "findUserOrderInfo">
+        <parm key="condition" value ='{"buyerId":1429851454046240}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>

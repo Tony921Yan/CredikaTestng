@@ -16,13 +16,13 @@ class DataAnalysis{
         stringBuilder.append("<font color=#000000 size=5 >**$month 月份数据分析**</font>  \n")
         Map commonOrder = MysqlService.getOrderCntByType(beginTime,endTime,"1")
         BigDecimal commonOrderCnt = new BigDecimal(commonOrder.get("cnt").toString())
-        BigDecimal commonOrderAmount = new BigDecimal(commonOrder.get("amount").toString()).divide(100 as BigDecimal,2, RoundingMode.HALF_DOWN)
+        BigDecimal commonOrderAmount = new BigDecimal(commonOrder.get("amount").toString()).divide(new BigDecimal(100),2, RoundingMode.HALF_DOWN)
         Map giftOrder = MysqlService.getOrderCntByType(beginTime,endTime,"3")
         BigDecimal giftOrderCnt = new BigDecimal(giftOrder.get("cnt").toString())
-        BigDecimal giftOrderAmount = new BigDecimal(giftOrder.get("amount").toString()).divide(100 as BigDecimal,2, RoundingMode.HALF_DOWN)
+        BigDecimal giftOrderAmount = new BigDecimal(giftOrder.get("amount").toString()).divide(new BigDecimal(100),2, RoundingMode.HALF_DOWN)
         Map outSideOrder = MysqlService.getOrderCntByType(beginTime,endTime,"2")
         BigDecimal outSideOrderCnt = new BigDecimal(outSideOrder.get("cnt").toString())
-        BigDecimal outSideOrderAmount = new BigDecimal(outSideOrder.get("amount").toString()).divide(100 as BigDecimal,2, RoundingMode.HALF_DOWN)
+        BigDecimal outSideOrderAmount = new BigDecimal(outSideOrder.get("amount").toString()).divide(new BigDecimal(100),2, RoundingMode.HALF_DOWN)
         BigDecimal totalOrderCnt = commonOrderCnt+giftOrderCnt+outSideOrderCnt
         BigDecimal totalOrderAmount =commonOrderAmount+giftOrderAmount+outSideOrderAmount
         BigDecimal commonCntRatio = new BigDecimal(0)
@@ -60,10 +60,10 @@ class DataAnalysis{
 
         Map NaturalOrder = MysqlService.getNaturalOrderCnt(beginTime,endTime)
         BigDecimal naturalOrderCnt = new BigDecimal(NaturalOrder.get("cnt").toString())
-        BigDecimal naturalOrderAmount = new BigDecimal(commonOrder.get("amount").toString()).divide(100 as BigDecimal,2, RoundingMode.HALF_DOWN)
+        BigDecimal naturalOrderAmount = new BigDecimal(NaturalOrder.get("amount").toString()).divide(new BigDecimal(100),2, RoundingMode.HALF_DOWN)
         Map CPSOrder = MysqlService.getCPSOrderCnt(beginTime,endTime)
         BigDecimal cpsOrderCnt = new BigDecimal(CPSOrder.get("cnt").toString())
-        BigDecimal cpsOrderAmount = new BigDecimal(CPSOrder.get("amount").toString()).divide(100 as BigDecimal, 2,RoundingMode.HALF_DOWN)
+        BigDecimal cpsOrderAmount = new BigDecimal(CPSOrder.get("amount").toString()).divide(new BigDecimal(100), 2,RoundingMode.HALF_DOWN)
         BigDecimal totalSourceOrderCnt = naturalOrderCnt+cpsOrderCnt
         BigDecimal totalSourceAmount = naturalOrderAmount + cpsOrderAmount
         BigDecimal naturalCntRatio = new BigDecimal(0)
@@ -112,9 +112,10 @@ class DataAnalysis{
         stringBuilder.append("<font color=#000000 size=2 > 活跃店主数:$orderShopCnt </font>  \n")
         stringBuilder.append("<font color=#000000 size=2 > 总店主数:$allShopCnt </font>  \n")
         stringBuilder.append("<font color=#000000 size=2 > 活跃店主占比:$activeShopRatio% </font>  \n")
-        DingTalkUtil.send("https://oapi.dingtalk.com/robot/send?access_token=c964840998da4cd0a24d09b7cdff741f24e30f07de8c31ee282d683cba9dab3f",
-        "SEC49e9bb88652b0dfdbf6ee9aa3d211cdbc52ab890a9b4536136344a8421a81b39",
-                "业务信息"
-                ,stringBuilder.toString())
+        println(stringBuilder)
+//        DingTalkUtil.send("https://oapi.dingtalk.com/robot/send?access_token=c964840998da4cd0a24d09b7cdff741f24e30f07de8c31ee282d683cba9dab3f",
+//        "SEC49e9bb88652b0dfdbf6ee9aa3d211cdbc52ab890a9b4536136344a8421a81b39",
+//                "业务信息"
+//                ,stringBuilder.toString())
     }
 }

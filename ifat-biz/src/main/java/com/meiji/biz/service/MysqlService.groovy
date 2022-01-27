@@ -214,5 +214,100 @@ class MysqlService extends MysqlAPI {
     static List getOneCategory(){
         return meiji_goods.firstRow(sql:"SELECT id from goods_category where show_status = 0 and `status`= 1 and type=1 and parent_id = 0")
     }
+
+    static Map getOrderCntByType(String beginTime,String endTime,String type){
+        return meiji_order.firstRow("select" +
+                "\tcount(*) as cnt," +
+                "\tifnull(sum(payable_amount),0) as amount" +
+                "\tfrom" +
+                "\torder_info" +
+                "\twhere" +
+                "\tparent_order_code = 0" +
+                "\tand order_status not in(8,9)" +
+                "\tand gmt_create >= '$beginTime'" +
+                "\tand gmt_create <= '$endTime'" +
+                "\tand order_type = $type")
+    }
+
+    static Map getNaturalOrderCnt(String beginTime,String endTime){
+        return meiji_order.firstRow("select" +
+                "\tcount(*) as cnt," +
+                "\tifnull(sum(payable_amount),0) as amount" +
+                "\tfrom" +
+                "\torder_info" +
+                "\twhere" +
+                "\tparent_order_code = 0" +
+                "\tand order_status not in(8,9)" +
+                "\tand gmt_create >= '$beginTime'" +
+                "\tand gmt_create <= '$endTime'" +
+                "\tand order_type <>4" +
+                "\tand distributor_id is null")
+    }
+
+    static Map getCPSOrderCnt(String beginTime,String endTime){
+        return meiji_order.firstRow("select" +
+                "\tcount(*) as cnt," +
+                "\tifnull(sum(payable_amount),0) as amount" +
+                "\tfrom" +
+                "\torder_info" +
+                "\twhere" +
+                "\tparent_order_code = 0" +
+                "\tand order_status not in(8,9)" +
+                "\tand gmt_create >= '$beginTime'" +
+                "\tand gmt_create <= '$endTime'" +
+                "\tand order_type <> 4" +
+                "\tand distributor_id is not null")
+    }
+
+    static Map getUserOrderCnt(String beginTime,String endTime){
+        return meiji_order.firstRow("select count(*) as cnt from (" +
+                "select" +
+                "\tbuyer_id" +
+                "\tfrom" +
+                "\torder_info" +
+                "\twhere" +
+                "\tparent_order_code = 0" +
+                "\tand order_status not in(8,9)" +
+                "\tand gmt_create >= '$beginTime'" +
+                "\tand gmt_create <= '$endTime'" +
+                "\tand order_type <>4" +
+                "\tgroup by buyer_id" +
+                ")t")
+    }
+
+    static Map getRepeatUserOrderCnt(String beginTime,String endTime){
+        return meiji_order.firstRow("select count(*) as cnt from (" +
+                "select" +
+                "\tbuyer_id" +
+                "\tfrom" +
+                "\torder_info" +
+                "\twhere" +
+                "\tparent_order_code = 0" +
+                "\tand order_status not in(8,9)" +
+                "\tand gmt_create >= '$beginTime'" +
+                "\tand gmt_create <= '$endTime'" +
+                "\tand order_type <>4" +
+                "\tgroup by buyer_id having count(buyer_id)>1" +
+                ")t")
+    }
+
+    static Map getOrderShopCnt(String beginTime,String endTime){
+        return meiji_order.firstRow("select count(*) as cnt from (" +
+                "select" +
+                "\tshop_id " +
+                "\tfrom" +
+                "\torder_info" +
+                "\twhere" +
+                "\tparent_order_code = 0" +
+                "\tand gmt_create >= '$beginTime'" +
+                "\tand gmt_create <= '$endTime'" +
+                "\tand order_type <>4" +
+                "\tgroup by shop_id" +
+                ")t")
+    }
+
+    static Map getAllShopCnt(){
+        return meiji_shop.firstRow("select count(*) as cnt from shop where auth_state =40 and audit_state =20")
+    }
 }
 

@@ -113,9 +113,9 @@ class DataAnalysis{
         stringBuilder.append("<font color=#000000 size=2 > 总店主数:$allShopCnt </font>  \n")
         stringBuilder.append("<font color=#000000 size=2 > 活跃店主占比:$activeShopRatio% </font>  \n")
         println(stringBuilder)
-//        DingTalkUtil.send("https://oapi.dingtalk.com/robot/send?access_token=c964840998da4cd0a24d09b7cdff741f24e30f07de8c31ee282d683cba9dab3f",
-//        "SEC49e9bb88652b0dfdbf6ee9aa3d211cdbc52ab890a9b4536136344a8421a81b39",
-//                "业务信息"
-//                ,stringBuilder.toString())
+        DingTalkUtil.send("https://oapi.dingtalk.com/robot/send?access_token=c964840998da4cd0a24d09b7cdff741f24e30f07de8c31ee282d683cba9dab3f",
+        "SEC49e9bb88652b0dfdbf6ee9aa3d211cdbc52ab890a9b4536136344a8421a81b39",
+                "业务信息"
+                ,stringBuilder.toString())
     }
 }

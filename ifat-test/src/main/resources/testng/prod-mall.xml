@@ -85,6 +85,11 @@
             <class name="com.meiji.test.http.mall.shopGoods.GetAllOneCategorysTest"/>
 <!--            <class name="com.meiji.test.http.mall.home.GetSearchKeysTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.shopCart.QueryCartTest"/>-->
+            <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoByCodesTest"/>
+<!--            <class name="com.meiji.test.http.mall.content.SaveBuyerShowTest"/>--> <!--要过滤掉非必填的字段-->
+            <class name="com.meiji.test.http.mall.content.GetOrderGoodsInfoTest"/>
+<!--            <class name="com.meiji.test.http.mall.content.DescribeMaterialsTest"/>--> <!--要过滤掉非必填的字段-->
+            <class name="com.meiji.test.http.mall.shopGoods.GetBuyerShowLabelListTest"/>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "describeMaterials">
+        <param key = "condition" value = "{}"/>
+        <param key = "page" value = "1"/>
+        <param key = "rows" value = "10"/>
+    </test>
+</data>

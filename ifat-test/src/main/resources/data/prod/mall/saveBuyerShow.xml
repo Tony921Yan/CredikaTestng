@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "saveBuyerShow">
+        <parm key = "goodsId" value = "24766"/>
+        <parm key = "orderCode" value = "O2022012620060536372"/>
+        <parm key = "postFrom" value = "2"/>
+        <parm key = "spuId" value = "1417557026275361"/>
+        <parm key = "content" value = "仅用于自动化测试使用"/>
+        <parm key = "resources" value = "[]"/>
+        <parm key = "userAvatar" value = "https://thirdwx.qlogo.cn/mmopen/vi_32/PDnyUu6wWick7Ricm0xdcwYw98ibfxdCTcUZTDoXBsqSaxp0YAKy2k6WytPKvQp4NtbjzNMibpEwIDCNrYOdlbfBnA/132"/>
+        <parm key = "userId" value = "10"/>
+        <parm key = "userNickname" value = "昵称"/>
+        <parm key = "userPhone" value = "19928717417"/>
+        <parm key = "cover" value = ""/>
+    </test>
+</data>

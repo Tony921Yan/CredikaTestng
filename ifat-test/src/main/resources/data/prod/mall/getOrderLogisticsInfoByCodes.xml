@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getOrderLogisticsInfoByCodes">
+        <parm key = "orderCodeList" value = '["O2022012620060536372"]'/>
+    </test>
+</data>

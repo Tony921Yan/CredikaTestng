@@ -52,7 +52,7 @@ class SettlementMonitor extends BaseTest{
                         break
                     case "1":
                         Date expAfterDate = DateUtil.dateAdd(afterDate,Calendar.DATE,7)
-                        //assert expAfterDate >= now,"期望7天内售后审核,售后单"+afterCode
+                        assert expAfterDate >= now,"期望7天内售后审核,售后单"+afterCode
                         break
                     case "2":
                         Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,2)
@@ -88,10 +88,10 @@ class SettlementMonitor extends BaseTest{
                 }
             }
             //无物流无售后期望7天内发货
-            if(logistic.size()==0 && afterOrder.size()==0) {
-                Date expLogisticDate = DateUtil.dateAdd(orderDate,Calendar.DATE,7)
-                assert expLogisticDate >= now,"期望7天内发货，订单号"+orderNo
-            }
+//            if(logistic.size()==0 && afterOrder.size()==0) {
+//                Date expLogisticDate = DateUtil.dateAdd(orderDate,Calendar.DATE,7)
+//                assert expLogisticDate >= now,"期望7天内发货，订单号"+orderNo
+//            }
         }
         assert  settleDate >= now ,"期望结算时间大于当前时间，父订单号"+parentOrderNo
     }

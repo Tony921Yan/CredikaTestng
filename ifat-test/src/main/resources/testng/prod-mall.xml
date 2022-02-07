@@ -90,6 +90,8 @@
             <class name="com.meiji.test.http.mall.content.GetOrderGoodsInfoTest"/>
 <!--            <class name="com.meiji.test.http.mall.content.DescribeMaterialsTest"/>--> <!--要过滤掉非必填的字段-->
             <class name="com.meiji.test.http.mall.shopGoods.GetBuyerShowLabelListTest"/>
+            <class name="com.meiji.test.http.mall.content.DescribeTaskDetailTest"/>
+            <class name="com.meiji.test.http.mall.content.GetBuyerShowStatisticTest"/>
         </classes>
     </test>
 </suite>

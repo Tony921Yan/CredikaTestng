@@ -11,7 +11,7 @@ import com.miyuan.ifat.support.test.TestContext
 class NewListBuyerShowOfMe extends MallPost {
     {
         super.api = "orderExhibit/newListBuyerShowOfMe"
-        super.params =  ["userId","rows","page"]
+        super.params =  ["userId","rows","page","recStatus"]
     }
 
     NewListBuyerShowOfMe invoke(TestContext testContext) {

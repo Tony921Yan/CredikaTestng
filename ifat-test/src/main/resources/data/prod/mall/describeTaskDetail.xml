@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "describeTaskDetail">
+        <param key = "taskId" value = "1307017802-FusionCME-d0a64419aeee45523b4ff7c561ee3932t"/>
+    </test>
+</data>

@@ -20,4 +20,5 @@ class LoginScanTest extends BaseTest {
     public void test(TestContext testContext) {
         loginScan.invoke(testContext).specialAssert(testContext)
     }
+
 }

@@ -3,7 +3,6 @@ package com.meiji.biz.request.http.OMS.template
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List
 
 class FreightTemplateQueryPage extends OMSPost {
     {

@@ -21,6 +21,9 @@ class UpdateCartItem extends MallPost{
 
     UpdateCartItem baseAssert(TestContext testContext){
         super.baseAssert(testContext)
+
+
+
         return this
     }
 }

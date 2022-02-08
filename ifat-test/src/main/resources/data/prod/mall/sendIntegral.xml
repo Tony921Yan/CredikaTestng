@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "sendIntegral">
+        <parm key="userId" value ="1231"/>
+        <parm key="taskType" value ="1"/>
+        <parm key="taskId" value ="3"/>
+    </test>
+</data>

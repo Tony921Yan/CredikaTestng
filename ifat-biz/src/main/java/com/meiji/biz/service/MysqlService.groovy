@@ -146,6 +146,18 @@ class MysqlService extends MysqlAPI {
         return meiji_order.rows("SELECT * FROM order_info WHERE buyer_id= 1429851454046240 AND order_status != 9 ORDER BY gmt_create DESC").get(0)
     }
 
+    static List personalIntegralQuery(String userId){
+        return meiji_integral.rows("SELECT * FROM user_integral_info WHERE user_id=$userId")
+    }
+
+    static List userTaskInfoQuery(String userId){
+        return meiji_integral.rows("SELECT * FROM user_task_info WHERE user_id =$userId AND task_type IN(2) ORDER BY  gmt_create DESC")
+    }
+
+    static List pageQuery(String userId){
+        return meiji_integral.rows("SELECT * FROM user_integral_change_log WHERE user_id =$userId ORDER BY do_task_time DESC")
+    }
+
     static List<Map> getUnSettleOrder(){
         return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state not in(2,3) and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
     }

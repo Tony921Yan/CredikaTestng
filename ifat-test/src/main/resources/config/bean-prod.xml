@@ -123,4 +123,11 @@
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 
+    <bean name="meiji_integral">
+        <properties key="url" value="jdbc:mysql://rm-wz9l1269898p6ijke.mysql.rds.aliyuncs.com/meiji_integral"/>
+        <properties key="user" value="code_integral"/>
+        <properties key="password" value="7JudnxiKhq39jD4pOvY5"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+
 </beans>

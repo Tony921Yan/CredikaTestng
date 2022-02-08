@@ -1,7 +1,6 @@
-
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "">
-        <parm key="" value =""/>
-    </test>meiji1234
+    <test name = "convertShareUrl">
+        <parm key="shareUrl" value="fyPgjgwdg6c"/>
+    </test>
 </data>

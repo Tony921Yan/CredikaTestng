@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "publishBuyerShowAndDeleteBuyeShow">
+        <parm key = "goodsId" value = "873210"/>
+        <parm key = "orderCode" value = "O2022012215330436820"/>
+        <parm key = "postFrom" value = "2"/>
+        <parm key = "spuId" value = "1450476581158944"/>
+        <parm key = "content" value = "测试环境自动化脚本新增删除!"/>
+        <parm key = "resources" value = '[{"type":3,"url":"https://static.meiji8888.com/backend/mj-mall/upload/contentplaza/videos/1462971869954080.mp4","ratio":"","coverUrl":"","materials":[{"ratio":"4:3","url":"https://static.meiji8888.com/mj-shop/upload/1644284030264.png"}]}]'/>
+        <parm key = "userAvatar" value = "https://thirdwx.qlogo.cn/mmopen/vi_32/PDnyUu6wWick7Ricm0xdcwYw98ibfxdCTcUZTDoXBsqSaxp0YAKy2k6WytPKvQp4NtbjzNMibpEwIDCNrYOdlbfBnA/132"/>
+        <parm key = "userId" value = "10029"/>
+        <parm key = "userNickname" value = "Tony Yan"/>
+        <parm key = "userPhone" value = "19928717417"/>
+        <parm key = "orderId" value = "1459936607338528"/>
+        <parm key = "cover" value = "https://static.meiji8888.com/backend/mj-mall/upload/contentplaza/videos/1462971869954080.mp4?x-oss-process=video/snapshot,t_0,f_jpg,w_0,h_0,m_fast,ar_auto"/>
+    </test>
+</data>

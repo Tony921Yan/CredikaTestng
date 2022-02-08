@@ -7,7 +7,8 @@ import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 /**
- * @author Remy* @date 2022/01/06 22:38
+ * @author Remy*
+ * @date 2022/01/06 22:38
  * @Vession V2.4
  */
 class PublishWithoutOrderTest extends BaseTest{

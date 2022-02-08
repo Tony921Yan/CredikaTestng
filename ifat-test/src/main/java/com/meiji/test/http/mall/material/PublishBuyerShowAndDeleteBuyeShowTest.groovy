@@ -11,7 +11,7 @@ import org.testng.annotations.Test
  @create 2021/12/16 22:32
  @version v2.3
  */
-class PublishBuyerShowTest extends BaseTest {
+class PublishBuyerShowAndDeleteBuyeShowTest extends BaseTest {
     PublishBuyerShow publishBuyerShow = new PublishBuyerShow()
     @Test(description = "发布晒物 publishBuyerShow" ,groups = ["prod","uat"],testName = "publishBuyerShow",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

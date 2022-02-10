@@ -27,7 +27,7 @@ class GetTaskList extends PlatformPost{
     GetTaskList specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
         System.out.println("apiResult"+apiResult)
-        assert apiResult.total > 20
+        assert apiResult.total > 5
         return this
     }
 

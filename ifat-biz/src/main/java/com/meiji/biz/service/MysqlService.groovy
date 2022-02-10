@@ -127,11 +127,11 @@ class MysqlService extends MysqlAPI {
     }
 
     static Map findUserAddressInfo(){
-        return meiji_user.rows("SELECT * FROM `meiji_user`.`user_address` WHERE `user_id` = '1429851454046240' LIMIT 1000").get(0)
+        return meiji_user.rows("SELECT * FROM `meiji_user`.`user_address` WHERE `user_id` = '1231' LIMIT 1000").get(0)
     }
 
     static Map findUserIntegralInfo(){
-        return meiji_integral.rows("SELECT * FROM user_integral_change_log WHERE user_id = 1429851454046240 AND task_type IN(1,2,3,4,5,6,7) ORDER BY do_task_time DESC").get(0)
+        return meiji_integral.rows("SELECT * FROM user_integral_change_log WHERE nickname ='Tony Yan' AND task_type IN(1,2,3,4,5,6,7) ORDER BY do_task_time DESC").get(0)
     }
 
     static Map detailTask(String id){
@@ -139,11 +139,11 @@ class MysqlService extends MysqlAPI {
     }
 
     static Map getIntegralList(){
-        return meiji_integral.rows("SELECT * FROM `user_integral_change_log` WHERE `user_id` ='1429851454046240'ORDER BY gmt_create DESC LIMIT 0,1000").get(0)
+        return meiji_integral.rows("SELECT * FROM `user_integral_change_log` WHERE `nickname` ='Tony Yan' ORDER BY do_task_time DESC LIMIT 0,1000").get(0)
     }
 
     static Map findUserOrderInfo(){
-        return meiji_order.rows("SELECT * FROM order_info WHERE buyer_id= 1429851454046240 AND order_status != 9 ORDER BY gmt_create DESC").get(0)
+        return meiji_order.rows("SELECT * FROM order_info WHERE buyer_id= 1231 AND order_status != 9 ORDER BY gmt_create DESC").get(0)
     }
 
     static List personalIntegralQuery(String userId){

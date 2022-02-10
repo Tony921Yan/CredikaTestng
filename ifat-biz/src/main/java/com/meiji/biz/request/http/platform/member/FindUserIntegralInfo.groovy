@@ -8,7 +8,7 @@ import com.miyuan.ifat.support.test.TestContext
 class FindUserIntegralInfo extends PlatformPost{
     {
         super.api="/Memeber/findUserIntegralInfo"
-        super.params = ["condition","id","page","rows"]
+        super.params = ["condition","page","rows"]
     }
 
     FindUserIntegralInfo invoke(TestContext testContext) {

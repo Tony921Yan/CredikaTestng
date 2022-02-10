@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class FindUserPage extends PlatformPost{
     {
         super.api="/Memeber/findUserPage"
-        super.params = ["condition","sourceType","page","rows"]
+        super.params = ["condition","page","rows"]
     }
 
     FindUserPage invoke(TestContext testContext) {

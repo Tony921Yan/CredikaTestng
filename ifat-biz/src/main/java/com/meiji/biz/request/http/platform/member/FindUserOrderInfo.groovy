@@ -8,7 +8,7 @@ import com.miyuan.ifat.support.test.TestContext
 class FindUserOrderInfo extends PlatformPost{
     {
         super.api="/Memeber/findUserOrderInfo"
-        super.params = ["condition","buyerId","page","rows"]
+        super.params = ["condition","page","rows"]
     }
 
     FindUserOrderInfo invoke(TestContext testContext) {

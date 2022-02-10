@@ -8,7 +8,7 @@ import com.miyuan.ifat.support.test.TestContext
 class FindUserLogInfo extends PlatformPost{
     {
         super.api="/Memeber/findUserLogInfo"
-        super.params = ["condition","id","page","rows"]
+        super.params = ["condition","page","rows"]
     }
 
     FindUserLogInfo invoke(TestContext testContext) {

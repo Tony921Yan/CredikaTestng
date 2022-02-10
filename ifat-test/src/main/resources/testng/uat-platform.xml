@@ -46,11 +46,11 @@
             <class name="com.meiji.test.http.platform.other.SearchContentBonusTest"/>
             <class name="com.meiji.test.http.platform.category.QueryTreeTest"/>
             <class name="com.meiji.test.http.platform.category.QuerySecondLevelCategoryTest"/>
-            <class name="com.meiji.test.http.platform.member.FindUserAddressInfoTest"/>
+<!--            <class name="com.meiji.test.http.platform.member.FindUserAddressInfoTest"/>-->
             <class name="com.meiji.test.http.platform.member.FindUserInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserIntegralInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserLogInfoTest"/>
-            <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>
+<!--            <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>-->
             <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
             <class name="com.meiji.test.http.platform.member.UpdateUserInfoTest"/>
             <class name="com.meiji.test.http.platform.integral.AddTaskTest"/>

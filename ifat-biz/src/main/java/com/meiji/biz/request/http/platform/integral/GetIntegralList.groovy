@@ -7,7 +7,7 @@ import com.miyuan.ifat.support.test.TestContext
 class GetIntegralList extends PlatformPost{
     {
         super.api="/IntegralList/getIntegralList"
-        super.params = ["condition","userId","page","rows"]
+        super.params = ["condition","page","rows"]
     }
 
     GetIntegralList invoke(TestContext testContext) {
@@ -30,10 +30,11 @@ class GetIntegralList extends PlatformPost{
         System.out.println("apiResult"+apiResult.dataList.getAt(0).get("changeIntegral"))
         Map mysqlResult = MysqlService.getIntegralList()
         System.out.print("mysqlResult"+mysqlResult)
-        assert apiResult.total > 20
+        assert apiResult.total > 10
         assert mysqlResult.change_integral == apiResult.dataList.getAt(0).get("changeIntegral")
         assert mysqlResult.pre_update_integral == apiResult.dataList.getAt(0).get("preUpdateIntegral")
-//        assert mysqlResult.after_update_integral == apiResult.dataList.getAt(0).get("afterUpdateIntegral")//        assert DateUtil.strToDate(mysqlResult.gmt_modified as String) == DateUtil.strToDate(apiResult.dataList.getAt(0).getAt("gmtModified"))
+        assert mysqlResult.after_update_integral == apiResult.dataList.getAt(0).get("afterUpdateIntegral")
+        assert DateUtil.strToDate(mysqlResult.do_task_time as String) == DateUtil.strToDate(apiResult.dataList.getAt(0).getAt("doTaskTime"))
         return this
     }
 

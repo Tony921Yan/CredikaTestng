@@ -5,29 +5,29 @@ import com.miyuan.ifat.support.test.TestContext
 
 import java.util.stream.Collectors
 
-class FindShopGoodsList extends MallPost {
+class GetColumnGoods extends MallPost {
     {
-        super.api = "/shopGoods/searchGoodsList"
-        super.params =  ["page","rows","shopId","categoryIdList","keyword","state"]
+        super.api = "/home/getColumnGoods"
+        super.params =  ["page","rows","shopId","columnId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    FindShopGoodsList invoke(TestContext testContext) {
+    GetColumnGoods invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    FindShopGoodsList preInvoke(TestContext testContext){
+    GetColumnGoods preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    FindShopGoodsList baseAssert(TestContext testContext){
+    GetColumnGoods baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }
 
-    FindShopGoodsList specialAssert(TestContext testContext){
+    GetColumnGoods specialAssert(TestContext testContext){
         super.specialAssert(testContext)
         return this
 

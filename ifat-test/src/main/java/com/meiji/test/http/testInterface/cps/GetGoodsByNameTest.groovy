@@ -11,8 +11,13 @@ class GetGoodsByNameTest extends BaseTest {
     @Test(description = "通过关键字查询商品 getGoodsByName" ,groups = ["prod","uat"],testName = "getGoodsByName",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGoodsByName(TestContext testContext){
-        testContext.put("page",1)
-        testContext.put("rows",20)
+        testContext.put("page",2)
+        testContext.put("rows",10)
+        testContext.put("searchText",'儿童牙膏')
+        //testContext.put("comprehensiveSort",'desc')
+//        testContext.put("priceSort",'asc')
+//        testContext.put("commissionMoneySort",'desc')
+
         getGoodsByName.invoke(testContext).baseAssert(testContext)
     }
 }

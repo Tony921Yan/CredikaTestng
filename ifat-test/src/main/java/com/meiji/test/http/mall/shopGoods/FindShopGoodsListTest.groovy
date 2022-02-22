@@ -12,5 +12,6 @@ class FindShopGoodsListTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void findShopGoodsList(TestContext testContext){
         findShopGoodsList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+
     }
 }

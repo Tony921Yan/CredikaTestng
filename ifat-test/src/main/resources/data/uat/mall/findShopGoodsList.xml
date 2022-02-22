@@ -2,7 +2,7 @@
 <data>
     <test name = "findShopGoodsList">
         <parm key="page" value ="1"/>
-        <parm key="rows" value ="10"/>
-        <parm key="shopId" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="shopId" value ="1406506069131296"/>
     </test>
 </data>

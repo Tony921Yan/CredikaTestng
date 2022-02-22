@@ -11,7 +11,7 @@ class GetGoodsByIdsTest extends BaseTest {
     @Test(description = "通过商品id查询商品详情 getGoodsByIds" ,groups = ["prod","uat"],testName = "getGoodsByIds",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGoodsByIds(TestContext testContext){
-        testContext.put("spuIds",[1410324940980257])
+        testContext.put("spuIds",[1445794773205025])
         getGoodsByIds.invoke(testContext).baseAssert(testContext)
     }
 }

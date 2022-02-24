@@ -27,7 +27,7 @@ class GetIntegralList extends PlatformPost{
 
     GetIntegralList specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
-        System.out.println("apiResult"+apiResult.dataList.getAt(0).get("changeIntegral"))
+        System.out.println("apiResult"+apiResult.dataList.getAt(0).get("preUpdateIntegral"))
         Map mysqlResult = MysqlService.getIntegralList()
         System.out.print("mysqlResult"+mysqlResult)
         assert apiResult.total > 10

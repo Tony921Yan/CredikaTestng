@@ -30,6 +30,8 @@ class FindUserIntegralInfo extends PlatformPost{
         System.out.println("apiResult"+apiResult.dataList.getAt(0))
         Map mysqlResult = MysqlService.findUserIntegralInfo()
         System.out.println("mysqlResult"+mysqlResult)
+        System.out.println("mysqlResult"+mysqlResult.id)
+        System.out.println("apiResult"+apiResult.dataList.getAt(0).getAt("id"))
         assert apiResult.total > 10
         assert mysqlResult.id == apiResult.dataList.getAt(0).getAt("id")
         assert mysqlResult.change_integral == apiResult.dataList.getAt(0).getAt("changeIntegral")

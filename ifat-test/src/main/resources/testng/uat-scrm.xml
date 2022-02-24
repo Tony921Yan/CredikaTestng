@@ -17,12 +17,12 @@
             <class name="com.meiji.test.http.scrm.corp.IndexTest"></class>
 <!--            <class name="com.meiji.test.http.scrm.corp.CorpUpdateTest"></class>-->
 
-<!--            <class name="com.meiji.test.http.scrm.department.DepartmentAddTest"></class>-->
-<!--            <class name="com.meiji.test.http.scrm.department.DepartmentDelTest"></class>-->
-            <class name="com.meiji.test.http.scrm.department.DepartmentDetailTest"></class>
-            <class name="com.meiji.test.http.scrm.department.DepartmentListTest"></class>
+<!--            <classame="com.meiji.test.http.scrm.department.DepartmentListTest"></class>
 <!--            <class name="com.meiji.test.http.scrm.department.DepartmentRelateTest"></class>-->
-<!--            <class name="com.meiji.test.http.scrm.department.DepartmentUpdateTest"></class>-->
+<!--            <c name="com.meiji.test.http.scrm.department.DepartmentAddTest"></class>-->
+            <!--            <class name="com.meiji.test.http.scrm.department.DepartmentDelTest"></class>-->
+            <class name="com.meiji.test.http.scrm.department.DepartmentDetailTest"></class>
+            <class name="com.meiji.test.http.scrm.department.DepartmentUpdateTest"></class>-->
             <class name="com.meiji.test.http.scrm.department.GetShopPageTest"></class>
             <class name="com.meiji.test.http.scrm.department.GetShopListTest"></class>
 

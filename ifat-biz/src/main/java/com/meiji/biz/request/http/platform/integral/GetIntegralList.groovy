@@ -27,13 +27,14 @@ class GetIntegralList extends PlatformPost{
 
     GetIntegralList specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
-        System.out.println("apiResult"+apiResult.dataList.getAt(0).get("preUpdateIntegral"))
+        System.out.println("apiResult"+apiResult.dataList.getAt(0))
+        System.out.println("apiResult"+apiResult.dataList.getAt(0).getAt("changeIntegral"))
         Map mysqlResult = MysqlService.getIntegralList()
         System.out.print("mysqlResult"+mysqlResult)
         assert apiResult.total > 10
-        assert mysqlResult.change_integral == apiResult.dataList.getAt(0).get("changeIntegral")
-        assert mysqlResult.pre_update_integral == apiResult.dataList.getAt(0).get("preUpdateIntegral")
-        assert mysqlResult.after_update_integral == apiResult.dataList.getAt(0).get("afterUpdateIntegral")
+        assert mysqlResult.change_integral == apiResult.dataList.getAt(0).getAt("changeIntegral")
+        assert mysqlResult.pre_update_integral == apiResult.dataList.getAt(0).getAt("preUpdateIntegral")
+        assert mysqlResult.after_update_integral == apiResult.dataList.getAt(0).getAt("afterUpdateIntegral")
         assert DateUtil.strToDate(mysqlResult.do_task_time as String) == DateUtil.strToDate(apiResult.dataList.getAt(0).getAt("doTaskTime"))
         return this
     }

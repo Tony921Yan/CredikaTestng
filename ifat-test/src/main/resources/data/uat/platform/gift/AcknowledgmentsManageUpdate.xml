@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name ="acknowledgmentsManageUpdate">
+        <parm key = "id" value = "35"/>
+        <parm key = "greetings" value = "自动化测试添加文案"/>
+        <parm key = "frontSort" value = "0"/>
+        <parm key = "enableShow" value = "0"/>
+        <parm key = "updateByName" value = "自动化测试"/>
+        <parm key = "gmtModified" value = "2022-02-25 14:44:23"/>
+    </test>
+</data>

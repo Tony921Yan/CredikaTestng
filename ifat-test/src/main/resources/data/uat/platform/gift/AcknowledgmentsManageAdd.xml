@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "acknowledgmentsManageAdd">
+        <parm key = "greetings" value = "自动化测试添加文案内容"/>
+        <parm key = "frontSort" value="0"/>
+        <parm key = "enableShow" value="true"/>
+    </test>
+</data>

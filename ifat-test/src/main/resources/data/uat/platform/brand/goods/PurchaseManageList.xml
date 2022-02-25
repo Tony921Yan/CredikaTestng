@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <data>
+    <test name = "purchaseManageList">
+        <parm key = "page" value = "1"/>
+        <parm key = "rows" value = "20"/>
+        <parm key = "email" value = ""/>
+        <parm key = "name" value = ""/>
+        <parm key = "phone" value = ""/>
+    </test>
+</data>

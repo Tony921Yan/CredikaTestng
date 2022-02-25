@@ -1,6 +1,5 @@
 package com.meiji.test.http.platform.member
 
-import com.meiji.biz.request.http.platform.member.FindUserAddressInfo
 import com.meiji.biz.request.http.platform.member.FindUserOrderInfo
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
@@ -12,6 +11,6 @@ class FindUserOrderInfoTest extends BaseTest {
     @Test(description = "查询会员订单信息 findUserOrderInfo" ,groups = ["prod","uat"],testName = "findUserOrderInfo",
            dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void pageLabel(TestContext testContext){
-        findUserOrderInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findUserOrderInfo.invoke(testContext).baseAssert(testContext)
     }
 }

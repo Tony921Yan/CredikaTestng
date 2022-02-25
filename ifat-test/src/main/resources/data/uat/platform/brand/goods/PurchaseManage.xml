@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "purchaseManageUpdate">
+        <parm key = "id" value = "54"/>
+        <parm key = "email" value = "test@qq.com"/>
+        <parm key = "name" value = "test"/>
+        <parm key = "phone" value = "19911111111"/>
+    </test>
+</data>

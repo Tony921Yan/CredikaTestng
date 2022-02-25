@@ -131,7 +131,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static Map findUserIntegralInfo(){
-        return meiji_integral.rows("SELECT * FROM user_integral_change_log WHERE nickname ='Tony Yan' AND task_type IN(1,2,3,4,5,6,7,8) ORDER BY do_task_time DESC").get(0)
+        return meiji_integral.rows("SELECT * FROM user_integral_change_log WHERE nickname ='Tony Yan' AND task_type IN(1,2,3,4,5,6,7,8,9,10,11,12) ORDER BY do_task_time DESC").get(0)
     }
 
     static Map detailTask(String id){

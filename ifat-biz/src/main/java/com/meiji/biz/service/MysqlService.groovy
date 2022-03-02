@@ -158,6 +158,22 @@ class MysqlService extends MysqlAPI {
         return meiji_integral.rows("SELECT * FROM user_integral_change_log WHERE user_id =$userId ORDER BY do_task_time DESC")
     }
 
+    static List UserIntegralCouponByPage(String activeId,String couponId ){
+        return meiji_integral.rows("SELECT * FROM `user_integral_coupon_log` WHERE active_id = $activeId AND coupon_id = $couponId  ORDER BY gmt_create DESC")
+    }
+
+    static List UserIntegralByPage(){
+        return meiji_integral.rows("SELECT * FROM user_integral_info ORDER BY gmt_create DESC")
+    }
+
+    static List GetPlatformIntegralByPage(){
+        return meiji_integral.rows("SELECT * FROM `user_integral_change_log` WHERE user_id =99999 AND nickname = \"平台\" ORDER BY do_task_time DESC")
+    }
+
+    static List PlatformIntegralQuery(){
+        return meiji_integral.rows("SELECT * FROM `user_integral_info` WHERE `user_id` = '99999' LIMIT 0,1000")
+    }
+
     static List<Map> getUnSettleOrder(){
         return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state not in(2,3) and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
     }

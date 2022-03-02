@@ -78,6 +78,7 @@
             <!--<class name="com.meiji.test.http.mall.orderInfo.GetBuyerShowDetailTest"/>-->
             <!--<class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoByCodesTest"/>
+            <class name="com.meiji.test.http.mall.integral.CuponIntegralRuleQueryTest"/>
         </classes>
     </test>
 </suite>

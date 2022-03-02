@@ -97,6 +97,7 @@
             <class name="com.meiji.test.http.mall.shopGoods.GetBuyerShowLabelListTest"/>
             <class name="com.meiji.test.http.mall.content.DescribeTaskDetailTest"/>
             <class name="com.meiji.test.http.mall.content.GetBuyerShowStatisticTest"/>
+            <class name="com.meiji.test.http.mall.integral.CuponIntegralRuleQueryTest"/>
         </classes>
     </test>
 </suite>

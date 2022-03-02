@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "userIntegralCouponByPage">
+        <parm key="condition" value ='{"activeId":1465948798189600,"couponId":1465948638806048}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+</data>

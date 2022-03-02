@@ -52,6 +52,12 @@
             <class name="com.meiji.test.http.platform.member.FindUserLogInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
+            <class name="com.meiji.test.http.platform.integral.GetPlatformIntegralByPageTest"/>
+            <class name="com.meiji.test.http.platform.integral.PlatformIntegralQueryTest"/>
+            <class name="com.meiji.test.http.platform.integral.UserIntegralByPageTest"/>
+            <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveByPageTest"/>
+            <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>
+            <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
         </classes>
     </test>
 </suite>

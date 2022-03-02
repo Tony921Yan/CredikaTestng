@@ -1,11 +1,9 @@
 package com.meiji.test.http.platform.gift
-
 import com.meiji.biz.request.http.platform.gift.AcknowledgmentsManage
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
-
 /**
  * @author Remy*
  * @date 2022/02/25 10:19

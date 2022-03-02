@@ -2,7 +2,6 @@
 <data>
     <test name = "getIntegralList">
         <parm key="condition" value ='{
-        "changeType":1,
         "nickname":"Tony Yan"
     }'/>
         <parm key="page" value ="1"/>

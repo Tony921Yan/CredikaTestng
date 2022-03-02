@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "integralConvert">
+        <parm key="activeId" value ="1465572315365408"/>
+        <parm key="couponId" value ="1465572216799264"/>
+        <parm key="couponName" value ="满5块打8折"/>
+        <parm key="integral" value ="1"/>
+        <parm key="shopId" value ="1430182304940064"/>
+    </test>
+</data>

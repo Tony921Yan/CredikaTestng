@@ -1,5 +1,4 @@
 package com.meiji.test.http.platform.order
-
 import com.meiji.biz.request.http.platform.order.GetOrderDetail
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

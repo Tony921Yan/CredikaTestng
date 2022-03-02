@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "correctUserIntegral">
+        <parm key="integral" value ="5"/>
+        <parm key="remark" value ="积分增加测试"/>
+        <parm key="type" value ="1"/>
+        <parm key="userId" value ="1429851454046240"/>
+    </test>
+</data>

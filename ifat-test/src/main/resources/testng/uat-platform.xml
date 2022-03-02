@@ -61,6 +61,13 @@
             <class name="com.meiji.test.http.platform.integral.EnableTaskTest"/>
             <class name="com.meiji.test.http.platform.integral.GetIntegralListTest"/>
             <class name="com.meiji.test.http.platform.integral.GetTaskListTest"/>
+            <class name="com.meiji.test.http.platform.integral.GetPlatformIntegralByPageTest"/>
+            <class name="com.meiji.test.http.platform.integral.PlatformIntegralQueryTest"/>
+            <class name="com.meiji.test.http.platform.integral.UserIntegralByPageTest"/>
+            <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveByPageTest"/>
+            <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>
+            <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
+
         </classes>
     </test>
 

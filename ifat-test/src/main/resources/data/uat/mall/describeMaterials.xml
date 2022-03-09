@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "describeMaterials">
+        <parm key = "condition" value = '{operator: "", platform: "", sort: {field: "", order: ""}}'/>
+        <parm key = "page" value = "1"/>
+        <parm key = "rows" value = "20"/>
+        <parm key = "order" value = ""/>
+        <parm key = "sort" value = ""/>
+    </test>
+</data>

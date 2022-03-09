@@ -7,8 +7,30 @@
     </test>
 
     <test name = "newListBuyerShowOfMe2">
-        <parm key="page" value ="2"/>
+        <parm key="page" value ="1"/>
         <parm key="rows" value ="10"/>
+        <parm key="recStatus" value="4"/>
+        <parm key="userId" value ="10029"/>
+    </test>
+
+    <test name = "newListBuyerShowOfMe3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="recStatus" value="1"/>
+        <parm key="userId" value ="10029"/>
+    </test>
+
+    <test name = "newListBuyerShowOfMe4">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="recStatus" value="3"/>
+        <parm key="userId" value ="10029"/>
+    </test>
+
+    <test name = "newListBuyerShowOfMe5">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="recStatus" value="2"/>
         <parm key="userId" value ="10029"/>
     </test>
 </data>

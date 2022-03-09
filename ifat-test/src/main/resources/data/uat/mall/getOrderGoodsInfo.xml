@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getOrderGoodsInfo">
+        <parm key = "orderGoodsId" value = "873670"/>
+    </test>
+</data>

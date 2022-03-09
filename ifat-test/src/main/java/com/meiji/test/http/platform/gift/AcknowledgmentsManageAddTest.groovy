@@ -7,8 +7,9 @@ import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
 /**
- * @author Remy* @date 2022/02/25 10:31
- * @Vession V2.5
+ * @author Remy*
+ * @date 2022/02/25 10:31
+ * @Vession V2.6
  */
 class AcknowledgmentsManageAddTest extends BaseTest{
     AcknowledgmentsManageAdd acknowledgmentsManageAdd = new AcknowledgmentsManageAdd()

@@ -2,16 +2,16 @@
 <data>
     <test name = "giftCreateGift">
         <parm key="giftType" value ="3"/>
-        <parm key="actuallyPaidAmount" value ="20"/>
-        <parm key="goodsTotalAmount" value ="20"/>
-        <parm key="payableAmount" value ="20"/>
+        <parm key="actuallyPaidAmount" value ="55"/>
+        <parm key="goodsTotalAmount" value ="55"/>
+        <parm key="payableAmount" value ="55"/>
         <parm key="giftGoods" value ='[
         {
             "activeId":null,
             "seckillPrice":null,
             "skuId":1410325586903104,
             "skuNum":1,
-            "skuPrice":20,
+            "skuPrice":55,
             "supplierId":12,
             "rank":"一等奖",
             "sort":1

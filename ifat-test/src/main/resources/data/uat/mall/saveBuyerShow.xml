@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "saveBuyerShow">
+        <parm key = "goodsId" value = "4460"/>
+        <parm key = "orderCode" value = "O2021072618250172089"/>
+        <parm key = "postFrom" value = "1"/>
+        <parm key = "spuId" value = "1427290984546336"/>
+        <parm key = "content" value = "自动化测试saveBuyerShow"/>
+        <parm key = "resources" value = '[{"type":1,"url":"https://static.meiji8888.com/mj-shop/upload/1646797176222.jpg","ratio":"1:1"}]'/>
+        <parm key = "userAvatar" value = "https://thirdwx.qlogo.cn/mmopen/vi_32/pCUrja4Z78OicnGFCmPChnrBibnuonkUfJItKtJlZicibO0LUMFEAbm1L1XvRUzotiarJXg8aXgMu4KKzJYz3Kg91Sw/132"/>
+        <parm key = "userId" value = "10029"/>
+        <parm key = "userNickname" value = "红日"/>
+        <parm key = "userPhone" value = "19928717417"/>
+        <parm key = "cover" value = "https://static.meiji8888.com/mj-shop/upload/1646797176222.jpg"/>
+    </test>
+</data>

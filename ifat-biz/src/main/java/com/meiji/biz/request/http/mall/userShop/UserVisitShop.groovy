@@ -3,58 +3,41 @@ package com.meiji.biz.request.http.mall.userShop
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
 
-/**
- *
- @author s1mple
- @create 2021/8/4-10:48
- */
-class UserVisitShop extends MallPost{
+import com.meiji.biz.service.MysqlService
+import com.meiji.biz.util.DateUtil
+
+
+class UserVisitShop extends MallPost {
     {
-        super.api = "/mall/user/shop/userVisitShop"
-        super.params=["id"]
-    }
-    @Override
-    Object invokeMethod(String name, Object args) {
-        return super.invokeMethod(name, args)
+        super.api = "userShop/userVisitShop"
+        super.params =  ["id"]
+//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    @Override
-    Object getProperty(String propertyName) {
-        return super.getProperty(propertyName)
+    UserVisitShop invoke(TestContext testContext) {
+        super.invoke(testContext)
+        return this
     }
 
-    @Override
-    void setProperty(String propertyName, Object newValue) {
-        super.setProperty(propertyName, newValue)
+    UserVisitShop preInvoke(TestContext testContext){
+        super.preInvoke(testContext)
+        return this
     }
 
-    @Override
-    void setMetaClass(MetaClass metaClass) {
-        super.setMetaClass(metaClass)
+    UserVisitShop baseAssert(TestContext testContext){
+        super.baseAssert(testContext)
     }
 
-    @Override
-    MallPost invoke(TestContext testContext) {
-        return super.invoke(testContext)
-    }
-
-    @Override
-    MallPost preInvoke(TestContext testContext) {
-        return super.preInvoke(testContext)
-    }
-
-    @Override
-    MallPost afterInvoke(TestContext testContext) {
-        return super.afterInvoke(testContext)
-    }
-
-    @Override
-    MallPost baseAssert(TestContext testContext) {
-        return super.baseAssert(testContext)
-    }
-
-    @Override
-    MallPost specialAssert(TestContext testContext) {
-        return super.specialAssert(testContext)
+    UserVisitShop specialAssert(TestContext testContext){
+        Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
+        println(mysqlResult)
+        Map apiResult = testContext.getResponse().data
+        assert mysqlResult.name == apiResult.name
+        assert mysqlResult.icon == apiResult.icon
+        assert mysqlResult.remark == apiResult.remark
+        assert mysqlResult.create_by == apiResult.createBy
+        assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
+        assert  DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  DateUtil.strToDate(apiResult.gmtModified)
+        return this
     }
 }

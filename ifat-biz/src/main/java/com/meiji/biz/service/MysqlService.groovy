@@ -263,6 +263,10 @@ class MysqlService extends MysqlAPI {
         return meiji_goods.firstRow(sql:"SELECT id from goods_category where show_status = 0 and `status`= 1 and type=1 and parent_id = 0")
     }
 
+    static Map purchaseManageList(String email){
+        return meiji_goods.firstRow("SELECT id from meiji_goods.goods_supervisor where email =$email and update_by = '自动化测试' ORDER BY gmt_modified desc LIMIT 10")
+    }
+
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

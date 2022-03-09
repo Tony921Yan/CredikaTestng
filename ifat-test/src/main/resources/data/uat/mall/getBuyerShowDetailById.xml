@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getBuyerShowDetailById">
+        <parm key = "id" value = "1455630470610976"/>
+    </test>
+</data>

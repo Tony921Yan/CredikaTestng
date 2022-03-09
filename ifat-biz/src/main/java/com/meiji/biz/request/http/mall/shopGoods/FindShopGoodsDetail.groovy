@@ -48,6 +48,5 @@ class FindShopGoodsDetail extends MallPost {
             assert apiResult.goodsSpuActiveInfo == esResult.get(0).isActiveGoods
         }
         return this
-        return this
     }
 }

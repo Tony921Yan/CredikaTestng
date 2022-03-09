@@ -1,6 +1,7 @@
 package com.meiji.biz.request.http.platform.goods
 
 import com.meiji.biz.request.http.platform.PlatformPost
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
 /**
@@ -22,5 +23,12 @@ class PurchaseManageAdd extends PlatformPost{
     PurchaseManageAdd baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
+    }
+
+    PurchaseManageAdd specialAssert(TestContext testContext){
+        Map mysqlResult = MysqlService.purchaseManageList(testContext.get("email"))
+        testContext.put("id",mysqlResult.get("id"))
+        System.out.println("查看是否将mysqlResult的id是否存在testContext中："+ testContext)
+        System.out.println("specialAssert结果:"+ mysqlResult)
     }
 }

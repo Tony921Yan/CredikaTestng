@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "newListBuyerShowToShare">
-        <parm key="condition" value ='{"id":1450331036712992,"userId":1452012352831520}'/>
+        <parm key="condition" value ='{"id":1452874831757344,"userId":10029}'/>
         <parm key="page" value ="1"/>
         <parm key="rows" value ="10"/>
     </test>

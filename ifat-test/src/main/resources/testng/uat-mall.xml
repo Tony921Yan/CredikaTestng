@@ -13,7 +13,7 @@
             <class name="com.meiji.test.http.mall.gift.ThankSenderTest"/>
             <class name="com.meiji.test.http.mall.gift.TryAcquireGiftTest"/>
 
-            <class name="com.meiji.test.http.mall.home.ColunmnGoodsListToMiyuanTest"/>
+<!--            <class name="com.meiji.test.http.mall.home.ColunmnGoodsListToMiyuanTest"/>-->
             <class name="com.meiji.test.http.mall.home.GetChannelDataTest"/>
             <class name="com.meiji.test.http.mall.home.GetColumnAndColumnGoodsTest"/>
             <class name="com.meiji.test.http.mall.home.GetColumnGoodsTest"/>

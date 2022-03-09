@@ -3,11 +3,12 @@ package com.meiji.biz.request.http.mall.home
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
 
+import java.util.stream.Collectors
+
 /**
- *
- @author Remy
- @create 2021/11/18-21:48
- @version v2.1
+ * @author Remy*
+ * @date 2022/03/09 18:32
+ * @Vession V2.5
  */
 class GetColumnGoods extends MallPost{
     {
@@ -24,4 +25,11 @@ class GetColumnGoods extends MallPost{
         super.baseAssert(testContext)
         return this
     }
+
+    static List getSkuIds(TestContext testContext){
+        List<Map> goodDataList = testContext.getResponse().get("data")
+        List<Map> skuIds =goodDataList.stream().map { x -> return x."skuId" }.collect(Collectors.toList())
+        return skuIds
+    }
+
 }

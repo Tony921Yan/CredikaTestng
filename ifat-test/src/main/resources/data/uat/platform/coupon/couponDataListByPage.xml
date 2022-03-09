@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "couponDataListByPage">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="name" value ="无门槛"/>
+    </test>
+
+</data>

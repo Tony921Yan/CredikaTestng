@@ -43,21 +43,21 @@
             <class name="com.meiji.test.http.platform.decorate.GetTemplateByPageTest"/>
             <class name="com.meiji.test.http.platform.decorate.GetDecorateTemplateDetailTest"/>
             <class name="com.meiji.test.http.platform.user.CheckGrayUserTest"/>
-<!--            <class name="com.meiji.test.http.platform.integral.GetIntegralListTest"/>-->
+            <class name="com.meiji.test.http.platform.integral.GetIntegralListTest"/>
             <class name="com.meiji.test.http.platform.integral.GetTaskListTest"/>
-<!--            <class name="com.meiji.test.http.platform.integral.DetailTaskTest"/>-->
+            <class name="com.meiji.test.http.platform.integral.DetailTaskTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserAddressInfoTest"/>
-<!--            <class name="com.meiji.test.http.platform.member.FindUserInfoTest"/>-->
-<!--            <class name="com.meiji.test.http.platform.member.FindUserIntegralInfoTest"/>-->
+            <class name="com.meiji.test.http.platform.member.FindUserInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserIntegralInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserLogInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
-<!--            <class name="com.meiji.test.http.platform.integral.GetPlatformIntegralByPageTest"/>-->
-<!--            <class name="com.meiji.test.http.platform.integral.PlatformIntegralQueryTest"/>-->
-<!--            <class name="com.meiji.test.http.platform.integral.UserIntegralByPageTest"/>-->
+            <class name="com.meiji.test.http.platform.integral.GetPlatformIntegralByPageTest"/>
+            <class name="com.meiji.test.http.platform.integral.PlatformIntegralQueryTest"/>
+            <class name="com.meiji.test.http.platform.integral.UserIntegralByPageTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveByPageTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>
-<!--            <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>-->
+            <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
         </classes>
     </test>
 </suite>

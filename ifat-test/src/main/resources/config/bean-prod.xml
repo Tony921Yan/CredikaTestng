@@ -125,8 +125,8 @@
 
     <bean name="meiji_integral">
         <properties key="url" value="jdbc:mysql://mycat.meiji8888.com:3306/meiji_integral"/>
-        <properties key="user" value="code_integral"/>
-        <properties key="password" value="7JudnxiKhq39jD4pOvY5"/>
+        <properties  key="user" value ="readonly"/>
+        <properties  key="password" value ="TkvLYcQdJyQJg5_"/>
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 

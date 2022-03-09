@@ -28,9 +28,7 @@ class FindUserInfo extends PlatformPost{
 
     FindUserInfo specialAssert(TestContext testContext) {
         Map apiResult = testContext.getResponse().data
-        System.out.println("apiResult" + apiResult)
         List mysqlResult = MysqlService.findUserInfo(testContext.get("id"))
-        System.out.println("mysqlResult" + mysqlResult)
         assert mysqlResult.get(0).get("phone") == apiResult.phone
         assert mysqlResult.get(0).get("avatar") == apiResult.avatar
         assert mysqlResult.get(0).get("birthday") == apiResult.birthday

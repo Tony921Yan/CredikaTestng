@@ -79,7 +79,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List findUserInfo(String id){
-        return meiji_user.rows("SELECT*FROM user WHERE is_delete !=1 AND source_type = 0 AND id=$id")
+        return meiji_user.rows("SELECT * FROM user WHERE is_delete !=1 AND source_type = 0 AND id=$id")
     }
 
     static List findUserAddressList(String user_id){

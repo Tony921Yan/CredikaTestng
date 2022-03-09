@@ -8,19 +8,5 @@ class CompareDownload extends PlatformGet{
         super.params = ["batchNo"]
     }
 
-    CompareDownload invoke(TestContext testContext) {
-        super.invoke(testContext)
-        return this
-    }
-
-    CompareDownload preInvoke(TestContext testContext){
-        super.preInvoke(testContext)
-        return this
-    }
-
-    CompareDownload baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
-        return this
-    }
 
 }

@@ -58,6 +58,11 @@
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveByPageTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
+            <class name="com.meiji.test.http.platform.coupon.DetailTest"/>
+            <class name="com.meiji.test.http.platform.coupon.CouponDataListByPageTest"/>
+            <class name="com.meiji.test.http.platform.coupon.CouponInstanceListByPageTest"/>
+            <class name="com.meiji.test.http.platform.coupon.GetGrantCouponActiveByPageTest"/>
+            <class name="com.meiji.test.http.platform.coupon.ListTest"/>
         </classes>
     </test>
 </suite>

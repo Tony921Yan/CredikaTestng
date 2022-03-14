@@ -267,6 +267,41 @@ class MysqlService extends MysqlAPI {
         return meiji_goods.firstRow("SELECT id from meiji_goods.goods_supervisor where email =$email and update_by = '自动化测试' ORDER BY gmt_modified desc LIMIT 10")
     }
 
+    static Map brandQueryPage(){
+        return meiji_goods.firstRow("SELECT count(*) as total from meiji_goods.goods_brand ")
+    }
+
+    static Map brandQueryPage1(){
+        return meiji_goods.rows("SELECT * from meiji_goods.goods_brand ORDER BY gmt_modified DESC LIMIT 20")
+    }
+
+    static boolean deleteBrand(String name){
+        return meiji_goods.execute("DELETE from meiji_goods.goods_brand WHERE name = $name")
+    }
+
+    static Map updateBrand(String id){
+        return meiji_goods.firstRow("select * from meiji_goods.goods_brand where id = $id")
+    }
+
+    static boolean deleteCategory(String name){
+        return meiji_goods.execute("delete from meiji_goods.goods_category where name =$name ORDER BY gmt_create desc")
+    }
+
+    static boolean deleteLabel(String labelName){
+        return meiji_goods.execute("delete from meiji_goods.goods_label where label_name = $labelName")
+    }
+
+    static Map deleteLabel1(){
+        return meiji_goods.firstRow('select id  from meiji_goods.goods_label where label_name = "接口测试" ORDER BY gmt_create desc')
+    }
+
+    static boolean deleteGoodsProperty(String name){
+        return meiji_goods.execute("delete from meiji_goods.goods_property where name = $name")
+    }
+
+    static boolean deleteGoodsPropertyGroup(String name){
+        return meiji_goods.execute("delete from meiji_goods.goods_property_group where name = $name")
+    }
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "createBrand">
-        <parm key="name" value ="蜜源"/>
-        <parm key="icon" value ="http://www.miyuan.com"/>
-        <parm key="remark" value ="蜜源APP是蜜源（广州）新媒体科技有限公司于2017年打造的一款社交电商内容导购平台。蜜源全网接入优惠券，以自取自用+社交分享的形式为用户提供覆盖衣食住行娱优惠导购服务；用户一键领取优惠券、分享商品详情，便可轻松实现优惠购物和社交分享。通过实现更便捷的操作、更优惠的产品、更省心的服务，用户享受到最佳的购物体验。依托社交电商与分享经济的创新商业模式，蜜源app不仅帮助商家以更低的推广费用实现销量增长，更为用户打造出“分享经济”的社交电商生态体系，持续推动中国电商产业从高速增长向高质量发展优化升级"/>
-        <parm key="createBy" value ="測試員0306"/>
-        <parm key="gmtCreate" value ="2021-03-03 12:12:12"/>
-        <parm key="gmtModified" value ="2021-03-04 12:12:12"/>
-        <parm key="id" value ="100"/>
-        <parm key="sort" value ="10"/>
-        <parm key="updateBy" value ="测试员"/>
+        <parm key="name" value ="自动化测试品牌"/>
+        <parm key="icon" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/c641122208b18ae5407c1e3e5363df2c.jpg"/>
+        <parm key="remark" value ="自动化测试品牌备注"/>
     </test>
 </data>

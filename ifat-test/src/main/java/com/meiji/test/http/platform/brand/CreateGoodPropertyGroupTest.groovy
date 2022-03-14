@@ -12,7 +12,6 @@ class CreateGoodPropertyGroupTest extends BaseTest {
     @Test(description = "创建商品属性组 createGoodPropertyGroup" ,groups = ["prod","uat"],testName = "createGoodPropertyGroup",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void createGoodPropertyGroup(TestContext testContext){
-        //testContext.put("list",JsonUtil.objToJsonList(testContext.get("list")))
         createGoodPropertyGroup.invoke(testContext).baseAssert(testContext)
     }
 }

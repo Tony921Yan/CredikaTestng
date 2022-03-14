@@ -13,7 +13,7 @@ import org.testng.annotations.Test
  */
 class QueryTreeTest extends BaseTest {
     QueryTree queryTree = new QueryTree()
-    @Test(description = "美粉圈分类 queryTree" ,groups = ["prod","uat"],testName = "queryTree",
+    @Test(description = "类目管理 queryTree" ,groups = ["prod","uat"],testName = "queryTree",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void queryTree(TestContext testContext){
         queryTree.invoke(testContext).baseAssert(testContext)

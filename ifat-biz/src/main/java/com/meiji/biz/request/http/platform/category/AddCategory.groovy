@@ -7,11 +7,12 @@ import com.meiji.biz.service.MysqlService
 
 class AddCategory extends PlatformPost{
     {
-        super.api = "/platform/categoryMgr/addCategory"
+        super.api = "CategoryManagement/addCategory"
         super.params = ["createBy","icon","name","parentId","parentName","sort","status","type"]
     }
 
     AddCategory invoke(TestContext testContext) {
+        MysqlService.deleteCategory(testContext.get("name"))
         super.invoke(testContext)
         return this
     }

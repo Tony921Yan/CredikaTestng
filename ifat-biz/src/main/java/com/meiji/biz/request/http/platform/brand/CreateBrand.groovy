@@ -1,15 +1,17 @@
 package com.meiji.biz.request.http.platform.brand
 
 import com.meiji.biz.request.http.platform.PlatformPost
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
 class CreateBrand extends PlatformPost{
     {
-        super.api="/platform/brandMgr/createBrand"
+        super.api="BrandManage/createBrand"
         super.params = ["createBy","gmtCreate","gmtModified","icon","id","name","remark","sort","updateBy"]
     }
 
     CreateBrand invoke(TestContext testContext) {
+        MysqlService.deleteBrand(testContext.get("name"))
         super.invoke(testContext)
         return this
     }

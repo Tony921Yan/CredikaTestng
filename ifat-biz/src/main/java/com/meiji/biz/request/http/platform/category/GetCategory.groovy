@@ -24,11 +24,4 @@ class GetCategory extends PlatformPost{
     GetCategory baseAssert(TestContext testContext){
         super.baseAssert(testContext)
     }
-
-    GetCategory dataAssert(TestContext testContext){
-        List mysqlData = MysqlService.getCategory(testContext.get("type"),testContext.get("name"))
-        List apiData = testContext.getResponse().data
-        assert mysqlData.size()==apiData.size()
-        return this
-    }
 }

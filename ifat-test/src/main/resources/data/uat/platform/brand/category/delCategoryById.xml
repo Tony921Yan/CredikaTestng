@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "delCategoryById">
-        <parm key="id" value ="40"/>
+        <parm key="id" value ="1152"/>
     </test>
 
     <test name = "delCategoryById_IdExits">

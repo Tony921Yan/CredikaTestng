@@ -1,5 +1,6 @@
 package com.meiji.test.http.platform.brand
 
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

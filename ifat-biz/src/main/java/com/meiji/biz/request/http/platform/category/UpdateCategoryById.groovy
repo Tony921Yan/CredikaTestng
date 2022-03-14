@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class UpdateCategoryById extends PlatformPost{
     {
-        super.api = "/platform/categoryMgr/updateCategoryById"
+        super.api = "CategoryManagement/updateCategoryById"
         super.params = ["list"]
     }
 

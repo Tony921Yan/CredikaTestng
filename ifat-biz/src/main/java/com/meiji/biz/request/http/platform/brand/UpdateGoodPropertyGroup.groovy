@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class UpdateGoodPropertyGroup extends PlatformPost{
     {
-        super.api = "/platform/goodPropGroupMgr/updateGoodPropertyGroup"
+        super.api = "AttrGroupManagement/updateGoodPropertyGroup"
         super.params = ["categoryId","code","createBy","gmtModified","id","name","remark","updateBy","list"]
     }
 

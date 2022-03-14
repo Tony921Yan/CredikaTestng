@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GoodPropertyDetail extends PlatformPost{
     {
-        super.api = "/platform/goodPropertyMgr/goodPropertyDetail"
+        super.api = "AttrManagement/goodPropertyDetail"
         super.params = ["id"]
     }
 

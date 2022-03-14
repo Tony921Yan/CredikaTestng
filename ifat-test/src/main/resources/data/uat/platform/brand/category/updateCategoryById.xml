@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateCategoryById">
-        <parm key="list" value ='[{"id":1,"sort":1000,"name":"男鞋1","icon":"http://www.baidu.com","status":true,"updateBy":"测试员0224"}]'/>
+        <parm key="list" value ='[{"id":66,"sort":3,"type":1,"parentId":65,"parentName":"休闲食品","name":"其他零食","icon":"https://img.gzzhitu.com/front/mj-ecmiddle-sys/upload/b68fff005d4cb54549bae8ae825380b0.png","status":true,"updateBy":"luoshi"}]'/>
+    </test>
+
+    <test name="updateCategoryById_listNull">
+        <parm key = "list" value='[]'/>
     </test>
 </data>

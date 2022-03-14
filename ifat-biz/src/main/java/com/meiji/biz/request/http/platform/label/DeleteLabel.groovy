@@ -1,11 +1,11 @@
 package com.meiji.biz.request.http.platform.label
 
-import com.meiji.biz.request.http.platform.PlatformGet
+import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class DeleteLabel extends PlatformGet{
+class DeleteLabel extends PlatformPost{
     {
-        super.api="/platform/goodsLabel/addLabel"
+        super.api="goodsLabelList/deleteGoodsLabel"
         super.params = ["id"]
     }
 

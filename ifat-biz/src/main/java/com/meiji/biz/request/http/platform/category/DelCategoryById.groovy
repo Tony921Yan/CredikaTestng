@@ -7,7 +7,7 @@ import com.meiji.biz.service.MysqlService
 
 class DelCategoryById extends PlatformPost{
     {
-        super.api = "/platform/categoryMgr/delCategoryById"
+        super.api = "CategoryManagement/delCategoryById"
         super.params = ["id"]
     }
 
@@ -25,12 +25,5 @@ class DelCategoryById extends PlatformPost{
         super.baseAssert(testContext)
         return this
     }
-
-    DelCategoryById dataAssert(TestContext testContext) {
-        List mysqlData = MysqlService.getCategoryById(testContext.get("id"))
-        assert mysqlData.size() == 0
-        return this
-    }
-
 
 }

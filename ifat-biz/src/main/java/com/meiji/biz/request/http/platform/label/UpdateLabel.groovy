@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class UpdateLabel extends PlatformPost{
     {
-        super.api="/platform/goodsLabel/updateLabel"
+        super.api="goodsLabelList/updateGoodsLabel"
         super.params = ["gmtCreate","gmtModified","id","isDelete","labelColor","labelName","labelRemark","labelType",
         "page","rows","showType"]
     }

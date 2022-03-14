@@ -13,5 +13,7 @@ class FindUserIntegralInfoTest extends BaseTest {
     @Test(description = "查询会员积分信息 findUserIntegralInfo" ,groups = ["prod","uat"],testName = "findUserIntegralInfo",
            dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void pageLabel(TestContext testContext){
-        findUserIntegralInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)}
+//        findUserIntegralInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findUserIntegralInfo.invoke(testContext).baseAssert(testContext)
+    }
 }

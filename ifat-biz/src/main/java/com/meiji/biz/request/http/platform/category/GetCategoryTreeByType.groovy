@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetCategoryTreeByType extends PlatformPost {
     {
-        super.api = "/platform/categoryMgr/getCategoryTreeByType"
+        super.api = "categoryMgr/getCategoryTreeByType"
         super.params = ["type"]
     }
 

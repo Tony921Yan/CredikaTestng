@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "brandQueryPage">
+        <parm key = "pageNum" value = "1"/>
+        <parm key = "pageSize" value="20"/>
+    </test>
+
+    <test name="queryPage_search">
+        <parm key = "pageNum" value="1"/>
+        <parm key = "pageSize" value="20"/>
+        <parm key = "name" value="自动化测试品牌1"/>
+    </test>
+</data>

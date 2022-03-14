@@ -7,6 +7,32 @@
             </run>
         </groups>
         <classes>
+            <class name="com.meiji.test.http.platform.brand.BrandDetailTest"/>
+            <class name="com.meiji.test.http.platform.brand.CreateBrandTest"/>
+            <class name="com.meiji.test.http.platform.brand.CreateGoodPropertyGroupTest"/>
+            <class name="com.meiji.test.http.platform.brand.CreateGoodPropertyTest"/>
+            <class name="com.meiji.test.http.platform.brand.GoodPropertyDetailTest"/>
+            <class name="com.meiji.test.http.platform.brand.GoodPropertyGroupDetailTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryBrandsByPageTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
+            <class name="com.meiji.test.http.platform.brand.QueryPageTest"/>
+            <class name="com.meiji.test.http.platform.brand.UpdateBrandTest"/>
+<!--            <class name="com.meiji.test.http.platform.brand.UpdateGoodPropertyGroupTest"/>--> <!--报未知错误-->
+            <class name="com.meiji.test.http.platform.brand.UpdateGoodPropertyTest"/>
+
+            <class name="com.meiji.test.http.platform.category.AddCategoryTest"/>
+            <class name="com.meiji.test.http.platform.category.DelCategoryByIdTest"/>
+            <class name="com.meiji.test.http.platform.category.GetCategoryTest"/>
+            <class name="com.meiji.test.http.platform.category.QuerySecondLevelCategoryTest"/>
+            <class name="com.meiji.test.http.platform.category.QueryTreeTest"/>
+            <class name="com.meiji.test.http.platform.category.UpdateCategoryByIdTest"/>
+
+            <class name="com.meiji.test.http.platform.label.AddLabelTest"/>
+            <class name="com.meiji.test.http.platform.label.DeleteLabelTest"/>
+            <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
+            <class name="com.meiji.test.http.platform.label.PageLabelTest"/>
+            <class name="com.meiji.test.http.platform.label.UpdateLabelTest"/>
+
 <!--            <class name = "com.meiji.test.http.platform.other.BatchUpdateConfigTest"/>-->
             <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
             <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>

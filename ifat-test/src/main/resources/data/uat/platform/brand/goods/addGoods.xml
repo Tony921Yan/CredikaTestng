@@ -1,62 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "addGoods">
-        <parm key="carouselPic" value =""/>
-        <parm key="freightTemplateId" value="726"/>
+        <parm key="backgroundCategoryId" value ="12"/>
+        <parm key="brandId" value ="351"/>
+        <parm key="buyerShowLabelList" value ='["自动化测试晒单文案"]'/>
+        <parm key="carouselPic" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/c8dc938928aaf4cb50397ad79927ce75.jpeg"/>
+        <parm key="deliveryType" value ="0"/>
+        <parm key="detail" value ="https://static.meiji8888.com/mj-ecmiddle-sys/goodsdetail/9f7ef055072b1d942c46d2ccebf37fdb.txt"/>
+        <parm key="freAskedQuestions" value ='https://static.meiji8888.com/mj-shop/protocal/user_problem_v2.txt'/>
+        <parm key="freightTemplateId" value ="243"/>
+        <parm key="frontDeskCategoryId" value ="775"/>
+        <parm key="goodsCardPic" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/2cf20c2a04743794cc817c60e1cd1ab3.jpeg"/>
         <parm key="goodsType" value ="1"/>
-        <parm key="goodsVideo" value =""/>
+        <parm key="goodsVideo" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/30a5d51567ced44f20dd4192b3304cbe.mp4"/>
         <parm key="insurance" value ="1"/>
+        <parm key="isCompensation" value ="0"/>
+        <parm key="isPurchaseLimits" value ="0"/>
+        <parm key="isSevenDayReturn" value ="1"/>
+        <parm key="isShowSupSuggest" value ="1"/>
+        <parm key="labelIds" value ="1418813379706913"/>
+        <parm key="limitCycle" value ="1"/>
+        <parm key="limitNum" value ="1"/>
+        <parm key="manyProperty" value ="false"/>
+        <parm key="name" value ="自动化测试商品"/>
+        <parm key="originAddress" value ="深圳南山"/>
+        <parm key="pics" value ='[{"sort":1,"url":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/d2c50d68fec2e9c46b93b12a3c9bc91e.jpg"}]'/>
+        <parm key="sellingPoint" value ="自动化测试商品卖点"/>
+        <parm key="skus" value ='[{"isDelete":0,"propPicUrl":"","properties":[],"grossWeight":"99","netWeight":"100","grossWeightUnit":"g","netWeightUnit":"g","taxation":0,"unitPrice":200,"retailPrice":100,"settlementPrice":1,"commissionRate":10,"supplierSkuCode":"sup12202105251088","thirdPartySkuCode":"1111","tmPrice":200,"tmUrl":"www.baidu.com","jdPrice":0,"jdUrl":"","otherPrices":[]}]'/>
+        <parm key="supervisorId" value ="2"/>
+        <parm key="supplierCode" value ="sup12202105251088"/>
+        <parm key="supplierId" value ="77"/>
         <parm key="supplierReturnAddressId" value ="186"/>
-        <parm key="name" value ="澳创接口测试商品"/>
-        <parm key="sellingPoint" value ="正品质证"/>
-        <parm key="originAddress" value ="产地深圳南山"/>
-        <parm key="brandId" value ="355"/>
-        <parm key="frontDeskCategoryId" value ="62"/>
-        <parm key="backgroundCategoryId" value ="44"/>
-        <parm key="detail" value ='商品测试detail字段'/>
-        <parm key="manyProperty" value ='false'/>
-<!--        <parm key="createBy" value ='接口测试佬'/>-->
-<!--        <parm key="createByName" value ='接口测试佬'/>-->
-<!--        <parm key="updateBy" value ='接口测试佬'/>-->
-<!--        <parm key="updateByName" value ="接口测试佬"/>-->
-        <parm key="supplierId" value ='77'/>
-        <parm key="supplierCode" value ='sup12202105251088'/>
-        <parm key="deliveryType" value ='0'/>
-        <parm key="isSevenDayReturn" value ='1'/>
-        <parm key="freAskedQuestions" value ="https://img.gzzhitu.com/mj-ecmiddle-sys/goodsdetail/06976e2fd13741989567f7b1cfd5444d.txt"/>
-        <parm key="supervisorId" value ='2'/>
-        <parm key="isShowSupSuggest" value ='1'/>
-        <parm key="limitCycle" value ='3'/>
-        <parm key="limitNum" value ='100'/>
-        <parm key="isPurchaseLimits" value ='0'/>
-        <parm key="labelIds" value =''/>
-        <parm key="goodsCardPic" value ='https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/804ad3d509c663cdb80a3f59b636d22b.jpg'/>
-        <parm key="pics" value ='[{"sort": 1,"url": "https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/804ad3d509c663cdb80a3f59b636d22b.jpg"},
-                                    {"sort": 2,"url": "https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/804ad3d509c663cdb80a3f59b636d22b.jpg"}]'/>
-        <parm key="skus" value='[{"isDelete":"0",
-                                "jdPrice":"6199",
-                                "jdUrl":"https://item.jd.com/100020961308.html#none",
-                                "otherPrice":"10000",
-                                "otherUrl":"https://www.taobao.com/",
-                                "primaryDistributionPercentage":"",
-                                "propPicUrl":"",
-                                "properties":[{"property":"","propertyId":"","propertyValue":"","propertyValueId":"","sort":""}],
-                                "taxation":"",
-                                "tmPrice":"6099",
-                                "tmUrl":"https://www.tmall.com/",
-                                "unitPrice":"9999",
-                                "retailPrice":"8888",
-                                "grossWeight":"10",
-                                "netWeight":"11",
-                                "grossWeightUnit":"11",
-                                "netWeightUnit":"11",
-                                "commissionRate":"10",
-                                "settlementPrice":"5000",
-                                "supplierSkuCode":"11111",
-                                "thirdPartySkuCode":"2222"}]'/>
-<!--        <parm key="skus" value='[{"isDelete":"0","unitPrice": 100,"netWeightUnit": "g","grossWeight": 100,"netWeight": 90,-->
-<!--        "primaryDistributionPercentage": "0.5","secondaryDistributionPercentage":"0.2","settlementPrice":10,-->
-<!--        "supplierSkuCode":"200","thirdPartySkuCode":"20HKL00345","grossWeightUnit": "g","retailPrice": 110,-->
-<!--        "properties": [{"propertyValueId":1,"property":"颜色","propertyValue":"白色","sort": 0,"propertyId": 1}]}]'/>-->
     </test>
 </data>

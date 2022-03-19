@@ -1,18 +1,45 @@
 package com.meiji.biz.request.http.platform.goods
 
 import com.meiji.biz.request.http.platform.PlatformPost
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
 class SubmitGoods extends PlatformPost{
     {
-        super.api = "/platform/goodsMgr/addGoods"
-        super.params = ["id","name","sellingPoint","originAddress","brandId","frontDeskCategoryId","backgroundCategoryId","detail",
-        "manyProperty","createBy","createByName","updateBy","updateByName","supplierId","supplierCode","deliveryType","isParcel",
-        "isSevenDayReturn","freAskedQuestions","supervisorId","isShowSupSuggest","limitCycle","limitNum","isPurchaseLimits",
-        "pics","skus"]
+        super.api = "GoodsDetailManage/submitGoods"
+        super.params = ["backgroundCategoryId",
+                                       "brandId",
+                                       "buyerShowLabelList",
+                                       "carouselPic",
+                                       "deliveryType",
+                                       "detail",
+                                       "freAskedQuestions",
+                                       "freightTemplateId",
+                                       "frontDeskCategoryId",
+                                       "goodsCardPic",
+                                       "goodsType",
+                                       "goodsVideo",
+                                       "id",
+                                       "insurance",
+                                       "isCompensation",
+                                       "isPurchaseLimits",
+                                       "isSevenDayReturn",
+                                       "isShowSupSuggest",
+                                       "labelIds",
+                                       "limitCycle",
+                                       "limitNum",
+                                       "manyProperty",
+                                       "name",
+                                       "originAddress",
+                                       "pics",
+                                       "sellingPoint",
+                                       "skus",
+                                       "supervisorId",
+                                       "supplierReturnAddressId"]
     }
 
     SubmitGoods invoke(TestContext testContext) {
+        MysqlService.submitGoods(testContext.get("id"))
         super.invoke(testContext)
         return this
     }

@@ -1,34 +1,36 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "submitGoods">
-        <parm key="id" value ="1415947713773600"/>
-        <parm key="name" value ="NIKE KYRIE 7 欧文7 首发蓝橙气垫篮球鞋 CQ9327-400"/>
-        <parm key="sellingPoint" value="性价比高，客户口碑良好"/>
-        <parm key="originAddress" value ="广东省广州市海珠区万胜围保利发展广场"/>
-        <parm key="brandId" value ="131"/>
-        <parm key="frontDeskCategoryId" value ="107"/>  <!--类目暂未测试-->
-        <parm key="backgroundCategoryId" value ="117"/>
-        <parm key="detail" value ="一般情况下，我们所指的高性能部件为剃须刀网膜和刀头。这 2 个部件在使用过程中都会受到磨损。博朗始终建议您更换受到磨损的网膜与刀头以恢复剃须刀 卓越 的工作性能。但也有例外情况，即仅当网膜损坏时您也需要更换它。我们的某些新型剃须刀系列使用了将网膜和刀头集成在一起的剃须刀匣。如此可确保两个部件总是以卓越性能协同工作。这些都是精密部件，有时会受到磨损。磨损情况因个人剃须方式和胡须类型而异。应当在每次使用剃须刀前目视观察网膜有无裂口、凹痕及磨损痕迹。刀头在长时间使用后也会受到磨损。为了保持卓越剃须性能，您应当在这些部件磨损时将其更换。一般而言，在养成良好的清洁习惯后，在正常使用频率下，博朗建议您每 18 个月更换网膜和刀头。尽管有些型号的部件可以在多款剃须刀上使用，但它们仍然存在技术差异。因此我们不推荐将这些部件交换使用。这样做可能或损坏剃须刀内部。"/>
+        <parm key="backgroundCategoryId" value ="12"/>
+        <parm key="brandId" value ="351"/>
+        <parm key="buyerShowLabelList" value ='["自动化测试晒单文案"]'/>
+        <parm key="carouselPic" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/c8dc938928aaf4cb50397ad79927ce75.jpeg"/>
+        <parm key="deliveryType" value ="0"/>
+        <parm key="detail" value ="https://static.meiji8888.com/mj-ecmiddle-sys/goodsdetail/9f7ef055072b1d942c46d2ccebf37fdb.txt"/>
+        <parm key="freAskedQuestions" value ='https://static.meiji8888.com/mj-shop/protocal/user_problem_v2.txt'/>
+        <parm key="freightTemplateId" value ="243"/>
+        <parm key="frontDeskCategoryId" value ="775"/>
+        <parm key="goodsCardPic" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/2cf20c2a04743794cc817c60e1cd1ab3.jpeg"/>
+        <parm key="goodsType" value ="1"/>
+        <parm key="goodsVideo" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/30a5d51567ced44f20dd4192b3304cbe.mp4"/>
+        <parm key="id" value ="1469236364967968"/>
+        <parm key="insurance" value ="1"/>
+        <parm key="isCompensation" value ="0"/>
+        <parm key="isPurchaseLimits" value ="0"/>
+        <parm key="isSevenDayReturn" value ="1"/>
+        <parm key="isShowSupSuggest" value ="1"/>
+        <parm key="labelIds" value ="1418813379706913"/>
+        <parm key="limitCycle" value ="1"/>
+        <parm key="limitNum" value ="1"/>
         <parm key="manyProperty" value ="false"/>
-        <parm key="createBy" value ="测试佬"/>
-        <parm key="createByName" value ="崔测试"/>
-        <parm key="updateBy" value ="测试1"/>
-        <parm key="updateByName" value ='更新人昵称'/>
-        <parm key="supplierId" value ='8'/>
-        <parm key="supplierCode" value ='sup12202103292857'/>
-        <parm key="deliveryType" value ='0'/>
-        <parm key="isParcel" value ='0'/>
-        <parm key="isSevenDayReturn" value ='1'/>
-        <parm key="freAskedQuestions" value ='freAskedQuestionsfreAskedQuestionsfreAskedQuestions'/>
-        <parm key="supervisorId" value ='6'/>
-        <parm key="isShowSupSuggest" value ='0'/>
-        <parm key="limitCycle" value ='1'/>
-        <parm key="limitNum" value ='10'/>
-        <parm key="isPurchaseLimits" value ='1'/>
-        <parm key="pics" value ='[{"sort": 1,"url": "www.baidu.com"},{"sort": 2,"url": "//www.163.com"}]'/>
-        <parm key="skus" value='[{"id":"1415947713773696","isDelete":"0","unitPrice": 100,"netWeightUnit": "g","grossWeight": 100,"netWeight": 90,
-        "primaryDistributionPercentage": "0.5","secondaryDistributionPercentage":"0.2","settlementPrice":10,
-        "supplierSkuCode":"200","thirdPartySkuCode":"20HKL00345","grossWeightUnit": "g","retailPrice": 110,
-        "properties": [{"propertyValueId":1,"property":"颜色","propertyValue":"白色","sort": 0,"propertyId": 1}]}]'/>
+        <parm key="name" value ="自动化测试商品"/>
+        <parm key="originAddress" value ="深圳南山"/>
+        <parm key="pics" value ='[{"sort":1,"url":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/d2c50d68fec2e9c46b93b12a3c9bc91e.jpg"}]'/>
+        <parm key="sellingPoint" value ="自动化测试商品卖点"/>
+        <parm key="skus" value ='[{"spuId":1469236364967968,"skuId":1469236367065184,"skuCode":"200su-0036226","num":0,"unitPrice":200,"retailPrice":100,"grossWeight":99,"netWeight":100,"grossWeightUnit":"g","netWeightUnit":"g","gmtModified":"2022-03-16 08:56:11","supplierCode":"sup12202105251088","supplierSkuCode":"sup12202105251088","thirdPartySkuCode":"1111","primaryDistributionPercentage":null,"commissionRate":10,"settlementPrice":1,"propertyValuesStr":null,"properties":[],"isDelete":0,"supplierId":77,"taxation":0,"propPicUrl":"","tmPrice":200,"tmPriceRate":100,"tmPriceSub":100,"tmUrl":"www.baidu.com","jdPrice":0,"jdPriceRate":-100,"jdPriceSub":-100,"jdUrl":"","tmPriceUpdate":null,"jdPriceUpdate":null,"otherPrices":[],"newUserPrice":null,"newShopNum":null,"newShopPrice":null,"id":1469236367065184}]'/>
+        <parm key="supervisorId" value ="2"/>
+<!--        <parm key="supplierCode" value ="sup12202105251088"/>-->
+<!--        <parm key="supplierId" value ="77"/>-->
+        <parm key="supplierReturnAddressId" value ="186"/>
     </test>
 </data>

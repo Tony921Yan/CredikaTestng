@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "raffleDraw">
+        <parm key="activityId" value ="1469923624747040"/>
+        <parm key="expiryEnd" value ="2022-03-26 06:23:13"/>
+        <parm key="raffleDeadlineOffset" value ="2880"/>
+        <parm key="raffleGoodsLimit" value ="0"/>
+        <parm key="userTypeLimit" value ="1"/>
+        <parm key="raffleTimesLimit" value ="0"/>
+        <parm key="nickName" value ="好人一生平安"/>
+        <parm key="orderCode" value ="O2022031820100322035"/>
+        <parm key="phone" value ="18820157232"/>
+        <parm key="receiveCouponShopId" value ="1406506069131296"/>
+        <parm key="receiveCouponShopName" value ="👣曾曾85号店铺"/>
+        <parm key="userAvatar" value ="https://thirdwx.qlogo.cn/mmopen/vi_32/QOIMzibI7Fuk8FjfYg7ciaz9nnkcnxbgnB7hKtGb6E2gibo1b5tibS96Qj6IUSwmCSkGNwFmY5a4icIJLQBP7AOXOBA/132"/>
+        <parm key="userId" value ="1469932397133856"/>
+    </test>
+</data>

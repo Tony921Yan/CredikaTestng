@@ -302,6 +302,18 @@ class MysqlService extends MysqlAPI {
     static boolean deleteGoodsPropertyGroup(String name){
         return meiji_goods.execute("delete from meiji_goods.goods_property_group where name = $name")
     }
+
+    static boolean submitGoods(String id){
+        return  meiji_goods.execute("UPDATE meiji_goods.goods_spu set status = 0 where id = $id")
+    }
+
+    static boolean auditGoods(String spuId){
+        return meiji_goods.execute("UPDATE meiji_goods.goods_spu set status = 1 where id=$spuId")
+    }
+
+    static boolean batchDelete(String spuId){
+        return meiji_goods.execute("UPDATE meiji_goods.goods_spu set status = 3 where id=$spuId")
+    }
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

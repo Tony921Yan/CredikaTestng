@@ -8,7 +8,7 @@ import com.miyuan.ifat.support.test.TestData
 import com.miyuan.ifat.support.util.JsonUtil
 import org.testng.annotations.Test
 
-class UpdateGoddsTest extends BaseTest {
+class UpdateGoodsTest extends BaseTest {
     UpdateGoods updateGoods = new UpdateGoods()
     @Test(description = "更新商品 updateGoods" ,groups = ["prod","uat"],testName = "updateGoods",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

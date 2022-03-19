@@ -12,7 +12,6 @@ class BatchDeleteTest extends BaseTest {
     @Test(description = "删除商品 batchDelete" ,groups = ["prod","uat"],testName = "batchDelete",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void batchDelete(TestContext testContext){
-        testContext.put("spuId","1425511242792992")
         batchDelete.invoke(testContext).baseAssert(testContext)
     }
 }

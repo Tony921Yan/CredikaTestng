@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "msgTemplate">
+        <parm key = "list" value = '[{"openId":"oZD3N5Vd8miJNTqkuop0cuu6Ezhw","templateId":"JZ5rCXPZCudgp7sacoDcDgvMzqA8G-Z_7Adw7BdwGGk","owner":"O2022031811580338868","type":1,"statusDesc":"accept"},{"openId":"oZD3N5Vd8miJNTqkuop0cuu6Ezhw","templateId":"P6zfwpfJH4MJMpkubNMl9rS-RWqQ5p_TE0VTp_hg854","owner":"O2022031811580338868","type":1,"statusDesc":"accept"},{"openId":"oZD3N5Vd8miJNTqkuop0cuu6Ezhw","templateId":"fsj7boXznv40vYz0dKphBTLZATg859OnaDpCDhZHb1g","owner":"O2022031811580338868","type":1,"statusDesc":"accept"}]'/>
+    </test>
+</data>

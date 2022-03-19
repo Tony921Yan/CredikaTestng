@@ -2,7 +2,13 @@
 <suite name = "user"  verbose="4">
     <test name="C端 测试环境自动化脚本">
         <classes>
-            <class name="com.meiji.test.http.mall.gift.CheckAddressTest"/>
+            <class name="com.meiji.test.http.mall.activeRecord.RaffleDrawTest"/>
+            <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleInfoTest"/>
+            <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleRecordTest"/>
+
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponCountTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>
+
             <class name="com.meiji.test.http.mall.gift.GetGiftDetailFromMeTest"/>
             <class name="com.meiji.test.http.mall.gift.GetGiftDetailToMeTest"/>
             <class name="com.meiji.test.http.mall.gift.GetGiftInfoTest"/>
@@ -72,12 +78,14 @@
             <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderGoodsInfoTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderInfoTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.GetOrderIsSplitTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoByCodesTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetUserOrderCountTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.PageOrderTest"/>
 <!--            <class name="com.meiji.test.http.mall.orderInfo.PayOrderTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.orderInfo.PlaceOrderTest"/>-->
+            <class name="com.meiji.test.http.mall.orderInfo.PreviewCouponTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.PreviewFreightTest"/>
 <!--            <class name="com.meiji.test.http.mall.orderInfo.PreviewGiftOrderTest"/>-->
             <class name="com.meiji.test.http.mall.orderInfo.PreviewOrderTest"/>
@@ -138,6 +146,7 @@
 <!--            <class name="com.meiji.test.http.mall.userShop.GetDefaultTopicGoodsTest"/>-->
             <class name="com.meiji.test.http.mall.userShop.GetTemplateDefaultComponentListTest"/>
 <!--            <class name="com.meiji.test.http.mall.userShop.GetTopicGoodsTest"/>-->
+            <class name="com.meiji.test.http.mall.userShop.MsgTemplateTest"/>
             <class name="com.meiji.test.http.mall.userShop.UpdateShopInfoTest"/>
             <class name="com.meiji.test.http.mall.userShop.UserVisitShopTest"/>
 

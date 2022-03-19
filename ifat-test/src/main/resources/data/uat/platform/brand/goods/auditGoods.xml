@@ -2,7 +2,7 @@
 <data>
     <test name = "auditGoods">
         <parm key="auditStuats" value ="true"/>
-        <parm key="spuId" value ="1415947713773600"/>
+        <parm key="spuId" value ="1469236364967968"/>
         <parm key="updateById" value ="cls"/>
         <parm key="updateByName" value ="lxz"/>
 

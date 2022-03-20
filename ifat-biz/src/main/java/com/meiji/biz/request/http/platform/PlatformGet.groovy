@@ -7,6 +7,7 @@ import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.ResourceUtil
 import com.miyuan.ifat.support.vo.Record
 import org.apache.commons.lang3.ObjectUtils
+import org.apache.http.HttpResponse
 
 import java.lang.reflect.Method
 
@@ -45,6 +46,8 @@ abstract class PlatformGet {
         String res = HttpUtil.get(url,heads, req)
         testContext.setResponse(res)
         testContext.appendLog(new Record("返回结果",res))
+        HttpResponse httpResponse = HttpUtil.postV2(url,heads,req)
+        System.out.println("httpResponse 返回数据：" +  httpResponse)
         return this
     }
 
@@ -70,5 +73,4 @@ abstract class PlatformGet {
 
     PlatformGet specialAssert(TestContext testContext){
     }
-
 }

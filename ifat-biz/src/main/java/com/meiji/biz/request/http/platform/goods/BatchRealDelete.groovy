@@ -1,6 +1,7 @@
 package com.meiji.biz.request.http.platform.goods
 
 import com.meiji.biz.request.http.platform.PlatformPost
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
 class BatchRealDelete extends PlatformPost {
@@ -10,6 +11,7 @@ class BatchRealDelete extends PlatformPost {
     }
 
     BatchRealDelete invoke(TestContext testContext) {
+        MysqlService.batchrealDelete(testContext.get("spuId"))
         super.invoke(testContext)
         return this
     }

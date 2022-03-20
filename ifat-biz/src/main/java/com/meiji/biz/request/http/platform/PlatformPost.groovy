@@ -8,6 +8,7 @@ import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
 import com.miyuan.ifat.support.vo.Record
 import org.apache.commons.lang3.ObjectUtils
+import org.apache.http.HttpResponse
 
 import java.lang.reflect.Method
 
@@ -46,6 +47,9 @@ abstract class PlatformPost {
         testContext.setResponse(res)
         testContext.setRequest(req)
         testContext.appendLog(new Record("返回结果",res))
+
+        HttpResponse httpResponse = HttpUtil.postV2(url,heads,req)
+        System.out.println("httpResponse 返回数据：" +  httpResponse)
         return this
     }
 

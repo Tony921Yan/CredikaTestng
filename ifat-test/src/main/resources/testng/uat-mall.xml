@@ -6,6 +6,7 @@
             <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleInfoTest"/>
             <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleRecordTest"/>
 
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponByGoodsTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponCountTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>
 
@@ -134,6 +135,9 @@
             <class name="com.meiji.test.http.mall.userInfo.CustomerListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.FindUserInfoTest"/>
             <class name="com.meiji.test.http.mall.userInfo.GetCategoryListAndQrCodeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetGroupQrCodeTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetLongUrlTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.GetOssConfigTest"/>
 <!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.userInfo.LoginTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.userInfo.RegisterTest"/>-->
@@ -147,6 +151,7 @@
             <class name="com.meiji.test.http.mall.userShop.GetTemplateDefaultComponentListTest"/>
 <!--            <class name="com.meiji.test.http.mall.userShop.GetTopicGoodsTest"/>-->
             <class name="com.meiji.test.http.mall.userShop.MsgTemplateTest"/>
+            <class name="com.meiji.test.http.mall.userShop.OpenShopTest"/>
             <class name="com.meiji.test.http.mall.userShop.UpdateShopInfoTest"/>
             <class name="com.meiji.test.http.mall.userShop.UserVisitShopTest"/>
 

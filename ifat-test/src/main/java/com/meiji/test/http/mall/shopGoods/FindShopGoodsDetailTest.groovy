@@ -13,6 +13,12 @@ class FindShopGoodsDetailTest extends BaseTest {
     public void findShopGoodsDetail(TestContext testContext){
         testContext.replace("spuId","1422437862342688")
         findShopGoodsDetail.invoke(testContext).baseAssert(testContext)
-        findShopGoodsDetail.specialAssert(testContext)
+//        findShopGoodsDetail.specialAssert(testContext)
+    }
+
+    @Test(description = "抽奖活动-打开企业二维码 findShopGoodsDetail1" ,groups = ["uat"],testName = "findShopGoodsDetail1",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void findShopGoodsDetail1(TestContext testContext) {
+        findShopGoodsDetail.invoke(testContext).baseAssert(testContext)
     }
 }

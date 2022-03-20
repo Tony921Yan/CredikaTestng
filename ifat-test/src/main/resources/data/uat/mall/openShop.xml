@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "openShop">
+        <parm key="shopIcon" value ="https://static.meiji8888.com/mj-shop/upload/1647705564479.jpg?x-oss-process=image%2Fresize%2Cm_fill%2Ch_450%2Cw_450"/>
+        <parm key="shopName" value ="好人一生平7232的小店"/>
+        <parm key="brief" value ="抽奖活动开店"/>
+        <parm key="inviteCode" value =""/>
+        <parm key="userId" value ="1469932397133856"/>
+        <parm key="registerSource" value ="6"/>
+    </test>
+</data>

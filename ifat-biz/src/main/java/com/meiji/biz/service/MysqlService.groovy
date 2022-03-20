@@ -314,6 +314,15 @@ class MysqlService extends MysqlAPI {
     static boolean batchDelete(String spuId){
         return meiji_goods.execute("UPDATE meiji_goods.goods_spu set status = 3 where id=$spuId")
     }
+
+    static boolean batchrealDelete(String spuId){
+        return meiji_goods.execute("UPDATE meiji_goods.goods_spu set is_delete = 0 where id=$spuId")
+    }
+
+    static boolean batechRec(String spuId){
+        return meiji_goods.execute("UPDATE meiji_goods.goods_spu set status = 5,is_delete = 0 where id=$spuId")
+    }
+
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

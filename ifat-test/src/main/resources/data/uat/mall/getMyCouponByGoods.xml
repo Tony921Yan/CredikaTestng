@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getMyCouponByGoods">
+        <parm key="spuId" value ="1465739588403232"/>
+        <parm key="status" value ="1"/>
+    </test>
+</data>

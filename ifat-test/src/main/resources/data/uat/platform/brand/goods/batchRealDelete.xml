@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "batchRealDelete">
+        <parm key = "spuId" value = "1469239642816544"/>
+    </test>
+</data>

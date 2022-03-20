@@ -2,7 +2,7 @@
 <data>
     <test name = "previewOrder">
         <parm key="addressId" value ='1455394538913824'/>
-        <parm key="orderGoods" value ='[{"skuId":1422441647702113,"skuNum":1}]'/>
+        <parm key="orderGoods" value ='[{"skuId":1425499502936160,"skuNum":1}]'/>
         <parm key="shopId" value ="1405981112139808"/>
         <parm key="orderType" value ="1"/>
         <parm key="raffleRecordId" value ="null"/>

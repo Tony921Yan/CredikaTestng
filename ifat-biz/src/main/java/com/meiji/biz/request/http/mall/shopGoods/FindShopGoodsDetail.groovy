@@ -11,7 +11,7 @@ import com.meiji.biz.util.DateUtil
 class FindShopGoodsDetail extends MallPost {
     {
         super.api = "/shopGoods/findShopGoodsDetail"
-        super.params =  [ "shopId","spuId"]
+        super.params =  [ "shopId","spuId","type","raffleRecordId"]
     }
 
     FindShopGoodsDetail invoke(TestContext testContext) {

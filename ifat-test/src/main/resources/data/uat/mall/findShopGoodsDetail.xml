@@ -4,4 +4,11 @@
         <parm key="shopId" value ="1405811930693664"/>
         <parm key="spuId" value ="1405816437473312"/>
     </test>
+
+    <test name = "findShopGoodsDetail1">
+        <parm key="shopId" value ="1415202752954400"/>
+        <parm key="spuId" value ="1465739588403232"/>
+        <parm key="type" value ="8"/>
+        <parm key="raffleRecordId" value ="1470136640864288"/>
+    </test>
 </data>

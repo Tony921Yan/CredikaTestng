@@ -1,6 +1,7 @@
 package com.meiji.biz.request.http.platform.goods
 
 import com.meiji.biz.request.http.platform.PlatformPost
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
 class BatchRec extends PlatformPost {
@@ -10,6 +11,7 @@ class BatchRec extends PlatformPost {
     }
 
     BatchRec invoke(TestContext testContext) {
+        MysqlService.batechRec(testContext.get("spuId"))
         super.invoke(testContext)
         return this
     }

@@ -12,7 +12,6 @@ class BatchRecTest extends BaseTest {
     @Test(description = "恢复商品 batchRec" ,groups = ["prod","uat"],testName = "batchRec",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void batchRec(TestContext testContext){
-        testContext.put("spuId","1425511242792992")
         batchRec.invoke(testContext).baseAssert(testContext)
     }
 }

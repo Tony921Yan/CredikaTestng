@@ -4,24 +4,23 @@ import com.meiji.biz.request.http.platform.PlatformPost
 import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
-class PublishGoods extends PlatformPost{
+class ListFreightTemplateBySupplierId extends PlatformPost{
     {
-        super.api = "GoodsDetailManage/publishGoods"
-        super.params = ["spuId","updateById","updateByName"]
+        super.api = "SupplierManage/listFreightTemplateBySupplierId"
+        super.params = ["supplierId"]
     }
 
-    PublishGoods invoke(TestContext testContext) {
-        MysqlService.publishBack(testContext.get("spuId"))
+    ListFreightTemplateBySupplierId invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    PublishGoods preInvoke(TestContext testContext){
+    ListFreightTemplateBySupplierId preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    PublishGoods baseAssert(TestContext testContext){
+    ListFreightTemplateBySupplierId baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

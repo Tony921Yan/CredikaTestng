@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "raffleGetRaffleMoney">
+        <parm key="recordId" value ="1470854821052479"/>
+    </test>
+</data>

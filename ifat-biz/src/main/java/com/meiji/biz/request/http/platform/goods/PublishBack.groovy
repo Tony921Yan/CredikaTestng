@@ -5,8 +5,9 @@ import com.miyuan.ifat.support.test.TestContext
 
 class PublishBack extends PlatformPost{
     {
-        super.api = "/platform/goodsMgr/publishBack"
+        super.api = "GoodsDetailManage/publishBack"
         super.params = ["spuId","updateById","updateByName"]
+        preInvoke = "com.meiji.biz.request.http.platform.goods.PublishGoods"
     }
 
     PublishBack invoke(TestContext testContext) {

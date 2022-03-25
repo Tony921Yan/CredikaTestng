@@ -323,6 +323,10 @@ class MysqlService extends MysqlAPI {
         return meiji_goods.execute("UPDATE meiji_goods.goods_spu set status = 5,is_delete = 0 where id=$spuId")
     }
 
+    static boolean publishBack(String spuId){
+        return meiji_goods.execute("UPDATE meiji_goods.goods_spu set status = 3,is_delete = 0 where id=$spuId")
+    }
+
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

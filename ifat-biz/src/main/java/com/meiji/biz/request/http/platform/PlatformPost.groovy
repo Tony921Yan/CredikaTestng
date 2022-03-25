@@ -47,9 +47,9 @@ abstract class PlatformPost {
         testContext.setResponse(res)
         testContext.setRequest(req)
         testContext.appendLog(new Record("返回结果",res))
-
-        HttpResponse httpResponse = HttpUtil.postV2(url,heads,req)
-        System.out.println("httpResponse 返回数据：" +  httpResponse)
+//
+//        HttpResponse httpResponse = HttpUtil.postV2(url,heads,req)
+//        System.out.println("httpResponse 返回数据：" +  httpResponse)
         return this
     }
 

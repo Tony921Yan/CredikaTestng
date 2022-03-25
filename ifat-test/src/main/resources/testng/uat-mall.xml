@@ -4,6 +4,7 @@
         <classes>
             <class name="com.meiji.test.http.mall.activeRecord.RaffleDrawTest"/>
             <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleInfoTest"/>
+            <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleMoneyTest"/>
             <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleRecordTest"/>
 
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponByGoodsTest"/>

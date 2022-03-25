@@ -3,25 +3,24 @@ package com.meiji.biz.request.http.platform.goods
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetPropertyBySpuld extends PlatformPost{
+class QueryGoodPropertys extends PlatformPost{
     {
-        super.api = "/platform/goodsMgr/getPropertyBySpuId"
-        super.params = ["spuId"]
+        super.api = "AttrManagement/queryGoodPropertys"
+        super.params = ["condition","page","rows"]
     }
 
-    GetPropertyBySpuld invoke(TestContext testContext) {
+    QueryGoodPropertys invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    GetPropertyBySpuld preInvoke(TestContext testContext){
+    QueryGoodPropertys preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    GetPropertyBySpuld baseAssert(TestContext testContext){
+    QueryGoodPropertys baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }
-
 }

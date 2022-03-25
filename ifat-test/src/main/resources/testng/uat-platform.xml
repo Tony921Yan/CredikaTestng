@@ -23,9 +23,37 @@
             <class name="com.meiji.test.http.platform.category.AddCategoryTest"/>
             <class name="com.meiji.test.http.platform.category.DelCategoryByIdTest"/>
             <class name="com.meiji.test.http.platform.category.GetCategoryTest"/>
+            <class name="com.meiji.test.http.platform.category.GetCategoryTreeByTypeTest"/>
             <class name="com.meiji.test.http.platform.category.QuerySecondLevelCategoryTest"/>
             <class name="com.meiji.test.http.platform.category.QueryTreeTest"/>
             <class name="com.meiji.test.http.platform.category.UpdateCategoryByIdTest"/>
+
+            <class name="com.meiji.test.http.platform.goods.AddGoddsTest"/>
+            <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
+            <class name="com.meiji.test.http.platform.goods.AuditGoodsTest"/>
+            <class name="com.meiji.test.http.platform.goods.BatchDeleteTest"/>
+            <class name="com.meiji.test.http.platform.goods.BatchRealDeleteTest"/>
+            <class name="com.meiji.test.http.platform.goods.BatchRecTest"/>
+<!--            <class name="com.meiji.test.http.platform.goods.CompareDownLoadTest"/>-->  <!--下载：要用http返回断言-->
+            <class name="com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.GetGroupGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.GetPageSupervisorTest"/>
+            <class name="com.meiji.test.http.platform.goods.GetSupplierReturnAddressBySupplierIdTest"/>
+            <class name="com.meiji.test.http.platform.goods.GoodsCopyTest"/>
+            <class name="com.meiji.test.http.platform.goods.GoodsLabelListQueryPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.GoodsMgrBatchRecTest"/>
+            <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
+            <class name="com.meiji.test.http.platform.goods.ListFreightTemplateBySupplierIdTest"/>
+            <class name="com.meiji.test.http.platform.goods.PublishBackTest"/>
+            <class name="com.meiji.test.http.platform.goods.PublishGoodsTest"/>
+            <class name="com.meiji.test.http.platform.goods.PurchaseManageAddDelTest"/>
+            <class name="com.meiji.test.http.platform.goods.PurchaseManageAddTest"/>
+            <class name="com.meiji.test.http.platform.goods.PurchaseManageListTest"/>
+            <class name="com.meiji.test.http.platform.goods.PurchaseManageUpdateTest"/>
+            <class name="com.meiji.test.http.platform.goods.QueryGoodPropertysTest"/>
+            <class name="com.meiji.test.http.platform.goods.SubmitGoodsTest"/>
+            <class name="com.meiji.test.http.platform.goods.UpdateGoodsTest"/>
+
 
             <class name="com.meiji.test.http.platform.label.AddLabelTest"/>
             <class name="com.meiji.test.http.platform.label.DeleteLabelTest"/>

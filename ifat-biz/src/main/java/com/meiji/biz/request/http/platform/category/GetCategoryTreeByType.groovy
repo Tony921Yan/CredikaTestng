@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetCategoryTreeByType extends PlatformPost {
     {
-        super.api = "categoryMgr/getCategoryTreeByType"
+        super.api = "GoodsDetailManage/getCategoryTreeByType"
         super.params = ["type"]
     }
 
@@ -22,13 +22,6 @@ class GetCategoryTreeByType extends PlatformPost {
 
     GetCategoryTreeByType baseAssert(TestContext testContext) {
         super.baseAssert(testContext)
-    }
-
-    GetCategoryTreeByType dataAssert(TestContext testContext) {
-        List mysqlData = MysqlService.getCategoryByType(testContext.get("type"))
-        List apiData = testContext.getResponse().data
-        System.out.println("apiData:" + apiData)
-        assert mysqlData.size() == apiData.size()
         return this
     }
 

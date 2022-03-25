@@ -7,7 +7,6 @@ import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
-//import com.miyuan.ifat.support.util.JsonUtil
 
 class GetPageSupervisorTest extends BaseTest {
     GetPageSupervisor getPageSupervisor = new GetPageSupervisor()

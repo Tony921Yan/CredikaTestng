@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name="goodsLabelListQueryPage">
+        <parm key = "labelsType" value = '[0,2,3]'/>
+        <parm key = "pageNum" value = '1'/>
+        <parm key = "pageSize" value = '100'/>
+    </test>
+</data>

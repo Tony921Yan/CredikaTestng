@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "prodGetGoodsByPage">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+    </test>
+
+    <test name="prodGetGoodsByPage1">
+        <parm key="status" value="[4]"/>
+        <parm key="groupType" value="1"/>
+        <parm key="isSearchPricePropGoods" value="true"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="brandIds" value="[]"/>
+    </test>
+
+    <test name="GetGoodsByPage0">
+        <parm key="status" value="[0]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="isCompensation" value="null"/>
+    </test>
+
+    <test name="GetGoodsByPage1">
+        <parm key="status" value="[1]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="isCompensation" value="null"/>
+    </test>
+
+    <test name="GetGoodsByPage2">
+        <parm key="status" value="[2]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="isCompensation" value="null"/>
+    </test>
+
+    <test name="GetGoodsByPage3">
+        <parm key="status" value="[3]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="isCompensation" value="null"/>
+    </test>
+
+    <test name="GetGoodsByPage4">
+        <parm key="status" value="[4]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="isCompensation" value="null"/>
+    </test>
+
+    <test name="GetGoodsByPage5">
+        <parm key="status" value="[5]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="isCompensation" value="null"/>
+    </test>
+
+    <test name="GetGoodsByPage6">
+        <parm key="status" value="[0,3,4]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="groupType" value="2"/>
+    </test>
+
+    <test name="GetGoodsByPage7">
+        <parm key="status" value="[0]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="groupType" value="2"/>
+    </test>
+
+    <test name="GetGoodsByPage8">
+        <parm key="status" value="[3]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="groupType" value="2"/>
+    </test>
+
+    <test name="GetGoodsByPage9">
+        <parm key="status" value="[4]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="groupType" value="2"/>
+    </test>
+
+    <test name="GetGoodsByPage10">
+        <parm key="status" value="[5]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="groupType" value="2"/>
+    </test>
+</data>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "activeMainManage.list">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="type" value ="9"/>
+    </test>
+
+
+    <test name = "activeMainManage.list2">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="name" value ="领券"/>
+    </test>
+
+    <test name = "activeMainManage.list3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="id" value ="1471030052782112"/>
+    </test>
+
+    <test name = "activeMainManage.list4">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="expiryStart" value ="2022-03-01 00:00:00"/>
+        <parm key="expiryEnd" value ="2022-03-30 23:59:59"/>
+    </test>
+
+</data>

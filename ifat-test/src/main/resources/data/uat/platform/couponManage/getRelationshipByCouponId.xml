@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getRelationshipByCouponId">
+        <parm key="id" value ="1470438446202912"/>
+    </test>
+
+</data>

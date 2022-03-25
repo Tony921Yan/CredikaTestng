@@ -58,11 +58,18 @@
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveByPageTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
-            <class name="com.meiji.test.http.platform.coupon.DetailTest"/>
-            <class name="com.meiji.test.http.platform.coupon.CouponDataListByPageTest"/>
-            <class name="com.meiji.test.http.platform.coupon.CouponInstanceListByPageTest"/>
-            <class name="com.meiji.test.http.platform.coupon.GetGrantCouponActiveByPageTest"/>
-            <class name="com.meiji.test.http.platform.coupon.ListTest"/>
+
+            <class name="com.meiji.test.http.platform.couponManage.DetailTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.CouponDataListByPageTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.CouponInstanceListByPageTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.GetGrantCouponActiveByPageTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.ListTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.DelTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.GetRelationshipByCouponIdTest"/>
+
+            <class name="com.meiji.test.http.platform.activeMainManage.ListTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.DetailTest"/>
+
             <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
         </classes>

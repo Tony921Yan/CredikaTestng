@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.platform.coupon
+package com.meiji.biz.request.http.platform.couponManage
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext

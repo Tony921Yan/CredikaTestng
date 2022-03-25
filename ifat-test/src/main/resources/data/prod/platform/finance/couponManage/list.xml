@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "list">
+    <test name = "couponManage.list">
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
     </test>
 
-    <test name = "list3">
+    <test name = "couponManage.list3">
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
         <parm key="expiryStart" value ="2022-03-01 00:00:00"/>

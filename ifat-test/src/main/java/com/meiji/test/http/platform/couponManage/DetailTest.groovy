@@ -1,6 +1,6 @@
-package com.meiji.test.http.platform.coupon
+package com.meiji.test.http.platform.couponManage
 
-import com.meiji.biz.request.http.platform.coupon.Detail
+import com.meiji.biz.request.http.platform.couponManage.Detail
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

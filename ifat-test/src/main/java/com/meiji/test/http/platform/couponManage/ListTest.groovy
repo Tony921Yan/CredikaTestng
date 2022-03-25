@@ -1,5 +1,6 @@
-package com.meiji.test.http.platform.coupon
-import com.meiji.biz.request.http.platform.coupon.List
+package com.meiji.test.http.platform.couponManage
+
+import com.meiji.biz.request.http.platform.couponManage.List
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
@@ -8,13 +9,13 @@ import org.testng.annotations.Test
 class ListTest extends BaseTest {
    List list = new List()
     Random rand = new Random()
-    @Test(description = "优惠券列表-全部 list" ,groups = ["prod","uat"],testName = "list",
+    @Test(description = "优惠券列表-全部 list" ,groups = ["prod","uat"],testName = "couponManage.list",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void list(TestContext testContext){
         list.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "优惠券列表-券状态tab list1" ,groups = ["prod","uat"],testName = "list1",
+    @Test(description = "优惠券列表-券状态tab list1" ,groups = ["prod","uat"],testName = "couponManage.list1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void list1(TestContext testContext){
         testContext.put("page",1)
@@ -24,7 +25,7 @@ class ListTest extends BaseTest {
     }
 
 
-    @Test(description = "优惠券列表-券类型 list2" ,groups = ["prod","uat"],testName = "list2",
+    @Test(description = "优惠券列表-券类型 list2" ,groups = ["prod","uat"],testName = "couponManage.list2",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void list2(TestContext testContext){
         testContext.put("page",1)
@@ -33,7 +34,7 @@ class ListTest extends BaseTest {
         list.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "优惠券列表-券有效期 list" ,groups = ["prod","uat"],testName = "list3",
+    @Test(description = "优惠券列表-券有效期 list" ,groups = ["prod","uat"],testName = "couponManage.list3",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void list3(TestContext testContext){
         list.invoke(testContext).baseAssert(testContext)

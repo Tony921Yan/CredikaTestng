@@ -1,5 +1,5 @@
-package com.meiji.test.http.platform.coupon
-import com.meiji.biz.request.http.platform.coupon.GetGrantCouponActiveByPage
+package com.meiji.test.http.platform.couponManage
+import com.meiji.biz.request.http.platform.couponManage.GetGrantCouponActiveByPage
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

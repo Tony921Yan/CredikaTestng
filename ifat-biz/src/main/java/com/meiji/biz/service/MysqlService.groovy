@@ -90,6 +90,14 @@ class MysqlService extends MysqlAPI {
         return meiji_active.rows("SELECT * FROM gift_goods  WHERE gift_id = '1453960321826848' AND is_delete =0 ORDER BY sort ASC").get(0)
     }
 
+    static List searchRaffledRecord(){
+        return meiji_active.rows("SELECT * FROM raffle_accept_record ORDER BY gmt_create ASC")
+    }
+
+    static List itemDetail(String id){
+        return meiji_active.rows("SELECT * FROM raffle_item WHERE id= $id ")
+    }
+
     static List order_info(String orderCode){
         return meiji_order.rows("select * from order_info where order_code = $orderCode")
     }

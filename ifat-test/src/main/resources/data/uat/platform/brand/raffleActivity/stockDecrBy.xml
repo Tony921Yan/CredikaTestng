@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "stockDecrBy">
+        <parm key="decrBy" value ='1'/>
+        <parm key="itemId" value ='1471137659748607'/>
+        <parm key="operateType" value ='1'/>
+        <parm key="refId" value ='1469527101538336'/>
+    </test>
+</data>

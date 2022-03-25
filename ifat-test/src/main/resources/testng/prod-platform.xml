@@ -63,6 +63,8 @@
             <class name="com.meiji.test.http.platform.coupon.CouponInstanceListByPageTest"/>
             <class name="com.meiji.test.http.platform.coupon.GetGrantCouponActiveByPageTest"/>
             <class name="com.meiji.test.http.platform.coupon.ListTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
         </classes>
     </test>
 </suite>

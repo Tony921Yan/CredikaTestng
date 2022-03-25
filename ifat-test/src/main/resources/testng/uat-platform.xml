@@ -121,6 +121,10 @@
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveByPageTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.StockIncrByTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.StockDecrByTest"/>
 
         </classes>
     </test>

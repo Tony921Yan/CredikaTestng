@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "searchGoodsByCoupon">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="couponId" value ="1470438205030432"/>
+        <parm key="shopId" value ="1470411357290528"/>
+        <parm key="comprehensiveSort" value ="desc"/>
+    </test>
+
+
+    <test name = "searchGoodsByCoupon1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="couponId" value ="1470438205030432"/>
+        <parm key="shopId" value ="1470411357290528"/>
+        <parm key="publishTimeSort" value ="desc"/>
+    </test>
+
+    <test name = "searchGoodsByCoupon2">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="couponId" value ="1470438205030432"/>
+        <parm key="shopId" value ="1470411357290528"/>
+        <parm key="salesSort" value ="desc"/>
+    </test>
+
+    <test name = "searchGoodsByCoupon3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="couponId" value ="1470438205030432"/>
+        <parm key="shopId" value ="1470411357290528"/>
+        <parm key="priceSort" value ="asc"/>
+    </test>
+</data>

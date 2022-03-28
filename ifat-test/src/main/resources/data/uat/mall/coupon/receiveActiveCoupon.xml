@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "receiveActiveCoupon">
+        <parm key="activeId" value ="1"/>
+    </test>
+
+
+    <test name = "receiveActiveCoupon1">
+        <parm key="activeId" value ="1"/>
+        <parm key="couponId" value ="0"/>
+    </test>
+</data>

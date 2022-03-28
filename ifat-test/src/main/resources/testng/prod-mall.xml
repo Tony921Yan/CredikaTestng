@@ -98,6 +98,13 @@
             <class name="com.meiji.test.http.mall.orderExhibit.DescribeTaskDetailTest"/>
             <class name="com.meiji.test.http.mall.orderExhibit.GetBuyerShowStatisticTest"/>
             <class name="com.meiji.test.http.mall.integral.CuponIntegralRuleQueryTest"/>
+
+            <class name="com.meiji.test.http.mall.coupon.GetActiveCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponByGoodsTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponCountTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.ReceiveActiveCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.SearchGoodsByCouponTest"/>
         </classes>
     </test>
 </suite>

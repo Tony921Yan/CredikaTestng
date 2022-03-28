@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getActiveCoupon">
+        <parm key="activeId" value ="1471035180318753"/>
+    </test>
+</data>

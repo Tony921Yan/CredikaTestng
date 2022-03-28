@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getCartCouponInfoList">
+        <parm key="couponInstanceId" value ="0"/>
+        <parm key="cartGoods" value ='[{"skuNum":1,"skuId":1435288228331616}]'/>
+    </test>
+</data>

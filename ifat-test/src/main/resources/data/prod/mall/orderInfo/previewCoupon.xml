@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "previewCoupon">
+        <parm key="orderGoods" value ='[{"skuId":1459751204421792,"skuNum":1},{"skuId":1446347620220961,"skuNum":1}]'/>
+        <parm key="orderType" value ="1"/>
+        <parm key="shopId" value ="1405981112139808"/>
+    </test>
+</data>

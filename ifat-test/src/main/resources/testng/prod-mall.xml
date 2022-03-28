@@ -46,6 +46,7 @@
             <class name="com.meiji.test.http.mall.pay.IncomePageQueryTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>
+            <class name="com.meiji.test.http.mall.orderInfo.PreviewCouponTest"/>
             <class name="com.meiji.test.http.mall.userInfo.CustomerListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.GetCategoryListAndQrCodeTest"/>
             <class name="com.meiji.test.http.mall.userInfo.SearchByConditionTest"/>
@@ -105,6 +106,8 @@
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>
             <class name="com.meiji.test.http.mall.coupon.ReceiveActiveCouponTest"/>
             <class name="com.meiji.test.http.mall.coupon.SearchGoodsByCouponTest"/>
+
+            <class name="com.meiji.test.http.mall.shopCart.GetCartCouponInfoListTest"/>
         </classes>
     </test>
 </suite>

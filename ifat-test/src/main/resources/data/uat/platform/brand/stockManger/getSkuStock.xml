@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getSkuStock">
+        <parm key="activityId" value ="17470"/>
+        <parm key="skus" value ='[
+        {
+            "skuId":1470108197191776,
+            "spuId":1470108195094560
+        }
+    ]'/>
+
+    </test>
+</data>
+

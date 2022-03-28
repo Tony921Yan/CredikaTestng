@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "queryActivitiesByType">
+        <parm key="page" value ="1"/>
+        <parm key="type" value ="8"/>
+        <parm key="rows" value ="9999"/>
+    </test>
+</data>
+

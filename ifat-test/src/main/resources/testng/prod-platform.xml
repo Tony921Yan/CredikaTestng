@@ -72,6 +72,10 @@
 
             <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.GetSkuStockTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.PageQueryAllotBillTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.QueryActivitiesByTypeTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.QueryAllotBillDetailTest"/>
         </classes>
     </test>
 </suite>

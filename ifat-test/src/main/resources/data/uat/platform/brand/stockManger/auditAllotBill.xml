@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "auditAllotBill1">
+        <parm key="adjustId" value ="17472"/>
+        <parm key="adjustStatus" value ="4"/>
+    </test>
+
+    <test name="auditAllotBill2">
+        <parm key="adjustId" value="17472"/>
+        <parm key="adjustStatus" value="3"/>
+    </test>
+</data>
+

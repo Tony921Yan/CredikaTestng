@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "createAllotBill1">
+        <parm key="adjustObj" value ="1470799114403903"/>
+        <parm key="adjustObjDesc" value ="抽奖大转盘2"/>
+        <parm key="adjustObjType" value ="2"/>
+        <parm key="adjustType" value ="1"/>
+        <parm key="createBy" value ="闫亮"/>
+        <parm key="operation" value ="1"/>
+        <parm key="remark" value ="TEST"/>
+        <parm key="goods" value ='[{
+            "goodsName":"自动化测试商品",
+            "preNum":5,
+            "skuCode":"200su-0048467",
+            "skuId":1470108197191776,
+            "spuCode":"200sup48467",
+            "spuId":1470108195094560
+        }]'/>
+    </test>
+
+    <test name = "createAllotBill2">
+        <parm key="adjustObj" value ="1470799114403903"/>
+        <parm key="adjustObjDesc" value ="抽奖大转盘2"/>
+        <parm key="adjustObjType" value ="2"/>
+        <parm key="adjustType" value ="2"/>
+        <parm key="createBy" value ="闫亮"/>
+        <parm key="operation" value ="2"/>
+        <parm key="remark" value ="TEST"/>
+        <parm key="goods" value ='[{
+            "goodsName":"自动化测试商品",
+            "preNum":5,
+            "skuCode":"200su-0048467",
+            "skuId":1470108197191776,
+            "spuCode":"200sup48467",
+            "spuId":1470108195094560
+        }]'/>
+    </test>
+</data>
+

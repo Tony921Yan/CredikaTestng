@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "searchActivityGoods">
+        <parm key="condition" value ='{
+        "activityId":1470799114403903
+    }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>
+

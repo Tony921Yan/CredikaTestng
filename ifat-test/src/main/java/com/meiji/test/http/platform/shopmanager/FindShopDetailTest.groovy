@@ -1,6 +1,4 @@
 package com.meiji.test.http.platform.shopmanager
-
-import com.meiji.biz.request.http.platform.other.CreateExcelData
 import com.meiji.biz.request.http.platform.shopmanager.FindShopDetail
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

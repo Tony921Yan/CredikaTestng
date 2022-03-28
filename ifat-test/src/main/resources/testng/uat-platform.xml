@@ -125,6 +125,15 @@
             <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.StockIncrByTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.StockDecrByTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.AuditAllotBillTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.CancelAllotBillTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.CreateAllotBillTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.GetSkuStockTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.PageQueryAllotBillTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.QueryActivitiesByTypeTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.QueryAllotBillDetailTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.SearchActivityGoodsTest"/>
+            <class name="com.meiji.test.http.platform.stockManger.UpdateAllotBillTest"/>
 
         </classes>
     </test>

@@ -335,6 +335,14 @@ class MysqlService extends MysqlAPI {
         return meiji_goods.execute("UPDATE meiji_goods.goods_spu set status = 3,is_delete = 0 where id=$spuId")
     }
 
+    static  List queryAllotBillDetail(String adjustId){
+        return meiji_stock.rows("SELECT * FROM meiji_stock.stock_adjust_sku WHERE adjust_id=$adjustId")
+    }
+
+    static List pageQueryAllotBill(){
+        return meiji_stock.rows("SELECT * FROM meiji_stock.stock_adjust ORDER BY gmt_create DESC")
+    }
+
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

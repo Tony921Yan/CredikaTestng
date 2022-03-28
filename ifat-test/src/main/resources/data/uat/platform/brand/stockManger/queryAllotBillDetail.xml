@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "queryAllotBillDetail">
+        <parm key="adjustId" value ="17472"/>
+    </test>
+</data>
+

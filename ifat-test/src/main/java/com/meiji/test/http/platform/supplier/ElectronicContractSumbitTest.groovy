@@ -1,7 +1,7 @@
-package com.meiji.test.http.platform.other
+package com.meiji.test.http.platform.supplier
 
-import com.meiji.biz.request.http.platform.other.ElectronicContractAdd
-import com.meiji.biz.request.http.platform.other.ElectronicContractSumbit
+
+import com.meiji.biz.request.http.platform.suppiler.ElectronicContractSumbit
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

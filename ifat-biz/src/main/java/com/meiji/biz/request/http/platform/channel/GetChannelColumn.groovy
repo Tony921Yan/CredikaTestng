@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class GetChannelColumn extends PlatformPost {
     {
-        super.api = "/platform/channel/column/get"
+        super.api = "ColumnManagement/getColumnList"
         super.params =  ["channelId", "id"]
     }
 
@@ -20,7 +20,7 @@ class GetChannelColumn extends PlatformPost {
     }
 
     GetChannelColumn baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == "0"
+        assert testContext.getResponse().code == 0
         return this
     }
 

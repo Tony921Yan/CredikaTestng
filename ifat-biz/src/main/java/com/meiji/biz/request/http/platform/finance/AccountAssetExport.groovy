@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class AccountAssetExport extends PlatformPost{
     {
         super.api="AccountAssets/accountAssetExport"
-        super.params = ["condition","order","page","rows","sort"]
+        super.params = ["condition"]
     }
 
     AccountAssetExport invoke(TestContext testContext) {

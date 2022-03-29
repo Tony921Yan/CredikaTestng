@@ -7,6 +7,7 @@ class UpdateColumn extends PlatformPost {
     {
         super.api = "ColumnManagement/updateColumn"
         super.params =  ["childName","id","name","remark"]
+//        preInvoke = "com.meiji.biz.request.http.platform.channel.ChannelAdd"
     }
 
     UpdateColumn invoke(TestContext testContext) {

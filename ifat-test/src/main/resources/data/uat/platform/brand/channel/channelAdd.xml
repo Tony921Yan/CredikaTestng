@@ -2,10 +2,9 @@
 <data>
     <test name = "channelAdd">
         <parm key="appType" value ="2"/>
-        <parm key="childName" value ="测试添加副标题"/>
-        <parm key="createBy" value ="测试佬"/>
-        <parm key="name" value ="接口添加标题2"/>
-        <parm key="remark" value ="接口备注"/>
-        <parm key="type" value ="3"/>
+        <parm key="childName" value ="自动化添加频道副标题"/>
+        <parm key="name" value ="自动化添加频道"/>
+        <parm key="remark" value ="自动化添加频道"/>
+        <parm key="type" value ="2"/>
     </test>
 </data>

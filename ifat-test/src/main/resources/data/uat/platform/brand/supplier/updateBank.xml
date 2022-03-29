@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateBank"> <!--表supplier_administrator_info-->
-        <parm key="id" value ="4"/>
-        <parm key="bankAccountType" value ="74"/>
-        <parm key="accountBank" value ="工商银行"/>
-        <parm key="accountName" value ="开户名称"/>
-        <parm key="bankAddressCode" value ="110000"/>
-        <parm key="bankBranchId" value ="402713354941"/>
-        <parm key="bankName" value ="施秉县农村信用合作联社城关信用社"/>
-        <parm key="accountNumber" value ="9558804000145712222"/>
-        <parm key="updateBy" value ="测试佬"/>
-        <parm key="gmtModified" value ="2022-03-01 23:23:23"/>
+        <parm key="supplierId" value ="12"/>
+        <parm key="accountBank" value ="招商银行"/>
+        <parm key="accountNumber" value ="6214830206853722"/>
+        <parm key="contactNumber" value ="null"/>
+        <parm key="contactAddress" value ="null"/>
+        <parm key="accountType" value ="1"/>
+        <parm key="bankAddressCode" value ="110101"/>
+        <parm key="bankName" value =""/>
     </test>
 </data>

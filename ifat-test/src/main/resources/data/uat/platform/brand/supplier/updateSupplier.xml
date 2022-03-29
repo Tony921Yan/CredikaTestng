@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateSupplier">
-        <parm key="id" value ="7"/>
-        <parm key="name" value ="本上生活（深圳）科技有限公司"/>
-        <parm key="supplierIntroduce" value ="本上生活（深圳）科技有限公司介绍"/>
-        <parm key="contacts" value ="13021662612"/>
-        <parm key="legalPersonName" value ="洪伟"/>
-        <parm key="legalPersonPhone" value ="13021662612"/>
-        <parm key="phone" value ="13021662612"/>
-        <parm key="email" value ="13574057096@163.com"/>
-        <parm key="address" value ="深圳市南山区"/>
-        <parm key="addressDetail" value ="深圳市南山区深南大道10168佳嘉豪商务大厦17A2"/>
-        <parm key="remark" value ="admin11111"/>
-        <parm key="updateBy" value ="测试佬 "/>
-        <parm key="gmtModified" value ="2022-03-29 21:23:23"/>
+        <parm key="id" value ="12"/>
+        <parm key="name" value ="梅州市印象食品有限公司"/>
+        <parm key="contacts" value ="温永立"/>
+        <parm key="phone" value ="13684975537"/>
+        <parm key="legalPersonPhone" value ="13411283385"/>
+        <parm key="email" value ="455957803@qq.com"/>
+        <parm key="address" value ="广东省梅州市梅江区"/>
+        <parm key="addressDetail" value ="广东省梅州市梅江区城北五里亭坪尾桥侧直入三百米"/>
+        <parm key="remark" value ="无"/>
+        <parm key="legalPersonName" value ="温永立"/>
+        <parm key="supplierIntroduce" value ="null"/>
+        <parm key="supplierType" value ="[ 1,2 ]"/>
+        <parm key="contractType" value ="1"/>
+        <parm key="supervisorId" value ="12"/>
+        <parm key="shouldModifyPhone" value ="false"/>
+        <parm key="oldPhone" value ="136849755373"/>
+        <parm key="supplierLevel" value ="3"/>
     </test>
 </data>

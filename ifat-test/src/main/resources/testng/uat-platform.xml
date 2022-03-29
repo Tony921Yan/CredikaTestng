@@ -134,6 +134,13 @@
             <class name="com.meiji.test.http.platform.stockManger.QueryAllotBillDetailTest"/>
             <class name="com.meiji.test.http.platform.stockManger.SearchActivityGoodsTest"/>
             <class name="com.meiji.test.http.platform.stockManger.UpdateAllotBillTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateAdministratorTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateBankTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateLegalTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateShipperInfoTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSubjectTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSupplierAddressTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSupplierTest"/>
 
         </classes>
     </test>

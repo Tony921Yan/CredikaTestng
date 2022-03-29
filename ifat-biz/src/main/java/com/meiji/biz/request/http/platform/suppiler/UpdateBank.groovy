@@ -5,9 +5,9 @@ import com.miyuan.ifat.support.test.TestContext
 
 class UpdateBank extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/updateBank"
-        super.params = ["id","bankAccountType","accountBank","accountName","bankAddressCode",
-        "bankBranchId","bankName","accountNumber","updateBy","gmtModified"]
+        super.api="SupplierManage/updateBank"
+        super.params = ["supplierId","accountBank","contactNumber","accountNumber",
+        "contactAddress","accountType","bankAddressCode","bankName"]
     }
 
     UpdateBank invoke(TestContext testContext) {

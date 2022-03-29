@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "getSupplierDetail">
-        <parm key="supplierId" value ="8"/>
+        <parm key="supplierId" value ="12"/>
     </test>
 </data>

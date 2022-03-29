@@ -1,14 +1,12 @@
 package com.meiji.biz.request.http.platform.suppiler
-
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
-
 class UpdateSubject extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/updateSubject"
-        super.params = ["id","cardType","merchantShortname","businessLicenseCopy","businessLicenseNumber",
-        "merchantName","businessTime","companyAddress","legalPerson","organizationCopy","organizationNumber","organizationTime",
-        "updateBy","gmtModified"]
+        super.api="/SupplierManage/updateSubject"
+        super.params = ["id","supplierId","supplierCode","cardType","merchantShortname",
+        "businessLicenseCopy","businessLicenseNumber","merchantName","merchantName","companyAddress","legalPerson","organizationTime",
+        "organizationType"]
     }
 
     UpdateSubject invoke(TestContext testContext) {

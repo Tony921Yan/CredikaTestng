@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class AddBank extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/addBank"
+        super.api="SupplierManage/addBank"
         super.params = ["supplierId","supplierCode","bankAccountType","accountBank","accountName","bankAddressCode",
         "bankBranchId","bankName","accountNumber","createBy","updateBy","gmtCreate","gmtModified"]
     }

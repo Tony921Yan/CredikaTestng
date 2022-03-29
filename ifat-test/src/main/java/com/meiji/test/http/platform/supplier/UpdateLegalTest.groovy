@@ -1,6 +1,4 @@
 package com.meiji.test.http.platform.supplier
-
-import com.meiji.biz.request.http.platform.suppiler.AddLegal
 import com.meiji.biz.request.http.platform.suppiler.UpdateLegal
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

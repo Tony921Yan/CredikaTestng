@@ -5,9 +5,9 @@ import com.miyuan.ifat.support.test.TestContext
 
 class UpdateSupplier extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/updateSupplier"
-        super.params = ["id","name","supplierIntroduce","contacts","legalPersonName","legalPersonPhone","phone","email",
-        "address","addressDetail","remark","updateBy","gmtModified"]
+        super.api="/SupplierManage/updateSupplier"
+        super.params = ["id","name","contacts","phone","legalPersonPhone","email",
+        "address","addressDetail","remark","legalPersonName","supplierIntroduce","supplierType","contractType","supervisorId","shouldModifyPhone","oldPhone","supplierLevel"]
     }
 
     UpdateSupplier invoke(TestContext testContext) {

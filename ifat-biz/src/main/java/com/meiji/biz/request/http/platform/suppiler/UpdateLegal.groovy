@@ -1,13 +1,12 @@
 package com.meiji.biz.request.http.platform.suppiler
-
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 class UpdateLegal extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/updateLegal"
+        super.api="/SupplierManage/updateLegal"
         super.params = ["id","idCardCopy","idCardNational","idCardName","idCardNumber",
-        "idCardValidTime","updateBy","gmtModified"]
+        "idCardValidTime"]
     }
 
     UpdateLegal invoke(TestContext testContext) {

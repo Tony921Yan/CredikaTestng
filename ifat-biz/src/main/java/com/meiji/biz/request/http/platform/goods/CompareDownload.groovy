@@ -15,6 +15,6 @@ class CompareDownload extends PlatformGet{
     }
 
     CompareDownload baseAssert(TestContext testContext){
-        HttpResponse response = HttpUtil.postV2("",)
+        def result = HttpUtil.post("",)
     }
 }

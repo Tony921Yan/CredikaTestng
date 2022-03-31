@@ -43,10 +43,10 @@ abstract class PlatformPost {
         testContext.appendLog(new Record("接口地址",url))
         testContext.appendLog(new Record("请求头",heads))
         testContext.appendLog(new Record("请求参数",req))
-        String res = HttpUtil.post(url,heads, req)
-        testContext.setResponse(res)
+        def result = HttpUtil.post(url,heads, req)
+        testContext.setResult(result)
         testContext.setRequest(req)
-        testContext.appendLog(new Record("返回结果",res))
+        testContext.appendLog(new Record("返回结果",result.getResp()))
 //
 //        HttpResponse httpResponse = HttpUtil.postV2(url,heads,req)
 //        System.out.println("httpResponse 返回数据：" +  httpResponse)

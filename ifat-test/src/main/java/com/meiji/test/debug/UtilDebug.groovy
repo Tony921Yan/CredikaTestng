@@ -42,8 +42,8 @@ class UtilDebug {
             println(JsonUtil.prettyJson(head))
             println("=============== req ========================================")
             println(JsonUtil.prettyJson(req))
-            String res = HttpUtil.post(url, head, req)
-            println(JsonUtil.prettyJson(res))
+            def res = HttpUtil.post(url, head, req)
+            println(JsonUtil.prettyJson(res.getResp()))
             println("=============== end ========================================")
         }
 

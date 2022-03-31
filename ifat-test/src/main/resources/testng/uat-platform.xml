@@ -40,6 +40,20 @@
             <class name="com.meiji.test.http.platform.channel.UpdateChannelTest"/>
             <class name="com.meiji.test.http.platform.channel.UpdateColumnTest"/>
 
+            <class name="com.meiji.test.http.platform.decorate.GetDecorateTemplateDetailTest"/>
+            <class name="com.meiji.test.http.platform.decorate.GetTemplateByPageTest"/>
+
+<!--            <class name="com.meiji.test.http.platform.finance.AccountAssetExportTest"/>--> <!--待与线上调整-->
+<!--            <class name="com.meiji.test.http.platform.finance.AccountAssetPageQueryTest"/>-->
+<!--            <class name="com.meiji.test.http.platform.finance.FundFlowDetaifundFlowRecordExportlQueryTest"/>-->  <!--导出问题-->
+            <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
+            <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>
+            <class name="com.meiji.test.http.platform.finance.GetCardDetailTest"/>
+            <class name="com.meiji.test.http.platform.finance.GetChannelCostListTest"/>
+            <class name="com.meiji.test.http.platform.finance.GetChannelListTest"/>
+<!--            <class name="com.meiji.test.http.platform.finance.WithdrawRecordExportTest"/>-->  <!--导出报地址不存在-->
+            <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
+
             <class name="com.meiji.test.http.platform.gift.AcknowledgmentsManageAddTest"/>
             <class name="com.meiji.test.http.platform.gift.AcknowledgmentsManageTest"/>
             <class name="com.meiji.test.http.platform.gift.AcknowledgmentsManageUpdateTest"/>

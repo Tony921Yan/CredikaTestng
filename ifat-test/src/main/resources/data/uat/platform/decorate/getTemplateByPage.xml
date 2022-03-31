@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getTemplateByPage">
+        <parm key="condition" value ='{"templateNo":"","templateName":""}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "getTemplateByPage1">
+        <parm key="condition" value ='{"templateNo":"ZX1120211222110941","templateName":"新首页模板","status":1}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+</data>

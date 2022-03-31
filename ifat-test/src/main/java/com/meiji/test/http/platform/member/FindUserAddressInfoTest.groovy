@@ -12,6 +12,6 @@ class FindUserAddressInfoTest extends BaseTest {
     @Test(description = "查询会员地址 findUserAddressInfo" ,groups = ["prod","uat"],testName = "findUserAddressInfo",
            dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void pageLabel(TestContext testContext){
-        findUserAddressInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        findUserAddressInfo.invoke(testContext).baseAssert(testContext)
     }
 }

@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class ChannelColumnDelete extends PlatformPost {
     {
-        super.api = "platform/channel/column/delete"
+        super.api = "ColumnManagement/deleteColumn"
         super.params =  [ "id"]
     }
 
@@ -20,7 +20,7 @@ class ChannelColumnDelete extends PlatformPost {
     }
 
     ChannelColumnDelete baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == "0"
+        assert testContext.getResponse().code == 0
         return this
     }
 

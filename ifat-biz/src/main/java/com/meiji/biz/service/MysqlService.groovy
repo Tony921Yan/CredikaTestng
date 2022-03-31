@@ -251,10 +251,6 @@ class MysqlService extends MysqlAPI {
         return meiji_shop.rows(sql)
     }
 
-    static Map getChannel(){
-        return meiji_goods.firstRow("SELECT * from channel ORDER BY gmt_create DESC")
-    }
-
     static List getShopAccountData(){
         return meiji_settlement.rows("select shop_code,shop_name from settlement_order where gmt_modified > date_sub(now(),interval 3 Day) group by shop_code")
     }
@@ -343,6 +339,13 @@ class MysqlService extends MysqlAPI {
         return meiji_stock.rows("SELECT * FROM meiji_stock.stock_adjust ORDER BY gmt_create DESC")
     }
 
+    static  boolean deleteChannel(String name){
+        return meiji_goods.execute("delete from meiji_goods.channel where name = $name")
+    }
+
+    static boolean deleteChannelColumn(String name){
+        return meiji_goods.execute("delete from meiji_goods.channel_column where name = $name")
+    }
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

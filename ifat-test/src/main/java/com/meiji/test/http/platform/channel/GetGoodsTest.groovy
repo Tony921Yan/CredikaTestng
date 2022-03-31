@@ -19,25 +19,25 @@ class GetGoodsTest extends BaseTest {
         getGoods.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "商品管理-频道管理-晒单商品列表 getGoods" ,groups = ["prod"],testName = "getGoods1",
+    @Test(description = "商品管理-频道管理-晒单商品列表 getGoods" ,groups = ["prod","uat"],testName = "getGoods1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGoods1(TestContext testContext){
-        getGoods.invoke(testContext).baseAssert(testContext) //仅用于prod
+        getGoods.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "商品管理-频道管理-美记精选-S姆同款商品列表 getGoods" ,groups = ["prod"],testName = "getGoods2",
+    @Test(description = "商品管理-频道管理-美记精选-S姆同款商品列表 getGoods" ,groups = ["prod","uat"],testName = "getGoods2",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGoods2(TestContext testContext){
-        getGoods.invoke(testContext).baseAssert(testContext) //仅用于prod
+        getGoods.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "商品管理-频道管理-美记精选-大牌严选商品列表 getGoods" ,groups = ["prod"],testName = "getGoods3",
+    @Test(description = "商品管理-频道管理-美记精选-大牌严选商品列表 getGoods" ,groups = ["prod","uat"],testName = "getGoods3",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGoods3(TestContext testContext){
-        getGoods.invoke(testContext).baseAssert(testContext) //仅用于prod
+        getGoods.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "商品管理-频道管理-美记精选-美记特卖商品列表 getGoods" ,groups = ["prod"],testName = "getGoods4",
+    @Test(description = "商品管理-频道管理-美记精选-美记特卖商品列表 getGoods" ,groups = ["prod","uat"],testName = "getGoods4",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getGoods4(TestContext testContext){
         getGoods.invoke(testContext).baseAssert(testContext)

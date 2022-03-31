@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateShipperInfo"> <!--表supplier_administrator_info-->
+        <parm key="id" value ="2"/>
+        <parm key="supplierId" value ="12"/>
+        <parm key="shipperAddress" value ="天津市南开区"/>
+        <parm key="shipperAddressDetail" value ="7"/>
+        <parm key="shipperName" value ="杨泳帆"/>
+        <parm key="shipperPhone" value ="15813812834"/>
+        <parm key="supplierCode" value ="sup12202103294274"/>
+        <parm key="isDefault" value ="1"/>
+        <parm key="supplierName" value ="梅州市印象食品有限公司"/>
+    </test>
+</data>

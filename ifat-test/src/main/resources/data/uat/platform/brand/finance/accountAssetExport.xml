@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "accountAssetExport">
-        <parm key="condition" value ='{}'/>
-        <parm key="order" value =""/>
-        <parm key="page" value =""/>
-        <parm key="rows" value =""/>
-        <parm key="sort" value =""/>
+        <parm key="condition" value ='{"entityInfos":[]}'/>
     </test>
 </data>

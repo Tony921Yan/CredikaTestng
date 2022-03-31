@@ -1,7 +1,6 @@
-package com.meiji.biz.request.http.platform.other
+package com.meiji.biz.request.http.platform.suppiler
 
 import com.meiji.biz.request.http.platform.PlatformPost
-import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.TestContext
 
 class ElectronicContractExtSign extends PlatformPost {

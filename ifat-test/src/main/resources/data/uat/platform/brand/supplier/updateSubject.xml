@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateSubject"> <!--表supplier_administrator_info-->
-        <parm key="id" value ="11"/>
+        <parm key="id" value ="5"/>
+        <parm key="supplierId" value ="12"/>
+        <parm key="supplierCode" value ="sup12202103294274"/>
         <parm key="cardType" value ="1"/>
-        <parm key="merchantShortname" value ="本上生活"/>
-        <parm key="businessLicenseCopy" value ="http://static.meiji8888.com/"/>
-        <parm key="businessLicenseNumber" value ="1152223MA0Q61HA6"/>
-        <parm key="merchantName" value ="本上生活"/>
-        <parm key="businessTime" value ="2030-10-23"/>
-        <parm key="companyAddress" value ="深圳市南山区深南大道10168佳嘉豪商务大厦17A2"/>
-        <parm key="legalPerson" value ="王刚111"/>
-        <parm key="organizationCopy" value ="123456789011111"/>
-        <parm key="organizationNumber" value ="123456789011111"/>
-        <parm key="organizationTime" value ="2022-03-31 17:23:23"/>
-        <parm key="updateBy" value ="测试佬"/>
-        <parm key="gmtModified" value ="2022-03-31 17:23:23"/>
+        <parm key="merchantShortname" value ="梅州市印象食品有限公司"/>
+        <parm key="businessLicenseCopy" value ="http://static.meiji8888.com/buck/BI-YX.png"/>
+        <parm key="businessLicenseNumber" value ="91441402MA5141A643"/>
+        <parm key="merchantName" value ="梅州市印象食品有限公司"/>
+        <parm key="merchantName" value ="[长期]"/>
+        <parm key="companyAddress" value ="梅州市梅江区城北五里亭坪尾桥侧直入三百米"/>
+        <parm key="legalPerson" value ="温永立"/>
+        <parm key="organizationType" value ="2"/>
     </test>
 </data>

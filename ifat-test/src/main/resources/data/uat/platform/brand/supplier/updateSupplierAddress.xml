@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "updateSupplierAddress">
-        <parm key="id" value ="34"/>
+        <parm key="id" value ="14"/>
+        <parm key="supplierId" value ="12"/>
+        <parm key="contactsAddress" value ="广东省梅州市梅江区"/>
+        <parm key="contactsAddressDetail" value ="广东省梅州市梅江区城北五里亭坪尾桥侧直入300米"/>
+        <parm key="contactsName" value ="温永立"/>
+        <parm key="contactsPhone" value ="13411283385"/>
+        <parm key="supplierCode" value ="sup12202103294274"/>
         <parm key="isDefault" value ="1"/>
-        <parm key="contactsAddress" value ="广东省深圳市南山区"/>
-        <parm key="contactsAddressDetail" value ="华润城26EF"/>
-        <parm key="contactsName" value ="洪伟"/>
-        <parm key="contactsPhone" value ="13800138000"/>
-        <parm key="createBy" value ="洪伟"/>
-        <parm key="supplierCode" value ="sup12202105248290"/>
-        <parm key="supplierId" value ="31"/>
-        <parm key="updateBy" value ="洪伟"/>
     </test>
 </data>

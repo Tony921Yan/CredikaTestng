@@ -7,7 +7,5 @@
         <parm key="idCardName" value ="罗大佑"/>
         <parm key="idCardNumber" value ="152104190010220911"/>
         <parm key="idCardValidTime" value ="2030-10-23"/>
-        <parm key="updateBy" value ="测试佬"/>
-        <parm key="gmtModified" value ="2022-03-31 17:23:23"/>
     </test>
 </data>

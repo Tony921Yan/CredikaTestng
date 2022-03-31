@@ -11,10 +11,6 @@ class ChannelDeleteTest extends BaseTest {
     @Test(description = "删除频道 channelDelete" ,groups = ["prod","uat"],testName = "channelDelete",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void channelDelete(TestContext testContext){
-        ChannelDelete channel = channelDelete.preInvoke(testContext)
-        System.out.println(channel.getProperty("value"));
-//        System.out.println(channelDelete.preInvoke(testContext))
-//        testContext.put("id",channelDelete.preInvoke(testContext))
         channelDelete.invoke(testContext).baseAssert(testContext)
     }
 }

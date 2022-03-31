@@ -2,16 +2,16 @@ package com.meiji.biz.request.http.platform.channel
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.meiji.biz.service.MysqlService
-import com.meiji.biz.util.DateUtil
 import com.miyuan.ifat.support.test.TestContext
 
 class ChannelColumnAdd extends PlatformPost {
     {
-        super.api = "platform/channel/column/add"
-        super.params =  [ "channelId","childName","createBy","name","remark","sort"]
+        super.api = "ColumnManagement/addColumn"
+        super.params =  [ "name","childName","remark","name","channelId"]
     }
 
     ChannelColumnAdd invoke(TestContext testContext) {
+        MysqlService.deleteChannelColumn(testContext.get("name"))
         super.invoke(testContext)
         return this
     }
@@ -22,7 +22,7 @@ class ChannelColumnAdd extends PlatformPost {
     }
 
     ChannelColumnAdd baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == "0"
+        assert testContext.getResponse().code == 0
         return this
     }
 

@@ -1,7 +1,7 @@
-package com.meiji.test.http.platform.other
+package com.meiji.test.http.platform.supplier
 
-import com.meiji.biz.request.http.platform.other.ElectronicContractExtSign
-import com.meiji.biz.request.http.platform.other.ElectronicContractUpdate
+
+import com.meiji.biz.request.http.platform.suppiler.ElectronicContractUpdate
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

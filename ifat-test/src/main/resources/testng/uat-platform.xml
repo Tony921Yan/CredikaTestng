@@ -28,6 +28,23 @@
             <class name="com.meiji.test.http.platform.category.QueryTreeTest"/>
             <class name="com.meiji.test.http.platform.category.UpdateCategoryByIdTest"/>
 
+            <class name="com.meiji.test.http.platform.channel.ChannelAddTest"/>
+            <class name="com.meiji.test.http.platform.channel.ChannelColumnAddTest"/>
+            <class name="com.meiji.test.http.platform.channel.ChannelColumnDeleteTest"/>
+<!--            <class name="com.meiji.test.http.platform.channel.ChannelDeleteTest"/>-->  <!--此接口后端报错，待更新后验证-->
+            <class name="com.meiji.test.http.platform.channel.GetChannelColumnTest"/>
+            <class name="com.meiji.test.http.platform.channel.GetChannelListTest"/>
+            <class name="com.meiji.test.http.platform.channel.GetGoodsTest"/>
+            <class name="com.meiji.test.http.platform.channel.SearchBuyerShowTest"/>
+            <class name="com.meiji.test.http.platform.channel.SortChannelColumnTest"/>
+            <class name="com.meiji.test.http.platform.channel.UpdateChannelTest"/>
+            <class name="com.meiji.test.http.platform.channel.UpdateColumnTest"/>
+
+            <class name="com.meiji.test.http.platform.gift.AcknowledgmentsManageAddTest"/>
+            <class name="com.meiji.test.http.platform.gift.AcknowledgmentsManageTest"/>
+            <class name="com.meiji.test.http.platform.gift.AcknowledgmentsManageUpdateTest"/>
+
+
             <class name="com.meiji.test.http.platform.goods.AddGoddsTest"/>
             <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
             <class name="com.meiji.test.http.platform.goods.AuditGoodsTest"/>
@@ -54,12 +71,25 @@
             <class name="com.meiji.test.http.platform.goods.SubmitGoodsTest"/>
             <class name="com.meiji.test.http.platform.goods.UpdateGoodsTest"/>
 
-
             <class name="com.meiji.test.http.platform.label.AddLabelTest"/>
             <class name="com.meiji.test.http.platform.label.DeleteLabelTest"/>
             <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
             <class name="com.meiji.test.http.platform.label.PageLabelTest"/>
             <class name="com.meiji.test.http.platform.label.UpdateLabelTest"/>
+
+
+            <class name="com.meiji.test.http.platform.member.FindUserAddressInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserIntegralInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserLogInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>
+            <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
+            <class name="com.meiji.test.http.platform.member.UpdateUserInfoTest"/>
+
+            <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.StockDecrByTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.StockIncrByTest"/>
 
 <!--            <class name = "com.meiji.test.http.platform.other.BatchUpdateConfigTest"/>-->
             <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
@@ -134,6 +164,13 @@
             <class name="com.meiji.test.http.platform.stockManger.QueryAllotBillDetailTest"/>
             <class name="com.meiji.test.http.platform.stockManger.SearchActivityGoodsTest"/>
             <class name="com.meiji.test.http.platform.stockManger.UpdateAllotBillTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateAdministratorTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateBankTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateLegalTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateShipperInfoTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSubjectTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSupplierAddressTest"/>
+            <class name="com.meiji.test.http.platform.supplier.UpdateSupplierTest"/>
 
         </classes>
     </test>

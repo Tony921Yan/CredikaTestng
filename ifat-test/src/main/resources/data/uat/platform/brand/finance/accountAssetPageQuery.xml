@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "accountAssetPageQuery">
-        <parm key="condition" value ='{"accountCode":"","accountName":"","merchantType":"","startTime":"","endTime":""}'/>
+    <test name = "accountAssetPageQuery_platform">
+        <parm key="condition" value ='{}'/>
         <parm key="order" value =""/>
         <parm key="page" value ="1"/>
         <parm key="rows" value ="10"/>

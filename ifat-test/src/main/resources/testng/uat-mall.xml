@@ -156,6 +156,14 @@
             <class name="com.meiji.test.http.mall.userShop.UpdateShopInfoTest"/>
             <class name="com.meiji.test.http.mall.userShop.UserVisitShopTest"/>
 
+            <class name="com.meiji.test.http.mall.coupon.SearchGoodsByCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.ReceiveActiveCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponCountTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetMyCouponByGoodsTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetActiveCouponTest"/>
+
+
         </classes>
     </test>
 </suite>

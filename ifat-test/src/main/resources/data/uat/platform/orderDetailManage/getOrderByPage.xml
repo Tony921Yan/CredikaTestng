@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getOrderByPage-all">
+        <parm key="condition" value ='{}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderType1">
+        <parm key="condition" value ='{orderType: "1",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderType2">
+        <parm key="condition" value ='{orderType: "2",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderType3">
+        <parm key="condition" value ='{orderType: "3", endTime: "2022-03-31 23:59:59",startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderType4">
+        <parm key="condition" value ='{orderType: "4",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus1">
+        <parm key="condition" value ='{orderStatus: "1", endTime: "2022-03-31 23:59:59",startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus2">
+        <parm key="condition" value ='{orderStatus: "2",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus3">
+        <parm key="condition" value ='{orderStatus: "3",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus4">
+        <parm key="condition" value ='{orderStatus: "4",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus50">
+        <parm key="condition" value ='{orderStatus: "50",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus5">
+        <parm key="condition" value ='{orderStatus: "5",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus6">
+        <parm key="condition" value ='{orderStatus: "6",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus7">
+        <parm key="condition" value ='{orderStatus: "7",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderStatus8">
+        <parm key="condition" value ='{orderStatus: "8",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-sourceType0">
+        <parm key="condition" value ='{sourceType: "0",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-sourceType1">
+        <parm key="condition" value ='{sourceType: "1",endTime: "2022-03-31 23:59:59", startTime: "2022-03-01 00:00:00"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-orderCode">
+        <parm key="condition" value ='{orderCode: "O2022032313440496303"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-parentOrderCode">
+        <parm key="condition" value ='{parentOrderCode: "O2022022414490535116"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "GetOrderByPage-18">
+        <parm key="condition" value ='{goodsCode:"200sup19917",receiverMsg:"18270714125",shopName:"曾曾",shopUserMsg:"悲观",spuType:"1",supplierName:"澳创"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+</data>

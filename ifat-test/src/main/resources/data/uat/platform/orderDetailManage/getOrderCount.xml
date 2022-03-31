@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getOrderCount">
+    </test>
+
+    <test name = "getOrderCount-time">
+    <parm key = "endTime" value = "2022-03-31 23:59:59"/>
+    <parm key = "startTime" value = "2022-03-01 00:00:00"/>
+    </test>
+
+    <test name = "getOrderCount-shopName">
+        <parm key = "shopName" value = "曾曾"/>
+    </test>
+
+    <test name = "getOrderCount-receiverMsg">
+        <parm key = "receiverMsg" value = "18270714125"/>
+    </test>
+
+    <test name = "getOrderCount-supplierName">
+        <parm key = "supplierName" value = "澳创"/>
+    </test>
+
+    <test name = "getOrderCount-parentOrderCode">
+        <parm key = "parentOrderCode" value = "O2022022414490535116"/>
+    </test>
+</data>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getOrderLogisticsInfo-p">
+        <parm key="orderCode" value ="O2022022413590372150"/>
+    </test>
+</data>

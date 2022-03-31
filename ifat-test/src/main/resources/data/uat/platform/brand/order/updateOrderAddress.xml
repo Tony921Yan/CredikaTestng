@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "updateOrderAddress">
-        <parm key="id" value ="1449278641799200"/>
-        <parm key="orderCode" value ="O2021112419510494803"/>
-        <parm key="receiverAddress" value ="广东省深圳市南山区蛇口街道"/>
-        <parm key="receiverName" value ="测试佬"/>
-        <parm key="receiverTel" value ="18820157232"/>
+    <test name = "updateOrderAddress-p">
+        <parm key="id" value ="1472273332568127"/>
+        <parm key="orderCode" value ="O2022033117370124017"/>
+        <parm key="receiverName" value ="曾曾"/>
+        <parm key="receiverTel" value ="18270714125"/>
+        <parm key="address" value ="啦啦啦"/>
+        <parm key="receiverAddress" value ="自动化测试"/>
+        <parm key="city" value ="广州市"/>
+        <parm key="province" value ="广东省"/>
+        <parm key="district" value ="越秀区"/>
     </test>
 </data>

@@ -1,7 +1,6 @@
 package com.meiji.test.http.platform.supplier
 
 
-import com.meiji.biz.request.http.platform.order.ProdGetOrderByPage
 import com.meiji.biz.request.http.platform.suppiler.ProdAddShipperAddressInfo
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

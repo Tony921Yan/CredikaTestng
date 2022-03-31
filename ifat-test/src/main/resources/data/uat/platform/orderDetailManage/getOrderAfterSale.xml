@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getOrderAfterSale-p">
+        <parm key="orderCode" value ="O2022032314040138472"/>
+    </test>
+</data>

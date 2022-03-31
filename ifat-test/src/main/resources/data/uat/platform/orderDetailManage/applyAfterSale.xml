@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+
+    <test name = "applyAfterSale-p">
+        <parm key="orderCode" value ="O2022022414280338476"/>
+        <parm key="afterType" value ="1"/>
+        <parm key="goodsList" value ='[{"orderGoodsId":874102,"refundReason":"7天无理由退货","refundAmount":13}]'/>
+        <parm key="refundAmount" value ="13"/>
+    </test>
+</data>

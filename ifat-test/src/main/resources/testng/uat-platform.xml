@@ -95,7 +95,6 @@
             <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
             <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
             <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
-            <class name="com.meiji.test.http.platform.order.ProdGetOrderByPageTest"/>
             <class name="com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
             <class name="com.meiji.test.http.platform.goods.GetGroupGoodsByPageTest"/>
             <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
@@ -172,6 +171,36 @@
             <class name="com.meiji.test.http.platform.supplier.UpdateSupplierAddressTest"/>
             <class name="com.meiji.test.http.platform.supplier.UpdateSupplierTest"/>
 
+
+
+            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderAddressTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.ApplyAfterSaleTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.CancelOrderTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.DeliverOrderGoodsTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderAfterSaleTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderByPageTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderDetailTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderEventLogTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderLogisticsInfoTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderRemarkTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>
+
+            <class name="com.meiji.test.http.platform.couponManage.GetRelationshipByCouponIdTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.DelTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.AddCouponNumTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.CouponDataListByPageTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.DetailTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.CouponInstanceListByPageTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.GetGrantCouponActiveByPageTest"/>
+            <class name="com.meiji.test.http.platform.couponManage.ListTest"/>
+
+            <class name="com.meiji.test.http.platform.activeMainManage.DetailTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.ListTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.AdditionalBondsTest"/>
+
+
+
         </classes>
     </test>
 
@@ -193,39 +222,4 @@
         </classes>
     </test>
 
-    <test name="获取订单数据 getOrderByPage">
-        <classes>
-            <class name="com.meiji.test.http.platform.order.GetOrderByPageTest"/>
-        </classes>
-    </test>
-
-    <test name="获取订单详情,包含会员信息 和 分销信息 和 支付信息 和 商品信息 getOrderDetail">
-        <classes>
-            <class name="com.meiji.test.http.platform.order.GetOrderDetailTest"/>
-        </classes>
-    </test>
-
-    <test name="获取订单日志 getOrderEventLog">
-        <classes>
-            <class name="com.meiji.test.http.platform.order.GetOrderEventLogTest"/>
-        </classes>
-    </test>
-
-    <test name="获取物流信息 getOrderLogisticsInfo">
-        <classes>
-            <class name="com.meiji.test.http.platform.order.GetOrderLogisticsInfoTest"/>
-        </classes>
-    </test>
-
-<!--    <test name="订单导出 orderExport">-->
-<!--        <classes>-->
-<!--            <class name="com.meiji.test.http.platform.order.OrderExportTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="修改订单收货信息 updateOrderAddress">-->
-<!--        <classes>-->
-<!--            <class name="com.meiji.test.http.platform.order.UpdateOrderAddressTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 </suite>

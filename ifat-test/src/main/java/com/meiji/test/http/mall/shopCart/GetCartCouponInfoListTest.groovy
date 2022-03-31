@@ -14,7 +14,7 @@ import org.testng.annotations.Test
  */
 class GetCartCouponInfoListTest extends BaseTest{
     GetCartCouponInfoList getCartCouponInfoList = new GetCartCouponInfoList()
-    @Test(description = "购物车优惠券查询 addCartItem",groups = ["prod","uat"],testName = "getCartCouponInfoList",
+    @Test(description = "购物车优惠券查询 getCartCouponInfoList",groups = ["prod","uat"],testName = "getCartCouponInfoList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getCartCouponInfoList(TestContext testContext){
         getCartCouponInfoList.invoke(testContext).baseAssert(testContext)

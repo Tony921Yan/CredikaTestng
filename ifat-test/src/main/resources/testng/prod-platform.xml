@@ -12,7 +12,6 @@
             <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>
             <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
             <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
-            <class name="com.meiji.test.http.platform.order.ProdGetOrderByPageTest"/>
             <class name="com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
             <class name="com.meiji.test.http.platform.goods.GetGroupGoodsByPageTest"/>
             <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
@@ -76,6 +75,15 @@
             <class name="com.meiji.test.http.platform.stockManger.PageQueryAllotBillTest"/>
             <class name="com.meiji.test.http.platform.stockManger.QueryActivitiesByTypeTest"/>
             <class name="com.meiji.test.http.platform.stockManger.QueryAllotBillDetailTest"/>
+
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderLogisticsInfoTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderEventLogTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderDetailTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderByPageTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderAfterSaleTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderCountTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>
+
         </classes>
     </test>
 </suite>

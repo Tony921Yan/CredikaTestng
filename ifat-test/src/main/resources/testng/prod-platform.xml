@@ -20,7 +20,6 @@
             <class name="com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
             <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
             <class name="com.meiji.test.http.platform.other.GetListMaterialsTest"/>
-            <class name="com.meiji.test.http.platform.other.SearchCategoryTest"/>
             <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterByPageTest"/>
             <class name="com.meiji.test.http.platform.supplier.GetSupplierByPageTest"/>
             <class name="com.meiji.test.http.platform.other.InvitationListTest"/>

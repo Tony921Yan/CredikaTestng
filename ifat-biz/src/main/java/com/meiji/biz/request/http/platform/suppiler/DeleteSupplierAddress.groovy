@@ -1,11 +1,10 @@
 package com.meiji.biz.request.http.platform.suppiler
-
-import com.meiji.biz.request.http.platform.PlatformGet
+import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class DeleteSupplierAddress extends PlatformGet{
+class DeleteSupplierAddress extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/deleteSupplierAddress"
+        super.api="/SupplierManage/deleteSupplierAddress"
         super.params = ["supplierAddressId"]
     }
 

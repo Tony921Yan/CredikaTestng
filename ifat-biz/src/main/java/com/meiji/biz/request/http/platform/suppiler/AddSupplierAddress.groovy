@@ -1,13 +1,11 @@
 package com.meiji.biz.request.http.platform.suppiler
-
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 class AddSupplierAddress extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/addSupplierAddress"
-        super.params = ["contactsAddress","contactsAddressDetail","contactsName","contactsPhone","createBy","supplierCode",
-        "supplierId","updateBy"]
+        super.api="/SupplierManage/addSupplierAddress"
+        super.params = ["supplierId","contactsAddress","contactsAddressDetail","contactsName","contactsPhone","supplierCode"]
     }
 
     AddSupplierAddress invoke(TestContext testContext) {

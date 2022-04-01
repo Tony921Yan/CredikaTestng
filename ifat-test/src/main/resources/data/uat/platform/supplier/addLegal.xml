@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "addLegal"> <!--表supplier_administrator_info-->
-        <parm key="supplierId" value ="6"/> <!--表meiji_supplier-->
-        <parm key="supplierCode" value ="sup12202103299215"/>
-        <parm key="idCardCopy" value ="7http://static.meiji8888.com/"/>
-        <parm key="idCardNational" value ="http://static.meiji8888.com/"/>
-        <parm key="idCardName" value ="罗大佑"/>
-        <parm key="idCardNumber" value ="152104190010220911"/>
-        <parm key="idCardValidTime" value ="2030-10-23"/>
-        <parm key="createBy" value ="测试佬"/>
-        <parm key="updateBy" value ="测试佬"/>
-        <parm key="gmtCreate" value ="2022-03-31 17:23:23"/>
-        <parm key="gmtModified" value ="2022-03-31 17:23:23"/>
+        <parm key="supplierId" value ="499"/> <!--表meiji_supplier-->
+        <parm key="supplierCode" value ="sup12202203290437"/>
+        <parm key="idCardCopy" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/5baff147619f633b93bf234daadab979.jpg"/>
+        <parm key="idCardNational" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/c4a0d1a79416743f35fbcb6652ad125c.jpg"/>
+        <parm key="idCardName" value ="马恩多"/>
+        <parm key="idCardNumber" value ="432625197003220011"/>
+        <parm key="idCardValidTime" value ="2022-04-30"/>
     </test>
 </data>

@@ -183,8 +183,12 @@
             <class name="com.meiji.test.http.platform.supplier.UpdateSubjectTest"/>
             <class name="com.meiji.test.http.platform.supplier.UpdateSupplierAddressTest"/>
             <class name="com.meiji.test.http.platform.supplier.UpdateSupplierTest"/>
-
-
+            <class name="com.meiji.test.http.platform.supplier.GetSupplierDetailTest"/>
+            <class name="com.meiji.test.http.platform.supplier.GetSupplierByPageTest"/>
+            <class name="com.meiji.test.http.platform.supplier.ElectronicContractSumbitTest"/>
+            <class name="com.meiji.test.http.platform.supplier.ElectronicContractExtSignTest"/>
+            <class name="com.meiji.test.http.platform.supplier.ElectronicContractAddTest"/>
+            <class name="com.meiji.test.http.platform.supplier.AddSupplierAddressTest"/>
 
             <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderAddressTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.ApplyAfterSaleTest"/>

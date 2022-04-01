@@ -1,8 +1,9 @@
 package com.meiji.biz.request.http.platform.suppiler
 import com.meiji.biz.request.http.platform.PlatformGet
+import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetSupplierDetail extends PlatformGet{
+class GetSupplierDetail extends PlatformPost{
     {
         super.api="SupplierManage/getSupplierDetail"
         super.params = ["supplierId"]

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "deleteShipperInfo">
+        <parm key="id" value ="144"/>
+        <parm key="supplierId" value ="12"/>
+        <parm key="supplierName" value ="梅州市印象食品有限公司"/>
+    </test>
+</data>

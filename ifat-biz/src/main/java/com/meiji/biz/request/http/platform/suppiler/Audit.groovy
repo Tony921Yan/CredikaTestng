@@ -1,12 +1,11 @@
 package com.meiji.biz.request.http.platform.suppiler
-
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 class Audit extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/audit"
-        super.params = ["auditMessage","id","status"]
+        super.api="/SupplierManage/audit"
+        super.params = ["auditMessage","id","status","nickname","username"]
     }
 
     Audit invoke(TestContext testContext) {

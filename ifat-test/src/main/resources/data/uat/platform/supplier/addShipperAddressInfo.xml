@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "AddShipperAddressInfo">
-        <parm key="supplierId" value ="319"/>
+    <test name = "addShipperAddressInfo">
+        <parm key="supplierId" value ="12"/>
         <parm key="shipperAddress" value ="广东省深圳市罗湖区"/>
         <parm key="shipperAddressDetail" value ="幸福华府A栋"/>
         <parm key="shipperName" value ="闫亮"/>
-        <parm key="shipperPhone" value ="15220252340"/>
-        <parm key="supplierCode" value ="sup12202108068952"/>
+        <parm key="shipperPhone" value ="15254252340"/>
+        <parm key="supplierCode" value ="sup12202103294274"/>
     </test>
 </data>

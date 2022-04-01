@@ -1,31 +1,17 @@
 package com.meiji.biz.request.http.platform.suppiler
-
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 class AddAdministrator extends PlatformPost{
     {
-        super.api="SupplierManage/addSupplier"
-        super.params = ["legalPersonName",
-                        "legalPersonPhone",
-                        "name",
-                        "contacts",
-                        "phone",
-                        "email",
-                        "address",
-                        "addressDetail",
-                        "contractType",
-                        "supervisorId",
-                        "contactsAddress",
-                        "contactsAddressDetail",
-                        "contactsName",
-                        "contactsPhone",
-                        "shipperPhone",
-                        "shipperName",
-                        "supplierType",
-                        "shipperAddress",
-                        "shipperAddressDetail",
-                        "supplierLevel"]
+        super.api="SupplierManage/addAdministrator"
+        super.params = ["supplierId",
+                        "supplierCode",
+                        "contactType",
+                        "contactName",
+                        "mobilePhone",
+                        "contactIdCardNumber",
+                        "contactEmail"]
     }
 
     AddAdministrator invoke(TestContext testContext) {

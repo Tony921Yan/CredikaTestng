@@ -1,14 +1,12 @@
 package com.meiji.biz.request.http.platform.suppiler
-
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 class AddSubject extends PlatformPost{
     {
-        super.api="/platform/supplierMgr/addSubject"
-        super.params = ["supplierId","supplierCode","cardType","merchantShortname","businessLicenseCopy","businessLicenseNumber",
-        "merchantName","companyAddress","legalPerson","organizationCopy","organizationNumber","organizationTime","createBy",
-        "updateBy","gmtCreate","gmtModified"]
+        super.api="/SupplierManage/addSubject"
+        super.params = ["supplierId","supplierCode","merchantShortname",
+        "merchantName","legalPerson","organizationType"]
     }
 
     AddSubject invoke(TestContext testContext) {

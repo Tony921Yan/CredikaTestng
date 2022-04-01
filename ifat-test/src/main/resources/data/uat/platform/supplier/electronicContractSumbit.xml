@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "electronicContractSumbit">
-        <parm key="contractId" value ="119"/>
+        <parm key="contractId" value ="131"/>
     </test>
 </data>

@@ -10,6 +10,7 @@ class AddAdministratorTest extends BaseTest {
     @Test(description = "添加管理员信息 addAdministrator" ,groups = ["prod","uat"],testName = "addAdministrator",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void addAdministrator(TestContext testContext){
+        testContext.put("supplierId",499)
         addAdministrator.invoke(testContext).baseAssert(testContext)
     }
 }

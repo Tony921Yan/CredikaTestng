@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "addAdministrator"> <!--表supplier_administrator_info-->
-        <parm key="legalPersonName" value ="罗法人"/> <!--表meiji_supplier-->
-        <parm key="legalPersonPhone" value ="罗法人"/>
-        <parm key="name" value ="测试供应商1130"/>
-        <parm key="contacts" value ="吴红红"/>
-        <parm key="phone" value ="15220253456"/>
-        <parm key="email" value ="18800000000@qq.com"/>
-        <parm key="address" value ="北京市东城区"/>
-        <parm key="addressDetail" value ="华润城华润置地26EF"/>
-        <parm key="contractType" value ="1"/>
-        <parm key="supervisorId" value ="1"/>
-        <parm key="contactsAddress" value ="北京市东城区"/>
-        <parm key="contactsAddressDetail" value ="测试发货地址"/>
-        <parm key="contactsName" value ="陈碧缘"/>
-        <parm key="contactsPhone" value ="13245677654"/>
-        <parm key="shipperPhone" value ="13245322340"/>
-        <parm key="shipperName" value ="罗发货"/>
-        <parm key="supplierType" value ="[1]"/>
-        <parm key="shipperAddress" value ="北京市东城区"/>
-        <parm key="shipperAddressDetail" value ="测试发货地址"/>
-        <parm key="supplierLevel" value ="1"/>
+        <parm key="supplierId" value ="499"/> <!--表meiji_supplier-->
+        <parm key="supplierCode" value ="sup12202203290437"/>
+        <parm key="contactType" value ="65"/>
+        <parm key="contactName" value ="马恩多"/>
+        <parm key="mobilePhone" value ="15220252341"/>
+        <parm key="contactIdCardNumber" value ="432625197003220011"/>
+        <parm key="contactEmail" value ="15220252346@163.com"/>
     </test>
 
 </data>

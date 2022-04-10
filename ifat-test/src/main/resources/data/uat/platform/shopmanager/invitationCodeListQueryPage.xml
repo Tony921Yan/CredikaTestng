@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "invitationCodeListQueryPage">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="code" value =''/>
+        <parm key="validDate" value ='["2022-03-01","2022-04-04"]'/>
+        <parm key="usedShopDealerPhone" value =""/>
+        <parm key="shopDealerPhone" value =""/>
+    </test>
+</data>

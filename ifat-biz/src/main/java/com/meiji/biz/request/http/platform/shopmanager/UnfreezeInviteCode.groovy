@@ -3,24 +3,25 @@ package com.meiji.biz.request.http.platform.shopmanager
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class FindShopDetail extends PlatformPost {
+class UnfreezeInviteCode extends PlatformPost {
     {
-        super.api = "ShopManage/findShopDetail"
+        super.api = "/invitationCodeList/unfreezeInviteCode"
         super.params =  [ "id"]
     }
 
-    FindShopDetail invoke(TestContext testContext) {
+    UnfreezeInviteCode invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    FindShopDetail preInvoke(TestContext testContext){
+    UnfreezeInviteCode preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    FindShopDetail baseAssert(TestContext testContext){
+    UnfreezeInviteCode baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }
+
 }

@@ -1,7 +1,6 @@
 package com.meiji.test.http.platform.other
 
 import com.meiji.biz.request.http.platform.other.CustomerServiceManageSearchByCondition
-import com.meiji.biz.request.http.platform.other.FindDealerPage
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

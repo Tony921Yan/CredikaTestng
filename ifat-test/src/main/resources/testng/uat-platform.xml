@@ -40,6 +40,13 @@
             <class name="com.meiji.test.http.platform.channel.UpdateChannelTest"/>
             <class name="com.meiji.test.http.platform.channel.UpdateColumnTest"/>
 
+            <class name="com.meiji.test.http.platform.cps.CostPerSalesListChangeCpsGoodsCategoryTest"/>
+            <class name="com.meiji.test.http.platform.cps.CostPerSalesListGetCpsGoodsTest"/>
+            <class name="com.meiji.test.http.platform.cps.CostPerSalesListGetCurrentCategoryGoodsTest"/>
+            <class name="com.meiji.test.http.platform.cps.CostPerSalesListGetSelectedGoodsTest"/>
+            <class name="com.meiji.test.http.platform.cps.CostPerSalesListRemoveCpsGoodsTest"/>
+            <class name="com.meiji.test.http.platform.cps.CostPerSalesListSaveCpsGoodsTest"/>
+
             <class name="com.meiji.test.http.platform.decorate.GetDecorateTemplateDetailTest"/>
             <class name="com.meiji.test.http.platform.decorate.GetTemplateByPageTest"/>
 
@@ -47,7 +54,7 @@
 <!--            <class name="com.meiji.test.http.platform.finance.AccountAssetPageQueryTest"/>-->
 <!--            <class name="com.meiji.test.http.platform.finance.FundFlowDetaifundFlowRecordExportlQueryTest"/>-->  <!--导出问题-->
             <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
-            <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>
+<!--            <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>-->
             <class name="com.meiji.test.http.platform.finance.GetCardDetailTest"/>
             <class name="com.meiji.test.http.platform.finance.GetChannelCostListTest"/>
             <class name="com.meiji.test.http.platform.finance.GetChannelListTest"/>
@@ -103,7 +110,29 @@
             <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.StockDecrByTest"/>
-            <class name="com.meiji.test.http.platform.raffleActivity.StockIncrByTest"/>
+<!--            <class name="com.meiji.test.http.platform.raffleActivity.StockIncrByTest"/>-->
+
+            <class name="com.meiji.test.http.platform.shopManager.AddInviteCodeApplyTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.DeleteInviteCodeTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.FindDealerPageTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.FindInviteCodePageByShopIdTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.FindInviteCodePageTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.FindShopDetailTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.FindShopPageTest"/>
+<!--            <class name="com.meiji.test.http.platform.shopManager.FrozenInviteCodeTest"/>--> <!--待确定接口是否弃用-->
+            <class name="com.meiji.test.http.platform.shopManager.InvitationCodeListQueryPageTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.InvitationCodeListTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.InvitationListQueryPageTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.InvitationListTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.MerchantManageTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.ShopManageTest"/>
+<!--            <class name="com.meiji.test.http.platform.shopManager.UnfreezeInviteCodeTest"/>--> <!--待确定接口是否弃用-->
+<!--            <class name="com.meiji.test.http.platform.shopManager.UpdateBankCardInfoTest"/>--> <!--异常接口-->
+<!--            <class name="com.meiji.test.http.platform.shopManager.UpdateShopAuditStateTest"/> --> <!--待确定接口是否弃用-->
+<!--            <class name="com.meiji.test.http.platform.shopManager.UpdateShopCompanyInfoTest"/>--> <!--待确定接口是否弃用-->
+<!--            <class name="com.meiji.test.http.platform.shopManager.UpdateShopIdentityInfoTest"/>--> <!--待确定接口是否弃用-->
+            <class name="com.meiji.test.http.platform.shopManager.UpdateShopInfoTest"/>
+
 
 <!--            <class name = "com.meiji.test.http.platform.other.BatchUpdateConfigTest"/>-->
             <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
@@ -119,14 +148,14 @@
             <class name="com.meiji.test.http.platform.other.GetListMaterialsTest"/>
             <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterByPageTest"/>
             <class name="com.meiji.test.http.platform.supplier.GetSupplierByPageTest"/>
-            <class name="com.meiji.test.http.platform.other.InvitationListTest"/>
-            <class name="com.meiji.test.http.platform.other.InvitationCodeListTest"/>
-            <class name="com.meiji.test.http.platform.other.MerchantManageTest"/>
-            <class name="com.meiji.test.http.platform.other.ShopManageTest"/>
-            <class name="com.meiji.test.http.platform.other.GiftCardManageTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.InvitationListTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.InvitationCodeListTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.MerchantManageTest"/>
+            <class name="com.meiji.test.http.platform.shopManager.ShopManageTest"/>
+            <class name="com.meiji.test.http.platform.marketingManagement.GiftCardManageTest"/>
             <class name="com.meiji.test.http.platform.other.GoodsSubjectTest"/>
             <class name="com.meiji.test.http.platform.other.SelectionCategoryTest"/>
-            <class name="com.meiji.test.http.platform.other.ActiveManageTest"/>
+            <class name="com.meiji.test.http.platform.marketingManagement.ActiveManageTest"/>
             <class name="com.meiji.test.http.platform.other.StockManageTest"/>
             <class name="com.meiji.test.http.platform.other.GoodsDetailManageTest"/>
             <class name="com.meiji.test.http.platform.other.StoreWhiteTest"/>
@@ -165,7 +194,7 @@
             <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
-            <class name="com.meiji.test.http.platform.raffleActivity.StockIncrByTest"/>
+<!--            <class name="com.meiji.test.http.platform.raffleActivity.StockIncrByTest"/>-->
             <class name="com.meiji.test.http.platform.raffleActivity.StockDecrByTest"/>
             <class name="com.meiji.test.http.platform.stockManger.AuditAllotBillTest"/>
             <class name="com.meiji.test.http.platform.stockManger.CancelAllotBillTest"/>
@@ -200,7 +229,7 @@
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderEventLogTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderLogisticsInfoTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderRemarkTest"/>
+<!--            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderRemarkTest"/>-->
             <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>
 
             <class name="com.meiji.test.http.platform.couponManage.GetRelationshipByCouponIdTest"/>
@@ -214,28 +243,8 @@
 
             <class name="com.meiji.test.http.platform.activeMainManage.DetailTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.ListTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.AdditionalBondsTest"/>
+<!--            <class name="com.meiji.test.http.platform.activeMainManage.AdditionalBondsTest"/>-->
 
-
-
-        </classes>
-    </test>
-
-    <test name="品牌详情 brandDetail">
-        <classes>
-            <class name = "com.meiji.test.http.platform.brand.BrandDetailTest"/>
-        </classes>
-    </test>
-
-    <test name="更新商品属性信息 updateGoodProperty">
-        <classes>
-            <class name = "com.meiji.test.http.platform.brand.UpdateGoodPropertyTest"/>
-        </classes>
-    </test>
-
-    <test name="查询标签列表 pageLabel">
-        <classes>
-            <class name="com.meiji.test.http.platform.label.PageLabelTest"/>
         </classes>
     </test>
 

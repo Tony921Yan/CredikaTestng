@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateShopInfo">
+        <parm key="id" value ="1405981112139808"/>
+        <parm key="shopName" value ="美又美时装城👧"/>
+        <parm key="brief" value ="美又美时装城介绍123"/>
+        <parm key="shopIcon" value ="https://static.meiji8888.com/mj-shop/upload/1617108740886.jpg"/>
+    </test>
+</data>

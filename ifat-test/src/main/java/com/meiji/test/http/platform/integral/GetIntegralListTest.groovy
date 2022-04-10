@@ -11,7 +11,7 @@ class GetIntegralListTest extends BaseTest {
     @Test(description = "获取积分数据 getIntegralList" ,groups = ["prod","uat"],testName = "getIntegralList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void addGoods(TestContext testContext){
-        getIntegralList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getIntegralList.invoke(testContext).baseAssert(testContext)
 
     }
 }

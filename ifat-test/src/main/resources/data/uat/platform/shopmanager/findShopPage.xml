@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "findShopPage">
-        <parm key="auditState" value ="20"/>
+        <parm key="auditState" value =""/>
         <parm key="createTimeEnd" value =""/>
         <parm key="createTimeStart" value =""/>
         <parm key="page" value ="1"/>
-        <parm key="rows" value ="10"/>
-        <parm key="shopCode" value ="shop112103303143"/>
+        <parm key="rows" value ="20"/>
+        <parm key="shopCode" value =""/>
         <parm key="shopName" value =""/>
-        <parm key="shopType" value ="1"/>
+        <parm key="shopType" value =""/>
     </test>
 </data>

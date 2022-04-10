@@ -3,24 +3,25 @@ package com.meiji.biz.request.http.platform.shopmanager
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class FindShopDetail extends PlatformPost {
+class DeleteInviteCode extends PlatformPost {
     {
-        super.api = "ShopManage/findShopDetail"
+        super.api = "/invitationCodeList/deleteInviteCode"
         super.params =  [ "id"]
     }
 
-    FindShopDetail invoke(TestContext testContext) {
+    DeleteInviteCode invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    FindShopDetail preInvoke(TestContext testContext){
+    DeleteInviteCode preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    FindShopDetail baseAssert(TestContext testContext){
+    DeleteInviteCode baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }
+
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "pageOrderIssue-status1">
+        <parm key="addition" value ="[]"/>
+        <parm key="id" value ="11"/>
+        <parm key="resultRemark" value ="TEST"/>
+        <parm key="status" value ="2"/>
+    </test>
+
+    <test name="pageOrderIssue-status2"/>
+        <parm key="addition" value="[]"/>
+        <parm key="id" value="11"/>
+        <parm key="resultRemark" value="TEST"/>
+        <parm key="status" value="1"/>
+</data>

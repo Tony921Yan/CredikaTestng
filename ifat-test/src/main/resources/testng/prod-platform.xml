@@ -81,7 +81,7 @@
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderByPageTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderAfterSaleTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderCountTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>
+<!--           <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
 
         </classes>
     </test>

@@ -1,7 +1,6 @@
-package com.meiji.test.http.platform.shopmanager
+package com.meiji.test.http.platform.shopManager
 
 
-import com.meiji.biz.request.http.platform.shopmanager.UpdateShopCompanyInfo
 import com.meiji.biz.request.http.platform.shopmanager.UpdateShopIdentityInfo
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

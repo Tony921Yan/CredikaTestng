@@ -1,4 +1,4 @@
-package com.meiji.test.http.platform.shopmanager
+package com.meiji.test.http.platform.shopManager
 
 
 import com.meiji.biz.request.http.platform.shopmanager.UpdateShopAuditState

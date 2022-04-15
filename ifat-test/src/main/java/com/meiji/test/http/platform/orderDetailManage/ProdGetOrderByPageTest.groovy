@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
-class ProdGetOrderByPageTest extends BaseTest {
+class ProdGetOrerByPageTest extends BaseTest {
     GetOrderByPage getOrderByPage = new GetOrderByPage()
     @Test(description = "获取订单数据 getOrderByPage" ,groups = ["prod","uat"],testName = "getOrderByPage-all",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

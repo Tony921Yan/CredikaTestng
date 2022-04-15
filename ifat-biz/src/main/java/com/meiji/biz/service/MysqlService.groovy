@@ -91,7 +91,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static List searchRaffledRecord(){
-        return meiji_active.rows("SELECT * FROM raffle_accept_record ORDER BY gmt_create ASC")
+        return meiji_active.rows("SELECT * FROM raffle_accept_record ORDER BY gmt_create desc")
     }
 
     static List itemDetail(String id){

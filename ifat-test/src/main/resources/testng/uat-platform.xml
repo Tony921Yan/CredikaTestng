@@ -228,9 +228,9 @@
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderDetailTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderEventLogTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderLogisticsInfoTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>
+<!--            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
 <!--            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderRemarkTest"/>-->
-            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>
+<!--            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
 
             <class name="com.meiji.test.http.platform.couponManage.GetRelationshipByCouponIdTest"/>
             <class name="com.meiji.test.http.platform.couponManage.DelTest"/>
@@ -243,7 +243,12 @@
 
             <class name="com.meiji.test.http.platform.activeMainManage.DetailTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.ListTest"/>
-<!--            <class name="com.meiji.test.http.platform.activeMainManage.AdditionalBondsTest"/>-->
+            <class name="com.meiji.test.http.platform.activeMainManage.AdditionalBondsTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageAddTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageOperateTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManagePublishActivityTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageUpdateTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.SearchBoughtRecordsTest"/>
 
         </classes>
     </test>

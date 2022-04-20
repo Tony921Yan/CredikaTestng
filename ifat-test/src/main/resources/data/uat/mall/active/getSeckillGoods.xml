@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getSeckillGoods">
+        <parm key = "activeMainId" value = "1475515235958847"/>
+        <parm key = "sessionCode" value = "1"/>
+        <parm key = "subTimeId" value = "1475515271610431"/>
+        <parm key = "page" value = "1"/>
+        <parm key = "rows" value = "10"/>
+    </test>
+
+    <test name = "getSeckillGoods1">
+        <parm key = "activeMainId" value = "1475515235958847"/>
+        <parm key = "sessionCode" value = "1"/>
+        <parm key = "subTimeId" value = "1475515271610431"/>
+        <parm key = "page" value = "2"/>
+        <parm key = "rows" value = "10"/>
+    </test>
+</data>

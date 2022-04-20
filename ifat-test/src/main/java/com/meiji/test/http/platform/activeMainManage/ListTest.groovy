@@ -44,5 +44,9 @@ class ListTest extends BaseTest {
         list.invoke(testContext).baseAssert(testContext)
     }
 
-
+    @Test(description = "活动管理-查询秒杀活动列表" ,groups = ["prod","uat"],testName = "activeMainManage.list5",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void list5(TestContext testContext){
+        list.invoke(testContext).baseAssert(testContext)
+    }
 }

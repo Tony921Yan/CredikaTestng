@@ -20,7 +20,7 @@ class AdditionalBonds extends PlatformPost{
     }
 
     AdditionalBonds baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        assert testContext.getResponse().code == 10
         return this
     }
 

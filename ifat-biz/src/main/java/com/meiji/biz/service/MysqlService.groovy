@@ -346,6 +346,24 @@ class MysqlService extends MysqlAPI {
     static boolean deleteChannelColumn(String name){
         return meiji_goods.execute("delete from meiji_goods.channel_column where name = $name")
     }
+
+    static def getNewestID(){
+        Map map= meiji_active.firstRow("SELECT id from meiji_active.active_main where type = 11 and status = 1 or status=2 and create_by ='ifat' ORDER BY gmt_create")
+        return map.id
+    }
+
+    static def setNewActiveStatus(String status){
+        if(status =="2"){
+            meiji_active.execute("UPDATE meiji_active.active_main set status = 1 where type = 11 and create_by ='ifat' ORDER BY gmt_create")
+        }else if(status == "3"){
+            meiji_active.execute("UPDATE meiji_active.active_main set status = 2 where type = 11 and create_by ='ifat' ORDER BY gmt_create")
+        }else if(status == "4"){
+        meiji_active.execute("UPDATE meiji_active.active_main set status = 3 where type = 11 and create_by ='ifat' ORDER BY gmt_create")
+    }
+        Map map =  meiji_active.firstRow("SELECT id from meiji_active.active_main where type = 11 and create_by ='ifat' ORDER BY gmt_create")
+        return map.id
+    }
+
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

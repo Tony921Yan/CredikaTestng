@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "activeMainManageAdd">
+        <parm key="expiryEnd" value ="2024-01-03 23:59:59"/>
+        <parm key="expiryStart" value ="2023-12-01 00:00:00"/>
+        <parm key="name" value ="勿删，自动化测试"/>
+        <parm key="preTime" value ="0"/>
+        <parm key="remark" value =""/>
+        <parm key="secKillActivity" value ='{"spus":[{"gmtModified":"2022-04-13 14:42:53","spuCode":"200sup93495","spuId":1423661133201440,"spuLimitCount":0,"spuName":"Little Freddie小皮欧洲原装进口有机婴幼儿米粉160g*3盒","spuSort":0,"pics":[{"picUrl":"https://img.gzzhitu.com/front/mj-ecmiddle-sys/upload/2faed6f6d9aec1164606edc25c38e81c.jpg"}],"skus":[{"skuApplyCount":1,"skuCode":"200su-0093495","skuId":1423661133201505,"skuPrice":14400},{"skuApplyCount":null,"skuCode":"200su-0193495","skuId":1423661133201569,"skuPrice":14400},{"skuApplyCount":1,"skuCode":"200su-0293495","skuId":1423661133201633,"skuPrice":14400},{"skuApplyCount":1,"skuCode":"200su-0393495","skuId":1423661133201697,"skuPrice":14400},{"skuApplyCount":1,"skuCode":"200su-0493495","skuId":1423661133201729,"skuPrice":14400},{"skuApplyCount":1,"skuCode":"200su-0593495","skuId":1423661133201793,"skuPrice":14400}]},{"gmtModified":"2022-04-13 10:33:10","spuCode":"200sup73830","spuId":1470827168006207,"spuLimitCount":0,"spuName":"新枕头商品","spuSort":0,"pics":[{"picUrl":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/5ce6b3efbc334187e068f53da21f2a01.gif"}],"skus":[{"skuApplyCount":1,"skuCode":"200su-0073830","skuId":1470827168006463,"skuPrice":90}]},{"gmtModified":"2022-04-13 10:00:55","spuCode":"200sup54796","spuId":1470406034718752,"spuLimitCount":0,"spuName":"乐事 薯片 美国经典原味 香浓纯正 够薄够脆 70g*12包阿斯顿发阿的说法是大沙发上的发斯蒂芬打是","spuSort":0,"pics":[{"picUrl":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/6fdda4476e64ae176681826134f956c3.jpg"}],"skus":[{"skuApplyCount":1,"skuCode":"200su-0054796","skuId":1470406034718848,"skuPrice":90}]},{"gmtModified":"2022-04-10 16:50:08","spuCode":"200sup48467","spuId":1470108195094560,"spuLimitCount":0,"spuName":"自动化测试商品","spuSort":0,"pics":[{"picUrl":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/d2c50d68fec2e9c46b93b12a3c9bc91e.jpg"}],"skus":[{"skuApplyCount":1,"skuCode":"200su-0048467","skuId":1470108197191776,"skuPrice":90}]},{"gmtModified":"2022-04-07 15:42:50","spuCode":"200sup64480","spuId":1469871137226784,"spuLimitCount":0,"spuName":"【可心柔同厂】艾儿 保湿纸面巾 40抽/包*10包*2提（共20包）打发发送到发送到发打法是的","spuSort":0,"pics":[{"picUrl":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/5bfc743d6b65e601bc5e33e377c6dd25.jpg"}],"skus":[{"skuApplyCount":1,"skuCode":"200su-0064480","skuId":1469871137226880,"skuPrice":8600}]}],"subtimes":[{"beginTime":"23:35","endTime":"23:40","preBeginMinutes":0,"spus":[{"gmtModified":"2022-04-13 10:33:10","spuCode":"200sup73830","spuId":1470827168006207,"spuLimitCount":0,"spuName":"新枕头商品","spuSort":0,"pics":[{"picUrl":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/5ce6b3efbc334187e068f53da21f2a01.gif"}],"skus":[{"skuApplyCount":1,"skuCode":"200su-0073830","skuId":1470827168006463,"skuPrice":90}]}]}]}'/>
+        <parm key="status" value ="1"/>
+        <parm key="type" value ="11"/>
+
+    </test>
+
+</data>

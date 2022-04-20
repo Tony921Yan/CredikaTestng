@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-
     <test name = "activeMainManage.detail">
         <parm key="id" value ="1470834505941055"/>
+    </test>
+
+    <test name = "activeMainManage.detail1">
+        <parm key="id" value ="1475515235958847"/>
     </test>
 
 </data>

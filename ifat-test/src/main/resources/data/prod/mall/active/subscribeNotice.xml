@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "subscribeNotice">
+        <parm key = "beginTime" value = "2022-04-20 10:00:00"/>
+        <parm key = "shopId" value = "1405981112139808"/>
+        <parm key = "spuId" value = "1473536346554400"/>
+        <parm key = "subTimeId" value = "1475907665526817"/>
+    </test>
+</data>

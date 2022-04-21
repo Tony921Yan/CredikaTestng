@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class SearchBoughtRecords extends PlatformPost{
     {
         super.api = "ActiveMainManage/searchBoughtRecords"
-       super.params = ["page","rows"]
+       super.params = ["page","rows","activityId","beginTime","endTime","orderCode","skuCode","userId","userNickname","userPhoneNumber"]
     }
 
     SearchBoughtRecords invoke(TestContext testContext) {

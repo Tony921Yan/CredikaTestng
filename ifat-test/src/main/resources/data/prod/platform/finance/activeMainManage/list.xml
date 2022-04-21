@@ -27,4 +27,11 @@
         <parm key="expiryEnd" value ="2022-03-30 23:59:59"/>
     </test>
 
+    <test name = "activeMainManage.list5">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="type" value ="11"/>
+        <parm key="typeList" value ="[11]"/>
+    </test>
+
 </data>

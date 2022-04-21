@@ -16,7 +16,7 @@ import org.testng.annotations.Test
 class GetSeckillTopGoodsTest extends BaseTest{
     GetSeckillTopGoods getSeckillTopGoods = new GetSeckillTopGoods()
     @Test(description = "首页三个秒杀商品 getSeckillTopGoods" ,groups = ["prod","uat"],dataProvider = "dataProvider",dataProviderClass = TestData.class)
-    @Data(dataFile = "mall/home/getSeckillTopGoods.xml",testName = "getSeckillTopGoods",commonFile = "common.xml")
+//    @Data(dataFile = "mall/active/getSeckillTopGoods.xml",testName = "getSeckillTopGoods",commonFile = "common.xml")
     public void getSeckillTopGoods(TestContext testContext){
         getSeckillTopGoods.invoke(testContext).baseAssert(testContext)
     }

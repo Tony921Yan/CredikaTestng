@@ -2,6 +2,7 @@
 <suite name = "user"  verbose="4">
     <test name="C端 测试环境自动化脚本">
         <classes>
+            <class name="com.meiji.test.http.mall.active.GetCurrentTimeTest"/>
             <class name="com.meiji.test.http.mall.active.GetSeckillGoodsTest"/>
             <class name="com.meiji.test.http.mall.active.GetSeckillTopGoodsTest"/>
             <class name="com.meiji.test.http.mall.active.GetSeckillActiveListTest"/>

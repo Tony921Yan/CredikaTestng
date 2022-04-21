@@ -67,6 +67,7 @@
 
             <class name="com.meiji.test.http.platform.activeMainManage.ListTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.DetailTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.SearchBoughtRecordsTest"/>
 
             <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>

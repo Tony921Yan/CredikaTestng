@@ -5,4 +5,8 @@
         <parm key="id" value ="1471030052782112"/>
     </test>
 
+    <test name = "activeMainManage.detail1">
+        <parm key="id" value ="1476087164960800"/>
+    </test>
+
 </data>

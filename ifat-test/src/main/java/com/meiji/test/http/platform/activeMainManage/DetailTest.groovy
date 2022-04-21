@@ -14,12 +14,12 @@ class DetailTest extends BaseTest {
     public void detail(TestContext testContext){
         detail.invoke(testContext).baseAssert(testContext)
     }
-//
-//    @Test(description = "活动管理-秒杀活动-活动详情 detail" ,groups = ["prod","uat"],testName = "activeMainManage.detail1",
-//            dataProvider = "dataProvider",dataProviderClass = TestData.class)
-//    public void detail1(TestContext testContext){
-//        testContext.put("id",MysqlService.getNewestID())
-//        detail.invoke(testContext).baseAssert(testContext)
-//    }
+
+    @Test(description = "活动管理-秒杀活动-活动详情 detail" ,groups = ["prod","uat"],testName = "activeMainManage.detail1",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void detail1(TestContext testContext){
+        testContext.put("id",MysqlService.getNewestID())
+        detail.invoke(testContext).baseAssert(testContext)
+    }
 
 }

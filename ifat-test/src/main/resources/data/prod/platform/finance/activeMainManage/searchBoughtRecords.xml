@@ -14,11 +14,13 @@
     <test name = "searchBoughtRecords2">
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
-        <parm key="activityId" value ="1474942751211583"/>
+        <parm key="activityId" value ="1475884544426016"/>
         <parm key="beginTime" value ="2022-04-01 00:00:00"/>
         <parm key="endTime" value ="2022-04-21 23:59:59"/>
-        <parm key="userId" value ="1429851454046240"/>
-        <parm key="userNickname" value ="闫亮"/>
-        <parm key="userPhoneNumber" value ="15220252340"/>
+        <parm key="orderCode" value ="O2022042122480396694"/>
+        <parm key="skuCode" value ="200su-0051177"/>
+        <parm key="userId" value ="1476117540110369"/>
+        <parm key="userNickname" value ="云云"/>
+        <parm key="userPhoneNumber" value ="13755799745"/>
     </test>
 </data>

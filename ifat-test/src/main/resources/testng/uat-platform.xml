@@ -231,7 +231,6 @@
 <!--            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
 <!--            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderRemarkTest"/>-->
 <!--            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
-
             <class name="com.meiji.test.http.platform.couponManage.GetRelationshipByCouponIdTest"/>
             <class name="com.meiji.test.http.platform.couponManage.DelTest"/>
             <class name="com.meiji.test.http.platform.couponManage.AddCouponNumTest"/>
@@ -240,7 +239,6 @@
             <class name="com.meiji.test.http.platform.couponManage.CouponInstanceListByPageTest"/>
             <class name="com.meiji.test.http.platform.couponManage.GetGrantCouponActiveByPageTest"/>
             <class name="com.meiji.test.http.platform.couponManage.ListTest"/>
-
             <class name="com.meiji.test.http.platform.activeMainManage.DetailTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.ListTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.AdditionalBondsTest"/>
@@ -249,6 +247,9 @@
             <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManagePublishActivityTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageUpdateTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.SearchBoughtRecordsTest"/>
+            <class name="com.meiji.test.http.platform.workOrder.PageOrderIssueTest"/>
+            <class name="com.meiji.test.http.platform.workOrder.UpdateOrderIssueTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateDeliverOrderGoodsTest"/>
 
         </classes>
     </test>

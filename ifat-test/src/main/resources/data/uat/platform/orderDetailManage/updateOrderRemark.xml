@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateOrderRemark-p">
+        <parm key="orderCode" value ="O2022033116070572590"/>
+        <parm key="remark" value ="接口测试自动化测试"/>
+    </test>
+</data>

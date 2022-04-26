@@ -8,4 +8,21 @@
         <parm key="id" value ="1475515235958847"/>
     </test>
 
+    <test name = "activeMainManage.detail2">
+        <parm key="id" value ="1476965456412735"/>
+    </test>
+
+    <test name = "activeMainManage.detail3">
+        <parm key="id" value ="1474762918330431"/>
+    </test>
+
+    <test name = "activeMainManage.detail4">
+        <parm key="id" value ="1476972750307391"/>
+    </test>
+
+    <test name = "activeMainManage.detail5">
+        <parm key="id" value ="1476396496977983"/>
+    </test>
+
+
 </data>

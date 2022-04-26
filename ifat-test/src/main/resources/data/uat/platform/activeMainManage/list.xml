@@ -4,7 +4,7 @@
     <test name = "activeMainManage.list">
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
-        <parm key="type" value ="9"/>
+        <parm key="typeList" value ='["7","8","9","10","11","12"]'/>
     </test>
 
 

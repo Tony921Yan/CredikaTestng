@@ -22,4 +22,28 @@ class DetailTest extends BaseTest {
         detail.invoke(testContext).baseAssert(testContext)
     }
 
+    @Test(description = "活动详情-粉丝专享 detail" ,groups = ["prod","uat"],testName = "activeMainManage.detail2",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void detail2(TestContext testContext){
+        detail.invoke(testContext).baseAssert(testContext)
+    }
+
+    @Test(description = "活动详情-店长拉新 detail" ,groups = ["prod","uat"],testName = "activeMainManage.detail3",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void detail3(TestContext testContext){
+        detail.invoke(testContext).baseAssert(testContext)
+    }
+
+    @Test(description = "活动详情-抽奖活动 detail" ,groups = ["prod","uat"],testName = "activeMainManage.detail4",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void detail4(TestContext testContext){
+        detail.invoke(testContext).baseAssert(testContext)
+    }
+
+    /*@Test(description = "活动详情-粉丝新人券 detail" ,groups = ["prod","uat"],testName = "activeMainManage.detail5",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void detail5(TestContext testContext){
+        detail.invoke(testContext).baseAssert(testContext)
+    }*/
+
 }

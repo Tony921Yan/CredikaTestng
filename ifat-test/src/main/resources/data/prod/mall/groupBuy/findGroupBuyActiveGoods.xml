@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
-    <test name = "findActiveGoods">
+    <test name = "findGroupBuyActiveGoods">
         <parm key="page" value ="1"/>
-        <parm key="rows" value ="100"/>
-
+        <parm key="rows" value ="8"/>
     </test>
 </data>

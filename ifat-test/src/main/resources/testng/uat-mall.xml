@@ -150,6 +150,7 @@
 <!--            <class name="com.meiji.test.http.mall.userInfo.RegisterTest"/>-->
             <class name="com.meiji.test.http.mall.userInfo.SearchByConditionTest"/>
             <class name="com.meiji.test.http.mall.userInfo.UpdateUserInfoTest"/>
+            <class name="com.meiji.test.http.mall.userInfo.FindUseridentityInfoTest"/>
 <!--            <class name="com.meiji.test.http.mall.userInfo.WxCheckTest"/>-->
 
             <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>
@@ -168,6 +169,10 @@
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponCountTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponByGoodsTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetActiveCouponTest"/>
+
+            <class name="com.meiji.test.http.mall.groupBuy.FindDefaultGroupBuyActiveGoodsTest"/>
+            <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/>
+            <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyActiveTest"/>
 
 
         </classes>

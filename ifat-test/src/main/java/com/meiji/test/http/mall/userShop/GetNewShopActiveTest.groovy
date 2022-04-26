@@ -14,8 +14,8 @@ import org.testng.annotations.Test
  */
 class GetNewShopActiveTest extends BaseTest{
     GetNewShopActive getNewShopActive = new GetNewShopActive()
-    @Test(description = "查询店长新人活动 getNewShopActive" ,groups = ["prod","uat"],testName = "getNewShopActive",
-            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+   @Test(description = "查询店长新人活动 getNewShopActive" ,groups = ["prod","uat"],testName = "getNewShopActive",
+                   dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getNewShopActive(TestContext testContext){
         getNewShopActive.invoke(testContext).baseAssert(testContext)
     }

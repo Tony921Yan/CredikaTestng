@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class List extends PlatformPost{
     {
         super.api = "activeMainManage/list"
-       super.params = ["type","page","rows","status","name","expiryEnd","expiryStart","id"]
+       super.params = ["type","page","rows","status","name","expiryEnd","expiryStart","id","typeList","statusList"]
     }
 
     List invoke(TestContext testContext) {

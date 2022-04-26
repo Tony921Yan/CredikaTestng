@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "updateCompensationConfig-p">
+        <parm key = "days"  value="7"  />
+        <parm key = "mainPics"  value='["https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/6dedbc2a3e6563e39db4ccd9daa53349.png"]' />
+        <parm key = "propDetailPics"  value='["https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/565a971ab0f16f58103d9902d563ea6b.png"]'  />
+        <parm key = "propPics"  value='["https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/bccca2d1cdd71cb6b75f45bb63ba666f.png"]'  />
+        <parm key = "rules"  value='["https://static.meiji8888.com/assets/c15ddfe66b6201a68648a2131af5a293.png","https://static.meiji8888.com/assets/21d642ab804298a326fbdda5d93cccd2.png","https://static.meiji8888.com/assets/29a222cf30b14faa8f2d980d49e03b30.png"]'  />
+        <parm key = "uploadRules"  value='["https://static.meiji8888.com/assets/ef8209b162c2dc3c72cdc71487472609.png","https://static.meiji8888.com/assets/f07da85fcfee08c2d746efaf7719af57.png","https://static.meiji8888.com/assets/bed34b79c0735740c6703370bf18a530.png","https://static.meiji8888.com/assets/9e1b74e9fa07a97e3b7b99c5b6d1b560.png","https://static.meiji8888.com/assets/9c4e0c2e894a470d5df4e5aa7a10b3fa.png","https://static.meiji8888.com/assets/5f006fe982bfe3a8d2b7c1beffa7a34c.png"]'  />
+    </test>
+
+</data>

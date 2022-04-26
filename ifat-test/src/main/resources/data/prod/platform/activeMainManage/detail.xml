@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "activeMainManage.detail">
+        <parm key="id" value ="1471030052782112"/>
+    </test>
+
+    <test name = "activeMainManage.detail1">
+        <parm key="id" value ="1476087164960800"/>
+    </test>
+
+    <test name = "activeMainManage.detail2">
+        <parm key="id" value ="1476627785580577"/>
+    </test>
+
+    <test name = "activeMainManage.detail3">
+        <parm key="id" value ="1469741285769248"/>
+    </test>
+
+    <test name = "activeMainManage.detail4">
+        <parm key="id" value ="1476436185579584"/>
+    </test>
+
+
+
+</data>

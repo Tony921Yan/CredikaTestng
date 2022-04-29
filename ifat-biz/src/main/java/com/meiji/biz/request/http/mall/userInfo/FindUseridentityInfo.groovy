@@ -21,7 +21,7 @@ class FindUseridentityInfo extends MallPost {
         return this
     }
 
-   /* FindUseridentityInfo specialAssert(TestContext testContext){
+    FindUseridentityInfo specialAssert(TestContext testContext){
         Map mysqlResult = MysqlService.findUserInfo(testContext.get("id")).get(0)
         println(mysqlResult)
         Map apiResult = testContext.getResponse().data
@@ -29,8 +29,7 @@ class FindUseridentityInfo extends MallPost {
         assert mysqlResult.is_wechat_work == apiResult.isUserWechatWork
         assert mysqlResult.is_add_wechat_user == apiResult.isAddWechatUser
         assert mysqlResult.is_new_fans == apiResult.isNewFans
-       // assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
         return this
-    }*/
-    //报错，暂时屏蔽
+    }
+
 }

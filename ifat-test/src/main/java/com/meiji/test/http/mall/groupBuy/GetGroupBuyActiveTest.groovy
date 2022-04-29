@@ -1,6 +1,5 @@
 package com.meiji.test.http.mall.groupBuy
 
-
 import com.meiji.biz.request.http.mall.groupBuy.GetGroupBuyActive
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

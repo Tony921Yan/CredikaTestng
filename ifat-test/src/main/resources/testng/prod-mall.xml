@@ -57,7 +57,7 @@
             <class name="com.meiji.test.http.mall.userInfo.CustomerListTest"/>
             <class name="com.meiji.test.http.mall.userInfo.GetCategoryListAndQrCodeTest"/>
             <class name="com.meiji.test.http.mall.userInfo.SearchByConditionTest"/>
-  <!--          <class name="com.meiji.test.http.mall.userInfo.FindUseridentityInfoTest"/> --> <!--2.7.5新接口-->
+            <class name="com.meiji.test.http.mall.userInfo.FindUseridentityInfoTest"/>
             <class name="com.meiji.test.http.mall.gift.ListGiftsFromMeTest"/>
             <class name="com.meiji.test.http.mall.gift.ListGiftsToMeTest"/>
             <class name="com.meiji.test.http.mall.gift.GetGiftDetailToMeTest"/>
@@ -118,7 +118,7 @@
             <class name="com.meiji.test.http.mall.shopCart.GetCartCouponInfoListTest"/>
 
             <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyActiveTest"/>
-  <!--          <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/>-->
+           <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/>
             <class name="com.meiji.test.http.mall.groupBuy.FindDefaultGroupBuyActiveGoodsTest"/>
         </classes>
     </test>

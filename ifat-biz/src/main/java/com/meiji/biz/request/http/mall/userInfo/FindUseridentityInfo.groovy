@@ -2,7 +2,6 @@ package com.meiji.biz.request.http.mall.userInfo
 
 import com.meiji.biz.request.http.mall.MallPost
 import com.meiji.biz.service.MysqlService
-import com.meiji.biz.util.DateUtil
 import com.miyuan.ifat.support.test.TestContext
 
 class FindUseridentityInfo extends MallPost {
@@ -30,7 +29,7 @@ class FindUseridentityInfo extends MallPost {
         assert mysqlResult.is_wechat_work == apiResult.isUserWechatWork
         assert mysqlResult.is_add_wechat_user == apiResult.isAddWechatUser
         assert mysqlResult.is_new_fans == apiResult.isNewFans
-       // assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
         return this
     }
+
 }

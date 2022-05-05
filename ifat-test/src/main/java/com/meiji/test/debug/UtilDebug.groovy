@@ -1,7 +1,6 @@
 package com.meiji.test.debug
 
-import com.meiji.biz.util.MyHttpUtil
-import com.meiji.test.http.platform.supplier.ListFreightTemplateBySupplierIdTest
+
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
 import com.miyuan.ifat.support.util.DateUtil
@@ -9,8 +8,6 @@ import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
-
-import java.security.Provider
 
 class UtilDebug {
     @Test
@@ -45,7 +42,7 @@ class UtilDebug {
             println(JsonUtil.prettyJson(head))
             println("=============== req ========================================")
             println(JsonUtil.prettyJson(req))
-            def res = MyHttpUtil.post(url, head, req)
+            def res = HttpUtil.post(url, head, req)
             println("=============== res ========================================")
             println(JsonUtil.prettyJson(res.getResp()))
             assert  ["0","05000"].contains(res.getResp().code)

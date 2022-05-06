@@ -118,7 +118,7 @@
             <class name="com.meiji.test.http.mall.shopCart.GetCartCouponInfoListTest"/>
 
             <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyActiveTest"/>
-           <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/>
+  <!--         <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/> -->
             <class name="com.meiji.test.http.mall.groupBuy.FindDefaultGroupBuyActiveGoodsTest"/>
         </classes>
     </test>

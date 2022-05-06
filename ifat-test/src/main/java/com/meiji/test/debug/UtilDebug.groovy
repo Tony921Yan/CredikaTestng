@@ -25,7 +25,7 @@ class UtilDebug {
         //head.put("timestamp",testContext.get("timestamp"))
         //head.put("nonce",testContext.get("nonce"))
         head.put("Content-Type","application/json")
-       // head.put("grayReleaseTag","project1")
+        head.put("grayReleaseTag","test1")
         UUID uuid = UUID.randomUUID();
         head.put("isUserLogTracing",true)
         head.put("userLogTracingTag",uuid)

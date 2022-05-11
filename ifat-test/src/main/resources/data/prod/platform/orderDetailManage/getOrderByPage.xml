@@ -114,4 +114,10 @@
         <parm key="rows" value ="20"/>
     </test>
 
+    <test name = "GetOrderByPage-goodsName">
+        <parm key="condition" value ='{goodsName: "童子鸡"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
 </data>

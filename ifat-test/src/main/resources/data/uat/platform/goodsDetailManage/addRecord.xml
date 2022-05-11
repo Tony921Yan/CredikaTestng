@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addRecord-p">
+        <parm key="id" value ="1429125355012128"/>
+        <parm key="level" value ="自动化测试-新增评级"/>
+    </test>
+
+    <test name = "addRecord-p1">
+        <parm key="id" value ="1429125355012128"/>
+        <parm key="remark" value ="自动化测试-新增备注"/>
+    </test>
+
+    <test name = "addRecord-p2">
+        <parm key="id" value ="1429125355012128"/>
+        <parm key="level" value ="A级-自动化测试"/>
+        <parm key="remark" value ="备注-自动化测试"/>
+    </test>
+</data>

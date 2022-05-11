@@ -228,6 +228,7 @@
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderDetailTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderEventLogTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderLogisticsInfoTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.ListByParentCodeTest"/>
 <!--            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
 <!--            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderRemarkTest"/>-->
 <!--            <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
@@ -250,6 +251,11 @@
             <class name="com.meiji.test.http.platform.workOrder.PageOrderIssueTest"/>
             <class name="com.meiji.test.http.platform.workOrder.UpdateOrderIssueTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.UpdateDeliverOrderGoodsTest"/>
+
+            <class name="com.meiji.test.http.platform.goodsDetailMange.AddRecordTest"/>
+            <class name="com.meiji.test.http.platform.goodsDetailMange.GetGoodsCountTest"/>
+
+            <class name="com.meiji.test.http.platform.aftersalesDetailManage.UpdateAfterRemarkTest"/>
 
         </classes>
     </test>

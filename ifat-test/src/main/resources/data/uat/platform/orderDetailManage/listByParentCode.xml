@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "listByParentCode-p">
+        <parm key="parentCode" value ="O2022050915460145090"/>
+    </test>
+</data>

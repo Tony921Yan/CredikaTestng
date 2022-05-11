@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getGoodsCount-all">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+    </test>
+
+    <test name = "getGoodsCount-spuName">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="spuName" value ="童子鸡"/>
+    </test>
+
+    <test name = "getGoodsCount-goodsType">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="goodsType" value ="1"/>
+    </test>
+
+    <test name = "getGoodsCount-3">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="comparePrice" value ="3"/>
+    </test>
+</data>

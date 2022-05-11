@@ -82,7 +82,13 @@
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderByPageTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderAfterSaleTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderCountTest"/>
+            <class name="com.meiji.test.http.platform.orderDetailManage.ListByParentCodeTest"/>
 <!--           <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
+
+            <class name="com.meiji.test.http.platform.goodsDetailMange.GetGoodsCountTest"/>
+            <class name="com.meiji.test.http.platform.goodsDetailMange.AddRecordTest"/>
+
+            <class name="com.meiji.test.http.platform.aftersalesDetailManage.UpdateAfterRemarkTest"/>
 
         </classes>
     </test>

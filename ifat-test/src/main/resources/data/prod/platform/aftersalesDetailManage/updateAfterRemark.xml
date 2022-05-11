@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateAfterRemark-p">
+        <parm key="afterCode" value ="R2022022419410561831"/>
+        <parm key="remark" value ="自动化测试-售后备注"/>
+    </test>
+</data>

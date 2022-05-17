@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSGetGoodsByPage">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="supplierId" value ="12"/>
+        <parm key="status" value ="[0, 1, 2, 3, 4]"/>
+
+
+    </test>
+</data>

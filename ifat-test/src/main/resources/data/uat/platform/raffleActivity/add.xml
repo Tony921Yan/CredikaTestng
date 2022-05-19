@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "add">
+        <parm key="expiryEnd" value ="2023-06-30 22:11:17"/>
+        <parm key="expiryStart" value ="2022-04-01 00:00:00"/>
+        <parm key="name" value ="勿删自动化测试抽奖活动"/>
+        <parm key="preTime" value ="2"/>
+        <parm key="raffleActivity" value ='{
+        "activityIntro":"测试起来吧",
+        "userTypeLimit":1,
+        "raffleTimesLimit":0,
+        "raffleGoodsLimit":0,
+        "exclusiveRaffled":0,
+        "csQrcodeUrl":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/ad34af39a5b8af37ffd5f036bd0ae8f5.png",
+        "raffleDeadlineOffset":48,
+        "raffleItems":[
+            {
+                "itemName":"优惠券",
+                "winningCrowd":2,
+                "itemIcon":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/e46077871a9b48a7941a279c35d6a167.png",
+                "winningPictures":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/e46077871a9b48a7941a279c35d6a167.png",
+                "applyCount":20,
+                "itemType":1,
+                "couponInfo":{
+                    "id":1476212702576703,
+                    "name":"TONY优惠券",
+                    "status":2,
+                    "discountType":3,
+                    "discountRuleModels":[
+                        {
+                            "to":null,
+                            "sub":null,
+                            "discount":null,
+                            "maxSub":null,
+                            "cash":10
+                        }
+                    ],
+                    "expiryStart":"2000-01-01 00:00:00",
+                    "expiryEnd":"2050-01-01 00:00:00",
+                    "timeModel":{
+                        "expiryStart":null,
+                        "expiryEnd":null,
+                        "sameDay":30,
+                        "nextDay":null
+                    },
+                    "goodsScopeType":1,
+                    "total":100,
+                    "usableNum":61,
+                    "occupyNum":3,
+                    "receiveNum":34,
+                    "receiveRate":null,
+                    "usedNum":6,
+                    "effectiveUsedNum":6,
+                    "effectiveUsedRate":null,
+                    "discountMoney":60,
+                    "realDiscountMoney":60,
+                    "gmtModified":"2022-04-28 20:14:24"
+                },
+                "customId":"1651919776569",
+                "refId":1476212702576703,
+                "raffleUnit":0
+            },
+            {
+                "itemName":"积分",
+                "winningCrowd":5,
+                "raffleUnit":100,
+                "itemIcon":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/0cb8d1c721a5f599ff957fca3d780d35.png",
+                "winningPictures":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/0cb8d1c721a5f599ff957fca3d780d35.png",
+                "itemType":2,
+                "customId":"1651919820155"
+            },
+            {
+                "itemName":"商品",
+                "winningCrowd":1,
+                "itemIcon":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/0ccbf4908c12cfa4861848ceedc8b314.png",
+                "winningPictures":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/0ccbf4908c12cfa4861848ceedc8b314.png",
+                "applyCount1476249769738431":1,
+                "skuPrice1476249769738431":0.1,
+                "itemType":4,
+                "customId":"1651919854833",
+                "skuList":[
+                    {
+                        "skuCode":"200su-0056837",
+                        "skuId":1476249769738431,
+                        "spuCode":"200sup56837",
+                        "spuId":1476249769738303,
+                        "spuName":"优惠券回归测试商品（指定品牌+品类）",
+                        "num":4,
+                        "applyCount":1,
+                        "skuPrice":10
+                    }
+                ],
+                "raffleUnit":0
+            }
+        ],
+        "groupQrcodeUrl":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/ad34af39a5b8af37ffd5f036bd0ae8f5.png"
+    }'/>
+        <parm key="status" value ="1"/>
+        <parm key="type" value ="8"/>
+
+    </test>
+
+</data>

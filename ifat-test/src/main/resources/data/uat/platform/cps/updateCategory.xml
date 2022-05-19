@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateCategory">
+        <parm key="id" value ="1442024901312544"/>
+        <parm key="name" value ="Joe测试添加TEST"/>
+        <parm key="status" value ="2"/>
+        <parm key="remark" value ="Joe测试添加主推-text1"/>
+        <parm key="categoryType" value ="2"/>
+        <parm key="subtitle" value ="$CN10"/>
+    </test>
+</data>

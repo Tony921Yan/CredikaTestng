@@ -251,12 +251,14 @@
             <class name="com.meiji.test.http.platform.workOrder.PageOrderIssueTest"/>
             <class name="com.meiji.test.http.platform.workOrder.UpdateOrderIssueTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.UpdateDeliverOrderGoodsTest"/>
-
             <class name="com.meiji.test.http.platform.goodsDetailMange.AddRecordTest"/>
             <class name="com.meiji.test.http.platform.goodsDetailMange.GetGoodsCountTest"/>
-
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.UpdateAfterRemarkTest"/>
-
+            <class name="com.meiji.test.http.platform.raffleActivity.AddTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.GetSourceRaffleTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.OperateTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.SaveSourceRaffleTest"/>
+            <class name="com.meiji.test.http.platform.raffleActivity.UpdateTest"/>
         </classes>
     </test>
 

@@ -364,6 +364,30 @@ class MysqlService extends MysqlAPI {
         return map.id
     }
 
+    static def raffleActiveStatus(String status){
+        if (status == "2"){
+            meiji_active.execute("UPDATE meiji_active.active_main SET status = 1 WHERE type = 8 AND create_by ='ifat'")
+        }else if(status == "3"){
+            meiji_active.execute("UPDATE meiji_active.active_main SET status = 2 WHERE type = 8 AND create_by ='ifat'")
+        }else if(status == "4"){
+            meiji_active.execute("UPDATE meiji_active.active_main SET status = 3 WHERE type = 8 AND create_by ='ifat'")
+        }
+        Map map = meiji_active.firstRow("SELECT id from meiji_active.active_main where type = 8 and create_by ='ifat' ORDER BY gmt_create DESC")
+        return map.id
+    }
+
+    static def getRaffleActiveID(){
+        Map map = meiji_active.firstRow("SELECT id FROM meiji_active.active_main WHERE type = 8 AND status IN (1,2,3,4) and create_by ='ifat' ORDER BY gmt_create DESC")
+        return map.id
+    }
+
+    static def getSaveSourceRaffleID(){
+        ArrayList<Map> map= meiji_active.rows("SELECT id FROM meiji_active.active_main WHERE type = 8 AND status IN (3,4)ORDER BY gmt_create DESC")
+        println(map)
+        return map.id
+    }
+
+
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

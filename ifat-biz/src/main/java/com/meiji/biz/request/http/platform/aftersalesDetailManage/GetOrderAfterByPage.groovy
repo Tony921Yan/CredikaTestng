@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.platform.orderafter
+package com.meiji.biz.request.http.platform.aftersalesDetailManage
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
@@ -23,9 +23,10 @@ class GetOrderAfterByPage extends PlatformPost {
         super.baseAssert(testContext)
     }
 
-    GetOrderAfterByPage specialAssert(TestContext testContext){
-        Map apiResult = testContext.getResponse().data
+ /*   GetOrderAfterByPage specialAssert(TestContext testContext){
+         Map apiResult = testContext.getResponse().data
         assert apiResult.total > 20
         return this
-    }
+
+    }*/
 }

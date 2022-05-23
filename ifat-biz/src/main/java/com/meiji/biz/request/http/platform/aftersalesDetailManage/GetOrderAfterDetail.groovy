@@ -1,13 +1,13 @@
-package com.meiji.biz.request.http.platform.orderafter
+package com.meiji.biz.request.http.platform.aftersalesDetailManage
 
 import com.meiji.biz.request.http.platform.PlatformGet
+import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetOrderAfterDetail extends PlatformGet {
+class GetOrderAfterDetail extends PlatformPost{
     {
-        super.api = "/platform/orderMgr/getOrderAfterDetail?orderAfterCode=R2021033110280305195"
-        super.params =  []
-//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
+        super.api = "AftersalesDetailManage/getOrderAfterDetail"
+       super.params = ["orderAfterCode"]
     }
 
     GetOrderAfterDetail invoke(TestContext testContext) {
@@ -24,5 +24,6 @@ class GetOrderAfterDetail extends PlatformGet {
         super.baseAssert(testContext)
         return this
     }
+
 
 }

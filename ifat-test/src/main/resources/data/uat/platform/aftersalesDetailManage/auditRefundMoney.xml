@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "auditRefundMoney-p">
+        <parm key="orderAfterCode" value ="R2022042315160378328"/>
+        <parm key="realRefundMoney" value ="90"/>
+        <parm key="pass" value ="true"/>
+        <parm key="reason" value ="1"/>
+    </test>
+</data>

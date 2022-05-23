@@ -1,11 +1,11 @@
-package com.meiji.biz.request.http.platform.orderafter
+package com.meiji.biz.request.http.platform.aftersalesDetailManage
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 class AuditOrderAfter extends PlatformPost {
     {
-        super.api = "/platform/orderMgr/auditOrderAfter"
+        super.api = "AftersalesDetailManage/auditOrder"
         super.params =  [ "orderAfterCode","pass","reason"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
@@ -21,7 +21,8 @@ class AuditOrderAfter extends PlatformPost {
     }
 
     AuditOrderAfter baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        assert testContext.getResponse().code == 10
+        assert testContext.getResponse().msg =='只能审核状态为待审核的售后单(00005)'
         return this
     }
 

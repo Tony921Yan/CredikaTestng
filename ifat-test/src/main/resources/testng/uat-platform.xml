@@ -262,6 +262,12 @@
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.CancelTest"/>
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.CheckGoodsTest"/>
 
+            <class name="com.meiji.test.http.platform.applicationList.GetCompensationListByPageTest"/>
+            <class name="com.meiji.test.http.platform.applicationList.GetCompensationDetailTest"/>
+
+            <class name="com.meiji.test.http.platform.ruleConfig.GetCompensationConfigTest"/>
+            <class name="com.meiji.test.http.platform.ruleConfig.UpdateCompensationConfigTest"/>
+
 
         </classes>
     </test>

@@ -92,6 +92,11 @@
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterByPageTest"/>
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterDetailTest"/>
 
+            <class name="com.meiji.test.http.platform.applicationList.GetCompensationDetailTest"/>
+            <class name="com.meiji.test.http.platform.applicationList.GetCompensationListByPageTest"/>
+
+            <class name="com.meiji.test.http.platform.ruleConfig.GetCompensationConfigTest"/>
+
         </classes>
     </test>
 </suite>

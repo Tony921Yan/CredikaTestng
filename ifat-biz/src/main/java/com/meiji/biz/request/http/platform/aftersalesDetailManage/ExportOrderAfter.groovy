@@ -1,13 +1,12 @@
-package com.meiji.biz.request.http.platform.orderafter
+package com.meiji.biz.request.http.platform.aftersalesDetailManage
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 class ExportOrderAfter extends PlatformPost {
     {
-        super.api = "/platform/orderMgr/exportOrderAfter"
-        super.params =  [ "condition.afterStatus","condition.gmtCreatEndDate","condition.gmtCreateStrDate",
-                          "condition.orderAfterCode","order","page","rows","sort"]
+        super.api = "AftersalesDetailManage/exportOrderAfter"
+        super.params =  [ "condition","order","page","rows","sort"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 

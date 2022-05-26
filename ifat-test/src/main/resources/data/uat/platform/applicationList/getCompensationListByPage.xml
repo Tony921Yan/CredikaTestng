@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getCompensationListByPage-p">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getCompensationListByPage-p1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"auditState":1}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p2">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"auditState":2}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"auditState":3}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p4">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"userId":10036}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p5">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"userPhone":18270714125}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p6">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"nickName":"曾曾"}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p7">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"skuCode":"200su-0030034"}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p8">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"shopName":"曾曾"}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p9">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"orderCode":"O2022022213100345365"}'/>
+    </test>
+
+    <test name = "getCompensationListByPage-p10">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="condition" value ='{"startTime":"2022-03-01 00:00:00","endTime":"2022-05-24 23:59:59"}'/>
+    </test>
+</data>

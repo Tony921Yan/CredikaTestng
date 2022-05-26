@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<data>
-    <test name = "auditRefundMoney">
-        <parm key="orderAfterCode" value =""/>
-        <parm key="realRefundMoney" value =""/>
-        <parm key="pass" value =""/>
-        <parm key="reason" value =""/>
-    </test>
-</data>

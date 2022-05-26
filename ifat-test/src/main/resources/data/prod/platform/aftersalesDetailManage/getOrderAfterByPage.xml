@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getOrderAfterByPage-p">
+        <parm key="condition" value ='{"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p1">
+        <parm key="condition" value ='{"afterStatus":1,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p2">
+        <parm key="condition" value ='{"afterStatus":2,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p3">
+        <parm key="condition" value ='{"afterStatus":3,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p4">
+        <parm key="condition" value ='{"afterStatus":4,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p5">
+        <parm key="condition" value ='{"afterStatus":5,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p6">
+        <parm key="condition" value ='{"afterStatus":6,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p7">
+        <parm key="condition" value ='{"afterStatus":7,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p8">
+        <parm key="condition" value ='{"oderCode":"O2022051013590091031" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p9">
+        <parm key="condition" value ='{"orderAfterCode":"R2022050721260118863" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p10">
+        <parm key="condition" value ='{"remark":"测试","gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p11">
+        <parm key="condition" value ='{"afterType":1,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p12">
+        <parm key="condition" value ='{"afterType":2,"gmtCreatEndDate":"2022-05-23 23:59:59 23:59:59","gmtCreateStrDate":"2022-04-23 00:00:00" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getOrderAfterByPage-p13">
+        <parm key="condition" value ='{"sourceType":0,"spuType":1,"skuCode":"200su-0040337" }'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+
+
+
+
+</data>

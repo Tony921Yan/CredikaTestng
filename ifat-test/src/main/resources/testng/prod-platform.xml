@@ -20,7 +20,7 @@
             <class name="com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
             <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
             <class name="com.meiji.test.http.platform.other.GetListMaterialsTest"/>
-            <class name="com.meiji.test.http.platform.orderafter.GetOrderAfterByPageTest"/>
+
             <class name="com.meiji.test.http.platform.supplier.GetSupplierByPageTest"/>
             <class name="com.meiji.test.http.platform.shopManager.InvitationListTest"/>
             <class name="com.meiji.test.http.platform.shopManager.InvitationCodeListTest"/>
@@ -89,6 +89,13 @@
             <class name="com.meiji.test.http.platform.goodsDetailMange.AddRecordTest"/>
 
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.UpdateAfterRemarkTest"/>
+            <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterByPageTest"/>
+            <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterDetailTest"/>
+
+            <class name="com.meiji.test.http.platform.applicationList.GetCompensationDetailTest"/>
+            <class name="com.meiji.test.http.platform.applicationList.GetCompensationListByPageTest"/>
+
+            <class name="com.meiji.test.http.platform.ruleConfig.GetCompensationConfigTest"/>
 
         </classes>
     </test>

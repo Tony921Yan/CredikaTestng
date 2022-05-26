@@ -1,12 +1,13 @@
-package com.meiji.biz.request.http.platform.orderafter
+package com.meiji.biz.request.http.platform.aftersalesDetailManage
 
 import com.meiji.biz.request.http.platform.PlatformGet
+import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class Cancel extends PlatformGet {
+class Cancel extends PlatformPost {
     {
-        super.api = "/platform/orderMgr/cancel?orderAfterCode=R2021033110280305195"
-        super.params =  []
+        super.api = "AftersalesDetailManage/cancel"
+        super.params =  ["orderAfterCode"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
@@ -21,7 +22,8 @@ class Cancel extends PlatformGet {
     }
 
     Cancel baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        assert testContext.getResponse().msg == '不能取消该售后单(00005)'
+        assert testContext.getResponse().code == 10
         return this
     }
 

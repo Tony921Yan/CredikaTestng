@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "auditCompensation-p">
+        <parm key="auditStuats" value ="true"/>
+        <parm key="orderId" value ="42"/>
+        <parm key="payoutType" value ="1"/>
+        <parm key="couponId" value ="1476957239771199"/>
+        <parm key="couponName" value ="粉丝人券验收"/>
+        <parm key="checkUserId" value ="111"/>
+        <parm key="checkUserName" value ="111"/>
+    </test>
+
+    <test name = "auditCompensation-p1">
+        <parm key="auditStuats" value ="true"/>
+        <parm key="orderId" value ="51"/>
+        <parm key="payoutType" value ="2"/>
+        <parm key="payoutAmount" value ="100"/>
+        <parm key="checkUserId" value ="111"/>
+        <parm key="checkUserName" value ="111"/>
+    </test>
+
+
+</data>

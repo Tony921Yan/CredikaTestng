@@ -25,5 +25,4 @@ class FindDefaultGroupBuyActiveGoods extends MallPost{
         return this
     }
 
-
 }

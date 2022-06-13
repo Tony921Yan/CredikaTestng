@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "contentManageAdd">
+        <parm key="title" value ="自动化新增内容1"/>
+        <parm key="attachmentUrl" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/c03e50e720c562909a61b68750993982.xlsx"/>
+        <parm key="moduleType" value ="2"/>
+
+    </test>
+</data>

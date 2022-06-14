@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "receiveNewVipActiveCoupon">
+        <parm key="activeId" value ="1484948185808959"/>
+        <parm key="couponId" value ="1465589958705184"/>
+    </test>
+</data>

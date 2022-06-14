@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getConfigValue-officalShop">
+        <parm key="key" value ="officalShop"/>
+    </test>
+
+    <test name = "getConfigValue-goodsDetailTips">
+        <parm key="key" value ="goodsDetailTips"/>
+    </test>
+
+    <test name = "getConfigValue-vipCenterTips">
+        <parm key="key" value ="vipCenterTips"/>
+    </test>
+</data>

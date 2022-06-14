@@ -118,7 +118,12 @@
             <class name="com.meiji.test.http.mall.shopCart.GetCartCouponInfoListTest"/>
             <!--           <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyActiveTest"/>
                      <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/> -->
-                      <class name="com.meiji.test.http.mall.groupBuy.FindDefaultGroupBuyActiveGoodsTest"/>
+            <class name="com.meiji.test.http.mall.groupBuy.FindDefaultGroupBuyActiveGoodsTest"/>
+
+            <class name="com.meiji.test.http.mall.newVip.GetActivityGoodsTest"/>
+            <class name="com.meiji.test.http.mall.newVip.GetActivityTest"/>
+
+            <class name="com.meiji.test.http.mall.systemConfig.GetConfigValueTest"/>
         </classes>
     </test>
 </suite>

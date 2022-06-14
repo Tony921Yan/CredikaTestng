@@ -1,28 +1,29 @@
-package com.meiji.biz.request.http.mall.groupBuy
+package com.meiji.biz.request.http.mall.newVip
 
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
 
-class FindDefaultGroupBuyActiveGoods extends MallPost{
+class GetActivity extends MallPost{
     {
-        super.api = "groupBuy/findDefaultGroupBuyActiveGoods"
+        super.api = "newVip/getActivity"
        super.params = [ ]
     }
 
-    FindDefaultGroupBuyActiveGoods invoke(TestContext testContext) {
+    GetActivity invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    FindDefaultGroupBuyActiveGoods preInvoke(TestContext testContext){
+    GetActivity preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    FindDefaultGroupBuyActiveGoods baseAssert(TestContext testContext){
+    GetActivity baseAssert(TestContext testContext){
         //assert testContext.getResponse().code == 10
         super.baseAssert(testContext)
         return this
     }
+
 
 }

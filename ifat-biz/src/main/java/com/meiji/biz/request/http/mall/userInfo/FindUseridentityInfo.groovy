@@ -29,6 +29,7 @@ class FindUseridentityInfo extends MallPost {
         assert mysqlResult.is_wechat_work == apiResult.isUserWechatWork
         assert mysqlResult.is_add_wechat_user == apiResult.isAddWechatUser
         assert mysqlResult.is_new_fans == apiResult.isNewFans
+        assert mysqlResult.is_members == apiResult.isMembers
         return this
     }
 

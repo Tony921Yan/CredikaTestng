@@ -388,6 +388,30 @@ class MysqlService extends MysqlAPI {
     }
 
 
+    static def auditGoodsID(){
+        ArrayList<Map>  map = meiji_content.rows("SELECT goods_id AS id FROM `meiji_content`.`live_goods` WHERE `audit_status` = '3' ORDER BY gmt_create DESC ")
+        println(map)
+        return map.id
+    }
+
+    static def auditGoodsID1(){
+        ArrayList<Map>  map = meiji_content.rows("SELECT goods_id AS goodsId FROM `meiji_content`.`live_goods` WHERE `audit_status` = '2' ORDER BY gmt_create DESC ")
+        println(map)
+        return map.goodsId
+    }
+
+    static def auditGoodsID2(){
+        ArrayList<Map>  map = meiji_content.rows("SELECT price_type AS priceType FROM `meiji_content`.`live_goods` WHERE `audit_status` = '2' ORDER BY gmt_create DESC ")
+        println(map)
+        return map.priceType
+    }
+
+    static def auditGoodsID3(){
+        ArrayList<Map>  map = meiji_content.rows("SELECT price AS price FROM `meiji_content`.`live_goods` WHERE `audit_status` = '2' ORDER BY gmt_create DESC ")
+        println(map)
+        return map.price
+    }
+
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

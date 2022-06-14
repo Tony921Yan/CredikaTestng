@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "deleteRole">
+        <parm key="role" value ="1"/>
+        <parm key="username" value ="gym15272511568"/>
+    </test>
+</data>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "editRole">
+        <parm key="role" value ="3"/>
+        <parm key="username" value ="Tony921Yan"/>
+    </test>
+</data>

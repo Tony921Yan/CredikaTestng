@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "pageLive">
+        <parm key="condition" value ="{}"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "pageLive1">
+        <parm key="condition" value ='{liveStatus: 101}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "pageLive2">
+        <parm key="condition" value ='{liveStatus: 102}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "pageLive3">
+        <parm key="condition" value ='{liveStatus: 103}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "pageLive4">
+        <parm key="condition" value ='{liveStatus: 104}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "pageLive5">
+        <parm key="condition" value ='{liveStatus: 105}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "pageLive6">
+        <parm key="condition" value ='{liveStatus: 106}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "pageLive7">
+        <parm key="condition" value ='{liveStatus: 107}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+</data>

@@ -93,10 +93,10 @@ class ListTest extends BaseTest {
         list.invoke(testContext).baseAssert(testContext)
     }
 
-    @Test(description = "活动列表-通过拼团活动筛选" ,groups = ["prod","uat"],testName = "activeMainManage.list6",
-            dataProvider = "dataProvider",dataProviderClass = TestData.class)
-    public void list5(TestContext testContext){
-        testContext.put("type",14)
-        list.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
-    }
+//    @Test(description = "活动列表-通过拼团活动筛选" ,groups = ["prod","uat"],testName = "activeMainManage.list6",
+//            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+//    public void list5(TestContext testContext){
+//        testContext.put("type",14)
+//        list.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+//    }
 }

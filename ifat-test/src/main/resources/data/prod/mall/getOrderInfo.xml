@@ -3,4 +3,8 @@
     <test name = "getOrderInfo1">
         <parm key="orderCode" value ="O2021051810040154317"/>
     </test>
+
+    <test name = "getOrderInfo2">
+        <parm key="orderCode" value ="O2022050921000514417"/>  <!--线上无订阅订单，先用普通订单取代-->
+    </test>
 </data>

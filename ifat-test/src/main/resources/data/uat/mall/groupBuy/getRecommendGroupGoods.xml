@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getRecommendGroupGoods">
+        <parm key="activityId" value ="1486034128863295"/>
+        <parm key="spuId" value ="1481280661225535"/>
+    </test>
+</data>

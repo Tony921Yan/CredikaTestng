@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getGroupDetail">
+        <parm key="activityId" value ="1485899120508991"/>
+        <parm key="groupId" value ="1486048607600767"/>
+    </test>
+</data>

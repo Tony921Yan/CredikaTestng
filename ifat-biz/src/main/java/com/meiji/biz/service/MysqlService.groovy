@@ -416,6 +416,19 @@ class MysqlService extends MysqlAPI {
         return map.price
     }
 
+    static def liveID(){
+        Map  map = meiji_content.firstRow("SELECT id FROM `meiji_content`.`live` WHERE `is_delete` = '0' AND `live_status` IN(103,107) ORDER BY start_time DESC")
+        println(map)
+        return map.id
+    }
+
+//    static def getGroupActivityID(){
+//        Map map =meiji_active.firstRow("SELECT id FROM `meiji_active`.`group_buy_activity` WHERE `placement` = '1'")
+//        println(map)
+//        return map.id
+//    }
+
+
     static Map getOrderCntByType(String beginTime,String endTime,String type){
         return meiji_order.firstRow("select" +
                 "\tcount(*) as cnt," +

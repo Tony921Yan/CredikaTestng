@@ -6,6 +6,27 @@
         <parm key="shopId" value ="1405981112139808"/>
         <parm key="orderType" value ="1"/>
         <parm key="raffleRecordId" value ="null"/>
-
     </test>
+
+    <test name = "previewOrder1">
+        <parm key="addressId" value ='1450167892967456'/>
+        <parm key="orderGoods" value ='[
+        {
+            "skuId":1481327691956575,
+            "spuId":1481327691956287,
+            "skuNum":4,
+            "activeExpand":null,
+            "serviceQrcode":null
+        }
+    ]'/>
+        <parm key="shopId" value ="1430182304940064"/>
+        <parm key="orderType" value ="5"/>
+        <parm key="raffleRecordId" value ="null"/>
+        <parm key="deliveryDays" value ="1~2"/>
+        <parm key="subscribeConfig" value ='{
+        "subscribeTime":1,
+        "subscribeNum":4
+    }'/>
+    </test>
+
 </data>

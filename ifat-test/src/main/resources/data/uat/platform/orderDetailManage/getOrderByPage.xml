@@ -126,4 +126,10 @@
         <parm key="rows" value ="20"/>
     </test>
 
+    <test name = "GetOrderByPage-orderType5">
+        <parm key="condition" value ='{orderType: 5}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
 </data>

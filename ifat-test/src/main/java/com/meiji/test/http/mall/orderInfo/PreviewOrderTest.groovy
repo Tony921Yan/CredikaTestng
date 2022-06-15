@@ -13,4 +13,10 @@ class PreviewOrderTest extends BaseTest {
     public void previewOrder(TestContext testContext){
         previewOrder.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "预览订单 previewOrder-订阅" ,groups = ["uat"],testName = "previewOrder",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void previewOrder1(TestContext testContext){
+        previewOrder.invoke(testContext).baseAssert(testContext)
+    }
 }

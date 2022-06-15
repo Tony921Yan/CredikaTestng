@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "groupSubscribeNotice">
+        <parm key="beginTime" value ="2022-06-15 20:00:00"/>
+        <parm key="shopId" value ="1430182304940064"/>
+        <parm key="spuId" value ="1481280661225535"/>
+        <parm key="activityId" value ="1486054215385151"/>
+    </test>
+</data>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getGroupTeamByGoods">
+        <parm key="activityId" value ="1486052464263231"/>
+        <parm key="spuId" value ="1465509635686432"/>
+    </test>
+</data>

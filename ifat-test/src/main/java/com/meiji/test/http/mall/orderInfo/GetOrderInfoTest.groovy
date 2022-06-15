@@ -13,4 +13,10 @@ class GetOrderInfoTest extends BaseTest {
     public void getOrderInfo(TestContext testContext){
         getOrderInfo.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
+
+    @Test(description = "订阅订单详情 getOrderInfo" ,groups = ["prod","uat"],testName = "getOrderInfo2",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getOrderInfo2(TestContext testContext){
+        getOrderInfo.invoke(testContext).baseAssert(testContext)
+    }
 }

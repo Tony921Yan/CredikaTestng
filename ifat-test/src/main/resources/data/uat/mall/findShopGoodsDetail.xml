@@ -11,4 +11,9 @@
         <parm key="type" value ="8"/>
         <parm key="raffleRecordId" value ="1470136640864288"/>
     </test>
+
+    <test name = "findShopGoodsDetail2">
+        <parm key="shopId" value ="1430182304940064"/>
+        <parm key="spuId" value ="1481327691956287"/>
+    </test>
 </data>

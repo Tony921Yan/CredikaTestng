@@ -3,4 +3,9 @@
     <test name = "getOrderInfo1">
         <parm key="orderCode" value ="O2021102811490202730"/>
     </test>
+
+    <test name = "getOrderInfo2">
+        <parm key="orderCode" value ="O2022052619380593208"/>
+    </test>
+
 </data>

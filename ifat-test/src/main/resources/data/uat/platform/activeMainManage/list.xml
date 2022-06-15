@@ -33,4 +33,11 @@
         <parm key="type" value ="11"/>
         <parm key="typeList" value ='[11]'/>
     </test>
+
+    <test name = "activeMainManage.list6">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="type" value ="14"/>
+        <parm key="typeList" value ='[14]'/>
+    </test>
 </data>

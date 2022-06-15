@@ -135,4 +135,12 @@ class GetOrderByPageTest extends BaseTest {
     public void GetOrderByPage19(TestContext testContext){
         getOrderByPage.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "获取订单数据-订单类型：拼团订单 uatGetOrderByPage",groups = ["prod","uat"],testName = "GetOrderByPage-pintuan",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void GetOrderByPage20(TestContext testContext){
+        getOrderByPage.invoke(testContext).baseAssert(testContext)
+    }
+
+
 }

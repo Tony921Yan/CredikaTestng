@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "searchActivityRecords">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "searchActivityRecords1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="activityType" value ="11"/>
+    </test>
+
+    <test name = "searchActivityRecords2">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="activityType" value ="14"/>
+    </test>
+
+    <test name = "searchActivityRecords3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="activityType" value ="14"/>
+        <parm key="activityId" value ="1485709592494143"/>
+        <parm key="activityName" value ="拼团CPS测试"/>
+        <parm key="nickname" value ="～陳少榮～"/>
+        <parm key="orderCode" value ="O2022061410210111938"/>
+        <parm key="phoneNumber" value ="13719171786"/>
+        <parm key="shopName" value ="～陳少榮～的小店"/>
+        <parm key="skuCode" value ="200su-0181240"/>
+        <parm key="spuCode" value ="200sup81240"/>
+        <parm key="spuName" value ="f曾曾测试，很长的规格属性预览效果，含晒单标签"/>
+    </test>
+</data>

@@ -352,6 +352,10 @@ class MysqlService extends MysqlAPI {
         return map.id
     }
 
+    static def getActiveList(Integer type){
+        return meiji_active.firstRow("SELECT * from meiji_active.active_main where type = $type ORDER BY gmt_modified DESC limit 20")
+    }
+
     static def setNewActiveStatus(String status){
         if(status =="2"){
             meiji_active.execute("UPDATE meiji_active.active_main set status = 1 where type = 11 and create_by ='ifat' ORDER BY gmt_create")

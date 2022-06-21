@@ -45,6 +45,7 @@ class CookieService {
             stringBuilder.append(header.elements.head().toString().split(";")[0])
             stringBuilder.append(";")
         }
+        sleep(1000)
         cacheCookie.put("mall:" + userId, stringBuilder.toString())
         return stringBuilder.toString()
     }

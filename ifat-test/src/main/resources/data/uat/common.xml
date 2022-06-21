@@ -3,6 +3,7 @@
     <test name = "common">
         <parm key="token" value ="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJBUFAiLCJpc3MiOiJTZXJ2aWNlIiwiZXhwIjoxNjM0MzYzOTUwLCJ1c2VySWQiOiIxMDA2NyIsImlhdCI6MTYzMzQ5OTk1MH0.p_mpJFZXiP36BWQd7tLIy3Q4ln_EEf22FWoTXBLTFL0"/>
         <parm key="userId" value ="10029"/>
+        <parm key="shopId" value="1405981112139808"/>
         <parm key="dealerId" value="24"/>
         <parm key="userType" value="2"/>
         <parm key="timestamp" value="1"/>

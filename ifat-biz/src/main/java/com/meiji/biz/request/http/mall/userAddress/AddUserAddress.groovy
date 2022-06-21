@@ -1,6 +1,7 @@
 package com.meiji.biz.request.http.mall.userAddress
 
 import com.meiji.biz.request.http.mall.MallPost
+import com.meiji.biz.service.AddressService
 import com.miyuan.ifat.support.test.TestContext
 
 class AddUserAddress extends MallPost {
@@ -8,21 +9,18 @@ class AddUserAddress extends MallPost {
         super.api = "/userAddress/addUserAddress"
         super.params =  ["address","city","cityCode","district","districtCode","isDefault","phone","province","provinceCode",
                          "recipient","remark"]
-//        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    AddUserAddress invoke(TestContext testContext) {
-        super.invoke(testContext)
+
+    AddUserAddress afterInvoke(TestContext testContext){
+        String addressId = testContext.getResponse().data.data
+        assert addressId != null
+        testContext.put("id",addressId)
         return this
     }
 
-    AddUserAddress preInvoke(TestContext testContext){
-        super.preInvoke(testContext)
-        return this
-    }
-
-    AddUserAddress baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+    AddUserAddress specialAssert(TestContext testContext){
+        AddressService.addressAssert(testContext)
         return this
     }
 

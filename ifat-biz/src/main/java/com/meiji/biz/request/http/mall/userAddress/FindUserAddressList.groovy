@@ -13,25 +13,13 @@ class FindUserAddressList extends MallPost {
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
 
-    FindUserAddressList invoke(TestContext testContext) {
-        super.invoke(testContext)
-        return this
-    }
-
-    FindUserAddressList preInvoke(TestContext testContext){
-        super.preInvoke(testContext)
-        return this
-    }
-
-    FindUserAddressList baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
-    }
-
     FindUserAddressList specialAssert(TestContext testContext){
-        Map mysqlResult = MysqlService.findUserAddressList(testContext.get("userId")).get(0)
-        System.out.println(mysqlResult)
-        Map apiResult = testContext.getResponse().data[0]
-        println(apiResult)
+        List addressList = testContext.getResponse().data
+        if(addressList.size()==0){
+            return this
+        }
+        Map apiResult = addressList.get(0)
+        Map mysqlResult = MysqlService.findUserAddressList(testContext.get("userId"))
         assert mysqlResult.id == apiResult.id
         assert mysqlResult.recipient == apiResult.recipient
         assert mysqlResult.phone == apiResult.phone
@@ -46,5 +34,6 @@ class FindUserAddressList extends MallPost {
         assert mysqlResult.is_default == apiResult.isDefault
         return this
     }
+
 
 }

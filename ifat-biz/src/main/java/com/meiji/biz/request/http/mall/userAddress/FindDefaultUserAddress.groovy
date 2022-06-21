@@ -13,31 +13,23 @@ class FindDefaultUserAddress extends MallPost {
         super.params =  ["userId"]
 //        super.preInvoke = "com.miyuan.request.api.goods.CenterSearch"
     }
-
-    FindDefaultUserAddress invoke(TestContext testContext) {
-        super.invoke(testContext)
-        return this
-    }
-
-    FindDefaultUserAddress preInvoke(TestContext testContext){
-        super.preInvoke(testContext)
-        return this
-    }
-
-    FindDefaultUserAddress baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
-    }
-
     FindDefaultUserAddress specialAssert(TestContext testContext){
-        Map mysqlResult = MysqlService.getBrand(testContext.get("id"))
-        println(mysqlResult)
         Map apiResult = testContext.getResponse().data
-        assert mysqlResult.name == apiResult.name
-        assert mysqlResult.icon == apiResult.icon
+        if(apiResult==null){
+            return this
+        }
+        Map mysqlResult = MysqlService.getUserAddress(apiResult.id.toString())
+        assert mysqlResult.recipient == apiResult.recipient
+        assert mysqlResult.phone == apiResult.phone
+        assert mysqlResult.province == apiResult.province
+        assert mysqlResult.province_code == apiResult.provinceCode
+        assert mysqlResult.city == apiResult.city
+        assert mysqlResult.city_code == apiResult.cityCode
+        assert mysqlResult.district == apiResult.district
+        assert mysqlResult.district_code == apiResult.districtCode
+        assert mysqlResult.address == apiResult.address
         assert mysqlResult.remark == apiResult.remark
-        assert mysqlResult.create_by == apiResult.createBy
-        assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.gmtCreate)
-        assert  DateUtil.strToDate(mysqlResult.gmt_modified as String) ==  DateUtil.strToDate(apiResult.gmtModified)
+        assert mysqlResult.is_default == apiResult.isDefault
         return this
     }
 }

@@ -82,8 +82,8 @@ class MysqlService extends MysqlAPI {
         return meiji_user.rows("SELECT * FROM user WHERE is_delete !=1 AND source_type = 0 AND id=$id")
     }
 
-    static List findUserAddressList(String user_id){
-        return meiji_user.rows("select * from user_address where user_id = $user_id and is_delete = 0 order by gmt_create limit 1")
+    static Map findUserAddressList(String user_id){
+        return meiji_user.firstRow("select * from user_address where user_id = $user_id and is_delete = 0 order by gmt_create limit 1")
     }
 
     static Map GetGiftInfo(String gift_id){
@@ -128,6 +128,10 @@ class MysqlService extends MysqlAPI {
 
     static  List updateUserAddress(String id){
         return meiji_user.rows("select * from user_address where id = $id")
+    }
+
+    static  Map getUserAddress(String id){
+        return meiji_user.firstRow("select * from user_address where id = $id")
     }
 
     static Map getUserInfo(String UserId){

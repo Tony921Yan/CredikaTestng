@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "updateUserAddress1">
-        <parm key="address" value ="详细地址"/>
+    <test name = "updateUserAddress">
+        <parm key="address" value ="生产修改地址测试"/>
         <parm key="city" value ="北京市"/>
         <parm key="cityCode" value ="110100"/>
         <parm key="district" value ="东城区"/>
         <parm key="districtCode" value ="110101"/>
-        <parm key="id" value ="1"/>
         <parm key="isDefault" value ="0"/>
-        <parm key="phone" value ="手机号码"/>
+        <parm key="phone" value ="19928717417"/>
         <parm key="province" value ="北京市"/>
         <parm key="provinceCode" value ="110000"/>
-        <parm key="recipient" value ="收件人"/>
-        <parm key="remark" value ="备注"/>
+        <parm key="recipient" value ="测试佬"/>
+        <parm key="remark" value ="生产环境测试备注"/>
+    </test>
+
+    <test name = "userAddressNew">
+        <parm key="address" value ="生产修改地址测试新"/>
+        <parm key="city" value ="广州市"/>
+        <parm key="cityCode" value ="440100"/>
+        <parm key="district" value ="海珠区"/>
+        <parm key="districtCode" value ="440105"/>
+        <parm key="isDefault" value ="0"/>
+        <parm key="phone" value ="19998717417"/>
+        <parm key="province" value ="广东省"/>
+        <parm key="provinceCode" value ="440000"/>
+        <parm key="recipient" value ="测试佬新"/>
+        <parm key="remark" value ="生产环境测试备注新"/>
     </test>
 </data>

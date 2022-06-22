@@ -12,7 +12,7 @@ class GroupSubscribeNoticeTest extends BaseTest {
     @Test(description = "订阅拼团开始提醒 groupSubscribeNotice" ,groups = ["prod","uat"],testName = "groupSubscribeNotice",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void groupSubscribeNotice(TestContext testContext){
-        getGetGroupBuyTopGoods().invoke(testContext).baseAssert(testContext).afterinvoke(testContext)
+        getGroupBuyTopGoods.invoke(testContext).baseAssert(testContext).afterinvoke(testContext)
         groupSubscribeNotice.invoke(testContext).baseAssert(testContext)
     }
 }

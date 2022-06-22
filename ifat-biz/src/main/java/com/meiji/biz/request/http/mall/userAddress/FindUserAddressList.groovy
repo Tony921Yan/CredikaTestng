@@ -16,6 +16,8 @@ class FindUserAddressList extends MallPost {
     FindUserAddressList specialAssert(TestContext testContext){
         List addressList = testContext.getResponse().data
         if(addressList.size()==0){
+            Map mysqlResult = MysqlService.findUserAddressList(testContext.get("userId"))
+            assert mysqlResult==null
             return this
         }
         Map apiResult = addressList.get(0)

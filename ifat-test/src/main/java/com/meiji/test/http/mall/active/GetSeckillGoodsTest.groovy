@@ -13,15 +13,18 @@ import org.testng.annotations.Test
  * */
 class GetSeckillGoodsTest extends BaseTest {
     GetSeckillGoods getSeckillGoods = new GetSeckillGoods()
+    GetSeckillActiveList getSeckillActiveList = new GetSeckillActiveList()
     @Test(description = "获取秒杀商品列表 getSeckillGoods" ,groups = ["prod","uat"],testName = "getSeckillGoods",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getSeckillGoods(TestContext testContext){
+        getSeckillActiveList.invoke(testContext).baseAssert(testContext).invoke(testContext)
         getSeckillGoods.invoke(testContext).baseAssert(testContext)
     }
 
     @Test(description = "获取秒杀商品列表-分页 getSeckillGoods" ,groups = ["prod","uat"],testName = "getSeckillGoods1",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getSeckillGoods1(TestContext testContext){
+        getSeckillActiveList.invoke(testContext).baseAssert(testContext).invoke(testContext)
         getSeckillGoods.invoke(testContext).baseAssert(testContext)
     }
 }

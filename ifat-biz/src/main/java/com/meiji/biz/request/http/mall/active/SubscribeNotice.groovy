@@ -20,7 +20,7 @@ class SubscribeNotice extends MallPost{
     }
 
     SubscribeNotice baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == 10
+        assert testContext.getResponse().code == 0
         return this
     }
 }

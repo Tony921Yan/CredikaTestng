@@ -15,6 +15,6 @@ class GetSeckillActiveListTest extends BaseTest {
     @Test(description = "获取抢购中/即将开始的秒杀活动 getSeckillActiveList" ,groups = ["prod","uat"],testName = "getSeckillActiveList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getSeckillActiveList(TestContext testContext){
-        getSeckillActiveList.invoke(testContext).baseAssert(testContext)
+        getSeckillActiveList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

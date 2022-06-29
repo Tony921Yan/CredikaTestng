@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "queryMarketAccountList">
+        <parm key="accountName" value =""/>
+        <parm key="code" value =""/>
+        <parm key="gmtCreateEnd" value =""/>
+        <parm key="gmtCreateStart" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+</data>

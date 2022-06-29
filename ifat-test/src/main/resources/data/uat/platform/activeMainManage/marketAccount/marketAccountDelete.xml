@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "marketAccountDelete">
+        <parm key="accountName" value ="test11"/>
+        <parm key="operators" value ='[{"name":"梧东","userId":"lwd"}]'/>
+        <parm key="accountAmount" value ="10000"/>
+        <parm key="remark" value ="自动化测试新增"/>
+    </test>
+
+</data>

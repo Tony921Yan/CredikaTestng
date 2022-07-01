@@ -78,7 +78,7 @@
 
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderLogisticsInfoTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderEventLogTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderDetailTest"/>
+<!--            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderDetailTest"/>-->
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderByPageTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderAfterSaleTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderCountTest"/>

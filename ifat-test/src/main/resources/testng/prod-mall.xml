@@ -23,7 +23,7 @@
 <!--            <class name="com.meiji.test.http.mall.userInfo.FindUserInfoTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.userShop.FindUserVis0c7aitShopRecordListTest"/>-->
             <!--            <class name="com.meiji.test.http.mall.orderAfterSale.GetOrderAfterSaleTest"/>-->
-            <class name="com.meiji.test.http.mall.orderInfo.GetOrderInfoTest"/>
+<!--            <class name="com.meiji.test.http.mall.orderInfo.GetOrderInfoTest"/>-->
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderLogisticsInfoTest"/>
             <!--            <class name="com.meiji.test.http.mall.userInfo.GetUserAgreementTest"/>-->
             <class name="com.meiji.test.http.mall.orderInfo.GetUserOrderCountTest"/>

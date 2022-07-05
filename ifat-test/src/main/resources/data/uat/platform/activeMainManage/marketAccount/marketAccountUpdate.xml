@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "marketAccountUpdate">
+        <parm key="accountAmount" value ="10000"/>
+        <parm key="accountName" value ="test1"/>
+        <parm key="id" value ="52"/>
+        <parm key="operators" value ='[{"name":"梧东","userId":"lwd"}]'/>
+        <parm key="remark" value ="自动化测试新增1"/>
+        <parm key="accountId" value ="M2022062917420293301"/>
+    </test>
+
+</data>

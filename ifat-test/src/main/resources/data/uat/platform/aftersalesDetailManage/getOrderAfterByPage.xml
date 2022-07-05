@@ -84,7 +84,11 @@
         <parm key="rows" value ="20"/>
     </test>
 
-
+    <test name = "getOrderAfterByPage-test">
+        <parm key="condition" value ='{"gmtCreatEndDate":"2022-06-27 23:59:59 23:59:59","gmtCreateStrDate":"2022-05-27 00:00:00 00:00:00","oderCode":"O2022062710440547241"}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
 
 
 

@@ -1,8 +1,10 @@
 package com.meiji.biz.service
 
-
+import com.alibaba.fastjson.JSON
+import com.alibaba.fastjson.JSONObject
 import com.meiji.biz.api.MysqlAPI
 import com.miyuan.ifat.support.factory.FactorySupport
+import com.miyuan.ifat.support.util.JsonUtil
 import groovy.sql.Sql
 import org.apache.commons.lang3.StringUtils
 
@@ -424,6 +426,44 @@ class MysqlService extends MysqlAPI {
         Map  map = meiji_content.firstRow("SELECT id FROM `meiji_content`.`live` WHERE `is_delete` = '0' AND `live_status` IN(103,107) ORDER BY start_time DESC")
         println(map)
         return map.id
+    }
+
+    static def GetSeckillActiveFromDecorate(){
+        Map map = meiji_shop.firstRow("SELECT ext from meiji_shop.shop_decorate_template_component where component_type =117 and template_id in (SELECT id from meiji_shop.shop_decorate_template where is_default = 1 and status =1 and template_name like '美记小程序')")
+        if (JsonUtil.strToJson(map.get("ext")).getAt("couponActiveId") == []){
+            println "装修模块未创建秒杀活动或秒杀活动未开始/不在进行中"
+            return null
+        }
+        return JsonUtil.strToJson(map.get("ext")).getAt("couponActiveId")
+    }
+
+    static def GetSeckillActive(){
+        ArrayList<Map> map = meiji_shop.rows("SELECT id from meiji_active.active_main where type = 11 and is_delete =0 and `status` in (3,4) ORDER BY gmt_modified desc;")
+        println map.id
+        return map.id
+    }
+
+    static def marketAccountDelete(){
+        Map map = meiji_pay.firstRow("SELECT id FROM meiji_pay.market_account ORDER BY gmt_create desc;")
+        println map.id
+        return map.id
+    }
+
+    static def marketAccountIsDelete(){
+        Map map = meiji_pay.firstRow("select is_delete from meiji_pay.market_account ORDER BY gmt_create desc;")
+        return map.is_delete
+    }
+
+    static boolean marketAccountRealDelete(Long id){
+        return meiji_pay.execute("delete from meiji_pay.market_account where id = $id")
+    }
+
+    static boolean marketAccountRealDelete1(String accountName){
+        return meiji_pay.execute("delete from meiji_pay.market_account where account_name = $accountName")
+    }
+
+    static def marketAccountSearch(){
+        return meiji_pay.firstRow("select * from meiji_pay.market_account ORDER BY gmt_create desc")
     }
 
 //    static def getGroupActivityID(){

@@ -16,5 +16,6 @@ class GetSeckillActiveListTest extends BaseTest {
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getSeckillActiveList(TestContext testContext){
         getSeckillActiveList.invoke(testContext).baseAssert(testContext)
+//        getSeckillActiveList.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

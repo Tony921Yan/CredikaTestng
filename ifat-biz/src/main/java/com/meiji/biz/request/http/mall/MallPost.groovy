@@ -31,7 +31,7 @@ abstract class MallPost {
         heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
 
         if(TestEnv.isGray()=="true"){
-            heads.put("isGrayRelease",true)
+            heads.put("grayReleaseTag","gray")
         }
         String uuid = UUID.randomUUID().toString()
         heads.put("userLogTracingTag",uuid)

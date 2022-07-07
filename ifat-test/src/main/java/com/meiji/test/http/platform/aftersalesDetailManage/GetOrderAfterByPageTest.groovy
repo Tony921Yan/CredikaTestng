@@ -92,5 +92,9 @@ class GetOrderAfterByPageTest extends BaseTest {
         getOrderAfterByPage.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 
-
+//    @Test(description = "获取售后单-测试 getOrderAfterByPage" ,groups = ["uat"],testName = "getOrderAfterByPage-test",
+//            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+//    public void getOrderAfterByPageTest(TestContext testContext){
+//        getOrderAfterByPage.invoke(testContext).baseAssert(testContext)
+//    }
 }

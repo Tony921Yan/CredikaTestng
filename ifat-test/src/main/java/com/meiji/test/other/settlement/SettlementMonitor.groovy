@@ -52,7 +52,7 @@ class SettlementMonitor extends BaseTest{
                         break
                     case "1":
                         Date expAfterDate = DateUtil.dateAdd(afterDate,Calendar.DATE,7)
-                        assert expAfterDate >= now,"期望7天内售后审核,售后单"+afterCode
+                        assert expAfterDate >= now,"期望14天内售后审核,售后单"+afterCode
                         break
                     case "2":
                         Map afterOrderLog = MysqlService.getAfterOrderLog(afterCode,2)

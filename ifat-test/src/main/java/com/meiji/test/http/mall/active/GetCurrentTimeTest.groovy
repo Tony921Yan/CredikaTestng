@@ -15,6 +15,6 @@ class GetCurrentTimeTest extends BaseTest {
     @Test(description = "获取当前时间 getCurrentTime" ,groups = ["prod","uat"],testName = "getCurrentTime",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getCurrentTime(TestContext testContext){
-        getCurrentTime.invoke(testContext).baseAssert(testContext)
+        getCurrentTime.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

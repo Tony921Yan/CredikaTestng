@@ -11,7 +11,7 @@
             <class name="com.meiji.test.http.mall.active.GetSeckillGoodsTest"/>
             <class name="com.meiji.test.http.mall.active.GetSeckillTopGoodsTest"/>
             <class name="com.meiji.test.http.mall.active.GetSeckillActiveListTest"/>
-            <class name="com.meiji.test.http.mall.active.SubscribeNoticeTest"/>
+<!--            <class name="com.meiji.test.http.mall.active.SubscribeNoticeTest"/>-->
 
 <!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopByIdTest"/>-->
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsDetailTest"/> <!--需要查ES,可不与shopid关联-->

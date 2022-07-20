@@ -26,5 +26,4 @@ class MarketAccountDelete extends PlatformPost{
         return this
     }
 
-
 }

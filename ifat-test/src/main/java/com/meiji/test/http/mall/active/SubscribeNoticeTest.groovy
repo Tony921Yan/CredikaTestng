@@ -18,7 +18,7 @@ class SubscribeNoticeTest extends BaseTest {
     @Test(description = "订阅秒杀开始提醒 subscribeNotice" ,groups = ["prod","uat"],testName = "subscribeNotice",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void subscribeNotice(TestContext testContext){
-        getSeckillTopGoods.invoke(testContext).baseAssert(testContext).afterinvoke(testContext)
+//        getSeckillTopGoods.invoke(testContext).baseAssert(testContext).afterinvoke(testContext)
         subscribeNotice.invoke(testContext).baseAssert(testContext)
     }
 }

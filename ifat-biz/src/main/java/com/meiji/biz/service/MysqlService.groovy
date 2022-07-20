@@ -466,6 +466,21 @@ class MysqlService extends MysqlAPI {
         return meiji_pay.firstRow("select * from meiji_pay.market_account ORDER BY gmt_create desc")
     }
 
+    static def getSeckillTopGoods(){
+       Map map =  meiji_active.firstRow("SELECT id from meiji_active.active_main where type =11 and status in (3,4) ORDER BY expiry_start desc")
+        return meiji_active.firstRow("SELECT * from meiji_active.seckill_activity_subtime where activity_id =$map.id ORDER BY begin_time DESC")
+//        return ("SELECT * from"+
+//        "\tmeiji_active.seckill_activity_subtime"+
+//        "\twhere activity_id IN"+
+//        "\t(SELECT id from meiji_active.active_main where type =11 and status in (3,4) and is_delete = 0 ORDER BY expiry_start desc)"+
+//        "\tAND"+
+//        "\tNOW() > begin_time"+
+//        "\tOR"+
+//        "\tNOW() > end_time"+
+//        "\tORDER BY begin_time DESC"
+//        )
+    }
+
 //    static def getGroupActivityID(){
 //        Map map =meiji_active.firstRow("SELECT id FROM `meiji_active`.`group_buy_activity` WHERE `placement` = '1'")
 //        println(map)

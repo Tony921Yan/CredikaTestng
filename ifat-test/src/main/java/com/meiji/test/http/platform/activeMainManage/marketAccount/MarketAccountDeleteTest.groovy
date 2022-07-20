@@ -17,8 +17,14 @@ class MarketAccountDeleteTest extends BaseTest {
         marketAccountAdd.invoke(testContext).baseAssert(testContext).afterInvoke(testContext)
         marketAccountDelete.invoke(testContext).baseAssert(testContext)
         marketAccountDelete.specialAssert(testContext)
-        //为防止数据太多做物理删除
-        MysqlService.marketAccountRealDelete(testContext.get("id"))
     }
-
+//    @Test(description = "营销账户-物理删除 marketAccountRealDelete" ,groups = ["uat"],testName = "marketAccountDelete",
+//            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+//    public void marketAccountRealDelete(TestContext testContext){
+//        marketAccountAdd.invoke(testContext).baseAssert(testContext).afterInvoke(testContext)
+//        marketAccountDelete.invoke(testContext).baseAssert(testContext)
+//        marketAccountDelete.specialAssert(testContext)
+//        //为防止数据太多做物理删除
+//        MysqlService.marketAccountRealDelete(testContext.get("id"))
+//    }
 }

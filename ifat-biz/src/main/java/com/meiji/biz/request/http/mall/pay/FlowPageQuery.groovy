@@ -1,11 +1,11 @@
 package com.meiji.biz.request.http.mall.pay
 
-import com.meiji.biz.request.http.shop.ShopPost
+import com.meiji.biz.request.http.mall.MallPost
 import com.meiji.biz.service.MysqlService
 import com.meiji.biz.util.DateUtil
 import com.miyuan.ifat.support.test.TestContext
 
-class FlowPageQuery extends ShopPost {
+class FlowPageQuery extends MallPost {
     {
         super.api = "pay/flowPageQuery"
         super.params =  ["condition","page","rows"]

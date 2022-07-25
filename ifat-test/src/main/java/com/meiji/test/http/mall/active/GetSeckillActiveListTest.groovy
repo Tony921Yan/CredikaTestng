@@ -10,7 +10,7 @@ import org.testng.annotations.Test
  * * @date 2022/04/20 10:18
  * @Vession V2.7.1
  * */
-class GetSeckillActiveListTest extends BaseTest {
+class GetSeckillActiveListTest extends BaseTest { //此接口已废弃，用GetSeckillActivesByActIdTest代替
     GetSeckillActiveList getSeckillActiveList = new GetSeckillActiveList()
     @Test(description = "获取抢购中/即将开始的秒杀活动 getSeckillActiveList" ,groups = ["prod","uat"],testName = "getSeckillActiveList",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)

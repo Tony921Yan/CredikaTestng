@@ -10,7 +10,8 @@
             <class name="com.meiji.test.http.mall.active.GetCurrentTimeTest"/>
             <class name="com.meiji.test.http.mall.active.GetSeckillGoodsTest"/>
             <class name="com.meiji.test.http.mall.active.GetSeckillTopGoodsTest"/>
-            <class name="com.meiji.test.http.mall.active.GetSeckillActiveListTest"/>
+            <class name="com.meiji.test.http.mall.active.GetSeckillActivesByActIdTest"/>
+<!--            <class name="com.meiji.test.http.mall.active.GetSeckillActiveListTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.active.SubscribeNoticeTest"/>-->
 
 <!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopByIdTest"/>-->

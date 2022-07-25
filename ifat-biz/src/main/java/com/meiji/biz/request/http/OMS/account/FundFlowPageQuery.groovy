@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class FundFlowPageQuery extends OMSPost {
     {
-        super.api = "/api/supplier/finance/fundFlowPageQuery"
+        super.api = "OrderFlow/fundFlowPageQuery"
         super.params =  [ "condition","order","page","rows","sort"]
 
     }

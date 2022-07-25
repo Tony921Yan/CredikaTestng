@@ -1,6 +1,4 @@
 package com.meiji.test.http.OMS.account
-
-
 import com.meiji.biz.request.http.OMS.account.FundFlowDetailQuery
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

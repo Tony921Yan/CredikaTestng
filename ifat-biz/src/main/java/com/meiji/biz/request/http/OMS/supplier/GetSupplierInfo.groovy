@@ -1,11 +1,12 @@
 package com.meiji.biz.request.http.OMS.supplier
 
 import com.meiji.biz.request.http.OMS.OMSGet
+import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetSupplierInfo extends OMSGet {
+class GetSupplierInfo extends OMSPost {
     {
-        super.api = "/api/supplier/supplierMgr/getSupplierInfo"
+        super.api = "Home/getSupplierInfo"
         super.params =  [ "phone"]
 
     }

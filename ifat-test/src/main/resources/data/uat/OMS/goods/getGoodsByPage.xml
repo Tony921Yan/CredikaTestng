@@ -3,9 +3,49 @@
     <test name = "OMSGetGoodsByPage">
         <parm key="pageNum" value ="1"/>
         <parm key="pageSize" value ="20"/>
-        <parm key="supplierId" value ="12"/>
+        <parm key="supplierId" value ="77"/>
         <parm key="status" value ="[0, 1, 2, 3, 4]"/>
+    </test>
 
+    <test name = "OMSGetGoodsByPage0">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="status" value ="[0]"/>
+    </test>
 
+    <test name = "OMSGetGoodsByPage1">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="status" value ="[1]"/>
+    </test>
+
+    <test name = "OMSGetGoodsByPage2">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="status" value ="[2]"/>
+    </test>
+
+    <test name = "OMSGetGoodsByPage3">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="status" value ="[3]"/>
+    </test>
+
+    <test name = "OMSGetGoodsByPage4">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="status" value ="[4]"/>
+    </test>
+
+    <test name = "OMSGetGoodsByPage5">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="status" value ="[5]"/>
     </test>
 </data>

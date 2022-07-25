@@ -1,11 +1,12 @@
 package com.meiji.biz.request.http.OMS.account
 
 import com.meiji.biz.request.http.OMS.OMSGet
+import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class Account extends OMSGet {
+class Account extends OMSPost {
     {
-        super.api = "/api/supplier/finance/account"
+        super.api = "AccountAssets/getAccount"
         super.params =  [ "supplierId"]
 
     }

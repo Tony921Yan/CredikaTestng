@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class ModifyCard extends OMSPost {
     {
-        super.api = "/api/supplier/finance/modifyCard"
+        super.api = "AccountAssets/modifyCard"
         super.params =  [ "accountBank","accountNumber","accountType","bankAddressCode","bankBranchId","bankName","supplierId"]
 
     }

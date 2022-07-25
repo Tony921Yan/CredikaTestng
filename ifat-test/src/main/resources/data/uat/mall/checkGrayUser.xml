@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "mallCheckGrayUser">
-        <parm key="grayUserId" value ="10053"/>
+        <parm key="grayUserId" value ="luoshi"/>
     </test>
     <test name = "mallCheckGrayUser_false">
         <parm key="grayUserId" value ="1110053"/>

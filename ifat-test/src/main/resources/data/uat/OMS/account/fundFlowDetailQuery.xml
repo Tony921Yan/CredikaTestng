@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "OMSfundFlowDetailQuery">
-        <parm key="supplierId" value ="7"/>
-        <parm key="tradeOrderNo" value ="O2021040619200536607"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="tradeOrderNo" value ="O2022072511070312463"/>
 
 
     </test>

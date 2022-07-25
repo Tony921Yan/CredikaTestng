@@ -5,8 +5,8 @@ import com.miyuan.ifat.support.test.TestContext
 
 class FundFlowRecordExport extends OMSPost {
     {
-        super.api = "/api/supplier/finance/fundFlowRecordExport"
-        super.params =  [ "condition","order","page","rows","sort"]
+        super.api = "OrderFlow/fundFlowDetaifundFlowRecordExportlQuery"
+        super.params =  ["condition","order","page","rows","sort"]
 
     }
 
@@ -21,7 +21,7 @@ class FundFlowRecordExport extends OMSPost {
     }
 
     OMSPost baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        assert  testContext.get("result").getAt("httpStatusCode") == 200
         return this
     }
 

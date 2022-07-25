@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class AccountTest extends BaseTest {
     Account account = new Account()
-    @Test(description = "供应商首页查询 account" ,groups = ["prod","uat"],testName = "OMSaccount",
+    @Test(description = "账户资产 account" ,groups = ["prod","uat"],testName = "OMSaccount",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void account(TestContext testContext){
         account.invoke(testContext).baseAssert(testContext)

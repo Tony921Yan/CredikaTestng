@@ -64,7 +64,7 @@ abstract class OMSPost {
     }
 
     OMSPost baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == 0
+        assert testContext.get("result").getAt("httpStatusCode") ==200
         return this
     }
 

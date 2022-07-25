@@ -20,7 +20,7 @@ class ReceiveActiveCoupon extends MallPost{
     }
 
     ReceiveActiveCoupon baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == 10
+        assert testContext.getResponse().code == 0
         //super.baseAssert(testContext)
         return this
     }

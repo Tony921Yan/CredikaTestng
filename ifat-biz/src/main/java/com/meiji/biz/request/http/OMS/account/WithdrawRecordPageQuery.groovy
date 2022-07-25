@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class WithdrawRecordPageQuery extends OMSPost {
     {
-        super.api = "/api/supplier/finance/withdrawRecordPageQuery"
+        super.api = "Withdraw/withdrawRecordPageQuery"
         super.params =  [ "condition","order","page","rows","sort"]
 
     }

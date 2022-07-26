@@ -1,24 +1,25 @@
 package com.meiji.biz.request.http.OMS.order
+
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetOrderDetail extends OMSPost{
+class GetOrderCount extends OMSPost {
     {
-        super.api = "OrderDetailManage/getOrderDetail"
-        super.params =  ["supplierId","id"]
+        super.api = "OrderDetailManage/getOrderCount"
+        super.params =  [ "supplierId","startTime","endTime"]
     }
 
-    GetOrderDetail invoke(TestContext testContext) {
+    GetOrderCount invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    GetOrderDetail preInvoke(TestContext testContext){
+    GetOrderCount preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    GetOrderDetail baseAssert(TestContext testContext){
+    GetOrderCount baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

@@ -3,24 +3,23 @@ package com.meiji.biz.request.http.OMS.order
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetSupplierOrderCount extends OMSPost {
+class OrderLock extends OMSPost {
     {
-        super.api = "/api/supplier/orderMgr/getSupplierOrderCount"
-        super.params =  [ "supplierId"]
-
+        super.api = "OrderDetailManage/orderLock"
+        super.params =  [ "orderCodeList"]
     }
 
-    GetSupplierOrderCount invoke(TestContext testContext) {
+    OrderLock invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    GetSupplierOrderCount preInvoke(TestContext testContext){
+    OrderLock preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    GetSupplierOrderCount baseAssert(TestContext testContext){
+    OrderLock baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

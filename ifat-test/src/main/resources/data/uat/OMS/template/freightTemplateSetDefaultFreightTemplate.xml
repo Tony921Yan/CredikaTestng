@@ -2,6 +2,6 @@
 <data>
     <test name = "freightTemplateSetDefaultFreightTemplate">
         <parm key="supplierId" value="77"/>
-        <parm key="id" value="711"/>
+        <parm key="id" value="243"/>
     </test>
 </data>

@@ -1,11 +1,10 @@
 package com.meiji.biz.request.http.OMS.aftersale
-
 import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
 class GetSupplierAfterCount extends OMSPost {
     {
-        super.api = "/api/supplier/orderAfterMgr/getSupplierAfterCount"
+        super.api = "AftersalesDetailManage/getSupplierAfterCount"
         super.params =  [ "supplierId"]
 
     }

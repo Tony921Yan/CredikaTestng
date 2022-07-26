@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class FreightTemplateQueryPage extends OMSPost {
     {
-        super.api = "/freightTemplate/queryPage"
+        super.api = "freightTemplate/queryPage"
         super.params =  [ "supplierId","page","limit","templateCode","templateName"]
     }
 

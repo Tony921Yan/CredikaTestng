@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "OMSgetSupplierAfterCount">
-        <parm key="supplierId" value ="12"/>
+        <parm key="supplierId" value ="77"/>
 
 
     </test>

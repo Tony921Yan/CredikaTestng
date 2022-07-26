@@ -5,7 +5,7 @@ import com.miyuan.ifat.support.test.TestContext
 
 class DeliverOrderGoods extends OMSPost {
     {
-        super.api = "/api/supplier/orderMgr/deliverOrderGoods"
+        super.api = "OrderDetailManage/deliverOrderGoods"
         super.params =  ["goodsList", "logisticsCode","logisticsCompanyName","orderCode","supplierId"]
 
     }

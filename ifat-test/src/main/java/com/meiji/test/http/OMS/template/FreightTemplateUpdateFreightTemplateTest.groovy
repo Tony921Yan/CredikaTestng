@@ -1,7 +1,4 @@
 package com.meiji.test.http.OMS.template
-
-
-import com.meiji.biz.request.http.OMS.template.FreightTemplateAddFreightTemplate
 import com.meiji.biz.request.http.OMS.template.FreightTemplateUpdateFreightTemplate
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "OMSgetOrderLogisticsInfo">
-        <parm key="orderCode" value ="O2021052920180448865"/>
-        <parm key="supplierId" value ="12"/>
+        <parm key="orderCode" value ="O2022072609500379366"/>
+        <parm key="supplierId" value ="77"/>
 
 
     </test>

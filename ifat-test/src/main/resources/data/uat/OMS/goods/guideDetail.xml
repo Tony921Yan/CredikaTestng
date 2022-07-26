@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "guideDetail">
+        <parm key="type" value ="1"/>
+    </test>
+
+    <test name = "guideDetail1">
+        <parm key="type" value ="8"/>
+    </test>
+
+    <test name = "guideDetail2">
+        <parm key="type" value ="2"/>
+    </test>
+
+    <test name = "guideDetail7">
+        <parm key="type" value ="7"/>
+    </test>
+</data>

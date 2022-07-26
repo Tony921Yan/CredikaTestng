@@ -2,11 +2,90 @@
 <data>
     <test name = "OMSgetOrderAfterByPage">
         <parm key="order" value =""/>
-        <parm key="condition" value ="{supplierId:12}"/>
+        <parm key="condition" value ="{supplierId:77}"/>
         <parm key="page" value ="1"/>
-        <parm key="rows" value ="10"/>
+        <parm key="rows" value ="20"/>
         <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage1">
+        <parm key="order" value =""/>
+        <parm key="condition" value ='{"supplierId":77,"afterStatus":1}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage2">
+        <parm key="order" value =""/>
+        <parm key="condition" value ='{"supplierId":77,"afterStatus":2}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage3">
+        <parm key="order" value =""/>
+        <parm key="condition" value ='{"supplierId":77,"afterStatus":3}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage4">
+        <parm key="order" value =""/>
+        <parm key="condition" value ='{"supplierId":77,"afterStatus":4}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage5">
+        <parm key="order" value =""/>
+        <parm key="condition" value ='{"supplierId":77,"afterStatus":5}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage6">
+        <parm key="order" value =""/>
+        <parm key="condition" value ='{"supplierId":77,"afterStatus":6}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage7">
+        <parm key="order" value =""/>
+        <parm key="condition" value ='{"supplierId":77,"afterStatus":7}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
 
 
+    <test name = "OMSgetOrderAfterByPage8">
+        <parm key="condition" value ='{"supplierId":77,"afterType":1}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage9">
+        <parm key="condition" value ='{"supplierId":77,"afterType":2}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
+    </test>
+
+    <test name = "OMSgetOrderAfterByPage10">
+        <parm key="condition" value ='{"supplierId":77,"afterType":1,"gmtCreatEndDate":"2022-07-26 23:59:59 23:59:59","gmtCreateStrDate":"2022-06-26 00:00:00 00:00:00","oderCode":"O2022072220080583835","orderAfterCode":"R2022072220120513414","spuType":1}'/>
+        <parm key="order" value =""/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sort" value =""/>
     </test>
 </data>

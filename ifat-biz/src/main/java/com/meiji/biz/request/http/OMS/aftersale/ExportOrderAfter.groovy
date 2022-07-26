@@ -5,8 +5,8 @@ import com.miyuan.ifat.support.test.TestContext
 
 class ExportOrderAfter extends OMSPost {
     {
-        super.api = "/api/supplier/orderAfterMgr/exportOrderAfter"
-        super.params =  [ "condition","order","page","rows","sort"]
+        super.api = "AftersalesDetailManage/exportOrderAfter"
+        super.params =  ["condition"]
 
     }
 
@@ -21,7 +21,7 @@ class ExportOrderAfter extends OMSPost {
     }
 
     ExportOrderAfter baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        assert testContext.get("result").getAt("httpStatusCode") ==200
         return this
     }
 

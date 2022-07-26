@@ -1,7 +1,4 @@
 package com.meiji.test.http.OMS.order
-
-
-
 import com.meiji.biz.request.http.OMS.order.GetOrderLogisticsInfo
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

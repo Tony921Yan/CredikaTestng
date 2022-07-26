@@ -1,10 +1,11 @@
 package com.meiji.biz.request.http.OMS.order
 import com.meiji.biz.request.http.OMS.OMSGet
+import com.meiji.biz.request.http.OMS.OMSPost
 import com.miyuan.ifat.support.test.TestContext
 
-class GetOrderLogisticsInfo extends OMSGet {
+class GetOrderLogisticsInfo extends OMSPost {
     {
-        super.api = "/api/supplier/orderMgr/getOrderLogisticsInfo"
+        super.api = "OrderDetailManage/getOrderLogisticsInfo"
         super.params =  [ "supplierId","orderCode"]
 
     }

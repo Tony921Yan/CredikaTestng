@@ -21,7 +21,7 @@ class WithdrawRecordExport extends OMSPost {
     }
 
     WithdrawRecordExport baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        assert testContext.get("result").getAt("httpStatusCode") ==200
         return this
     }
 

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "OMSdeliverOrderGoods">
-<!--        <parm key="goodsList" value ='[{"deliverNum": 0,"skuCode": "200su-0103664"}]'/>-->
-        <parm key="logisticsCode" value ="773097721365661"/>
-        <parm key="logisticsCompanyName" value ="shentong"/>
-        <parm key="orderCode" value ="O2021052615530547849"/>
-        <parm key="supplierId" value ="12"/>
+        <parm key="logisticsCode" value ="432538966071799"/>
+        <parm key="logisticsCompanyName" value ="yunda"/>
+        <parm key="orderCode" value ="O2022063018530437654"/>
+        <parm key="supplierId" value ="77"/>
     </test>
 </data>

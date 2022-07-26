@@ -2,16 +2,15 @@
 <data>
     <test name = "freightTemplateUpdateFreightTemplate">
         <parm key="status" value ="1"/>
-        <parm key="id" value ="708"/>
+        <parm key="id" value ="243"/>
         <parm key="areaCodeList" value ="[]"/>
-        <parm key="isParcel" value ="0"/>
-        <parm key="remark" value =""/>
+        <parm key="isParcel" value ="1"/>
+        <parm key="remark" value ="自动化测试备注"/>
         <parm key="supplierId" value="77"/>
-        <parm key="templateName" value="cehsi001"/>
-        <parm key="ruleType" value="1"/>
+        <parm key="templateName" value="系统默认运费模板"/>
         <parm key="freightTemplateRulePrices" value="{}"/>
         <parm key="freightTemplateRulePricesList" value="[]"/>
-        <parm key="freightTemplateRuleWeight" value='{"firstFreight":200,"firstWeight":1,"followFreight":300,"followWeight":4,"isDefault":1}'/>
-        <parm key="freightTemplateRuleWeightList" value='[{"areaCodeList":["150000"],"key":"0","freightDatas":{"isDefault":0,"firstWeight":45.63,"firstFreight":5600,"followWeight":46,"followFreight":9963}}]'/>
+        <parm key="freightTemplateRuleWeight" value='{}'/>
+        <parm key="freightTemplateRuleWeightList" value='[]'/>
     </test>
 </data>

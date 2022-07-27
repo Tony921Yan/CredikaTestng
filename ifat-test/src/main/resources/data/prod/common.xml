@@ -10,5 +10,7 @@
         <parm key="userType" value="2"/>
         <parm key="username" value="autotest"/>
         <parm key="password" value="abcd123456"/>
+        <parm key="omsUsername" value="13418039670"/>
+        <parm key="omsPassword" value="d720397H"/>
     </test>
 </data>

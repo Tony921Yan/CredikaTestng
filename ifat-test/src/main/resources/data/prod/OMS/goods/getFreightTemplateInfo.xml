@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getFreightTemplateInfo">
+        <parm key="id" value ="393"/>
+        <parm key="supplierId" value ="77"/>
+    </test>
+</data>

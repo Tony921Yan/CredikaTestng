@@ -1,0 +1,58 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "user"  verbose="4">
+    <test name="OMS 测试环境自动化脚本">
+        <classes>
+            <class name="com.meiji.test.http.OMS.account.AccountTest"/>
+            <class name="com.meiji.test.http.OMS.account.FundFlowDetailQueryTest"/>
+            <class name="com.meiji.test.http.OMS.account.FundFlowPageQueryTest"/>
+            <class name="com.meiji.test.http.OMS.account.FundFlowRecordExportTest"/>
+<!--            <class name="com.meiji.test.http.OMS.account.GetAccountNameTest"/>-->
+<!--            <class name="com.meiji.test.http.OMS.account.GetBindCardInfoTest"/>-->
+<!--            <class name="com.meiji.test.http.OMS.account.GetRegionCodeTest"/>-->
+<!--            <class name="com.meiji.test.http.OMS.account.ModifyCardTest"/>-->
+<!--            <class name="com.meiji.test.http.OMS.account.QueryTest"/>-->
+            <class name="com.meiji.test.http.OMS.account.WithdrawRecordExportTest"/>
+            <class name="com.meiji.test.http.OMS.account.WithdrawRecordPageQueryTest"/>
+<!--            <class name="com.meiji.test.http.OMS.account.WithdrawTest"/>-->
+
+<!--            <class name="com.meiji.test.http.OMS.aftersale.CheckGoodsTest"/>-->
+            <class name="com.meiji.test.http.OMS.aftersale.ExportOrderAfterTest"/>
+            <class name="com.meiji.test.http.OMS.aftersale.GetOrderAfterByPageTest"/>
+            <class name="com.meiji.test.http.OMS.aftersale.GetOrderAfterDetailTest"/>
+            <class name="com.meiji.test.http.OMS.aftersale.GetSupplierAfterCountTest"/>
+
+            <class name="com.meiji.test.http.OMS.contract.QueryPageTest"/>
+
+            <class name="com.meiji.test.http.OMS.goods.GetFreightTemplateInfoTest"/>
+            <class name="com.meiji.test.http.OMS.goods.GetGoodsByPageTest"/>
+            <class name="com.meiji.test.http.OMS.goods.GetSupplierReturnAddressBySupplierIdTest"/>
+            <class name="com.meiji.test.http.OMS.goods.GuideDetailTest"/>
+            <class name="com.meiji.test.http.OMS.goods.ListFreightTemplateBySupplierIdTest"/>
+            <class name="com.meiji.test.http.OMS.goods.QueryGoodPropertysTest"/>
+            <class name="com.meiji.test.http.OMS.goods.QueryPageTest"/>
+
+<!--            <class name="com.meiji.test.http.OMS.order.DeliverOrderGoodsTest"/>-->
+            <class name="com.meiji.test.http.OMS.order.GetOrderByPageTest"/>
+            <class name="com.meiji.test.http.OMS.order.GetOrderCountTest"/>
+            <class name="com.meiji.test.http.OMS.order.GetOrderDetailTest"/>
+            <class name="com.meiji.test.http.OMS.order.GetOrderEventLogTest"/>
+            <class name="com.meiji.test.http.OMS.order.GetOrderLogisticsInfoTest"/>
+            <class name="com.meiji.test.http.OMS.order.GetTaskByPageTest"/>
+            <class name="com.meiji.test.http.OMS.order.GetOrderEventLogTest"/>
+            <class name="com.meiji.test.http.OMS.order.OrderLockTest"/>
+<!--            <class name="com.meiji.test.http.OMS.order.UpdateDeliverOrderGoodsTest"/>-->
+
+            <class name="com.meiji.test.http.OMS.supplier.GetSupplierDetailTest"/>
+            <class name="com.meiji.test.http.OMS.supplier.GetSupplierInfoTest"/>
+
+            <class name="com.meiji.test.http.OMS.template.FreightTemplateAddFreightTemplateTest"/>
+            <class name="com.meiji.test.http.OMS.template.FreightTemplateDeleteFreightTemplateTest"/>
+            <class name="com.meiji.test.http.OMS.template.FreightTemplateGetFreightTemplateInfoTest"/>
+            <class name="com.meiji.test.http.OMS.template.FreightTemplateQueryPageTest"/>
+            <class name="com.meiji.test.http.OMS.template.FreightTemplateSetDefaultFreightTemplateTest"/>
+            <class name="com.meiji.test.http.OMS.template.FreightTemplateUpdateFreightTemplateTest"/>
+
+            <class name="com.meiji.test.http.OMS.user.CheckGrayUserTest"/>
+        </classes>
+    </test>
+</suite>

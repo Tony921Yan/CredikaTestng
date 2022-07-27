@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getOrderCount">
+        <parm key="supplierId" value ="77"/>
+        <parm key="startTime" value ="2022-06-26 00:00:00"/>
+        <parm key="endTime" value ="2022-07-25 23:59:59"/>
+    </test>
+</data>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSgetRegionCode">
+        <parm key="city" value ="深圳市"/>
+        <parm key="province" value ="广东省"/>
+        <parm key="region" value ="龙华区"/>
+
+
+    </test>
+</data>

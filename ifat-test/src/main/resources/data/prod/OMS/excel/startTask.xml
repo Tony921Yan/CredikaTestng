@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "oms_startTask">
+        <parm key="taskId" value ="11122"/>
+        <parm key="supplierId" value ="0"/>
+    </test>
+</data>

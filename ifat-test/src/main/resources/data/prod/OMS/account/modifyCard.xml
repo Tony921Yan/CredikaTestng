@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSmodifyCard">
+        <parm key="accountBank" value ="工商银行"/>
+        <parm key="accountNumber" value ="3602201109100135567"/>
+        <parm key="accountType" value ="1"/>
+        <parm key="bankAddressCode" value ="510500"/>
+        <parm key="bankBranchId" value =""/>
+        <parm key="bankName" value =""/>
+        <parm key="supplierId" value ="77"/>
+    </test>
+</data>

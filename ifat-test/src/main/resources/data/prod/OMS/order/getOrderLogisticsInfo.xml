@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSgetOrderLogisticsInfo">
+        <parm key="orderCode" value ="O2022070113500008298"/>
+        <parm key="supplierId" value ="77"/>
+
+
+    </test>
+</data>

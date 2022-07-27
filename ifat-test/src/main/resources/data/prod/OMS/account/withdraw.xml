@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSwithdraw">
+        <parm key="amount" value ="0.001"/>
+        <parm key="remark" value =""/>
+        <parm key="supplierId" value ="12"/>
+
+
+
+    </test>
+</data>

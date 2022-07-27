@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSdeliverOrderGoods">
+        <parm key="logisticsCode" value ="432538966071799"/>
+        <parm key="logisticsCompanyName" value ="yunda"/>
+        <parm key="orderCode" value ="O2022063018530437654"/>
+        <parm key="supplierId" value ="77"/>
+    </test>
+</data>

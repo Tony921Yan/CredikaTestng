@@ -30,7 +30,7 @@ class FreightTemplateQueryPage extends OMSPost {
         System.out.println("mysqlResult" + mysqlResult)
         System.out.println("apiResult" + apiResult)
         System.out.println("apiResult" + apiResult.templateList.getAt(1).getAt("templateCode"))
-        assert apiResult.total > 20
+        assert apiResult.total > 10
         assert mysqlResult.template_code == apiResult.templateList.getAt(1).getAt("templateCode")
         assert mysqlResult.id == apiResult.templateList.getAt(1).getAt("id")
     }

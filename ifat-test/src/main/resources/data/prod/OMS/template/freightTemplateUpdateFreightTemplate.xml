@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "freightTemplateUpdateFreightTemplate">
+        <parm key="status" value ="1"/>
+        <parm key="id" value ="243"/>
+        <parm key="areaCodeList" value ="[]"/>
+        <parm key="isParcel" value ="1"/>
+        <parm key="remark" value ="自动化测试备注"/>
+        <parm key="supplierId" value="77"/>
+        <parm key="templateName" value="系统默认运费模板"/>
+        <parm key="freightTemplateRulePrices" value="{}"/>
+        <parm key="freightTemplateRulePricesList" value="[]"/>
+        <parm key="freightTemplateRuleWeight" value='{}'/>
+        <parm key="freightTemplateRuleWeightList" value='[]'/>
+    </test>
+</data>

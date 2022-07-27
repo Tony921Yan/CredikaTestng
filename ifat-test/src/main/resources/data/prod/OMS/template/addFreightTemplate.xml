@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "OMSaddFreightTemplate">
+        <parm key="areaCodeList" value =""/>
+        <parm key="isParcel" value ="0"/>
+        <parm key="remark" value =""/>
+        <parm key="status" value ="0"/>
+        <parm key="supplierId" value="22"/>
+        <parm key="templateName" value="888"/>
+
+
+    </test>
+</data>

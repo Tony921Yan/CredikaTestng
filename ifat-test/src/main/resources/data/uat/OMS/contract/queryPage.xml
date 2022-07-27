@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "contractQueryPage">
+        <parm key="condition" value ='{"supplierId":77}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "contractQueryPage1">
+        <parm key="condition" value ='{"contractStatus":1,"supplierId":77}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "contractQueryPage2">
+        <parm key="condition" value ='{"contractStatus":2,"supplierId":77}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "contractQueryPage3">
+        <parm key="condition" value ='{"contractStatus":3,"supplierId":77}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "contractQueryPage4">
+        <parm key="condition" value ='{"contractStatus":4,"supplierId":77}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "contractQueryPage5">
+        <parm key="condition" value ='{"contractStatus":5,"supplierId":77}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+</data>

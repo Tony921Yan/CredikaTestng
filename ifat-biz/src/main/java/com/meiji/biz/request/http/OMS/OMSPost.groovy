@@ -7,6 +7,7 @@ import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
 import com.miyuan.ifat.support.vo.Record
+import com.miyuan.ifat.support.vo.Result
 import org.apache.commons.lang3.ObjectUtils
 
 import java.lang.reflect.Method
@@ -64,6 +65,8 @@ abstract class OMSPost {
     }
 
     OMSPost baseAssert(TestContext testContext){
+        Result result = testContext.getResult() as Result
+        assert result.getHttpStatusCode() == 200
         assert testContext.getResponse().code  == 0
         return this
     }

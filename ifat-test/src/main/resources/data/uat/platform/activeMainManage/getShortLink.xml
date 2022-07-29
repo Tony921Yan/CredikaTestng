@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "getShortLink">
+        <parm key="isPermanent" value ="0"/>
+        <parm key="pageTitle" value ="商品详情"/>
+        <parm key="pageUrl" value ="subpackages/goods/GoodsDetail/index?spuId=1487292929671231&amp;shopId=1423711559221280"/>
+
+
+    </test>
+
+</data>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "getPromotionalInfo">
+        <parm key="referId" value ="1487292929671231"/>
+
+
+    </test>
+
+</data>

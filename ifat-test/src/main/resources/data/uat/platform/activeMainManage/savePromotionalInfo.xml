@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "savePromotionalInfo">
+        <parm key="qrCodeUrl" value ="https://test.platform.meiji8888.com/platform/activeMainMgr/getShopWeappCode?page=pages/Proxy/index&amp;scene=6Q5c9xQSj&amp;shopId=1423711559221280&amp;envVersion=trial&amp;checkPath=0"/>
+        <parm key="pageLink" value ="subpackages/goods/GoodsDetail/index?spuId=1487292929671231&amp;shopId=1423711559221280"/>
+        <parm key="shortLink" value ="#小程序://美记优选生活/商品详情/T1RFtEyWPrDRkGw"/>
+        <parm key="h5Link" value ="https://wxaurl.cn/9MQ75L90sUk"/>
+        <parm key="posterLink" value ="https://test.mall.meiji8888.com/share/getHtmlImage?data=%7B%22avatar%22%3A%22https%3A%2F%2Fstatic.meiji8888.com%2Fmj-shop%2Fupload%2F1631866233146.jpg%3Fx-oss-process%3Dimage%252Fresize%252Cm_fill%252Ch_450%252Cw_450%22%2C%22nickname%22%3A%22%F0%9F%91%A3%E6%9B%BE%E6%9B%BE85%E5%8F%B7%E5%BA%97%E9%93%BA%22%2C%22goodsName%22%3A%22%E5%8C%97%E6%AC%A7%E5%85%A8%E5%B1%8B%E5%AE%A2%E5%8E%85%E7%81%AFled%E5%90%B8%E9%A1%B6%E7%81%AF%E7%8E%B0%E4%BB%A3%E7%AE%80%E7%BA%A6%E5%A4%A7%E6%B0%94%E4%B8%BB%E7%81%AF%E4%B8%89%E5%AE%A4%E4%B8%A4%E5%8E%85%E5%A5%97%E9%A4%90%E7%BB%84%E5%90%88%E7%81%AF%E5%85%B7%E5%8C%97%E6%AC%A7%E5%85%A8%E5%B1%8B%E5%AE%A2%E5%8E%85%E7%81%AFled%E5%90%B8%E9%A1%B6%E7%81%AF%E7%8E%B0%E4%BB%A3%E7%AE%80%E7%BA%A6%E5%A4%A7%E6%B0%94%22%2C%22goodspicUrls%22%3A%22https%3A%2F%2Fstatic.meiji8888.com%2Ffront%2Fmj-ecmiddle-sys%2Fupload%2Fa1f5fb332297480bcb6c9559271ace5d.jpg%22%2C%22goodsPrice%22%3A1.1%2C%22comparePrice%22%3A%7B%22price%22%3A0%2C%22name%22%3A%22%E5%85%B6%E4%BB%96%E5%B9%B3%E5%8F%B0%22%7D%2C%22priceBg%22%3A%22https%3A%2F%2Fstatic.meiji8888.com%2Fmj-ecmiddle-sys%2Fposter%2FvxShareBtnRed.png%22%2C%22getTag%22%3A%22%E5%A4%A9%E5%AE%89%E4%BF%9D%E9%99%A9%E6%89%BF%E4%BF%9D%C2%B77%E5%A4%A9%E6%97%A0%E7%90%86%E7%94%B1%E9%80%80%E6%8D%A2%22%2C%22shareTip%22%3A%22https%3A%2F%2Fstatic.meiji8888.com%2Fmj-ecmiddle-sys%2Fposter%2Fshare-tip-v2.png%22%2C%22sellingPoint%22%3A%5B%7B%22star%22%3A%22https%3A%2F%2Fstatic.meiji8888.com%2Fmj-ecmiddle-sys%2Fposter%2Fstar.png%22%2C%22name%22%3A%22%E4%BD%8E%E4%BB%B7%E4%BF%83%E9%94%80%22%7D%5D%2C%22qrCodeRes%22%3A%22https%3A%2F%2Ftest.platform.meiji8888.com%2Fplatform%2FactiveMainMgr%2FgetShopWeappCode%3Fpage%3Dpages%2FProxy%2Findex%26scene%3D6Q5c9xQSj%26shopId%3D1423711559221280%26envVersion%3Dtrial%26checkPath%3D0%22%2C%22isCompensation%22%3Afalse%2C%22lineThroughPrice%22%3A1.2%7D&amp;html=shareNormalSinglePoster"/>
+        <parm key="referId" value ="1487292929671231"/>
+        <parm key="specifiedShop" value ="1"/>
+        <parm key="extra" value ="shop112107065567"/>
+
+
+    </test>
+
+</data>

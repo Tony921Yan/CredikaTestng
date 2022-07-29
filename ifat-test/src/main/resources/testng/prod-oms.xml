@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name = "user"  verbose="4">
-    <test name="OMS 测试环境自动化脚本">
+    <test name="OMS 生产环境自动化脚本">
         <classes>
             <class name="com.meiji.test.http.OMS.account.AccountTest"/>
             <class name="com.meiji.test.http.OMS.account.FundFlowDetailQueryTest"/>

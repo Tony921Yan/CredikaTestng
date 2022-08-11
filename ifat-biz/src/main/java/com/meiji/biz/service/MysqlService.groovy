@@ -220,11 +220,11 @@ class MysqlService extends MysqlAPI {
     }
 
     static List getOrderInfoStatus(){
-        return meiji_order.rows("SELECT order_code, parent_order_code,order_status, order_type,gmt_create from order_info where pay_status !=0 and order_type !=3 and gmt_create> DATE_SUB(NOW(),INTERVAL 1 DAY)")
+        return meiji_order.rows("SELECT order_code, parent_order_code,order_status, order_type,gmt_create from order_info where pay_status !=0 and order_type !=3 and order_type !=5 and gmt_create> DATE_SUB(NOW(),INTERVAL 1 DAY)")
     }
 
     static Map getSettlementOrderStatusByOrderNo(String orderNo){
-        return meiji_settlement.firstRow("SELECT trade_order_no, trade_parent_order_no,state,gmt_create from settlement_order where trade_order_no = $orderNo ")
+        return meiji_settlement.firstRow("SELECT trade_order_no, trade_parent_order_no,state,gmt_create from settlement_order where trade_order_no = $orderNo")
     }
 
     static  Map getGoods_brand(){

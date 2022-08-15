@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "signGiftReceiveByPage">
+        <parm key="condition" value ="{}"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "signGiftReceiveByPage1">
+        <parm key="condition" value ="{giftType: 2}"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name="signGiftReceiveByPage2">
+        <parm key="condition" value="{giftType: 1}"/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+    </test>
+
+    <test name="signGiftReceiveByPage3">
+        <parm key="condition" value="{giftType: 3}"/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+    </test>
+
+</data>

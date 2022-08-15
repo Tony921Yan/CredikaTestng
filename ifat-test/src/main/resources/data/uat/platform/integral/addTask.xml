@@ -10,8 +10,57 @@
         <parm key="title" value ="浏览"/>
         <parm key="taskStatus" value ="0"/>
         <parm key="firstTimeFlag" value ="0"/>
-        <parm key="signInList" value ="[]"/>
-        <parm key="linkPage" value ="2"/>
+       <parm key="signInList" value ="[]"/>
+       <parm key="linkPage" value ="2"/>
         <parm key="linkPageDesc" value ="浏览晒单区承载页"/>
+   </test>
+
+    <test name="addTask1">
+        <parm value="taskName" key="签到礼包"/>
+        <parm value="title" key="签到礼包"/>
+        <parm value="guaranteedIntegral" key="20"/>
+        <parm value="taskType" key="7"/>
+        <parm value="signInList" key='[
+        {
+            "rewardPoints":10,
+            "giftType":2,
+            "giftIntegral":45,
+            "signInDay":1
+        },
+        {
+            "rewardPoints":15,
+            "signInDay":2
+        },
+        {
+            "rewardPoints":25,
+            "signInDay":3
+        },
+        {
+            "rewardPoints":35,
+            "giftType":1,
+            "couponId":1496325038276671,
+            "giftName":"指定商品送礼折扣券0811",
+            "usableNum":96,
+            "receiveNum":0,
+            "signInDay":4
+        },
+        {
+            "rewardPoints":35,
+            "signInDay":5
+        },
+        {
+            "rewardPoints":45,
+            "signInDay":6
+        },
+        {
+            "rewardPoints":55,
+            "signInDay":7
+        }
+    ]'/>
+        <parm value="isSignGift" key="1"/>
+        <parm value="taskStatus" key="0"/>
+        <parm value="firstTimeFlag" key="0"/>
+        <parm value="linkPage" key="7"/>
+        <parm value="linkPageDesc" key="签到任务"/>
     </test>
 </data>

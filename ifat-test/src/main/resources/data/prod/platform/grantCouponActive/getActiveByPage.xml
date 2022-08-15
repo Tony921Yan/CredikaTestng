@@ -5,4 +5,40 @@
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
     </test>
+
+    <test name="getActiveByPage1">
+        <parm key="condition" value="{status: 1}"/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+    </test>
+
+    <test name="getActiveByPage2">
+        <parm key="condition" value="{status: 2}"/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+    </test>
+
+    <test name="getActiveByPage3">
+        <parm key="condition" value="{status: 3}"/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+    </test>
+
+    <test name="getActiveByPage4">
+        <parm key="condition" value="{status: 4}"/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="2"/>
+    </test>
+
+    <test name="getActiveByPage5">
+        <parm key="condition" value="{status: 5}"/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+    </test>
+
+    <test name="getActiveByPage6">
+        <parm key="condition" value="{status: 6}"/>
+        <parm key="page" value="1"/>
+        <parm key="rows" value="20"/>
+    </test>
 </data>

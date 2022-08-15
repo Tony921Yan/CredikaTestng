@@ -6,8 +6,8 @@ import com.miyuan.ifat.support.test.TestContext
 
 class AddTask extends PlatformPost{
     {
-        super.api="/TaskManage/addTask"
-        super.params = ["browseTime","rewardPoints","taskName","taskLimitTimes","taskType","taskLogo","title","taskStatus","firstTimeFlag","signInList","linkPage","linkPageDesc","guaranteedIntegral","isSignGift"]
+        super.api="TaskManage/addTask"
+        super.params = ["taskName","guaranteedIntegral","browseTime","rewardPoints","taskLimitTimes","taskType","taskLogo","title","taskStatus","firstTimeFlag","signInList","linkPage","linkPageDesc","isSignGift"]
     }
 
     AddTask invoke(TestContext testContext) {

@@ -15,8 +15,8 @@
     </bean>
 
     <bean name="dingTalk">
-      <properties  key="url" value ="https://oapi.dingtalk.com/robot/send?access_token=64c6c004cca98dd798627dda6d24a815992ae2ee610da6983ac1e8ae3ca24728"/>
-      <properties  key="secret" value ="SEC37ef2dae431779f7af2daf30e890333b68da7b6ea771c2078c77ccc50f6984a2"/>
+      <properties  key="url" value ="https://oapi.dingtalk.com/robot/send?access_token=7d39fb0b331c7d4ad05b8e63a74d681414777806d5b2585ba5ea7fd0266a8133"/>
+      <properties  key="secret" value ="SEC3fbf296f009d162d7279a25a2263519349444e53ae7db1446adaaeb26a0b5ed1"/>
     </bean>
 
     <bean name = "meiji-goods">

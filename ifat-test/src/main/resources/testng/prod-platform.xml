@@ -54,7 +54,7 @@
             <class name="com.meiji.test.http.platform.integral.PlatformIntegralQueryTest"/>
             <class name="com.meiji.test.http.platform.integral.UserIntegralByPageTest"/>
             <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveByPageTest"/>
-            <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>
+<!--            <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>-->
             <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
 
             <class name="com.meiji.test.http.platform.couponManage.DetailTest"/>

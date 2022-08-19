@@ -2,14 +2,14 @@
 <suite name = "user"  verbose="4">
     <test name="C端 测试环境自动化脚本">
         <classes>
-            <class name="com.meiji.test.http.mall.active.GetCurrentTimeTest"/>
+<!--            <class name="com.meiji.test.http.mall.active.GetCurrentTimeTest"/>-->
             <class name="com.meiji.test.http.mall.active.GetSeckillGoodsTest"/>
             <class name="com.meiji.test.http.mall.active.GetSeckillTopGoodsTest"/>
-            <class name="com.meiji.test.http.mall.active.GetSeckillActiveListTest"/>
-            <class name="com.meiji.test.http.mall.active.SubscribeNoticeTest"/>
-            <class name="com.meiji.test.http.mall.activeRecord.RaffleDrawTest"/>
+<!--            <class name="com.meiji.test.http.mall.active.GetSeckillActiveListTest"/>-->
+<!--            <class name="com.meiji.test.http.mall.active.SubscribeNoticeTest"/>-->
+<!--            <class name="com.meiji.test.http.mall.activeRecord.RaffleDrawTest"/>-->
             <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleInfoTest"/>
-            <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleMoneyTest"/>
+<!--            <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleMoneyTest"/>-->
             <class name="com.meiji.test.http.mall.activeRecord.RaffleGetRaffleRecordTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponByGoodsTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponCountTest"/>
@@ -20,7 +20,7 @@
             <class name="com.meiji.test.http.mall.gift.GetToShareCountTest"/>
             <class name="com.meiji.test.http.mall.gift.GiftCreateGiftTest"/>
             <class name="com.meiji.test.http.mall.gift.ListGiftsFromMeTest"/>
-            <class name="com.meiji.test.http.mall.gift.ListGiftsToMeTest"/>
+<!--            <class name="com.meiji.test.http.mall.gift.ListGiftsToMeTest"/>-->
             <class name="com.meiji.test.http.mall.gift.ThankSenderTest"/>
             <class name="com.meiji.test.http.mall.gift.TryAcquireGiftTest"/>
 <!--            <class name="com.meiji.test.http.mall.home.ColunmnGoodsListToMiyuanTest"/>-->
@@ -36,7 +36,7 @@
 <!--            <class name="com.meiji.test.http.mall.integral.SendIntegralTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.integral.SignInTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.integral.UserTaskInfoQueryTest"/>-->
-            <class name="com.meiji.test.http.mall.inviteCode.FindInviteCodeListTest"/>
+<!--            <class name="com.meiji.test.http.mall.inviteCode.FindInviteCodeListTest"/>-->
             <class name="com.meiji.test.http.mall.inviteCode.FindInviteCodeNumTest"/>
             <class name="com.meiji.test.http.mall.inviteCode.FinShopInviteCodeCostInfoTest"/>
             <class name="com.meiji.test.http.mall.live.GetLiveSettingTest"/>
@@ -145,14 +145,14 @@
             <class name="com.meiji.test.http.mall.userShop.UpdateShopInfoTest"/>
             <class name="com.meiji.test.http.mall.userShop.UserVisitShopTest"/>
             <class name="com.meiji.test.http.mall.coupon.SearchGoodsByCouponTest"/>
-            <class name="com.meiji.test.http.mall.coupon.ReceiveActiveCouponTest"/>
+<!--            <class name="com.meiji.test.http.mall.coupon.ReceiveActiveCouponTest"/>-->
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponCountTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponByGoodsTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetActiveCouponTest"/>
             <class name="com.meiji.test.http.mall.groupBuy.FindDefaultGroupBuyActiveGoodsTest"/>
-            <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/>
-            <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyActiveTest"/>
+<!--            <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/>-->
+<!--            <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyActiveTest"/>-->
             <class name="com.meiji.test.http.mall.newVip.GetActivityGoodsTest"/>
             <class name="com.meiji.test.http.mall.newVip.GetActivityTest"/>
             <class name="com.meiji.test.http.mall.systemConfig.GetConfigValueTest"/>
@@ -162,6 +162,14 @@
             <class name="com.meiji.test.http.mall.groupBuy.GetGroupTeamByGoodsTest"/>
             <class name="com.meiji.test.http.mall.groupBuy.GetRecommendGroupGoodsTest"/>
             <class name="com.meiji.test.http.mall.groupBuy.GroupSubscribeNoticeTest"/>
+            <class name="com.meiji.test.http.mall.integral.PageQueryTest"/>
+            <class name="com.meiji.test.http.mall.integral.PersonalIntegralQueryTest"/>
+            <class name="com.meiji.test.http.mall.integral.UserTaskInfoQueryTest"/>
+            <class name="com.meiji.test.http.mall.integral.SignRemindSettingTest"/>
+            <class name="com.meiji.test.http.mall.integral.SendIntegralTest"/>
+            <class name="com.meiji.test.http.mall.integral.CuponIntegralRuleQueryTest"/>
+            <class name="com.meiji.test.http.mall.integral.SignRemindSettingTest"/>
+            <class name="com.meiji.test.http.mall.integral.UserTaskInfoQueryTest"/>
         </classes>
     </test>
 </suite>

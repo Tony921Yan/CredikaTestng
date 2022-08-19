@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "addActive">
-        <parm key="name" value ="积分兑券活动"/>
+        <parm key="name" value ="积分兑券活动自动化测试"/>
         <parm key="type" value ="1"/>
         <parm key="introduce" value =""/>
         <parm key="expiryStart" value ="2022-02-26 17:28:44"/>
-        <parm key="expiryEnd" value ="2022-02-28 17:28:52"/>
+        <parm key="expiryEnd" value ="2025-02-28 17:28:52"/>
         <parm key="couponIntegralRuleList" value ='[{"couponId":1465869834125344,"applyNum":10,"integral":10}]'/>
     </test>
 </data>

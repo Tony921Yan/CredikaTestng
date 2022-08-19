@@ -1,6 +1,6 @@
 package com.meiji.test.http.platform.grantCouponActive
-import com.meiji.biz.request.http.platform.grantCouponActive.AddActive
 import com.meiji.biz.request.http.platform.grantCouponActive.UpdateActive
+import com.meiji.biz.service.MysqlService
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
@@ -11,6 +11,9 @@ class UpdateActiveTest extends BaseTest {
     @Test(description = "修改兑券活动 updateActive" ,groups = ["prod","uat"],testName = "updateActive",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void updateActive(TestContext testContext){
-        updateActive.invoke(testContext).baseAssert(testContext)
-    }
+        if(MysqlService.grantCouponActiveID("2") != null){
+            testContext.put("id",MysqlService.grantCouponActiveID("2") != null)
+            updateActive.invoke(testContext).baseAssert(testContext)
+        }
+        }
 }

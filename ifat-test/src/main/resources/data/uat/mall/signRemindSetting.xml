@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "signRemindSetting">
+        <parm key="shopId" value ="1430182304940064"/>
+        <parm key="isSignRemindSetting" value ="1"/>
+    </test>
+</data>

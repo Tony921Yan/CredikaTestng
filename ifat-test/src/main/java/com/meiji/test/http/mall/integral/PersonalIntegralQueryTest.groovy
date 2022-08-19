@@ -9,7 +9,7 @@ class PersonalIntegralQueryTest extends BaseTest{
     PersonalIntegralQuery personalIntegralQuery = new PersonalIntegralQuery()
     @Test(description = "个人积分查询 personalIntegralQuery" ,groups = ["prod","uat"],testName = "personalIntegralQuery",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
-    public void getChannelData(TestContext testContext){
+    public void personalIntegralQuery(TestContext testContext){
         personalIntegralQuery.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
 }

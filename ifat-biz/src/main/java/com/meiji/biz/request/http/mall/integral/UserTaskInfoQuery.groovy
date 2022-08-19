@@ -25,7 +25,7 @@ class UserTaskInfoQuery extends MallPost{
         System.out.println("apiResult"+apiResult.signInTaskInfo.getAt("continuousDays"))
         Map mysqlResult = MysqlService.userTaskInfoQuery(testContext.get("userId")).get(0)
         System.out.println("mysqlResult"+mysqlResult)
-        assert mysqlResult.task_id == apiResult.taskInfo.getAt(0).getAt("taskId")
+//        assert mysqlResult.task_id == apiResult.taskInfo.getAt(0).getAt("taskId")
         assert mysqlResult.task_limit_times == apiResult.taskInfo.getAt(0).getAt("taskLimitTimes")
         assert mysqlResult.task_need_complete_times == apiResult.taskInfo.getAt(0).getAt("taskNeedCompleteTimes")
 //        assert mysqlResult.user_complete_times == apiResult.taskInfo.getAt(0).getAt("userCompleteTimes")

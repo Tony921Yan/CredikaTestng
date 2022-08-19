@@ -7,7 +7,7 @@ import com.miyuan.ifat.support.test.TestContext
 class PageQuery extends MallPost {
     {
         super.api = "integral/pageQuery"
-        super.params = ["page", "rows", "userId", "condition", "dateType"]
+        super.params = ["page", "rows", "userId", "condition"]
     }
 
     PageQuery invoke(TestContext testContext) {

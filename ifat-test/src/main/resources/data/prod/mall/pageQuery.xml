@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "pageQuery">
+    <test name = "pageQuery1">
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
         <parm key="userId" value ="1231"/>
         <parm key="condition" value ='{"dateType":1}'/>
     </test>
+
+    <test name = "pageQuery2">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="userId" value ="1231"/>
+        <parm key="condition" value ='{"dateType": 1,"changeType": 1}'/>
+    </test>
+
+    <test name = "pageQuery3">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="userId" value ="1231"/>
+        <parm key="condition" value ='{"dateType": 1,"changeType": 2}'/>
+    </test>
+
 </data>

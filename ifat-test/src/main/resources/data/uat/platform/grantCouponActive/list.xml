@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "list">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="status" value ="2"/>
+        <parm key="isExchangeFraction" value ="1"/>
+    </test>
+</data>

@@ -7,6 +7,7 @@ import com.miyuan.ifat.support.factory.FactorySupport
 import com.miyuan.ifat.support.util.JsonUtil
 import groovy.sql.Sql
 import org.apache.commons.lang3.StringUtils
+import org.testng.SkipException
 
 import java.util.stream.Collectors
 
@@ -427,6 +428,62 @@ class MysqlService extends MysqlAPI {
         println(map)
         return map.id
     }
+
+    static def integralConvert1(){
+        Map map =meiji_integral.firstRow("SELECT id FROM `meiji-integral`.`integral_active` WHERE `status` = '4' AND `is_delete` = '0'")
+        println(map)
+        return map.id
+    }
+    static def integralConvert2(){
+        List list =meiji_integral.rows("SELECT * FROM `meiji-integral`.`coupon_integral_rule` WHERE `active_id` IN(SELECT id FROM `meiji-integral`.`integral_active` WHERE `status` = '4' AND `is_delete` = '0' )")
+        println(list)
+        return list
+    }
+
+    static def integralConvert3(){
+        List list =meiji_integral.rows("SELECT * FROM `meiji-integral`.`coupon_integral_rule` WHERE `active_id` IN(SELECT id FROM `meiji-integral`.`integral_active` WHERE `status` = '4' AND `is_delete` = '0' )")
+        println(list)
+        return list
+    }
+
+    static def grantCouponActiveID(String status){
+        if(status =="2"){
+            meiji_integral.execute("UPDATE `meiji-integral`.`integral_active`  set status = 1 where type = 1 and create_by ='ifat' ORDER BY gmt_create")
+        }
+        else if(status == "3"){
+            meiji_integral.execute("UPDATE `meiji-integral`.`integral_active`  set status = 2 where type = 1 and create_by ='ifat' ORDER BY gmt_create")
+        }
+        else if(status == "4"){
+            meiji_integral.execute("UPDATE `meiji-integral`.`integral_active`  set status = 3 where type = 1 and create_by ='ifat' ORDER BY gmt_create")
+        }
+        Map map = meiji_integral.firstRow("SELECT id from `meiji-integral`.`integral_active`   where type = 1 and create_by ='ifat' and is_delete =0 ORDER BY gmt_create DESC")
+       if(map==null){
+           throw new SkipException ("参数id为空")
+//           println "参数id为空"
+       }
+        return map.id
+    }
+
+    static def sendIntegralTaskId1(){
+      Map map =meiji_integral.firstRow("SELECT id FROM `meiji-integral`.`integral_task` WHERE `task_status` = '1' AND `task_limit_times` = '0' AND `task_type` <> '7' ")
+        if(map == null){
+            println "积分中心暂无非签到任务"
+            return null
+        }
+        return map.id
+    }
+
+    static def sendIntegralTaskId2(){
+        Map map =meiji_integral.firstRow("SELECT task_type FROM `meiji-integral`.`integral_task` WHERE `task_status` = '1' AND `task_limit_times` = '0' AND `task_type` <> '7' ")
+        println map.get("task_type")
+        if((map.get("task_type"))==null){
+            println "积分中心暂无非签到任务"
+            return null
+        }
+        return map.get("task_type")
+    }
+
+
 
     static def GetSeckillActiveFromDecorate(){
         Map map = meiji_shop.firstRow("SELECT ext from meiji_shop.shop_decorate_template_component where component_type =117 and template_id in (SELECT id from meiji_shop.shop_decorate_template where is_default = 1 and status =1 and template_name like '美记小程序')")

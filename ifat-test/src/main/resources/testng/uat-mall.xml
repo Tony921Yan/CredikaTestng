@@ -70,9 +70,9 @@
             <class name="com.meiji.test.http.mall.orderExhibit.SaveBuyerShowTest"/>
 <!--            <class name="com.meiji.test.http.mall.orderInfo.CancelOrderTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.orderInfo.ConfirmReceiptTest"/>-->
-            <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>
+<!--            <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>-->
             <class name="com.meiji.test.http.mall.orderInfo.GetActiveBonusTest"/>
-            <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>
+<!--            <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>-->
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderGoodsInfoTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderInfoTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderIsSplitTest"/>
@@ -170,6 +170,13 @@
             <class name="com.meiji.test.http.mall.integral.CuponIntegralRuleQueryTest"/>
             <class name="com.meiji.test.http.mall.integral.SignRemindSettingTest"/>
             <class name="com.meiji.test.http.mall.integral.UserTaskInfoQueryTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayActiveBriefTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayActiveListTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayCouponPacketGoodsTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayDiscountZoneDataTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.MemberDaySubscribeNoticeTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.ReceiveActiveCouponTest"/>
+
         </classes>
     </test>
 </suite>

@@ -1,9 +1,9 @@
 package com.meiji.biz.request.http.platform.memeberDayConfig
 import com.meiji.biz.request.http.platform.PlatformPost
-import com.meiji.biz.service.MysqlService
-import com.meiji.biz.util.DateUtil
 import com.miyuan.ifat.support.test.TestContext
 import org.testng.SkipException
+import groovy.json.JsonOutput
+
 class MemberDayConfigQuery extends PlatformPost{
     {
         super.api="/MemeberDayConfig/memberDayConfigQuery"
@@ -22,10 +22,11 @@ class MemberDayConfigQuery extends PlatformPost{
 
     MemberDayConfigQuery afterInvoke(TestContext testContext){
         def apiResult =testContext.getResponse().data
-           if(apiResult.size()==0){
-            throw new SkipException("会员日配置为空")
-//            println("会员日配置为空")
+           if(apiResult==null){
+               println("会员日配置为空")
+               throw new SkipException("会员日配置为空")
         }
+
         testContext.put("virtualSubscriberCount",apiResult.virtualSubscriberCount)
         testContext.put("defaultPic",apiResult.defaultPic)
         testContext.put("beginTime",apiResult.beginTime)
@@ -35,7 +36,10 @@ class MemberDayConfigQuery extends PlatformPost{
         testContext.put("enabled",apiResult.enabled)
         testContext.put("goodsDetailPic",apiResult.goodsDetailPic)
         testContext.put("activeHeadPic",apiResult.activeHeadPic)
-        testContext.put("repeatDate",DateUtil.strToDate(apiResult.repeatDate as String))
+//        testContext.put("repeatDate",DateUtil.strToDate(apiResult.repeatDate as String))
+//       testContext.put("repeatDate",JsonOutput.toJson(apiResult.repeatDate))
+       testContext.put("repeatDate",apiResult.repeatDate)
+        println(apiResult.repeatDate)
         return this
     }
 

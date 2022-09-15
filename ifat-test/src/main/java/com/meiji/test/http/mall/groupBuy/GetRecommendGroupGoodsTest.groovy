@@ -1,5 +1,4 @@
 package com.meiji.test.http.mall.groupBuy
-
 import com.meiji.biz.request.http.mall.groupBuy.GetGroupBuyGoods
 import com.meiji.biz.request.http.mall.groupBuy.GetRecommendGroupGoods
 import com.meiji.biz.service.MysqlService

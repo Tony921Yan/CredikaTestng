@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getMemberDayDiscountZoneData">
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="6"/>
+        <parm key="shopId" value ="1409212240363552"/>
+    </test>
+</data>

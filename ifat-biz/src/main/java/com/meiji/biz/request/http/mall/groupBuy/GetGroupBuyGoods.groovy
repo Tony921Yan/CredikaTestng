@@ -1,5 +1,4 @@
 package com.meiji.biz.request.http.mall.groupBuy
-
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext
 import org.testng.SkipException
@@ -12,8 +11,9 @@ class GetGroupBuyGoods extends MallPost{
 
     GetGroupBuyGoods afterinvoke(TestContext testContext){
         def apiResult = testContext.getResponse().data.data
-           if(apiResult.goodsList.size()==0){
-            throw new SkipException("无拼团活动")
+           if(apiResult.activeMainId==null){
+               println("无拼团活动")
+               throw new SkipException("无拼团活动")
         }
         testContext.put("activityId",apiResult.activeMainId)
         testContext.put("spuId",apiResult.goodsList.getAt(0).getAt("spuId"))

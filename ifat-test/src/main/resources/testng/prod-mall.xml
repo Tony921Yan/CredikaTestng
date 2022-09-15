@@ -108,23 +108,24 @@
             <class name="com.meiji.test.http.mall.orderExhibit.DescribeTaskDetailTest"/>
             <class name="com.meiji.test.http.mall.orderExhibit.GetBuyerShowStatisticTest"/>
             <class name="com.meiji.test.http.mall.integral.CuponIntegralRuleQueryTest"/>
-
             <class name="com.meiji.test.http.mall.coupon.GetActiveCouponTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponByGoodsTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponCountTest"/>
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>
             <class name="com.meiji.test.http.mall.coupon.ReceiveActiveCouponTest"/>
             <class name="com.meiji.test.http.mall.coupon.SearchGoodsByCouponTest"/>
-
             <class name="com.meiji.test.http.mall.shopCart.GetCartCouponInfoListTest"/>
             <!--           <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyActiveTest"/>
                      <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/> -->
             <class name="com.meiji.test.http.mall.groupBuy.FindDefaultGroupBuyActiveGoodsTest"/>
-
             <class name="com.meiji.test.http.mall.newVip.GetActivityGoodsTest"/>
             <class name="com.meiji.test.http.mall.newVip.GetActivityTest"/>
-
             <class name="com.meiji.test.http.mall.systemConfig.GetConfigValueTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayActiveBriefTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayActiveListTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayCouponListTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayCouponPacketGoodsTest"/>
+            <class name="com.meiji.test.http.mall.memberDay.GetMemberDayDiscountZoneDataTest"/>
         </classes>
     </test>
 </suite>

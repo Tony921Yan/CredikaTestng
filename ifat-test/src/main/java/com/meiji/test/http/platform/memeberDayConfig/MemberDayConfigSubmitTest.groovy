@@ -6,6 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData
 import org.testng.annotations.Test
 
+
 class MemberDayConfigSubmitTest extends BaseTest {
     MemberDayConfigSubmit memberDayConfigSubmit = new MemberDayConfigSubmit()
     MemberDayConfigQuery memberDayConfigQuery = new MemberDayConfigQuery()

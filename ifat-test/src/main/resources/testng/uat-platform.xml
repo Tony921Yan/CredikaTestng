@@ -105,7 +105,7 @@
             <class name="com.meiji.test.http.platform.member.FindUserLogInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>
             <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
-            <class name="com.meiji.test.http.platform.member.UpdateUserInfoTest"/>
+<!--            <class name="com.meiji.test.http.platform.member.UpdateUserInfoTest"/>-->
 
             <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
@@ -177,9 +177,9 @@
 <!--            <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>-->
             <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
             <class name="com.meiji.test.http.platform.member.UpdateUserInfoTest"/>
-            <class name="com.meiji.test.http.platform.integral.AddTaskTest"/>
+<!--            <class name="com.meiji.test.http.platform.integral.AddTaskTest"/>-->
             <class name="com.meiji.test.http.platform.integral.DetailTaskTest"/>
-            <class name="com.meiji.test.http.platform.integral.DeteleTaskTest"/>
+<!--            <class name="com.meiji.test.http.platform.integral.DeteleTaskTest"/>-->
             <class name="com.meiji.test.http.platform.integral.DisableTaskTest"/>
             <class name="com.meiji.test.http.platform.integral.EditTaskTest"/>
             <class name="com.meiji.test.http.platform.integral.EnableTaskTest"/>
@@ -206,7 +206,7 @@
             <class name="com.meiji.test.http.platform.stockManger.UpdateAllotBillTest"/>
             <class name="com.meiji.test.http.platform.supplier.UpdateAdministratorTest"/>
             <class name="com.meiji.test.http.platform.supplier.UpdateBankTest"/>
-            <class name="com.meiji.test.http.platform.supplier.UpdateLegalTest"/>
+<!--            <class name="com.meiji.test.http.platform.supplier.UpdateLegalTest"/>-->
             <class name="com.meiji.test.http.platform.supplier.UpdateShipperInfoTest"/>
             <class name="com.meiji.test.http.platform.supplier.UpdateSubjectTest"/>
             <class name="com.meiji.test.http.platform.supplier.UpdateSupplierAddressTest"/>
@@ -221,7 +221,7 @@
             <class name="com.meiji.test.http.platform.orderDetailManage.UpdateOrderAddressTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.ApplyAfterSaleTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.CancelOrderTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.DeliverOrderGoodsTest"/>
+<!--            <class name="com.meiji.test.http.platform.orderDetailManage.DeliverOrderGoodsTest"/>-->
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderAfterSaleTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderByPageTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderDetailTest"/>
@@ -242,14 +242,14 @@
             <class name="com.meiji.test.http.platform.activeMainManage.DetailTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.ListTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.AdditionalBondsTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageAddTest"/>
+<!--            <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageAddTest"/>-->
             <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageOperateTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManagePublishActivityTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageUpdateTest"/>
+<!--            <class name="com.meiji.test.http.platform.activeMainManage.ActiveMainManageUpdateTest"/>-->
             <class name="com.meiji.test.http.platform.activeMainManage.SearchBoughtRecordsTest"/>
             <class name="com.meiji.test.http.platform.workOrder.PageOrderIssueTest"/>
             <class name="com.meiji.test.http.platform.workOrder.UpdateOrderIssueTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateDeliverOrderGoodsTest"/>
+<!--            <class name="com.meiji.test.http.platform.orderDetailManage.UpdateDeliverOrderGoodsTest"/>-->
 
             <class name="com.meiji.test.http.platform.goodsDetailMange.AddRecordTest"/>
             <class name="com.meiji.test.http.platform.goodsDetailMange.GetGoodsCountTest"/>
@@ -267,6 +267,7 @@
 
             <class name="com.meiji.test.http.platform.ruleConfig.GetCompensationConfigTest"/>
             <class name="com.meiji.test.http.platform.ruleConfig.UpdateCompensationConfigTest"/>
+            <class name="com.meiji.test.http.platform.memeberDayConfig.MemeberDayConfigTest"/>
 
 
         </classes>

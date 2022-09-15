@@ -84,18 +84,15 @@
             <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderCountTest"/>
             <class name="com.meiji.test.http.platform.orderDetailManage.ListByParentCodeTest"/>
 <!--           <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
-
             <class name="com.meiji.test.http.platform.goodsDetailMange.GetGoodsCountTest"/>
             <class name="com.meiji.test.http.platform.goodsDetailMange.AddRecordTest"/>
-
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.UpdateAfterRemarkTest"/>
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterByPageTest"/>
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterDetailTest"/>
-
             <class name="com.meiji.test.http.platform.applicationList.GetCompensationDetailTest"/>
             <class name="com.meiji.test.http.platform.applicationList.GetCompensationListByPageTest"/>
-
             <class name="com.meiji.test.http.platform.ruleConfig.GetCompensationConfigTest"/>
+            <class name="com.meiji.test.http.platform.memeberDayConfig.MemeberDayConfigTest"/>
 
         </classes>
     </test>

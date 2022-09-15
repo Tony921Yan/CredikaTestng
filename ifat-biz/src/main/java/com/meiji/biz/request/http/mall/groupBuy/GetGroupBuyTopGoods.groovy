@@ -12,7 +12,8 @@ class GetGroupBuyTopGoods extends MallPost{
 
     GetGroupBuyTopGoods afterinvoke(TestContext testContext){
        def apiResult = testContext.getResponse().data
-        if(apiResult.goodsList.size()==0){
+        if(apiResult==null){
+            println("无拼团商品")
             throw new SkipException("无拼团商品")
         }
        testContext.put("beginTime",apiResult.beginTime)

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getMemberDayActiveList">
+        <parm key="shopId" value ="1430182304940064"/>
+    </test>
+</data>

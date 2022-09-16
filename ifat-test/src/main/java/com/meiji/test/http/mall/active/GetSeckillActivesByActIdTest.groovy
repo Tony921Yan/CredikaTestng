@@ -13,10 +13,20 @@ import org.testng.annotations.Test
  * */
 class GetSeckillActivesByActIdTest extends BaseTest {
     GetSeckillActivesByActId getSeckillActivesByActId = new GetSeckillActivesByActId()
-    @Test(description = "入参活动id 获取抢购中/即将开始的秒杀活动 getSeckillActivesByActId" ,groups = ["prod","uat"],testName = "getSeckillActivesByActId",
-            dataProvider = "dataProvider",dataProviderClass = TestData.class)
-    public void getSeckillActivesByActId(TestContext testContext){
+
+    @Test(description = "入参活动id 获取抢购中/即将开始的秒杀活动 getSeckillActivesByActId", groups = ["prod", "uat"], testName = "getSeckillActivesByActId",
+            dataProvider = "dataProvider", dataProviderClass = TestData.class)
+    public void getSeckillActivesByActId(TestContext testContext) {
         getSeckillActivesByActId.invoke(testContext).baseAssert(testContext)
-//        getSeckillActivesByActId.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        getSeckillActivesByActId.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
+
+    @Test(description = "获取会员秒杀 getSeckillActivesByActId" ,groups = ["prod","uat"],testName = "getSeckillActivesByActId-vip",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getSeckillActivesByActId1(TestContext testContext){
+        getSeckillActivesByActId.invoke(testContext).baseAssert(testContext)
+
+   }
+
+
 }

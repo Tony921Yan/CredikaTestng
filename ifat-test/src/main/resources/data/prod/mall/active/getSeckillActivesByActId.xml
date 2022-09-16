@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getSeckillActivesByActId-vip">
+        <parm key = "activityId" value = "1501622494560288"/>
+    </test>
+
+</data>

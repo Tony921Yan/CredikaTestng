@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getGoodsInCoupon-mall">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+    </test>
+</data>

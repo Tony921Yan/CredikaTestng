@@ -12,7 +12,7 @@ import com.miyuan.ifat.support.test.TestContext
 class GetSeckillActivesByActId extends MallPost{
     {
         super.api = "active/getSeckillActivesByActId"
-        super.params = []
+        super.params = ["activityId"]
     }
 
     GetSeckillActivesByActId invoke(TestContext testContext){

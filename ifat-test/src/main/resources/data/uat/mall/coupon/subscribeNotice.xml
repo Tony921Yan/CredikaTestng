@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "subscribeNotice-coupon">
+        <parm key="shopId" value ="1495964567207999"/>
+        <parm key="userId" value ="10036"/>
+    </test>
+
+</data>

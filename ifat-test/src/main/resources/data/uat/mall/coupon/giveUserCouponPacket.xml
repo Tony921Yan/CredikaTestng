@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "giveUserCouponPacket-mall-0">
+        <parm key="userId" value ="10036"/>
+        <parm key="activityId" value ="1497431329996863"/>
+    </test>
+
+
+    <test name = "giveUserCouponPacket-mall-2">
+        <parm key="userId" value ="1497290934059071"/>
+        <parm key="activityId" value ="1497431329996863"/>
+    </test>
+</data>

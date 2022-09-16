@@ -114,12 +114,17 @@
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>
             <class name="com.meiji.test.http.mall.coupon.ReceiveActiveCouponTest"/>
             <class name="com.meiji.test.http.mall.coupon.SearchGoodsByCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetCouponsAndGoodsTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetNewVipCouponsForUserTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GiveUserCouponPacketTest"/>
             <class name="com.meiji.test.http.mall.shopCart.GetCartCouponInfoListTest"/>
             <!--           <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyActiveTest"/>
                      <class name="com.meiji.test.http.mall.groupBuy.FindGroupBuyActiveGoodsTest"/> -->
             <class name="com.meiji.test.http.mall.groupBuy.FindDefaultGroupBuyActiveGoodsTest"/>
             <class name="com.meiji.test.http.mall.newVip.GetActivityGoodsTest"/>
             <class name="com.meiji.test.http.mall.newVip.GetActivityTest"/>
+            <class name="com.meiji.test.http.mall.newVip.GetGoodsInCouponTest"/>
+
             <class name="com.meiji.test.http.mall.systemConfig.GetConfigValueTest"/>
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayActiveBriefTest"/>
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayActiveListTest"/>

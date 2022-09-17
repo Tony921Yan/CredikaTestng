@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "searchGoodsListNew">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="categoryIdList" value ="[]"/>
+        <parm key="searchText" value ="跨境"/>
+        <parm key="normalSearchPage" value ="1"/>
+        <parm key="searchWordPage" value ="1"/>
+        <parm key="comprehensiveSort" value ="desc"/>
+    </test>
+</data>

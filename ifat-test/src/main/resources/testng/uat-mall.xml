@@ -183,6 +183,8 @@
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayDiscountZoneDataTest"/>
             <class name="com.meiji.test.http.mall.memberDay.MemberDaySubscribeNoticeTest"/>
             <class name="com.meiji.test.http.mall.memberDay.ReceiveActiveCouponTest"/>
+<!--            <class name="com.meiji.test.http.mall.activeRecord.GetIntegraCenterRafflePageTest"/>-->
+<!--            <class name="com.meiji.test.http.mall.activeRecord.GetRaffleSubsuribeTest"/>-->
 
         </classes>
     </test>

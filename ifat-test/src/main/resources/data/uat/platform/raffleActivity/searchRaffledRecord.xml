@@ -5,4 +5,22 @@
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
     </test>
+
+    <test name = "searchRaffledRecord01">
+        <parm key="condition" value ='{useScene: 0}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "searchRaffledRecord02">
+        <parm key="condition" value ='{useScene: 1}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "searchRaffledRecord03">
+        <parm key="condition" value ='{useScene: 2}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
 </data>

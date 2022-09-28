@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class SaveSourceRaffle extends PlatformPost{
     {
         super.api = "ActiveMainManage/saveSourceRaffle"
-       super.params = ["separatePageRaffleId"]
+       super.params = ["separatePageRaffleId","paymentPageRaffleId","memberPageRaffleId","integralCenterRaffleId","integralPageRaffleId"]
     }
 
     SaveSourceRaffle invoke(TestContext testContext) {

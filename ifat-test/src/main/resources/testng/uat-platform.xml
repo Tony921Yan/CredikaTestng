@@ -7,6 +7,9 @@
             </run>
         </groups>
         <classes>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftAdvManage.ToggleStatusTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftAdvManage.GiftAdvMangeEditTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftAdvManage.GiftAdvMangeListTest"/>
             <class name="com.meiji.test.http.platform.brand.BrandDetailTest"/>
             <class name="com.meiji.test.http.platform.brand.CreateBrandTest"/>
             <class name="com.meiji.test.http.platform.brand.CreateGoodPropertyGroupTest"/>

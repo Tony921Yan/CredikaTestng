@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "publishGoods">
-        <parm key="spuId" value ="1470108195094560"/>
+        <parm key="spuId" value ="1421512366096417"/>
         <parm key="updateById" value ="test"/>
         <parm key="updateByName" value ="autotest"/>
 

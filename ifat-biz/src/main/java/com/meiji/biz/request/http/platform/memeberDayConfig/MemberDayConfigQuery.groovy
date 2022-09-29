@@ -38,7 +38,7 @@ class MemberDayConfigQuery extends PlatformPost{
         testContext.put("activeHeadPic",apiResult.activeHeadPic)
 //        testContext.put("repeatDate",DateUtil.strToDate(apiResult.repeatDate as String))
 //       testContext.put("repeatDate",JsonOutput.toJson(apiResult.repeatDate))
-       testContext.put("repeatDate",apiResult.repeatDate)
+       testContext.put("repeatDate","{\"repeatType\":1,\"repeatDays\":[4]}")
         println(apiResult.repeatDate)
         return this
     }

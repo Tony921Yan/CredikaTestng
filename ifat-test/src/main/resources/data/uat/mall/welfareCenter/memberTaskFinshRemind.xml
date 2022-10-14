@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "memberTaskFinshRemind">
+        <parm key="userId"  value ="1496140813959231"/>
+    </test>
+</data>

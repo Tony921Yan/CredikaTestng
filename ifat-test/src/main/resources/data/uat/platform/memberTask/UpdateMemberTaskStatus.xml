@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateMemberTaskStatus">
+        <parm key="id" value ="136"/>
+        <parm key="taskStatus" value ="0"/>
+    </test>
+</data>

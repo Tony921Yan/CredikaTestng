@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addMemberTask">
+        <parm key="id" value ="132"/>
+        <parm key="linkPageType" value ="1"/>
+        <parm key="rewardInfoList" value ="[{'rewardName':'积分奖励','taskRewardType':2}]"/>
+        <parm key="taskButtonContent" value ="跳转链接"/>
+        <parm key="taskClass" value ="2"/>
+        <parm key="taskContent" value ="2"/>
+        <parm key="taskCycle" value ="2"/>
+        <parm key="taskLimitTimes" value ="1"/>
+        <parm key="taskLogo" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/f627cffe6b1d45cbb9eb268d021f6be2.png"/>
+        <parm key="taskName" value ="跳转任务"/>
+        <parm key="taskOrderby" value ="1"/>
+        <parm key="taskRefreshTime" value ="00:00:00"/>
+        <parm key="taskStatus" value ="1"/>
+        <parm key="taskUserTypeLimit" value ="0"/>
+        <parm key="taskViceTitle" value ="跳转任务测试"/>
+
+    </test>
+</data>

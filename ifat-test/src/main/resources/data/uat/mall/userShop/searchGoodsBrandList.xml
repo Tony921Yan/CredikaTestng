@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "searchGoodsBrandList">
+        <parm key="searchText" value ="水果"/>
+        <parm key="shopId"  value ="1496390020628799"/>
+    </test>
+</data>

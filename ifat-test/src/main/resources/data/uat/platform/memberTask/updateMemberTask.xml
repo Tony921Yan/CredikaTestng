@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateMemberTask">
+        <parm key="id" value ="132"/>
+        <parm key="linkPageType" value ="1"/>
+        <parm key="rewardInfoList" value ="[{'rewardCouponId':1496322202927167,'rewardName':'100首优惠券','taskRewardType':1,'rewardNum':12,'id':1494511855338346}]"/>
+        <parm key="taskButtonContent" value ="去完成"/>
+        <parm key="taskClass" value ="1"/>
+        <parm key="taskContent" value ="1"/>
+        <parm key="taskCycle" value ="1"/>
+        <parm key="taskLimitTimes" value ="1"/>
+        <parm key="taskLogo" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/aa3380dfa7c672f48546b0e70640e554.jpg"/>
+        <parm key="taskName" value ="运营测试"/>
+        <parm key="taskNeedCompleteTimes" value ="4"/>
+        <parm key="taskOrderby" value ="2"/>
+        <parm key="taskRefreshTime" value ="00:00:00"/>
+        <parm key="taskStatus" value ="1"/>
+        <parm key="taskUserTypeLimit" value ="0"/>
+        <parm key="taskViceTitle" value ="新人四单任务"/>
+
+    </test>
+</data>

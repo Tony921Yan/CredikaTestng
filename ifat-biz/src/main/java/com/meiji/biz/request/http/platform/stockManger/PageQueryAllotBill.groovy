@@ -27,20 +27,8 @@ class PageQueryAllotBill extends PlatformPost{
 
     PageQueryAllotBill specialAssert(TestContext testContext){
         Map apiResult = testContext.getResponse().data
-        System.out.println("apiResult"+apiResult.data.getAt(0))
         Map mysqlResult = MysqlService.pageQueryAllotBill().get(0)
-        System.out.println("mysqlResult"+mysqlResult)
         assert apiResult.total >10
-//        assert mysqlResult.adjust_code == apiResult.data.getAt(0).getAt("adjustCode")
-//        assert mysqlResult.adjust_type == apiResult.data.getAt(0).getAt("adjustType")
-//        assert mysqlResult.adjust_status == apiResult.data.getAt(0).getAt("adjustStatus")
-//        assert mysqlResult.adjust_obj == apiResult.data.getAt(0).getAt("adjustObj")
-//        assert mysqlResult.adjust_obj_desc == apiResult.data.getAt(0).getAt("adjustObjDesc")
-//        assert DateUtil.strToDate(mysqlResult.gmt_create as String) == DateUtil.strToDate(apiResult.data.getAt(0).getAt("gmtCreate"))
-
-
-
-
 
     }
 

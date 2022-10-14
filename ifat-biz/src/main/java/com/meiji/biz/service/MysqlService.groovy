@@ -355,7 +355,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static def getNewestID(){
-        Map map= meiji_active.firstRow("SELECT id from meiji_active.active_main where type = 11 ORDER BY gmt_create")
+        Map map= meiji_active.firstRow("SELECT id from meiji_active.active_main where type = 11 and is_delete=0 ORDER BY gmt_create")
         return map.id
     }
 
@@ -523,6 +523,22 @@ class MysqlService extends MysqlAPI {
         return meiji_pay.firstRow("select * from meiji_pay.market_account ORDER BY gmt_create desc")
     }
 
+    static ArrayList giftAdvManageList(){
+        return meiji_active.rows("SELECT * from meiji_active.gift_advertising_bit")
+    }
+
+    static ArrayList giftAdvManageLocation(Integer location){
+        return meiji_active.rows("SELECT * from meiji_active.gift_advertising_bit where location =$location")
+    }
+
+    static boolean setToggleStatus(Integer id){
+        return  meiji_active.execute("UPDATE meiji_active.gift_advertising_bit SET status=0 where id=$id")
+    }
+
+    static Integer getToggleStatus(Integer id){
+        Map map = meiji_active.firstRow("SELECT status from meiji_active.gift_advertising_bit where id=$id")
+        return map.get("status")
+    }
     static def getSeckillTopGoods(){
        Map map =  meiji_active.firstRow("SELECT id from meiji_active.active_main where type =11 and status in (3,4) ORDER BY expiry_start desc")
         return meiji_active.firstRow("SELECT * from meiji_active.seckill_activity_subtime where activity_id =$map.id ORDER BY begin_time DESC")

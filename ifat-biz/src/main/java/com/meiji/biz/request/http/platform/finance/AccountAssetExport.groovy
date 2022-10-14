@@ -2,6 +2,7 @@ package com.meiji.biz.request.http.platform.finance
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.vo.Result
 
 class AccountAssetExport extends PlatformPost{
     {
@@ -20,7 +21,8 @@ class AccountAssetExport extends PlatformPost{
     }
 
     AccountAssetExport baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        Result result = testContext.getResult() as Result
+        assert result.getHttpStatusCode() == 200
         return this
     }
 

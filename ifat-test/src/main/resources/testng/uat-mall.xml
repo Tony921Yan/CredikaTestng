@@ -101,6 +101,7 @@
             <class name="com.meiji.test.http.mall.shopCart.AddCartItemTest"/>
             <class name="com.meiji.test.http.mall.shopCart.QueryCartTest"/>
             <class name="com.meiji.test.http.mall.shopCart.UpdateCartItemTest"/>
+
             <class name="com.meiji.test.http.mall.shopGoods.FindActiveGoodsTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindBrandListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindGoodsCategoryTreeTest"/>
@@ -120,7 +121,10 @@
 <!--            <class name="com.meiji.test.http.mall.shopGoods.GetGoodsLabelTest"/>-->
             <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListTest"/>
-<!--            <class name="com.meiji.test.http.mall.shopGoods.SearchRankGoodsListTest"/>-->
+            <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListWithCategoryTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetResourceWithCategoryTest"/>
+            <!--            <class name="com.meiji.test.http.mall.shopGoods.SearchRankGoodsListTest"/>-->
+
             <class name="com.meiji.test.http.mall.user.CheckGrayUserTest"/>
 <!--            <class name="com.meiji.test.http.mall.user.IsSubscribeTest"/>-->
             <class name="com.meiji.test.http.mall.userAddress.AddUserAddressTest"/>
@@ -150,6 +154,9 @@
             <class name="com.meiji.test.http.mall.userShop.OpenShopTest"/>
             <class name="com.meiji.test.http.mall.userShop.UpdateShopInfoTest"/>
             <class name="com.meiji.test.http.mall.userShop.UserVisitShopTest"/>
+            <class name="com.meiji.test.http.mall.userShop.GetConfigValueTest"/>
+
+
             <class name="com.meiji.test.http.mall.coupon.SearchGoodsByCouponTest"/>
 <!--            <class name="com.meiji.test.http.mall.coupon.ReceiveActiveCouponTest"/>-->
             <class name="com.meiji.test.http.mall.coupon.GetMyCouponTest"/>

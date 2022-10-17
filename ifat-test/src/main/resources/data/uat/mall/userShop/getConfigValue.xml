@@ -3,4 +3,8 @@
     <test name = "getConfigValueForUserShop">
         <parm key="key" value ="isShowMaterial"/>
     </test>
+
+    <test name = "getConfigValue-isShowBrand">
+        <parm key="key" value ="isShowBrand"/>
+    </test>
 </data>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getResourceWithCategory-c">
+        <parm key="categoryId" value ="1302"/>
+    </test>
+</data>

@@ -34,7 +34,7 @@
             <class name="com.meiji.test.http.mall.orderInfo.PreviewOrderTest"/>
             <class name="com.meiji.test.http.mall.userAddress.UpdateUserAddressTest"/>
 <!--            <class name="com.meiji.test.http.mall.userInfo.UpdateUserInfoTest"/>-->
-            <class name="com.meiji.test.http.mall.userShop.UserVisitShopTest"/>
+
             <class name="com.meiji.test.http.mall.shopGoods.FindOfficeShopModuleListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindRecommendGoodsTest"/>
@@ -43,10 +43,17 @@
             <class name="com.meiji.test.http.mall.shopGoods.FindActiveGoodsTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindGoodsTopicDetailTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
-            <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetBuyerShowLabelListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.SearchRankGoodsListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetAllOneCategorysTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.FindShopCustomerGroupByShopIdTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetResourceWithCategoryTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListWithCategoryTest"/>
+            <!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopByUserIdTest"/>-->
+
             <class name="com.meiji.test.http.mall.pay.GetAccountInfoTest"/>
             <class name="com.meiji.test.http.mall.pay.IncomeTotalQueryTest"/>
-<!--            <class name="com.meiji.test.http.mall.shopGoods.FindShopByUserIdTest"/>-->
             <class name="com.meiji.test.http.mall.pay.FlowPageQueryTest"/>
             <class name="com.meiji.test.http.mall.pay.FlowTotalDataTest"/>
             <class name="com.meiji.test.http.mall.pay.WithdrawPageDataTest"/>
@@ -62,17 +69,21 @@
             <class name="com.meiji.test.http.mall.gift.ListGiftsFromMeTest"/>
             <class name="com.meiji.test.http.mall.gift.ListGiftsToMeTest"/>
             <class name="com.meiji.test.http.mall.gift.GetGiftDetailToMeTest"/>
-            <class name="com.meiji.test.http.mall.shopGoods.FindShopCustomerGroupByShopIdTest"/>
+
             <class name="com.meiji.test.http.mall.inviteCode.FindInviteCodeNumTest"/>
             <class name="com.meiji.test.http.mall.inviteCode.FindInviteCodeListTest"/>
             <class name="com.meiji.test.http.mall.inviteCode.FinShopInviteCodeCostInfoTest"/>
             <class name="com.meiji.test.http.mall.material.GetMaterialCategoryTest"/>
             <class name="com.meiji.test.http.mall.user.IsSubscribeTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.PreviewGiftOrderTest"/>
-            <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
+
             <class name="com.meiji.test.http.mall.userShop.GetDefaultTopicGoodsTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetTemplateDefaultComponentListTest"/>
             <class name="com.meiji.test.http.mall.userShop.GetTopicGoodsTest"/>
+            <class name="com.meiji.test.http.mall.userShop.UserVisitShopTest"/>
+            <class name="com.meiji.test.http.mall.userShop.FindUserVisitShopRecordListTest"/>
+            <class name="com.meiji.test.http.mall.userShop.GetConfigValueTest"/>
+
             <class name="com.meiji.test.http.mall.user.CheckGrayUserTest"/>
             <class name="com.meiji.test.http.mall.home.GetTemplateComponentListTest"/>
             <class name="com.meiji.test.http.mall.orderInfo.GetActiveBonusTest"/>
@@ -91,8 +102,7 @@
 <!--            <class name="com.meiji.test.http.mall.orderExhibit.GetBuyerShowDetailTest"/>-->
             <class name="com.meiji.test.http.mall.orderExhibit.LogBuyerShowTraceTest"/>
             <class name="com.meiji.test.http.mall.orderExhibit.NewListBuyerShowOfMeTest"/>
-            <class name="com.meiji.test.http.mall.shopGoods.SearchRankGoodsListTest"/>
-            <class name="com.meiji.test.http.mall.shopGoods.GetAllOneCategorysTest"/>
+
            <class name="com.meiji.test.http.mall.integral.PageQueryTest"/>
             <class name="com.meiji.test.http.mall.integral.PersonalIntegralQueryTest"/>
             <class name="com.meiji.test.http.mall.integral.UserTaskInfoQueryTest"/>
@@ -104,7 +114,6 @@
 <!--            <class name="com.meiji.test.http.mall.orderExhibit.SaveBuyerShowTest"/>--> <!--要过滤掉非必填的字段-->
             <class name="com.meiji.test.http.mall.orderInfo.GetOrderGoodsInfoTest"/>
 <!--            <class name="com.meiji.test.http.mall.orderExhibit.DescribeMaterialsTest"/>--> <!--要过滤掉非必填的字段-->
-            <class name="com.meiji.test.http.mall.shopGoods.GetBuyerShowLabelListTest"/>
             <class name="com.meiji.test.http.mall.orderExhibit.DescribeTaskDetailTest"/>
             <class name="com.meiji.test.http.mall.orderExhibit.GetBuyerShowStatisticTest"/>
             <class name="com.meiji.test.http.mall.integral.CuponIntegralRuleQueryTest"/>

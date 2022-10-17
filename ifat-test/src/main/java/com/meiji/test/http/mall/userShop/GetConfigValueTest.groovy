@@ -18,4 +18,10 @@ class GetConfigValueTest extends BaseTest{
     public void getConfigValue(TestContext testContext){
         getConfigValue.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "品牌墙开关 getConfigValue" ,groups = ["prod","uat"],testName = "getConfigValue-isShowBrand",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getConfigValue2(TestContext testContext){
+        getConfigValue.invoke(testContext).baseAssert(testContext)
+    }
 }

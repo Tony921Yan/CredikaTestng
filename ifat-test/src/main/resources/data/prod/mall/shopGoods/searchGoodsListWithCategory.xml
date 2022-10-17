@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "searchGoodsListWithCategory-comprehensiveSort">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="categoryIdList" value ="[1142]"/>
+        <parm key="comprehensiveSort" value ="desc"/>
+    </test>
+
+    <test name = "searchGoodsListWithCategory-publishTimeSort">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="categoryIdList" value ="[1142]"/>
+        <parm key="publishTimeSort" value ="desc"/>
+    </test>
+
+    <test name = "searchGoodsListWithCategory-salesSort">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="categoryIdList" value ="[1142]"/>
+        <parm key="salesSort" value ="desc"/>
+    </test>
+
+    <test name = "searchGoodsListWithCategory-priceSort-asc">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="categoryIdList" value ="[1142]"/>
+        <parm key="priceSort" value ="asc"/>
+    </test>
+
+    <test name = "searchGoodsListWithCategory-priceSort-desc">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="categoryIdList" value ="[1142]"/>
+        <parm key="priceSort" value ="desc"/>
+    </test>
+</data>

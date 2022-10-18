@@ -8,7 +8,7 @@ import org.testng.annotations.Test
 
 class FundFlowDetaifundFlowRecordExportlQueryTest extends BaseTest {
     FundFlowDetaifundFlowRecordExportlQuery fundFlowDetaifundFlowRecordExportlQuery = new FundFlowDetaifundFlowRecordExportlQuery()
-    @Test(description = "资金记录导出 fundFlowDetaifundFlowRecordExportlQuery" ,groups = ["prod","uat"],testName = "fundFlowDetaifundFlowRecordExportlQuery_platform",
+    @Test(description = "资金流水导出 fundFlowDetaifundFlowRecordExportlQuery" ,groups = ["prod","uat"],testName = "fundFlowDetaifundFlowRecordExportlQuery",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void fundFlowDetaifundFlowRecordExportlQuery(TestContext testContext){
         fundFlowDetaifundFlowRecordExportlQuery.invoke(testContext).baseAssert(testContext)

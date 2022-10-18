@@ -2,11 +2,12 @@ package com.meiji.biz.request.http.platform.finance
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
+import com.miyuan.ifat.support.vo.Result
 
 class WithdrawRecordExport extends PlatformPost{
     {
-        super.api="/platform/finance/withdrawRecordExport"
-        super.params = ["condition","order","page","rows","sort"]
+        super.api="withdraw/withdrawRecordExport"
+        super.params = ["condition"]
     }
 
     WithdrawRecordExport invoke(TestContext testContext) {
@@ -20,7 +21,8 @@ class WithdrawRecordExport extends PlatformPost{
     }
 
     WithdrawRecordExport baseAssert(TestContext testContext){
-        super.baseAssert(testContext)
+        Result result = testContext.getResult() as Result
+        assert result.getHttpStatusCode() == 200
         return this
     }
 

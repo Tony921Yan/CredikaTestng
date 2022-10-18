@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
-    <test name = "withdrawRecordExport">
+    <test name = "fundFlowDetaifundFlowRecordExportlQuery">
         <parm key="condition" value ='{"entityId":"77","merchantType":"2","ids":[]}'/>
     </test>
 </data>

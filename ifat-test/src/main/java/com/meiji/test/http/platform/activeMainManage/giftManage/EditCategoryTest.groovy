@@ -10,7 +10,7 @@ import org.testng.annotations.Test
 class EditCategoryTest extends BaseTest {
     CategoryDetail categoryDetail = new CategoryDetail()
     EditCategory editCategory = new EditCategory()
-    @Test(description = "礼管理-分类管理-分类编辑 editCategory" ,groups = ["prod","uat"],testName = "editCategory",
+    @Test(description = "送礼管理-分类管理-分类编辑 editCategory" ,groups = ["prod","uat"],testName = "editCategory",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void editCategory(TestContext testContext){
         testContext.put("id", MysqlService.CategoryDetail().get(0))

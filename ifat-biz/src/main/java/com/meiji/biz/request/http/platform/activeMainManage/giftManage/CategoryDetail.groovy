@@ -36,18 +36,15 @@ class CategoryDetail extends PlatformPost{
         testContext.put("pic",apiResult.pic)
         testContext.put("sort",apiResult.sort)
         testContext.put("remark",apiResult.remark)
-        testContext.put("labelLists",apiResult.labelList.getAt("id"))
+        List<Long> labelIds = apiResult.labelList.getAt("id");
+        testContext.put("labelIds",labelIds)
+//        testContext.put("labelIds",[1508701305307199])
         ArrayList<Map> goodsList = apiResult.goodsList.get(0).getAt("pics")
-//        println(goodsList)
-        ArrayList<Map> goodsList1 = null
-        for(int i = 0 ; i< goodsList.size();i++ ){
-            println(goodsList.get(i).get("picSort"))
-            println(goodsList.get(i).get("spuId"))
-            goodsList1 = goodsList.get(i).get("picSort")
+        for(int i = 0 ; i< goodsList.size();i++){
+            goodsList.get(i).remove("picUrl")
+            goodsList.get(i).remove("picId")
         }
-        testContext.put("spuIdList",apiResult.goodsList.get(0).getAt("pics").get(0).getAt("spuId"))
-//        println(apiResult.labelList.getAt("id"))
-//        println(apiResult.goodsList.get(0).getAt("pics").get(0).getAt("spuId"))
+        testContext.put("spuIdList",goodsList)
         return this
     }
 }

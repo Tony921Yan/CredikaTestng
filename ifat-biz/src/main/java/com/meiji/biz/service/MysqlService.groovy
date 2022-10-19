@@ -500,6 +500,17 @@ class MysqlService extends MysqlAPI {
         return map.id
     }
 
+    static def CategoryDetail(){
+        ArrayList<List> list = meiji_active.rows("SELECT * FROM `meiji_active`.`gift_category` ORDER BY sort ASC")
+        println(list.id)
+        if(list == null){
+            println("暂无分类数据")
+            return null
+        }
+        return list.id
+    }
+
+
     static def marketAccountDelete(){
         Map map = meiji_pay.firstRow("SELECT id FROM meiji_pay.market_account ORDER BY gmt_create desc;")
         println map.id

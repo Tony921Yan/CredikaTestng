@@ -3,23 +3,23 @@ package com.meiji.biz.request.http.platform.other
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class SystemConfigMgr extends PlatformPost {
+class GetConfigByModule extends PlatformPost {
     {
-        super.api = "SystemConfigMgr/getConfigValue"
-        super.params =  ["dealerTutorQrCode"]
+        super.api = "SystemConfigMgr/getConfigByModule"
+        super.params =  ["modules"]
     }
 
-    SystemConfigMgr invoke(TestContext testContext) {
+    GetConfigByModule invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    SystemConfigMgr preInvoke(TestContext testContext){
+    GetConfigByModule preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    SystemConfigMgr baseAssert(TestContext testContext){
+    GetConfigByModule baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

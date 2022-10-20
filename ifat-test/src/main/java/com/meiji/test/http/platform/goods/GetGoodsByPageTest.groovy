@@ -99,4 +99,15 @@ class GetGoodsByPageTest extends BaseTest {
         getGoodsByPage.invoke(testContext).baseAssert(testContext)
     }
 
+    /**
+     *
+     @author Remy
+     @create 2022/12/20-19:01
+     @version v3.5
+     */
+    @Test(description = "商品详情-增加规格参数，发货地址、时效、物流公司 getGoodsByPage11" ,groups = ["uat"],testName = "findShopGoodsDetail-goodsSpeParameters",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void GetGoodsByPage11(TestContext testContext) {
+        getGoodsByPage.invoke(testContext).baseAssert(testContext)
+    }
 }

@@ -7,7 +7,7 @@
         <properties  key="url2" value ="https://test.oms.meiji8888.com/"/>
 <!--        <properties  key="platform" value ="https://test.platform.meiji8888.com/"/>  &lt;!&ndash;纯中台接口&ndash;&gt;-->
         <properties  key="platform" value ="https://test.ecmiddle.meiji8888.com/"/>  <!--纯中台接口-->
-        <properties key="mall" value="https://test.mall.meiji8888.com/"/>
+        <properties key="mall" value="https://test2.mall.meiji8888.com/"/>
         <properties key="shop" value="https://test.shop.meiji8888.com/"/>
         <properties key="thirdparty" value="https://test.meiji8888.com/"/>
         <properties key="scrm" value="https://test.meiji8888.com/"/>

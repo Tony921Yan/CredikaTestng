@@ -90,4 +90,11 @@
         <parm key="pageSize" value="20"/>
         <parm key="groupType" value="2"/>
     </test>
+
+    <test name="findShopGoodsDetail-goodsSpeParameters">
+        <parm key="status" value="[0,1,2,3,4]"/>
+        <parm key="pageNum" value="1"/>
+        <parm key="pageSize" value="20"/>
+        <parm key="spuCodeAndName" value="200sup65955"/>
+    </test>
 </data>

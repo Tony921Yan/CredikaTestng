@@ -16,4 +16,9 @@
         <parm key="shopId" value ="1430182304940064"/>
         <parm key="spuId" value ="1481327691956287"/>
     </test>
+
+    <test name = "findShopGoodsDetail-goodsSpeParameters">
+        <parm key="shopId" value ="1405811930693664"/>
+        <parm key="spuId" value ="1494739962560575"/>
+    </test>
 </data>

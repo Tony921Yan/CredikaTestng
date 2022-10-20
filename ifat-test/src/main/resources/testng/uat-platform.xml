@@ -136,7 +136,6 @@
 <!--            <class name="com.meiji.test.http.platform.shopManager.UpdateShopIdentityInfoTest"/>--> <!--待确定接口是否弃用-->
             <class name="com.meiji.test.http.platform.shopManager.UpdateShopInfoTest"/>
 
-
 <!--            <class name = "com.meiji.test.http.platform.other.BatchUpdateConfigTest"/>-->
             <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
             <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
@@ -163,6 +162,8 @@
             <class name="com.meiji.test.http.platform.other.StoreWhiteTest"/>
             <class name="com.meiji.test.http.platform.other.SystemConfigMgrTest"/>
             <class name="com.meiji.test.http.platform.other.CustomerServiceManageTest"/>
+            <class name="com.meiji.test.http.platform.other.GetConfigByModuleTest"/>
+            <class name="com.meiji.test.http.platform.other.GetSearchKeysTest"/>
             <class name="com.meiji.test.http.platform.channel.GetChannelListTest"/>
             <class name="com.meiji.test.http.platform.channel.GetColumnListTest"/>
             <class name="com.meiji.test.http.platform.channel.GetGoodsTest"/>
@@ -256,6 +257,7 @@
 
             <class name="com.meiji.test.http.platform.goodsDetailMange.AddRecordTest"/>
             <class name="com.meiji.test.http.platform.goodsDetailMange.GetGoodsCountTest"/>
+            <class name="com.meiji.test.http.platform.goodsDetailMange.ShowSalesTest"/>
 
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.UpdateAfterRemarkTest"/>
             <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterByPageTest"/>
@@ -272,8 +274,6 @@
             <class name="com.meiji.test.http.platform.ruleConfig.UpdateCompensationConfigTest"/>
             <class name="com.meiji.test.http.platform.memeberDayConfig.MemeberDayConfigTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.GetOngoingRafflesTest"/>
-
-
         </classes>
     </test>
 

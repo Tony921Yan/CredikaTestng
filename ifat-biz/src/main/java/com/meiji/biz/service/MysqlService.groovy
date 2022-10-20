@@ -550,6 +550,22 @@ class MysqlService extends MysqlAPI {
         Map map = meiji_active.firstRow("SELECT status from meiji_active.gift_advertising_bit where id=$id")
         return map.get("status")
     }
+    static Map getGoods_spu(String spuId){
+        return meiji_goods.firstRow("SELECT * from meiji_goods.goods_spu where id = $spuId")
+    }
+
+    static Integer getSupplierId(String supplierName){
+        Map map = meiji_supplier.firstRow("SELECT * from meiji_supplier.meiji_supplier where name = $supplierName")
+        return map.id
+    }
+
+    static Map getShipperAddress(Integer supplierID){
+        return meiji_supplier.firstRow("SELECT * from meiji_supplier.supplier_shipper_address where is_default = 1 and supplier_id = $supplierID")
+    }
+
+    static Map getLiveRoom(String goodsId){
+        return meiji_content.firstRow("SELECT * from meiji_content.live_room_goods WHERE goods_id = $goodsId")
+    }
     static def getSeckillTopGoods(){
        Map map =  meiji_active.firstRow("SELECT id from meiji_active.active_main where type =11 and status in (3,4) ORDER BY expiry_start desc")
         return meiji_active.firstRow("SELECT * from meiji_active.seckill_activity_subtime where activity_id =$map.id ORDER BY begin_time DESC")

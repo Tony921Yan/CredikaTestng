@@ -30,6 +30,7 @@ abstract class MallPost {
         heads.put("dealerId",testContext.get("dealerId"))
         heads.put("userId",testContext.get("userId"))
         heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
+        heads.put("apiReleaseTag","test")  //不同环境要切不同的tag
 
         if(TestEnv.isGray()=="true"){
             heads.put("grayReleaseTag","gray")

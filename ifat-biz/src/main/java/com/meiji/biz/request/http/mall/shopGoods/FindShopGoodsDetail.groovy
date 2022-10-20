@@ -49,4 +49,16 @@ class FindShopGoodsDetail extends MallPost {
         }
         return this
     }
+
+    FindShopGoodsDetail specialAssert1(TestContext testContext){
+        //shipperAddress断言：数据库断言时，先通过接口返回的supplierName查表对应的ID，再通过ID查表对应的默认地址中的shipperAddress
+        Map apiResult = testContext.getResponse().data
+        Map mysqlResult = MysqlService.getGoods_spu(testContext.get("spuId"))
+        Integer supplierID = MysqlService.getSupplierId(apiResult.get("supplierName"))
+        Map mysqlShipperAddress = MysqlService.getShipperAddress(supplierID)
+        assert apiResult.get("goodsSpeParameters") == mysqlResult.get("goods_spe_parameters")
+        assert apiResult.get("shipperAddress")  == mysqlShipperAddress.get("shipper_address")
+        assert apiResult.get("defaultLogistics") == mysqlResult.get("default_logistics")
+        assert apiResult.get("deliveryTime")== mysqlResult.get("delivery_time")
+    }
 }

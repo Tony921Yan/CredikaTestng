@@ -27,4 +27,11 @@ class FindShopGoodsDetailTest extends BaseTest {
     public void findShopGoodsDetail2(TestContext testContext) {
         findShopGoodsDetail.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "商品—商品详情 findShopGoodsDetail3" ,groups = ["uat"],testName = "findShopGoodsDetail-goodsSpeParameters",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class) //V3.5商品详情优化：增加规格参数，发货地址、时效、物流公司
+    public void findShopGoodsDetail3(TestContext testContext) {
+        findShopGoodsDetail.invoke(testContext).baseAssert(testContext)
+        findShopGoodsDetail.specialAssert1(testContext)
+    }
 }

@@ -123,6 +123,7 @@
             <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListWithCategoryTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.GetResourceWithCategoryTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.GetGoodsRoomLiveTest"/>
             <!--            <class name="com.meiji.test.http.mall.shopGoods.SearchRankGoodsListTest"/>-->
 
             <class name="com.meiji.test.http.mall.user.CheckGrayUserTest"/>

@@ -20,6 +20,7 @@
             <class name="com.meiji.test.http.mall.shopGoods.FindShopGoodsStateListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopModuleGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.FindShopModuleListTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.IsGiftTypeOrderTest"/>
 <!--            <class name="com.meiji.test.http.mall.userAddress.FindUserAddressListTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.userInfo.FindUserInfoTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.userShop.FindUserVis0c7aitShopRecordListTest"/>-->

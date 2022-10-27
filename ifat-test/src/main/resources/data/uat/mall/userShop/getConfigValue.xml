@@ -7,4 +7,8 @@
     <test name = "getConfigValue-isShowBrand">
         <parm key="key" value ="isShowBrand"/>
     </test>
+
+    <test name = "getConfigValue-isShowGiftFlower">
+        <parm key="key" value ="isShowGiftFlower"/>
+    </test>
 </data>

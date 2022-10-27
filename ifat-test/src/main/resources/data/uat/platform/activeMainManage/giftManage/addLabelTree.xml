@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+    <test name = "addLabelTree">
+        <parm key="name" value ="$CN4"/>
+        <parm key="status" value ="$int0-1"/>
+        <parm key="sort" value ="$int0-99"/>
+        <parm key="parentId" value ="0"/>
+    </test>
+
+
+</data>

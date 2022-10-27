@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addCourse">
+        <parm key="name" value ="自动化测试教程"/>
+        <parm key="status" value ="0"/>
+        <parm key="pic" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/a15204e934d450e4535d1683e4cda1cc.png"/>
+        <parm key="sort" value ="-999999"/>
+        <parm key="remark" value ="自动化测试教程ifat"/>
+        <parm key="page" value ="1"/>
+        <parm key="type" value ='1'/>
+        <parm key="urlList" value ='[
+        "https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/74d8b37bf43c248a14346d101f174aa5.png",
+        "https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/a15204e934d450e4535d1683e4cda1cc.png"
+    ]'/>
+    </test>
+</data>

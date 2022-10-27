@@ -274,6 +274,21 @@
             <class name="com.meiji.test.http.platform.ruleConfig.UpdateCompensationConfigTest"/>
             <class name="com.meiji.test.http.platform.memeberDayConfig.MemeberDayConfigTest"/>
             <class name="com.meiji.test.http.platform.raffleActivity.GetOngoingRafflesTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.AddCategoryTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.AddCombinationTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.AddLabelTreeTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.AdjustCategoryTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.AdjustCombinationTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.AdjustCourseTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CategoryDetailTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.DeleteLabelTreeTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.EditCategoryTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.EditCourseTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCategoryListTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCombinationListTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCourseListTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetLabelTreeTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.UpdateLabelTreeTest"/>
         </classes>
     </test>
 

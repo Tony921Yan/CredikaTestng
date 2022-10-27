@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addCombination">
+        <parm key="name" value ="组合礼品自动化测试ifat"/>
+        <parm key="status" value ="0"/>
+        <parm key="remark" value ="$CN15"/>
+        <parm key="categoryIdList" value ='[
+        1508461426769983,
+        1508459174428735
+    ]'/>
+        <parm key="skuList" value ='[
+        {
+            "skuId":1457818553024576,
+            "skuNum":2,
+            "skuProperty":null,
+            "sort":4,
+            "spuId":1457818548830240
+        }
+    ]'/>
+    </test>
+</data>

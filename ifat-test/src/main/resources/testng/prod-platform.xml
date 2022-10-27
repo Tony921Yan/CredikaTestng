@@ -97,6 +97,12 @@
             <class name="com.meiji.test.http.platform.applicationList.GetCompensationListByPageTest"/>
             <class name="com.meiji.test.http.platform.ruleConfig.GetCompensationConfigTest"/>
             <class name="com.meiji.test.http.platform.memeberDayConfig.MemeberDayConfigTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetLabelTreeTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCourseListTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCombinationListTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCategoryListTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CombinationDetailTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CategoryDetailTest"/>
 
         </classes>
     </test>

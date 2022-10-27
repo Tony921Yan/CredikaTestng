@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addCategory">
+        <parm key="name" value ="自动化"/>
+        <parm key="status" value ="0"/>
+        <parm key="pic" value ="https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/651b7703cfabcd2781ba8e12a7044069.png"/>
+        <parm key="sort" value ="-999999"/>
+        <parm key="remark" value ="自动化测试ifat"/>
+        <parm key="labelIds" value ="[
+        1509768709537855
+    ]"/>
+        <parm key="spuIdList" value ='[
+        {
+            "spuId":1470108195094560,
+            "spuSort":0
+        }
+    ]'/>
+    </test>
+</data>

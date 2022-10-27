@@ -1,5 +1,4 @@
 package com.meiji.biz.service
-
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.JSONObject
 import com.meiji.biz.api.MysqlAPI
@@ -8,7 +7,6 @@ import com.miyuan.ifat.support.util.JsonUtil
 import groovy.sql.Sql
 import org.apache.commons.lang3.StringUtils
 import org.testng.SkipException
-
 import java.util.stream.Collectors
 
 class MysqlService extends MysqlAPI {
@@ -189,13 +187,13 @@ class MysqlService extends MysqlAPI {
         return meiji_integral.rows("SELECT * FROM `user_integral_info` WHERE `user_id` = '99999' LIMIT 0,1000")
     }
 
-    static List<Map> getUnSettleOrder(){
-        return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state not in(2,3) and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
-    }
+//    static List<Map> getUnSettleOrder(){
+//        return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state not in(2,3) and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
+//    }
 
-    static List<Map> getOrderByParentOrderNo(String parentOrderNo){
-        return meiji_settlement.rows("select trade_order_no,gmt_create,state,settlement_state from settlement_order where trade_parent_order_no = $parentOrderNo")
-    }
+//    static List<Map> getOrderByParentOrderNo(String parentOrderNo){
+//        return meiji_settlement.rows("select trade_order_no,gmt_create,state,settlement_state from settlement_order where trade_parent_order_no = $parentOrderNo")
+//    }
 
     static List getOrderLogistic(String orderNo){
         return meiji_order.rows("select logistics_code,gmt_create,logistics_company_code from order_logistic where order_code = $orderNo")
@@ -503,12 +501,130 @@ class MysqlService extends MysqlAPI {
     static def CategoryDetail(){
         ArrayList<List> list = meiji_active.rows("SELECT * FROM `meiji_active`.`gift_category` ORDER BY sort ASC")
         println(list.id)
-        if(list == null){
+        if(list == []){
             println("暂无分类数据")
+            throw new SkipException("暂无分类数据")
             return null
         }
         return list.id
     }
+
+    static def adjustCategory(){
+        ArrayList<List> list =meiji_active.rows("SELECT * FROM `meiji_active`.`gift_category` WHERE `status` = '1'  ORDER BY sort ASC")
+        println(list.id)
+            if(list == []){
+                println("暂无分类数据，无法获取ID！")
+                throw new SkipException("暂无分类数据，无法获取ID！")
+                return null
+        }
+        return list.id
+    }
+
+    static def adjustCourse(){
+        ArrayList<List> list =meiji_active.rows("SELECT * FROM `meiji_active`.`gift_tutorial` WHERE `status` = '0'ORDER BY sort ASC")
+        println(list.id)
+        if(list == []){
+            println("暂无送礼教程数据，无法获取ID！")
+            throw new SkipException("暂无送礼教程数据，无法获取ID！")
+            return null
+        }
+
+        return list.id
+    }
+
+    static def adjustCourse01(){
+        ArrayList<List> list =meiji_active.rows("SELECT * FROM `meiji_active`.`gift_tutorial` WHERE `status` = '1'ORDER BY sort ASC")
+        println(list.id)
+        if(list == []){
+            println("暂无送礼教程数据，无法获取ID！")
+            throw new SkipException("暂无送礼教程数据，无法获取ID！")
+            return null
+        }
+        return list.id
+    }
+
+
+    static def adjustCategory01(){
+        ArrayList<List> list = meiji_active.rows("SELECT * FROM `meiji_active`.`gift_category` WHERE `status` = '0'  ORDER BY sort ASC")
+        println(list.id)
+            if(list == []){
+            println("暂无分类数据，无法获取ID！")
+            return null
+        }
+        return list.id
+    }
+
+    static def editCourse(){
+        ArrayList<List> list = meiji_active.rows("SELECT * FROM `meiji_active`.`gift_tutorial` WHERE `status` = '0'   ORDER BY sort ASC")
+        println(list.id)
+        if(list == []){
+            print("暂无送礼教程数据，无法获取ID！")
+            return null
+        }
+        return list.id
+    }
+
+    static def editCourse01(){
+        ArrayList<List> list = meiji_active.rows("SELECT * FROM `meiji_active`.`gift_tutorial` WHERE `status` = '0'   ORDER BY sort ASC")
+        println(list.sort)
+        if(list == []){
+            print("暂无送礼教程数据，无法获取！")
+            return null
+        }
+        return list.sort
+    }
+
+    static def editCourse02(){
+        ArrayList<List> list = meiji_active.rows("SELECT * FROM `meiji_active`.`gift_tutorial` WHERE `status` = '0'   ORDER BY sort ASC")
+        println(list.pic)
+        if(list == []){
+            print("暂无送礼教程数据，无法获取！")
+            return null
+        }
+        return list.pic
+    }
+
+    static def combinationDetail(){
+        Map map =meiji_active.firstRow("SELECT id FROM `meiji_active`.`gift_goods_group` ORDER BY gmt_create DESC")
+        if(map == null){
+            println("暂无组合商品数据！")
+            throw new SkipException("暂无组合商品数据！")
+            return null
+        }
+        return map.id
+    }
+
+    static def adjustCombination(){
+        ArrayList<List> list = meiji_active.rows("SELECT * FROM `meiji_active`.`gift_goods_group`  WHERE `status` = '0' ORDER BY gmt_create DESC")
+        println(list.id)
+        if(list == []){
+            println("暂无组合商品数据！")
+            return null
+        }
+        return list.id
+    }
+
+    static def adjustCombination01(){
+        ArrayList<List> list = meiji_active.rows("SELECT * FROM `meiji_active`.`gift_goods_group`  WHERE `status` = '1' ORDER BY gmt_create DESC")
+        println(list.id)
+        if(list == []){
+            println("暂无组合商品数据！")
+            return null
+        }
+        return list.id
+    }
+
+    static def deleteLabelTree(){
+        ArrayList<List> list = meiji_active.rows("SELECT id FROM `meiji_active`.`gift_label` WHERE `parent_id` = '0' AND `create_by` = '自动化测试' ORDER BY sort DESC")
+        println(list.id)
+        if(list == []){
+            println("暂无标签数据！")
+            throw new SkipException("暂无标签数据！")
+            return null
+        }
+        return list.id
+    }
+
 
 
     static def marketAccountDelete(){

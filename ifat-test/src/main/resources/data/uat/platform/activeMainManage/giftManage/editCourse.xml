@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "editCourse">
+        <parm key="name" value ="$CN5"/>
+        <parm key="page" value ="1"/>
+        <parm key="remark" value ="$CN20"/>
+        <parm key="type" value ="1"/>
+        <parm key="status" value ="0"/>
+        <parm key="urlList" value ='[
+        "https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/74d8b37bf43c248a14346d101f174aa5.png",
+        "https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/a15204e934d450e4535d1683e4cda1cc.png"
+    ]'/>
+    </test>
+</data>

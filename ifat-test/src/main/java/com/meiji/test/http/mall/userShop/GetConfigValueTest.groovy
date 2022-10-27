@@ -24,4 +24,10 @@ class GetConfigValueTest extends BaseTest{
     public void getConfigValue2(TestContext testContext){
         getConfigValue.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "送礼鲜花配置 getConfigValue" ,groups = ["prod","uat"],testName = "getConfigValue-isShowGiftFlower",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getConfigValue3(TestContext testContext){
+        getConfigValue.invoke(testContext).baseAssert(testContext)
+    }
 }

@@ -11,4 +11,8 @@
     <test name = "getConfigValue-vipCenterTips">
         <parm key="key" value ="vipCenterTips"/>
     </test>
+
+    <test name = "getConfigValue-homeFloatGif">
+        <parm key="key" value ="homeFloatGif"/>
+    </test>
 </data>

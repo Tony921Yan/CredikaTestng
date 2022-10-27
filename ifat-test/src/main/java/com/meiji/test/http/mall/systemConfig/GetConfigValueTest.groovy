@@ -26,4 +26,10 @@ class GetConfigValueTest extends BaseTest {
     public void getConfigValue2(TestContext testContext){
         getConfigValue.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "查询系统配置属性-首页浮窗客服gif控制开关 getConfigValue" ,groups = ["prod","uat"],testName = "getConfigValue-homeFloatGif",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getConfigValue3(TestContext testContext){
+        getConfigValue.invoke(testContext).baseAssert(testContext)
+    }
 }

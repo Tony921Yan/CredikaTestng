@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addGoodsLabel">
+        <parm key="labelType" value ="0"/>
+        <parm key="labelName" value ="属性11"/>
+        <parm key="location" value ='1'/>
+        <parm key="priority" value ="1"/>
+        <parm key="duration" value ="1"/>
+        <parm key="showType" value ='1'/>
+        <parm key="picture" value =''/>
+        <parm key="titlePicture" value ='{"image":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/5d6f598c82c92c9590ca4aece21ecaec.png","height":2,"width":2}'/>
+    </test>
+</data>

@@ -625,12 +625,75 @@ class MysqlService extends MysqlAPI {
         return list.id
     }
 
-
-
     static def marketAccountDelete(){
         Map map = meiji_pay.firstRow("SELECT id FROM meiji_pay.market_account ORDER BY gmt_create desc;")
         println map.id
         return map.id
+    }
+
+    static def searchBuyerShow(){
+        Map map = meiji_goods.firstRow("SELECT id FROM `meiji_goods`.`channel_column` WHERE `is_default` = '1' ")
+        println(map.id)
+        if(map == null){
+            throw new SkipException("暂无默认分类数据")
+            return null
+        }
+        return map.id
+    }
+
+    static def transferColumn(){
+        ArrayList<List> list =meiji_content.rows("SELECT * FROM `meiji_content`.`buyer_show` WHERE  `is_delete` = '0' AND `business_type` IN (0,1) AND `show_source` = '1' ORDER BY 'gmt_create' DESC")
+        println(list.id)
+        if(list==[]){
+            print("暂无晒单数据")
+            throw new SkipException("暂无晒单数据")
+            return null
+        }
+        return list.id
+    }
+
+    static def deleteBuyerShow(){
+        ArrayList<List> list = meiji_content.rows("SELECT * FROM `meiji_content`.`buyer_show` WHERE `spu_name` LIKE '%自动化测试商品%' AND `is_delete` = '0' AND `business_type` IN (0,1)AND `show_source` = '1' ORDER BY 'gmt_create' DESC")
+        println(list.id)
+        if(list==[]){
+            print("暂无晒单数据")
+            throw new SkipException("暂无晒单数据")
+            return null
+        }
+        return list.id
+    }
+
+    static def auditData(){
+        List<Map> list = meiji_content.rows("SELECT id,business_type,publish_date FROM `meiji_content`.`buyer_show` WHERE `audit_status` <> '2' AND `is_delete` = '0'  AND `publish_date` IS NOT NULL ORDER BY 'gmt_create' DESC")
+        println(list)
+        if(list==[]){
+            print("暂无晒单数据")
+            throw new SkipException("暂无晒单数据")
+            return null
+        }
+        return list
+
+    }
+
+    static def getGoodsByPage(String supplierId){
+        List list = meiji_content.rows("SELECT * FROM `meiji_content`.`buyer_show` WHERE `show_source` = '3' AND `supplier_id` =$supplierId ORDER BY 'publish_date' DESC ")
+        println(list)
+        if(list==[]){
+            print("OMS暂无溯源数据")
+            throw new SkipException("OMS暂无溯源数据")
+            return null
+        }
+        return list
+    }
+    static def commitTrace(){
+        ArrayList<List> list = meiji_content.rows("SELECT * FROM `meiji_content`.`buyer_show` WHERE `audit_status` = '1' AND `is_delete` = '0' ORDER BY 'gmt_create' DESC")
+        println(list.id)
+        if(list == []){
+            print("OMS暂无待提交状态溯源数据")
+            throw new SkipException("OMS暂无待提交状态溯源数据")
+            return null
+        }
+        return list.id
     }
 
     static def marketAccountIsDelete(){

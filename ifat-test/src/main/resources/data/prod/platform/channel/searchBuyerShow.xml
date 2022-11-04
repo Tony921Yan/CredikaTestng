@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <data>
     <test name = "searchBuyerShow">
-        <parm key="columnId" value ="1507612745007199"/>
+        <parm key="columnId" value ="1511417890996257"/>
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
     </test>
 
     <test name = "searchBuyerShow01">
-        <parm key="columnId" value ="1507612745007199"/>
+        <parm key="columnId" value ="1511417890996257"/>
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
     </test>
 
     <test name = "searchBuyerShow02">
-        <parm key="columnId" value ="1507612745007199"/>
+        <parm key="columnId" value ="1511417890996257"/>
         <parm key="page" value ="1"/>
         <parm key="rows" value ="20"/>
     </test>

@@ -103,6 +103,7 @@
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCategoryListTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CombinationDetailTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CategoryDetailTest"/>
+            <class name="com.meiji.test.http.platform.channel.SearchBuyerShowTest"/>
 
         </classes>
     </test>

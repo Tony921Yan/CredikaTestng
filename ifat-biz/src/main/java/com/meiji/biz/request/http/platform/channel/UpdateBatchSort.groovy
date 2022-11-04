@@ -1,25 +1,23 @@
 package com.meiji.biz.request.http.platform.channel
-
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
-
-class UpdateColumn extends PlatformPost {
+class UpdateBatchSort extends PlatformPost {
     {
-        super.api = "ColumnManagement/updateColumn"
-        super.params =  ["childName","id","name","remark"]
+        super.api = "ShareOrderManage/updateBatchSort"
+        super.params =  ["columnId","page","rows","sourceId","targetId"]
     }
 
-    UpdateColumn invoke(TestContext testContext) {
+    UpdateBatchSort invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    UpdateColumn preInvoke(TestContext testContext){
+    UpdateBatchSort preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    UpdateColumn baseAssert(TestContext testContext){
+    UpdateBatchSort baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

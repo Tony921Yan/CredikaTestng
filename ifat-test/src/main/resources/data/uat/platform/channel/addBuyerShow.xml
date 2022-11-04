@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addBuyerShow">
+        <parm key="businessType" value ="$int0-1"/>
+        <parm key="columnId" value ="1507612745007199"/>
+        <parm key="cover" value ="https://static.meiji8888.com/assets/bf4d3d7c966a8009fe57d258847f0856.png"/>
+        <parm key="pics" value ="https://static.meiji8888.com/assets/bf4d3d7c966a8009fe57d258847f0856.png"/>
+        <parm key="spuId" value ="1470108195094560"/>
+        <parm key="text" value ="$CN20"/>
+        <parm key="title" value ="自动化测试晒单溯源"/>
+        <parm key="videos" value =""/>
+        <parm key="isOfficial" value ="$int0-1"/>
+    </test>
+</data>

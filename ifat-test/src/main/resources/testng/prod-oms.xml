@@ -51,8 +51,9 @@
             <class name="com.meiji.test.http.OMS.template.FreightTemplateQueryPageTest"/>
             <class name="com.meiji.test.http.OMS.template.FreightTemplateSetDefaultFreightTemplateTest"/>
             <class name="com.meiji.test.http.OMS.template.FreightTemplateUpdateFreightTemplateTest"/>
-
             <class name="com.meiji.test.http.OMS.user.CheckGrayUserTest"/>
+            <class name="com.meiji.test.http.OMS.goodsOriginManage.GetGoodsByPageTest"/>
+
         </classes>
     </test>
 </suite>

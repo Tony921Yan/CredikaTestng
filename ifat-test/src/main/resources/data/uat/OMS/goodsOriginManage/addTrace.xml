@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "addTrace">
+        <parm key="spuId" value ="1470108195094560"/>
+        <parm key="nickName" value ="广州澳创投资有限公司"/>
+        <parm key="supplierId" value ="77"/>
+        <parm key="text" value ="$CN20"/>
+        <parm key="title" value ="自动化测试溯源"/>
+        <parm key="videos" value =""/>
+        <parm key="pics" value ="https://static.meiji8888.com/assets/image/f74830885abeab4b8e7f7f0be13006c4.png"/>
+    </test>
+
+</data>

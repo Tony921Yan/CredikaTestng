@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "getGoodsByPage">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="300000"/>
+        <parm key="supplierId" value ="77"/>
+
+    </test>
+
+    <test name = "getGoodsByPage01">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="status" value ="0"/>
+        <parm key="supplierId" value ="77"/>
+    </test>
+
+    <test name = "getGoodsByPage02">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="status" value ="1"/>
+        <parm key="supplierId" value ="77"/>
+    </test>
+
+    <test name = "getGoodsByPage03">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="status" value ="2"/>
+        <parm key="supplierId" value ="77"/>
+    </test>
+
+    <test name = "getGoodsByPage04">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="status" value ="3"/>
+        <parm key="supplierId" value ="77"/>
+    </test>
+
+    <test name = "getGoodsByPage05">
+        <parm key="pageNum" value ="1"/>
+        <parm key="pageSize" value ="20"/>
+        <parm key="status" value ="4"/>
+        <parm key="supplierId" value ="77"/>
+    </test>
+
+</data>

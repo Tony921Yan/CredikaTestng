@@ -1,25 +1,24 @@
 package com.meiji.biz.request.http.platform.channel
-
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
-class UpdateColumn extends PlatformPost {
+class UpdateBuyer extends PlatformPost {
     {
-        super.api = "ColumnManagement/updateColumn"
-        super.params =  ["childName","id","name","remark"]
+        super.api = "ShareOrderManage/updateBuyer"
+        super.params =  ["businessType","pics","cover","id","text","title","isOfficial"]
     }
 
-    UpdateColumn invoke(TestContext testContext) {
+    UpdateBuyer invoke(TestContext testContext) {
         super.invoke(testContext)
         return this
     }
 
-    UpdateColumn preInvoke(TestContext testContext){
+    UpdateBuyer preInvoke(TestContext testContext){
         super.preInvoke(testContext)
         return this
     }
 
-    UpdateColumn baseAssert(TestContext testContext){
+    UpdateBuyer baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "auditBuyerShow">
+        <parm key="auditData" value ='[
+        {
+            "id":1511036507127871,
+            "businessType":1,
+            "publishDate":"2022-11-01 10:31:16"
+        }
+    ]'/>
+        <parm key="auditStatus" value ="2"/>
+        <parm key="columnId" value ="1507612745007199"/>
+        <parm key="needHomePageShow" value ="0"/>
+        <parm key="needColumnPageShow" value ="0"/>
+        <parm key="needGiveBonus" value ="0"/>
+        <parm key="traceTitle" value ="自动化测试接口测试"/>
+    </test>
+</data>

@@ -289,6 +289,12 @@
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCourseListTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetLabelTreeTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.UpdateLabelTreeTest"/>
+            <class name="com.meiji.test.http.platform.channel.AddBuyerShowTest"/>
+            <class name="com.meiji.test.http.platform.channel.AuditBuyerShowTest"/>
+            <class name="com.meiji.test.http.platform.channel.TransferColumnTest"/>
+            <class name="com.meiji.test.http.platform.channel.UpdateBatchSortTest"/>
+            <class name="com.meiji.test.http.platform.channel.UpdateBuyerTest"/>
+            <class name="com.meiji.test.http.platform.channel.DeleteBuyerShowTest"/>
         </classes>
     </test>
 

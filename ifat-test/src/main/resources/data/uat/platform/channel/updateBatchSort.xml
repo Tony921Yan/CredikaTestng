@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateBatchSort">
+        <parm key="columnId" value ="1507612745007199"/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+        <parm key="sourceId" value ="$int1-10"/>
+        <parm key="targetId" value ="$int0-10"/>
+    </test>
+</data>

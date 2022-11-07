@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateFreightDistanceArea">
+        <parm key="params" value ='[
+        {
+            "areaName":"内蒙古自治区",
+            "areaCode":"150000"
+        },
+        {
+            "areaName":"新疆维吾尔自治区",
+            "areaCode":"650000"
+        },
+        {
+            "areaName":"北京市",
+            "areaCode":"110000"
+        },
+        {
+            "areaName":"青海省",
+            "areaCode":"630000"
+        },
+        {
+            "areaName":"香港特别行政区",
+            "areaCode":"810000"
+        },
+        {
+            "areaName":"台湾省",
+            "areaCode":"710000"
+        },
+        {
+            "areaName":"澳门特别行政区",
+            "areaCode":"820000"
+        },
+        {
+            "areaName":"西藏自治区",
+            "areaCode":"540000"
+        }
+    ]'/>
+    </test>
+
+</data>

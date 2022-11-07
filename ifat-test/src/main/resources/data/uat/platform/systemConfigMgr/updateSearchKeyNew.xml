@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "updateSearchKeyNew">
+        <parm key="searchKeys" value ='[
+    {
+        "scene": 0,
+        "keys": [
+            "订阅鲜花",
+            "跨境商品",
+            "美丽",
+            "可爱",
+            "鲜花"
+        ]
+    },
+    {
+        "scene": 1,
+        "keys": [
+            "仙女本仙",
+            "优惠券",
+            "测试"
+        ]
+    }
+]'/>
+    </test>
+
+</data>

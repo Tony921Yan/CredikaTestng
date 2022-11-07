@@ -282,7 +282,6 @@
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.AdjustCourseTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CategoryDetailTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.DeleteLabelTreeTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.EditCategoryTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.EditCourseTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCategoryListTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCombinationListTest"/>
@@ -295,6 +294,8 @@
             <class name="com.meiji.test.http.platform.channel.UpdateBatchSortTest"/>
             <class name="com.meiji.test.http.platform.channel.UpdateBuyerTest"/>
             <class name="com.meiji.test.http.platform.channel.DeleteBuyerShowTest"/>
+            <class name="com.meiji.test.http.platform.systemConfigMgr.UpdateFreightDistanceAreaTest"/>
+            <class name="com.meiji.test.http.platform.systemConfigMgr.UpdateSearchKeyNewTest"/>
         </classes>
     </test>
 

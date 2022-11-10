@@ -141,6 +141,14 @@
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayCouponListTest"/>
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayCouponPacketGoodsTest"/>
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayDiscountZoneDataTest"/>
+            <class name="com.meiji.test.http.mall.myMessage.CountMessageTest"/>
+            <class name="com.meiji.test.http.mall.myMessage.MsgListTest"/>
+            <class name="com.meiji.test.http.mall.myMessage.UpdateMessageStatusTest"/>
+            <class name="com.meiji.test.http.mall.gift.GetTutorialListTest"/>
+            <class name="com.meiji.test.http.mall.gift.GetCategoryListTest"/>
+            <class name="com.meiji.test.http.mall.gift.GetGroupGoodsTest"/>
+            <class name="com.meiji.test.http.mall.gift.CategoryDetailTest"/>
+
         </classes>
     </test>
 </suite>

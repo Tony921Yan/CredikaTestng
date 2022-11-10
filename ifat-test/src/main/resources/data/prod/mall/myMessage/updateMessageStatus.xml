@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "updateMessageStatus">
+        <parm key="isUpdateAll" value ="False"/>
+        <parm key="messagdId"  value ="[1489115451228193]"/>
+    </test>
+</data>

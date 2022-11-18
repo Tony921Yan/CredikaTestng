@@ -296,6 +296,7 @@
             <class name="com.meiji.test.http.platform.channel.DeleteBuyerShowTest"/>
             <class name="com.meiji.test.http.platform.systemConfigMgr.UpdateFreightDistanceAreaTest"/>
             <class name="com.meiji.test.http.platform.systemConfigMgr.UpdateSearchKeyNewTest"/>
+            <class name="com.meiji.test.http.platform.activeMainManage.CheckGiftSwitchTest"/>
         </classes>
     </test>
 

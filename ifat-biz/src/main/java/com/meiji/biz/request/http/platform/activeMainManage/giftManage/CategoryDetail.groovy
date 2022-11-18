@@ -36,10 +36,11 @@ class CategoryDetail extends PlatformPost{
         testContext.put("pic",apiResult.pic)
         testContext.put("sort",apiResult.sort)
         testContext.put("remark",apiResult.remark)
-        List<Long> labelIds = apiResult.labelList.getAt("id");
+        List<Long> labelIds = apiResult.labelList.getAt("id")
         testContext.put("labelIds",labelIds)
 //        testContext.put("labelIds",[1508701305307199])
-        ArrayList<Map> goodsList = apiResult.goodsList.get(0).getAt("pics")
+        println(apiResult.goodsList.get(0).getAt("pics"))
+        List<Map> goodsList = apiResult.goodsList.get(0).getAt("pics")
         for(int i = 0 ; i< goodsList.size();i++){
             goodsList.get(i).remove("picUrl")
             goodsList.get(i).remove("picId")

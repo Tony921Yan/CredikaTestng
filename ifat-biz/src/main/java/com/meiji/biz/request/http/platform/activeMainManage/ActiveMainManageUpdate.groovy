@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class ActiveMainManageUpdate extends PlatformPost{
     {
         super.api = "ActiveMainManage/update"
-       super.params = ["expiryEnd","expiryStart","name","preTime","remark","secKillActivity","status","type","id"]
+        super.params = ["type","copyWrite","name","title","remark","qrCode","posterPic","activeRule","groupQrcodeUrl","expiryStart","expiryEnd","preTime","status","secKillActivity","id"]
     }
 
     ActiveMainManageUpdate invoke(TestContext testContext) {

@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class ActiveMainManageAdd extends PlatformPost{
     {
         super.api = "ActiveMainManage/add"
-       super.params = ["expiryEnd","expiryStart","name","preTime","remark","secKillActivity","status","type"]
+       super.params = ["expiryEnd","expiryStart","name","preTime","title","secKillActivity","status","type"]
     }
 
     ActiveMainManageAdd invoke(TestContext testContext) {

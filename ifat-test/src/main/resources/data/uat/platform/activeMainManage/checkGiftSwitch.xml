@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "checkGiftSwitch">
+        <parm key="spuId" value ="1422755004153889"/>
+        <parm key="action" value ="$int0-1"/>
+    </test>
+</data>

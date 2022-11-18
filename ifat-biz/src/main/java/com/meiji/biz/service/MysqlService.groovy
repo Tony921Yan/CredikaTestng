@@ -353,7 +353,7 @@ class MysqlService extends MysqlAPI {
     }
 
     static def getNewestID(){
-        Map map= meiji_active.firstRow("SELECT id from meiji_active.active_main where type = 11 and is_delete=0 ORDER BY gmt_create")
+        Map map= meiji_active.firstRow("SELECT id FROM `meiji_active`.`active_main` WHERE `type` = '11' AND `status` in(1,2) AND `is_delete` <> '1' ORDER BY gmt_create DESC")
         return map.id
     }
 

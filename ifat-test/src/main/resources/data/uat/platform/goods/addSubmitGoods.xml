@@ -29,5 +29,7 @@
         "primaryDistributionPercentage": "0.5","secondaryDistributionPercentage":"0.2","settlementPrice":10,
         "supplierSkuCode":"200","thirdPartySkuCode":"20HKL00345","grossWeightUnit": "g","retailPrice": 110,
         "properties": [{"propertyValueId":1,"property":"颜色","propertyValue":"白色","sort": 0,"propertyId": 1}]}]'/>
+        <parm key="isOnlyGift" value ="0"/>
+
     </test>
 </data>

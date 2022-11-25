@@ -41,7 +41,8 @@ class AddGoods extends PlatformPost{
         "supervisorId",
         "supplierCode",
         "supplierId",
-        "supplierReturnAddressId"]
+        "supplierReturnAddressId",
+        "isOnlyGift"]
     }
 
     AddGoods invoke(TestContext testContext) {

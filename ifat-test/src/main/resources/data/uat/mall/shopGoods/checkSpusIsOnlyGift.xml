@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+    <test name = "checkSpusIsOnlyGift">
+        <parm key="spuIds" value ="[1514855783727167]"/>
+    </test>
+</data>

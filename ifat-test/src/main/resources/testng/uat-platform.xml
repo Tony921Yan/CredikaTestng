@@ -92,8 +92,8 @@
             <class name="com.meiji.test.http.platform.goods.PurchaseManageListTest"/>
             <class name="com.meiji.test.http.platform.goods.PurchaseManageUpdateTest"/>
             <class name="com.meiji.test.http.platform.goods.QueryGoodPropertysTest"/>
-            <class name="com.meiji.test.http.platform.goods.SubmitGoodsTest"/>
-            <class name="com.meiji.test.http.platform.goods.UpdateGoodsTest"/>
+            <class name="com.meiji.test.http.platform.goodsDetailMange.SubmitGoodsTest"/>
+            <class name="com.meiji.test.http.platform.goodsDetailMange.UpdateGoodsTest"/>
 
             <class name="com.meiji.test.http.platform.label.AddLabelTest"/>
             <class name="com.meiji.test.http.platform.label.DeleteLabelTest"/>
@@ -282,7 +282,7 @@
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.AdjustCourseTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CategoryDetailTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.DeleteLabelTreeTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.EditCourseTest"/>
+<!--            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.EditCourseTest"/>-->
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCategoryListTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCombinationListTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCourseListTest"/>
@@ -297,6 +297,7 @@
             <class name="com.meiji.test.http.platform.systemConfigMgr.UpdateFreightDistanceAreaTest"/>
             <class name="com.meiji.test.http.platform.systemConfigMgr.UpdateSearchKeyNewTest"/>
             <class name="com.meiji.test.http.platform.activeMainManage.CheckGiftSwitchTest"/>
+            <class name="com.meiji.test.http.platform.goodsDetailMange.CheckSpusIsOnlyGiftTest"/>
         </classes>
     </test>
 

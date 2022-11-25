@@ -31,5 +31,7 @@
         <parm key="supplierCode" value ="sup12202105251088"/>
         <parm key="supplierId" value ="77"/>
         <parm key="supplierReturnAddressId" value ="186"/>
+        <parm key="isOnlyGift" value ="0"/>
+
     </test>
 </data>

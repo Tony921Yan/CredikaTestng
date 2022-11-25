@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getGroupBuyTopGoodsNew">
+        <parm key="activeMainId" value ="1515392767885375"/>
+        <parm key="page" value ="1"/>
+        <para key="rows" value="10"/>
+    </test>
+</data>

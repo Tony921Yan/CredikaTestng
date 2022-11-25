@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.platform.goods
+package com.meiji.biz.request.http.platform.goodsDetailManage
 
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
@@ -36,7 +36,9 @@ class UpdateGoods extends PlatformPost{
         "supervisorId",
         "supplierCode",
         "supplierId",
-        "supplierReturnAddressId"]
+        "supplierReturnAddressId",
+        "isOnlyGift"
+        ]
 
     }
 

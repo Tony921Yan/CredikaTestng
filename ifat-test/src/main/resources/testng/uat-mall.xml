@@ -174,7 +174,8 @@
 
             <class name="com.meiji.test.http.mall.systemConfig.GetConfigValueTest"/>
             <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyGoodsTest"/>
-            <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyTopGoodsTest"/>
+<!--            <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyTopGoodsTest"/> #该接口已废弃-->
+            <class name="com.meiji.test.http.mall.groupBuy.GetGroupBuyTopGoodsNewTest"/>
             <class name="com.meiji.test.http.mall.groupBuy.GetGroupDetailTest"/>
             <class name="com.meiji.test.http.mall.groupBuy.GetGroupTeamByGoodsTest"/>
             <class name="com.meiji.test.http.mall.groupBuy.GetRecommendGroupGoodsTest"/>
@@ -195,6 +196,15 @@
             <class name="com.meiji.test.http.mall.memberDay.ReceiveActiveCouponTest"/>
 <!--            <class name="com.meiji.test.http.mall.activeRecord.GetIntegraCenterRafflePageTest"/>-->
 <!--            <class name="com.meiji.test.http.mall.activeRecord.GetRaffleSubsuribeTest"/>-->
+            <class name="com.meiji.test.http.mall.myMessage.CountMessageTest"/>
+            <class name="com.meiji.test.http.mall.myMessage.MsgListTest"/>
+            <class name="com.meiji.test.http.mall.myMessage.UpdateMessageStatusTest"/>
+            <class name="com.meiji.test.http.mall.gift.GetTutorialListTest"/>
+            <class name="com.meiji.test.http.mall.gift.GetCategoryListTest"/>
+            <class name="com.meiji.test.http.mall.gift.GetGroupGoodsTest"/>
+            <class name="com.meiji.test.http.mall.gift.CategoryDetailTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.CheckSpusIsOnlyGiftTest"/>
+
 
         </classes>
     </test>

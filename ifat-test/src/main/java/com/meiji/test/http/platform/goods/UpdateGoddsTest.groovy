@@ -1,6 +1,5 @@
 package com.meiji.test.http.platform.goods
 
-import com.meiji.biz.request.http.platform.goods.AddGoods
 import com.meiji.biz.request.http.platform.goods.UpdateGoods
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

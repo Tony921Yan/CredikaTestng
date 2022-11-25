@@ -122,6 +122,7 @@
             <class name="com.meiji.test.http.mall.shopGoods.GetSpuBuyerShowTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListWithCategoryTest"/>
+            <class name="com.meiji.test.http.mall.shopGoods.SearchGoodsListNewTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.GetResourceWithCategoryTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.GetGoodsRoomLiveTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.IsGiftTypeOrderTest"/>
@@ -182,12 +183,11 @@
             <class name="com.meiji.test.http.mall.groupBuy.GroupSubscribeNoticeTest"/>
             <class name="com.meiji.test.http.mall.integral.PageQueryTest"/>
             <class name="com.meiji.test.http.mall.integral.PersonalIntegralQueryTest"/>
-            <class name="com.meiji.test.http.mall.integral.UserTaskInfoQueryTest"/>
             <class name="com.meiji.test.http.mall.integral.SignRemindSettingTest"/>
             <class name="com.meiji.test.http.mall.integral.SendIntegralTest"/>
             <class name="com.meiji.test.http.mall.integral.CuponIntegralRuleQueryTest"/>
             <class name="com.meiji.test.http.mall.integral.SignRemindSettingTest"/>
-            <class name="com.meiji.test.http.mall.integral.UserTaskInfoQueryTest"/>
+<!--            <class name="com.meiji.test.http.mall.integral.UserTaskInfoQueryTest"/>-->
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayActiveBriefTest"/>
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayActiveListTest"/>
             <class name="com.meiji.test.http.mall.memberDay.GetMemberDayCouponPacketGoodsTest"/>

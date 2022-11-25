@@ -69,7 +69,7 @@
             <class name="com.meiji.test.http.platform.gift.AcknowledgmentsManageUpdateTest"/>
 
 
-            <class name="com.meiji.test.http.platform.goods.AddGoddsTest"/>
+<!--            <class name="com.meiji.test.http.platform.goods.AddGoddsTest"/>-->
             <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
             <class name="com.meiji.test.http.platform.goods.AuditGoodsTest"/>
             <class name="com.meiji.test.http.platform.goods.BatchDeleteTest"/>
@@ -92,11 +92,11 @@
             <class name="com.meiji.test.http.platform.goods.PurchaseManageListTest"/>
             <class name="com.meiji.test.http.platform.goods.PurchaseManageUpdateTest"/>
             <class name="com.meiji.test.http.platform.goods.QueryGoodPropertysTest"/>
-            <class name="com.meiji.test.http.platform.goodsDetailMange.SubmitGoodsTest"/>
-            <class name="com.meiji.test.http.platform.goodsDetailMange.UpdateGoodsTest"/>
+<!--            <class name="com.meiji.test.http.platform.goodsDetailMange.SubmitGoodsTest"/>-->
+<!--            <class name="com.meiji.test.http.platform.goodsDetailMange.UpdateGoodsTest"/>-->
 
-            <class name="com.meiji.test.http.platform.label.AddLabelTest"/>
-            <class name="com.meiji.test.http.platform.label.DeleteLabelTest"/>
+<!--            <class name="com.meiji.test.http.platform.label.AddLabelTest"/>-->
+<!--            <class name="com.meiji.test.http.platform.label.DeleteLabelTest"/>-->
             <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
             <class name="com.meiji.test.http.platform.label.PageLabelTest"/>
             <class name="com.meiji.test.http.platform.label.UpdateLabelTest"/>
@@ -154,7 +154,7 @@
             <class name="com.meiji.test.http.platform.shopManager.MerchantManageTest"/>
             <class name="com.meiji.test.http.platform.shopManager.ShopManageTest"/>
             <class name="com.meiji.test.http.platform.marketingManagement.GiftCardManageTest"/>
-            <class name="com.meiji.test.http.platform.other.GoodsSubjectTest"/>
+<!--            <class name="com.meiji.test.http.platform.other.GoodsSubjectTest"/>-->
             <class name="com.meiji.test.http.platform.other.SelectionCategoryTest"/>
             <class name="com.meiji.test.http.platform.marketingManagement.ActiveManageTest"/>
             <class name="com.meiji.test.http.platform.other.StockManageTest"/>

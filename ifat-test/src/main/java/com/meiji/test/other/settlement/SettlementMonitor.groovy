@@ -1,6 +1,4 @@
 package com.meiji.test.other.settlement
-
-
 import com.meiji.biz.service.MysqlService
 import com.meiji.biz.util.DateUtil
 import com.miyuan.ifat.support.test.BaseTest
@@ -12,7 +10,8 @@ import org.testng.annotations.Test
 class SettlementMonitor extends BaseTest{
     private final static List finishAfterStatus = ["6", "7"] //售后单状态（1 待审核,2 待退货,3待收货验货,4待退款审核,5待退款,6 已完成,7 已取消）
     private final static List normalOrderStatus = ["3","4","5","6","7"] //'交易单状态 1 待支付，2 待审核，3 待发货/已审核 ，4 出库中，5 已发货，6已签收，7已完成，8 已取消',
-    @Test(dataProvider = "orderData",groups = ["prod"])
+//    @Test(dataProvider = "orderData",groups = ["prod"])
+    @Test(dataProvider = "orderData",groups = ["uat"])
     void settleMonitor(TestContext testContext){
         Date now = new Date()
         String parentOrderNo = testContext.get("parentOrderNo")

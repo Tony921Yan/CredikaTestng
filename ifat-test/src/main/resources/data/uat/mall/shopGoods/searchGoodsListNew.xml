@@ -10,4 +10,14 @@
         <parm key="searchWordPage" value ="1"/>
         <parm key="comprehensiveSort" value ="desc"/>
     </test>
+
+    <test name = "searchGoodsListNew1">
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="10"/>
+        <parm key="shopId" value ="1406506069131296"/>
+        <parm key="searchText" value ="花生米"/>
+        <parm key="normalSearchPage" value ="1"/>
+        <parm key="searchWordPage" value ="1"/>
+        <parm key="comprehensiveSort" value ="desc"/>
+    </test>
 </data>

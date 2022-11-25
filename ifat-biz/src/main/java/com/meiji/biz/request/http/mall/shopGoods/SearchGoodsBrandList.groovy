@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.mall.userShop
+package com.meiji.biz.request.http.mall.shopGoods
 
 import com.meiji.biz.request.http.mall.MallPost
 import com.miyuan.ifat.support.test.TestContext

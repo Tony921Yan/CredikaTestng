@@ -14,4 +14,10 @@ class SearchGoodsListNewTest extends BaseTest {
     public void searchGoodsListNew(TestContext testContext){
         searchGoodsListNew.invoke(testContext).baseAssert(testContext)
     }
+
+    @Test(description = "新搜索商品列表-商品标签/送礼标签 searchGoodsListNew" ,groups = ["prod","uat"],testName = "searchGoodsListNew1",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void searchGoodsListNew1(TestContext testContext){
+        searchGoodsListNew.invoke(testContext).baseAssert(testContext)
+    }
 }

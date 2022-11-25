@@ -4,4 +4,9 @@
         <parm key="searchText" value ="水果"/>
         <parm key="shopId"  value ="1496390020628799"/>
     </test>
+
+    <test name = "searchGoodsBrandList1">
+        <parm key="searchText" value ="花生米"/>
+        <parm key="shopId"  value ="1496390020628799"/>
+    </test>
 </data>

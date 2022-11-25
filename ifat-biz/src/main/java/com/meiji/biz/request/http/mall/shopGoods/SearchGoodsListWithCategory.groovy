@@ -6,7 +6,7 @@ import com.miyuan.ifat.support.test.TestContext
 class SearchGoodsListWithCategory extends MallPost {
     {
         super.api = "shopGoods/searchGoodsListWithCategory"
-        super.params =  ["page","rows","shopId","categoryIdList","comprehensiveSort","priceSort","publishTimeSort","salesSort"]
+        super.params =  ["page","rows","shopId","categoryIdList","comprehensiveSort","priceSort","publishTimeSort","salesSort","searchText"]
     }
 
     SearchGoodsListWithCategory invoke(TestContext testContext) {

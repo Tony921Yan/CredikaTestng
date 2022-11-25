@@ -1,6 +1,5 @@
 package com.meiji.test.http.mall.shopGoods
 
-import com.meiji.biz.request.http.mall.shopGoods.GetResourceWithCategory
 import com.meiji.biz.request.http.mall.shopGoods.SearchGoodsListWithCategory
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext

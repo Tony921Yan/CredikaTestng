@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getShowOrderList">
+        <parm key="condition" value ='{"columnId":0}'/>
+        <parm key="page" value ="1"/>
+        <parm key="rows" value ="20"/>
+    </test>
+
+    <test name = "getShowOrderList1">
+        <parm key="condition" value ='{"columnId":0}'/>
+        <parm key="page" value ="2"/>
+        <parm key="rows" value ="20"/>
+    </test>
+</data>

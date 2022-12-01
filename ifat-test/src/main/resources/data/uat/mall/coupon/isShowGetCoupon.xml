@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "isShowGetCoupon">
+        <parm key="spuId" value ="1443274078289952"/>
+        <parm key="defaultSkuId" value ="1443274078290304"/>
+    </test>
+
+</data>

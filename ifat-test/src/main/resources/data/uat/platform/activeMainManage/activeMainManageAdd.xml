@@ -82,4 +82,41 @@
 
     </test>
 
+    <test name = "activeMainManageAdd01">
+        <parm key="type" value ="9"/>
+        <parm key="name" value ="领券活动自动化测试"/>
+        <parm key="preTime" value ="1"/>
+        <parm key="times" value ='[
+        "2022-12-01T06:53:58.682Z",
+        "2024-12-31T06:54:08.682Z"
+    ]'/>
+        <parm key="remark" value ="自动化测试"/>
+        <parm key="expiryStart" value ="2022-12-01 14:53:58"/>
+        <parm key="expiryEnd" value ="2024-12-31 14:54:08"/>
+        <parm key="personScope" value ="1"/>
+        <parm key="personProperty" value ="1"/>
+        <parm key="changeNewFansFlag" value ="0"/>
+        <parm key="limitNum" value ="0"/>
+        <parm key="couponActivityExt" value ='{
+        "isAutoGet":0,
+        "couponShowPic":"https://static.meiji8888.com/front/mj-ecmiddle-sys/upload/504761c0239ee5b86dfd5776443419ef.jpg"
+    }'/>
+        <parm key="activeCoupons" value ='[
+        {
+            "applyNum":3,
+            "couponId":1509762361458751,
+            "sort":1,
+            "limitCount":0
+        },
+        {
+            "applyNum":7,
+            "couponId":1473731085991999,
+            "sort":2,
+            "limitCount":0
+        }
+    ]'/>
+        <parm key="status" value ="2"/>
+
+    </test>
+
 </data>

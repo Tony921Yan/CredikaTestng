@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getMaxDiscount">
+        <parm key="spuId" value ="1420475930509345"/>
+        <parm key="skuId" value ="1420475930509472"/>
+    </test>
+
+</data>

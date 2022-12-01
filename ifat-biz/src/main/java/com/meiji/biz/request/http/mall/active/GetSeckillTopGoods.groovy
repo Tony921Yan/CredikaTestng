@@ -34,6 +34,8 @@ class GetSeckillTopGoods extends MallPost{
         if(apiResult == null){return this}
         Map mysqlResult = MysqlService.getSeckillTopGoods()
         if(mysqlResult == null){return this}
+        println(mysqlResult.begin_time)
+        println(apiResult.beginTime)
         String begin_time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(mysqlResult.begin_time)
         String end_time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(mysqlResult.end_time)
         assert apiResult.beginTime == begin_time

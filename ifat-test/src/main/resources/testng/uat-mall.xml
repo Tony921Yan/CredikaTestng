@@ -204,6 +204,10 @@
             <class name="com.meiji.test.http.mall.gift.GetGroupGoodsTest"/>
             <class name="com.meiji.test.http.mall.gift.CategoryDetailTest"/>
             <class name="com.meiji.test.http.mall.shopGoods.CheckSpusIsOnlyGiftTest"/>
+            <class name="com.meiji.test.http.mall.coupon.IsShowGetCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.GetMaxDiscountTest"/>
+            <class name="com.meiji.test.http.mall.coupon.AutoReceiveCouponTest"/>
+            <class name="com.meiji.test.http.mall.coupon.ReceiveCouponTest"/>
 
 
         </classes>

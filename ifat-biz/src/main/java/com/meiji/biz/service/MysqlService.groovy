@@ -430,6 +430,25 @@ class MysqlService extends MysqlAPI {
         println(map)
         return map.id
     }
+    static def checkSpusIsOnlyGift(){
+        Map map = meiji_goods.firstRow("SELECT id FROM `meiji_goods`.`goods_spu` WHERE `status` = '4' AND `is_delete` = '0'  ORDER BY publish_time DESC")
+        println(map.id)
+        if(map==null){
+            println("暂无已发布的商品")
+            throw new SkipException("暂无已发布的商品")
+        }
+        return map.id
+    }
+
+    static def isShowGetCoupon(String spuId){
+        Map map =meiji_goods.firstRow("SELECT id FROM `meiji_goods`.`goods_sku` WHERE `spu_id` =$spuId")
+        if(map==null){
+            println("暂无已发布的商品")
+            throw new SkipException("暂无已发布的商品")
+        }
+        println(map.id)
+        return map.id
+    }
 
     static def integralConvert1(){
         Map map =meiji_integral.firstRow("SELECT id FROM `meiji-integral`.`integral_active` WHERE `status` = '4' AND `is_delete` = '0'")

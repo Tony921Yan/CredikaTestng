@@ -15,5 +15,10 @@ class ActiveMainManageAddTest extends BaseTest {
 //        MysqlService.deleteSecKillActive()
         activeMainManageAdd.invoke(testContext).baseAssert(testContext)
     }
+    @Test(description = "活动管理-领券活动 activeMainManageAdd01",groups = ["prod","uat"],testName = "activeMainManageAdd01",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void activeMainManageAdd01(TestContext testContext){
+        activeMainManageAdd.invoke(testContext).baseAssert(testContext)
+    }
 
 }

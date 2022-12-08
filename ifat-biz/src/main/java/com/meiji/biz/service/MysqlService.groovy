@@ -187,13 +187,13 @@ class MysqlService extends MysqlAPI {
         return meiji_integral.rows("SELECT * FROM `user_integral_info` WHERE `user_id` = '99999' LIMIT 0,1000")
     }
 
-//    static List<Map> getUnSettleOrder(){
-//        return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state not in(2,3) and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
-//    }
+    static List<Map> getUnSettleOrder(){
+        return meiji_settlement.rows("select shop_name,trade_parent_order_no from settlement_order where settlement_state not in(2,3) and gmt_create < date_sub(now(),interval 7 Day) order by gmt_create desc")
+    }
 
-//    static List<Map> getOrderByParentOrderNo(String parentOrderNo){
-//        return meiji_settlement.rows("select trade_order_no,gmt_create,state,settlement_state from settlement_order where trade_parent_order_no = $parentOrderNo")
-//    }
+    static List<Map> getOrderByParentOrderNo(String parentOrderNo){
+        return meiji_settlement.rows("select trade_order_no,gmt_create,state,settlement_state from settlement_order where trade_parent_order_no = $parentOrderNo")
+    }
 
     static List getOrderLogistic(String orderNo){
         return meiji_order.rows("select logistics_code,gmt_create,logistics_company_code from order_logistic where order_code = $orderNo")
@@ -224,6 +224,18 @@ class MysqlService extends MysqlAPI {
 
     static Map getSettlementOrderStatusByOrderNo(String orderNo){
         return meiji_settlement.firstRow("SELECT trade_order_no, trade_parent_order_no,state,gmt_create from settlement_order where trade_order_no = $orderNo")
+    }
+
+    static  List<Map> getSettlementFlow(String parentOrderNo){
+        return meiji_settlement.rows("select * from meiji_settlement.settlement_flow where trade_parent_order_no = $parentOrderNo order by trade_type")
+    }
+
+    static List<Map> getSettlementOrder(){
+        return meiji_settlement.rows("SELECT * from meiji_settlement.settlement_order where state = 7 and settlement_state =2 and supplier_settlement_state =2 and order_type =1")
+    }
+
+    static List<Map> getSettlementOrderItem(String orderNo){
+        return meiji_settlement.rows("SELECT * from meiji_settlement.settlement_order_item where state =1 and trade_order_no =$orderNo")
     }
 
     static  Map getGoods_brand(){

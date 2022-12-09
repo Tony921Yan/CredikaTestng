@@ -201,7 +201,14 @@ class MysqlService extends MysqlAPI {
 
     static Map getAfterOrderLog(String afterCode,Integer step){
         return meiji_order.firstRow("select * from order_after_log where order_after_code = $afterCode and step = $step")
+    }
 
+    static List<Map> getOrderInfoPaidAmount(String flowOrderNo){
+        return meiji_order.rows("select * from meiji_order.order_info where order_code = $flowOrderNo")
+    }
+
+    static List<Map> getOrderAfterRefundAmount(String flowOrderNo){
+        return meiji_order.rows("SELECT * from meiji_order.order_after where after_status =6 and  order_code = $flowOrderNo")
     }
 
     static List getAfterOrder(String orderId){
@@ -231,7 +238,16 @@ class MysqlService extends MysqlAPI {
     }
 
     static List<Map> getSettlementOrder(){
-        return meiji_settlement.rows("SELECT * from meiji_settlement.settlement_order where state = 7 and settlement_state =2 and supplier_settlement_state =2 and order_type =1")
+        return meiji_settlement.rows("SELECT\n" +
+                "\t* \n" +
+                "FROM\n" +
+                "\tmeiji_settlement.settlement_order \n" +
+                "WHERE\n" +
+                "\tstate = 7 \n" +
+                "\tAND settlement_state = 2 \n" +
+                "\tAND supplier_settlement_state = 2 \n" +
+                "\tAND order_type = 1\n" +
+                "\tand settlement_finish_time > DATE_SUB(CURDATE(), INTERVAL 3 MONTH)")
     }
 
     static List<Map> getSettlementOrderItem(String orderNo){

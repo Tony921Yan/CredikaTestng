@@ -7,8 +7,8 @@ import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
 //
 class Settlement extends BaseTest{
-//    @Test(dataProvider = "orderData",groups = ["prod"])
-    @Test(dataProvider = "orderData",groups = ["uat"])
+    @Test(dataProvider = "orderData",groups = ["prod"])
+//    @Test(dataProvider = "orderData",groups = ["uat"])
     void settlement(TestContext testContext) {
         String parentOrderNo = testContext.get("parentOrderNo")
         testContext.appendLog(new Record("母订单号", parentOrderNo))
@@ -16,14 +16,15 @@ class Settlement extends BaseTest{
 //        testContext.appendLog(new Record("子订单号", orderNo))
         List flowList = MysqlService.getSettlementFlow(parentOrderNo)  //结算流水表
         testContext.appendLog(new Record("结算流水表", flowList))
-        Integer totalAmount = 0
+        Integer totalAmount = 0 //统计总流水表：分账-补差
         Integer amount = 0 //流水表交易金额',
         Integer tradeType = 0
         Integer entityType = 0
         Integer totalSupplierPrice = 0 //供应商结算价
         Integer totalCommission = 0 //小B佣金
         Integer totalWechatFee = 0 //微信手续费
-
+        Integer orderInfoAmount =0 //订单实付金额
+        Integer getOrderAfter =0  //订单售后成功金额
         //判断settlement表中数据是否在settlement_flow有数据
         for (Map order : flowList) {
             String flowOrderNo = order.trade_parent_order_no
@@ -31,24 +32,34 @@ class Settlement extends BaseTest{
             amount = order.amount as Integer  //'交易金额',
             tradeType = order.trade_type as Integer //'交易类型 1:分账 2:补差 3:解冻',
             entityType = order.entity_type as Integer  //'主体类型 1:店铺 2:供应商 3:平台 4:小蜜新媒体5:微信手续费',
-            println "entityType:" + entityType
-            println "tradeType:" + tradeType
-            println "amount:" + amount;
-////            testContext.appendLog(new Record("结算订单号:" + flowOrderNo + "；流水金额" ,amount))
-//            if(tradeType ==2 && entityType == 3){
-//                totalAmount -= amount
-//            }else
-//                totalAmount += amount
-//        }
-//        //得出当前母单号的流水总额，日后与settlement_order_item对应的订单号金额做比较
-//        testContext.appendLog(new Record("母订单号:" + flowList + "；流水总额" ,totalAmount))
+//            testContext.appendLog(new Record("结算订单号:" + flowOrderNo + "；流水金额" ,amount))
 
+            //统计母单流水表总额
+            switch (tradeType){
+                case 1:
+                    totalAmount += amount
+                    break
+                case 2:
+                    totalAmount -= amount
+                    break
             }
+            //通过母单找对应订单表中的实付金额
+            List getOrderInfo = MysqlService.getOrderInfoPaidAmount(flowOrderNo)
+            Integer getOrderActuallyPaidAmount = getOrderInfo.actually_paid_amount.get(0)
+            List getOrderAfterInfo = MysqlService.getOrderAfterRefundAmount(flowOrderNo)
+            if(getOrderAfterInfo.actually_refund_amount != []){
+                getOrderAfter = getOrderAfterInfo.actually_refund_amount.get(0)
+            }
+            orderInfoAmount = getOrderActuallyPaidAmount - getOrderAfter
+
+        }
+//        testContext.appendLog(new Record("订单实付总额:" ,getOrderActuallyPaidAmount))
+        testContext.appendLog(new Record("订单流水总额:" ,totalAmount))
+
+        assert orderInfoAmount == totalAmount
+
             //从数据驱动的母单中找出子单；再通过子单在查出settlement_order_item中对应的结算数据
-
             List getSettlementOrderItems = MysqlService.getSettlementOrderItem(orderNo) //子单对应的单个或多个商品
-//            testContext.appendLog(new Record("settlement_order_item中对应的子单号：", getSettlementOrderItems))
-
             for (Map getSettlementOrderItem : getSettlementOrderItems) { //拿到订单商品金额，为日后做结算作准备
                 testContext.appendLog(new Record("getSettlementOrderItem中对应的子单号：", getSettlementOrderItem))
                 Integer salePrice = getSettlementOrderItem.sale_price as Integer //'售卖商品总价格'

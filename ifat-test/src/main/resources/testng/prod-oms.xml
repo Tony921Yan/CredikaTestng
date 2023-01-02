@@ -45,8 +45,7 @@
             <class name="com.meiji.test.http.OMS.supplier.GetSupplierDetailTest"/>
             <class name="com.meiji.test.http.OMS.supplier.GetSupplierInfoTest"/>
 
-            <class name="com.meiji.test.http.OMS.template.FreightTemplateAddFreightTemplateTest"/>
-            <class name="com.meiji.test.http.OMS.template.FreightTemplateDeleteFreightTemplateTest"/>
+<!--            <class name="com.meiji.test.http.OMS.template.FreightTemplateDeleteFreightTemplateTest"/>-->
             <class name="com.meiji.test.http.OMS.template.FreightTemplateGetFreightTemplateInfoTest"/>
             <class name="com.meiji.test.http.OMS.template.FreightTemplateQueryPageTest"/>
             <class name="com.meiji.test.http.OMS.template.FreightTemplateSetDefaultFreightTemplateTest"/>

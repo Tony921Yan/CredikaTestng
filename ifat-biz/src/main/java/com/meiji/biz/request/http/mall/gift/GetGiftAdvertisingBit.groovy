@@ -22,11 +22,15 @@ class GetGiftAdvertisingBit extends MallPost {
 
     GetGiftAdvertisingBit specialAssert(TestContext testContext){
         def apiResult = testContext.getResponse().data
-        println apiResult
-        println apiResult.getClass()
-
         ArrayList mysqlResult = MysqlService.giftAdvManageLocation(testContext.get("location"))
-        println mysqlResult
-    }
+        println "mysqlResult:"+ mysqlResult
+        println "apiResult:" + apiResult
+        if(apiResult != null && mysqlResult !=null){
+            for(int i =0;i<mysqlResult.size();i++){
+                println mysqlResult.get(i)
+                println apiResult.get(i)
+            }
 
+            }
+        }
 }

@@ -21,4 +21,11 @@ class GetGiftAdvertisingBitTest extends BaseTest {
         testContext.put("location",2)
         getGiftAdvertisingBit.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
     }
+
+    @Test(description = "根据送礼页面获取广告位配置 getGiftAdvertisingBit" ,groups = ["prod","uat"],testName = "getGiftAdvertisingBit",
+            dataProvider = "dataProvider",dataProviderClass = TestData.class)
+    public void getGiftAdvertisingBit2(TestContext testContext){
+        testContext.put("location",3)
+        getGiftAdvertisingBit.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+    }
 }

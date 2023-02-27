@@ -59,8 +59,8 @@
             <class name="com.meiji.test.http.mall.pay.FlowTotalDataTest"/>
             <class name="com.meiji.test.http.mall.pay.WithdrawPageDataTest"/>
             <class name="com.meiji.test.http.mall.pay.IncomePageQueryTest"/>
-            <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>
-            <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>
+<!--            <class name="com.meiji.test.http.mall.orderInfo.GetConfigValueTest"/>--> <!--返回404，小程序入口已关闭，暂不执行-->
+<!--            <class name="com.meiji.test.http.mall.orderInfo.FindShopStudyStateTest"/>--> <!--返回404，小程序入口已关闭，暂不执行-->
             <class name="com.meiji.test.http.mall.orderInfo.PreviewCouponTest"/>
 
             <class name="com.meiji.test.http.mall.userInfo.CustomerListTest"/>

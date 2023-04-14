@@ -703,6 +703,22 @@ class MysqlService extends MysqlAPI {
         return list.id
     }
 
+    static def getSpuGifts(){
+        ArrayList<List> list =meiji_goods.rows(" SELECT * FROM `meiji_goods`.`goods_spu` WHERE `status` = '4' AND `is_delete` <> '1' ORDER BY gmt_create DESC")
+        println(list.id)
+        if(list==[]){
+            println("暂无商品数据")
+            throw new SkipException("暂无商品数据")
+            return null
+        }
+        return list.id
+    }
+
+    static def logBuyerShowTrace(String userId){
+        ArrayList<List> list =meiji_content.rows(" SELECT * FROM `meiji_content`.`buyer_show_trace` WHERE `user_id` ='$userId' AND `trace_type` = '1'ORDER BY gmt_create DESC")
+        println(list.show_id)
+    }
+
     static def deleteBuyerShow(){
         ArrayList<List> list = meiji_content.rows("SELECT * FROM `meiji_content`.`buyer_show` WHERE `spu_name` LIKE '%自动化测试商品%' AND `is_delete` = '0' AND `business_type` IN (0,1)AND `show_source` = '1' ORDER BY 'gmt_create' DESC")
         println(list.id)

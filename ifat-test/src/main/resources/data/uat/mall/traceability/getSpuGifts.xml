@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "getSpuGifts">
+        <parm key="spuId" value ="1519187377782847"/>
+    </test>
+</data>

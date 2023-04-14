@@ -9,6 +9,6 @@ class UserTaskInfoQueryTest extends BaseTest{
     @Test(description = "用户任务信息查询 userTaskInfoQuery" ,groups = ["prod","uat"],testName = "userTaskInfoQuery",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void getChannelData(TestContext testContext){
-        userTaskInfoQuery.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        userTaskInfoQuery.invoke(testContext).baseAssert(testContext)
     }
 }

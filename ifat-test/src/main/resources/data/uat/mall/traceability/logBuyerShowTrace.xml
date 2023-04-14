@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <test name = "logBuyerShowTrace">
+        <parm key="id" value ="1521692425846847"/>
+        <parm key="avatar" value ="https://static.meiji8888.com/mj-shop/upload/1668764620730.jpg"/>
+        <parm key="nickname" value ="微信用户001"/>
+        <parm key="traceType" value ="1"/>
+        <parm key="userId" value ="1429851454046240"/>
+    </test>
+</data>

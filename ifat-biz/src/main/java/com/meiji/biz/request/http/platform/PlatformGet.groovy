@@ -17,14 +17,19 @@ abstract class PlatformGet {
     public String preInvoke
 
     PlatformGet invoke(TestContext testContext){
-        String url  = ResourceUtil.getBeanData("http").get("platform")
+        String url  = ResourceUtil.getBeanData("http").get("platform1")
         String username = testContext.get("username")
         String password = testContext.get("password")
+        System.out.println(url)
+        System.out.println(username)
+        System.out.println(password)
+        String cookie = CookieService.getPlatformCookie(url,username,password)
         Map heads = new HashMap()
         heads.put("timestamp",System.currentTimeMillis())
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("application/json"))
-        heads.put("Cookie", CookieService.getPlatformCookie(url,username,password))
+        heads.put("Cookie", cookie)
+
         url = url +api
         //不走gateway不支持链路跟踪
 //        String uuid = UUID.randomUUID().toString()
@@ -39,7 +44,7 @@ abstract class PlatformGet {
                 req.put(str,testContext.get(str))
             }
         }
-        testContext.getResponse()
+//        testContext.getResponse()
         testContext.appendLog(new Record("接口地址",url))
         testContext.appendLog(new Record("请求头",heads))
         testContext.appendLog(new Record("请求参数",req))
@@ -70,5 +75,6 @@ abstract class PlatformGet {
     }
 
     PlatformGet specialAssert(TestContext testContext){
+        return this
     }
 }

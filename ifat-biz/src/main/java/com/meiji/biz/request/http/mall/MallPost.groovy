@@ -6,6 +6,7 @@ import com.miyuan.ifat.support.test.TestEnv
 import com.miyuan.ifat.support.util.HttpUtil
 import com.miyuan.ifat.support.util.JsonUtil
 import com.miyuan.ifat.support.util.ResourceUtil
+import com.miyuan.ifat.support.util.TokenUtil
 import com.miyuan.ifat.support.vo.Record
 import com.miyuan.ifat.support.vo.Result
 import org.apache.commons.lang3.ObjectUtils
@@ -25,19 +26,24 @@ abstract class MallPost {
         heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
         Long userId = Long.valueOf(testContext.get("userId").toString())
-        Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
-        heads.put("userType",testContext.get("userType"))
-        heads.put("dealerId",testContext.get("dealerId"))
-        heads.put("userId",testContext.get("userId"))
-        heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
-        heads.put("apiReleaseTag","test")  //不同环境要切不同的tag
+        println(userId)
+        String token = TokenUtil.generateToken(userId)
+        println(token)
+//        Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
+//        heads.put("userType",testContext.get("userType"))
+//        heads.put("dealerId",testContext.get("dealerId"))
+//        heads.put("userId",testContext.get("userId"))
+        heads.put("token", token)
+        //heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
+        heads.put("token", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJ1c2VyIiwibG9naW5JZCI6MTAsInJuU3RyIjoiRzA0cExLMUlLQUNWZjJOcnlZdEVyRXVSWTVSUzg3MU8iLCJyb2xlIjoiY191c2VyIiwiYWNjb3VudFR5cGUiOjB9.yhWIhMtu26JBmbI4Gb0jp603W2yjCtbRKHSHIBV4X8g")
+        heads.put("apiReleaseTag","prod")  //不同环境要切不同的tag
 
         if(TestEnv.isGray()=="true"){
             heads.put("grayReleaseTag","gray")
         }
-        String uuid = UUID.randomUUID().toString()
-        heads.put("userLogTracingTag",uuid)
-        heads.put("isUserLogTracing",true)
+//        String uuid = UUID.randomUUID().toString()
+//        heads.put("userLogTracingTag",uuid)
+//        heads.put("isUserLogTracing",true)
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){
@@ -78,7 +84,7 @@ abstract class MallPost {
     MallPost baseAssert(TestContext testContext){
         Result result = testContext.getResult() as Result
         assert result.getHttpStatusCode() == 200
-        assert testContext.getResponse().code == 0
+        assert testContext.getResponse().code == "0"
         return this
     }
 

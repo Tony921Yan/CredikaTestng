@@ -20,17 +20,19 @@ abstract class MallGet {
         String mallUrl  = ResourceUtil.getBeanData("http").get("mall")
         String url = mallUrl + api
         Map heads = new HashMap()
-        heads.put("timestamp",System.currentTimeMillis())
-        heads.put("nonce",testContext.get("nonce"))
+//        heads.put("timestamp",System.currentTimeMillis())
+//        heads.put("nonce",testContext.get("nonce"))
         heads.put("Content-Type",testContext.get("Content-Type"))
-        Long userId = Long.valueOf(testContext.get("userId").toString())
-        Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
-        heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
-        String uuid = UUID.randomUUID().toString()
-        heads.put("userLogTracingTag",uuid)
-        if(TestEnv.isGray()=="true"){
-            heads.put("isGrayRelease",true)
-        }
+        heads.put("token","eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJ1c2VyIiwibG9naW5JZCI6NTksInJuU3RyIjoiRk1hWGhIenlUczBWN0I5UE5wNEVZcXhWcnU1b2plSGsiLCJyb2xlIjoic2FsZV9hZG1pbiJ9.j_mDv7dOPi4OBoqiEK1D-uC_PyF42ISgcZSTFkPdRcI")
+//        heads.put("apiReleaseTag","prod")  //不同环境要切不同的tag
+//        Long userId = Long.valueOf(testContext.get("userId").toString())
+//        Long dealerId = Long.valueOf(testContext.get("dealerId").toString())
+//        heads.put("cookie", CookieService.getMallCookie(mallUrl,userId,dealerId))
+//        String uuid = UUID.randomUUID().toString()
+//        heads.put("userLogTracingTag",uuid)
+//        if(TestEnv.isGray()=="true"){
+//            heads.put("isGrayRelease",true)
+//        }
         Map req = new HashMap()
         for(String str:params){
             if(ObjectUtils.isNotEmpty(testContext.get(str))){
@@ -58,15 +60,17 @@ abstract class MallGet {
     }
 
     MallGet afterInvoke(TestContext testContext){
+        return this
 
     }
 
     MallGet baseAssert(TestContext testContext){
-        assert testContext.getResponse().code == 0
+        assert testContext.getResponse().code == "0"
         return this
     }
 
     MallGet specialAssert(TestContext testContext){
+        return this
     }
 
 }

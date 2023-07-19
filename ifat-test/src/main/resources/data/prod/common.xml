@@ -8,8 +8,8 @@
         <parm key="shopId" value="1405981112139808"/>
         <parm key="dealerId" value="24"/>
         <parm key="userType" value="2"/>
-        <parm key="username" value="autotest"/>
-        <parm key="password" value="abcd123456"/>
+        <parm key="username" value="yanliang"/>
+        <parm key="password" value="123456"/>
         <parm key="omsUsername" value="autotest"/>
         <parm key="omsPassword" value="abcd123456"/>
     </test>

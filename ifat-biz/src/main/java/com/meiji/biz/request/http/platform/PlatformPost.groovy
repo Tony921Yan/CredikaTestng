@@ -1,5 +1,4 @@
 package com.meiji.biz.request.http.platform
-
 import com.meiji.biz.service.CookieService
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestEnv
@@ -19,10 +18,15 @@ abstract class PlatformPost {
     public  String preInvoke
 
     PlatformPost invoke(TestContext testContext){
-        String url  = ResourceUtil.getBeanData("http").get("platform")
+        //String url  = ResourceUtil.getBeanData("http").get("platform")
+        String url   = ResourceUtil.getBeanData("http").get("platform1")
         String username = testContext.get("username")
         String password = testContext.get("password")
+        System.out.println(url)
+        System.out.println(username)
+        System.out.println(password)
         String cookie = CookieService.getPlatformCookie(url,username,password)
+        //String cookie = "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJhZG1pbiIsImxvZ2luSWQiOjc2LCJyblN0ciI6IkJTSFc5Q1dYTHhhQk1EM1hZdjF6dzAxUjNEUnp6aklxIiwidXNlcm5hbWUiOiJ5YW5saWFuZyJ9.PagzfU5PE2bg0YNmMnqfCKOM1Z80BtLSQ-gefKJ8PCs"
         url = url +api
         Map heads = new HashMap()
         heads.put("timestamp",System.currentTimeMillis())
@@ -72,7 +76,7 @@ abstract class PlatformPost {
     PlatformPost baseAssert(TestContext testContext){
         Result result = testContext.getResult() as Result
         assert result.getHttpStatusCode() == 200
-        assert testContext.getResponse().code == 0
+        assert testContext.getResponse().code == "0"
         return this
     }
 

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <beans>
     <bean name = "http">
-        <properties key="mall" value="https://mall.meiji8888.com/"/>
+        <properties key="mall" value="https://wasp-zt.xboil.cn"/>
         <properties key="shop" value="https://shop.meiji8888.com/"/>
         <properties key="scrm" value="https://shop.meiji8888.com/"/>
         <properties key="platform" value="https://ecmiddle.meiji8888.com/"/>
+        <properties key="platform1" value="https://wasp.xboil.cn/"/>
         <properties key="thirdparty" value="https://prod.meiji8888.com/"/>
         <properties key="oms" value="https://oms.meiji8888.com/"/>
     </bean>

@@ -40,6 +40,7 @@ class CookieService {
         cookieParam.put("secret", "+0ea81c0ea81557c9==")
         cookieParam.put("info", userInfo)
         def response = HttpUtil.post(url + "/login/__test__", [:], cookieParam)
+//        def response = HttpUtil.post(url + "app/user/login", [:], cookieParam)
         Header[] headers = response.getHttpHeaders()
         for (Header header : headers) {
             stringBuilder.append(header.elements.head().toString().split(";")[0])
@@ -93,7 +94,8 @@ class CookieService {
     }
 
     static String getPlatformCookie(String url,String username,String password){
-        String cookie = cacheCookie.get("platform:"+username)
+        String cookie = cacheCookie.get("platform1:"+username)
+        System.out.println(cookie)
         if(cookie!=null){
             return cookie
         }
@@ -101,14 +103,15 @@ class CookieService {
         param.put("username",username)
         param.put("password",password)
         StringBuilder stringBuilder = new StringBuilder()
-        def result = HttpUtil.post(url+"/login/check", [:], param)
+        def result = HttpUtil.post(url+"/platform/login", [:], param)
+        System.out.println(result)
         Header[] headers = result.getHttpHeaders()
         for(Header header:headers){
             stringBuilder.append(header.elements.head().toString().split (";")[0])
             stringBuilder.append(";")
         }
         cookie =  stringBuilder.toString()
-        cacheCookie.put("platform:"+username,cookie)
+        cacheCookie.put("platform1:"+username,cookie)
         return cookie
     }
 

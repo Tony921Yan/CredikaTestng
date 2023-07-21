@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name = "黄蜂加油"  verbose="3">
-    <test name="黄峰加油生产环境自动化脚本">
+    <test name="黄蜂加油生产环境自动化脚本">
         <groups>
             <run>
                 <include name="prod"/>

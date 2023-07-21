@@ -146,7 +146,7 @@
                 <repository>
                     <id>local-public</id>
                     <name>Nexus public Repository</name>
-                    <url>http://127.0.0.1:9081/repository/maven-public/</url>
+                    <url>http://192.168.99.24:9081/repository/maven-public/</url>
                     <snapshots>
                         <updatePolicy>always</updatePolicy>
                     </snapshots>
@@ -156,12 +156,12 @@
                 <repository>
                     <id>local-nexus-releases</id>
                     <name>Nexus Release Repository</name>
-                    <url>http://127.0.0.1:9081/repository/maven-releases/</url>
+                    <url>http://192.168.99.24:9081/repository/maven-releases/</url>
                 </repository>
                 <snapshotRepository>
                     <id>local-nexus-snapshots</id>
                     <name>Nexus Snapshot Repository</name>
-                    <url>http://127.0.0.1:9081/repository/maven-snapshots/</url>
+                    <url>http://192.168.99.24:9081/repository/maven-snapshots/</url>
                 </snapshotRepository>
             </distributionManagement>
         </profile>

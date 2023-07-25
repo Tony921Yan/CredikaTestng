@@ -12,14 +12,15 @@
     <modules>
         <module>ifat-biz</module>
         <module>ifat-test</module>
+        <module>ifat-support-master</module>
     </modules>
 
-<!--    <repositories>-->
-<!--        <repository>-->
-<!--            <id>miyuan</id>-->
-<!--            <url>http://172.16.1.110:8081/repository/public/</url>-->
-<!--        </repository>-->
-<!--    </repositories>-->
+    <!--    <repositories>-->
+    <!--        <repository>-->
+    <!--            <id>miyuan</id>-->
+    <!--            <url>http://172.16.1.110:8081/repository/public/</url>-->
+    <!--        </repository>-->
+    <!--    </repositories>-->
 
 
     <properties>
@@ -50,6 +51,30 @@
         <org.apache.velocity>1.7</org.apache.velocity>
         <org.jsoup>1.13.1</org.jsoup>
         <org.apache.dubbo>2.7.7</org.apache.dubbo>
+
+
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <log4j>1.2.17</log4j>
+        <slf4j-simple>1.7.9</slf4j-simple>
+        <org.codehaus.groovy>3.0.6</org.codehaus.groovy>
+        <org.apache.httpcomponents>4.5.13</org.apache.httpcomponents>
+        <org.apache.commons>3.11</org.apache.commons>
+        <org.testng>7.0.0</org.testng>
+        <io.qameta.allure>2.13.9</io.qameta.allure>
+        <com.fasterxml.jackson.core>2.11.3</com.fasterxml.jackson.core>
+        <com.alibaba.fastjson>1.2.74</com.alibaba.fastjson>
+        <mongo-java-driver>3.12.7</mongo-java-driver>
+        <mysql-connector-java>8.0.21</mysql-connector-java>
+        <redis.clients>2.9.0</redis.clients>
+        <com.rabbitmq>4.8.3</com.rabbitmq>
+        <org.apache.rocketmq>4.7.1</org.apache.rocketmq>
+        <org.elasticsearch.client>6.8.6</org.elasticsearch.client>
+        <nacos-client>1.4.1</nacos-client>
+        <org.springframework.amqp>1.7.11.RELEASE</org.springframework.amqp>
+
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -81,61 +106,61 @@
     </dependencyManagement>
 
     <profiles>
-<!--        <profile>-->
-<!--            <id>meiji</id>-->
-<!--            <repositories>-->
-<!--                <repository>-->
-<!--                    <id>meiji-public</id>-->
-<!--                    <name>meiji public Repository</name>-->
-<!--                    <url>http://ztnexus.meiji8888.com:8081/repository/maven-public/</url>-->
-<!--                    <snapshots>-->
-<!--                        <updatePolicy>always</updatePolicy>-->
-<!--                    </snapshots>-->
-<!--                </repository>-->
-<!--            </repositories>-->
-<!--            <distributionManagement>-->
-<!--                <repository>-->
-<!--                    <id>meiji-nexus-releases</id>-->
-<!--                    <name>meiji Release Repository</name>-->
-<!--                    <url>http://ztnexus.meiji8888.com:8081/repository/maven-releases/</url>-->
-<!--                </repository>-->
-<!--                <snapshotRepository>-->
-<!--                    <id>meiji-nexus-snapshots</id>-->
-<!--                    <name>meiji Snapshot Repository</name>-->
-<!--                    <url>http://ztnexus.meiji8888.com:8081/repository/maven-snapshots/</url>-->
-<!--                </snapshotRepository>-->
-<!--            </distributionManagement>-->
-<!--        </profile>-->
+        <!--        <profile>-->
+        <!--            <id>meiji</id>-->
+        <!--            <repositories>-->
+        <!--                <repository>-->
+        <!--                    <id>meiji-public</id>-->
+        <!--                    <name>meiji public Repository</name>-->
+        <!--                    <url>http://ztnexus.meiji8888.com:8081/repository/maven-public/</url>-->
+        <!--                    <snapshots>-->
+        <!--                        <updatePolicy>always</updatePolicy>-->
+        <!--                    </snapshots>-->
+        <!--                </repository>-->
+        <!--            </repositories>-->
+        <!--            <distributionManagement>-->
+        <!--                <repository>-->
+        <!--                    <id>meiji-nexus-releases</id>-->
+        <!--                    <name>meiji Release Repository</name>-->
+        <!--                    <url>http://ztnexus.meiji8888.com:8081/repository/maven-releases/</url>-->
+        <!--                </repository>-->
+        <!--                <snapshotRepository>-->
+        <!--                    <id>meiji-nexus-snapshots</id>-->
+        <!--                    <name>meiji Snapshot Repository</name>-->
+        <!--                    <url>http://ztnexus.meiji8888.com:8081/repository/maven-snapshots/</url>-->
+        <!--                </snapshotRepository>-->
+        <!--            </distributionManagement>-->
+        <!--        </profile>-->
 
-<!--        <profile>-->
-<!--            <id>meijiProd</id>-->
-<!--            &lt;!&ndash;默认指定dev&ndash;&gt;-->
-<!--            <activation>-->
-<!--                <activeByDefault>true</activeByDefault>-->
-<!--            </activation>-->
-<!--            <repositories>-->
-<!--                <repository>-->
-<!--                    <id>meijiProd-public</id>-->
-<!--                    <name>Nexus public Repository</name>-->
-<!--                    <url>http://172.28.2.29:8081/repository/maven-public/</url>-->
-<!--                    <snapshots>-->
-<!--                        <updatePolicy>always</updatePolicy>-->
-<!--                    </snapshots>-->
-<!--                </repository>-->
-<!--            </repositories>-->
-<!--            <distributionManagement>-->
-<!--                <repository>-->
-<!--                    <id>meiji-nexus-releases</id>-->
-<!--                    <name>Nexus Release Repository</name>-->
-<!--                    <url>http://172.28.2.29:8081/repository/maven-releases/</url>-->
-<!--                </repository>-->
-<!--                <snapshotRepository>-->
-<!--                    <id>meiji-nexus-snapshots</id>-->
-<!--                    <name>Nexus Snapshot Repository</name>-->
-<!--                    <url>http://172.28.2.29:8081/repository/maven-snapshots/</url>-->
-<!--                </snapshotRepository>-->
-<!--            </distributionManagement>-->
-<!--        </profile>-->
+        <!--        <profile>-->
+        <!--            <id>meijiProd</id>-->
+        <!--            &lt;!&ndash;默认指定dev&ndash;&gt;-->
+        <!--            <activation>-->
+        <!--                <activeByDefault>true</activeByDefault>-->
+        <!--            </activation>-->
+        <!--            <repositories>-->
+        <!--                <repository>-->
+        <!--                    <id>meijiProd-public</id>-->
+        <!--                    <name>Nexus public Repository</name>-->
+        <!--                    <url>http://172.28.2.29:8081/repository/maven-public/</url>-->
+        <!--                    <snapshots>-->
+        <!--                        <updatePolicy>always</updatePolicy>-->
+        <!--                    </snapshots>-->
+        <!--                </repository>-->
+        <!--            </repositories>-->
+        <!--            <distributionManagement>-->
+        <!--                <repository>-->
+        <!--                    <id>meiji-nexus-releases</id>-->
+        <!--                    <name>Nexus Release Repository</name>-->
+        <!--                    <url>http://172.28.2.29:8081/repository/maven-releases/</url>-->
+        <!--                </repository>-->
+        <!--                <snapshotRepository>-->
+        <!--                    <id>meiji-nexus-snapshots</id>-->
+        <!--                    <name>Nexus Snapshot Repository</name>-->
+        <!--                    <url>http://172.28.2.29:8081/repository/maven-snapshots/</url>-->
+        <!--                </snapshotRepository>-->
+        <!--            </distributionManagement>-->
+        <!--        </profile>-->
         <profile>
             <id>local</id>
             <!--默认指定dev-->

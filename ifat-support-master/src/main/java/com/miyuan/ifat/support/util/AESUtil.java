@@ -1,8 +1,11 @@
 package com.miyuan.ifat.support.util;
 
 
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
+//import sun.misc.BASE64Decoder;
+//import sun.misc.BASE64Encoder;
+
+import Decoder.BASE64Decoder;
+import Decoder.BASE64Encoder;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;

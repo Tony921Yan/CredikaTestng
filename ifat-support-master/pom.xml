@@ -154,7 +154,7 @@
             <artifactId>sun.misc.BASE64Decoder</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/lib/sun.misc.BASE64Decoder.jar</systemPath>
+       <systemPath>${pom.basedir}/lib/sun.misc.BASE64Decoder.jar</systemPath>
         </dependency>
 
         <dependency>

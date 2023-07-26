@@ -1,7 +1,6 @@
 package com.meiji.biz.request.http.testInterface.cps
 
 
-import com.meiji.biz.util.CpsSign
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestEnv
 import com.miyuan.ifat.support.util.HttpUtil

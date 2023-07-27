@@ -31,8 +31,8 @@ class DingTalkUtil {
 
     @Test
     void test(){
-        String url = "https://oapi.dingtalk.com/robot/send?access_token=b80b5fc83641dd472f50277b36733badbd497ea0171cb82d33bea273217c8936"
-        String secret = "SECed079a98463eb0d4fc98862c9cdc29b4143a9c304ca1ca5e334d477f1245b98c"
+        String url = "https://oapi.dingtalk.com/robot/send?access_token=afa842b88b239ed494d897e7baf081d2b432e4047dec21b7f0a52c5c66461c47"
+        String secret = "SECaeb4676f487406e95205c5c4b7367afeaf4fd1b440f1dd27182f0837fb5ef7ee"
         send(url,secret,"assert testContext.getResponse().code == \"B10018\"\n" +
                 "       |           |             |    |\n" +
                 "       |           |             |    false\n" +

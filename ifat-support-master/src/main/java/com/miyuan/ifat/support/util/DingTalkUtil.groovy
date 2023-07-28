@@ -1,6 +1,4 @@
 package com.miyuan.ifat.support.util
-
-import com.sun.javaws.jnl.RContentDesc
 import org.apache.commons.codec.binary.Base64
 import org.testng.annotations.Test
 

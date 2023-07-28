@@ -1,5 +1,5 @@
-package com.meiji.test.http.platform.hfjy
-import com.meiji.biz.request.http.platform.hfjy.SelectPage
+package com.meiji.test.http.platform.hfjy.orderManange
+import com.meiji.biz.request.http.platform.hfjy.orderManange.SelectPage
 import com.miyuan.ifat.support.test.BaseTest
 import com.miyuan.ifat.support.test.TestContext
 import com.miyuan.ifat.support.test.TestData

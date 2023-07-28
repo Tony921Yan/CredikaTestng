@@ -131,4 +131,26 @@
         <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
     </bean>
 
+
+    <bean name="huangfeng_oils">
+        <properties key="url" value="jdbc:mysql://rm-wz9y5qq08u5up23p2.mysql.rds.aliyuncs.com:3306/huangfeng_oils"/>
+        <properties  key="user" value ="read_code"/>
+        <properties  key="password" value ="DK323DL$@ee"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+
+    <bean name="huangfeng_auth">
+        <properties key="url" value="jdbc:mysql://rm-wz9y5qq08u5up23p2.mysql.rds.aliyuncs.com:3306/huangfeng_auth"/>
+        <properties  key="user" value ="read_code"/>
+        <properties  key="password" value ="DK323DL$@ee"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+
+    <bean name="huangfeng_system">
+        <properties key="url" value="jdbc:mysql://rm-wz9y5qq08u5up23p2.mysql.rds.aliyuncs.com:3306/huangfeng_system"/>
+        <properties  key="user" value ="read_code"/>
+        <properties  key="password" value ="DK323DL$@ee"/>
+        <properties key="driver" value="com.mysql.cj.jdbc.Driver"/>
+    </bean>
+
 </beans>

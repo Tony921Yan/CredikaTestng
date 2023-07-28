@@ -34,4 +34,10 @@ class MysqlAPI {
     static Sql meiji_integral = FactorySupport.createSql("meiji_integral")
     @Lazy
     static Sql meiji_content = FactorySupport.createSql("meiji_content")
+    @Lazy
+    static Sql huangfeng_oils = FactorySupport.createSql("huangfeng_oils")
+    @Lazy
+    static Sql huangfeng_auth = FactorySupport.createSql("huangfeng_auth")
+    @Lazy
+    static Sql huangfeng_system = FactorySupport.createSql("huangfeng_system")
 }

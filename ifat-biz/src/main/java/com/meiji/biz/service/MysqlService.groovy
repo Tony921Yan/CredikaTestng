@@ -572,14 +572,13 @@ class MysqlService extends MysqlAPI {
     }
 
     static def adjustCourse(){
-        ArrayList<List> list =meiji_active.rows("SELECT * FROM `meiji_active`.`gift_tutorial` WHERE `status` = '0'ORDER BY sort ASC")
+        ArrayList<List> list =meiji_active.rows("SELECT * FOM `meiji_active`.`gift_tutorial` WHERE `status` = '0'ORDER BY sort ASC")
         println(list.id)
         if(list == []){
             println("暂无送礼教程数据，无法获取ID！")
             throw new SkipException("暂无送礼教程数据，无法获取ID！")
             return null
         }
-
         return list.id
     }
 
@@ -927,6 +926,35 @@ class MysqlService extends MysqlAPI {
 
     static Map getAllShopCnt(){
         return meiji_shop.firstRow("select count(*) as cnt from shop where auth_state =40 and audit_state =20")
+    }
+
+    //    static ArrayList page(){
+//        return huangfeng_oils.rows("SELECT * FROM `huangfeng_oils`.`oils_use_order` WHERE `vaild_status` = '1' ORDER BY `gmt_create` DESC;")
+//    }
+
+    static def page(){
+        ArrayList<List> list =huangfeng_oils.rows("SELECT * FROM `huangfeng_oils`.`oils_use_order` WHERE `vaild_status` = '1' ORDER BY `gmt_create` DESC;")
+        if(list == []){
+            println("暂无数据，无法获取ID！")
+            throw new SkipException("暂无数据，无法获取ID！")
+            return null
+        }
+        return list
+    }
+
+    static def list(){
+        ArrayList<List> list =huangfeng_auth.rows("SELECT * FROM `huangfeng_auth`.`menu` WHERE `status` = '1' AND `is_delete` <> '1' AND `path` LIKE '%system%' AND `parent_id` <> '0' LIMIT 0,1000")
+        println(list)
+        if(list==[]){
+            println("数据库查询为空！无法获取数据")
+            throw new SkipException("数据库查询为空！无法获取数据")
+            return null
+        }
+        return list
+    }
+
+    static  ArrayList transporterList(){
+        return huangfeng_system.rows("SELECT * FROM `huangfeng_system`.`transporter` ORDER BY gmt_modified DESC")
     }
 }
 

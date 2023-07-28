@@ -1,4 +1,4 @@
-package com.meiji.biz.request.http.platform.hfjy
+package com.meiji.biz.request.http.platform.hfjy.orderManange
 import com.meiji.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 

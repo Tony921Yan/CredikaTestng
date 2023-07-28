@@ -7,9 +7,10 @@
             </run>
         </groups>
         <classes>
-            <class name="com.meiji.test.http.platform.hfjy.PageTest"/>
-            <class name="com.meiji.test.http.platform.hfjy.SelectPageTest"/>
-            <class name="com.meiji.test.http.platform.hfjy.ListTest"/>
+            <class name="com.meiji.test.http.platform.hfjy.orderManange.PageTest"/>
+            <class name="com.meiji.test.http.platform.hfjy.orderManange.SelectPageTest"/>
+            <class name="com.meiji.test.http.platform.hfjy.menu.ListTest"/>
+            <class name="com.meiji.test.http.platform.hfjy.transporter.ListTest"/>
 
         </classes>
     </test>

@@ -13,7 +13,7 @@ class PageTest extends BaseTest {
         testContext.put("condition","{}")
         testContext.put("page",1)
         testContext.put("rows",20)
-//        page.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
+        page.invoke(testContext).baseAssert(testContext).specialAssert(testContext)
         page.invoke(testContext).baseAssert(testContext)
     }
 }

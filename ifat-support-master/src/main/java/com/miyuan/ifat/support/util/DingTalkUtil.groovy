@@ -26,6 +26,7 @@ class DingTalkUtil {
         message.put("markdown",markdown)
         message.put("msgtype","markdown")
         HttpUtil.post(urlBuilder.toString(),[:],message)
+        println(HttpUtil.post(urlBuilder.toString(),[:],message))
     }
 
     @Test
@@ -35,6 +36,8 @@ class DingTalkUtil {
         send(url,secret,"assert testContext.getResponse().code == \"B10018\"\n" +
                 "       |           |             |    |\n" +
                 "       |           |             |    false\n" +
-                "       |           |             'B00000'")
+                "       |           |             'B00000'","content")
+
     }
+
 }

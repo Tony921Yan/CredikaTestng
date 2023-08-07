@@ -26,7 +26,6 @@ class DingTalkUtil {
         message.put("markdown",markdown)
         message.put("msgtype","markdown")
         HttpUtil.post(urlBuilder.toString(),[:],message)
-        println(HttpUtil.post(urlBuilder.toString(),[:],message))
     }
 
     @Test

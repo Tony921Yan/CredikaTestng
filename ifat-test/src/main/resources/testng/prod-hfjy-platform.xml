@@ -14,7 +14,6 @@
             <class name="com.meiji.test.http.platform.hfjy.orderManange.SelectPageTest"/>
             <class name="com.meiji.test.http.platform.hfjy.menu.ListTest"/>
             <class name="com.meiji.test.http.platform.hfjy.transporter.ListTest"/>
-
         </classes>
     </test>
 </suite>

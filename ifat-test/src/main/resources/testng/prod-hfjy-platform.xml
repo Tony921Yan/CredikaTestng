@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name = "黄蜂加油"  verbose="3">
-    <listeners>
-        <listener class-name="com.miyuan.ifat.support.test.CustomListener"/>
-    </listeners>
+<!--    <listeners>-->
+<!--        <listener class-name="com.miyuan.ifat.support.test.CustomListener"/>-->
+<!--    </listeners>-->
     <test name="黄蜂加油生产环境自动化脚本">
         <groups>
             <run>

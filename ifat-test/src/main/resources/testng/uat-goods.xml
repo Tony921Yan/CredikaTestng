@@ -2,13 +2,13 @@
 <suite name = "user"  verbose="4">
     <test name="添加商品 addGoods">
         <classes>
-            <class name = "com.meiji.test.http.platform.goods.AddGoddsTest"/>
+            <class name = "com.credika.test.http.platform.goods.AddGoddsTest"/>
         </classes>
     </test>
 
     <test name="获取商品列表 getGoodsByPage">
         <classes>
-            <class name = "com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
+            <class name = "com.credika.test.http.platform.goods.GetGoodsByPageTest"/>
         </classes>
     </test>
 
@@ -20,73 +20,73 @@
 
     <test name="更新商品 updateGoods">
         <classes>
-            <class name = "com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
+            <class name = "com.credika.test.http.platform.goods.GetGoodsByPageTest"/>
         </classes>
     </test>
 
     <test name="添加类目 addCategory">
         <classes>
-            <class name = "com.meiji.test.http.platform.category.AddCategoryTest"/>
+            <class name = "com.credika.test.http.platform.category.AddCategoryTest"/>
         </classes>
     </test>
 
     <test name="删除类目 delCategoryById">
         <classes>
-            <class name = "com.meiji.test.http.platform.category.DelCategoryByIdTest"/>
+            <class name = "com.credika.test.http.platform.category.DelCategoryByIdTest"/>
         </classes>
     </test>
 
     <test name="根据分类类型和分类名字获取分类 getCategoryByName">
         <classes>
-            <class name = "com.meiji.test.http.platform.category.GetCategoryTest"/>
+            <class name = "com.credika.test.http.platform.category.GetCategoryTest"/>
         </classes>
     </test>
 
     <test name="根据分类类型获取分类树 getCategoryTreeByType">
         <classes>
-            <class name = "com.meiji.test.http.platform.category.GetCategoryTreeByTypeTest"/>
+            <class name = "com.credika.test.http.platform.category.GetCategoryTreeByTypeTest"/>
         </classes>
     </test>
 
     <test name="修改类目 updateCategoryById">
         <classes>
-            <class name = "com.meiji.test.http.platform.category.UpdateCategoryByIdTest"/>
+            <class name = "com.credika.test.http.platform.category.UpdateCategoryByIdTest"/>
         </classes>
     </test>
 
     <test name="品牌详情 brandDetail">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.BrandDetailTest"/>
+            <class name = "com.credika.test.http.platform.brand.BrandDetailTest"/>
         </classes>
     </test>
 
     <test name="创建品牌 createBrand">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.CreateBrandTest"/>
+            <class name = "com.credika.test.http.platform.brand.CreateBrandTest"/>
         </classes>
     </test>
 
     <test name="创建商品属性组 createGoodPropertyGroup">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.CreateGoodPropertyGroupTest"/>
+            <class name = "com.credika.test.http.platform.brand.CreateGoodPropertyGroupTest"/>
         </classes>
     </test>
 
     <test name="创建属性 createGoodProperty">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.CreateGoodPropertyTest"/>
+            <class name = "com.credika.test.http.platform.brand.CreateGoodPropertyTest"/>
         </classes>
     </test>
 
     <test name="商品属性详情 goodPropertyDetail">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.GoodPropertyDetailTest"/>
+            <class name = "com.credika.test.http.platform.brand.GoodPropertyDetailTest"/>
         </classes>
     </test>
 
     <test name="商品属性组详情 goodPropertyGroupDetail">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.GoodPropertyGroupDetailTest"/>
+            <class name = "com.credika.test.http.platform.brand.GoodPropertyGroupDetailTest"/>
         </classes>
     </test>
 
@@ -98,31 +98,31 @@
 
     <test name="品牌分页查询 queryBrands">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.QueryBrandsByPageTest"/>
+            <class name = "com.credika.test.http.platform.brand.QueryBrandsByPageTest"/>
         </classes>
     </test>
 
     <test name="商品属性组分页查询 selectPage">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
+            <class name = "com.credika.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
         </classes>
     </test>
 
     <test name="更新商品属性信息 updateBrand">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.UpdateBrandTest"/>
+            <class name = "com.credika.test.http.platform.brand.UpdateBrandTest"/>
         </classes>
     </test>
 
     <test name="更新商品属性组 updateGoodPropertyGroup">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.UpdateGoodPropertyGroupTest"/>
+            <class name = "com.credika.test.http.platform.brand.UpdateGoodPropertyGroupTest"/>
         </classes>
     </test>
 
     <test name="更新商品属性信息 updateGoodProperty">
         <classes>
-            <class name = "com.meiji.test.http.platform.brand.UpdateGoodPropertyTest"/>
+            <class name = "com.credika.test.http.platform.brand.UpdateGoodPropertyTest"/>
         </classes>
     </test>
 

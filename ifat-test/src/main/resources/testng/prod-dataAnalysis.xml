@@ -7,7 +7,7 @@
             </run>
         </groups>
         <classes>
-            <class name="com.meiji.test.other.data.DataAnalysis"/>
+            <class name="com.credika.test.other.data.DataAnalysis"/>
         </classes>
     </test>
 </suite>

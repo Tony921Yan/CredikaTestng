@@ -7,39 +7,39 @@
             </run>
         </groups>
         <classes>
-            <class name = "com.meiji.test.http.scrm.contact.ContactListTest"/>
-            <class name = "com.meiji.test.http.scrm.corp.AgentConfigTest"/>
-            <class name = "com.meiji.test.http.scrm.corp.IndexTest"/>
-            <class name = "com.meiji.test.http.scrm.department.DepartmentListTest"/>
-            <class name = "com.meiji.test.http.scrm.department.DepartmentDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.EmployeeDepartmentListTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.EmployeeListTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.LoginConfigListTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.ShopPermissionListTest"/>
-            <class name = "com.meiji.test.http.scrm.employee.ShowTest"/>
-            <class name = "com.meiji.test.http.scrm.group.GetEmployeeGroupTest"/>
-            <class name = "com.meiji.test.http.scrm.group.GetGroupAdminTest"/>
-            <class name = "com.meiji.test.http.scrm.group.GetGroupListTest"/>
-            <class name = "com.meiji.test.http.scrm.group.GetGroupShowTest"/>
-            <class name = "com.meiji.test.http.scrm.login.LoginScanTest"/>
-            <class name = "com.meiji.test.http.scrm.login.LoginTest"/>
-            <class name = "com.meiji.test.http.scrm.login.QrCodeTest"/>
-            <class name = "com.meiji.test.http.scrm.material.GroupListTest"/>
-            <class name = "com.meiji.test.http.scrm.material.MaterialListTest"/>
-            <class name = "com.meiji.test.http.scrm.menu.MenuDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.menu.MenuListTest"/>
-            <class name = "com.meiji.test.http.scrm.channel.ChannelDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.channel.ChannelListTest"/>
-            <class name = "com.meiji.test.http.scrm.register.AuthResultTest"/>
-            <class name = "com.meiji.test.http.scrm.register.RegisterTest"/>
-            <class name = "com.meiji.test.http.scrm.role.RoleDetailTest"/>
-            <class name = "com.meiji.test.http.scrm.role.RoleListTest"/>
-            <class name = "com.meiji.test.http.scrm.role.RoleMenuListTest"/>
-            <class name = "com.meiji.test.http.scrm.tag.TagListTest"/>
-            <class name = "com.meiji.test.http.scrm.tag.TagQueryTest"/>
-            <class name = "com.meiji.test.http.scrm.tagGroup.TagGroupQueryTest"/>
-            <class name = "com.meiji.test.http.scrm.wx.WxDepartmentListTest"/>
-            <class name = "com.meiji.test.http.scrm.wx.WxMemberListTest"/>
+            <class name = "com.credika.test.http.scrm.contact.ContactListTest"/>
+            <class name = "com.credika.test.http.scrm.corp.AgentConfigTest"/>
+            <class name = "com.credika.test.http.scrm.corp.IndexTest"/>
+            <class name = "com.credika.test.http.scrm.department.DepartmentListTest"/>
+            <class name = "com.credika.test.http.scrm.department.DepartmentDetailTest"/>
+            <class name = "com.credika.test.http.scrm.employee.EmployeeDepartmentListTest"/>
+            <class name = "com.credika.test.http.scrm.employee.EmployeeListTest"/>
+            <class name = "com.credika.test.http.scrm.employee.LoginConfigListTest"/>
+            <class name = "com.credika.test.http.scrm.employee.ShopPermissionListTest"/>
+            <class name = "com.credika.test.http.scrm.employee.ShowTest"/>
+            <class name = "com.credika.test.http.scrm.group.GetEmployeeGroupTest"/>
+            <class name = "com.credika.test.http.scrm.group.GetGroupAdminTest"/>
+            <class name = "com.credika.test.http.scrm.group.GetGroupListTest"/>
+            <class name = "com.credika.test.http.scrm.group.GetGroupShowTest"/>
+            <class name = "com.credika.test.http.scrm.login.LoginScanTest"/>
+            <class name = "com.credika.test.http.scrm.login.LoginTest"/>
+            <class name = "com.credika.test.http.scrm.login.QrCodeTest"/>
+            <class name = "com.credika.test.http.scrm.material.GroupListTest"/>
+            <class name = "com.credika.test.http.scrm.material.MaterialListTest"/>
+            <class name = "com.credika.test.http.scrm.menu.MenuDetailTest"/>
+            <class name = "com.credika.test.http.scrm.menu.MenuListTest"/>
+            <class name = "com.credika.test.http.scrm.channel.ChannelDetailTest"/>
+            <class name = "com.credika.test.http.scrm.channel.ChannelListTest"/>
+            <class name = "com.credika.test.http.scrm.register.AuthResultTest"/>
+            <class name = "com.credika.test.http.scrm.register.RegisterTest"/>
+            <class name = "com.credika.test.http.scrm.role.RoleDetailTest"/>
+            <class name = "com.credika.test.http.scrm.role.RoleListTest"/>
+            <class name = "com.credika.test.http.scrm.role.RoleMenuListTest"/>
+            <class name = "com.credika.test.http.scrm.tag.TagListTest"/>
+            <class name = "com.credika.test.http.scrm.tag.TagQueryTest"/>
+            <class name = "com.credika.test.http.scrm.tagGroup.TagGroupQueryTest"/>
+            <class name = "com.credika.test.http.scrm.wx.WxDepartmentListTest"/>
+            <class name = "com.credika.test.http.scrm.wx.WxMemberListTest"/>
         </classes>
     </test>
 </suite>

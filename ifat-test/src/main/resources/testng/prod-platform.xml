@@ -1,110 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "美记中台"  verbose="3">
-    <test name="美记中台生产环境自动化脚本">
+<suite name = "Credika"  verbose="3">
+    <test name="Credika生产环境自动化脚本">
         <groups>
             <run>
                 <include name="prod"/>
             </run>
         </groups>
         <classes>
-<!--            <class name="com.meiji.test.http.platform.finance.AccountAssetPageQueryTest"/>-->
-            <class name="com.meiji.test.http.platform.finance.FundFlowDetailQueryTest"/>
-            <class name="com.meiji.test.http.platform.finance.FundFlowPageQueryTest"/>
-            <class name="com.meiji.test.http.platform.finance.WithdrawRecordPageQueryTest"/>
-            <class name="com.meiji.test.http.platform.goods.ProdGetGoodsByPageTest"/>
-            <class name="com.meiji.test.http.platform.goods.GetGoodsByPageTest"/>
-            <class name="com.meiji.test.http.platform.goods.GetGroupGoodsByPageTest"/>
-            <class name="com.meiji.test.http.platform.label.GetLabelTest"/>
-            <class name="com.meiji.test.http.platform.brand.QueryBrandsByPageTest"/>
-            <class name="com.meiji.test.http.platform.category.GetCategoryTest"/>
-            <class name="com.meiji.test.http.platform.brand.QueryGoodPropertysByPageTest"/>
-            <class name="com.meiji.test.http.platform.goods.AssetsManagementTest"/>
-            <class name="com.meiji.test.http.platform.other.GetListMaterialsTest"/>
-
-            <class name="com.meiji.test.http.platform.supplier.GetSupplierByPageTest"/>
-            <class name="com.meiji.test.http.platform.shopManager.InvitationListTest"/>
-            <class name="com.meiji.test.http.platform.shopManager.InvitationCodeListTest"/>
-            <class name="com.meiji.test.http.platform.shopManager.MerchantManageTest"/>
-            <class name="com.meiji.test.http.platform.shopManager.ShopManageTest"/>
-            <class name="com.meiji.test.http.platform.marketingManagement.GiftCardManageTest"/>
-            <class name="com.meiji.test.http.platform.other.GoodsSubjectTest"/>
-            <class name="com.meiji.test.http.platform.other.SelectionCategoryTest"/>
-            <class name="com.meiji.test.http.platform.marketingManagement.ActiveManageTest"/>
-            <class name="com.meiji.test.http.platform.other.StockManageTest"/>
-            <class name="com.meiji.test.http.platform.other.GoodsDetailManageTest"/>
-            <class name="com.meiji.test.http.platform.other.StoreWhiteTest"/>
-            <class name="com.meiji.test.http.platform.other.SystemConfigMgrTest"/>
-            <class name="com.meiji.test.http.platform.other.CustomerServiceManageTest"/>
-            <class name="com.meiji.test.http.platform.other.GetConfigByModuleTest"/>
-            <class name="com.meiji.test.http.platform.other.GetSearchKeysTest"/>
-
-            <class name="com.meiji.test.http.platform.channel.GetChannelListTest"/>
-            <class name="com.meiji.test.http.platform.channel.GetColumnListTest"/>
-            <class name="com.meiji.test.http.platform.channel.GetGoodsTest"/>
-            <class name="com.meiji.test.http.platform.decorate.GetTemplateByPageTest"/>
-            <class name="com.meiji.test.http.platform.decorate.GetDecorateTemplateDetailTest"/>
-            <class name="com.meiji.test.http.platform.user.CheckGrayUserTest"/>
-            <class name="com.meiji.test.http.platform.integral.GetIntegralListTest"/>
-            <class name="com.meiji.test.http.platform.integral.GetTaskListTest"/>
-            <class name="com.meiji.test.http.platform.integral.DetailTaskTest"/>
-            <class name="com.meiji.test.http.platform.member.FindUserAddressInfoTest"/>
-            <class name="com.meiji.test.http.platform.member.FindUserInfoTest"/>
-            <class name="com.meiji.test.http.platform.member.FindUserIntegralInfoTest"/>
-            <class name="com.meiji.test.http.platform.member.FindUserLogInfoTest"/>
-            <class name="com.meiji.test.http.platform.member.FindUserOrderInfoTest"/>
-            <class name="com.meiji.test.http.platform.member.FindUserPageTest"/>
-            <class name="com.meiji.test.http.platform.integral.GetPlatformIntegralByPageTest"/>
-            <class name="com.meiji.test.http.platform.integral.PlatformIntegralQueryTest"/>
-            <class name="com.meiji.test.http.platform.integral.UserIntegralByPageTest"/>
-            <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveByPageTest"/>
-<!--            <class name="com.meiji.test.http.platform.grantCouponActive.GetActiveDetailByIdTest"/>-->
-            <class name="com.meiji.test.http.platform.grantCouponActive.UserIntegralCouponByPageTest"/>
-
-            <class name="com.meiji.test.http.platform.couponManage.DetailTest"/>
-            <class name="com.meiji.test.http.platform.couponManage.CouponDataListByPageTest"/>
-            <class name="com.meiji.test.http.platform.couponManage.CouponInstanceListByPageTest"/>
-            <class name="com.meiji.test.http.platform.couponManage.GetGrantCouponActiveByPageTest"/>
-            <class name="com.meiji.test.http.platform.couponManage.ListTest"/>
-            <class name="com.meiji.test.http.platform.couponManage.DelTest"/>
-            <class name="com.meiji.test.http.platform.couponManage.GetRelationshipByCouponIdTest"/>
-
-            <class name="com.meiji.test.http.platform.activeMainManage.ListTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.DetailTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.SearchBoughtRecordsTest"/>
-
-            <class name="com.meiji.test.http.platform.raffleActivity.SearchRaffledRecordTest"/>
-            <class name="com.meiji.test.http.platform.raffleActivity.ItemDetailTest"/>
-            <class name="com.meiji.test.http.platform.stockManger.GetSkuStockTest"/>
-            <class name="com.meiji.test.http.platform.stockManger.PageQueryAllotBillTest"/>
-            <class name="com.meiji.test.http.platform.stockManger.QueryActivitiesByTypeTest"/>
-            <class name="com.meiji.test.http.platform.stockManger.QueryAllotBillDetailTest"/>
-
-            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderLogisticsInfoTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderEventLogTest"/>
-<!--            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderDetailTest"/>-->
-            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderByPageTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderAfterSaleTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.GetOrderCountTest"/>
-            <class name="com.meiji.test.http.platform.orderDetailManage.ListByParentCodeTest"/>
-<!--           <class name="com.meiji.test.http.platform.orderDetailManage.ProdGetOrderByPageTest"/>-->
-            <class name="com.meiji.test.http.platform.goodsDetailMange.GetGoodsCountTest"/>
-            <class name="com.meiji.test.http.platform.goodsDetailMange.AddRecordTest"/>
-            <class name="com.meiji.test.http.platform.goodsDetailMange.ShowSalesTest"/>
-            <class name="com.meiji.test.http.platform.aftersalesDetailManage.UpdateAfterRemarkTest"/>
-            <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterByPageTest"/>
-            <class name="com.meiji.test.http.platform.aftersalesDetailManage.GetOrderAfterDetailTest"/>
-            <class name="com.meiji.test.http.platform.applicationList.GetCompensationDetailTest"/>
-            <class name="com.meiji.test.http.platform.applicationList.GetCompensationListByPageTest"/>
-            <class name="com.meiji.test.http.platform.ruleConfig.GetCompensationConfigTest"/>
-            <class name="com.meiji.test.http.platform.memeberDayConfig.MemeberDayConfigTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetLabelTreeTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCourseListTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCombinationListTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.GetCategoryListTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CombinationDetailTest"/>
-            <class name="com.meiji.test.http.platform.activeMainManage.giftManage.CategoryDetailTest"/>
-            <class name="com.meiji.test.http.platform.channel.SearchBuyerShowTest"/>
-
+            <class name="com.credika.test.http.platform.credikamerchant.card.PageTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.card.TemplateTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.cardholder.PageTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.creditlimit.PageTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.creditlimit.AccountTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.transaction.PageTest"/>
         </classes>
     </test>
 </suite>

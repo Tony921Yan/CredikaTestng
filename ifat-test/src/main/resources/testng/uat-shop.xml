@@ -2,139 +2,139 @@
 <suite name = "user"  verbose="4">
     <test name="查询店铺营业信息 findShopBusinessInfo">
         <classes>
-            <class name = "com.meiji.test.http.shop.shopauth.FindShopBusinessInfoTest"/>
+            <class name = "com.credika.test.http.shop.shopauth.FindShopBusinessInfoTest"/>
         </classes>
     </test>
 
     <test name="查询店铺企业信息 findShopCompanyInfo">
         <classes>
-            <class name="com.meiji.test.http.shop.shopauth.FindShopCompanyInfoTest"/>
+            <class name="com.credika.test.http.shop.shopauth.FindShopCompanyInfoTest"/>
         </classes>
     </test>
 
     <test name="卖家待分账金额 asset">
         <classes>
-            <class name="com.meiji.test.http.shop.profitSharing.AssetTest"/>
+            <class name="com.credika.test.http.shop.profitSharing.AssetTest"/>
         </classes>
     </test>
 
     <test name="查询选品分类树 findGoodsCategoryTree">
         <classes>
-            <class name="com.meiji.test.http.shop.goods.FindGoodsCategoryTreeTest"/>
+            <class name="com.credika.test.http.shop.goods.FindGoodsCategoryTreeTest"/>
         </classes>
     </test>
 
     <test name="查询商品详情 findGoodsDetail">
         <classes>
-            <class name="com.meiji.test.http.shop.goods.FindGoodsDetailTest"/>
+            <class name="com.credika.test.http.shop.goods.FindGoodsDetailTest"/>
         </classes>
     </test>
 
     <test name="查询选品商品列表 findGoodsList">
         <classes>
-            <class name="com.meiji.test.http.shop.goods.FindGoodsListTest"/>
+            <class name="com.credika.test.http.shop.goods.FindGoodsListTest"/>
         </classes>
     </test>
 
     <test name="查询店铺首页模块模板列表 findModuleTemplateList">
         <classes>
-            <class name="com.meiji.test.http.shop.shopDeco.FindShopModuleListTest"/>
+            <class name="com.credika.test.http.shop.shopDeco.FindShopModuleListTest"/>
         </classes>
     </test>
 
     <test name="根据id查询店铺信息 findShopById">
         <classes>
-            <class name="com.meiji.test.http.shop.shopinfo.FindShopByIdTest"/>
+            <class name="com.credika.test.http.shop.shopinfo.FindShopByIdTest"/>
         </classes>
     </test>
 
     <test name="查询店铺商品列表 findShopGoodsList">
         <classes>
-            <class name="com.meiji.test.http.shop.goods.FindShopGoodsListTest"/>
+            <class name="com.credika.test.http.shop.goods.FindShopGoodsListTest"/>
         </classes>
     </test>
 
     <test name="查询店铺首页模块列表 findShopModuleList">
         <classes>
-            <class name="com.meiji.test.http.shop.shopDeco.FindShopModuleListTest"/>
+            <class name="com.credika.test.http.shop.shopDeco.FindShopModuleListTest"/>
         </classes>
     </test>
 
     <test name="获取协商历史 getAfterLog">
         <classes>
-            <class name="com.meiji.test.http.shop.order.GetAfterLogTest"/>
+            <class name="com.credika.test.http.shop.order.GetAfterLogTest"/>
         </classes>
     </test>
 
     <test name="获取售后单详情 getAfterOrderDetail">
         <classes>
-            <class name="com.meiji.test.http.shop.order.GetAfterOrderDetailTest"/>
+            <class name="com.credika.test.http.shop.order.GetAfterOrderDetailTest"/>
         </classes>
     </test>
 
     <test name="获取售后单列表 getAfterOrderPage">
         <classes>
-            <class name="com.meiji.test.http.shop.order.GetAfterOrderPageTest"/>
+            <class name="com.credika.test.http.shop.order.GetAfterOrderPageTest"/>
         </classes>
     </test>
 
     <test name="订单详情 getOrderInfo">
         <classes>
-            <class name="com.meiji.test.http.shop.order.GetOrderInfoTest"/>
+            <class name="com.credika.test.http.shop.order.GetOrderInfoTest"/>
         </classes>
     </test>
 
     <test name="获取物流信息 getOrderLogisticsInfo">
         <classes>
-            <class name="com.meiji.test.http.shop.order.GetOrderLogisticsInfoTest"/>
+            <class name="com.credika.test.http.shop.order.GetOrderLogisticsInfoTest"/>
         </classes>
     </test>
 
     <test name="获取店铺小程序码 getShopWeappCode">
         <classes>
-            <class name="com.meiji.test.http.shop.GetShopWeappCodeTest"/>
+            <class name="com.credika.test.http.shop.GetShopWeappCodeTest"/>
         </classes>
     </test>
 
     <test name="上传远程文件到微信 imageUpload">
         <classes>
-            <class name="com.meiji.test.http.shop.shopinfo.ImageUploadTest"/>
+            <class name="com.credika.test.http.shop.shopinfo.ImageUploadTest"/>
         </classes>
     </test>
 
     <test name="判断商家有没有关注公众号 isSubscribe">
         <classes>
-            <class name="com.meiji.test.http.shop.dealer.IsSubscribeTest"/>
+            <class name="com.credika.test.http.shop.dealer.IsSubscribeTest"/>
         </classes>
     </test>
 
     <test name="分页订单查询 pageOrder">
         <classes>
-            <class name="com.meiji.test.http.shop.order.PageOrderTest"/>
+            <class name="com.credika.test.http.shop.order.PageOrderTest"/>
         </classes>
     </test>
 
     <test name="分账流水 profitSharingList">
         <classes>
-            <class name="com.meiji.test.http.shop.profitSharing.ProfitSharingListTest"/>
+            <class name="com.credika.test.http.shop.profitSharing.ProfitSharingListTest"/>
         </classes>
     </test>
 
     <test name="保存店铺首页模块列表 saveShopModuleList">
         <classes>
-            <class name="com.meiji.test.http.shop.shopDeco.SaveShopModuleListTest"/>
+            <class name="com.credika.test.http.shop.shopDeco.SaveShopModuleListTest"/>
         </classes>
     </test>
 
     <test name="更新店铺首页模块模板 updateShopModuleTemplate">
         <classes>
-            <class name="com.meiji.test.http.shop.module.UpdateShopModuleTemplateTest"/>
+            <class name="com.credika.test.http.shop.module.UpdateShopModuleTemplateTest"/>
         </classes>
     </test>
 
     <test name="更新店铺首页模块 updateShopModule">
         <classes>
-            <class name="com.meiji.test.http.shop.module.UpdateShopModuleTest"/>
+            <class name="com.credika.test.http.shop.module.UpdateShopModuleTest"/>
         </classes>
     </test>
 </suite>

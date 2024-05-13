@@ -9,8 +9,8 @@
         <parm key="timestamp" value="1"/>
         <parm key="nonce" value="1"/>
         <parm key="Content-Type" value="application/json;charset=UTF-8"/>
-        <parm key="username" value="ifat"/>
-        <parm key="password" value="ifat.1234"/>
+        <parm key="username" value="15220252340@163.com"/>
+        <parm key="password" value="LY09021816"/>
         <parm key="omsUsername" value="autotest"/>
         <parm key="omsPassword" value="autotest.1234"/>
     </test>

@@ -7,9 +7,9 @@
             </run>
         </groups>
         <classes>
-            <class name="com.meiji.test.other.orderStatus.orderStatusCompare"/> <!--订单状态与结算状态对比-->
-            <class name="com.meiji.test.other.settlement.SettlementMonitor"/>
-            <class name="com.meiji.test.other.inviteCode.InviteCodeMonitor"/>
+            <class name="com.credika.test.other.orderStatus.orderStatusCompare"/> <!--订单状态与结算状态对比-->
+            <class name="com.credika.test.other.settlement.SettlementMonitor"/>
+            <class name="com.credika.test.other.inviteCode.InviteCodeMonitor"/>
         </classes>
     </test>
 </suite>

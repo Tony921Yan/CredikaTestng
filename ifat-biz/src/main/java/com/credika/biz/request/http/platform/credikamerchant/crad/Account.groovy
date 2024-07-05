@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Account extends PlatformGet{
     {
-        super.api = "/merchant/account"
+        super.api = "/account"
         super.params = []
     }
 

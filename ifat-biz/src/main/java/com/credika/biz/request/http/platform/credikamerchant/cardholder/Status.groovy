@@ -1,4 +1,6 @@
 package com.credika.biz.request.http.platform.credikamerchant.cardholder
+
+import com.credika.biz.request.http.platform.PlatformGet
 import com.credika.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
@@ -7,18 +9,18 @@ import com.miyuan.ifat.support.test.TestContext
  * @date 2022/02/25 10:16
  * @Vession V2.6
  */
-class Page extends PlatformPost{
+class Status extends PlatformGet{
     {
-        super.api = "merchant/user/page"
-        super.params = ["page","size"]
+        super.api = "merchant/kyb/status"
+        super.params = []
     }
 
-    Page invoke(TestContext testContext){
+    Status invoke(TestContext testContext){
         super.invoke(testContext)
         return this
     }
 
-    Page baseAssert(TestContext testContext){
+    Status baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

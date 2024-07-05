@@ -7,18 +7,18 @@ import com.miyuan.ifat.support.test.TestContext
  * @date 2022/02/25 10:16
  * @Vession V2.6
  */
-class Page extends PlatformPost{
+class Update extends PlatformPost{
     {
-        super.api = "merchant/user/page"
-        super.params = ["page","size"]
+        super.api = "/merchant/user/inner/1802346725242892293/update"
+        super.params = ["address","birthDate","city","contactNumber","country","countryCode","gender","postCode","state"]
     }
 
-    Page invoke(TestContext testContext){
+    Update invoke(TestContext testContext){
         super.invoke(testContext)
         return this
     }
 
-    Page baseAssert(TestContext testContext){
+    Update baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

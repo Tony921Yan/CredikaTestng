@@ -14,7 +14,7 @@ import org.testng.annotations.Test
  */
 class PageTest extends BaseTest {
      Page page = new Page()
-    @Test(description = "商户持卡人 page" ,groups = ["prod","uat"],testName = "page",
+    @Test(description = "商户持卡人查询 page" ,groups = ["prod","uat"],testName = "page",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void account(TestContext testContext){
         testContext.put("page",1)

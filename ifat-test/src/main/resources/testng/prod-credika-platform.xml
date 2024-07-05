@@ -9,10 +9,13 @@
         <classes>
             <class name="com.credika.test.http.platform.credikamerchant.card.PageTest"/>
             <class name="com.credika.test.http.platform.credikamerchant.card.TemplateTest"/>
-            <class name="com.credika.test.http.platform.credikamerchant.cardholder.PageTest"/>
             <class name="com.credika.test.http.platform.credikamerchant.creditlimit.PageTest"/>
             <class name="com.credika.test.http.platform.credikamerchant.creditlimit.AccountTest"/>
             <class name="com.credika.test.http.platform.credikamerchant.transaction.PageTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.cardholder.StatusTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.cardholder.PageTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.cardholder.InnerTest"/>
+            <class name="com.credika.test.http.platform.credikamerchant.cardholder.UpdateTest"/>
         </classes>
     </test>
 </suite>

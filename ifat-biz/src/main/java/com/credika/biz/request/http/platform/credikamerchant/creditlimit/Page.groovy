@@ -1,5 +1,5 @@
 package com.credika.biz.request.http.platform.credikamerchant.creditlimit
-import com.credika.biz.request.http.platform.PlatformGet
+import com.credika.biz.request.http.platform.PlatformPost
 import com.miyuan.ifat.support.test.TestContext
 
 /**
@@ -7,9 +7,9 @@ import com.miyuan.ifat.support.test.TestContext
  * @date 2022/02/25 10:16
  * @Vession V2.6
  */
-class Page extends PlatformGet{
+class Page extends PlatformPost{
     {
-        super.api = "/merchant/account/transaction/page?page=1&size=5"
+        super.api = "/merchant/card/transaction/page"
         super.params = []
     }
 

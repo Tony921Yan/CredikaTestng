@@ -13,9 +13,11 @@ import org.testng.annotations.Test
  */
 class PageTest extends BaseTest {
      Page page = new Page()
-    @Test(description = "商户交易记录 page" ,groups = ["prod","uat"],testName = "page",
+    @Test(description = "商户总账交易记录 page" ,groups = ["prod","uat"],testName = "page",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void page(TestContext testContext){
+        testContext.put("page",1)
+        testContext.put("size",10)
         page.invoke(testContext).baseAssert(testContext)
     }
 

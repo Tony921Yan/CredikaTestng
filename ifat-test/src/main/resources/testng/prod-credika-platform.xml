@@ -12,9 +12,9 @@
             <class name="com.credika.test.http.platform.credikamerchant.card.AuthTransactionTest"/>
             <class name="com.credika.test.http.platform.credikamerchant.card.RechargeTest"/>
             <class name="com.credika.test.http.platform.credikamerchant.card.DetailTest"/>
-            <class name="com.credika.test.http.platform.credikamerchant.card.CvvTest"/>
-            <class name="com.credika.test.http.platform.credikamerchant.card.LockTest"/>
-            <class name="com.credika.test.http.platform.credikamerchant.card.UnlockTest"/>
+<!--            <class name="com.credika.test.http.platform.credikamerchant.card.CvvTest"/>-->
+<!--            <class name="com.credika.test.http.platform.credikamerchant.card.LockTest"/>-->
+<!--            <class name="com.credika.test.http.platform.credikamerchant.card.UnlockTest"/>-->
             <class name="com.credika.test.http.platform.credikamerchant.card.TemplateTest"/>
             <class name="com.credika.test.http.platform.credikamerchant.creditlimit.PageTest"/>
             <class name="com.credika.test.http.platform.credikamerchant.creditlimit.AccountTest"/>

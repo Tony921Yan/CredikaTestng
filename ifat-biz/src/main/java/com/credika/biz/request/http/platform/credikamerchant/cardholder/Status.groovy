@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Status extends PlatformGet{
     {
-        super.api = "merchant/kyb/status"
+        super.api = "/merchant/kyb/status"
         super.params = []
     }
 

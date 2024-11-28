@@ -7,18 +7,18 @@ import com.miyuan.ifat.support.test.TestContext
  * @date 2022/02/25 10:16
  * @Vession V2.6
  */
-class Sign extends PlatformPost{
+class SignIn extends PlatformPost{
     {
         super.api = "/signIn"
         super.params = ["username","password"]
     }
 
-    Sign invoke(TestContext testContext){
+    SignIn invoke(TestContext testContext){
         super.invoke(testContext)
         return this
     }
 
-    Sign baseAssert(TestContext testContext){
+    SignIn baseAssert(TestContext testContext){
         super.baseAssert(testContext)
         return this
     }

@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Template extends PlatformGet{
     {
-        super.api = "/merchant/card/template"
+        super.api = "/card/template"
         super.params = []
     }
 

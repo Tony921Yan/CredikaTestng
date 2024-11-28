@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Update extends PlatformPost{
     {
-        super.api = "/merchant/user/inner/1802346725242892293/update"
+        super.api = "/merchant/cardholder/1814498134692261889/update"
         super.params = ["address","birthDate","city","contactNumber","country","countryCode","gender","postCode","state"]
     }
 

@@ -10,7 +10,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Inner extends PlatformGet{
     {
-        super.api = "/merchant/user/inner/1802346724513083394"
+        super.api = "/merchant/cardholder/1827890571829637122"
         super.params = []
     }
 

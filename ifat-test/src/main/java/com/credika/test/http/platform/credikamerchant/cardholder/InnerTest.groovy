@@ -13,7 +13,7 @@ import org.testng.annotations.Test
  */
 class InnerTest extends BaseTest {
      Inner inner = new Inner()
-    @Test(description = "持卡人编辑查询 inner" ,groups = ["prod","uat"],testName = "inner",
+    @Test(description = "持卡人信息查询 inner" ,groups = ["prod","uat"],testName = "inner",
             dataProvider = "dataProvider",dataProviderClass = TestData.class)
     public void inner(TestContext testContext){
         inner.invoke(testContext).baseAssert(testContext)

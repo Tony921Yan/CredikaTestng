@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Page extends PlatformPost{
     {
-        super.api = "/merchant/card/transaction/page"
+        super.api = "/transaction/page"
         super.params = ["page","size"]
     }
 

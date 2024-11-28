@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Recharge extends PlatformGet{
     {
-        super.api = "/card/1802351120063983621/recharge/page?page=1&size=5"
+        super.api = "/card/1817099551659585537/recharge/page?page=1&size=5"
         super.params = []
     }
 

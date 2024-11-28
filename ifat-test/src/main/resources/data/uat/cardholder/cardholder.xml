@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+        <test name = "cardholder1">
+            <parm key = "firstname" value = "CICI"/>
+            <parm key = "lastname" value = "li"/>
+            <parm key = "contactMail" value = "1991674914@qq.com"/>
+            <parm key = "contactNumber" value = "15220262340"/>
+            <parm key = "gender" value = "male"/>
+            <parm key = "birthDate" value = "2024-07-01"/>
+            <parm key = "country" value = "China"/>
+            <parm key = "address" value = "xxx"/>
+            <parm key = "state" value = "xx"/>
+            <parm key = "city" value = "x"/>
+            <parm key = "postCode" value = "345676"/>
+            <parm key = "countryCode" value = "CN"/>
+        </test>
+
+        <test name = "cardholder2">
+                <parm key = "firstname" value = "Vishal"/>
+                <parm key = "lastname" value = "Srivastava"/>
+                <parm key = "contactMail" value = "srivastavavishal303@gmail.com"/>
+                <parm key = "contactNumber" value = "7903693870"/>
+                <parm key = "gender" value = "male"/>
+                <parm key = "birthDate" value = "1997-07-01"/>
+                <parm key = "country" value = "India"/>
+                <parm key = "address" value = "Silver tower , Telco"/>
+                <parm key = "state" value = "Jharkhand"/>
+                <parm key = "city" value = "Jamshedpur"/>
+                <parm key = "postCode" value = "831004"/>
+                <parm key = "countryCode" value = "IN"/>
+       </test>
+
+
+</data>
+

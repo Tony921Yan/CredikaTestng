@@ -93,31 +93,10 @@ class CookieService {
         return cookie
     }
 
-//    static String getPlatformCookie(String url,String username,String password){
-//        String cookie = cacheCookie.get("platform1:"+username)
-//        System.out.println(cookie)
-//        if(cookie!=null){
-//            return cookie
-//        }
-//        Map param = new HashMap()
-//        param.put("username",username)
-//        param.put("password",password)
-//        StringBuilder stringBuilder = new StringBuilder()
-//        def result = HttpUtil.post(url+"/platform/login", [:], param)
-//        System.out.println(result)
-//        Header[] headers = result.getHttpHeaders()
-//        for(Header header:headers){
-//            stringBuilder.append(header.elements.head().toString().split (";")[0])
-//            stringBuilder.append(";")
-//        }
-//        cookie =  stringBuilder.toString()
-//        cacheCookie.put("platform1:"+username,cookie)
-//        return cookie
-//    }
 
 
     static getPlatformCookie(String url, String username, String password) {
-        String cookie = cacheCookie.get("platform2:" + username);
+        String cookie = cacheCookie.get("url:" + username);
         if (cookie != null) {
             return cookie;
         }
@@ -130,11 +109,10 @@ class CookieService {
             System.out.println(result);
             // 假设token字段在HTTP响应体中
             String responseBody = result.getResp().data.token;
-            System.out.println(responseBody);
             if (responseBody != null && !responseBody.isEmpty()) {
                 cookie = responseBody;
                 System.out.println(cookie);
-                cacheCookie.put("platform2:" + username, cookie);
+                cacheCookie.put("url:" + username, cookie);
                 return cookie;
             } else {
                 System.out.println("Token not found in response body.");

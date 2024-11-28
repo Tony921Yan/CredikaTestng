@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class AuthTransaction extends PlatformGet{
     {
-        super.api = "/card/1802351120063983621/authTransaction"
+        super.api = "/card/1817099551659585537/authTransaction"
         super.params = ["page","size"]
     }
 

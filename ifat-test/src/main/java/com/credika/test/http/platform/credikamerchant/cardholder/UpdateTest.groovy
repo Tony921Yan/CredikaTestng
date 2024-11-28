@@ -22,7 +22,7 @@ class UpdateTest extends BaseTest {
         testContext.put("contactNumber",15220252340)
         testContext.put("country",'China')
         testContext.put("countryCode",'CN')
-        testContext.put("gender",'male')
+        testContext.put("gender",'Female')
         testContext.put("postCode",'518000')
         testContext.put("state",'广东')
         update.invoke(testContext).baseAssert(testContext)

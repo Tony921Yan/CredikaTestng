@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Detail extends PlatformGet{
     {
-        super.api = "/card/1802351120063983621/detail"
+        super.api = "/card/1817099551659585537/detail"
         super.params = []
     }
 

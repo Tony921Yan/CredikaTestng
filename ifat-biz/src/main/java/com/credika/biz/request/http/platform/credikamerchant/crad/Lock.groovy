@@ -9,7 +9,7 @@ import com.miyuan.ifat.support.test.TestContext
  */
 class Lock extends PlatformPost{
     {
-        super.api = "/otp/card/1802351120063983621/lock"
+        super.api = "/otp/card/1817099551659585537/lock"
         super.params = []
     }
 
